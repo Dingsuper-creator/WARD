@@ -1,0 +1,47 @@
+{
+  "interface_version": "ward-patient-ehr-action-interface-0.2.0",
+  "status": "development_non_official",
+  "case_id": "ward_006",
+  "scenario_path": "outputs/world_model_patient_ehr_v01/cases/ward_006.patient_ehr.json",
+  "scenario_sha256": "396ac4e16a21f11ead0b489dfa35753bb8a62907bc0f591b7d4c0f2fb54d21b0",
+  "ontology_path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_006.v0.2.json",
+  "ontology_sha256": "10f92a793ca13c5cd0ea7b73e812f00b4d11d6e2c9120302ac5a59a27afa822c",
+  "public_capabilities": [
+    "communicate_with_patient",
+    "review_ehr_documents",
+    "order_diagnostic_tests",
+    "review_results",
+    "request_consultation",
+    "manage_treatment",
+    "perform_procedures",
+    "monitor_or_defer",
+    "manage_disposition"
+  ],
+  "transition_concepts": {
+    "ward_006_s2_node_001": "ehr.breast_admission_vte_and_core_biopsy_readiness",
+    "ward_006_s2_node_002": "procedure.left_breast_core_biopsy",
+    "ward_006_s2_node_003": "ehr.post_left_breast_core_biopsy_status",
+    "ward_006_s2_node_004": "result.left_breast_core_invasive_carcinoma",
+    "ward_006_s2_node_005": "ehr.bilateral_breast_definitive_surgery_readiness",
+    "ward_006_s2_node_006": "consultation.preoperative_anesthesia_clearance",
+    "ward_006_s2_node_007": "procedure.left_breast_conserving_surgery_with_fascial_repair",
+    "ward_006_s2_node_008": "procedure.left_sentinel_node_biopsy",
+    "ward_006_s2_node_009": "procedure.right_breast_quadrant_excision",
+    "ward_006_s2_node_010": "ehr.post_bilateral_definitive_breast_surgery_status",
+    "ward_006_s2_node_011": "consultation.postoperative_breast_rehabilitation",
+    "ward_006_s3_terminal_001": "disposition.home_after_inpatient_bilateral_breast_surgery"
+  },
+  "decision_policy": {
+    "free_text_target_allowed": true,
+    "exact_hidden_identifier_required": false,
+    "schema_valid_non_gold_action_class": "valid_exploration_no_recorded_outcome",
+    "recognized_non_current_action_class": "recognized_non_current_action",
+    "gold_equivalent_action_class": "ehr_path_advanced",
+    "counterfactual_clinical_outcomes_simulated": false
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

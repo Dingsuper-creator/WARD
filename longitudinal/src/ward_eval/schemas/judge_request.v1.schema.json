@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ward.example/schemas/judge_request.v1.schema.json",
+  "title": "WARD Judge request v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "request_id", "protocol_version", "judge_id", "batch_index", "system_prompt", "items"],
+  "properties": {
+    "schema_version": {"const": "ward-judge-request-1.0"},
+    "request_id": {"type": "string", "minLength": 1},
+    "protocol_version": {"const": "ward-semantic-judge-1.0"},
+    "judge_id": {"enum": ["judge_a", "judge_b"]},
+    "batch_index": {"type": "integer", "minimum": 0},
+    "system_prompt": {"type": "string", "minLength": 1},
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["item_id", "dimension", "state_bucket", "prediction_en", "gold_en", "aliases_en"],
+        "properties": {
+          "item_id": {"type": "string", "pattern": "^ward_jjob_[0-9a-f]{20}$"},
+          "dimension": {"enum": ["layer3_claims", "layer4_state", "layer5_actions", "safety", "stopping_blockers"]},
+          "state_bucket": {"enum": [null, "diagnoses", "active_problems", "resolved_problems", "blockers", "critical_facts_to_retain", "facts_to_retract_or_correct", "required_delta_from_previous_checkpoint", "treatment_readiness", "management_state", "hard_failure_rules", "critical_omission_rules", "preliminary_risk_triggers"]},
+          "prediction_en": {"type": "string", "minLength": 1},
+          "gold_en": {"type": "string", "minLength": 1},
+          "aliases_en": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+        }
+      }
+    }
+  }
+}

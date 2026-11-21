@@ -1,0 +1,3727 @@
+{
+  "case_id": "ward_008",
+  "checkpoints": [
+    {
+      "answer": {
+        "layer1_evidence": [],
+        "layer2_utilization_links": [],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "documented breast mass",
+              "undifferentiated breast lump"
+            ],
+            "canonical_en": "A breast mass is currently documented, but its pathological nature and final diagnosis cannot yet be determined.",
+            "claim_id": "ward_008_cp_000_claim_001",
+            "linked_evidence_ids": [],
+            "status": "confirmed",
+            "supporting_evidence_ids": []
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "diagnostic workup of breast mass",
+              "breast imaging and pathology evaluation when indicated"
+            ],
+            "action_id": "ward_008_cp_000_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Complete a standard diagnostic evaluation of the breast mass, including breast imaging as clinically indicated and tissue diagnosis when required.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Promptly during the current inpatient evaluation",
+            "indication_en": "Diagnosis needs to be clarified before definitive treatment or safe transition to follow-up",
+            "linked_evidence_ids": [],
+            "prerequisites_en": [
+              "Clinical examination and risk assessment."
+            ],
+            "problem_en": "Nature of breast mass is undetermined",
+            "target_and_laterality_en": "Breast mass; laterality not provided."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Breast mass requiring diagnostic evaluation",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_000_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "No visible evidence; imaging, pathology, and other diagnostic results are unavailable.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_000_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "43-year-old woman; admission diagnosis is breast mass; current encounter has not ended.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_000_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Breast mass (documented admission diagnosis; pathology undetermined)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_000_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [],
+          "management_state": {
+            "canonical_en": "Active inpatient encounter; currently in diagnostic evaluation",
+            "linked_evidence_ids": [],
+            "state_id": "ward_008_cp_000_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Not ready for definitive disease-specific treatment",
+            "linked_evidence_ids": [],
+            "state_id": "ward_008_cp_000_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Do not confirm breast cancer, a benign lesion, or another specific pathological diagnosis in the absence of evidence.",
+            "It must not be determined that evaluation can be stopped when diagnosis is incomplete and the encounter is still ongoing."
+          ],
+          "critical_omission_rules_en": [
+            "Omission of further diagnostic evaluation of the breast mass is a key omission."
+          ],
+          "preliminary_risk_triggers_en": [
+            "diagnosis_incomplete",
+            "evidence_insufficient",
+            "encounter_active"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "There is no visible evidence and the inpatient encounter remains active. The admission diagnosis of breast mass alone does not establish its cause and is insufficient to safely stop evaluation or transition to follow-up; diagnostic investigation should continue.",
+          "remaining_blockers_en": [
+            "Key diagnostic evidence such as breast imaging and pathology is lacking.",
+            "The final diagnosis is not yet definitive."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_008_cp_000",
+      "question": {
+        "allowed_evidence_ids": [],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "doc:002",
+          "doc:004",
+          "doc:005",
+          "doc:006",
+          "doc:009",
+          "doc:010",
+          "doc:011",
+          "doc:015",
+          "doc:016",
+          "doc:017",
+          "doc:019",
+          "doc:020",
+          "doc:021",
+          "ehr:terminal:001",
+          "img:001",
+          "surg:001",
+          "surg:002",
+          "surg:003",
+          "surg:004"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_008",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false
+          },
+          "public_context": {
+            "admission_diagnosis": "Breast mass",
+            "age_years": 43,
+            "initial_time": "2124-07-31T13:23:13.413000",
+            "setting": "inpatient_combined_breast_gynecologic_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-07-31T13:23:13.413000",
+          "stage": "S2",
+          "visible_evidence_ids": []
+        },
+        "public_snapshot_sha256": "84153f8f72a804eac4340e764b3fa2f2c00521140d2ba099f4219b39834d91cb",
+        "public_time": "2124-07-31T13:23:13.413000",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 0
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "doc:002",
+            "interpretation_en": "The title indicates VTE management in surgical inpatients, but the body is empty; it does not confirm VTE or a specific prophylaxis plan for this patient.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:004",
+            "interpretation_en": "The title documents preprocedural informed consent for core needle biopsy of a breast mass; it supports planning and consent discussion, not completion of biopsy or availability of pathology.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "doc:005",
+            "interpretation_en": "The title documents preoperative consent for gynecologic surgery; it supports that surgery was planned, not that it was performed.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:006",
+            "interpretation_en": "The title is a preoperative summary for breast surgery, indicating preoperative preparation; the empty body does not establish the procedure, pathology, or postoperative status.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "doc:009",
+            "interpretation_en": "The title indicates a new consultation record, but the body is empty and does not establish the consultation conclusion or a specific treatment decision.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:015",
+            "interpretation_en": "The title indicates a breast-surgery attending ward-round note at the current time, but the body is empty and does not establish symptoms, findings, test results, or improvement.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:016",
+            "interpretation_en": "The title documents a preoperative breast-surgery discussion; it supports perioperative decision communication, not performance of surgery or a final diagnosis.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "doc:017",
+            "interpretation_en": "The title indicates an early breast-surgery initial ward-round note, but the body is empty and cannot support a specific diagnosis, plan, or state.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:019",
+            "interpretation_en": "The title indicates a consultation-recommendation management record, but the body is empty and does not establish the recommendation, implementation, or outcome.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:021",
+            "interpretation_en": "The title documents informed consent before breast surgery; it supports that breast surgery reached preoperative preparation, not that surgery was completed or pathology established.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_008_cp_004_action_003"
+            ],
+            "claim_ids": [],
+            "evidence_id": "doc:002",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_004_action_001",
+              "ward_008_cp_004_action_002"
+            ],
+            "claim_ids": [
+              "ward_008_cp_004_claim_001"
+            ],
+            "evidence_id": "doc:004",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_004_action_003",
+              "ward_008_cp_004_action_004"
+            ],
+            "claim_ids": [
+              "ward_008_cp_004_claim_002"
+            ],
+            "evidence_id": "doc:005",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_004_action_001",
+              "ward_008_cp_004_action_002",
+              "ward_008_cp_004_action_003",
+              "ward_008_cp_004_action_004"
+            ],
+            "claim_ids": [
+              "ward_008_cp_004_claim_003"
+            ],
+            "evidence_id": "doc:006",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:009",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:015",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_004_action_004"
+            ],
+            "claim_ids": [
+              "ward_008_cp_004_claim_003"
+            ],
+            "evidence_id": "doc:016",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:017",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:019",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_004_action_001",
+              "ward_008_cp_004_action_004"
+            ],
+            "claim_ids": [
+              "ward_008_cp_004_claim_003"
+            ],
+            "evidence_id": "doc:021",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": []
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "consented and planned breast core biopsy",
+              "planned core needle biopsy"
+            ],
+            "canonical_en": "Core needle biopsy of the breast mass was consented to and planned, but the available evidence does not show that the biopsy was completed or that pathology is available.",
+            "claim_id": "ward_008_cp_004_claim_001",
+            "linked_evidence_ids": [
+              "doc:004"
+            ],
+            "status": "planned",
+            "supporting_evidence_ids": [
+              "doc:004"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "planned gynecologic surgery",
+              "consented gynecologic procedure"
+            ],
+            "canonical_en": "Gynecologic surgery was consented to and planned, but the available evidence does not show that it was performed.",
+            "claim_id": "ward_008_cp_004_claim_002",
+            "linked_evidence_ids": [
+              "doc:005"
+            ],
+            "status": "planned",
+            "supporting_evidence_ids": [
+              "doc:005"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "preoperative breast surgery preparation",
+              "breast surgery planned"
+            ],
+            "canonical_en": "Breast surgery is in the preoperative preparation and discussion phase with informed consent documented; the exact procedure, completion, postoperative state, and final pathology remain unconfirmed.",
+            "claim_id": "ward_008_cp_004_claim_003",
+            "linked_evidence_ids": [
+              "doc:006",
+              "doc:016",
+              "doc:021"
+            ],
+            "status": "planned",
+            "supporting_evidence_ids": [
+              "doc:006",
+              "doc:016",
+              "doc:021"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "complete planned breast core biopsy",
+              "obtain tissue diagnosis"
+            ],
+            "action_id": "ward_008_cp_004_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Verify and perform the planned core needle biopsy of the breast mass if not yet completed, with specimen submission for pathology.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete as soon as possible during hospitalization according to the breast surgery plan; completion must not be assumed",
+            "indication_en": "Histological diagnosis is needed to guide subsequent treatment decisions; existing evidence shows only consent/planning and does not prove completion.",
+            "linked_evidence_ids": [
+              "doc:004",
+              "doc:006",
+              "doc:021"
+            ],
+            "prerequisites_en": [
+              "Verify patient identity, lesion localization, indication, contraindications, and bleeding risk.",
+              "Confirm that informed consent remains valid and complete the same-day preoperative assessment"
+            ],
+            "problem_en": "Nature of the breast mass is undetermined",
+            "target_and_laterality_en": "Breast mass; laterality and specific target are currently not provided."
+          },
+          {
+            "acceptable_aliases_en": [
+              "review biopsy pathology",
+              "await tissue diagnosis"
+            ],
+            "action_id": "ward_008_cp_004_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Obtain and review the breast biopsy pathology result; keep the diagnosis pending until the result is available.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Track according to the pathology process after specimen acquisition, and promptly review once results are available",
+            "indication_en": "There are currently no available pathology results; benign versus malignant status cannot therefore be determined, nor can specific oncology treatment be formulated.",
+            "linked_evidence_ids": [
+              "doc:004",
+              "doc:006"
+            ],
+            "prerequisites_en": [
+              "The biopsy specimen has been obtained and correctly submitted for testing; if sampling has not yet been performed, complete the biopsy first."
+            ],
+            "problem_en": "Lack of pathological diagnosis",
+            "target_and_laterality_en": "Breast biopsy specimen; laterality not provided."
+          },
+          {
+            "acceptable_aliases_en": [
+              "surgical inpatient VTE prophylaxis assessment",
+              "VTE risk assessment"
+            ],
+            "action_id": "ward_008_cp_004_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Assess VTE risk and prophylaxis for a surgical inpatient and implement it according to contraindications.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Ongoing assessment during the current hospitalization and perioperative period.",
+            "indication_en": "The patient is in a surgical inpatient and preoperative context; current information cannot confirm existing VTE or specific preventive measures.",
+            "linked_evidence_ids": [
+              "doc:002",
+              "doc:005",
+              "doc:006"
+            ],
+            "prerequisites_en": [
+              "Assess bleeding risk, mobility, previous VTE, and other risk factors"
+            ],
+            "problem_en": "Perioperative venous thromboembolism risk management.",
+            "target_and_laterality_en": "Systemic perioperative risk management; laterality not applicable"
+          },
+          {
+            "acceptable_aliases_en": [
+              "proceed with planned surgery after verification",
+              "confirm operative plan"
+            ],
+            "action_id": "ward_008_cp_004_action_004",
+            "action_scope": "recorded",
+            "canonical_action_en": "After verifying indications, procedure details, preoperative assessment, and patient preference, proceed with the documented breast/gynecologic surgical plan; do not treat consent as proof of performance.",
+            "canonical_prohibited_action_en": null,
+            "category": "acceptable_recorded",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "According to the inpatient surgical schedule, after completion of the preoperative verification.",
+            "indication_en": "Relevant preoperative consent, discussion, or preoperative summary titles are present, but the narrative is insufficient to confirm actual implementation.",
+            "linked_evidence_ids": [
+              "doc:005",
+              "doc:006",
+              "doc:016",
+              "doc:021"
+            ],
+            "prerequisites_en": [
+              "Clarify the specific surgical procedure and target site",
+              "Complete anesthesia and preoperative safety assessment.",
+              "Confirm that there are no new contraindications and complete the necessary checks."
+            ],
+            "problem_en": "Preoperative preparation for breast and gynecologic surgery",
+            "target_and_laterality_en": "Breast and gynecologic surgery; the specific site and laterality are currently not provided"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Breast mass awaiting histological clarification",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Breast surgery and related preoperative processes are in the planning/preparation stage.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Implementation status of the gynecologic surgery plan is unclear",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Usable breast biopsy pathology results are lacking.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is a lack of clear actual surgical records, postoperative diagnosis, and postoperative status.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Lack of clinical status data sufficient to support discharge or transition to routine follow-up",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Current inpatient evaluation for a breast mass; the patient is a 43-year-old female.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is a preoperative informed-consent record for breast core needle biopsy, but completion has not been confirmed.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Both breast surgery and gynecologic surgery have records related to preoperative consent/planning, but implementation has not been confirmed.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The body text of the current public document is empty; specific examination results, surgical procedures, pathology, or postoperative status cannot be inferred from the title.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Breast mass (admission diagnosis; nature not clarified by current publicly available evidence).",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Do not misrecord preoperative informed consent or a preoperative summary as surgery having been completed.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not misrecord a breast mass as breast cancer or another definitive pathological diagnosis",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current status must not be erroneously recorded as postoperative stability or meeting discharge conditions.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Continue diagnosis of the breast mass and preoperative/perioperative management during hospitalization; current public evidence is insufficient to confirm that surgery has been performed or treatment has been completed.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_008_cp_004_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Compared with the initial checkpoint, additional records document consent, preoperative summary, preoperative discussion, and ward/consultation documentation; the state advances from initial breast-mass evaluation to planned preoperative biopsy and surgery preparation, without confirmed pathology or procedure completion.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_004_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence_and_state_update",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Some preoperative informed consent and discussions have been completed, but it still cannot be confirmed that complete conditions have been met to perform definitive treatment or formulate subsequent treatment based on pathology.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_008_cp_004_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Do not treat informed consent, a preoperative summary, a preoperative discussion, or a document title as evidence that surgery or biopsy has been completed.",
+            "Do not confirm a breast mass as malignant or benign in the absence of pathology results",
+            "Do not infer vital signs, laboratory results, imaging results, postoperative status, or discharge conditions from an empty body text",
+            "Do not use undisclosed future pathology, surgical, or treatment-response results"
+          ],
+          "critical_omission_rules_en": [
+            "Breast biopsy and pathology results must be tracked.",
+            "It is necessary to verify whether the actual surgery has been completed and the postoperative status.",
+            "Before the diagnosis and management status are clarified, inpatient-related evaluation must not be directly stopped or transitioned to routine follow-up"
+          ],
+          "preliminary_risk_triggers_en": [
+            "evidence_limited",
+            "diagnosis_not_closed",
+            "procedure_completion_unconfirmed",
+            "clinical_review_required"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "The available evidence mainly consists of titles for preoperative consent, a preoperative summary, and preoperative discussion, with empty bodies. The breast-mass diagnosis is not closed, biopsy or surgery completion is unconfirmed, and discharge or routine follow-up suitability is not established. Investigation should therefore continue.",
+          "remaining_blockers_en": [
+            "The breast mass lacks an available histological result",
+            "The actual completion status of biopsy and breast/gynecologic surgery has not been confirmed.",
+            "Evidence of current clinical stability, postoperative status, and discharge assessment is lacking"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_008_cp_004",
+      "question": {
+        "allowed_evidence_ids": [
+          "doc:002",
+          "doc:004",
+          "doc:005",
+          "doc:006",
+          "doc:009",
+          "doc:015",
+          "doc:016",
+          "doc:017",
+          "doc:019",
+          "doc:021"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "doc:020",
+          "ehr:terminal:001",
+          "img:001",
+          "surg:001",
+          "surg:002",
+          "surg:003",
+          "surg:004"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_008",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "unrecorded_core_biopsy_generated": false,
+            "ward_008_001_clinically_confirmed": true,
+            "ward_008_002_clinically_confirmed": true,
+            "ward_008_003_clinically_confirmed": true,
+            "ward_008_004_clinically_confirmed": true,
+            "ward_008_s2_node_001_completed": true,
+            "ward_008_s2_node_002_completed": true,
+            "ward_008_s2_node_003_completed": true,
+            "ward_008_s2_node_004_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Breast mass",
+            "age_years": 43,
+            "initial_time": "2124-07-31T13:23:13.413000",
+            "setting": "inpatient_combined_breast_gynecologic_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-08-05T07:30:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "doc:002",
+            "doc:004",
+            "doc:005",
+            "doc:006",
+            "doc:009",
+            "doc:015",
+            "doc:016",
+            "doc:017",
+            "doc:019",
+            "doc:021"
+          ]
+        },
+        "public_snapshot_sha256": "d06c5b4db11dc34fcbeeaeccf885dda7a8a9f5b0ee76e8f8bc82e069241a456d",
+        "public_time": "2124-08-05T07:30:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "action_selection"
+        ]
+      },
+      "sequence_index": 4
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "doc:002",
+            "interpretation_en": "The title indicates a venous thromboembolism (VTE) management context for a surgical inpatient; no patient-specific clinical facts are available in the content.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:004",
+            "interpretation_en": "Documents preoperative informed consent for core needle biopsy of a breast mass, but does not provide a biopsy result.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:005",
+            "interpretation_en": "Documents preoperative informed consent for gynecologic surgery, without specific diagnosis, operative result, or current status.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:006",
+            "interpretation_en": "A preoperative breast surgery summary supporting the preoperative assessment and surgical preparation context, without pathology or postoperative results.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:009",
+            "interpretation_en": "A new consultation record with no substantive content; it cannot support a specific diagnosis or treatment conclusion.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:015",
+            "interpretation_en": "A daily attending ward-round note from breast surgery; no interpretable vital signs, wound findings, or pathology information are provided.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:016",
+            "interpretation_en": "A preoperative breast surgery discussion record supporting the surgical decision context, without postoperative pathology or margin results.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:017",
+            "interpretation_en": "The first breast surgery ward-round note has no substantive content and cannot establish a specific clinical state.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:019",
+            "interpretation_en": "A consultation recommendation management record with no substantive content; the recommendation or its implementation cannot be confirmed.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:021",
+            "interpretation_en": "Documents informed consent before breast surgery, supporting preoperative decision readiness but not constituting a pathological diagnosis.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "surg:001",
+            "interpretation_en": "The public record shows breast quadrantectomy was performed at 2124-08-05 07:52:54; intraoperative and postoperative pathology results are not available.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "surg:002",
+            "interpretation_en": "A second public record also documents breast quadrantectomy at 2124-08-05 07:52:36; it does not establish procedural completeness or tumor pathology.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:002",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_005_action_002"
+            ],
+            "claim_ids": [
+              "ward_008_cp_005_claim_001"
+            ],
+            "evidence_id": "doc:004",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_005_state_diagnoses_001",
+              "ward_008_cp_005_state_critical_facts_to_retain_003"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:005",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_005_action_001"
+            ],
+            "claim_ids": [
+              "ward_008_cp_005_claim_002"
+            ],
+            "evidence_id": "doc:006",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_005_state_resolved_problems_001",
+              "ward_008_cp_005_state_critical_facts_to_retain_004"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:009",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:015",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": [
+              "ward_008_cp_005_state_active_problems_003",
+              "ward_008_cp_005_state_blockers_002",
+              "ward_008_cp_005_state_facts_to_retract_or_correct_003",
+              "ward_008_cp_005_state_required_delta_from_previous_checkpoint_002",
+              "ward_008_cp_005_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_005_action_001"
+            ],
+            "claim_ids": [
+              "ward_008_cp_005_claim_002"
+            ],
+            "evidence_id": "doc:016",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_005_state_resolved_problems_001",
+              "ward_008_cp_005_state_critical_facts_to_retain_004"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:017",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": [
+              "ward_008_cp_005_state_facts_to_retract_or_correct_003"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:019",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_005_action_001"
+            ],
+            "claim_ids": [
+              "ward_008_cp_005_claim_002"
+            ],
+            "evidence_id": "doc:021",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_005_state_resolved_problems_001",
+              "ward_008_cp_005_state_critical_facts_to_retain_004"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_005_action_001",
+              "ward_008_cp_005_action_002"
+            ],
+            "claim_ids": [
+              "ward_008_cp_005_claim_003"
+            ],
+            "evidence_id": "surg:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_005_state_diagnoses_002",
+              "ward_008_cp_005_state_active_problems_001",
+              "ward_008_cp_005_state_active_problems_002",
+              "ward_008_cp_005_state_resolved_problems_002",
+              "ward_008_cp_005_state_critical_facts_to_retain_002",
+              "ward_008_cp_005_state_critical_facts_to_retain_003",
+              "ward_008_cp_005_state_facts_to_retract_or_correct_002",
+              "ward_008_cp_005_state_required_delta_from_previous_checkpoint_001",
+              "ward_008_cp_005_state_required_delta_from_previous_checkpoint_002",
+              "ward_008_cp_005_state_treatment_readiness_001",
+              "ward_008_cp_005_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_005_action_001",
+              "ward_008_cp_005_action_002"
+            ],
+            "claim_ids": [
+              "ward_008_cp_005_claim_003"
+            ],
+            "evidence_id": "surg:002",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_005_state_diagnoses_002",
+              "ward_008_cp_005_state_active_problems_001",
+              "ward_008_cp_005_state_active_problems_002",
+              "ward_008_cp_005_state_resolved_problems_002",
+              "ward_008_cp_005_state_critical_facts_to_retain_002",
+              "ward_008_cp_005_state_critical_facts_to_retain_003",
+              "ward_008_cp_005_state_facts_to_retract_or_correct_002",
+              "ward_008_cp_005_state_required_delta_from_previous_checkpoint_001",
+              "ward_008_cp_005_state_required_delta_from_previous_checkpoint_002",
+              "ward_008_cp_005_state_treatment_readiness_001",
+              "ward_008_cp_005_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Pathologic diagnosis pending",
+              "Histology not yet established",
+              "Breast mass pathology unavailable"
+            ],
+            "canonical_en": "The histologic diagnosis of the breast mass is not confirmed by the currently available public evidence.",
+            "claim_id": "ward_008_cp_005_claim_001",
+            "linked_evidence_ids": [
+              "doc:004"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "doc:004"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Preoperative readiness documented",
+              "Surgical consent completed",
+              "Prepared for breast surgery"
+            ],
+            "canonical_en": "Preoperative assessment, discussion, and informed consent for breast quadrantectomy were documented.",
+            "claim_id": "ward_008_cp_005_claim_002",
+            "linked_evidence_ids": [
+              "doc:006",
+              "doc:016",
+              "doc:021"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "doc:006",
+              "doc:016",
+              "doc:021"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Post-breast-quadrantectomy state",
+              "Early postoperative breast surgery care",
+              "Status post breast quadrantectomy"
+            ],
+            "canonical_en": "As of this time point, the patient has undergone breast quadrantectomy and is in the early postoperative inpatient management phase.",
+            "claim_id": "ward_008_cp_005_claim_003",
+            "linked_evidence_ids": [
+              "surg:001",
+              "surg:002"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "surg:001",
+              "surg:002"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Postoperative inpatient care",
+              "Routine post-surgical monitoring",
+              "Postoperative recovery management"
+            ],
+            "action_id": "ward_008_cp_005_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Provide and document routine inpatient monitoring and postoperative management after breast quadrantectomy.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Start immediately and continue until safe discharge criteria are met",
+            "indication_en": "Surgery has been completed and the patient is currently still inpatient, in a nonterminal status; recovery and postoperative complications need assessment.",
+            "linked_evidence_ids": [
+              "doc:006",
+              "doc:016",
+              "doc:021",
+              "surg:001",
+              "surg:002"
+            ],
+            "prerequisites_en": [
+              "Confirm that surgery has been completed",
+              "Conditions for postoperative clinical observation and documentation are available"
+            ],
+            "problem_en": "Early status after breast quadrantectomy.",
+            "target_and_laterality_en": "Breast surgical site; specific laterality is not currently publicly disclosed."
+          },
+          {
+            "acceptable_aliases_en": [
+              "Review final surgical pathology",
+              "Await and interpret breast specimen pathology",
+              "Pathology-directed follow-up planning"
+            ],
+            "action_id": "ward_008_cp_005_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Obtain, review, and explain the final pathology report for the surgical specimen, then assess subsequent treatment and follow-up needs.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Review as soon as possible after postoperative pathology results become available; continue waiting and management before results",
+            "indication_en": "Current pathology results have not been made public; benign or malignant nature, margins, receptor status, or staging-related information cannot be confirmed.",
+            "linked_evidence_ids": [
+              "doc:004",
+              "surg:001",
+              "surg:002"
+            ],
+            "prerequisites_en": [
+              "The surgical specimen has been sent to pathology or its pathology process can be tracked",
+              "Obtain the final pathology report"
+            ],
+            "problem_en": "Histological diagnosis of the breast mass and postoperative treatment decision-making have not yet been completed",
+            "target_and_laterality_en": "Breast quadrantectomy specimen; specific laterality is currently undisclosed"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Early monitoring and recovery management after breast quadrantectomy",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_005_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Await pathology results of the surgical specimen and necessary margin, receptor, or staging-related information",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_005_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current publicly available evidence does not provide status of vital signs, wound, drainage, pain, or complications",
+              "linked_evidence_ids": [
+                "doc:015"
+              ],
+              "state_id": "ward_008_cp_005_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Final pathology diagnosis is lacking",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_005_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Clinical information sufficient to judge postoperative recovery and suitability for discharge is lacking.",
+              "linked_evidence_ids": [
+                "doc:015"
+              ],
+              "state_id": "ward_008_cp_005_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Pathology and staging information on which to formulate subsequent oncology treatment or follow-up plans is missing.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_005_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "The patient is a 43-year-old woman hospitalized for a breast mass.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_005_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Disclosed evidence shows that quadrantectomy has been completed.",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_005_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Pathology results have not currently been disclosed; the nature of the breast mass and margin status cannot be confirmed.",
+              "linked_evidence_ids": [
+                "doc:004",
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_005_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Prior records include preoperative discussion and informed consent for breast surgery",
+              "linked_evidence_ids": [
+                "doc:006",
+                "doc:016",
+                "doc:021"
+              ],
+              "state_id": "ward_008_cp_005_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Breast mass",
+              "linked_evidence_ids": [
+                "doc:004"
+              ],
+              "state_id": "ward_008_cp_005_state_diagnoses_001",
+              "status": "confirmed_as_admission_diagnosis",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Status post breast quadrantectomy",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_005_state_diagnoses_002",
+              "status": "confirmed",
+              "supporting_evidence_ids": [
+                "surg:001",
+                "surg:002"
+              ]
+            },
+            {
+              "canonical_en": "Histologic diagnosis of breast mass",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_005_state_diagnoses_003",
+              "status": "pending",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "A breast mass cannot be directly stated as a confirmed diagnosis of breast cancer.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_005_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A surgical record cannot be interpreted as a pathological diagnosis, staging, or negative margins",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_005_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative stability, absence of complications, or readiness for discharge cannot be inferred from blank rounds documentation and preoperative documents.",
+              "linked_evidence_ids": [
+                "doc:015",
+                "doc:017"
+              ],
+              "state_id": "ward_008_cp_005_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Continue inpatient postoperative management and wait for pathology results; clinical assessment must not be stopped or directly transitioned to routine follow-up merely because surgery has been completed.",
+            "linked_evidence_ids": [
+              "surg:001",
+              "surg:002",
+              "doc:015"
+            ],
+            "state_id": "ward_008_cp_005_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Two new procedure records document that breast quadrantectomy was performed on 2124-08-05.",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_005_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The patient state changed from preoperative preparation to early postoperative inpatient management; pathology and postoperative recovery status remain unavailable.",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002",
+                "doc:015"
+              ],
+              "state_id": "ward_008_cp_005_state_required_delta_from_previous_checkpoint_002",
+              "status": "state_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "Preoperative breast surgery decision-making preparation and informed consent have been recorded.",
+              "linked_evidence_ids": [
+                "doc:006",
+                "doc:016",
+                "doc:021"
+              ],
+              "state_id": "ward_008_cp_005_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Quadrantectomy of the breast has been performed",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_005_state_resolved_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "The phase of surgical implementation has been completed; this is still insufficient to confirm completion of postoperative management or formulate a final adjuvant treatment plan.",
+            "linked_evidence_ids": [
+              "surg:001",
+              "surg:002"
+            ],
+            "state_id": "ward_008_cp_005_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Directly identify a breast mass as breast cancer or another specific pathological type",
+            "Mistaking the surgical record for pathology results or evidence of negative margins.",
+            "Claim that routine follow-up can be safely stopped or completed when postoperative recovery assessment and pathology results are lacking"
+          ],
+          "critical_omission_rules_en": [
+            "The status update that surgery has been completed must be retained",
+            "It must be made clear that pathology results have not been publicly provided or are pending",
+            "Next steps such as postoperative monitoring and pathology review must be proposed"
+          ],
+          "preliminary_risk_triggers_en": [
+            "clinical_review_required",
+            "pathology_pending",
+            "postoperative_state",
+            "not_ready_for_stopping"
+          ]
+        },
+        "stopping": {
+          "decision": "wait_for_pending_result",
+          "rationale_en": "Breast quadrantectomy has been completed, but the patient remains in the early postoperative inpatient phase. Because final pathology and postoperative recovery data are unavailable, it is not safe to stop, discharge directly, or transition to routine follow-up; postoperative management and pathology review should continue.",
+          "remaining_blockers_en": [
+            "Final surgical pathology results have not been disclosed.",
+            "Postoperative clinical recovery and conditions for safe discharge have not been disclosed",
+            "A subsequent treatment or follow-up plan cannot yet be determined from the available evidence"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_008_cp_005",
+      "question": {
+        "allowed_evidence_ids": [
+          "doc:002",
+          "doc:004",
+          "doc:005",
+          "doc:006",
+          "doc:009",
+          "doc:015",
+          "doc:016",
+          "doc:017",
+          "doc:019",
+          "doc:021",
+          "surg:001",
+          "surg:002"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "doc:020",
+          "ehr:terminal:001",
+          "img:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_008",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "unrecorded_core_biopsy_generated": false,
+            "ward_008_001_clinically_confirmed": true,
+            "ward_008_002_clinically_confirmed": true,
+            "ward_008_003_clinically_confirmed": true,
+            "ward_008_004_clinically_confirmed": true,
+            "ward_008_005_clinically_confirmed": true,
+            "ward_008_s2_node_001_completed": true,
+            "ward_008_s2_node_002_completed": true,
+            "ward_008_s2_node_003_completed": true,
+            "ward_008_s2_node_004_completed": true,
+            "ward_008_s2_node_005_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Breast mass",
+            "age_years": 43,
+            "initial_time": "2124-07-31T13:23:13.413000",
+            "setting": "inpatient_combined_breast_gynecologic_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-08-05T10:34:54",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "doc:002",
+            "doc:004",
+            "doc:005",
+            "doc:006",
+            "doc:009",
+            "doc:015",
+            "doc:016",
+            "doc:017",
+            "doc:019",
+            "doc:021",
+            "surg:001",
+            "surg:002"
+          ]
+        },
+        "public_snapshot_sha256": "122dd565aedad6c767d5b1a80b58b02bd96cc2a5291263bff741116083aecc49",
+        "public_time": "2124-08-05T10:34:54",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "action_selection"
+        ]
+      },
+      "sequence_index": 5
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "doc:002",
+            "interpretation_en": "The title indicates VTE management in surgical inpatients, but the body is empty and cannot support a specific risk or treatment conclusion.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:004",
+            "interpretation_en": "Indicates that core needle biopsy of the breast mass was part of the preoperative plan; the body is empty and provides no pathology result.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:005",
+            "interpretation_en": "Indicates documented informed consent for gynecologic surgery; the body is empty and cannot support a specific gynecologic diagnosis.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:006",
+            "interpretation_en": "Indicates a preoperative breast surgery summary exists; the body is empty and cannot establish the pathology or stage of the breast mass.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:009",
+            "interpretation_en": "Indicates a new consultation record, but the body is empty and provides no usable diagnostic or management details.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:015",
+            "interpretation_en": "Indicates a ward-round note on the operative day, but the body is empty and cannot establish postoperative vital signs, wound status, or recovery.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:016",
+            "interpretation_en": "Indicates a preoperative breast surgery discussion, but the body is empty and cannot support a specific indication or pathology diagnosis.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:017",
+            "interpretation_en": "Indicates an initial breast surgery ward-round note, but the body is empty and provides no additional clinical state information.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:019",
+            "interpretation_en": "Indicates a consultation recommendation management record, but the body is empty and its recommendations and execution cannot be determined.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "doc:021",
+            "interpretation_en": "Indicates informed consent before breast surgery; the body is empty and does not establish postoperative discharge readiness.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "surg:001",
+            "interpretation_en": "The public record shows breast quadrantectomy was performed; pathology, margin, and nodal results are not provided.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "surg:002",
+            "interpretation_en": "A second record also documents breast quadrantectomy; it is duplicate procedural evidence and does not imply a different operation.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "surg:003",
+            "interpretation_en": "The public record shows hysteroscopic diagnostic curettage was performed; diagnostic pathology is not publicly available.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "surg:004",
+            "interpretation_en": "The public record shows intrauterine device removal was performed; complications and subsequent plans are not provided.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:002",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_006_action_002"
+            ],
+            "claim_ids": [
+              "ward_008_cp_006_claim_001"
+            ],
+            "evidence_id": "doc:004",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_006_state_diagnoses_001",
+              "ward_008_cp_006_state_active_problems_003",
+              "ward_008_cp_006_state_blockers_001",
+              "ward_008_cp_006_state_critical_facts_to_retain_004",
+              "ward_008_cp_006_state_facts_to_retract_or_correct_001",
+              "ward_008_cp_006_state_facts_to_retract_or_correct_003",
+              "ward_008_cp_006_state_treatment_readiness_001",
+              "ward_008_cp_006_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:005",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_008_cp_006_claim_001"
+            ],
+            "evidence_id": "doc:006",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_006_state_diagnoses_001",
+              "ward_008_cp_006_state_active_problems_003",
+              "ward_008_cp_006_state_blockers_001",
+              "ward_008_cp_006_state_critical_facts_to_retain_004",
+              "ward_008_cp_006_state_facts_to_retract_or_correct_001",
+              "ward_008_cp_006_state_facts_to_retract_or_correct_003",
+              "ward_008_cp_006_state_treatment_readiness_001",
+              "ward_008_cp_006_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:009",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_006_action_003"
+            ],
+            "claim_ids": [],
+            "evidence_id": "doc:015",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": [
+              "ward_008_cp_006_state_active_problems_004",
+              "ward_008_cp_006_state_blockers_003",
+              "ward_008_cp_006_state_critical_facts_to_retain_004",
+              "ward_008_cp_006_state_facts_to_retract_or_correct_003",
+              "ward_008_cp_006_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:016",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:017",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:019",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:021",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_006_action_001",
+              "ward_008_cp_006_action_002",
+              "ward_008_cp_006_action_003"
+            ],
+            "claim_ids": [
+              "ward_008_cp_006_claim_001",
+              "ward_008_cp_006_claim_002"
+            ],
+            "evidence_id": "surg:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_006_state_diagnoses_001",
+              "ward_008_cp_006_state_active_problems_001",
+              "ward_008_cp_006_state_active_problems_003",
+              "ward_008_cp_006_state_active_problems_004",
+              "ward_008_cp_006_state_resolved_problems_001",
+              "ward_008_cp_006_state_blockers_001",
+              "ward_008_cp_006_state_blockers_003",
+              "ward_008_cp_006_state_critical_facts_to_retain_001",
+              "ward_008_cp_006_state_critical_facts_to_retain_004",
+              "ward_008_cp_006_state_facts_to_retract_or_correct_001",
+              "ward_008_cp_006_state_facts_to_retract_or_correct_002",
+              "ward_008_cp_006_state_required_delta_from_previous_checkpoint_002",
+              "ward_008_cp_006_state_treatment_readiness_001",
+              "ward_008_cp_006_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_006_action_001",
+              "ward_008_cp_006_action_002",
+              "ward_008_cp_006_action_003"
+            ],
+            "claim_ids": [
+              "ward_008_cp_006_claim_001",
+              "ward_008_cp_006_claim_002"
+            ],
+            "evidence_id": "surg:002",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_006_state_diagnoses_001",
+              "ward_008_cp_006_state_active_problems_001",
+              "ward_008_cp_006_state_active_problems_003",
+              "ward_008_cp_006_state_active_problems_004",
+              "ward_008_cp_006_state_resolved_problems_001",
+              "ward_008_cp_006_state_blockers_001",
+              "ward_008_cp_006_state_blockers_003",
+              "ward_008_cp_006_state_critical_facts_to_retain_001",
+              "ward_008_cp_006_state_critical_facts_to_retain_004",
+              "ward_008_cp_006_state_facts_to_retract_or_correct_001",
+              "ward_008_cp_006_state_facts_to_retract_or_correct_002",
+              "ward_008_cp_006_state_required_delta_from_previous_checkpoint_002",
+              "ward_008_cp_006_state_treatment_readiness_001",
+              "ward_008_cp_006_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_006_action_001",
+              "ward_008_cp_006_action_002",
+              "ward_008_cp_006_action_003"
+            ],
+            "claim_ids": [
+              "ward_008_cp_006_claim_003"
+            ],
+            "evidence_id": "surg:003",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_006_state_diagnoses_002",
+              "ward_008_cp_006_state_active_problems_002",
+              "ward_008_cp_006_state_active_problems_003",
+              "ward_008_cp_006_state_active_problems_004",
+              "ward_008_cp_006_state_resolved_problems_002",
+              "ward_008_cp_006_state_blockers_002",
+              "ward_008_cp_006_state_blockers_003",
+              "ward_008_cp_006_state_critical_facts_to_retain_002",
+              "ward_008_cp_006_state_critical_facts_to_retain_004",
+              "ward_008_cp_006_state_facts_to_retract_or_correct_002",
+              "ward_008_cp_006_state_required_delta_from_previous_checkpoint_001",
+              "ward_008_cp_006_state_treatment_readiness_001",
+              "ward_008_cp_006_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_006_action_001",
+              "ward_008_cp_006_action_003"
+            ],
+            "claim_ids": [
+              "ward_008_cp_006_claim_004"
+            ],
+            "evidence_id": "surg:004",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_006_state_active_problems_002",
+              "ward_008_cp_006_state_active_problems_004",
+              "ward_008_cp_006_state_resolved_problems_003",
+              "ward_008_cp_006_state_blockers_003",
+              "ward_008_cp_006_state_critical_facts_to_retain_003",
+              "ward_008_cp_006_state_critical_facts_to_retain_004",
+              "ward_008_cp_006_state_facts_to_retract_or_correct_002",
+              "ward_008_cp_006_state_required_delta_from_previous_checkpoint_001",
+              "ward_008_cp_006_state_treatment_readiness_001",
+              "ward_008_cp_006_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Final breast mass pathology pending",
+              "Breast mass diagnosis not yet pathologically confirmed"
+            ],
+            "canonical_en": "The final pathological diagnosis of the breast mass is not established by the currently available public evidence.",
+            "claim_id": "ward_008_cp_006_claim_001",
+            "linked_evidence_ids": [
+              "doc:004",
+              "doc:006",
+              "surg:001",
+              "surg:002"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "doc:004",
+              "doc:006",
+              "surg:001",
+              "surg:002"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Partial breast resection completed",
+              "Breast-conserving excision completed"
+            ],
+            "canonical_en": "Breast quadrantectomy has been completed.",
+            "claim_id": "ward_008_cp_006_claim_002",
+            "linked_evidence_ids": [
+              "surg:001",
+              "surg:002"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "surg:001",
+              "surg:002"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Diagnostic hysteroscopic curettage completed",
+              "Gynecologic pathology pending"
+            ],
+            "canonical_en": "Hysteroscopic diagnostic curettage has been completed, but its pathological diagnosis is not publicly available.",
+            "claim_id": "ward_008_cp_006_claim_003",
+            "linked_evidence_ids": [
+              "surg:003"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "surg:003"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "IUD removal completed",
+              "Intrauterine contraceptive device removed"
+            ],
+            "canonical_en": "The intrauterine device has been removed.",
+            "claim_id": "ward_008_cp_006_claim_004",
+            "linked_evidence_ids": [
+              "surg:004"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "surg:004"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Postoperative inpatient observation",
+              "Routine postoperative care"
+            ],
+            "action_id": "ward_008_cp_006_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue inpatient postoperative monitoring and routine management after breast and gynecologic surgery.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Immediately and continuously until clinical discharge criteria are met.",
+            "indication_en": "The surgical record shows that the relevant procedure has been completed, while information on postoperative recovery and complications is currently lacking.",
+            "linked_evidence_ids": [
+              "surg:001",
+              "surg:002",
+              "surg:003",
+              "surg:004"
+            ],
+            "prerequisites_en": [
+              "Postoperative assessment by the surgical team",
+              "Monitor vital signs, bleeding, pain, and the wound according to the actual clinical situation"
+            ],
+            "problem_en": "Early status after breast and gynecologic surgery.",
+            "target_and_laterality_en": "Breast surgery area and postoperative gynecological status; laterality not disclosed."
+          },
+          {
+            "acceptable_aliases_en": [
+              "Review surgical pathology",
+              "Obtain final breast and curettage pathology"
+            ],
+            "action_id": "ward_008_cp_006_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Obtain and have the breast and gynecologic specimens' pathology results interpreted by the appropriate specialists.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as results become available, as a basis for subsequent treatment and follow-up decisions",
+            "indication_en": "Current publicly available evidence only shows that the relevant procedure was completed and does not provide pathology results.",
+            "linked_evidence_ids": [
+              "doc:004",
+              "surg:001",
+              "surg:002",
+              "surg:003"
+            ],
+            "prerequisites_en": [
+              "The specimen has been sent for testing or its submission status can be confirmed by the surgical team",
+              "Specialist interpretation after results are released"
+            ],
+            "problem_en": "The final diagnoses of the breast mass and gynecological lesion are not clear",
+            "target_and_laterality_en": "Mastectomy specimen and hysteroscopic curettage specimen; laterality not disclosed"
+          },
+          {
+            "acceptable_aliases_en": [
+              "Discharge assessment and follow-up planning",
+              "Postoperative discharge and specialty follow-up"
+            ],
+            "action_id": "ward_008_cp_006_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "After confirming clinical stability, acceptable wound and bleeding status, and completing discharge assessment, arrange discharge and specialist follow-up.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "When postoperative assessment is completed and discharge criteria are met.",
+            "indication_en": "The patient is still actively hospitalized and the postoperative record body is empty; safe discharge cannot be directly determined.",
+            "linked_evidence_ids": [
+              "doc:015",
+              "surg:001",
+              "surg:002",
+              "surg:003",
+              "surg:004"
+            ],
+            "prerequisites_en": [
+              "Clinically stable.",
+              "Bleeding, infection, or other complications not requiring continued hospitalization",
+              "Clarify the pathology result acquisition and follow-up visit plan"
+            ],
+            "problem_en": "There is not yet sufficient public evidence for discharge safety and continuity-of-care arrangements.",
+            "target_and_laterality_en": "Breast surgery and gynecology follow-up; laterality not disclosed"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Early management after breast quadrantectomy.",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_006_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Management after hysteroscopic diagnostic curettage and intrauterine device removal.",
+              "linked_evidence_ids": [
+                "surg:003",
+                "surg:004"
+              ],
+              "state_id": "ward_008_cp_006_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Breast and gynecologic surgical pathology results are pending acquisition and interpretation.",
+              "linked_evidence_ids": [
+                "doc:004",
+                "doc:006",
+                "surg:001",
+                "surg:002",
+                "surg:003"
+              ],
+              "state_id": "ward_008_cp_006_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is no disclosed narrative evidence regarding postoperative complications and discharge criteria",
+              "linked_evidence_ids": [
+                "doc:015",
+                "surg:001",
+                "surg:002",
+                "surg:003",
+                "surg:004"
+              ],
+              "state_id": "ward_008_cp_006_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Final breast pathology, margins, lymph nodes, and staging information have not been disclosed.",
+              "linked_evidence_ids": [
+                "doc:004",
+                "doc:006",
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_006_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Gynecologic curettage pathology results have not been disclosed",
+              "linked_evidence_ids": [
+                "surg:003"
+              ],
+              "state_id": "ward_008_cp_006_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Lack of clinical record text that can be used to judge postoperative recovery and discharge safety",
+              "linked_evidence_ids": [
+                "doc:015",
+                "surg:001",
+                "surg:002",
+                "surg:003",
+                "surg:004"
+              ],
+              "state_id": "ward_008_cp_006_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Breast quadrantectomy has been completed.",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_006_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Hysteroscopic diagnostic curettage has been completed.",
+              "linked_evidence_ids": [
+                "surg:003"
+              ],
+              "state_id": "ward_008_cp_006_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The intrauterine device has been removed.",
+              "linked_evidence_ids": [
+                "surg:004"
+              ],
+              "state_id": "ward_008_cp_006_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current public evidence does not provide final pathology, margins, lymph nodes, or postoperative recovery details.",
+              "linked_evidence_ids": [
+                "doc:004",
+                "doc:006",
+                "doc:015",
+                "surg:001",
+                "surg:002",
+                "surg:003",
+                "surg:004"
+              ],
+              "state_id": "ward_008_cp_006_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Breast mass, with final pathological nature not clarified.",
+              "linked_evidence_ids": [
+                "doc:004",
+                "doc:006",
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_006_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Gynecologic lesion underwent diagnostic hysteroscopic curettage; pathology was not definitive.",
+              "linked_evidence_ids": [
+                "surg:003"
+              ],
+              "state_id": "ward_008_cp_006_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "A breast mass must not be directly described as confirmed breast cancer",
+              "linked_evidence_ids": [
+                "doc:004",
+                "doc:006",
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_006_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not state surgical completion as completion of all treatment, staging, or discharge management",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002",
+                "surg:003",
+                "surg:004"
+              ],
+              "state_id": "ward_008_cp_006_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A medical-record title with empty main text must not be regarded as a specific clinical result.",
+              "linked_evidence_ids": [
+                "doc:004",
+                "doc:006",
+                "doc:015"
+              ],
+              "state_id": "ward_008_cp_006_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Early stage after inpatient surgery; postoperative observation and management should continue, while awaiting pathology and other results.",
+            "linked_evidence_ids": [
+              "surg:001",
+              "surg:002",
+              "surg:003",
+              "surg:004",
+              "doc:015",
+              "doc:004",
+              "doc:006"
+            ],
+            "state_id": "ward_008_cp_006_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Hysteroscopic diagnostic curettage and intrauterine device removal records are newly available compared with the previous checkpoint.",
+              "linked_evidence_ids": [
+                "surg:003",
+                "surg:004"
+              ],
+              "state_id": "ward_008_cp_006_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Breast quadrantectomy is reconfirmed at this checkpoint; the breast surgical state changes from planned/documented to completed.",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_006_state_required_delta_from_previous_checkpoint_002",
+              "status": "state_update",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "Breast quadrantectomy has been completed.",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002"
+              ],
+              "state_id": "ward_008_cp_006_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Hysteroscopic diagnostic curettage has been completed.",
+              "linked_evidence_ids": [
+                "surg:003"
+              ],
+              "state_id": "ward_008_cp_006_state_resolved_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The intrauterine device has been removed.",
+              "linked_evidence_ids": [
+                "surg:004"
+              ],
+              "state_id": "ward_008_cp_006_state_resolved_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "The planned surgical procedure has been completed, but subsequent oncology treatment or discharge readiness cannot yet be confirmed based on current evidence.",
+            "linked_evidence_ids": [
+              "surg:001",
+              "surg:002",
+              "surg:003",
+              "surg:004",
+              "doc:004",
+              "doc:006"
+            ],
+            "state_id": "ward_008_cp_006_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Must not claim that a breast mass or gynecologic lesion has completed diagnostic closure in the absence of pathology results",
+            "Do not claim that safe discharge or transfer to follow-up alone is possible in the absence of evidence of postoperative stability and discharge assessment.",
+            "Do not interpret the operative record as negative margins, absence of complications, or completed staging"
+          ],
+          "critical_omission_rules_en": [
+            "The blocking item that breast and gynecologic pathology results are not public must be retained.",
+            "Postoperative status and complication assessment must be performed.",
+            "Pathology-result tracking and corresponding specialty follow-up must be arranged."
+          ],
+          "preliminary_risk_triggers_en": [
+            "not_safe_to_stop_now",
+            "postoperative_management_required",
+            "pathology_pending"
+          ]
+        },
+        "stopping": {
+          "decision": "wait_for_pending_result",
+          "rationale_en": "Breast quadrantectomy, hysteroscopic diagnostic curettage, and IUD removal have been completed, but pathology and postoperative recovery information are insufficient. Current management should not stop and safe discharge cannot be assumed; continue postoperative observation, track pathology, and arrange specialty follow-up once clinical discharge criteria are met.",
+          "remaining_blockers_en": [
+            "Final breast pathology, margins, lymph nodes, and staging information have not been disclosed.",
+            "Gynecologic curettage pathology results have not been disclosed",
+            "Postoperative recovery, complication screening, and discharge conditions are not confirmed by the disclosed text"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_008_cp_006",
+      "question": {
+        "allowed_evidence_ids": [
+          "doc:002",
+          "doc:004",
+          "doc:005",
+          "doc:006",
+          "doc:009",
+          "doc:015",
+          "doc:016",
+          "doc:017",
+          "doc:019",
+          "doc:021",
+          "surg:001",
+          "surg:002",
+          "surg:003",
+          "surg:004"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "doc:020",
+          "ehr:terminal:001",
+          "img:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_008",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "unrecorded_core_biopsy_generated": false,
+            "ward_008_001_clinically_confirmed": true,
+            "ward_008_002_clinically_confirmed": true,
+            "ward_008_003_clinically_confirmed": true,
+            "ward_008_004_clinically_confirmed": true,
+            "ward_008_005_clinically_confirmed": true,
+            "ward_008_006_clinically_confirmed": true,
+            "ward_008_s2_node_001_completed": true,
+            "ward_008_s2_node_002_completed": true,
+            "ward_008_s2_node_003_completed": true,
+            "ward_008_s2_node_004_completed": true,
+            "ward_008_s2_node_005_completed": true,
+            "ward_008_s2_node_006_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Breast mass",
+            "age_years": 43,
+            "initial_time": "2124-07-31T13:23:13.413000",
+            "setting": "inpatient_combined_breast_gynecologic_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-08-05T10:34:54",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "doc:002",
+            "doc:004",
+            "doc:005",
+            "doc:006",
+            "doc:009",
+            "doc:015",
+            "doc:016",
+            "doc:017",
+            "doc:019",
+            "doc:021",
+            "surg:001",
+            "surg:002",
+            "surg:003",
+            "surg:004"
+          ]
+        },
+        "public_snapshot_sha256": "62487c5a8a31d59106688db5242fc6abb76b705ff53d88c22254dc32fb6c84b1",
+        "public_time": "2124-08-05T10:34:54",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 6
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "doc:002",
+            "interpretation_en": "Provides general VTE-in-surgical-inpatients context; the patient-specific content is empty.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:004",
+            "interpretation_en": "Indicates preoperative consent for breast-mass core needle biopsy, without evidence of completion or pathology; it cannot establish the diagnosis.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:005",
+            "interpretation_en": "Documents consent for gynecologic surgery, without a specific gynecologic diagnosis or result.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:006",
+            "interpretation_en": "Preoperative breast-surgery summary; the structured clinical content is empty.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:009",
+            "interpretation_en": "New consultation record with empty structured content; it does not support a specific consultation conclusion.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:010",
+            "interpretation_en": "First postoperative breast-surgery progress note with empty content; it adds no postoperative findings.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:011",
+            "interpretation_en": "Same-day postoperative breast-surgery record with empty content; it cannot establish complications or recovery.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:015",
+            "interpretation_en": "Daily attending ward-round record with empty content.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:016",
+            "interpretation_en": "Breast-surgery preoperative discussion record with empty content.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:017",
+            "interpretation_en": "First breast-surgery attending ward-round record with empty content.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:019",
+            "interpretation_en": "Consultation recommendation management record with empty content.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "doc:020",
+            "interpretation_en": "Postoperative day-1 note: no significant discomfort; alert with fair general condition; temperature 36.5°C and regular heart rate 78/min; soft, nontender abdomen; bilateral incisions well approximated and dry without discharge, redness, or swelling. Dressing change, compression dressing, and urinary-catheter removal were performed. Same-day discharge was approved, with return in 10 working days for paraffin pathology and outpatient planning.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "doc:021",
+            "interpretation_en": "Breast-surgery informed-consent record without specific indication or pathology conclusion.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "img:001",
+            "interpretation_en": "Non-contrast MRI shows a lower-left-breast mass, scattered small bilateral cysts, and visualized internal mammary nodes; no obviously enlarged axillary nodes or skin/nipple abnormality. Contrast-enhanced MRI correlation is suggested, and benignity, malignancy, and stage cannot be determined from this study alone.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "surg:001",
+            "interpretation_en": "Records a breast quadrantectomy, without laterality, margin status, or pathology result.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "surg:002",
+            "interpretation_en": "Records another breast quadrantectomy, without laterality, margin status, or pathology result.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "surg:003",
+            "interpretation_en": "Records completion of hysteroscopic diagnostic curettage; its histologic result is not publicly available.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "surg:004",
+            "interpretation_en": "Records removal of an intrauterine contraceptive device.",
+            "role": "supporting"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:002",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_008_action_003"
+            ],
+            "claim_ids": [
+              "ward_008_cp_008_claim_003"
+            ],
+            "evidence_id": "doc:004",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_008_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_008_action_003"
+            ],
+            "claim_ids": [
+              "ward_008_cp_008_claim_005"
+            ],
+            "evidence_id": "doc:005",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:006",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:009",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:010",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:011",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:015",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:016",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:017",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:019",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_008_action_001",
+              "ward_008_cp_008_action_002",
+              "ward_008_cp_008_action_003"
+            ],
+            "claim_ids": [
+              "ward_008_cp_008_claim_001",
+              "ward_008_cp_008_claim_002",
+              "ward_008_cp_008_claim_003",
+              "ward_008_cp_008_claim_004"
+            ],
+            "evidence_id": "doc:020",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_008_state_critical_facts_to_retain_002",
+              "ward_008_cp_008_state_critical_facts_to_retain_003",
+              "ward_008_cp_008_state_critical_facts_to_retain_004",
+              "ward_008_cp_008_state_facts_to_retract_or_correct_003",
+              "ward_008_cp_008_state_treatment_readiness_001",
+              "ward_008_cp_008_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "doc:021",
+            "expected_outcome": "retrieved_but_unused",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_008_action_003"
+            ],
+            "claim_ids": [
+              "ward_008_cp_008_claim_003"
+            ],
+            "evidence_id": "img:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_008_state_facts_to_retract_or_correct_002"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_008_action_001",
+              "ward_008_cp_008_action_003"
+            ],
+            "claim_ids": [
+              "ward_008_cp_008_claim_001",
+              "ward_008_cp_008_claim_003"
+            ],
+            "evidence_id": "surg:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_008_state_critical_facts_to_retain_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_008_action_001",
+              "ward_008_cp_008_action_003"
+            ],
+            "claim_ids": [
+              "ward_008_cp_008_claim_001",
+              "ward_008_cp_008_claim_003"
+            ],
+            "evidence_id": "surg:002",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_008_state_critical_facts_to_retain_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_008_cp_008_action_003"
+            ],
+            "claim_ids": [
+              "ward_008_cp_008_claim_001",
+              "ward_008_cp_008_claim_005"
+            ],
+            "evidence_id": "surg:003",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_008_state_critical_facts_to_retain_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_008_cp_008_claim_001",
+              "ward_008_cp_008_claim_005"
+            ],
+            "evidence_id": "surg:004",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_008_cp_008_state_critical_facts_to_retain_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "completed postoperative state",
+              "postoperative day one"
+            ],
+            "canonical_en": "Breast and gynecologic procedures have been completed; the patient is on postoperative day 1.",
+            "claim_id": "ward_008_cp_008_claim_001",
+            "linked_evidence_ids": [
+              "surg:001",
+              "surg:002",
+              "surg:003",
+              "surg:004",
+              "doc:020"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "surg:001",
+              "surg:002",
+              "surg:003",
+              "surg:004",
+              "doc:020"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "stable postoperative condition",
+              "uncomplicated early postoperative recovery"
+            ],
+            "canonical_en": "As of the current public record, postoperative vital signs are stable and the incisions are healing well, with no documented incisional infection or significant abdominal complication.",
+            "claim_id": "ward_008_cp_008_claim_002",
+            "linked_evidence_ids": [
+              "doc:020"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "doc:020"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "breast mass status pending pathology",
+              "pathology-pending breast lesion"
+            ],
+            "canonical_en": "The lower-left-breast mass has undergone quadrantectomy, but paraffin pathology, benign-versus-malignant status, margins, and staging remain unavailable.",
+            "claim_id": "ward_008_cp_008_claim_003",
+            "linked_evidence_ids": [
+              "img:001",
+              "surg:001",
+              "surg:002",
+              "doc:004",
+              "doc:020"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "img:001",
+              "surg:001",
+              "surg:002",
+              "doc:004",
+              "doc:020"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "safe discharge with scheduled follow-up",
+              "disposition to outpatient follow-up"
+            ],
+            "canonical_en": "Based on the record, discharge with time-defined postoperative follow-up is appropriate; all clinical management cannot be stopped before pathology is available.",
+            "claim_id": "ward_008_cp_008_claim_004",
+            "linked_evidence_ids": [
+              "doc:020"
+            ],
+            "status": "planned",
+            "supporting_evidence_ids": [
+              "doc:020"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "gynecologic postoperative state with results pending"
+            ],
+            "canonical_en": "Gynecologic surgery and intrauterine-device removal have been completed, but related histology and the subsequent gynecologic plan are not publicly available.",
+            "claim_id": "ward_008_cp_008_claim_005",
+            "linked_evidence_ids": [
+              "surg:003",
+              "surg:004",
+              "doc:005"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "surg:003",
+              "surg:004",
+              "doc:005"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "postoperative wound monitoring",
+              "incision care"
+            ],
+            "action_id": "ward_008_cp_008_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue postoperative wound care and monitor recovery",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Continue as ordered before discharge and after discharge.",
+            "indication_en": "Breast and gynecologic surgery has been completed; the incision and general condition require observation.",
+            "linked_evidence_ids": [
+              "doc:020",
+              "surg:001",
+              "surg:002"
+            ],
+            "prerequisites_en": [
+              "Confirm that current vital signs are stable.",
+              "The patient received wound-care and abnormal-symptom instructions."
+            ],
+            "problem_en": "Early postoperative recovery.",
+            "target_and_laterality_en": "Breast surgical incision and gynecologic postoperative recovery; breast laterality is not indicated in the public surgical record"
+          },
+          {
+            "acceptable_aliases_en": [
+              "discharge with instructions",
+              "postoperative discharge"
+            ],
+            "action_id": "ward_008_cp_008_action_002",
+            "action_scope": "recorded",
+            "canonical_action_en": "Proceed with documented safe discharge and provide postoperative instructions",
+            "canonical_prohibited_action_en": null,
+            "category": "acceptable_recorded",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "The same day as shown in the current record.",
+            "indication_en": "Current records show stable vital signs, good general condition, a dry and well-approximated incision, and discharge has been approved.",
+            "linked_evidence_ids": [
+              "doc:020"
+            ],
+            "prerequisites_en": [
+              "Complete discharge assessment and medication/wound-care education.",
+              "Specify warning symptoms for return to hospital and emergency presentation."
+            ],
+            "problem_en": "Postoperative inpatient management",
+            "target_and_laterality_en": "Discharge from this hospitalization; no specific laterality involved."
+          },
+          {
+            "acceptable_aliases_en": [
+              "pathology review appointment",
+              "postoperative pathology follow-up"
+            ],
+            "action_id": "ward_008_cp_008_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Return in 10 working days to obtain paraffin pathology and bring it to breast/appropriate specialty outpatient review for the subsequent treatment or follow-up plan",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "10 working days after surgery",
+            "indication_en": "Breast pathology and related histologic results have not yet been made public; imaging and surgical records are insufficient to complete diagnosis and staging.",
+            "linked_evidence_ids": [
+              "doc:004",
+              "doc:005",
+              "doc:020",
+              "img:001",
+              "surg:001",
+              "surg:002",
+              "surg:003"
+            ],
+            "prerequisites_en": [
+              "The pathology report is complete and queryable.",
+              "Schedule an outpatient appointment with the attending physician on time"
+            ],
+            "problem_en": "The final diagnosis and subsequent treatment decision have not yet been completed.",
+            "target_and_laterality_en": "Breast mass; the disclosed record does not specify the surgical laterality; correlate with gynecological pathology if necessary."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "(The original status item has no extractable standardized text)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_008_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "(The original status item has no extractable standardized text)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_008_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "(The original status item has no extractable standardized text)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_008_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "(The original status item has no extractable standardized text)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_008_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "(The original status item has no extractable standardized text)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_008_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "On 2124-08-05, breast quadrantectomy, hysteroscopic diagnostic curettage, and intrauterine device removal were completed.",
+              "linked_evidence_ids": [
+                "surg:001",
+                "surg:002",
+                "surg:003",
+                "surg:004"
+              ],
+              "state_id": "ward_008_cp_008_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative record on 2124-08-06 shows stable vital signs, a dry incision with good approximation, and no recorded incision redness, swelling, or exudation.",
+              "linked_evidence_ids": [
+                "doc:020"
+              ],
+              "state_id": "ward_008_cp_008_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Plan to return to the hospital after 10 working days postoperatively to inquire about paraffin pathology and bring the pathology report to the attending physician's outpatient clinic.",
+              "linked_evidence_ids": [
+                "doc:020"
+              ],
+              "state_id": "ward_008_cp_008_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current disclosed evidence cannot confirm whether the breast mass is benign or malignant, or confirm margins or stage.",
+              "linked_evidence_ids": [
+                "doc:020"
+              ],
+              "state_id": "ward_008_cp_008_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "(The original status item has no extractable standardized text)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_008_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "(The original status item has no extractable standardized text)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_008_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Preoperative informed consent for core needle biopsy must not be interpreted as biopsy having been completed or biopsy pathology being available.",
+              "linked_evidence_ids": [
+                "doc:004"
+              ],
+              "state_id": "ward_008_cp_008_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not interpret no obvious axillary lymph node enlargement on imaging as no lymph node metastasis.",
+              "linked_evidence_ids": [
+                "img:001"
+              ],
+              "state_id": "ward_008_cp_008_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not interpret discharge approval on that day as all diagnostic and treatment problems having been resolved.",
+              "linked_evidence_ids": [
+                "doc:020"
+              ],
+              "state_id": "ward_008_cp_008_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Postoperatively stable, approved for discharge, transitioning to time-limited pathology-result inquiry and specialty outpatient follow-up; this is not complete cessation of management.",
+            "linked_evidence_ids": [
+              "doc:020"
+            ],
+            "state_id": "ward_008_cp_008_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "(The original status item has no extractable standardized text)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_008_state_required_delta_from_previous_checkpoint_001",
+              "status": "clinical_state_change",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "(The original status item has no extractable standardized text)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_008_state_required_delta_from_previous_checkpoint_002",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "(The original status item has no extractable standardized text)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_008_state_required_delta_from_previous_checkpoint_003",
+              "status": "no_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "(The original status item has no extractable standardized text)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_008_cp_008_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Conditions for acute postoperative discharge readiness are met in the current record; final breast diagnosis and treatment and any pathology-guided treatment are not yet ready.",
+            "linked_evidence_ids": [
+              "doc:020"
+            ],
+            "state_id": "ward_008_cp_008_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Unenhanced MRI or absence of enlarged axillary lymph nodes must not be interpreted as excluding breast cancer or metastasis.",
+            "The benign or malignant nature, margins, or staging of a breast mass must not be determined when there are no publicly available pathology results.",
+            "Arranged pathology inquiries and specialty follow-up visits must not be canceled because of discharge.",
+            "If fever, progressive wound redness/swelling or exudation, bleeding, marked pain, or worsening general condition occurs, reassessment rather than directly stopping follow-up is required."
+          ],
+          "critical_omission_rules_en": [
+            "The postoperative 10-working-day pathology inquiry and outpatient follow-up arrangement must be retained.",
+            "Postoperative wound care and indications for return to hospital for abnormal symptoms must be documented.",
+            "Breast paraffin pathology must be obtained and reviewed in subsequent decision-making; gynecologic histology results should be reviewed if necessary."
+          ],
+          "preliminary_risk_triggers_en": [
+            "The current postoperative status is stable.",
+            "Discharge and follow-up may proceed with record support.",
+            "Final pathology and the diagnostic and treatment closed loop have not been completed"
+          ]
+        },
+        "stopping": {
+          "decision": "safe_to_discharge_or_follow_up",
+          "rationale_en": "The current postoperative record shows no significant discomfort, stable vital signs, well-approximated incisions, and no signs of incisional infection, and discharge was approved. Therefore, inpatient acute monitoring may stop with transition to follow-up; the overall care process must not stop. Paraffin pathology must be obtained and reviewed at the planned 10-working-day visit to determine further treatment or follow-up.",
+          "remaining_blockers_en": [
+            "Breast paraffin pathology and final diagnosis/staging have not yet been disclosed",
+            "Breast margin status has not been disclosed",
+            "Gynecologic histology results and subsequent plan have not been disclosed."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_008_cp_008",
+      "question": {
+        "allowed_evidence_ids": [
+          "doc:002",
+          "doc:004",
+          "doc:005",
+          "doc:006",
+          "doc:009",
+          "doc:010",
+          "doc:011",
+          "doc:015",
+          "doc:016",
+          "doc:017",
+          "doc:019",
+          "doc:020",
+          "doc:021",
+          "img:001",
+          "surg:001",
+          "surg:002",
+          "surg:003",
+          "surg:004"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [],
+        "public_snapshot": {
+          "case_id": "ward_008",
+          "environment_state_facts": {
+            "both_specialty_branches_completed": true,
+            "encounter_active": true,
+            "terminal": false,
+            "unrecorded_core_biopsy_generated": false,
+            "ward_008_001_clinically_confirmed": true,
+            "ward_008_002_clinically_confirmed": true,
+            "ward_008_003_clinically_confirmed": true,
+            "ward_008_004_clinically_confirmed": true,
+            "ward_008_005_clinically_confirmed": true,
+            "ward_008_006_clinically_confirmed": true,
+            "ward_008_007_clinically_confirmed": true,
+            "ward_008_008_clinically_confirmed": true,
+            "ward_008_s2_node_001_completed": true,
+            "ward_008_s2_node_002_completed": true,
+            "ward_008_s2_node_003_completed": true,
+            "ward_008_s2_node_004_completed": true,
+            "ward_008_s2_node_005_completed": true,
+            "ward_008_s2_node_006_completed": true,
+            "ward_008_s2_node_007_completed": true,
+            "ward_008_s2_node_008_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Breast mass",
+            "age_years": 43,
+            "initial_time": "2124-07-31T13:23:13.413000",
+            "setting": "inpatient_combined_breast_gynecologic_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-08-06T08:00:00",
+          "stage": "S3",
+          "visible_evidence_ids": [
+            "doc:002",
+            "doc:004",
+            "doc:005",
+            "doc:006",
+            "doc:009",
+            "doc:010",
+            "doc:011",
+            "doc:015",
+            "doc:016",
+            "doc:017",
+            "doc:019",
+            "doc:020",
+            "doc:021",
+            "img:001",
+            "surg:001",
+            "surg:002",
+            "surg:003",
+            "surg:004"
+          ]
+        },
+        "public_snapshot_sha256": "08119ce22c97868fe60978b742b548d2453ef9b84d3c24be30d3c4c4970020a1",
+        "public_time": "2124-08-06T08:00:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 8
+    }
+  ],
+  "milestone_candidates": [
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Obtain and review breast paraffin pathology to clarify the nature of the breast mass",
+        "Complete the relevant diagnosis in conjunction with gynecologic histology results when necessary"
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_008_ms_01",
+      "milestone_type": "diagnostic_closure",
+      "name_en": "Diagnostic closure",
+      "partial_criteria_en": [
+        "Mass excision has been completed and tissue pending pathology has been obtained.",
+        "Non-contrast MRI has localized a mass in the lower left breast, but characterization has not been completed"
+      ],
+      "safety_invalidation_rules_en": [
+        "Completion must not be claimed when pathology specimens are not evaluable, results are missing, or new evidence inconsistent with the current diagnosis appears."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Complete assessments required for pathology-related staging and clarify the subsequent treatment plan"
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_008_ms_02",
+      "milestone_type": "staging_or_treatment_readiness",
+      "name_en": "Staging or treatment readiness",
+      "partial_criteria_en": [
+        "Breast surgery and preliminary imaging assessment have been completed.",
+        "No clear enlarged axillary lymph nodes are currently seen, but staging still cannot be determined."
+      ],
+      "safety_invalidation_rules_en": [
+        "Must not be marked as completed when pathology, margins, or necessary staging information is missing"
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "The currently planned breast and gynecologic surgical interventions have been completed."
+      ],
+      "current_status": "complete",
+      "milestone_id": "ward_008_ms_03",
+      "milestone_type": "definitive_intervention",
+      "name_en": "Definitive intervention",
+      "partial_criteria_en": [
+        "There are operative records for breast quadrantectomy, hysteroscopic diagnostic curettage, and intrauterine device removal."
+      ],
+      "safety_invalidation_rules_en": [
+        "If subsequent pathology indicates that additional surgery or other definitive treatment is still needed, the current completion status needs to be reassessed."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Postoperative recovery is stable and discharge care arrangements have been completed.",
+        "Pathology review and subsequent specialist plans have been clarified."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_008_ms_04",
+      "milestone_type": "postoperative_or_response_management",
+      "name_en": "Postoperative or response management",
+      "partial_criteria_en": [
+        "On postoperative day 1, vital signs were stable, the incision was in good condition, and discharge was approved",
+        "Pathology results and subsequent treatment driven by them have not yet been completed"
+      ],
+      "safety_invalidation_rules_en": [
+        "It must not be considered complete when fever, bleeding, incision infection, marked pain, or deterioration of general condition occurs."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Safe discharge and completion of clear arrangements for pathology inquiry and specialist outpatient follow-up 10 working days after surgery"
+      ],
+      "current_status": "complete",
+      "milestone_id": "ward_008_ms_05",
+      "milestone_type": "disposition_and_continuity",
+      "name_en": "Disposition and continuity of care",
+      "partial_criteria_en": [
+        "The current record has approved discharge on the same day and explicitly states the plan to return to inquire about permanent pathology and for outpatient follow-up."
+      ],
+      "safety_invalidation_rules_en": [
+        "If pathology result acquisition, follow-up arrangements, or unstable clinical conditions cannot be ensured, discharge/follow-up transition should be paused and reassessed."
+      ]
+    }
+  ],
+  "normalized_evidence": [
+    {
+      "available_time": "2124-07-31T15:46:15",
+      "available_time_utc": "2124-07-31T07:46:15Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-07-31T15:45:30",
+      "clinical_time_utc": "2124-07-31T07:45:30Z",
+      "content_summary": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "evidence_id": "doc:002",
+      "laterality": null,
+      "module": "clinical_documents",
+      "raw_content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "record_kind": "document",
+      "structured_value": null,
+      "title": "VTE in Surgical Inpatients",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-01T10:24:02",
+      "available_time_utc": "2124-08-01T02:24:02Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-01T10:23:47",
+      "clinical_time_utc": "2124-08-01T02:23:47Z",
+      "content_summary": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "evidence_id": "doc:004",
+      "laterality": null,
+      "module": "clinical_documents",
+      "raw_content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "record_kind": "document",
+      "structured_value": null,
+      "title": "Preoperative Informed Consent Form for Core Needle Biopsy of a Breast Mass",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-02T08:40:17",
+      "available_time_utc": "2124-08-02T00:40:17Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-02T08:39:37",
+      "clinical_time_utc": "2124-08-02T00:39:37Z",
+      "content_summary": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "evidence_id": "doc:005",
+      "laterality": null,
+      "module": "clinical_documents",
+      "raw_content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "record_kind": "document",
+      "structured_value": null,
+      "title": "Preoperative informed consent form for gynecologic surgery",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-02T12:59:29.887000",
+      "available_time_utc": "2124-08-02T04:59:29.887000Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-05T07:30:00",
+      "clinical_time_utc": "2124-08-04T23:30:00Z",
+      "content_summary": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "evidence_id": "doc:006",
+      "laterality": null,
+      "module": "clinical_documents",
+      "raw_content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "record_kind": "document",
+      "structured_value": null,
+      "title": "Preoperative Summary, Breast Surgery",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-01T08:08:09.347000",
+      "available_time_utc": "2124-08-01T00:08:09.347000Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-01T08:08:00",
+      "clinical_time_utc": "2124-08-01T00:08:00Z",
+      "content_summary": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "evidence_id": "doc:009",
+      "laterality": null,
+      "module": "clinical_documents",
+      "raw_content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "record_kind": "document",
+      "structured_value": null,
+      "title": "New Consultation Record",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-02T12:59:45.363000",
+      "available_time_utc": "2124-08-02T04:59:45.363000Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-05T11:34:00",
+      "clinical_time_utc": "2124-08-05T03:34:00Z",
+      "content_summary": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "evidence_id": "doc:010",
+      "laterality": null,
+      "module": "clinical_documents",
+      "raw_content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "record_kind": "document",
+      "structured_value": null,
+      "title": "First Postoperative Progress Note from Breast Surgery",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-02T13:00:08.823000",
+      "available_time_utc": "2124-08-02T05:00:08.823000Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-05T13:34:00",
+      "clinical_time_utc": "2124-08-05T05:34:00Z",
+      "content_summary": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "evidence_id": "doc:011",
+      "laterality": null,
+      "module": "clinical_documents",
+      "raw_content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "record_kind": "document",
+      "structured_value": null,
+      "title": "Breast Surgery Same-Day Postoperative Record",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-02T12:53:32.127000",
+      "available_time_utc": "2124-08-02T04:53:32.127000Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-05T07:00:00",
+      "clinical_time_utc": "2124-08-04T23:00:00Z",
+      "content_summary": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "evidence_id": "doc:015",
+      "laterality": null,
+      "module": "clinical_documents",
+      "raw_content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "record_kind": "document",
+      "structured_value": null,
+      "title": "Daily Attending Physician Ward Round Note",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-02T12:56:45.930000",
+      "available_time_utc": "2124-08-02T04:56:45.930000Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-05T07:20:00",
+      "clinical_time_utc": "2124-08-04T23:20:00Z",
+      "content_summary": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "evidence_id": "doc:016",
+      "laterality": null,
+      "module": "clinical_documents",
+      "raw_content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "record_kind": "document",
+      "structured_value": null,
+      "title": "Breast surgery preoperative discussion record",
+      "unit": null
+    },
+    {
+      "available_time": "2124-07-31T15:55:25.017000",
+      "available_time_utc": "2124-07-31T07:55:25.017000Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-01T08:00:00",
+      "clinical_time_utc": "2124-08-01T00:00:00Z",
+      "content_summary": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "evidence_id": "doc:017",
+      "laterality": null,
+      "module": "clinical_documents",
+      "raw_content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "record_kind": "document",
+      "structured_value": null,
+      "title": "First ward-round note by the attending physician of breast surgery",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-02T12:48:40.643000",
+      "available_time_utc": "2124-08-02T04:48:40.643000Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-02T08:45:00",
+      "clinical_time_utc": "2124-08-02T00:45:00Z",
+      "content_summary": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "evidence_id": "doc:019",
+      "laterality": null,
+      "module": "clinical_documents",
+      "raw_content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "record_kind": "document",
+      "structured_value": null,
+      "title": "Consultation Recommendation Management Record",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-05T13:00:49.453000",
+      "available_time_utc": "2124-08-05T05:00:49.453000Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-06T08:00:00",
+      "clinical_time_utc": "2124-08-06T00:00:00Z",
+      "content_summary": "{'chief_complaint': 'The patient reported no particular discomfort. Physical examination: The patient was alert, with fair mental status and fair general condition. Morning body temperature was 36.5 °C, heart rate 78 beats/min, with a regular rhythm. The abdomen was soft, without tenderness. Upon removal of the dressings, the bilateral surgical incisions were well approximated, dry, and without discharge or incision…",
+      "evidence_id": "doc:020",
+      "laterality": null,
+      "module": "clinical_documents",
+      "raw_content": "{'chief_complaint': 'The patient reported no particular discomfort. Physical examination: The patient was alert, with fair mental status and fair general condition. Morning body temperature was 36.5 °C, heart rate 78 beats/min, with a regular rhythm. The abdomen was soft, without tenderness. Upon removal of the dressings, the bilateral surgical incisions were well approximated, dry, and without discharge or incisional redness or swelling. Management: 1. The dressing was changed once, the wounds continued to be dressed with compression bandaging, and the patient's wound healing was closely monitored. The indwelling urinary catheter was removed. 2. At present, the patient's postoperative vital signs are stable and general condition is good; discharge today was approved. Return to the hospital 10 working days after surgery to inquire about the paraffin pathology report, and bring it to an outpatient visit with the attending physician to formulate a further diagnosis and treatment or follow-up plan', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "record_kind": "document",
+      "structured_value": null,
+      "title": "Breast Surgery Postoperative Day 1 Record",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-02T12:40:43",
+      "available_time_utc": "2124-08-02T04:40:43Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-02T12:39:34",
+      "clinical_time_utc": "2124-08-02T04:39:34Z",
+      "content_summary": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "evidence_id": "doc:021",
+      "laterality": null,
+      "module": "clinical_documents",
+      "raw_content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "record_kind": "document",
+      "structured_value": null,
+      "title": "Informed Consent Form Before Breast Surgery",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-06T08:00:00",
+      "available_time_utc": "2124-08-06T00:00:00Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-06T08:00:00",
+      "clinical_time_utc": "2124-08-06T00:00:00Z",
+      "content_summary": "During hospitalization, the documented breast quadrant excision, hysteroscopic curettage, and intrauterine device removal procedures were completed; the discharge diagnosis was a benign breast tumor, the treatment outcome was cured, and the discharge disposition was departure from the hospital per medical advice.",
+      "evidence_id": "ehr:terminal:001",
+      "laterality": null,
+      "module": "disposition",
+      "raw_content": "During hospitalization, the documented breast quadrant excision, hysteroscopic curettage, and intrauterine device removal procedures were completed; the discharge diagnosis was a benign breast tumor, the treatment outcome was cured, and the discharge disposition was departure from the hospital per medical advice.",
+      "record_kind": "ehr_derived_terminal_state",
+      "structured_value": null,
+      "title": "Final Inpatient Status and Discharge Disposition",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-05T21:17:21",
+      "available_time_utc": "2124-08-05T13:17:21Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-02T13:46:19",
+      "clinical_time_utc": "2124-08-02T05:46:19Z",
+      "content_summary": "Mass in the lower left breast; scattered small cysts in both breasts; bilateral internal mammary lymph nodes visualized. Please correlate with contrast-enhanced breast MRI. Non-contrast scan: The skin surfaces of both breasts are smooth, with no obvious thickening of the skin or areolae. Neither nipple is retracted. The subcutaneous structures have clear layers. Both breasts contain abundant dense glandular tissue a…",
+      "evidence_id": "img:001",
+      "laterality": null,
+      "module": "imaging_results",
+      "raw_content": "Mass in the lower left breast; scattered small cysts in both breasts; bilateral internal mammary lymph nodes visualized. Please correlate with contrast-enhanced breast MRI.\nNon-contrast scan: The skin surfaces of both breasts are smooth, with no obvious thickening of the skin or areolae. Neither nipple is retracted. The subcutaneous structures have clear layers. Both breasts contain abundant dense glandular tissue and are approximately symmetric. A mass is seen in the lower left breast, appearing isointense on T1W, slightly hyperintense on T2W, and slightly hyperintense on DWI. T1W and T2W show scattered punctate and round hyperintense foci in both breasts. No abnormal signal is seen in the retromammary spaces bilaterally. No obviously enlarged lymph nodes are seen in either axilla. Bilateral internal mammary lymph nodes are visualized.",
+      "record_kind": "imaging",
+      "structured_value": null,
+      "title": "Inpatient MRI",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-05T10:34:54",
+      "available_time_utc": "2124-08-05T02:34:54Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-05T07:52:54",
+      "clinical_time_utc": "2124-08-04T23:52:54Z",
+      "content_summary": "Breast quadrantectomy",
+      "evidence_id": "surg:001",
+      "laterality": null,
+      "module": "procedure_records",
+      "raw_content": "Breast quadrantectomy",
+      "record_kind": "surgery",
+      "structured_value": null,
+      "title": "Breast quadrantectomy",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-05T10:34:36",
+      "available_time_utc": "2124-08-05T02:34:36Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-05T07:52:36",
+      "clinical_time_utc": "2124-08-04T23:52:36Z",
+      "content_summary": "Breast quadrantectomy",
+      "evidence_id": "surg:002",
+      "laterality": null,
+      "module": "procedure_records",
+      "raw_content": "Breast quadrantectomy",
+      "record_kind": "surgery",
+      "structured_value": null,
+      "title": "Breast quadrantectomy",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-05T10:34:06",
+      "available_time_utc": "2124-08-05T02:34:06Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-05T07:52:06",
+      "clinical_time_utc": "2124-08-04T23:52:06Z",
+      "content_summary": "Hysteroscopic diagnostic curettage",
+      "evidence_id": "surg:003",
+      "laterality": null,
+      "module": "procedure_records",
+      "raw_content": "Hysteroscopic diagnostic curettage",
+      "record_kind": "surgery",
+      "structured_value": null,
+      "title": "Hysteroscopic diagnostic curettage",
+      "unit": null
+    },
+    {
+      "available_time": "2124-08-05T10:34:29",
+      "available_time_utc": "2124-08-05T02:34:29Z",
+      "case_id": "ward_008",
+      "clinical_time": "2124-08-05T07:52:29",
+      "clinical_time_utc": "2124-08-04T23:52:29Z",
+      "content_summary": "Intrauterine contraceptive device removal",
+      "evidence_id": "surg:004",
+      "laterality": null,
+      "module": "procedure_records",
+      "raw_content": "Intrauterine contraceptive device removal",
+      "record_kind": "surgery",
+      "structured_value": null,
+      "title": "Intrauterine Device Removal",
+      "unit": null
+    }
+  ],
+  "process_gold": {
+    "status": "source_recorded_not_layer_gold_clinically_validated",
+    "transition_count": 9,
+    "transitions": [
+      {
+        "clock_after": "2124-07-31T15:46:15",
+        "clock_before": "2124-07-31T13:23:13.413000",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "admission and vte risk review"
+          ],
+          "action_id": "ehr:ward_008:ward_008_s2_node_001",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [
+            "ward_008_evt_001",
+            "ward_008_evt_002"
+          ],
+          "source_evidence_ids": [
+            "doc:002"
+          ],
+          "target": "admission_and_vte_risk_review"
+        },
+        "release_evidence_ids": [
+          "doc:002"
+        ],
+        "sequence_index": 0,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_008_001_clinically_confirmed": true,
+          "ward_008_s2_node_001_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_008_s2_node_001"
+      },
+      {
+        "clock_after": "2124-08-01T08:08:09.347000",
+        "clock_before": "2124-07-31T15:46:15",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "breast and multispecialty admission assessment"
+          ],
+          "action_id": "ehr:ward_008:ward_008_s2_node_002",
+          "action_type": "request_consultation",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [
+            "ward_008_evt_003",
+            "ward_008_evt_004"
+          ],
+          "source_evidence_ids": [
+            "doc:009",
+            "doc:017"
+          ],
+          "target": "breast_and_multispecialty_admission_assessment"
+        },
+        "release_evidence_ids": [
+          "doc:009",
+          "doc:017"
+        ],
+        "sequence_index": 1,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_008_002_clinically_confirmed": true,
+          "ward_008_s2_node_002_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_008_s2_node_002"
+      },
+      {
+        "clock_after": "2124-08-01T10:24:02",
+        "clock_before": "2124-08-01T08:08:09.347000",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "core biopsy consent without recorded biopsy action"
+          ],
+          "action_id": "ehr:ward_008:ward_008_s2_node_003",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [
+            "ward_008_evt_005",
+            "ward_008_evt_006",
+            "ward_008_evt_007"
+          ],
+          "source_evidence_ids": [
+            "doc:004"
+          ],
+          "target": "core_biopsy_consent_without_recorded_biopsy_action"
+        },
+        "release_evidence_ids": [
+          "doc:004"
+        ],
+        "sequence_index": 2,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "unrecorded_core_biopsy_generated": false,
+          "ward_008_003_clinically_confirmed": true,
+          "ward_008_s2_node_003_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_008_s2_node_003"
+      },
+      {
+        "clock_after": "2124-08-05T07:30:00",
+        "clock_before": "2124-08-01T10:24:02",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "combined breast and gynecologic surgery readiness"
+          ],
+          "action_id": "ehr:ward_008:ward_008_s2_node_004",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [
+            "ward_008_evt_008",
+            "ward_008_evt_009",
+            "ward_008_evt_010"
+          ],
+          "source_evidence_ids": [
+            "doc:005",
+            "doc:006",
+            "doc:015",
+            "doc:016",
+            "doc:019",
+            "doc:021"
+          ],
+          "target": "combined_breast_and_gynecologic_surgery_readiness"
+        },
+        "release_evidence_ids": [
+          "doc:005",
+          "doc:006",
+          "doc:015",
+          "doc:016",
+          "doc:019",
+          "doc:021"
+        ],
+        "sequence_index": 3,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_008_004_clinically_confirmed": true,
+          "ward_008_s2_node_004_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_008_s2_node_004"
+      },
+      {
+        "clock_after": "2124-08-05T10:34:54",
+        "clock_before": "2124-08-05T07:30:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "paired recorded breast quadrant excisions without site overbinding"
+          ],
+          "action_id": "ehr:ward_008:ward_008_s2_node_005",
+          "action_type": "perform_procedure",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [
+            "ward_008_evt_012"
+          ],
+          "source_evidence_ids": [
+            "surg:001",
+            "surg:002"
+          ],
+          "target": "paired_recorded_breast_quadrant_excisions_without_site_overbinding"
+        },
+        "release_evidence_ids": [
+          "surg:001",
+          "surg:002"
+        ],
+        "sequence_index": 4,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_008_005_clinically_confirmed": true,
+          "ward_008_s2_node_005_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_008_s2_node_005"
+      },
+      {
+        "clock_after": "2124-08-05T10:34:54",
+        "clock_before": "2124-08-05T10:34:54",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "diagnostic hysteroscopic curettage and iud removal"
+          ],
+          "action_id": "ehr:ward_008:ward_008_s2_node_006",
+          "action_type": "perform_procedure",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "surg:003",
+            "surg:004"
+          ],
+          "target": "diagnostic_hysteroscopic_curettage_and_iud_removal"
+        },
+        "release_evidence_ids": [
+          "surg:003",
+          "surg:004"
+        ],
+        "sequence_index": 5,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_008_006_clinically_confirmed": true,
+          "ward_008_s2_node_006_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_008_s2_node_006"
+      },
+      {
+        "clock_after": "2124-08-06T08:00:00",
+        "clock_before": "2124-08-05T10:34:54",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "post breast and gynecologic surgery status"
+          ],
+          "action_id": "ehr:ward_008:ward_008_s2_node_007",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [
+            "ward_008_evt_011",
+            "ward_008_evt_013"
+          ],
+          "source_evidence_ids": [
+            "doc:010",
+            "doc:011",
+            "doc:020"
+          ],
+          "target": "post_breast_and_gynecologic_surgery_status"
+        },
+        "release_evidence_ids": [
+          "doc:010",
+          "doc:011",
+          "doc:020"
+        ],
+        "sequence_index": 6,
+        "stage_after": "S3",
+        "stage_before": "S2",
+        "state_updates": {
+          "both_specialty_branches_completed": true,
+          "ward_008_007_clinically_confirmed": true,
+          "ward_008_s2_node_007_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_008_s2_node_007"
+      },
+      {
+        "clock_after": "2124-08-06T08:00:00",
+        "clock_before": "2124-08-06T08:00:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "late available breast mri"
+          ],
+          "action_id": "ehr:ward_008:ward_008_s2_node_008",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [
+            "ward_008_evt_014"
+          ],
+          "source_evidence_ids": [
+            "img:001"
+          ],
+          "target": "late_available_breast_mri"
+        },
+        "release_evidence_ids": [
+          "img:001"
+        ],
+        "sequence_index": 7,
+        "stage_after": "S3",
+        "stage_before": "S3",
+        "state_updates": {
+          "ward_008_008_clinically_confirmed": true,
+          "ward_008_s2_node_008_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_008_s2_node_008"
+      },
+      {
+        "clock_after": "2124-08-06T08:00:00",
+        "clock_before": "2124-08-06T08:00:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [
+            "discharge_patient",
+            "end_episode"
+          ],
+          "accepted_target_aliases": [
+            "Discharged per medical advice",
+            "discharge home"
+          ],
+          "action_id": "ehr:ward_008:discharge",
+          "action_type": "discharge",
+          "gold_source_type": "ehr_derived_terminal_gold",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [],
+          "target": "home_after_combined_breast_gynecologic_surgery"
+        },
+        "release_evidence_ids": [
+          "ehr:terminal:001"
+        ],
+        "sequence_index": 8,
+        "stage_after": "S3",
+        "stage_before": "S3",
+        "state_updates": {
+          "disposition": "Discharged per medical advice",
+          "encounter_active": false,
+          "terminal": true
+        },
+        "terminal": true,
+        "transition_id": "ward_008_s3_terminal_001"
+      }
+    ]
+  },
+  "schema_version": "ward-runtime-gold-1.0",
+  "gold_version": "ward-anonymous-runtime-1.0"
+}

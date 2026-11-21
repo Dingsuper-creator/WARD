@@ -1,0 +1,83 @@
+{
+  "graph_version": "ward-patient-ehr-action-graph-0.3.0",
+  "status": "development_non_official",
+  "case_id": "ward_001",
+  "scenario_sha256": "b066e0b43c0674e3fdcf13e035bab5e18dda5608fe814c2607015917515ec5c0",
+  "action_interface_sha256": "b1a7b48e924ef81ecab70b8238ac9a13ee67872bb2b40ba25651c349d481dd64",
+  "action_ontology_sha256": "3074e22c849a792a48e62d46f7f2b621d39838a66acd6e97cec0d855c7f144c6",
+  "nodes": {
+    "ward_001_transition_000": {
+      "requires": []
+    },
+    "ward_001_transition_001": {
+      "requires": [
+        "ward_001_transition_000"
+      ]
+    },
+    "ward_001_transition_002": {
+      "requires": [
+        "ward_001_transition_001"
+      ]
+    },
+    "ward_001_transition_003": {
+      "requires": [
+        "ward_001_transition_002"
+      ]
+    },
+    "ward_001_transition_004": {
+      "requires": [
+        "ward_001_transition_002"
+      ]
+    },
+    "ward_001_transition_005": {
+      "requires": [
+        "ward_001_transition_002"
+      ]
+    },
+    "ward_001_transition_006": {
+      "requires": [
+        "ward_001_transition_004"
+      ]
+    },
+    "ward_001_transition_007": {
+      "requires": [
+        "ward_001_transition_004"
+      ]
+    },
+    "ward_001_transition_008": {
+      "requires": [
+        "ward_001_transition_006"
+      ]
+    },
+    "ward_001_transition_009": {
+      "requires": [
+        "ward_001_transition_007"
+      ]
+    },
+    "ward_001_transition_010": {
+      "requires": [
+        "ward_001_transition_003",
+        "ward_001_transition_005",
+        "ward_001_transition_008",
+        "ward_001_transition_009"
+      ]
+    },
+    "ward_001_transition_011": {
+      "requires": [
+        "ward_001_transition_010"
+      ]
+    }
+  },
+  "policy": {
+    "multiple_recorded_actions_may_be_available": true,
+    "recorded_sequence_index_is_not_a_required_execution_order": true,
+    "prerequisites_are_enforced": true,
+    "environment_clock_never_moves_backward": true,
+    "counterfactual_outcomes_invented": false
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

@@ -1,0 +1,173 @@
+{
+  "graph_version": "ward-patient-ehr-action-graph-0.3.0",
+  "status": "development_non_official",
+  "case_id": "ward_005",
+  "scenario_sha256": "1ab60e04f14f902300082d9d90776481fb69642d373e16a96383c97495ca70eb",
+  "action_interface_sha256": "c0641f53155983d59540ab762a6bd409af2f19bfd91c70cbe23219a59e2d3188",
+  "action_ontology_sha256": "71c7acec7a01bbc5efca56a5ec7d0158292d66554b9bc2f56a9145c349bdf279",
+  "nodes": {
+    "ward_005_s2_node_001": {
+      "requires": []
+    },
+    "ward_005_s2_node_002": {
+      "requires": [
+        "ward_005_s2_node_001"
+      ]
+    },
+    "ward_005_s2_node_003": {
+      "requires": [
+        "ward_005_s2_node_001",
+        "ward_005_s2_node_002"
+      ]
+    },
+    "ward_005_s2_node_004": {
+      "requires": [
+        "ward_005_s2_node_003"
+      ]
+    },
+    "ward_005_s2_node_005": {
+      "requires": [
+        "ward_005_s2_node_003",
+        "ward_005_s2_node_004"
+      ]
+    },
+    "ward_005_s2_node_006": {
+      "requires": [
+        "ward_005_s2_node_005"
+      ]
+    },
+    "ward_005_s2_node_007": {
+      "requires": [
+        "ward_005_s2_node_005"
+      ]
+    },
+    "ward_005_s2_node_008": {
+      "requires": [
+        "ward_005_s2_node_006"
+      ]
+    },
+    "ward_005_s2_node_009": {
+      "requires": [
+        "ward_005_s2_node_005"
+      ]
+    },
+    "ward_005_s2_node_010": {
+      "requires": [
+        "ward_005_s2_node_008"
+      ]
+    },
+    "ward_005_s2_node_011": {
+      "requires": [
+        "ward_005_s2_node_009",
+        "ward_005_s2_node_010"
+      ]
+    },
+    "ward_005_s2_node_012": {
+      "requires": [
+        "ward_005_s2_node_011"
+      ]
+    },
+    "ward_005_s2_node_013": {
+      "requires": [
+        "ward_005_s2_node_011"
+      ]
+    },
+    "ward_005_s2_node_014": {
+      "requires": [
+        "ward_005_s2_node_011"
+      ]
+    },
+    "ward_005_s2_node_015": {
+      "requires": [
+        "ward_005_s2_node_009",
+        "ward_005_s2_node_011",
+        "ward_005_s2_node_012",
+        "ward_005_s2_node_013",
+        "ward_005_s2_node_014"
+      ]
+    },
+    "ward_005_s2_node_016": {
+      "requires": [
+        "ward_005_s2_node_015"
+      ]
+    },
+    "ward_005_s2_node_017": {
+      "requires": [
+        "ward_005_s2_node_015",
+        "ward_005_s2_node_016"
+      ]
+    },
+    "ward_005_s2_node_018": {
+      "requires": [
+        "ward_005_s2_node_015",
+        "ward_005_s2_node_016",
+        "ward_005_s2_node_017"
+      ]
+    },
+    "ward_005_s2_node_019": {
+      "requires": [
+        "ward_005_s2_node_017",
+        "ward_005_s2_node_018"
+      ]
+    },
+    "ward_005_s2_node_020": {
+      "requires": [
+        "ward_005_s2_node_019"
+      ]
+    },
+    "ward_005_s2_node_021": {
+      "requires": [
+        "ward_005_s2_node_011",
+        "ward_005_s2_node_020"
+      ]
+    },
+    "ward_005_s2_node_022": {
+      "requires": [
+        "ward_005_s2_node_021"
+      ]
+    },
+    "ward_005_s2_node_023": {
+      "requires": [
+        "ward_005_s2_node_021",
+        "ward_005_s2_node_022"
+      ]
+    },
+    "ward_005_s2_node_024": {
+      "requires": [
+        "ward_005_s2_node_022",
+        "ward_005_s2_node_023"
+      ]
+    },
+    "ward_005_s2_node_025": {
+      "requires": [
+        "ward_005_s2_node_024"
+      ]
+    },
+    "ward_005_s2_node_026": {
+      "requires": [
+        "ward_005_s2_node_025"
+      ]
+    },
+    "ward_005_s3_terminal_001": {
+      "requires": [
+        "ward_005_s2_node_026"
+      ]
+    }
+  },
+  "policy": {
+    "multiple_recorded_actions_may_be_available": true,
+    "recorded_sequence_index_is_not_a_required_execution_order": true,
+    "prerequisites_are_enforced": true,
+    "environment_clock_never_moves_backward": true,
+    "counterfactual_outcomes_invented": false,
+    "breast_primary_and_nodal_dependencies_separated": true,
+    "negative_cytology_not_hard_prerequisite": true,
+    "t4_workup_nonblocking_and_separate": true,
+    "late_imaging_not_retroactive": true
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

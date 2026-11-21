@@ -1,0 +1,264 @@
+{
+  "schema_version": "ward-data-manifest-1.0",
+  "track": "longitudinal",
+  "dataset_kind": "clinical_runtime_copy",
+  "status": "local_anonymous_successor",
+  "case_count": 40,
+  "case_ids": [
+    "ward_001",
+    "ward_002",
+    "ward_003",
+    "ward_004",
+    "ward_005",
+    "ward_006",
+    "ward_007",
+    "ward_008",
+    "ward_009",
+    "ward_010",
+    "ward_011",
+    "ward_012",
+    "ward_013",
+    "ward_014",
+    "ward_015",
+    "ward_016",
+    "ward_017",
+    "ward_018",
+    "ward_019",
+    "ward_020",
+    "ward_021",
+    "ward_022",
+    "ward_023",
+    "ward_024",
+    "ward_025",
+    "ward_026",
+    "ward_027",
+    "ward_028",
+    "ward_029",
+    "ward_030",
+    "ward_031",
+    "ward_032",
+    "ward_033",
+    "ward_034",
+    "ward_035",
+    "ward_036",
+    "ward_037",
+    "ward_038",
+    "ward_039",
+    "ward_040"
+  ],
+  "clinical_translation_performed": true,
+  "date_shift_performed": false,
+  "structured_date_offset_years": 0,
+  "translation_method": "approved_evidence_id_alignment_and_reviewed_short_text",
+  "identity_metadata_removed": true,
+  "source_archive_modified": false,
+  "source_policy_sha256": "ba5415e253fbda0401ae0a7c2937d467a21f84d169772b0a2116019409a514f1",
+  "transformation_counts": {
+    "literal_replacements": 3,
+    "pattern_replacements": 0,
+    "metadata_fields_removed": 3360,
+    "duplicate_language_fields_removed": 593
+  },
+  "files": [
+    {
+      "path": "cases/ward_001.gold.json",
+      "sha256": "fbd81f1702d2123cebcf8da52744f7870840c6152850d56e2c5206f44065091c",
+      "size_bytes": 427283
+    },
+    {
+      "path": "cases/ward_002.gold.json",
+      "sha256": "a0ca1da10f90f0844bc7b42a32f2568367e56a76cc5393bd77bdd5ce306ba90c",
+      "size_bytes": 351232
+    },
+    {
+      "path": "cases/ward_003.gold.json",
+      "sha256": "d143405721076b5a42b2942a82c8a4cde5951e47fdbec4622ef094458fd23578",
+      "size_bytes": 208022
+    },
+    {
+      "path": "cases/ward_004.gold.json",
+      "sha256": "1242ff119db99686f60ad032ec35b44e63429422e5b4d652c4b8c464477477a2",
+      "size_bytes": 264015
+    },
+    {
+      "path": "cases/ward_005.gold.json",
+      "sha256": "0fc45509f3c9f82321115ef9d0fbbae81f033fbbc0b1c4b9d0d28a577fd1123e",
+      "size_bytes": 349987
+    },
+    {
+      "path": "cases/ward_006.gold.json",
+      "sha256": "9448846aba3392fb2180c8b8d30acded6d5d4732879277042527ee4a1b284a1c",
+      "size_bytes": 172934
+    },
+    {
+      "path": "cases/ward_007.gold.json",
+      "sha256": "59f03d6987805c78d0672aab4f2a8df2224fff8cf8b7c5828b02219789966b9f",
+      "size_bytes": 192322
+    },
+    {
+      "path": "cases/ward_008.gold.json",
+      "sha256": "c0f4dabffb91bfb12af2d1ed123272c7bb232da1956528e7290b9c604511ff58",
+      "size_bytes": 159668
+    },
+    {
+      "path": "cases/ward_009.gold.json",
+      "sha256": "507fb0da1df9a838bcd0033966bc131d0a9fbb9011e7d2b003f6f0febfbbe736",
+      "size_bytes": 162189
+    },
+    {
+      "path": "cases/ward_010.gold.json",
+      "sha256": "ea756f214f79cb21ab3d6f0083f9147f23aba40c8111583dcfb2b844ed192151",
+      "size_bytes": 218516
+    },
+    {
+      "path": "cases/ward_011.gold.json",
+      "sha256": "3ae19cbaaeab3dce7c61380f0896b9bbdecbeecc7b47179ddddbc2c257cff465",
+      "size_bytes": 255789
+    },
+    {
+      "path": "cases/ward_012.gold.json",
+      "sha256": "e9700e5cfffa11f9dd956697e5522d1193281adfbd19abfa33985395c45d3445",
+      "size_bytes": 215096
+    },
+    {
+      "path": "cases/ward_013.gold.json",
+      "sha256": "3969b91226595a57dc31076ddcadf6fcd361ee817e823e75d85fad8c9d712f19",
+      "size_bytes": 272022
+    },
+    {
+      "path": "cases/ward_014.gold.json",
+      "sha256": "9e061172cb47dbae86182ae79eb83065605254c17d7a4ce5995b12ad7f76fef3",
+      "size_bytes": 202314
+    },
+    {
+      "path": "cases/ward_015.gold.json",
+      "sha256": "71e1d1e986ebc82ca33859c9cae53b61cffbd928a8ec6ed99ccc44c031bc5052",
+      "size_bytes": 285490
+    },
+    {
+      "path": "cases/ward_016.gold.json",
+      "sha256": "79372150bcdb1afb53337a59381e49c9621f288a1e96006cc5b4651695b8b7ee",
+      "size_bytes": 146096
+    },
+    {
+      "path": "cases/ward_017.gold.json",
+      "sha256": "42ff9d66f0b143802f16881e69b58ab3157e9485da24541c8d96c0a48c42e97a",
+      "size_bytes": 162195
+    },
+    {
+      "path": "cases/ward_018.gold.json",
+      "sha256": "fb3190dc3ec753667d64f160c43ec0d243b139001a18c4990d624e2cfca8331a",
+      "size_bytes": 169052
+    },
+    {
+      "path": "cases/ward_019.gold.json",
+      "sha256": "11216535e13c4b65a45ec6a9f131fb79b46019f47cb85f0b2c45b353d3c9c150",
+      "size_bytes": 145528
+    },
+    {
+      "path": "cases/ward_020.gold.json",
+      "sha256": "487cac63c38e69d23ea121bdb7c740a9df03031d964be087053b5b99b31870a0",
+      "size_bytes": 187028
+    },
+    {
+      "path": "cases/ward_021.gold.json",
+      "sha256": "52eb40ab0f90577c2caa29d66a2eaae5b096e8d0b5739e298c5c1b8c1aa0b695",
+      "size_bytes": 211872
+    },
+    {
+      "path": "cases/ward_022.gold.json",
+      "sha256": "56fde43306f2ea9bd12bb5535ecbf1f2a605738e45c195750ca9165681b9a7fb",
+      "size_bytes": 310757
+    },
+    {
+      "path": "cases/ward_023.gold.json",
+      "sha256": "c5ca3182c4c8e06639db951da5913a41d1f03afe04d20fbbbed835d02bdeda2a",
+      "size_bytes": 126931
+    },
+    {
+      "path": "cases/ward_024.gold.json",
+      "sha256": "ccfd480fc3e75d7ec44770d02eeb0e7d5dd7846139775ff603bb82a663b3c8d8",
+      "size_bytes": 184890
+    },
+    {
+      "path": "cases/ward_025.gold.json",
+      "sha256": "e29bd3e3bd7513595f77749a38f1962f6be1874139f886871e9675aeaf647d58",
+      "size_bytes": 99918
+    },
+    {
+      "path": "cases/ward_026.gold.json",
+      "sha256": "012024becca4bf792e7c906cdf35285550217fa348743a094d46023e08a1e966",
+      "size_bytes": 373941
+    },
+    {
+      "path": "cases/ward_027.gold.json",
+      "sha256": "a0fb365633a29126337cb1ae6c66d1bc70236c314f5865919f073391be20ca60",
+      "size_bytes": 202476
+    },
+    {
+      "path": "cases/ward_028.gold.json",
+      "sha256": "f8ae1ef3c6e6291c574323ef5c88051d0c99c916106d41e98379ecab623a9804",
+      "size_bytes": 192059
+    },
+    {
+      "path": "cases/ward_029.gold.json",
+      "sha256": "f9223232f57d3b9ce5afa1334a0acdf01dfcfe8a7f34ccee7eb769fb643b7d37",
+      "size_bytes": 182405
+    },
+    {
+      "path": "cases/ward_030.gold.json",
+      "sha256": "b795db05e4626667b36ae5679205a2f30b035959fc18920253fde88923433a3a",
+      "size_bytes": 137568
+    },
+    {
+      "path": "cases/ward_031.gold.json",
+      "sha256": "ff4831147f48afbb35aed4770216e60f70b16d3a54a40f74367b6354ede6a00a",
+      "size_bytes": 294278
+    },
+    {
+      "path": "cases/ward_032.gold.json",
+      "sha256": "fb45c073b3a5a540c8bdfc3e03d494336b0f97703c9f57075d306e25346044f9",
+      "size_bytes": 169403
+    },
+    {
+      "path": "cases/ward_033.gold.json",
+      "sha256": "331af1784a6c53b94a4b75ecd48f3d65855d928bf4103b7ef7197640bd791150",
+      "size_bytes": 362424
+    },
+    {
+      "path": "cases/ward_034.gold.json",
+      "sha256": "afdb7910dd11155b818944dcb65e65db1e1df3ff33a9c17ea06ac2f4fff93882",
+      "size_bytes": 119857
+    },
+    {
+      "path": "cases/ward_035.gold.json",
+      "sha256": "640ff4e4b7050ef9d8446accf132f154b8090191288f36c2b76428bc21a43cfa",
+      "size_bytes": 118341
+    },
+    {
+      "path": "cases/ward_036.gold.json",
+      "sha256": "2c8a519152ebab9d8e4f9d31608256c80723ee0e64cc7924d198a2b8a325e609",
+      "size_bytes": 167819
+    },
+    {
+      "path": "cases/ward_037.gold.json",
+      "sha256": "497b6bc1aca2052bdd68fb7ad3e57f3a42a660c806870eb0b0a1bcf7be726ea2",
+      "size_bytes": 193908
+    },
+    {
+      "path": "cases/ward_038.gold.json",
+      "sha256": "738f3f90cb31f9970a532905353b6019db496f3438dc930b81ece780b7bdbcab",
+      "size_bytes": 184894
+    },
+    {
+      "path": "cases/ward_039.gold.json",
+      "sha256": "34693e030b5a3b482aa2ac8a9657aaeb752c12f7d6ed0f625bac93d504c2078e",
+      "size_bytes": 218630
+    },
+    {
+      "path": "cases/ward_040.gold.json",
+      "sha256": "d276395397886269f9df1bcd3ccefbe5df5b99c6f385637c8871072b1cdccc95",
+      "size_bytes": 403158
+    }
+  ]
+}

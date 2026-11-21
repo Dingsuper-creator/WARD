@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ward.example/schemas/judge_run_manifest.v1.schema.json",
+  "title": "WARD Judge run manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "protocol_version", "run_id", "judge_id", "provider", "api_family", "endpoint", "requested_model", "effective_model", "dataset_sha256", "prompt_sha256", "response_schema_sha256", "sampling_parameters", "model_manifest_sha256", "batch_size", "max_concurrency", "resumed_request_count", "terminal_request_count", "response_selection_policy_version", "canonical_policy", "recovery_request_count", "adapter_sha256", "adapter_argv", "attempts", "response_ids", "started_at", "completed_at"],
+  "properties": {
+    "schema_version": {"const": "ward-judge-run-manifest-1.0"},
+    "protocol_version": {"const": "ward-semantic-judge-1.0"},
+    "run_id": {"type": "string", "minLength": 1},
+    "judge_id": {"enum": ["judge_a", "judge_b"]},
+    "provider": {"type": "string", "minLength": 1},
+    "api_family": {"type": "string", "minLength": 1},
+    "endpoint": {"type": "string", "minLength": 1},
+    "requested_model": {"type": "string", "minLength": 1},
+    "effective_model": {"type": "string", "minLength": 1},
+    "dataset_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "prompt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "response_schema_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "sampling_parameters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["temperature", "seed"],
+      "properties": {
+        "temperature": {"type": ["number", "null"]},
+        "top_p": {"type": ["number", "null"]},
+        "seed": {"type": ["string", "integer", "null"]},
+        "reasoning_effort": {"enum": [null, "none", "low", "medium", "high", "xhigh", "max"]},
+        "store": {"type": ["boolean", "null"]},
+        "max_output_tokens": {"type": ["integer", "null"], "minimum": 1},
+        "max_tokens": {"type": ["integer", "null"], "minimum": 1},
+        "thinking": {"type": ["object", "null"]},
+        "enable_thinking": {"type": ["boolean", "null"]},
+        "response_format": {"type": ["object", "null"]},
+        "service_tier": {"type": ["string", "null"]}
+      }
+    },
+    "model_manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "batch_size": {"const": 20},
+    "max_concurrency": {"type": "integer", "minimum": 1},
+    "resumed_request_count": {"type": "integer", "minimum": 0},
+    "terminal_request_count": {"type": "integer", "minimum": 0},
+    "response_selection_policy_version": {"const": "ward-judge-item-first-valid-1.0"},
+    "canonical_policy": {"const": "first_valid_item"},
+    "recovery_request_count": {"type": "integer", "minimum": 0},
+    "adapter_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "adapter_argv": {"type": "array", "items": {"type": "string"}},
+    "attempts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["request_id", "run_kind", "attempt"],
+        "properties": {
+          "request_id": {"type": "string"},
+          "run_kind": {"enum": ["canonical", "repeat"]},
+          "attempt": {"type": ["integer", "string"]},
+          "exit_code": {"type": ["integer", "null"]},
+          "transport_error": {"type": ["string", "null"]},
+          "duration_ms": {"type": "number"},
+          "request_sha256": {"type": "string"},
+          "system_prompt_sha256": {"type": "string"},
+          "input_batch_sha256": {"type": "string"},
+          "response_schema_sha256": {"type": "string"},
+          "raw_stdout_sha256": {"type": "string"},
+          "raw_stderr_sha256": {"type": "string"},
+          "audit_file": {"type": "string"},
+          "status": {"type": "string"},
+          "issues": {"type": "array", "items": {"type": "string"}},
+          "provider_metadata_issues": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "response_ids": {"type": "array", "items": {"type": ["string", "null"]}},
+    "started_at": {"type": "string", "minLength": 1},
+    "completed_at": {"type": "string", "minLength": 1}
+  }
+}

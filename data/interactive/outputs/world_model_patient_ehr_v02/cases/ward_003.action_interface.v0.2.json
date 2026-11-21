@@ -1,0 +1,48 @@
+{
+  "interface_version": "ward-patient-ehr-action-interface-0.2.0",
+  "status": "development_non_official",
+  "case_id": "ward_003",
+  "scenario_path": "outputs/world_model_patient_ehr_v01/cases/ward_003.patient_ehr.json",
+  "scenario_sha256": "cf1dadad50b527a0cec67bae6ca4033e5432014c5207e6a3e92031c205709937",
+  "ontology_path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_003.v0.2.json",
+  "ontology_sha256": "fbe183ee8f3af214f663c71e698af06cd97ca922138c6bfa731b559f45a787b0",
+  "public_capabilities": [
+    "communicate_with_patient",
+    "review_ehr_documents",
+    "order_diagnostic_tests",
+    "review_results",
+    "request_consultation",
+    "manage_treatment",
+    "perform_procedures",
+    "monitor_or_defer",
+    "manage_disposition"
+  ],
+  "transition_concepts": {
+    "ward_003_s2_node_001": "ehr.thyroid_admission_and_vte_assessment",
+    "ward_003_s2_node_002": "diagnostic.thyroid_and_neck_ultrasound",
+    "ward_003_s2_node_003": "ehr.late_available_thyroid_and_node_fna_consent",
+    "ward_003_s2_node_004": "procedure.thyroid_and_cervical_node_fna",
+    "ward_003_s2_node_005": "ehr.post_fna_status_and_documentation",
+    "ward_003_s2_node_006": "result.fna_cytology_papillary_thyroid_carcinoma",
+    "ward_003_s2_node_007": "result.fna_cytology_no_malignancy",
+    "ward_003_s2_node_008": "ehr.transfer_to_thyroid_surgery",
+    "ward_003_s2_node_009": "ehr.primary_thyroid_surgery_readiness",
+    "ward_003_s2_node_010": "procedure.total_thyroidectomy",
+    "ward_003_s2_node_011": "ehr.postoperative_rehabilitation_consultation",
+    "ward_003_s2_node_012": "procedure.regional_node_management",
+    "ward_003_s3_terminal_001": "disposition.home_after_inpatient_thyroid_surgery"
+  },
+  "decision_policy": {
+    "free_text_target_allowed": true,
+    "exact_hidden_identifier_required": false,
+    "schema_valid_non_gold_action_class": "valid_exploration_no_recorded_outcome",
+    "recognized_non_current_action_class": "recognized_non_current_action",
+    "gold_equivalent_action_class": "ehr_path_advanced",
+    "counterfactual_clinical_outcomes_simulated": false
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

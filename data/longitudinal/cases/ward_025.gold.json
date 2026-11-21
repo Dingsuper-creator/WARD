@@ -1,0 +1,2057 @@
+{
+  "case_id": "ward_025",
+  "checkpoints": [
+    {
+      "answer": {
+        "layer1_evidence": [],
+        "layer2_utilization_links": [],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Insufficient evidence for specific oncologic characterization",
+              "Undetermined cancer diagnosis and treatment status"
+            ],
+            "canonical_en": "The patient is documented only as being in an inpatient setting related to maintenance chemotherapy for a malignant neoplasm; no public clinical evidence supports a specific tumor diagnosis, stage, treatment response, or chemotherapy safety conclusion.",
+            "claim_id": "ward_025_cp_000_claim_001",
+            "linked_evidence_ids": [],
+            "status": "pending",
+            "supporting_evidence_ids": []
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Review the current oncology record",
+              "Complete clinical data verification"
+            ],
+            "action_id": "ward_025_cp_000_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Obtain and verify the current clinical record before assessing oncologic treatment",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before making a decision to continue chemotherapy, stop medication, discharge, or transfer to follow-up.",
+            "indication_en": "The specific diagnosis, staging, prior treatment, current maintenance chemotherapy regimen, efficacy, and safety need to be confirmed.",
+            "linked_evidence_ids": [],
+            "prerequisites_en": [
+              "Obtain authorized medical records, pathology, imaging, laboratory, and treatment records."
+            ],
+            "problem_en": "There is currently no visible clinical evidence supporting treatment decisions.",
+            "target_and_laterality_en": "Systemic tumor treatment assessment; laterality not applicable."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "There is a lack of visible evidence of pathology, staging, efficacy, laboratory testing, toxicity assessment, and the current treatment regimen.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_000_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The inpatient encounter remains active.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_000_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Current public information cannot confirm the indication, regimen, dose, efficacy, or safety of maintenance chemotherapy.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_000_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "It cannot be determined on this basis whether conditions are met for continued treatment, discharge, or transfer to follow-up.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_000_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "The patient is a 61-year-old male.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_000_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The setting is longitudinal inpatient management by oncology.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_000_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The stated admission diagnosis background is maintenance chemotherapy for malignant tumor.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_000_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There are currently no visible evidence items.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_000_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "The admission diagnostic background is maintenance chemotherapy for malignant tumor; the specific tumor site, pathological type, and stage have not been disclosed.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_000_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Do not supplement or infer a specific cancer type, stage, chemotherapy regimen, efficacy, toxicity, or recent examination results.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_000_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "The current setting is active hospitalization, and neither clinical management status nor treatment decisions are clearly established by sufficient evidence.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_025_cp_000_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Treatment readiness cannot be assessed; being eligible for medication should not be confirmed solely on the basis of the admission diagnosis background.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_025_cp_000_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Lack of evidence must not be interpreted as negative results, stable condition, or effective treatment.",
+            "A decision to continue or stop chemotherapy must not be made solely on the background of an admission diagnosis before diagnosis, regimen, and safety are verified.",
+            "Do not fabricate undisclosed examination results, pathology, staging, or treatment efficacy."
+          ],
+          "critical_omission_rules_en": [
+            "A treatment-readiness determination must not be completed when current diagnostic, treatment-regimen, efficacy, and safety information is lacking.",
+            "When discharge and continuity-of-care arrangements are lacking, do not determine that discharge is safe or transition to follow-up is possible."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Insufficient evidence.",
+            "Treatment safety cannot be confirmed on this basis.",
+            "Treatment cessation or follow-up cannot be arranged on this basis"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "No visible allowed evidence is available. Therefore, it is not safe to stop investigation, continue chemotherapy, discharge, or transition to follow-up. Key clinical data must first be obtained and verified; missing data should not be treated as acceptable pending results for follow-up.",
+          "remaining_blockers_en": [
+            "The specific malignant tumor diagnosis and staging are not clear.",
+            "The current maintenance chemotherapy regimen, efficacy, and toxicity are unclear.",
+            "Evidence of current clinical examination and discharge/follow-up conditions is missing."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_025_cp_000",
+      "question": {
+        "allowed_evidence_ids": [],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_025:ehr:longitudinal_terminal",
+          "ward_025:ehr:visit_01_admission",
+          "ward_025:ehr:visit_01_outcome",
+          "ward_025:img:visit_01_results",
+          "ward_025:lab:visit_01_results"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_025",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 61,
+            "initial_time": "2124-01-08T08:37:23+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-01-08T08:37:23+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": []
+        },
+        "public_snapshot_sha256": "fcb00eedab8ad48c0dd5dac91cbb4d296a5dde4860be959dd8d04ee27641ef99",
+        "public_time": "2124-01-08T08:37:23+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 0
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_025:ehr:visit_01_admission",
+            "interpretation_en": "The admission record shows an active oncology inpatient encounter for maintenance chemotherapy for malignant neoplasm. Documented diagnoses include esophageal malignancy, secondary malignant neoplasm of lymph nodes at multiple sites, and interstitial pneumonia. This supports an active cancer-treatment context and a pulmonary comorbidity requiring attention, but does not provide the chemotherapy regimen, laboratory results, symptom severity, or treatment tolerance.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_025_cp_001_action_001"
+            ],
+            "claim_ids": [
+              "ward_025_cp_001_claim_001",
+              "ward_025_cp_001_claim_002",
+              "ward_025_cp_001_claim_003"
+            ],
+            "evidence_id": "ward_025:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_025_cp_001_state_diagnoses_001",
+              "ward_025_cp_001_state_diagnoses_002",
+              "ward_025_cp_001_state_diagnoses_003",
+              "ward_025_cp_001_state_diagnoses_004",
+              "ward_025_cp_001_state_active_problems_001",
+              "ward_025_cp_001_state_active_problems_002",
+              "ward_025_cp_001_state_active_problems_003",
+              "ward_025_cp_001_state_active_problems_004",
+              "ward_025_cp_001_state_critical_facts_to_retain_002",
+              "ward_025_cp_001_state_critical_facts_to_retain_003",
+              "ward_025_cp_001_state_required_delta_from_previous_checkpoint_001",
+              "ward_025_cp_001_state_treatment_readiness_001",
+              "ward_025_cp_001_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "inpatient maintenance chemotherapy",
+              "oncology admission for maintenance chemotherapy"
+            ],
+            "canonical_en": "The patient is currently in an oncology inpatient treatment setting for maintenance chemotherapy for malignant neoplasm.",
+            "claim_id": "ward_025_cp_001_claim_001",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "esophageal cancer with multifocal nodal metastases",
+              "secondary malignant neoplasm of multiple lymph-node sites"
+            ],
+            "canonical_en": "Esophageal malignancy and secondary malignant neoplasm of lymph nodes at multiple sites are documented.",
+            "claim_id": "ward_025_cp_001_claim_002",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "interstitial pneumonitis as a comorbidity",
+              "documented interstitial lung disease"
+            ],
+            "canonical_en": "Interstitial pneumonia is a documented comorbid diagnosis that should be considered in current treatment-safety assessment.",
+            "claim_id": "ward_025_cp_001_claim_003",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "continue inpatient oncology assessment before maintenance chemotherapy",
+              "verify regimen and treatment readiness before chemotherapy"
+            ],
+            "action_id": "ward_025_cp_001_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "The oncology team should continue inpatient treatment assessment and decide whether to administer maintenance chemotherapy after verifying the established regimen and current safety prerequisites.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization, before any administration decision",
+            "indication_en": "Current publicly available evidence confirms an inpatient treatment setting, but is insufficient to confirm the specific regimen or administration safety",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ],
+            "prerequisites_en": [
+              "Verify the established chemotherapy regimen and indication",
+              "Complete and review the current safety assessments considered necessary by the clinical team, with particular attention to interstitial pneumonia-related issues"
+            ],
+            "problem_en": "Admission for maintenance chemotherapy for malignant neoplasm, with interstitial pneumonia documented concurrently",
+            "target_and_laterality_en": "Systemic antitumor treatment; no laterality."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Ongoing inpatient oncology treatment",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_001_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Need for maintenance chemotherapy treatment for malignant neoplasm",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_001_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Esophageal malignant neoplasm and secondary malignant neoplasms of lymph nodes at multiple sites",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_001_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Treatment-safety concern related to interstitial pneumonia",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_001_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "The specific chemotherapy regimen and administration status have not been disclosed",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_001_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Pre-treatment safety information, such as laboratory testing, organ function, infection, or severity of interstitial pneumonia, has not been disclosed.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_001_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Efficacy, tolerability, or discharge conditions have not been disclosed.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_001_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Male, 61 years old.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_001_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current setting is oncology hospitalization, with an admission diagnosis of maintenance chemotherapy for malignant tumor.",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_001_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Esophageal malignant tumor, secondary malignant tumor of multiple lymph node sites, and interstitial pneumonia are documented",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_001_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Esophageal malignancy",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_001_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Secondary malignant neoplasm of lymph nodes at multiple sites (Secondary malignant neoplasm of lymph nodes at multiple sites).",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_001_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Interstitial pneumonia",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_001_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Admission for maintenance chemotherapy for malignant neoplasm",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_001_state_diagnoses_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [],
+          "management_state": {
+            "canonical_en": "Inpatient tumor treatment is still ongoing and currently cannot be regarded as treatment completed or as having entered a safe follow-up phase.",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ],
+            "state_id": "ward_025_cp_001_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Compared with the previous checkpoint, the admission assessment and its documented diagnoses are newly public; the encounter remains an active inpatient treatment episode.",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_001_state_required_delta_from_previous_checkpoint_001",
+              "status": "clinical_state_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Current public evidence alone cannot confirm that conditions for maintenance chemotherapy administration have been met; the clinical team needs to decide based on the established regimen and current safety assessment.",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ],
+            "state_id": "ward_025_cp_001_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "An admission diagnosis must not be regarded as chemotherapy having been completed or efficacy having been confirmed",
+            "It must not be asserted that administration can be safely given in the absence of current safety information.",
+            "The diagnosis of interstitial pneumonia must not be inferred to indicate a specific severity or chemotherapy-related lung injury."
+          ],
+          "critical_omission_rules_en": [
+            "Omission of interstitial pneumonia and its impact on treatment safety.",
+            "Omission of the current treatment regimen and pre-administration safety verification",
+            "Incorrectly stopping treatment or transitioning to follow-up while treatment status remains active and evidence is insufficient"
+          ],
+          "preliminary_risk_triggers_en": [
+            "active_inpatient_oncology_treatment",
+            "documented_interstitial_pneumonia",
+            "treatment_readiness_not_confirmed",
+            "insufficient_evidence_for_stopping"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_treatment",
+          "rationale_en": "The oncology inpatient treatment episode remains active, and interstitial pneumonia is documented. Available evidence does not establish that chemotherapy has been completed, that discharge is appropriate, or that follow-up alone is safe. Stopping or transitioning solely to follow-up is therefore not supported; inpatient treatment assessment should continue, with the clinical team deciding on subsequent administration.",
+          "remaining_blockers_en": [
+            "There is not yet sufficient publicly available evidence to confirm safety before chemotherapy administration and the specific treatment regimen.",
+            "There is not yet evidence of treatment completion, efficacy assessment, or discharge follow-up arrangements."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_025_cp_001",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_025:ehr:visit_01_admission"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_025:ehr:longitudinal_terminal",
+          "ward_025:ehr:visit_01_outcome",
+          "ward_025:img:visit_01_results",
+          "ward_025:lab:visit_01_results"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_025",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_025_s2_node_001_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 61,
+            "initial_time": "2124-01-08T08:37:23+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-01-08T13:31:01+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_025:ehr:visit_01_admission"
+          ]
+        },
+        "public_snapshot_sha256": "5c5652f373a54b41e85cca95cb4b0fee4538958c7bb37ef26cc17e49cb9f60bb",
+        "public_time": "2124-01-08T13:31:01+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 1
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_025:ehr:visit_01_admission",
+            "interpretation_en": "The oncology admission record documents hospitalization for maintenance chemotherapy for malignancy and lists malignant neoplasm of the esophagus, secondary malignant neoplasm of lymph nodes at multiple sites, and interstitial pneumonia. It supports the current inpatient treatment context and recorded diagnoses, but does not establish that chemotherapy has been administered or completed.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_025:img:visit_01_results",
+            "interpretation_en": "The ECG conclusion is normal, indicating no abnormality in the publicly available ECG report; it does not replace assessment of chemotherapy eligibility, interstitial lung disease, or overall treatment tolerance.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_025:lab:visit_01_results",
+            "interpretation_en": "The laboratory summary shows anemia-related abnormalities (hemoglobin 103 g/L, hematocrit 0.315%, and RBC count 3.32×10^12/L), along with low sodium, low chloride, low prealbumin, and elevated cystatin C. The summary does not provide complete trends, symptoms, reference ranges, or the chemotherapy regimen, so treatment readiness requires clinical review.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_025_cp_002_action_001"
+            ],
+            "claim_ids": [
+              "ward_025_cp_002_claim_001"
+            ],
+            "evidence_id": "ward_025:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_025_cp_002_state_diagnoses_001",
+              "ward_025_cp_002_state_diagnoses_002",
+              "ward_025_cp_002_state_diagnoses_003",
+              "ward_025_cp_002_state_diagnoses_004",
+              "ward_025_cp_002_state_active_problems_001",
+              "ward_025_cp_002_state_active_problems_006",
+              "ward_025_cp_002_state_blockers_001",
+              "ward_025_cp_002_state_blockers_003",
+              "ward_025_cp_002_state_blockers_004",
+              "ward_025_cp_002_state_critical_facts_to_retain_002",
+              "ward_025_cp_002_state_critical_facts_to_retain_003",
+              "ward_025_cp_002_state_treatment_readiness_001",
+              "ward_025_cp_002_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_025_cp_002_action_001"
+            ],
+            "claim_ids": [
+              "ward_025_cp_002_claim_002"
+            ],
+            "evidence_id": "ward_025:img:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_025_cp_002_state_critical_facts_to_retain_004",
+              "ward_025_cp_002_state_required_delta_from_previous_checkpoint_002",
+              "ward_025_cp_002_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_025_cp_002_action_001",
+              "ward_025_cp_002_action_002"
+            ],
+            "claim_ids": [
+              "ward_025_cp_002_claim_003"
+            ],
+            "evidence_id": "ward_025:lab:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_025_cp_002_state_active_problems_002",
+              "ward_025_cp_002_state_active_problems_003",
+              "ward_025_cp_002_state_active_problems_004",
+              "ward_025_cp_002_state_active_problems_005",
+              "ward_025_cp_002_state_blockers_002",
+              "ward_025_cp_002_state_blockers_004",
+              "ward_025_cp_002_state_critical_facts_to_retain_005",
+              "ward_025_cp_002_state_required_delta_from_previous_checkpoint_002",
+              "ward_025_cp_002_state_treatment_readiness_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "inpatient oncology management",
+              "esophageal cancer with nodal metastases",
+              "interstitial pneumonia"
+            ],
+            "canonical_en": "The patient is currently under inpatient oncology management for maintenance chemotherapy for malignancy, with documented esophageal malignancy, secondary malignant neoplasm of lymph nodes at multiple sites, and interstitial pneumonia.",
+            "claim_id": "ward_025_cp_002_claim_001",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "normal ECG",
+              "normal electrocardiogram"
+            ],
+            "canonical_en": "The publicly available ECG is reported as normal.",
+            "claim_id": "ward_025_cp_002_claim_002",
+            "linked_evidence_ids": [
+              "ward_025:img:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_025:img:visit_01_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "anemia with laboratory abnormalities",
+              "abnormal blood counts and chemistry requiring review"
+            ],
+            "canonical_en": "Anemia and mild electrolyte, nutritional, and renal-function-related laboratory abnormalities are present and require review and integrated assessment before deciding on maintenance chemotherapy.",
+            "claim_id": "ward_025_cp_002_claim_003",
+            "linked_evidence_ids": [
+              "ward_025:lab:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_025:lab:visit_01_results"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "oncology treatment-readiness review",
+              "pretreatment chemotherapy assessment"
+            ],
+            "action_id": "ward_025_cp_002_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "The oncology team should review the maintenance chemotherapy regimen, administration plan, and pretreatment requirements, integrating CBC and chemistry trends, symptoms, performance status, and the history of interstitial pneumonia before administering or continuing chemotherapy.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before treatment decisions during this hospitalization.",
+            "indication_en": "The purpose of hospitalization is maintenance chemotherapy, but existing evidence is insufficient to confirm that treatment has been administered or that safety conditions have been met.",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission",
+              "ward_025:img:visit_01_results",
+              "ward_025:lab:visit_01_results"
+            ],
+            "prerequisites_en": [
+              "Obtain and verify the specific chemotherapy regimen and administration records.",
+              "Review trends in recent blood-cell counts and biochemical indices",
+              "Conduct assessment of symptoms, performance status, and pulmonary risk."
+            ],
+            "problem_en": "The implementation status and treatment readiness of maintenance chemotherapy have not been confirmed, and there are multiple laboratory abnormalities and a prior record of interstitial pneumonia.",
+            "target_and_laterality_en": "Systemic antitumor treatment; laterality not applicable."
+          },
+          {
+            "acceptable_aliases_en": [
+              "laboratory abnormality review",
+              "anemia and chemistry reassessment"
+            ],
+            "action_id": "ward_025_cp_002_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Reassess the anemia, low sodium and chloride, low prealbumin, and elevated cystatin C using symptoms, baseline values, and trends, and manage as clinically indicated.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as possible, before determining chemotherapy or a discharge plan",
+            "indication_en": "These abnormalities may affect chemotherapy tolerance and inpatient management and require confirmation of their clinical significance before treatment decisions.",
+            "linked_evidence_ids": [
+              "ward_025:lab:visit_01_results"
+            ],
+            "prerequisites_en": [
+              "Verify complete laboratory results, reference ranges, and prior baseline",
+              "Assess relevant symptoms, intake status, and fluid status",
+              "Remeasure relevant indicators when necessary"
+            ],
+            "problem_en": "The current laboratory summary contains multiple abnormalities, but lacks trends and clinical context.",
+            "target_and_laterality_en": "Systemic laboratory and clinical status; laterality not applicable."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Current inpatient oncology treatment management",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_002_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Anemia-related laboratory abnormalities",
+              "linked_evidence_ids": [
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_002_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Hyponatremia and hypochloremia",
+              "linked_evidence_ids": [
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_002_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Low prealbumin",
+              "linked_evidence_ids": [
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_002_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Elevated cystatin C, suggesting that renal function status needs further assessment",
+              "linked_evidence_ids": [
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_002_state_active_problems_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Chemotherapy treatment readiness and actual administration status have not yet been confirmed",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_002_state_active_problems_006",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Lack of a specific maintenance chemotherapy regimen, dose, and administration record",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_002_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Lack of an integrated assessment of trends in blood cell counts and biochemical indicators, symptoms, and performance status.",
+              "linked_evidence_ids": [
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_002_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The impact of prior interstitial pneumonia on current treatment risk has not yet been clarified",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_002_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is not yet sufficient evidence to support discharge or transfer to routine follow-up",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission",
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_002_state_blockers_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "The patient is a 61-year-old male, currently in an inpatient oncology setting.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_002_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The purpose of admission is maintenance chemotherapy for malignant tumor.",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_002_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Esophageal malignant tumor, secondary malignant tumors of lymph nodes at multiple sites, and interstitial pneumonia have been documented.",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_002_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current public electrocardiogram is normal",
+              "linked_evidence_ids": [
+                "ward_025:img:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_002_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Laboratory findings include anemia, hyponatremia, hypochloremia, low prealbumin, and elevated cystatin C.",
+              "linked_evidence_ids": [
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_002_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Admission for maintenance chemotherapy for a malignant tumor",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_002_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Malignant neoplasm of the esophagus (documented)",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_002_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Secondary malignant neoplasms of lymph nodes at multiple sites (documented).",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_002_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Interstitial pneumonia (documented)",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_002_state_diagnoses_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "A normal ECG must not be interpreted as overall treatment risk having been excluded",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_002_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not interpret the purpose of admission as maintenance chemotherapy having already been administered or completed.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_002_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Elevated cystatin C must not be diagnosed as acute kidney injury without trends and clinical context",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_002_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Inpatient oncology treatment is still ongoing; disclosed evidence has not yet shown that maintenance chemotherapy has been administered, completed, or that efficacy management has been completed.",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ],
+            "state_id": "ward_025_cp_002_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "No publicly documented change in the admission purpose or previously recorded malignancy and interstitial pneumonia diagnoses since the previous checkpoint.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_002_state_required_delta_from_previous_checkpoint_001",
+              "status": "no_change",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Newly available ECG and laboratory results document a normal ECG and anemia, electrolyte, nutritional, and renal-function-related abnormalities requiring further readiness review.",
+              "linked_evidence_ids": [
+                "ward_025:img:visit_01_results",
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_002_state_required_delta_from_previous_checkpoint_002",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Partially prepared: electrocardiogram is normal, but anemia, electrolyte, nutritional, and renal function-related abnormalities are present; suitability for continuing or administering maintenance chemotherapy can be determined only after confirming the regimen, trends, symptoms, and organ function.",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission",
+              "ward_025:img:visit_01_results",
+              "ward_025:lab:visit_01_results"
+            ],
+            "state_id": "ward_025_cp_002_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Do not claim maintenance chemotherapy has been completed when the specific regimen, administration status, and pre-treatment safety conditions have not been confirmed.",
+            "Acute kidney injury must not be diagnosed solely on the basis of elevated cystatin C",
+            "Do not disregard documented interstitial pneumonia as a risk factor unrelated to treatment.",
+            "A discharge or transition-to-follow-up decision must not be made directly on the basis of the current summary"
+          ],
+          "critical_omission_rules_en": [
+            "Failure to review anemia and abnormalities related to electrolytes, nutrition, and renal function is a critical omission",
+            "Omission of assessment of prior interstitial pneumonia and chemotherapy-related pulmonary risk constitutes a critical omission",
+            "Omission of confirmation of the chemotherapy regimen, administration record, and pre-treatment conditions is a key omission"
+          ],
+          "preliminary_risk_triggers_en": [
+            "Clinical review is required.",
+            "Stopping inpatient management or directly transitioning to routine follow-up is currently not supported.",
+            "A normal electrocardiogram must not be regarded as sufficient proof of chemotherapy safety."
+          ]
+        },
+        "stopping": {
+          "decision": "continue_treatment",
+          "rationale_en": "The patient remains in an active inpatient oncology treatment episode. Although the ECG is normal, anemia and several laboratory abnormalities are present, and the regimen, administration status, trends, and pulmonary risk assessment are not available. It is therefore not safe to stop, discharge, or transition to routine follow-up; pretreatment assessment and necessary inpatient management should continue.",
+          "remaining_blockers_en": [
+            "The chemotherapy regimen and actual administration status have not been disclosed.",
+            "The severity, baseline, and trend of hematologic and biochemical abnormalities have not been sufficiently disclosed.",
+            "Interstitial-pneumonia-related symptoms and treatment risks have not been assessed",
+            "There is no evidence yet of completed inpatient treatment or safe discharge"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_025_cp_002",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_025:ehr:visit_01_admission",
+          "ward_025:img:visit_01_results",
+          "ward_025:lab:visit_01_results"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_025:ehr:longitudinal_terminal",
+          "ward_025:ehr:visit_01_outcome"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_025",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_025_s2_node_001_completed": true,
+            "ward_025_s2_node_002_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 61,
+            "initial_time": "2124-01-08T08:37:23+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-01-09T13:59:10+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_025:ehr:visit_01_admission",
+            "ward_025:img:visit_01_results",
+            "ward_025:lab:visit_01_results"
+          ]
+        },
+        "public_snapshot_sha256": "557bdf2fa656f14a209ae10a4591fe95b5599bcd076cdb21a98f9f3069812118",
+        "public_time": "2124-01-09T13:59:10+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 2
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_025:ehr:visit_01_admission",
+            "interpretation_en": "The admission record supports hospitalization for maintenance chemotherapy for malignancy; documented diagnoses include esophageal malignancy, secondary malignant neoplasm of lymph nodes at multiple sites, and interstitial pneumonia.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_025:ehr:visit_01_outcome",
+            "interpretation_en": "The pre-discharge outcome summary records improvement after the recent hospitalization and a maintenance-chemotherapy discharge diagnosis; it supports clinical improvement but does not by itself prove complete tumor response or completion of the entire chemotherapy plan.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_025:img:visit_01_results",
+            "interpretation_en": "The electrocardiogram was reported as normal, with no documented major ECG abnormality at this checkpoint.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_025:lab:visit_01_results",
+            "interpretation_en": "The laboratory summary shows anemia and abnormal erythrocyte indices (hemoglobin 103 g/L, hematocrit 0.315%, RBC 3.32×10^12/L, and elevated RDW), low prealbumin, mild electrolyte abnormalities, elevated cystatin C, and positive urobilinogen. These findings should be considered in post-chemotherapy and discharge safety assessment, but the summary is insufficient to determine severity, trends, or need for inpatient treatment.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_025_cp_003_action_001",
+              "ward_025_cp_003_action_002"
+            ],
+            "claim_ids": [
+              "ward_025_cp_003_claim_001",
+              "ward_025_cp_003_claim_002"
+            ],
+            "evidence_id": "ward_025:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_025_cp_003_state_diagnoses_001",
+              "ward_025_cp_003_state_diagnoses_002",
+              "ward_025_cp_003_state_diagnoses_003",
+              "ward_025_cp_003_state_diagnoses_004",
+              "ward_025_cp_003_state_active_problems_001",
+              "ward_025_cp_003_state_active_problems_006",
+              "ward_025_cp_003_state_blockers_001",
+              "ward_025_cp_003_state_blockers_002",
+              "ward_025_cp_003_state_critical_facts_to_retain_001",
+              "ward_025_cp_003_state_critical_facts_to_retain_002",
+              "ward_025_cp_003_state_critical_facts_to_retain_003",
+              "ward_025_cp_003_state_critical_facts_to_retain_004",
+              "ward_025_cp_003_state_treatment_readiness_001",
+              "ward_025_cp_003_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_025_cp_003_action_001",
+              "ward_025_cp_003_action_002",
+              "ward_025_cp_003_action_003",
+              "ward_025_cp_003_action_004"
+            ],
+            "claim_ids": [
+              "ward_025_cp_003_claim_002",
+              "ward_025_cp_003_claim_003",
+              "ward_025_cp_003_claim_004"
+            ],
+            "evidence_id": "ward_025:ehr:visit_01_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_025_cp_003_state_active_problems_002",
+              "ward_025_cp_003_state_resolved_problems_001",
+              "ward_025_cp_003_state_blockers_001",
+              "ward_025_cp_003_state_blockers_002",
+              "ward_025_cp_003_state_critical_facts_to_retain_004",
+              "ward_025_cp_003_state_facts_to_retract_or_correct_001",
+              "ward_025_cp_003_state_facts_to_retract_or_correct_002",
+              "ward_025_cp_003_state_required_delta_from_previous_checkpoint_001",
+              "ward_025_cp_003_state_treatment_readiness_001",
+              "ward_025_cp_003_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_025_cp_003_action_001"
+            ],
+            "claim_ids": [
+              "ward_025_cp_003_claim_005"
+            ],
+            "evidence_id": "ward_025:img:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_025_cp_003_state_resolved_problems_002",
+              "ward_025_cp_003_state_critical_facts_to_retain_007"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_025_cp_003_action_001",
+              "ward_025_cp_003_action_002"
+            ],
+            "claim_ids": [
+              "ward_025_cp_003_claim_004",
+              "ward_025_cp_003_claim_006"
+            ],
+            "evidence_id": "ward_025:lab:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_025_cp_003_state_active_problems_003",
+              "ward_025_cp_003_state_active_problems_004",
+              "ward_025_cp_003_state_active_problems_005",
+              "ward_025_cp_003_state_blockers_001",
+              "ward_025_cp_003_state_critical_facts_to_retain_005",
+              "ward_025_cp_003_state_critical_facts_to_retain_006",
+              "ward_025_cp_003_state_facts_to_retract_or_correct_003",
+              "ward_025_cp_003_state_treatment_readiness_001",
+              "ward_025_cp_003_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "esophageal cancer with metastatic lymphadenopathy",
+              "metastatic esophageal malignancy"
+            ],
+            "canonical_en": "The patient has documented esophageal malignancy with secondary malignant neoplasm of lymph nodes at multiple sites.",
+            "claim_id": "ward_025_cp_003_claim_001",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_025:ehr:visit_01_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "interstitial pneumonitis",
+              "interstitial lung disease"
+            ],
+            "canonical_en": "Interstitial pneumonia is a documented active comorbidity, with no evidence in the available record of worsening during this hospitalization.",
+            "claim_id": "ward_025_cp_003_claim_002",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission",
+              "ward_025:ehr:visit_01_outcome"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_025:ehr:visit_01_admission",
+              "ward_025:ehr:visit_01_outcome"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "improved treatment outcome",
+              "clinical improvement after hospitalization"
+            ],
+            "canonical_en": "The recorded treatment outcome after this hospitalization for maintenance chemotherapy was improvement.",
+            "claim_id": "ward_025_cp_003_claim_003",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_outcome"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_025:ehr:visit_01_outcome"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "discharge with oncology follow-up",
+              "transition to outpatient oncology follow-up"
+            ],
+            "canonical_en": "After completing a pre-discharge clinical safety check, discharge with oncology continuity follow-up may be considered.",
+            "claim_id": "ward_025_cp_003_claim_004",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_outcome",
+              "ward_025:lab:visit_01_results"
+            ],
+            "status": "planned",
+            "supporting_evidence_ids": [
+              "ward_025:ehr:visit_01_outcome",
+              "ward_025:lab:visit_01_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "normal ECG",
+              "normal electrocardiogram"
+            ],
+            "canonical_en": "The documented electrocardiogram is normal.",
+            "claim_id": "ward_025_cp_003_claim_005",
+            "linked_evidence_ids": [
+              "ward_025:img:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_025:img:visit_01_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "anemia with nutritional and mild metabolic abnormalities",
+              "mild laboratory abnormalities requiring review"
+            ],
+            "canonical_en": "Anemia, low prealbumin, and mild electrolyte- and kidney-related abnormalities are documented and require clinical review.",
+            "claim_id": "ward_025_cp_003_claim_006",
+            "linked_evidence_ids": [
+              "ward_025:lab:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_025:lab:visit_01_results"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "pre-discharge safety assessment",
+              "discharge readiness review"
+            ],
+            "action_id": "ward_025_cp_003_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Complete a pre-discharge clinical safety review including vital signs, symptoms, respiratory status/oxygenation, hematology, and renal/electrolyte results.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before the discharge decision",
+            "indication_en": "It is necessary to confirm that anemia, interstitial pneumonia, and metabolic/renal-function abnormalities do not constitute safety barriers to continued hospitalization.",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission",
+              "ward_025:img:visit_01_results",
+              "ward_025:lab:visit_01_results",
+              "ward_025:ehr:visit_01_outcome"
+            ],
+            "prerequisites_en": [
+              "Check current symptoms and vital signs.",
+              "Review available laboratory results in conjunction with clinical trends."
+            ],
+            "problem_en": "Post-chemotherapy inpatient status and laboratory abnormalities.",
+            "target_and_laterality_en": "Systemic; no laterality."
+          },
+          {
+            "acceptable_aliases_en": [
+              "chemotherapy toxicity assessment and monitoring plan",
+              "post-chemotherapy surveillance plan"
+            ],
+            "action_id": "ward_025_cp_003_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Assess and document chemotherapy toxicity, anemia, nutritional status, renal/electrolyte abnormalities, and a follow-up monitoring plan for interstitial pneumonia.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Formulate before discharge, with follow-up according to the oncology plan.",
+            "indication_en": "Current evidence shows anemia, low nutritional indicators, and mild metabolism/renal-function-related abnormalities, with a record of interstitial pneumonia.",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission",
+              "ward_025:lab:visit_01_results",
+              "ward_025:ehr:visit_01_outcome"
+            ],
+            "prerequisites_en": [
+              "Complete review of clinical symptoms and laboratory results.",
+              "Clarify responsibility for subsequent oncology management."
+            ],
+            "problem_en": "After maintenance chemotherapy for malignancy and with concurrent interstitial pneumonia.",
+            "target_and_laterality_en": "Whole body and lungs; no laterality."
+          },
+          {
+            "acceptable_aliases_en": [
+              "discharge planning with oncology follow-up",
+              "outpatient oncology continuity arrangement"
+            ],
+            "action_id": "ward_025_cp_003_action_003",
+            "action_scope": "recorded",
+            "canonical_action_en": "After a satisfactory safety review, complete discharge and oncology continuity follow-up arrangements.",
+            "canonical_prohibited_action_en": null,
+            "category": "acceptable_recorded",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before the end of the current hospitalization",
+            "indication_en": "The pre-discharge outcome summary records treatment improvement, supporting transition from inpatient treatment to continuous management.",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_outcome"
+            ],
+            "prerequisites_en": [
+              "Discharge safety review passed",
+              "Provide clear guidance on medications, return visits, and warning symptoms"
+            ],
+            "problem_en": "The treatment outcome of this hospitalization improved and entered the pre-discharge phase",
+            "target_and_laterality_en": "Systemic; no laterality."
+          },
+          {
+            "acceptable_aliases_en": [
+              "oncology treatment continuation and response assessment",
+              "planned maintenance chemotherapy follow-up"
+            ],
+            "action_id": "ward_025_cp_003_action_004",
+            "action_scope": "prospective",
+            "canonical_action_en": "Have oncology arrange subsequent maintenance chemotherapy and oncologic response assessment according to the established plan; do not infer complete remission from the documented improvement alone.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Arrange according to the time window established by oncology.",
+            "indication_en": "Current records do not state that all planned treatment courses have been completed, nor do they provide tumor response or progression assessment.",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_outcome"
+            ],
+            "prerequisites_en": [
+              "Verify the established chemotherapy regimen and treatment course",
+              "Subsequent treatment to be determined by oncology in conjunction with the clinical situation"
+            ],
+            "problem_en": "Continuation of treatment after maintenance chemotherapy for malignancy",
+            "target_and_laterality_en": "Tumor and systemic; no laterality"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Malignant tumor and its metastatic lymph node lesions.",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_003_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Status after maintenance chemotherapy, with treatment outcome recorded as improved",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_025_cp_003_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Anemia and red blood cell index abnormalities.",
+              "linked_evidence_ids": [
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_003_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Low prealbumin, suggesting nutritional status needs attention",
+              "linked_evidence_ids": [
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_003_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Mild hypochloremia, hyponatremia, hyperglycemia, elevated cystatin C, and positive urinary urobilinogen",
+              "linked_evidence_ids": [
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_003_state_active_problems_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Interstitial pneumonia requires continued monitoring",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_003_state_active_problems_006",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Complete symptoms, vital signs, oxygenation, chemotherapy-administration completion status, and laboratory trends are still lacking; it cannot be confirmed from the summary alone that all discharge safety conditions have been met",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission",
+                "ward_025:ehr:visit_01_outcome",
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_003_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "No tumor imaging efficacy or disease progression assessment was provided",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission",
+                "ward_025:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_025_cp_003_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "61-year-old man, oncology inpatient",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_003_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Esophageal malignant neoplasm and secondary malignant neoplasms of lymph nodes at multiple sites",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_003_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Interstitial pneumonia",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_003_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Hospitalization for maintenance chemotherapy, treatment outcome improved",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission",
+                "ward_025:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_025_cp_003_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Hemoglobin 103 g/L, hematocrit 0.315%, red blood cells 3.32×10^12/L, and RDW 15.9%.",
+              "linked_evidence_ids": [
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_003_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Prealbumin 140 mg/L, cystatin C 1.27 mg/L, sodium 135 mmol/L, chloride 96 mmol/L",
+              "linked_evidence_ids": [
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_003_state_critical_facts_to_retain_006",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Electrocardiogram is normal.",
+              "linked_evidence_ids": [
+                "ward_025:img:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_003_state_critical_facts_to_retain_007",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Maintenance chemotherapy for malignant neoplasm",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_003_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Esophageal malignancy",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_003_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Secondary malignant neoplasm of lymph nodes at multiple sites (Secondary malignant neoplasm of lymph nodes at multiple sites).",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_003_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Interstitial pneumonia",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_025_cp_003_state_diagnoses_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "The treatment outcome “improvement” cannot be corrected or expanded into complete remission, cure, or stable disease.",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_025_cp_003_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A pre-discharge outcome summary cannot be regarded as clearly completing actual discharge.",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_025_cp_003_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Acute kidney injury cannot be directly diagnosed based on an isolated elevation of cystatin C.",
+              "linked_evidence_ids": [
+                "ward_025:lab:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_003_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "After inpatient maintenance chemotherapy in oncology, the outcome improved; current discharge safety assessment, toxicity and concomitant interstitial pneumonia monitoring should be completed, and continuous oncology-specialty follow-up should be arranged.",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission",
+              "ward_025:ehr:visit_01_outcome",
+              "ward_025:lab:visit_01_results"
+            ],
+            "state_id": "ward_025_cp_003_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "A pre-discharge outcome summary was added, documenting improvement after the maintenance-chemotherapy hospitalization.",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_025_cp_003_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is no substantive change in the interpretation of the previously disclosed admission diagnoses, normal ECG, or laboratory abnormalities.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_025_cp_003_state_required_delta_from_previous_checkpoint_002",
+              "status": "no_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "The treatment outcome documented for this hospitalization has improved",
+              "linked_evidence_ids": [
+                "ward_025:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_025_cp_003_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Currently visible electrocardiogram abnormalities: none seen; the electrocardiogram report is normal",
+              "linked_evidence_ids": [
+                "ward_025:img:visit_01_results"
+              ],
+              "state_id": "ward_025_cp_003_state_resolved_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Part of the treatment preparation/inpatient assessment in prior records has been completed; the current record supports post-treatment improvement, but due to anemia and nutritional and renal-function/electrolyte abnormalities, clinical safety review is still needed before discharge.",
+            "linked_evidence_ids": [
+              "ward_025:ehr:visit_01_admission",
+              "ward_025:ehr:visit_01_outcome",
+              "ward_025:lab:visit_01_results"
+            ],
+            "state_id": "ward_025_cp_003_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Improvement in treatment outcome must not be interpreted as complete remission, cure, or completion of the full chemotherapy course.",
+            "Do not ignore interstitial pneumonia and anemia, nutrition, renal function, and electrolyte abnormalities.",
+            "Do not diagnose an unconfirmed acute disease or decide on transfusion solely based on an isolated laboratory abnormality.",
+            "Safe discharge must not be directly confirmed before completing current assessment of vital signs, symptoms, and respiratory status"
+          ],
+          "critical_omission_rules_en": [
+            "Omission of the pre-discharge safety review is a critical omission.",
+            "Omission of a continuous monitoring plan for chemotherapy toxicity and interstitial pneumonia is a key omission.",
+            "Omission of arrangements for subsequent oncology treatment and efficacy assessment is a key omission"
+          ],
+          "preliminary_risk_triggers_en": [
+            "model_preannotation_for_clinician_review",
+            "not_clinical_gold",
+            "discharge_requires_current_clinical_assessment"
+          ]
+        },
+        "stopping": {
+          "decision": "safe_to_discharge_or_follow_up",
+          "rationale_en": "The available pre-discharge outcome summary documents improvement, and the ECG is normal; no disclosed evidence identifies a definite acute event requiring continued hospitalization. Therefore, discharge with oncology follow-up is reasonable after a pre-discharge safety review. Complete medical management cannot be stopped because active malignancy, interstitial pneumonia, anemia, and other laboratory abnormalities remain, and completion of subsequent chemotherapy or oncologic response has not been established.",
+          "remaining_blockers_en": [
+            "Before actual discharge, complete a safety review of current clinical status, respiration/oxygenation, hematology, and renal function/electrolytes.",
+            "Arrangements for subsequent maintenance chemotherapy, toxicity monitoring, and oncologic efficacy assessment need clarification."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_025_cp_003",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_025:ehr:visit_01_admission",
+          "ward_025:ehr:visit_01_outcome",
+          "ward_025:img:visit_01_results",
+          "ward_025:lab:visit_01_results"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_025:ehr:longitudinal_terminal"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_025",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_025_s2_node_001_completed": true,
+            "ward_025_s2_node_002_completed": true,
+            "ward_025_s2_node_003_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 61,
+            "initial_time": "2124-01-08T08:37:23+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-01-12T00:42:44+08:00",
+          "stage": "S3",
+          "visible_evidence_ids": [
+            "ward_025:ehr:visit_01_admission",
+            "ward_025:ehr:visit_01_outcome",
+            "ward_025:img:visit_01_results",
+            "ward_025:lab:visit_01_results"
+          ]
+        },
+        "public_snapshot_sha256": "5b382bfec185fcb0d585fded75e2c98577412ff3c1aedbbc200a72564536da5f",
+        "public_time": "2124-01-12T00:42:44+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 3
+    }
+  ],
+  "milestone_candidates": [
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "The admission record explicitly records esophageal malignant neoplasm and secondary malignant neoplasms of lymph nodes at multiple sites."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_025_ms_01",
+      "milestone_type": "diagnostic_closure",
+      "name_en": "Diagnostic closure",
+      "partial_criteria_en": [
+        "The main malignant tumor diagnosis has been documented, but histology or complete staging information has not been provided."
+      ],
+      "safety_invalidation_rules_en": [
+        "If subsequent clinical review finds that the diagnostic record is incorrect or lacks sufficient basis, reassessment should be performed."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "The assessments related to this hospitalization have been completed, the electrocardiogram is normal, and pre-discharge review confirms that hematologic status, renal function, electrolytes, and respiratory status are suitable for subsequent management."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_025_ms_02",
+      "milestone_type": "staging_or_treatment_readiness",
+      "name_en": "Staging or treatment readiness",
+      "partial_criteria_en": [
+        "The patient has entered hospitalization for maintenance chemotherapy and has a normal electrocardiogram, but the current summary does not provide a complete discharge safety assessment, trends, or complete staging information."
+      ],
+      "safety_invalidation_rules_en": [
+        "If unstable vital signs, hypoxia, infection, progressive pulmonary symptoms, or laboratory abnormalities requiring inpatient management occur, this readiness status is invalid."
+      ]
+    },
+    {
+      "applicable": false,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Not applicable to the current record; currently only inpatient maintenance chemotherapy and an improved treatment outcome can be confirmed."
+      ],
+      "current_status": "not_started",
+      "milestone_id": "ward_025_ms_03",
+      "milestone_type": "definitive_intervention",
+      "name_en": "Definitive intervention",
+      "partial_criteria_en": [
+        "Hospital treatment related to maintenance chemotherapy has been recorded, but completion of definitive treatment or all planned courses has not been confirmed."
+      ],
+      "safety_invalidation_rules_en": [
+        "If improvement is mistaken for complete remission or completion of treatment, this milestone determination is invalid."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Complete a management plan for chemotherapy toxicity, interstitial pneumonia, anemia, and nutritional/metabolic abnormalities, and arrange tumor-response assessment."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_025_ms_04",
+      "milestone_type": "postoperative_or_response_management",
+      "name_en": "Postoperative or response management",
+      "partial_criteria_en": [
+        "The treatment outcome is recorded as improvement, but complete records of tumor efficacy or subsequent toxicity management are still lacking."
+      ],
+      "safety_invalidation_rules_en": [
+        "If there is untreated respiratory deterioration, severe chemotherapy toxicity, or another issue requiring hospitalization, it cannot be considered completed."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Complete discharge safety review, clarifying discharge instructions, oncology follow-up, subsequent maintenance chemotherapy, and laboratory/respiratory monitoring arrangements."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_025_ms_05",
+      "milestone_type": "disposition_and_continuity",
+      "name_en": "Disposition and continuity of care",
+      "partial_criteria_en": [
+        "There is already a pre-discharge outcome summary and treatment improvement, but current records do not completely show actual discharge and continuity follow-up arrangements."
+      ],
+      "safety_invalidation_rules_en": [
+        "If clinical instability, respiratory deterioration, severe anemia, or other problems requiring inpatient management are found before discharge, this milestone cannot be completed."
+      ]
+    }
+  ],
+  "normalized_evidence": [
+    {
+      "available_time": "2124-01-08T13:31:01+08:00",
+      "available_time_utc": "2124-01-08T05:31:01Z",
+      "case_id": "ward_025",
+      "clinical_time": "2124-01-08T08:37:23+08:00",
+      "clinical_time_utc": "2124-01-08T00:37:23Z",
+      "content_summary": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the esophagus, secondary malignant neoplasm of lymph nodes at multiple sites, and interstitial pneumonia.",
+      "evidence_id": "ward_025:ehr:visit_01_admission",
+      "laterality": null,
+      "module": "admission_documents",
+      "raw_content": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the esophagus, secondary malignant neoplasm of lymph nodes at multiple sites, and interstitial pneumonia.",
+      "record_kind": "deidentified_inpatient_admission_summary",
+      "structured_value": null,
+      "title": "Admission Assessment for Hospitalization No. 1",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-09T13:59:10+08:00",
+      "available_time_utc": "2124-01-09T05:59:10Z",
+      "case_id": "ward_025",
+      "clinical_time": "2124-01-09T13:59:10+08:00",
+      "clinical_time_utc": "2124-01-09T05:59:10Z",
+      "content_summary": "The structured data from this hospitalization include 15 laboratory reports and 113 results. Abnormal results documented in the summary include: creatine kinase 47U/L (below the lower limit of the reference range); chloride 96mmol/L (below the lower limit of the reference range); glucose 6.6mmol/L (above the upper limit of the reference range); sodium 135mmol/L (below the lower limit of the reference range); prealbu…",
+      "evidence_id": "ward_025:lab:visit_01_results",
+      "laterality": null,
+      "module": "laboratory_results",
+      "raw_content": "The structured data from this hospitalization include 15 laboratory reports and 113 results. Abnormal results documented in the summary include: creatine kinase 47U/L (below the lower limit of the reference range); chloride 96mmol/L (below the lower limit of the reference range); glucose 6.6mmol/L (above the upper limit of the reference range); sodium 135mmol/L (below the lower limit of the reference range); prealbumin 140mg/L (below the lower limit of the reference range); cystatin C 1.27mg/L (above the upper limit of the reference range); urobilinogen positive (+) (above the upper limit of the reference range); hematocrit 0.315％ (below the lower limit of the reference range); hemoglobin 103g/L (below the lower limit of the reference range); monocyte count 0.75x10^9/L (above the upper limit of the reference range); red blood cell count 3.32x10^12/L (below the lower limit of the reference range); red blood cell distribution width 15.9％ (above the upper limit of the reference range).",
+      "record_kind": "deidentified_laboratory_summary",
+      "structured_value": null,
+      "title": "Laboratory Results from the 1th Hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-09T13:59:10+08:00",
+      "available_time_utc": "2124-01-09T05:59:10Z",
+      "case_id": "ward_025",
+      "clinical_time": "2124-01-09T13:59:10+08:00",
+      "clinical_time_utc": "2124-01-09T05:59:10Z",
+      "content_summary": "The structured data from this hospitalization include 1 imaging report(s); examination type: electrocardiogram; conclusion summary: normal electrocardiogram.",
+      "evidence_id": "ward_025:img:visit_01_results",
+      "laterality": null,
+      "module": "imaging_results",
+      "raw_content": "The structured data from this hospitalization include 1 imaging report(s); examination type: electrocardiogram; conclusion summary: normal electrocardiogram.",
+      "record_kind": "deidentified_imaging_summary",
+      "structured_value": null,
+      "title": "Imaging Results from Hospitalization No. 1",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-12T00:42:44+08:00",
+      "available_time_utc": "2124-01-11T16:42:44Z",
+      "case_id": "ward_025",
+      "clinical_time": "2124-01-12T10:30:00+08:00",
+      "clinical_time_utc": "2124-01-12T02:30:00Z",
+      "content_summary": "Discharge diagnosis from the most recent hospitalization: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "evidence_id": "ward_025:ehr:visit_01_outcome",
+      "laterality": null,
+      "module": "outcome_documents",
+      "raw_content": "Discharge diagnosis from the most recent hospitalization: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "record_kind": "deidentified_inpatient_outcome_summary",
+      "structured_value": null,
+      "title": "Pre-discharge outcome of hospitalization No. 1",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-12T10:30:00+08:00",
+      "available_time_utc": "2124-01-12T02:30:00Z",
+      "case_id": "ward_025",
+      "clinical_time": "2124-01-12T10:30:00+08:00",
+      "clinical_time_utc": "2124-01-12T02:30:00Z",
+      "content_summary": "A total of 1 hospitalizations were included in the longitudinal observation window; the boundaries of each hospitalization were included in the trajectory visible to the model, and the patient transitioned to follow-up after the final hospitalization.",
+      "evidence_id": "ward_025:ehr:longitudinal_terminal",
+      "laterality": null,
+      "module": "disposition",
+      "raw_content": "A total of 1 hospitalizations were included in the longitudinal observation window; the boundaries of each hospitalization were included in the trajectory visible to the model, and the patient transitioned to follow-up after the final hospitalization.",
+      "record_kind": "deidentified_terminal_summary",
+      "structured_value": null,
+      "title": "Final discharge status at the end of the longitudinal observation period",
+      "unit": null
+    }
+  ],
+  "process_gold": {
+    "status": "source_recorded_not_layer_gold_clinically_validated",
+    "transition_count": 4,
+    "transitions": [
+      {
+        "clock_after": "2124-01-08T13:31:01+08:00",
+        "clock_before": "2124-01-08T08:37:23+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-01-08 oncology admission assessment",
+            "Review the 2124-01-08 oncology admission assessment",
+            "2124-01-08 oncology admission assessment"
+          ],
+          "action_id": "ehr:ward_025:001",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_025:ehr:visit_01_admission"
+          ],
+          "target": "2124-01-08 oncology admission assessment"
+        },
+        "release_evidence_ids": [
+          "ward_025:ehr:visit_01_admission"
+        ],
+        "sequence_index": 0,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_025_s2_node_001_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_025_s2_node_001"
+      },
+      {
+        "clock_after": "2124-01-09T13:59:10+08:00",
+        "clock_before": "2124-01-08T13:31:01+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-01-08 oncology admission laboratory and imaging results",
+            "Review the 2124-01-08 oncology hospitalization examination results",
+            "2124-01-08 oncology admission laboratory and imaging results"
+          ],
+          "action_id": "ehr:ward_025:002",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_025:lab:visit_01_results",
+            "ward_025:img:visit_01_results"
+          ],
+          "target": "2124-01-08 oncology admission laboratory and imaging results"
+        },
+        "release_evidence_ids": [
+          "ward_025:lab:visit_01_results",
+          "ward_025:img:visit_01_results"
+        ],
+        "sequence_index": 1,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_025_s2_node_002_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_025_s2_node_002"
+      },
+      {
+        "clock_after": "2124-01-12T00:42:44+08:00",
+        "clock_before": "2124-01-09T13:59:10+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "monitor final oncology admission treatment outcome",
+            "monitor the final oncology admission treatment outcome",
+            "Monitor the treatment outcome of the final oncology hospitalization",
+            "final oncology admission treatment outcome"
+          ],
+          "action_id": "ehr:ward_025:003",
+          "action_type": "monitor_or_defer",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_025:ehr:visit_01_outcome"
+          ],
+          "target": "final oncology admission treatment outcome"
+        },
+        "release_evidence_ids": [
+          "ward_025:ehr:visit_01_outcome"
+        ],
+        "sequence_index": 2,
+        "stage_after": "S3",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_025_s2_node_003_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_025_s2_node_003"
+      },
+      {
+        "clock_after": "2124-01-12T10:30:00+08:00",
+        "clock_before": "2124-01-12T00:42:44+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "discharge to oncology follow-up",
+            "discharge to longitudinal oncology follow-up",
+            "Discharge to longitudinal oncology follow-up"
+          ],
+          "action_id": "ehr:ward_025:004",
+          "action_type": "discharge",
+          "gold_source_type": "ehr_derived_terminal_gold",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_025:ehr:longitudinal_terminal"
+          ],
+          "target": "discharge to longitudinal oncology follow-up"
+        },
+        "release_evidence_ids": [
+          "ward_025:ehr:longitudinal_terminal"
+        ],
+        "sequence_index": 3,
+        "stage_after": "S3",
+        "stage_before": "S3",
+        "state_updates": {
+          "disposition": "home",
+          "encounter_active": false,
+          "terminal": true
+        },
+        "terminal": true,
+        "transition_id": "ward_025_s3_terminal_001"
+      }
+    ]
+  },
+  "schema_version": "ward-runtime-gold-1.0",
+  "gold_version": "ward-anonymous-runtime-1.0"
+}

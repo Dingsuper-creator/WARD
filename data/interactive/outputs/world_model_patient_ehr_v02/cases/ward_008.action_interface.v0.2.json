@@ -1,0 +1,44 @@
+{
+  "interface_version": "ward-patient-ehr-action-interface-0.2.0",
+  "status": "development_non_official",
+  "case_id": "ward_008",
+  "scenario_path": "outputs/world_model_patient_ehr_v01/cases/ward_008.patient_ehr.json",
+  "scenario_sha256": "cb4b4fc685a48608d1e3e1cf4c1905bf2feed1072c9554b9d8877dc1081aefc2",
+  "ontology_path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_008.v0.2.json",
+  "ontology_sha256": "c5968f2d6a6024861e45585cb8292088dba538e54b2208f0cb955ea21ac4a98e",
+  "public_capabilities": [
+    "communicate_with_patient",
+    "review_ehr_documents",
+    "order_diagnostic_tests",
+    "review_results",
+    "request_consultation",
+    "manage_treatment",
+    "perform_procedures",
+    "monitor_or_defer",
+    "manage_disposition"
+  ],
+  "transition_concepts": {
+    "ward_008_s2_node_001": "ehr.admission_vte_review",
+    "ward_008_s2_node_002": "consultation.breast_and_multispecialty_assessment",
+    "ward_008_s2_node_003": "ehr.core_biopsy_consent_without_recorded_procedure",
+    "ward_008_s2_node_004": "ehr.combined_breast_gynecologic_surgery_readiness",
+    "ward_008_s2_node_005": "procedure.paired_breast_quadrant_excisions",
+    "ward_008_s2_node_006": "procedure.gynecologic_hysteroscopy_and_iud_removal",
+    "ward_008_s2_node_007": "ehr.post_combined_surgery_status",
+    "ward_008_s2_node_008": "result.late_breast_mri",
+    "ward_008_s3_terminal_001": "disposition.home_after_combined_breast_gynecologic_surgery"
+  },
+  "decision_policy": {
+    "free_text_target_allowed": true,
+    "exact_hidden_identifier_required": false,
+    "schema_valid_non_gold_action_class": "valid_exploration_no_recorded_outcome",
+    "recognized_non_current_action_class": "recognized_non_current_action",
+    "gold_equivalent_action_class": "ehr_path_advanced",
+    "counterfactual_clinical_outcomes_simulated": false
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

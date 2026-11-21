@@ -1,0 +1,3028 @@
+{
+  "case_id": "ward_019",
+  "checkpoints": [
+    {
+      "answer": {
+        "layer1_evidence": [],
+        "layer2_utilization_links": [],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "right breast mass as presenting problem",
+              "undetermined right breast lesion",
+              "right breast lump of undetermined pathology"
+            ],
+            "canonical_en": "The currently documented presenting problem is a right breast mass, but its pathological nature and final diagnosis are not yet established.",
+            "claim_id": "ward_019_cp_000_claim_001",
+            "linked_evidence_ids": [],
+            "status": "confirmed",
+            "supporting_evidence_ids": []
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "continue workup of right breast mass",
+              "breast imaging and pathology evaluation as clinically indicated",
+              "diagnostic assessment with tissue diagnosis if indicated"
+            ],
+            "action_id": "ward_019_cp_000_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue diagnostic evaluation of the right breast mass during the active admission, with appropriate breast imaging and tissue sampling considered according to clinical assessment; the specific tests and sampling method should be determined by the clinical team based on examination, imaging, and risk assessment.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current inpatient assessment period, the specific time limit is determined by clinical urgency.",
+            "indication_en": "Objective evidence sufficient to support diagnosis and subsequent treatment decisions needs to be obtained",
+            "linked_evidence_ids": [],
+            "prerequisites_en": [
+              "Clinical physical examination and medical-history assessment",
+              "The clinical team confirms examination indications, contraindications, and the patient's informed consent."
+            ],
+            "problem_en": "The pathological nature of the right breast mass is not clear",
+            "target_and_laterality_en": "Right breast mass"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Right breast mass requiring further diagnostic evaluation",
+              "linked_evidence_ids": [],
+              "state_id": "ward_019_cp_000_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "No usable public evidence is available to establish pathology, benign versus malignant status, stage, or treatment plan",
+              "linked_evidence_ids": [],
+              "state_id": "ward_019_cp_000_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "39-year-old woman.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_019_cp_000_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right breast mass is the admission diagnosis.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_019_cp_000_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current setting is a breast-surgery hospitalization.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_019_cp_000_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current encounter has not yet ended.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_019_cp_000_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Right breast mass (current admission diagnosis/presenting problem)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_019_cp_000_state_diagnoses_001",
+              "status": "documented_problem | documented, etiology undetermined",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [],
+          "management_state": {
+            "canonical_en": "The inpatient encounter is still ongoing and is currently at the initial assessment stage; surgery, biopsy, imaging, or laboratory results have not been disclosed.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_019_cp_000_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Readiness for definitive treatment or specialty treatment has not been reached; diagnostic evidence first needs to be obtained and assessed.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_019_cp_000_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Do not confirm breast cancer, a benign lesion, staging, or treatment completion without public evidence",
+            "Imaging, pathology, or surgical results that may be obtained in the future must not be regarded as current facts",
+            "Do not claim that the patient can be safely discharged or that medical care can be stopped because of lack of evidence"
+          ],
+          "critical_omission_rules_en": [
+            "The current problem of a right breast mass must be retained",
+            "Must indicate that the pathological nature and final diagnosis are not yet clear",
+            "An action to continue diagnostic evaluation must be proposed."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Insufficient evidence.",
+            "Diagnosis has not been closed.",
+            "Evaluation cannot be stopped or routine follow-up entered on this basis"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "There is no available public evidence, and the pathology and final diagnosis of the right breast mass remain undetermined; stopping, discharge, or routine follow-up is not safe before appropriate diagnostic evaluation is completed.",
+          "remaining_blockers_en": [
+            "Lacking imaging, pathology, and other relevant diagnostic evidence",
+            "The benign or malignant nature of the mass, diagnosis, stage, and treatment need have not yet been clarified.",
+            "The inpatient encounter remains active"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_019_cp_000",
+      "question": {
+        "allowed_evidence_ids": [],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_019:ehr:admission:001",
+          "ward_019:ehr:preoperative_decision:001",
+          "ward_019:ehr:recovery:001",
+          "ward_019:ehr:terminal:001",
+          "ward_019:img:breast_ultrasound:001",
+          "ward_019:img:mammography:001",
+          "ward_019:path:frozen:001",
+          "ward_019:proc:quadrant_excision:001",
+          "ward_019:proc:wire_localization:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_019",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false
+          },
+          "public_context": {
+            "admission_diagnosis": "Right breast mass",
+            "age_years": 39,
+            "initial_time": "2124-11-04T13:50:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-11-04T13:50:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": []
+        },
+        "public_snapshot_sha256": "25f945e97b046f22b7b29e4d0b57283a48a6cb59ab0ff7510c256b917fdc3905",
+        "public_time": "2124-11-04T13:50:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 0
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_019:ehr:admission:001",
+            "interpretation_en": "A 39-year-old woman has a right breast mass at the 9 o'clock position that increased from approximately 1.5 cm to 2 cm over four months, with well-defined margins and good mobility. She was admitted for excision and diagnosis. This supports interval growth but does not establish benignity or malignancy.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_019:ehr:preoperative_decision:001",
+            "interpretation_en": "The current plan is mammography-guided hook-wire localization followed by quadrant excision of the right breast calcified lesion with frozen-section examination. Breast-conserving surgery, sentinel lymph node biopsy, or more extensive surgery is conditional on a malignant result. This defines the current diagnostic intervention and pathology-dependent next steps.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_019:img:breast_ultrasound:001",
+            "interpretation_en": "Ultrasound shows an approximately 17 mm nodule at the 9 o'clock position of the right breast, assessed as category 4A on routine ultrasound and favored to be category 3 after contrast enhancement, with fibroadenoma considered first. No abnormally enlarged axillary or supraclavicular lymph nodes are seen. The imaging suggests limited to intermediate suspicion but cannot replace histologic diagnosis.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_019:img:mammography:001",
+            "interpretation_en": "Mammography assesses the right upper-outer-quadrant mass as category 4A and clustered patchy calcifications posterior to the right nipple as category 3, requiring correlation with palpation and ultrasonography. This supports localization, excision, and pathologic confirmation of the calcified lesion but does not diagnose malignancy.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_019_cp_003_action_002"
+            ],
+            "claim_ids": [
+              "ward_019_cp_003_claim_001"
+            ],
+            "evidence_id": "ward_019:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_003_state_diagnoses_001",
+              "ward_019_cp_003_state_active_problems_001",
+              "ward_019_cp_003_state_active_problems_002",
+              "ward_019_cp_003_state_critical_facts_to_retain_001",
+              "ward_019_cp_003_state_critical_facts_to_retain_002",
+              "ward_019_cp_003_state_critical_facts_to_retain_003",
+              "ward_019_cp_003_state_required_delta_from_previous_checkpoint_001",
+              "ward_019_cp_003_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_003_action_001",
+              "ward_019_cp_003_action_002",
+              "ward_019_cp_003_action_003"
+            ],
+            "claim_ids": [
+              "ward_019_cp_003_claim_003"
+            ],
+            "evidence_id": "ward_019:ehr:preoperative_decision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_003_state_active_problems_003",
+              "ward_019_cp_003_state_active_problems_004",
+              "ward_019_cp_003_state_blockers_001",
+              "ward_019_cp_003_state_blockers_002",
+              "ward_019_cp_003_state_critical_facts_to_retain_006",
+              "ward_019_cp_003_state_required_delta_from_previous_checkpoint_001",
+              "ward_019_cp_003_state_treatment_readiness_001",
+              "ward_019_cp_003_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_003_action_002"
+            ],
+            "claim_ids": [
+              "ward_019_cp_003_claim_001",
+              "ward_019_cp_003_claim_002",
+              "ward_019_cp_003_claim_004"
+            ],
+            "evidence_id": "ward_019:img:breast_ultrasound:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_003_state_diagnoses_001",
+              "ward_019_cp_003_state_diagnoses_002",
+              "ward_019_cp_003_state_active_problems_002",
+              "ward_019_cp_003_state_critical_facts_to_retain_002",
+              "ward_019_cp_003_state_critical_facts_to_retain_004",
+              "ward_019_cp_003_state_critical_facts_to_retain_007",
+              "ward_019_cp_003_state_required_delta_from_previous_checkpoint_001",
+              "ward_019_cp_003_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_003_action_001",
+              "ward_019_cp_003_action_002"
+            ],
+            "claim_ids": [
+              "ward_019_cp_003_claim_001",
+              "ward_019_cp_003_claim_002",
+              "ward_019_cp_003_claim_003"
+            ],
+            "evidence_id": "ward_019:img:mammography:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_003_state_diagnoses_001",
+              "ward_019_cp_003_state_diagnoses_002",
+              "ward_019_cp_003_state_active_problems_002",
+              "ward_019_cp_003_state_critical_facts_to_retain_004",
+              "ward_019_cp_003_state_critical_facts_to_retain_005",
+              "ward_019_cp_003_state_required_delta_from_previous_checkpoint_001",
+              "ward_019_cp_003_state_treatment_readiness_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "growing right breast mass of indeterminate pathology",
+              "right breast mass requiring tissue diagnosis"
+            ],
+            "canonical_en": "A growing palpable right breast mass is present, with benign versus malignant status not yet established",
+            "claim_id": "ward_019_cp_003_claim_001",
+            "linked_evidence_ids": [
+              "ward_019:ehr:admission:001",
+              "ward_019:img:breast_ultrasound:001",
+              "ward_019:img:mammography:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_019:ehr:admission:001",
+              "ward_019:img:breast_ultrasound:001",
+              "ward_019:img:mammography:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "indeterminate breast imaging requiring pathology",
+              "BI-RADS 4A mass with category 3 calcifications requiring tissue diagnosis"
+            ],
+            "canonical_en": "The right breast mass and clustered retroareolar calcifications remain radiologically indeterminate and require histologic confirmation",
+            "claim_id": "ward_019_cp_003_claim_002",
+            "linked_evidence_ids": [
+              "ward_019:img:breast_ultrasound:001",
+              "ward_019:img:mammography:001"
+            ],
+            "status": "suspected",
+            "supporting_evidence_ids": [
+              "ward_019:img:breast_ultrasound:001",
+              "ward_019:img:mammography:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "planned wire-localized quadrant excision with frozen section",
+              "planned diagnostic excision of the right breast lesion"
+            ],
+            "canonical_en": "Mammography-guided hook-wire localization, right breast quadrant excision, and frozen-section examination are planned",
+            "claim_id": "ward_019_cp_003_claim_003",
+            "linked_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:img:mammography:001"
+            ],
+            "status": "planned",
+            "supporting_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "no enlarged regional lymph nodes on current ultrasound",
+              "negative ultrasound assessment for enlarged axillary or supraclavicular nodes"
+            ],
+            "canonical_en": "There is no imaging evidence of abnormally enlarged axillary or supraclavicular lymph nodes at this time",
+            "claim_id": "ward_019_cp_003_claim_004",
+            "linked_evidence_ids": [
+              "ward_019:img:breast_ultrasound:001"
+            ],
+            "status": "negative",
+            "supporting_evidence_ids": [
+              "ward_019:img:breast_ultrasound:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "mammographic wire localization",
+              "hook-wire localization of the right breast lesion"
+            ],
+            "action_id": "ward_019_cp_003_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Perform mammography-guided hook-wire localization of the right breast calcified lesion",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete as soon as possible before the current inpatient diagnostic surgery.",
+            "indication_en": "Mammography shows a right breast lesion and clustered calcifications, requiring precise localization followed by excisional sampling according to the established plan.",
+            "linked_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:img:mammography:001"
+            ],
+            "prerequisites_en": [
+              "Review preoperative imaging data",
+              "Confirm the right side and target lesion localization."
+            ],
+            "problem_en": "The location and nature of the right breast mass and retroareolar calcified lesion remain unclear.",
+            "target_and_laterality_en": "Right breast calcified lesion, right side"
+          },
+          {
+            "acceptable_aliases_en": [
+              "wire-localized quadrant excision with frozen section",
+              "diagnostic excision of the right breast lesion"
+            ],
+            "action_id": "ward_019_cp_003_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Perform right breast quadrant excision and send the specimen for frozen section and subsequent pathology",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete according to the preoperative plan during the current hospitalization.",
+            "indication_en": "Histologic confirmation is needed to complete the diagnosis and guide whether expanded surgery is needed.",
+            "linked_evidence_ids": [
+              "ward_019:ehr:admission:001",
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:img:breast_ultrasound:001",
+              "ward_019:img:mammography:001"
+            ],
+            "prerequisites_en": [
+              "Complete lesion localization.",
+              "Complete preoperative surgical assessment and informed consent."
+            ],
+            "problem_en": "The right breast mass is enlarging and imaging cannot determine whether it is benign or malignant",
+            "target_and_laterality_en": "Right-breast target mass and calcified lesion, right side"
+          },
+          {
+            "acceptable_aliases_en": [
+              "pathology-guided definitive surgical decision",
+              "conditional escalation of breast surgery based on malignancy"
+            ],
+            "action_id": "ward_019_cp_003_action_003",
+            "action_scope": "recorded",
+            "canonical_action_en": "Use frozen-section and final pathology results to decide whether breast-conserving extension, sentinel lymph node biopsy, or more extensive surgery is indicated",
+            "canonical_prohibited_action_en": null,
+            "category": "acceptable_recorded",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Review promptly after frozen section and final pathology results are obtained",
+            "indication_en": "The preoperative plan clearly considers further surgery only if results indicate malignancy.",
+            "linked_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001"
+            ],
+            "prerequisites_en": [
+              "Obtain frozen section results",
+              "Discuss the surgical approach in conjunction with final pathology, clinical, and imaging data"
+            ],
+            "problem_en": "Indications for extended surgery and axillary staging have not yet been determined by the current evidence.",
+            "target_and_laterality_en": "Right breast and, when necessary, right axilla"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "The right breast mass enlarged during follow-up",
+              "linked_evidence_ids": [
+                "ward_019:ehr:admission:001"
+              ],
+              "state_id": "ward_019_cp_003_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right breast mass and calcified lesion require histological diagnosis",
+              "linked_evidence_ids": [
+                "ward_019:ehr:admission:001",
+                "ward_019:img:breast_ultrasound:001",
+                "ward_019:img:mammography:001"
+              ],
+              "state_id": "ward_019_cp_003_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The planned localization excision and frozen section have not yet been completed.",
+              "linked_evidence_ids": [
+                "ward_019:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_019_cp_003_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is still no malignant pathology result on which to base a decision for extended surgery",
+              "linked_evidence_ids": [
+                "ward_019:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_019_cp_003_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Lack of frozen and final pathology results for the right breast lesion resection specimen",
+              "linked_evidence_ids": [
+                "ward_019:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_019_cp_003_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Malignancy evidence for deciding whether to perform extended breast-conserving surgery, sentinel lymph node biopsy, or more extensive surgery has not yet been obtained.",
+              "linked_evidence_ids": [
+                "ward_019:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_019_cp_003_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "39-year-old woman.",
+              "linked_evidence_ids": [
+                "ward_019:ehr:admission:001"
+              ],
+              "state_id": "ward_019_cp_003_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The lesion is located in the right breast, mainly described as at the 9 o'clock direction, approximately 17 to 20 mm",
+              "linked_evidence_ids": [
+                "ward_019:ehr:admission:001",
+                "ward_019:img:breast_ultrasound:001"
+              ],
+              "state_id": "ward_019_cp_003_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The lesion enlarged from approximately 1.5 cm to approximately 2 cm within 4 months",
+              "linked_evidence_ids": [
+                "ward_019:ehr:admission:001"
+              ],
+              "state_id": "ward_019_cp_003_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Routine ultrasound and mammography assessed the mass as 4A; contrast-enhanced ultrasound favored category 3 and first considered fibroadenoma",
+              "linked_evidence_ids": [
+                "ward_019:img:breast_ultrasound:001",
+                "ward_019:img:mammography:001"
+              ],
+              "state_id": "ward_019_cp_003_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Clustered patchy calcifications posterior to the right nipple were assessed as category 3",
+              "linked_evidence_ids": [
+                "ward_019:img:mammography:001"
+              ],
+              "state_id": "ward_019_cp_003_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current plan is mammography-guided hook-wire localization, quadrantectomy, and frozen section.",
+              "linked_evidence_ids": [
+                "ward_019:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_019_cp_003_state_critical_facts_to_retain_006",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Ultrasound showed no abnormally enlarged lymph nodes in the axilla or supraclavicular region",
+              "linked_evidence_ids": [
+                "ward_019:img:breast_ultrasound:001"
+              ],
+              "state_id": "ward_019_cp_003_state_critical_facts_to_retain_007",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Right breast mass, pathological nature not clear",
+              "linked_evidence_ids": [
+                "ward_019:ehr:admission:001",
+                "ward_019:img:breast_ultrasound:001",
+                "ward_019:img:mammography:001"
+              ],
+              "state_id": "ward_019_cp_003_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Indeterminate imaging lesion of the right breast, with clustered calcifications in the retroareolar area",
+              "linked_evidence_ids": [
+                "ward_019:img:breast_ultrasound:001",
+                "ward_019:img:mammography:001"
+              ],
+              "state_id": "ward_019_cp_003_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Imaging category 4A or 3 cannot be directly rewritten as a confirmed diagnosis of breast cancer",
+              "linked_evidence_ids": [],
+              "state_id": "ward_019_cp_003_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Fibroadenoma cannot be listed as a proven diagnosis",
+              "linked_evidence_ids": [],
+              "state_id": "ward_019_cp_003_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not document planned surgery or frozen-section records as completed.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_019_cp_003_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Absence of abnormally enlarged lymph nodes cannot be equated with regional metastasis having been excluded",
+              "linked_evidence_ids": [],
+              "state_id": "ward_019_cp_003_state_facts_to_retract_or_correct_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "During hospitalization, in the pre-diagnostic-surgery stage; the planned localization excision and pathology evaluation should continue to be completed, and care cannot be stopped or directly transitioned to routine follow-up.",
+            "linked_evidence_ids": [
+              "ward_019:ehr:admission:001",
+              "ward_019:ehr:preoperative_decision:001"
+            ],
+            "state_id": "ward_019_cp_003_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Since the previous checkpoint, admission assessment, ultrasound, mammography, and a preoperative decision have become available. The right breast lesion is characterized as radiologically indeterminate with interval growth, and a plan for mammography-guided hook-wire localization, quadrant excision, and frozen section has been established.",
+              "linked_evidence_ids": [
+                "ward_019:ehr:admission:001",
+                "ward_019:ehr:preoperative_decision:001",
+                "ward_019:img:breast_ultrasound:001",
+                "ward_019:img:mammography:001"
+              ],
+              "state_id": "ward_019_cp_003_state_required_delta_from_previous_checkpoint_001",
+              "status": "newly_available_evidence_and_management_update",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Imaging assessment has been completed and there is preparation for planned mammography-guided hook-wire localization and right breast quadrantectomy; conditions are not yet met for expanded tumor surgery based on a malignant diagnosis.",
+            "linked_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:img:breast_ultrasound:001",
+              "ward_019:img:mammography:001"
+            ],
+            "state_id": "ward_019_cp_003_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Frozen or final pathology results not yet obtained must not be treated as known results.",
+            "In the absence of malignancy evidence, expanded surgery and sentinel lymph node biopsy must not be directly performed or documented as having been decided."
+          ],
+          "critical_omission_rules_en": [
+            "Target-lesion localization, resection sampling, and pathological confirmation should be completed; omission will delay diagnostic closure.",
+            "Key facts such as right breast laterality, lesion location, enlargement trend, and imaging category should be retained."
+          ],
+          "preliminary_risk_triggers_en": []
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "Current evidence shows an indeterminate right breast mass and calcifications, but tissue diagnosis has not been completed. The inpatient diagnostic process should continue; it is not yet safe to stop or move directly to routine follow-up. ",
+          "remaining_blockers_en": [
+            "Right breast mammography-guided hook-wire localization and lesion excision have not yet been completed.",
+            "There are not yet frozen-section or final pathology results.",
+            "It is not yet possible on this basis to decide whether to extend surgery or perform sentinel lymph node biopsy"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_019_cp_003",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_019:ehr:admission:001",
+          "ward_019:ehr:preoperative_decision:001",
+          "ward_019:img:breast_ultrasound:001",
+          "ward_019:img:mammography:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_019:ehr:recovery:001",
+          "ward_019:ehr:terminal:001",
+          "ward_019:path:frozen:001",
+          "ward_019:proc:quadrant_excision:001",
+          "ward_019:proc:wire_localization:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_019",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_019_s2_node_001_completed": true,
+            "ward_019_s2_node_002_completed": true,
+            "ward_019_s2_node_003_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Right breast mass",
+            "age_years": 39,
+            "initial_time": "2124-11-04T13:50:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-11-06T10:45:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_019:ehr:admission:001",
+            "ward_019:ehr:preoperative_decision:001",
+            "ward_019:img:breast_ultrasound:001",
+            "ward_019:img:mammography:001"
+          ]
+        },
+        "public_snapshot_sha256": "a75fc42a9a22a7881d1ac9478ab54c2733b9d7c71d21c6f22f2e58896e5947da",
+        "public_time": "2124-11-06T10:45:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "action_selection"
+        ]
+      },
+      "sequence_index": 3
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_019:ehr:admission:001",
+            "interpretation_en": "A 39-year-old woman has a right breast mass at the 9 o'clock position that increased from approximately 1.5 cm to 2 cm over 4 months, with well-defined margins and good mobility; she was admitted for excision and diagnostic clarification.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "ward_019:ehr:preoperative_decision:001",
+            "interpretation_en": "The preoperative plan is mammography-guided hook-wire localization followed by right breast quadrant excision with frozen-section examination; breast-conserving surgery, sentinel lymph node biopsy, or more extensive surgery is to be considered only if malignancy is found. Malignancy is not yet established.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_019:img:breast_ultrasound:001",
+            "interpretation_en": "A roughly 17-mm nodule at the 9 o'clock position of the right breast was assessed as category 4A on routine ultrasound and favored category 3 after contrast enhancement, with fibroadenoma considered first; no abnormally enlarged axillary or supraclavicular lymph nodes were seen. This supports diagnostic uncertainty without identified regional nodal enlargement.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_019:img:mammography:001",
+            "interpretation_en": "The right breast mass was assessed as category 4A; clustered patchy calcifications posterior to the right nipple were assessed as category 3 and require correlation with palpation and ultrasonography. These calcifications are the target of the current localization and excision plan.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_019:proc:wire_localization:001",
+            "interpretation_en": "Mammography-guided hook-wire localization of the clustered calcifications posterior to the right nipple has been completed. Only completion of the localization procedure can be confirmed; the localization result, pathology, and malignancy status cannot be inferred from this record.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_019_cp_004_action_002"
+            ],
+            "claim_ids": [
+              "ward_019_cp_004_claim_001"
+            ],
+            "evidence_id": "ward_019:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_004_state_active_problems_001",
+              "ward_019_cp_004_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_004_action_001",
+              "ward_019_cp_004_action_002",
+              "ward_019_cp_004_action_003"
+            ],
+            "claim_ids": [
+              "ward_019_cp_004_claim_001",
+              "ward_019_cp_004_claim_003"
+            ],
+            "evidence_id": "ward_019:ehr:preoperative_decision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_004_state_diagnoses_001",
+              "ward_019_cp_004_state_active_problems_002",
+              "ward_019_cp_004_state_active_problems_004",
+              "ward_019_cp_004_state_blockers_001",
+              "ward_019_cp_004_state_blockers_002",
+              "ward_019_cp_004_state_critical_facts_to_retain_003",
+              "ward_019_cp_004_state_critical_facts_to_retain_004",
+              "ward_019_cp_004_state_treatment_readiness_001",
+              "ward_019_cp_004_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_019_cp_004_claim_001",
+              "ward_019_cp_004_claim_004"
+            ],
+            "evidence_id": "ward_019:img:breast_ultrasound:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_004_state_diagnoses_001",
+              "ward_019_cp_004_state_active_problems_004",
+              "ward_019_cp_004_state_critical_facts_to_retain_005",
+              "ward_019_cp_004_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_019_cp_004_claim_001"
+            ],
+            "evidence_id": "ward_019:img:mammography:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_004_state_diagnoses_001",
+              "ward_019_cp_004_state_active_problems_002",
+              "ward_019_cp_004_state_active_problems_004",
+              "ward_019_cp_004_state_critical_facts_to_retain_001",
+              "ward_019_cp_004_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_004_action_001"
+            ],
+            "claim_ids": [
+              "ward_019_cp_004_claim_002",
+              "ward_019_cp_004_claim_003"
+            ],
+            "evidence_id": "ward_019:proc:wire_localization:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_004_state_active_problems_003",
+              "ward_019_cp_004_state_critical_facts_to_retain_001",
+              "ward_019_cp_004_state_critical_facts_to_retain_002",
+              "ward_019_cp_004_state_facts_to_retract_or_correct_002",
+              "ward_019_cp_004_state_required_delta_from_previous_checkpoint_001",
+              "ward_019_cp_004_state_treatment_readiness_001",
+              "ward_019_cp_004_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "indeterminate right breast lesion",
+              "malignancy not yet established",
+              "pathologic diagnosis pending"
+            ],
+            "canonical_en": "The nature of the right breast mass and associated calcifications has not been established by pathology, and malignancy is not currently confirmed",
+            "claim_id": "ward_019_cp_004_claim_001",
+            "linked_evidence_ids": [
+              "ward_019:ehr:admission:001",
+              "ward_019:img:breast_ultrasound:001",
+              "ward_019:img:mammography:001",
+              "ward_019:ehr:preoperative_decision:001"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "ward_019:ehr:admission:001",
+              "ward_019:img:breast_ultrasound:001",
+              "ward_019:img:mammography:001",
+              "ward_019:ehr:preoperative_decision:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "completed wire localization",
+              "completed mammographic hook-wire localization"
+            ],
+            "canonical_en": "Mammography-guided hook-wire localization of the clustered calcifications posterior to the right nipple has been completed",
+            "claim_id": "ward_019_cp_004_claim_002",
+            "linked_evidence_ids": [
+              "ward_019:proc:wire_localization:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_019:proc:wire_localization:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "planned quadrant excision with frozen section",
+              "planned excision and intraoperative pathology"
+            ],
+            "canonical_en": "Right breast quadrant excision of the calcified lesion with intraoperative frozen-section examination is planned",
+            "claim_id": "ward_019_cp_004_claim_003",
+            "linked_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:proc:wire_localization:001"
+            ],
+            "status": "planned",
+            "supporting_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:proc:wire_localization:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "no abnormal regional lymphadenopathy on ultrasound",
+              "no enlarged axillary or supraclavicular nodes identified"
+            ],
+            "canonical_en": "Current ultrasound shows no abnormally enlarged axillary or supraclavicular lymph nodes",
+            "claim_id": "ward_019_cp_004_claim_004",
+            "linked_evidence_ids": [
+              "ward_019:img:breast_ultrasound:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_019:img:breast_ultrasound:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "planned quadrant excision with frozen section",
+              "excision of localized calcifications with frozen pathology"
+            ],
+            "action_id": "ward_019_cp_004_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Proceed with planned right breast quadrant excision of the calcified lesion and send the specimen for intraoperative frozen-section examination",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current inpatient surgical stage, implement as soon as possible after localization is completed",
+            "indication_en": "Tissue needs to be obtained to clarify the diagnosis, and whether further surgery is needed should be decided based on frozen-section results",
+            "linked_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:proc:wire_localization:001"
+            ],
+            "prerequisites_en": [
+              "Mammography-guided hook-wire localization has been completed.",
+              "Preoperatively verify the right side and target lesion."
+            ],
+            "problem_en": "The nature of the right breast calcified lesion is unclear, and hook-wire localization has been completed.",
+            "target_and_laterality_en": "Localized retroareolar clustered calcifications in the right breast"
+          },
+          {
+            "acceptable_aliases_en": [
+              "pathology-directed surgical decision",
+              "review pathology before escalation"
+            ],
+            "action_id": "ward_019_cp_004_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Obtain and review frozen-section and final pathology results before deciding whether breast-conserving surgery, sentinel lymph node biopsy, or more extensive surgery is needed",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Review frozen-section results intraoperatively after resection, and promptly recheck when final pathology is available",
+            "indication_en": "Avoid unnecessary extended surgery or lymph node surgery in the absence of pathological basis.",
+            "linked_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:ehr:admission:001"
+            ],
+            "prerequisites_en": [
+              "Complete lesion excision and obtain the specimen.",
+              "Frozen section and final pathology results can be obtained."
+            ],
+            "problem_en": "There are currently no pathology results, and malignant status is undetermined.",
+            "target_and_laterality_en": "Right breast lesion and related surgical decision-making."
+          },
+          {
+            "acceptable_aliases_en": [
+              "defer escalation pending pathology",
+              "avoid unindicated nodal or extensive surgery"
+            ],
+            "action_id": "ward_019_cp_004_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Do not perform sentinel lymph node biopsy or more extensive surgery solely for suspected malignancy before pathology establishes the indication",
+            "canonical_prohibited_action_en": null,
+            "category": "acceptable_alternative",
+            "critical_omission_if_missing": false,
+            "deadline_or_time_window_en": "Continues to apply before pathology results are clarified.",
+            "indication_en": "The preoperative plan clearly limited extended surgery and sentinel lymph node biopsy to after a malignant result",
+            "linked_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001"
+            ],
+            "prerequisites_en": [
+              "Continue awaiting and reviewing pathological evidence.",
+              "Maintain correct localization and surgical planning for the right-sided lesion"
+            ],
+            "problem_en": "A malignant diagnosis has not yet been established",
+            "target_and_laterality_en": "Surgery related to the right breast and right regional lymph nodes"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "The right breast mass enlarged during follow-up",
+              "linked_evidence_ids": [
+                "ward_019:ehr:admission:001"
+              ],
+              "state_id": "ward_019_cp_004_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Clustered calcifications behind the right nipple pending resection and pathological confirmation",
+              "linked_evidence_ids": [
+                "ward_019:img:mammography:001",
+                "ward_019:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_019_cp_004_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Mammography-guided hook-wire localization of the breast has been completed",
+              "linked_evidence_ids": [
+                "ward_019:proc:wire_localization:001"
+              ],
+              "state_id": "ward_019_cp_004_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Whether malignant or not has not yet been clarified.",
+              "linked_evidence_ids": [
+                "ward_019:ehr:preoperative_decision:001",
+                "ward_019:img:breast_ultrasound:001",
+                "ward_019:img:mammography:001"
+              ],
+              "state_id": "ward_019_cp_004_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "There is not yet a resection specimen or frozen-section result",
+              "linked_evidence_ids": [
+                "ward_019:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_019_cp_004_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is no final pathological diagnosis, so it cannot be decided whether extended surgery or sentinel lymph node biopsy is needed",
+              "linked_evidence_ids": [
+                "ward_019:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_019_cp_004_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Right-sided lesion and localization site.",
+              "linked_evidence_ids": [
+                "ward_019:img:mammography:001",
+                "ward_019:proc:wire_localization:001"
+              ],
+              "state_id": "ward_019_cp_004_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Hook-wire localization of the calcified lesion has been completed.",
+              "linked_evidence_ids": [
+                "ward_019:proc:wire_localization:001"
+              ],
+              "state_id": "ward_019_cp_004_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The preoperative plan was quadrantectomy and submission for frozen section.",
+              "linked_evidence_ids": [
+                "ward_019:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_019_cp_004_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A malignant diagnosis has not been established; extended surgery and sentinel lymph node biopsy are considered only if malignancy is found.",
+              "linked_evidence_ids": [
+                "ward_019:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_019_cp_004_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Ultrasound showed no abnormally enlarged axillary or supraclavicular lymph nodes",
+              "linked_evidence_ids": [
+                "ward_019:img:breast_ultrasound:001"
+              ],
+              "state_id": "ward_019_cp_004_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Right breast mass and associated calcifications with indeterminate imaging characteristics and pending pathologic diagnosis.",
+              "linked_evidence_ids": [
+                "ward_019:img:breast_ultrasound:001",
+                "ward_019:img:mammography:001",
+                "ward_019:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_019_cp_004_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Do not directly state BI-RADS 4A or category 3 as confirmed malignancy or confirmed benignity",
+              "linked_evidence_ids": [
+                "ward_019:img:breast_ultrasound:001",
+                "ward_019:img:mammography:001"
+              ],
+              "state_id": "ward_019_cp_004_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not state completion of hook-wire localization as completion of lesion resection or availability of pathological results.",
+              "linked_evidence_ids": [
+                "ward_019:proc:wire_localization:001"
+              ],
+              "state_id": "ward_019_cp_004_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "In hospital, at the stage after localization completion and before resection and pathologic diagnosis; the current diagnostic and treatment process should continue, and investigation must not be stopped or transitioned to routine follow-up.",
+            "linked_evidence_ids": [
+              "ward_019:ehr:admission:001",
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:proc:wire_localization:001"
+            ],
+            "state_id": "ward_019_cp_004_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "New evidence shows that mammography-guided hook-wire localization of the clustered calcifications posterior to the right nipple has been completed; the formal localization report and pathology results remain unavailable.",
+              "linked_evidence_ids": [
+                "ward_019:proc:wire_localization:001"
+              ],
+              "state_id": "ward_019_cp_004_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Mammography-guided hook-wire localization of the target calcified lesion has been completed, and preparation conditions are in place to proceed as planned with right breast calcified lesion quadrantectomy and intraoperative frozen-section examination; conditions are not yet in place to perform extended surgery or sentinel lymph node biopsy based on a malignant result.",
+            "linked_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:proc:wire_localization:001"
+            ],
+            "state_id": "ward_019_cp_004_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Imaging classification or completion of hook-wire localization must not be incorrectly written as confirmed malignancy or completed resection.",
+            "Expanded surgery or sentinel lymph node biopsy must not be implemented without basis when pathology results are absent."
+          ],
+          "critical_omission_rules_en": [
+            "Histological sampling and pathological assessment of the identified lesion must be completed unless a new clear safety contraindication arises.",
+            "Key facts such as the right side, target calcification focus, and pathology results not yet obtained must be retained."
+          ],
+          "preliminary_risk_triggers_en": []
+        },
+        "stopping": {
+          "decision": "wait_for_pending_result",
+          "rationale_en": "Although hook-wire localization is complete, excision and pathologic confirmation have not yet occurred. Investigation cannot safely stop and routine follow-up is not appropriate now; the inpatient surgical pathway should continue, with subsequent treatment decisions based on pathology.",
+          "remaining_blockers_en": [
+            "Right breast calcification excision and frozen-section results of the specimen have not yet been obtained.",
+            "Final pathological diagnosis has not yet been obtained.",
+            "Whether extended breast-conserving surgery, sentinel lymph node biopsy, or more extensive surgery is needed cannot yet be decided"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_019_cp_004",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_019:ehr:admission:001",
+          "ward_019:ehr:preoperative_decision:001",
+          "ward_019:img:breast_ultrasound:001",
+          "ward_019:img:mammography:001",
+          "ward_019:proc:wire_localization:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_019:ehr:recovery:001",
+          "ward_019:ehr:terminal:001",
+          "ward_019:path:frozen:001",
+          "ward_019:proc:quadrant_excision:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_019",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_019_s2_node_001_completed": true,
+            "ward_019_s2_node_002_completed": true,
+            "ward_019_s2_node_003_completed": true,
+            "ward_019_s2_node_004_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Right breast mass",
+            "age_years": 39,
+            "initial_time": "2124-11-04T13:50:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-11-06T10:46:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_019:ehr:admission:001",
+            "ward_019:ehr:preoperative_decision:001",
+            "ward_019:img:breast_ultrasound:001",
+            "ward_019:img:mammography:001",
+            "ward_019:proc:wire_localization:001"
+          ]
+        },
+        "public_snapshot_sha256": "3216f3e44b1c785ffda4dd92d17cb5d0ebb40b57bb226f7ac03e1abf874fe980",
+        "public_time": "2124-11-06T10:46:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "action_selection"
+        ]
+      },
+      "sequence_index": 4
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_019:ehr:admission:001",
+            "interpretation_en": "A 39-year-old woman has a right-breast mass at the 9 o'clock position that enlarged from approximately 1.5 cm to 2 cm over 4 months; it is well circumscribed and mobile, and she was admitted for excision and diagnosis.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_019:ehr:preoperative_decision:001",
+            "interpretation_en": "The preoperative plan was mammography-guided hook-wire localization followed by right-breast quadrant excision with frozen section; breast-conserving surgery, sentinel lymph node biopsy, or more extensive surgery would be considered only if malignancy were identified.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_019:img:breast_ultrasound:001",
+            "interpretation_en": "Ultrasound showed an approximately 17-mm nodule at the 9 o'clock position of the right breast, routine assessment category 4A and favored category 3 after contrast enhancement, with fibroadenoma considered most likely; no abnormal axillary or supraclavicular lymphadenopathy was seen.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_019:img:mammography:001",
+            "interpretation_en": "Mammography assessed the right-breast mass as category 4A; clustered patchy calcifications posterior to the right nipple were category 3 and required correlation with palpation and ultrasonography.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_019:path:frozen:001",
+            "interpretation_en": "Intraoperative frozen section showed adenosis with fibroadenoma formation in the 9 o'clock mass and a benign calcified lesion in the upper-outer region, considered an adenomyoepithelioma with sclerosing adenosis, ductal dilatation, and a small amount of microcalcification; adjacent tissue also showed benign changes. This supports no malignancy identified on frozen section, but frozen section is not equivalent to final permanent pathology.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_019:proc:quadrant_excision:001",
+            "interpretation_en": "Right-breast quadrantectomy was completed under general anesthesia, and the mass, upper-outer calcification focus, and adjacent tissue were submitted separately for examination.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_019:proc:wire_localization:001",
+            "interpretation_en": "Mammography-guided hook-wire localization of the clustered calcifications posterior to the right nipple was completed; the formal localization report was reviewed after surgery, but only the procedure record is used at this time.",
+            "role": "supporting"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "ward_019:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_006_state_critical_facts_to_retain_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_006_action_003",
+              "ward_019_cp_006_action_004"
+            ],
+            "claim_ids": [
+              "ward_019_cp_006_claim_003"
+            ],
+            "evidence_id": "ward_019:ehr:preoperative_decision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": []
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_019_cp_006_claim_003"
+            ],
+            "evidence_id": "ward_019:img:breast_ultrasound:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_006_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "ward_019:img:mammography:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_006_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_006_action_002",
+              "ward_019_cp_006_action_003",
+              "ward_019_cp_006_action_004"
+            ],
+            "claim_ids": [
+              "ward_019_cp_006_claim_001",
+              "ward_019_cp_006_claim_003",
+              "ward_019_cp_006_claim_004"
+            ],
+            "evidence_id": "ward_019:path:frozen:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_006_state_diagnoses_001",
+              "ward_019_cp_006_state_diagnoses_002",
+              "ward_019_cp_006_state_active_problems_002",
+              "ward_019_cp_006_state_active_problems_003",
+              "ward_019_cp_006_state_blockers_001",
+              "ward_019_cp_006_state_critical_facts_to_retain_003",
+              "ward_019_cp_006_state_critical_facts_to_retain_004",
+              "ward_019_cp_006_state_facts_to_retract_or_correct_002",
+              "ward_019_cp_006_state_required_delta_from_previous_checkpoint_001",
+              "ward_019_cp_006_state_treatment_readiness_001",
+              "ward_019_cp_006_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_006_action_001",
+              "ward_019_cp_006_action_002",
+              "ward_019_cp_006_action_003"
+            ],
+            "claim_ids": [
+              "ward_019_cp_006_claim_002",
+              "ward_019_cp_006_claim_004"
+            ],
+            "evidence_id": "ward_019:proc:quadrant_excision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_006_state_active_problems_001",
+              "ward_019_cp_006_state_active_problems_002",
+              "ward_019_cp_006_state_active_problems_003",
+              "ward_019_cp_006_state_resolved_problems_001",
+              "ward_019_cp_006_state_blockers_001",
+              "ward_019_cp_006_state_critical_facts_to_retain_001",
+              "ward_019_cp_006_state_critical_facts_to_retain_002",
+              "ward_019_cp_006_state_critical_facts_to_retain_004",
+              "ward_019_cp_006_state_facts_to_retract_or_correct_002",
+              "ward_019_cp_006_state_required_delta_from_previous_checkpoint_001",
+              "ward_019_cp_006_state_treatment_readiness_001",
+              "ward_019_cp_006_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "ward_019:proc:wire_localization:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_006_state_resolved_problems_002"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "benign on frozen section",
+              "no malignancy identified on frozen section",
+              "frozen-section benign finding"
+            ],
+            "canonical_en": "Intraoperative frozen section shows no malignancy identified and currently supports benign changes",
+            "claim_id": "ward_019_cp_006_claim_001",
+            "linked_evidence_ids": [
+              "ward_019:path:frozen:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_019:path:frozen:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "completed right-breast quadrant excision",
+              "separate specimen submission",
+              "excision completed"
+            ],
+            "canonical_en": "The right-breast mass and calcified lesion have been excised and submitted separately for pathology",
+            "claim_id": "ward_019_cp_006_claim_002",
+            "linked_evidence_ids": [
+              "ward_019:proc:quadrant_excision:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_019:proc:quadrant_excision:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "no current indication for malignant staging",
+              "sentinel node management not currently supported",
+              "staging not established"
+            ],
+            "canonical_en": "There is currently no available evidence supporting malignant staging or sentinel lymph-node management",
+            "claim_id": "ward_019_cp_006_claim_003",
+            "linked_evidence_ids": [
+              "ward_019:path:frozen:001",
+              "ward_019:img:breast_ultrasound:001",
+              "ward_019:ehr:preoperative_decision:001"
+            ],
+            "status": "suspected",
+            "supporting_evidence_ids": [
+              "ward_019:path:frozen:001",
+              "ward_019:img:breast_ultrasound:001",
+              "ward_019:ehr:preoperative_decision:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "pending permanent pathology",
+              "final histology pending",
+              "diagnostic closure pending"
+            ],
+            "canonical_en": "Final pathology diagnosis remains pending, so definitive diagnostic closure cannot yet be safely declared",
+            "claim_id": "ward_019_cp_006_claim_004",
+            "linked_evidence_ids": [
+              "ward_019:path:frozen:001",
+              "ward_019:proc:quadrant_excision:001"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "ward_019:proc:quadrant_excision:001",
+              "ward_019:path:frozen:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "postoperative monitoring",
+              "routine postoperative care",
+              "wound and recovery assessment"
+            ],
+            "action_id": "ward_019_cp_006_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue inpatient postoperative observation, routine postoperative care, and assessment of wound and recovery status",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Immediately and continuously until postoperative discharge criteria are met.",
+            "indication_en": "Need to confirm postoperative recovery, wound status, and whether immediate postoperative complications are present (confirm recovery, wound status, and immediate postoperative complications)",
+            "linked_evidence_ids": [
+              "ward_019:proc:quadrant_excision:001"
+            ],
+            "prerequisites_en": [
+              "Surgery completed."
+            ],
+            "problem_en": "Right-breast quadrantectomy under general anesthesia has been completed; currently in the early postoperative phase.",
+            "target_and_laterality_en": "Right-breast operative site and overall postoperative status."
+          },
+          {
+            "acceptable_aliases_en": [
+              "review permanent sections",
+              "await final histopathology",
+              "final pathology review"
+            ],
+            "action_id": "ward_019_cp_006_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Obtain and review final permanent pathology for the separately submitted specimens",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as available through pathology workflow and before definitive treatment or formal follow-up decision",
+            "indication_en": "The final histologic nature of both lesions needs to be defined and subsequent management guided.",
+            "linked_evidence_ids": [
+              "ward_019:proc:quadrant_excision:001",
+              "ward_019:path:frozen:001"
+            ],
+            "prerequisites_en": [
+              "Specimens have been submitted separately for pathological examination."
+            ],
+            "problem_en": "The intraoperative frozen result cannot replace final pathology; the definitive diagnosis is not closed",
+            "target_and_laterality_en": "Right breast 9 o'clock mass and upper-outer calcified lesion (right-breast 9 o'clock mass and upper-outer calcified lesion)"
+          },
+          {
+            "acceptable_aliases_en": [
+              "breast-surgery postoperative review",
+              "pathology-directed management review",
+              "specialist follow-up planning"
+            ],
+            "action_id": "ward_019_cp_006_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Have breast surgery review the postoperative course with final pathology and decide whether further treatment or follow-up is appropriate",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Promptly after final pathology is issued and before discharge or transition to long-term follow-up.",
+            "indication_en": "Confirm adequacy of management based on final pathology, specimens, and postoperative status.",
+            "linked_evidence_ids": [
+              "ward_019:proc:quadrant_excision:001",
+              "ward_019:path:frozen:001",
+              "ward_019:ehr:preoperative_decision:001"
+            ],
+            "prerequisites_en": [
+              "Final pathology available",
+              "Postoperative status assessed."
+            ],
+            "problem_en": "Only frozen findings are currently available, so definitive management cannot yet be decided.",
+            "target_and_laterality_en": "Postoperative management of the right breast"
+          },
+          {
+            "acceptable_aliases_en": [
+              "defer sentinel node biopsy",
+              "avoid unnecessary oncologic escalation",
+              "no current extensive cancer surgery"
+            ],
+            "action_id": "ward_019_cp_006_action_004",
+            "action_scope": "recorded",
+            "canonical_action_en": "Do not currently add sentinel lymph-node biopsy or more extensive cancer surgery solely on the basis of the available evidence",
+            "canonical_prohibited_action_en": null,
+            "category": "acceptable_recorded",
+            "critical_omission_if_missing": false,
+            "deadline_or_time_window_en": "Before final pathology is clarified (until final pathology is clarified)",
+            "indication_en": "Avoid unnecessary invasive treatment when final pathology is unclear and malignant evidence is lacking.",
+            "linked_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:path:frozen:001"
+            ],
+            "prerequisites_en": [
+              "Continue awaiting final pathology and specialist review"
+            ],
+            "problem_en": "Current frozen section shows no malignancy identified, and existing evidence is insufficient to support oncologic escalation surgery",
+            "target_and_laterality_en": "Right breast and regional lymph-node management"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Early postoperative management requirement",
+              "linked_evidence_ids": [
+                "ward_019:proc:quadrant_excision:001"
+              ],
+              "state_id": "ward_019_cp_006_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Final permanent pathology pending (final permanent pathology pending).",
+              "linked_evidence_ids": [
+                "ward_019:proc:quadrant_excision:001",
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_006_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Confirmation of specimen-pathology correlation and subsequent breast-specialty follow-up are required.",
+              "linked_evidence_ids": [
+                "ward_019:proc:quadrant_excision:001",
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_006_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Final permanent pathology and definitive diagnosis not yet available",
+              "linked_evidence_ids": [
+                "ward_019:proc:quadrant_excision:001",
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_006_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current evidence does not provide complete postoperative recovery, wound status, or discharge assessment",
+              "linked_evidence_ids": [],
+              "state_id": "ward_019_cp_006_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Right-sided lesions and surgical sites: right-breast 9 o'clock mass and upper-outer calcified lesion.",
+              "linked_evidence_ids": [
+                "ward_019:ehr:admission:001",
+                "ward_019:proc:quadrant_excision:001"
+              ],
+              "state_id": "ward_019_cp_006_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Both specimen sites were submitted separately",
+              "linked_evidence_ids": [
+                "ward_019:proc:quadrant_excision:001"
+              ],
+              "state_id": "ward_019_cp_006_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Frozen section currently supports benign changes with no malignancy identified",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_006_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Final pathology remains undetermined.",
+              "linked_evidence_ids": [
+                "ward_019:proc:quadrant_excision:001",
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_006_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Right-breast mass; frozen section supports adenosis with fibroadenoma formation.",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_006_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Calcified lesion in the upper outer region of the right breast; intraoperative frozen section considers benign adenomyoepithelioma with changes such as sclerosing adenosis.",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_006_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Imaging categories 4A or 3 must not be treated directly as a cancer diagnosis.",
+              "linked_evidence_ids": [
+                "ward_019:img:breast_ultrasound:001",
+                "ward_019:img:mammography:001"
+              ],
+              "state_id": "ward_019_cp_006_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Benign frozen-section results cannot be rewritten as final permanent pathology having confirmed benignity.",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001",
+                "ward_019:proc:quadrant_excision:001"
+              ],
+              "state_id": "ward_019_cp_006_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Early postoperative inpatient observation and pathology-waiting phase.",
+            "linked_evidence_ids": [
+              "ward_019:proc:quadrant_excision:001",
+              "ward_019:path:frozen:001"
+            ],
+            "state_id": "ward_019_cp_006_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Since the previous checkpoint, right-breast quadrant excision and frozen-section results became available; the lesions were excised and frozen section currently supports benign changes, but final pathology remains pending, so the case is in postoperative observation and pathology-waiting status.",
+              "linked_evidence_ids": [
+                "ward_019:proc:quadrant_excision:001",
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_006_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence_and_state_update",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "Planned excision of the right-breast mass and calcified lesion completed.",
+              "linked_evidence_ids": [
+                "ward_019:proc:quadrant_excision:001"
+              ],
+              "state_id": "ward_019_cp_006_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Mammography-guided hook-wire localization completed",
+              "linked_evidence_ids": [
+                "ward_019:proc:wire_localization:001"
+              ],
+              "state_id": "ward_019_cp_006_state_resolved_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Diagnostic excision and frozen section have been completed, but readiness for pathology-directed treatment or safe follow-up is incomplete",
+            "linked_evidence_ids": [
+              "ward_019:proc:quadrant_excision:001",
+              "ward_019:path:frozen:001"
+            ],
+            "state_id": "ward_019_cp_006_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Treat intraoperative frozen-section results as final paraffin pathology and end diagnosis or follow-up on this basis.",
+            "Performing unsupported expanded surgery for malignancy before final pathology and postoperative status are clarified."
+          ],
+          "critical_omission_rules_en": [
+            "Final pathology has not been obtained or reviewed.",
+            "Postoperative wound and recovery assessment has not been completed.",
+            "Post-breast-surgery subsequent management and continuity follow-up arrangements have not been completed according to the final pathology."
+          ],
+          "preliminary_risk_triggers_en": []
+        },
+        "stopping": {
+          "decision": "wait_for_pending_result",
+          "rationale_en": "Frozen section currently supports benign changes and excision is complete, but frozen section does not replace final permanent pathology. Complete postoperative status and a follow-up plan are also unavailable. Therefore, await final pathology and continue postoperative management; it is not yet safe to stop investigation or transfer directly to unconditional follow-up.",
+          "remaining_blockers_en": [
+            "Final paraffin pathology results and final diagnosis have not yet been made public",
+            "Complete postoperative recovery, wound status, and discharge assessment have not yet been disclosed",
+            "The breast surgery management plan guided by final pathology has not yet been completed"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_019_cp_006",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_019:ehr:admission:001",
+          "ward_019:ehr:preoperative_decision:001",
+          "ward_019:img:breast_ultrasound:001",
+          "ward_019:img:mammography:001",
+          "ward_019:path:frozen:001",
+          "ward_019:proc:quadrant_excision:001",
+          "ward_019:proc:wire_localization:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_019:ehr:recovery:001",
+          "ward_019:ehr:terminal:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_019",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_019_s2_node_001_completed": true,
+            "ward_019_s2_node_002_completed": true,
+            "ward_019_s2_node_003_completed": true,
+            "ward_019_s2_node_004_completed": true,
+            "ward_019_s2_node_005_completed": true,
+            "ward_019_s2_node_006_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Right breast mass",
+            "age_years": 39,
+            "initial_time": "2124-11-04T13:50:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-11-06T18:19:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_019:ehr:admission:001",
+            "ward_019:ehr:preoperative_decision:001",
+            "ward_019:img:breast_ultrasound:001",
+            "ward_019:img:mammography:001",
+            "ward_019:path:frozen:001",
+            "ward_019:proc:quadrant_excision:001",
+            "ward_019:proc:wire_localization:001"
+          ]
+        },
+        "public_snapshot_sha256": "cec22d76ecad755a583432b3376334dba25f1e310ed930fdea9826190c8a4dfd",
+        "public_time": "2124-11-06T18:19:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 6
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_019:ehr:admission:001",
+            "interpretation_en": "The right breast mass at 9 o'clock enlarged from approximately 1.5 cm to 2 cm over four months and was well circumscribed and mobile; this supports the reason for excision and diagnosis but does not establish malignancy or benignity alone.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_019:ehr:preoperative_decision:001",
+            "interpretation_en": "The preoperative plan was mammography-guided hook-wire localization followed by right breast quadrantectomy and frozen section, with escalation or sentinel lymph node biopsy only if malignancy was found.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_019:ehr:recovery:001",
+            "interpretation_en": "Postoperatively, vital signs were stable and the right breast incision was well approximated and dry without drainage or erythema, supporting an uncomplicated recorded recovery.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_019:img:breast_ultrasound:001",
+            "interpretation_en": "The approximately 17-mm right breast nodule was assessed as category 4A on routine ultrasound and favored category 3 after contrast, with fibroadenoma considered first; no abnormal axillary or supraclavicular lymph nodes were seen. Imaging is low-suspicion supportive evidence but does not replace pathology.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_019:img:mammography:001",
+            "interpretation_en": "The right breast mass was category 4A, while clustered patchy calcifications posterior to the nipple were category 3 and required clinical and ultrasound correlation; this supports localization and excision but does not diagnose malignancy.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_019:path:frozen:001",
+            "interpretation_en": "Frozen section showed adenosis with fibroadenoma formation in the 9-o'clock mass and a benign calcified lesion considered to be adenomyoepithelioma with sclerosing adenosis, ductal dilatation, and a small amount of microcalcification; adjacent tissue also showed benign changes. This supports no malignancy identified on frozen section, while permanent pathology is not publicly available.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_019:proc:quadrant_excision:001",
+            "interpretation_en": "Right breast quadrantectomy was completed, with the 9-o'clock mass, upper-outer calcification focus, and adjacent tissue submitted separately; this documents completion of the planned excision.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_019:proc:wire_localization:001",
+            "interpretation_en": "Mammography-guided hook-wire localization of the clustered calcifications posterior to the nipple was completed; only completion of the localization procedure can be used, not contents of the unavailable formal localization report.",
+            "role": "supporting"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_019_cp_007_action_001"
+            ],
+            "claim_ids": [
+              "ward_019_cp_007_claim_001"
+            ],
+            "evidence_id": "ward_019:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_007_state_critical_facts_to_retain_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_007_action_001"
+            ],
+            "claim_ids": [
+              "ward_019_cp_007_claim_003"
+            ],
+            "evidence_id": "ward_019:ehr:preoperative_decision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_007_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_007_action_001",
+              "ward_019_cp_007_action_002"
+            ],
+            "claim_ids": [
+              "ward_019_cp_007_claim_004"
+            ],
+            "evidence_id": "ward_019:ehr:recovery:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_007_state_active_problems_002",
+              "ward_019_cp_007_state_active_problems_003",
+              "ward_019_cp_007_state_resolved_problems_003",
+              "ward_019_cp_007_state_critical_facts_to_retain_005",
+              "ward_019_cp_007_state_required_delta_from_previous_checkpoint_001",
+              "ward_019_cp_007_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_007_action_001"
+            ],
+            "claim_ids": [
+              "ward_019_cp_007_claim_001"
+            ],
+            "evidence_id": "ward_019:img:breast_ultrasound:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_007_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_007_action_001"
+            ],
+            "claim_ids": [
+              "ward_019_cp_007_claim_001"
+            ],
+            "evidence_id": "ward_019:img:mammography:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_007_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_007_action_002"
+            ],
+            "claim_ids": [
+              "ward_019_cp_007_claim_001",
+              "ward_019_cp_007_claim_002",
+              "ward_019_cp_007_claim_003"
+            ],
+            "evidence_id": "ward_019:path:frozen:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_007_state_diagnoses_001",
+              "ward_019_cp_007_state_diagnoses_002",
+              "ward_019_cp_007_state_active_problems_001",
+              "ward_019_cp_007_state_active_problems_003",
+              "ward_019_cp_007_state_resolved_problems_002",
+              "ward_019_cp_007_state_blockers_001",
+              "ward_019_cp_007_state_critical_facts_to_retain_003",
+              "ward_019_cp_007_state_critical_facts_to_retain_004",
+              "ward_019_cp_007_state_facts_to_retract_or_correct_002",
+              "ward_019_cp_007_state_facts_to_retract_or_correct_003",
+              "ward_019_cp_007_state_required_delta_from_previous_checkpoint_002",
+              "ward_019_cp_007_state_treatment_readiness_001",
+              "ward_019_cp_007_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_007_action_001",
+              "ward_019_cp_007_action_002"
+            ],
+            "claim_ids": [
+              "ward_019_cp_007_claim_001",
+              "ward_019_cp_007_claim_003"
+            ],
+            "evidence_id": "ward_019:proc:quadrant_excision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_007_state_diagnoses_003",
+              "ward_019_cp_007_state_active_problems_002",
+              "ward_019_cp_007_state_resolved_problems_001",
+              "ward_019_cp_007_state_resolved_problems_002",
+              "ward_019_cp_007_state_critical_facts_to_retain_002",
+              "ward_019_cp_007_state_treatment_readiness_001",
+              "ward_019_cp_007_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_019_cp_007_action_001"
+            ],
+            "claim_ids": [
+              "ward_019_cp_007_claim_001",
+              "ward_019_cp_007_claim_003"
+            ],
+            "evidence_id": "ward_019:proc:wire_localization:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_019_cp_007_state_resolved_problems_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Excision completed with pathological assessment",
+              "Breast lesion excision completed"
+            ],
+            "canonical_en": "The right breast mass and calcified lesion have been excised and assessed by tissue pathology.",
+            "claim_id": "ward_019_cp_007_claim_001",
+            "linked_evidence_ids": [
+              "ward_019:proc:quadrant_excision:001",
+              "ward_019:proc:wire_localization:001",
+              "ward_019:img:breast_ultrasound:001",
+              "ward_019:img:mammography:001",
+              "ward_019:ehr:admission:001",
+              "ward_019:path:frozen:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_019:proc:quadrant_excision:001",
+              "ward_019:proc:wire_localization:001",
+              "ward_019:img:breast_ultrasound:001",
+              "ward_019:img:mammography:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Benign on frozen section",
+              "No malignancy identified on frozen section"
+            ],
+            "canonical_en": "Intraoperative frozen section supports benign right breast lesions with no malignancy identified at frozen examination; permanent pathology is not yet available.",
+            "claim_id": "ward_019_cp_007_claim_002",
+            "linked_evidence_ids": [
+              "ward_019:path:frozen:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_019:path:frozen:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Planned excision completed without current indication for oncologic escalation",
+              "No current frozen-section indication for sentinel node biopsy"
+            ],
+            "canonical_en": "The planned right breast quadrantectomy is complete, and current frozen findings provide no support for immediate escalation to oncologic surgery or sentinel lymph node biopsy.",
+            "claim_id": "ward_019_cp_007_claim_003",
+            "linked_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:path:frozen:001",
+              "ward_019:proc:quadrant_excision:001",
+              "ward_019:proc:wire_localization:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:path:frozen:001",
+              "ward_019:proc:quadrant_excision:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Stable postoperative course",
+              "Uncomplicated wound status"
+            ],
+            "canonical_en": "The current postoperative recovery is stable, with no recorded wound infection or significant bleeding manifestation.",
+            "claim_id": "ward_019_cp_007_claim_004",
+            "linked_evidence_ids": [
+              "ward_019:ehr:recovery:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_019:ehr:recovery:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Routine postoperative monitoring and discharge planning",
+              "Postoperative wound-care instructions"
+            ],
+            "action_id": "ward_019_cp_007_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue routine postoperative observation and discharge when standard criteria are met, with right breast wound-care and return precautions.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization and at discharge.",
+            "indication_en": "Current vital signs are stable and the incision is dry and well approximated, with no recorded infection or drainage, but routine postoperative assessment and nursing instructions still need to be completed.",
+            "linked_evidence_ids": [
+              "ward_019:ehr:recovery:001",
+              "ward_019:ehr:admission:001",
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:img:breast_ultrasound:001",
+              "ward_019:img:mammography:001",
+              "ward_019:proc:quadrant_excision:001",
+              "ward_019:proc:wire_localization:001"
+            ],
+            "prerequisites_en": [
+              "Confirm that routine discharge criteria are met.",
+              "Complete assessment of the incision, pain, and general postoperative status",
+              "Provide wound care and indications for return to hospital, such as fever, redness and swelling, drainage, or bleeding."
+            ],
+            "problem_en": "Status post right breast quadrantectomy.",
+            "target_and_laterality_en": "Right breast surgical incision and overall postoperative status"
+          },
+          {
+            "acceptable_aliases_en": [
+              "Permanent pathology follow-up",
+              "Breast surgery follow-up for pathology review"
+            ],
+            "action_id": "ward_019_cp_007_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Track the permanent pathology result and arrange breast-surgery follow-up to review it; do not make an oncologic escalation decision before the result is available.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as permanent pathology results are available, follow up according to breast surgery arrangements",
+            "indication_en": "Currently only frozen section supports benignity; the formal permanent pathology result has not yet been disclosed.",
+            "linked_evidence_ids": [
+              "ward_019:path:frozen:001",
+              "ward_019:proc:quadrant_excision:001",
+              "ward_019:ehr:recovery:001"
+            ],
+            "prerequisites_en": [
+              "Ensure that the specimen has been sent for formal pathological examination.",
+              "Establish result tracking and patient return-visit arrangements.",
+              "Reassess at follow-up in conjunction with permanent pathology and postoperative status."
+            ],
+            "problem_en": "The final pathological diagnosis has not yet been closed.",
+            "target_and_laterality_en": "Right breast resection specimen and postoperative follow-up of the right breast."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Await formal permanent pathology results to complete final diagnostic closure",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_007_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative recovery and incision observation after right breast quadrantectomy",
+              "linked_evidence_ids": [
+                "ward_019:proc:quadrant_excision:001",
+                "ward_019:ehr:recovery:001"
+              ],
+              "state_id": "ward_019_cp_007_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Pathology-result review and breast-surgery follow-up need to be arranged.",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001",
+                "ward_019:ehr:recovery:001"
+              ],
+              "state_id": "ward_019_cp_007_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "The formal permanent pathology report has not yet been publicly disclosed; it cannot be claimed that the final pathological diagnosis has been completed.",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_007_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "39-year-old woman, right breast lesion",
+              "linked_evidence_ids": [
+                "ward_019:ehr:admission:001"
+              ],
+              "state_id": "ward_019_cp_007_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right breast quadrantectomy has been completed, and specimens were sent separately for examination.",
+              "linked_evidence_ids": [
+                "ward_019:proc:quadrant_excision:001"
+              ],
+              "state_id": "ward_019_cp_007_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Frozen section supports a benign lesion; no malignancy found",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_007_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Formal permanent pathology results have not yet been publicly available",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_007_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The postoperative incision is dry and well approximated, with no record of redness, swelling, or exudate.",
+              "linked_evidence_ids": [
+                "ward_019:ehr:recovery:001"
+              ],
+              "state_id": "ward_019_cp_007_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Right breast 9 o'clock mass: frozen section shows adenosis with fibroadenoma formation, currently supporting a benign lesion.",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_007_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right breast upper outer area calcifications: frozen section considered adenomyoepithelioma with sclerosing adenosis, duct ectasia, and a small amount of microcalcification; currently supports a benign lesion",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_007_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative status of the right breast lesion.",
+              "linked_evidence_ids": [
+                "ward_019:proc:quadrant_excision:001"
+              ],
+              "state_id": "ward_019_cp_007_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Directly describing imaging category 4A or 3 as breast cancer should be corrected",
+              "linked_evidence_ids": [
+                "ward_019:img:breast_ultrasound:001",
+                "ward_019:img:mammography:001"
+              ],
+              "state_id": "ward_019_cp_007_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The statement that benign frozen section means formal permanent pathology has confirmed benignity should be corrected",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_007_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Directly declaring that no further pathological follow-up is needed before permanent pathological results should be corrected.",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_007_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Postoperative recovery is stable and outpatient follow-up may be transitioned to when routine discharge criteria are met; permanent pathology results need to be retained and followed up, and the current frozen-section result cannot be used as final diagnostic closure.",
+            "linked_evidence_ids": [
+              "ward_019:ehr:recovery:001",
+              "ward_019:path:frozen:001",
+              "ward_019:proc:quadrant_excision:001"
+            ],
+            "state_id": "ward_019_cp_007_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "New postoperative recovery evidence: vital signs are stable and the right breast incision is well approximated and dry without drainage or erythema.",
+              "linked_evidence_ids": [
+                "ward_019:ehr:recovery:001"
+              ],
+              "state_id": "ward_019_cp_007_state_required_delta_from_previous_checkpoint_001",
+              "status": "clinical_state_change",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The principal diagnostic conclusion remains benign findings supported by frozen section; permanent pathology is still unavailable and remains the blocker to final diagnostic closure.",
+              "linked_evidence_ids": [
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_007_state_required_delta_from_previous_checkpoint_002",
+              "status": "no_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "Localization and planned resection of the right breast mass and calcific lesion have been completed.",
+              "linked_evidence_ids": [
+                "ward_019:proc:quadrant_excision:001",
+                "ward_019:proc:wire_localization:001"
+              ],
+              "state_id": "ward_019_cp_007_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The main tissue-sampling step needed preoperatively to rule out malignancy has been completed",
+              "linked_evidence_ids": [
+                "ward_019:proc:quadrant_excision:001",
+                "ward_019:path:frozen:001"
+              ],
+              "state_id": "ward_019_cp_007_state_resolved_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "No unstable vital signs, incision exudate, or redness/swelling issues are seen in the current record.",
+              "linked_evidence_ids": [
+                "ward_019:ehr:recovery:001"
+              ],
+              "state_id": "ward_019_cp_007_state_resolved_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "The planned local excision has been completed; based on frozen-section results, there is currently no indication for extended malignant surgery or sentinel lymph node biopsy, but final treatment readiness remains affected by permanent pathology results.",
+            "linked_evidence_ids": [
+              "ward_019:ehr:preoperative_decision:001",
+              "ward_019:path:frozen:001",
+              "ward_019:proc:quadrant_excision:001"
+            ],
+            "state_id": "ward_019_cp_007_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Frozen pathology must not be treated as the final conclusion of permanent pathology.",
+            "Do not arbitrarily infer breast cancer or perform extended tumor surgery or sentinel lymph node biopsy in the absence of evidence of malignancy",
+            "Follow-up of permanent pathology results must not be omitted because the current incision is stable.",
+            "If vital-sign instability, incision bleeding, exudation, redness and swelling, or other postoperative deterioration occurs, cancel the safe-discharge determination and reassess."
+          ],
+          "critical_omission_rules_en": [
+            "It must be stated that permanent pathological results have not yet been disclosed.",
+            "Pathology-result review and continuous breast-surgery follow-up must be arranged.",
+            "Routine postoperative observation, incision care, and return-to-hospital instructions must be completed."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Current frozen-section results support benignity",
+            "Formal permanent pathology is still pending",
+            "Postoperative status is stable but cannot replace a complete discharge assessment.",
+            "Discharge and transition to conditional pathology follow-up may be considered"
+          ]
+        },
+        "stopping": {
+          "decision": "safe_to_discharge_or_follow_up",
+          "rationale_en": "The planned right breast quadrantectomy is complete, frozen section supports benign disease, and postoperative vital signs and wound status are stable without recorded infection or drainage. Therefore, discharge and follow-up are reasonable after standard discharge criteria and instructions are completed; tracking of permanent pathology must not stop, and the result should be reviewed by breast surgery when available.",
+          "remaining_blockers_en": [
+            "Formal permanent pathology results have not yet been disclosed, and final diagnostic closure has not been completed"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_019_cp_007",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_019:ehr:admission:001",
+          "ward_019:ehr:preoperative_decision:001",
+          "ward_019:ehr:recovery:001",
+          "ward_019:img:breast_ultrasound:001",
+          "ward_019:img:mammography:001",
+          "ward_019:path:frozen:001",
+          "ward_019:proc:quadrant_excision:001",
+          "ward_019:proc:wire_localization:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_019:ehr:terminal:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_019",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_019_s2_node_001_completed": true,
+            "ward_019_s2_node_002_completed": true,
+            "ward_019_s2_node_003_completed": true,
+            "ward_019_s2_node_004_completed": true,
+            "ward_019_s2_node_005_completed": true,
+            "ward_019_s2_node_006_completed": true,
+            "ward_019_s2_node_007_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Right breast mass",
+            "age_years": 39,
+            "initial_time": "2124-11-04T13:50:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-11-07T08:00:00+08:00",
+          "stage": "S3",
+          "visible_evidence_ids": [
+            "ward_019:ehr:admission:001",
+            "ward_019:ehr:preoperative_decision:001",
+            "ward_019:ehr:recovery:001",
+            "ward_019:img:breast_ultrasound:001",
+            "ward_019:img:mammography:001",
+            "ward_019:path:frozen:001",
+            "ward_019:proc:quadrant_excision:001",
+            "ward_019:proc:wire_localization:001"
+          ]
+        },
+        "public_snapshot_sha256": "91f5fce8f3e75f2fcfd473bf5ac6eb9aad3de72f51a1c6541a3f0eade58f7919",
+        "public_time": "2124-11-07T08:00:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 7
+    }
+  ],
+  "milestone_candidates": [
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "The formal permanent pathology result has been obtained and reviewed by the clinical team.",
+        "The final diagnosis is consistent with the resection specimen and clinical imaging"
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_019_ms_01",
+      "milestone_type": "diagnostic_closure",
+      "name_en": "Diagnostic closure",
+      "partial_criteria_en": [
+        "Frozen section has supported a benign lesion",
+        "The lesion has been resected and tissue submission for examination has been completed."
+      ],
+      "safety_invalidation_rules_en": [
+        "If permanent pathology indicates malignancy or is inconsistent with the frozen result, the current diagnostic-closure status becomes invalid and reassessment is required."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Final pathology results are clarified and it is confirmed that no further malignant-tumor staging or treatment preparation is needed, or corresponding preparation has been completed based on the results."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_019_ms_02",
+      "milestone_type": "staging_or_treatment_readiness",
+      "name_en": "Staging or treatment readiness",
+      "partial_criteria_en": [
+        "Imaging assessment, hookwire localization, and planned tissue excision have been completed",
+        "The current frozen-section result does not support immediate escalation treatment for malignancy."
+      ],
+      "safety_invalidation_rules_en": [
+        "If permanent pathology indicates malignancy, restaging or treatment-readiness assessment is required."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Confirm from final pathology that the required definitive treatment has been completed and that there is no indication for additional local or regional treatment."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_019_ms_03",
+      "milestone_type": "definitive_intervention",
+      "name_en": "Definitive intervention",
+      "partial_criteria_en": [
+        "Right breast quadrantectomy has been completed.",
+        "Frozen section supports benignity; there is currently no indication for extended surgery or sentinel lymph node biopsy."
+      ],
+      "safety_invalidation_rules_en": [
+        "If permanent pathology suggests malignancy or inadequate resection management, the current completion status needs reassessment"
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Complete routine postoperative observation and discharge assessment.",
+        "Complete incision care, complication warnings, and arrangements for subsequent result tracking."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_019_ms_04",
+      "milestone_type": "postoperative_or_response_management",
+      "name_en": "Postoperative or response management",
+      "partial_criteria_en": [
+        "Current vital signs are stable.",
+        "The right breast incision is well approximated and dry, with no record of exudation, redness, or swelling"
+      ],
+      "safety_invalidation_rules_en": [
+        "It cannot be regarded as completed when unstable vital signs, wound bleeding, infection, or other clinical deterioration occurs."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Meets discharge criteria and discharge instructions have been completed",
+        "Breast surgery follow-up and permanent pathology-result review arrangements have been specified"
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_019_ms_05",
+      "milestone_type": "disposition_and_continuity",
+      "name_en": "Disposition and continuity of care",
+      "partial_criteria_en": [
+        "The current status supports discharge after routine criteria are met",
+        "The need to track permanent pathology results has been identified."
+      ],
+      "safety_invalidation_rules_en": [
+        "Continuity of care must not be judged complete when discharge assessment has not been completed, return-to-hospital instructions have not been provided, or pathology result follow-up has not been arranged"
+      ]
+    }
+  ],
+  "normalized_evidence": [
+    {
+      "available_time": "2124-11-04T16:33:00+08:00",
+      "available_time_utc": "2124-11-04T08:33:00Z",
+      "case_id": "ward_019",
+      "clinical_time": "2124-11-04T13:50:00+08:00",
+      "clinical_time_utc": "2124-11-04T05:50:00Z",
+      "content_summary": "A 39-year-old woman with a mass at the 9 o'clock position of the right breast, which increased from approximately 1.5 cm to approximately 2 cm over 4 months of follow-up. It had well-defined margins and good mobility. She was admitted for excision and diagnosis.",
+      "evidence_id": "ward_019:ehr:admission:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "A 39-year-old woman with a mass at the 9 o'clock position of the right breast, which increased from approximately 1.5 cm to approximately 2 cm over 4 months of follow-up. It had well-defined margins and good mobility. She was admitted for excision and diagnosis.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC019 Admission Assessment",
+      "unit": null
+    },
+    {
+      "available_time": "2124-11-05T08:58:00+08:00",
+      "available_time_utc": "2124-11-05T00:58:00Z",
+      "case_id": "ward_019",
+      "clinical_time": "2124-11-05T08:57:00+08:00",
+      "clinical_time_utc": "2124-11-05T00:57:00Z",
+      "content_summary": "A nodule measuring approximately 17 mm at the 9 o'clock position of the right breast; routine ultrasound assessment: 4A; after contrast enhancement, it was favored to be category 3, with fibroadenoma considered first; no abnormally enlarged lymph nodes were seen in the axillary or supraclavicular regions.",
+      "evidence_id": "ward_019:img:breast_ultrasound:001",
+      "laterality": null,
+      "module": "imaging_results",
+      "raw_content": "A nodule measuring approximately 17 mm at the 9 o'clock position of the right breast; routine ultrasound assessment: 4A; after contrast enhancement, it was favored to be category 3, with fibroadenoma considered first; no abnormally enlarged lymph nodes were seen in the axillary or supraclavicular regions.",
+      "record_kind": "deidentified_imaging_summary",
+      "structured_value": null,
+      "title": "SRC019 Breast Ultrasound",
+      "unit": null
+    },
+    {
+      "available_time": "2124-11-06T10:28:00+08:00",
+      "available_time_utc": "2124-11-06T02:28:00Z",
+      "case_id": "ward_019",
+      "clinical_time": "2124-11-05T07:36:00+08:00",
+      "clinical_time_utc": "2124-11-04T23:36:00Z",
+      "content_summary": "Assessment of the mass in the upper outer quadrant of the right breast: 4A; clustered patchy calcifications posterior to the right nipple assessed as category 3, requiring correlation with palpation and ultrasonography.",
+      "evidence_id": "ward_019:img:mammography:001",
+      "laterality": null,
+      "module": "imaging_results",
+      "raw_content": "Assessment of the mass in the upper outer quadrant of the right breast: 4A; clustered patchy calcifications posterior to the right nipple assessed as category 3, requiring correlation with palpation and ultrasonography.",
+      "record_kind": "deidentified_imaging_summary",
+      "structured_value": null,
+      "title": "SRC019 breast mammography",
+      "unit": null
+    },
+    {
+      "available_time": "2124-11-06T10:45:00+08:00",
+      "available_time_utc": "2124-11-06T02:45:00Z",
+      "case_id": "ward_019",
+      "clinical_time": "2124-11-06T10:45:00+08:00",
+      "clinical_time_utc": "2124-11-06T02:45:00Z",
+      "content_summary": "Plan mammography-guided hook-wire localization and quadrant excision of the calcified lesion in the right breast, with the specimen sent for frozen section; expand to breast-conserving surgery, sentinel lymph node biopsy, or more extensive surgery only if the result is malignant.",
+      "evidence_id": "ward_019:ehr:preoperative_decision:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "Plan mammography-guided hook-wire localization and quadrant excision of the calcified lesion in the right breast, with the specimen sent for frozen section; expand to breast-conserving surgery, sentinel lymph node biopsy, or more extensive surgery only if the result is malignant.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC019 Preoperative Decision",
+      "unit": null
+    },
+    {
+      "available_time": "2124-11-06T10:46:00+08:00",
+      "available_time_utc": "2124-11-06T02:46:00Z",
+      "case_id": "ward_019",
+      "clinical_time": "2124-11-06T09:33:00+08:00",
+      "clinical_time_utc": "2124-11-06T01:33:00Z",
+      "content_summary": "Mammography-guided wire localization was completed for the clustered calcifications posterior to the right nipple. The formal localization report was reviewed after surgery; currently, only the actual procedure record is used.",
+      "evidence_id": "ward_019:proc:wire_localization:001",
+      "laterality": null,
+      "module": "procedure_records",
+      "raw_content": "Mammography-guided wire localization was completed for the clustered calcifications posterior to the right nipple. The formal localization report was reviewed after surgery; currently, only the actual procedure record is used.",
+      "record_kind": "deidentified_procedure_summary",
+      "structured_value": null,
+      "title": "SRC019 Hook-Wire Localization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-11-06T18:00:00+08:00",
+      "available_time_utc": "2124-11-06T10:00:00Z",
+      "case_id": "ward_019",
+      "clinical_time": "2124-11-06T17:15:00+08:00",
+      "clinical_time_utc": "2124-11-06T09:15:00Z",
+      "content_summary": "Right breast quadrantectomy was completed under general anesthesia, and the mass at the 9 o'clock position, the upper outer calcification focus, and tissue adjacent to the mass were submitted separately for examination.",
+      "evidence_id": "ward_019:proc:quadrant_excision:001",
+      "laterality": null,
+      "module": "procedure_records",
+      "raw_content": "Right breast quadrantectomy was completed under general anesthesia, and the mass at the 9 o'clock position, the upper outer calcification focus, and tissue adjacent to the mass were submitted separately for examination.",
+      "record_kind": "deidentified_procedure_summary",
+      "structured_value": null,
+      "title": "SRC019Right breast quadrantectomy",
+      "unit": null
+    },
+    {
+      "available_time": "2124-11-06T18:19:00+08:00",
+      "available_time_utc": "2124-11-06T10:19:00Z",
+      "case_id": "ward_019",
+      "clinical_time": "2124-11-06T18:19:00+08:00",
+      "clinical_time_utc": "2124-11-06T10:19:00Z",
+      "content_summary": "The mass at the 9 o'clock position showed adenosis with fibroadenoma formation; the calcified lesion in the upper outer region was a benign lesion, considered to be adenomyoepithelioma accompanied by sclerosing adenosis, ductal dilatation, and a small amount of microcalcification; the adjacent tissue also showed benign changes.",
+      "evidence_id": "ward_019:path:frozen:001",
+      "laterality": null,
+      "module": "pathology_results",
+      "raw_content": "The mass at the 9 o'clock position showed adenosis with fibroadenoma formation; the calcified lesion in the upper outer region was a benign lesion, considered to be adenomyoepithelioma accompanied by sclerosing adenosis, ductal dilatation, and a small amount of microcalcification; the adjacent tissue also showed benign changes.",
+      "record_kind": "deidentified_pathology_summary",
+      "structured_value": null,
+      "title": "SRC019 Intraoperative Frozen Section",
+      "unit": null
+    },
+    {
+      "available_time": "2124-11-07T08:00:00+08:00",
+      "available_time_utc": "2124-11-07T00:00:00Z",
+      "case_id": "ward_019",
+      "clinical_time": "2124-11-07T08:00:00+08:00",
+      "clinical_time_utc": "2124-11-07T00:00:00Z",
+      "content_summary": "Vital signs were stable. The right-sided incision was well approximated and dry, without drainage or erythema; the dressing was changed.",
+      "evidence_id": "ward_019:ehr:recovery:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "Vital signs were stable. The right-sided incision was well approximated and dry, without drainage or erythema; the dressing was changed.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC019 postoperative recovery",
+      "unit": null
+    },
+    {
+      "available_time": "2124-11-07T13:30:00+08:00",
+      "available_time_utc": "2124-11-07T05:30:00Z",
+      "case_id": "ward_019",
+      "clinical_time": "2124-11-07T13:30:00+08:00",
+      "clinical_time_utc": "2124-11-07T05:30:00Z",
+      "content_summary": "Intraoperative frozen section was benign, and postoperative recovery was good; the incision was grade I/class A. Discharge was approved, with final paraffin-section pathology and follow-up with the breast specialty clinic arranged.",
+      "evidence_id": "ward_019:ehr:terminal:001",
+      "laterality": null,
+      "module": "disposition",
+      "raw_content": "Intraoperative frozen section was benign, and postoperative recovery was good; the incision was grade I/class A. Discharge was approved, with final paraffin-section pathology and follow-up with the breast specialty clinic arranged.",
+      "record_kind": "deidentified_terminal_summary",
+      "structured_value": null,
+      "title": "SRC019 Final Discharge Status",
+      "unit": null
+    }
+  ],
+  "process_gold": {
+    "status": "source_recorded_not_layer_gold_clinically_validated",
+    "transition_count": 8,
+    "transitions": [
+      {
+        "clock_after": "2124-11-04T16:33:00+08:00",
+        "clock_before": "2124-11-04T13:50:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review breast admission",
+            "review right breast admission",
+            "Review the admission assessment for the right breast mass",
+            "right breast mass admission"
+          ],
+          "action_id": "ehr:ward_019:001",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_019:ehr:admission:001"
+          ],
+          "target": "right_breast_mass_admission_case007"
+        },
+        "release_evidence_ids": [
+          "ward_019:ehr:admission:001"
+        ],
+        "sequence_index": 0,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_019_s2_node_001_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_019_s2_node_001"
+      },
+      {
+        "clock_after": "2124-11-06T10:28:00+08:00",
+        "clock_before": "2124-11-04T16:33:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review multimodal breast imaging",
+            "review right breast imaging assessment",
+            "review right breast ultrasound and mammography",
+            "Review the comprehensive assessment of right breast ultrasound and mammography",
+            "right breast ultrasound and mammography assessment"
+          ],
+          "action_id": "ehr:ward_019:002",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_019:img:breast_ultrasound:001",
+            "ward_019:img:mammography:001"
+          ],
+          "target": "right_breast_ultrasound_and_mammography_assessment_case007"
+        },
+        "release_evidence_ids": [
+          "ward_019:img:breast_ultrasound:001",
+          "ward_019:img:mammography:001"
+        ],
+        "sequence_index": 1,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_019_s2_node_002_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_019_s2_node_002"
+      },
+      {
+        "clock_after": "2124-11-06T10:45:00+08:00",
+        "clock_before": "2124-11-06T10:28:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review quadrant excision plan",
+            "review wire-localized excision plan",
+            "Review the wire-localized right breast quadrant excision plan",
+            "wire localized right breast quadrant excision plan"
+          ],
+          "action_id": "ehr:ward_019:003",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_019:ehr:preoperative_decision:001"
+          ],
+          "target": "wire_localized_right_breast_quadrant_excision_plan_case007"
+        },
+        "release_evidence_ids": [
+          "ward_019:ehr:preoperative_decision:001"
+        ],
+        "sequence_index": 2,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_019_s2_node_003_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_019_s2_node_003"
+      },
+      {
+        "clock_after": "2124-11-06T10:46:00+08:00",
+        "clock_before": "2124-11-06T10:45:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "perform breast wire localization",
+            "Perform wire localization of the right breast calcification",
+            "right breast calcification wire localization"
+          ],
+          "action_id": "ehr:ward_019:004",
+          "action_type": "perform_procedure",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_019:proc:wire_localization:001"
+          ],
+          "target": "right_breast_calcification_wire_localization_case007"
+        },
+        "release_evidence_ids": [
+          "ward_019:proc:wire_localization:001"
+        ],
+        "sequence_index": 3,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_019_s2_node_004_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_019_s2_node_004"
+      },
+      {
+        "clock_after": "2124-11-06T18:00:00+08:00",
+        "clock_before": "2124-11-06T10:46:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "perform right breast quadrant excision",
+            "Perform right breast quadrant excision",
+            "right breast quadrant excision"
+          ],
+          "action_id": "ehr:ward_019:005",
+          "action_type": "perform_procedure",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_019:proc:quadrant_excision:001"
+          ],
+          "target": "right_breast_quadrant_excision_case007"
+        },
+        "release_evidence_ids": [
+          "ward_019:proc:quadrant_excision:001"
+        ],
+        "sequence_index": 4,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_019_s2_node_005_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_019_s2_node_005"
+      },
+      {
+        "clock_after": "2124-11-06T18:19:00+08:00",
+        "clock_before": "2124-11-06T18:00:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review frozen pathology",
+            "review benign frozen pathology",
+            "Review benign frozen pathology from multiple sites of the right breast",
+            "right breast multisite benign frozen pathology"
+          ],
+          "action_id": "ehr:ward_019:006",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_019:path:frozen:001"
+          ],
+          "target": "right_breast_multisite_benign_frozen_pathology_case007"
+        },
+        "release_evidence_ids": [
+          "ward_019:path:frozen:001"
+        ],
+        "sequence_index": 5,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_019_s2_node_006_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_019_s2_node_006"
+      },
+      {
+        "clock_after": "2124-11-07T08:00:00+08:00",
+        "clock_before": "2124-11-06T18:19:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "monitor excision recovery",
+            "monitor postoperative recovery",
+            "Monitor recovery after right breast quadrant excision",
+            "right breast quadrant excision recovery"
+          ],
+          "action_id": "ehr:ward_019:007",
+          "action_type": "monitor_or_defer",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_019:ehr:recovery:001"
+          ],
+          "target": "right_breast_quadrant_excision_recovery_case007"
+        },
+        "release_evidence_ids": [
+          "ward_019:ehr:recovery:001"
+        ],
+        "sequence_index": 6,
+        "stage_after": "S3",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_019_s2_node_007_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_019_s2_node_007"
+      },
+      {
+        "clock_after": "2124-11-07T13:30:00+08:00",
+        "clock_before": "2124-11-07T08:00:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "discharge after supported recovery",
+            "discharge after benign breast excision",
+            "Discharge after excision of a benign right breast lesion",
+            "home after benign right breast quadrant excision"
+          ],
+          "action_id": "ehr:ward_019:008",
+          "action_type": "discharge",
+          "gold_source_type": "ehr_derived_terminal_gold",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_019:ehr:terminal:001"
+          ],
+          "target": "home_after_benign_right_breast_quadrant_excision_case007"
+        },
+        "release_evidence_ids": [
+          "ward_019:ehr:terminal:001"
+        ],
+        "sequence_index": 7,
+        "stage_after": "S3",
+        "stage_before": "S3",
+        "state_updates": {
+          "disposition": "home",
+          "encounter_active": false,
+          "terminal": true
+        },
+        "terminal": true,
+        "transition_id": "ward_019_s3_terminal_001"
+      }
+    ]
+  },
+  "schema_version": "ward-runtime-gold-1.0",
+  "gold_version": "ward-anonymous-runtime-1.0"
+}

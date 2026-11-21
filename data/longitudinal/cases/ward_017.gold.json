@@ -1,0 +1,3443 @@
+{
+  "case_id": "ward_017",
+  "checkpoints": [
+    {
+      "answer": {
+        "layer1_evidence": [],
+        "layer2_utilization_links": [],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "suspected left breast cancer",
+              "left breast mass suspicious for malignancy",
+              "possible malignant breast tumor"
+            ],
+            "canonical_en": "Left breast mass with suspected malignancy; diagnostic confirmation is not yet available",
+            "claim_id": "ward_017_cp_000_claim_001",
+            "linked_evidence_ids": [],
+            "status": "suspected",
+            "supporting_evidence_ids": []
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "continue workup of the left breast mass",
+              "obtain diagnostic breast imaging and tissue diagnosis",
+              "perform diagnostic evaluation for suspected left breast malignancy"
+            ],
+            "action_id": "ward_017_cp_000_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue diagnostic evaluation of the left breast mass with appropriate imaging and tissue pathology to establish the diagnosis",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete or arrange as soon as possible during inpatient assessment; the specific time limit is determined by the clinical team according to the condition",
+            "indication_en": "Currently there is only suspected information at the admission-diagnosis level; visible diagnostic evidence is lacking, and diagnostic closure or treatment decision-making cannot be safely completed.",
+            "linked_evidence_ids": [],
+            "prerequisites_en": [
+              "Assessment of indications, contraindications, and patient condition by the clinical team",
+              "Determine the subsequent sampling or examination pathway based on actual examination results."
+            ],
+            "problem_en": "Left breast mass, malignant tumor not yet confirmed.",
+            "target_and_laterality_en": "Left breast mass; the specific examination and sampling site are determined by clinical assessment"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Left breast mass requiring further characterization and pathological diagnosis",
+              "linked_evidence_ids": [],
+              "state_id": "ward_017_cp_000_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "No visible imaging, examination, pathology, or laboratory evidence is available; diagnostic closure, staging, and treatment-readiness assessment cannot be completed",
+              "linked_evidence_ids": [],
+              "state_id": "ward_017_cp_000_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "The patient is a 70-year-old woman",
+              "linked_evidence_ids": [],
+              "state_id": "ward_017_cp_000_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current setting is inpatient breast surgery",
+              "linked_evidence_ids": [],
+              "state_id": "ward_017_cp_000_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The admission diagnosis is left breast mass with suspected cancer",
+              "linked_evidence_ids": [],
+              "state_id": "ward_017_cp_000_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "No evidence items are visible and the encounter remains active",
+              "linked_evidence_ids": [],
+              "state_id": "ward_017_cp_000_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Left breast mass",
+              "linked_evidence_ids": [],
+              "state_id": "ward_017_cp_000_state_diagnoses_001",
+              "status": "active | documented_as_admission_diagnosis",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Do not upgrade suspected cancer to confirmed breast cancer",
+              "linked_evidence_ids": [],
+              "state_id": "ward_017_cp_000_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not add unavailable pathology, stage, treatment, or prognosis information",
+              "linked_evidence_ids": [],
+              "state_id": "ward_017_cp_000_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "The inpatient diagnostic and treatment process is still ongoing, and diagnostic assessment should currently continue; it must not be inferred from the available information that surgery has been received, pathology has been completed, or antitumor treatment has been started",
+            "linked_evidence_ids": [],
+            "state_id": "ward_017_cp_000_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Public evidence required for definitive-treatment or staging decisions is not yet available; currently, it can only be confirmed that the patient is at the inpatient breast surgery evaluation stage.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_017_cp_000_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Suspected breast cancer must not be described as confirmed breast cancer",
+            "Do not fabricate imaging, pathology, staging, treatment, or metastasis results.",
+            "Do not directly decide on a specific surgical, drug, or radiotherapy regimen for breast cancer on this basis"
+          ],
+          "critical_omission_rules_en": [
+            "It must be stated that visible diagnostic evidence is currently lacking",
+            "Continued diagnostic evaluation must be recommended.",
+            "When the diagnosis is unclear and the encounter remains active, do not determine that it is safe to stop or transition to routine follow-up"
+          ],
+          "preliminary_risk_triggers_en": [
+            "Insufficient evidence.",
+            "Diagnosis has not been closed.",
+            "Clinical review is required."
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "There are no visible evidence items. Only a left breast mass and admission-level suspicion of malignancy can be stated; diagnostic closure, staging, and treatment decisions cannot be completed. Diagnostic evaluation should continue, and stopping or routine follow-up is not currently safe.",
+          "remaining_blockers_en": [
+            "There is a lack of imaging and histopathological diagnostic evidence for a left breast mass",
+            "There is not yet sufficient information for staging or treatment-readiness assessment",
+            "The inpatient encounter remains active"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_017_cp_000",
+      "question": {
+        "allowed_evidence_ids": [],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_017:ehr:admission:001",
+          "ward_017:ehr:preoperative_decision:001",
+          "ward_017:ehr:recovery:001",
+          "ward_017:ehr:terminal:001",
+          "ward_017:img:breast_assessment:001",
+          "ward_017:img:breast_mri:001",
+          "ward_017:path:core_biopsy:001",
+          "ward_017:path:sentinel_frozen:001",
+          "ward_017:proc:core_biopsy:001",
+          "ward_017:proc:definitive_surgery:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_017",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false
+          },
+          "public_context": {
+            "admission_diagnosis": "Left breast mass, suspected cancer",
+            "age_years": 70,
+            "initial_time": "2124-05-03T09:51:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-05-03T09:51:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": []
+        },
+        "public_snapshot_sha256": "6c436d1e652d1787b8574becd39c7f9f227c4c8bb2cbeb25613fbfd1674dacb5",
+        "public_time": "2124-05-03T09:51:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 0
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_017:ehr:admission:001",
+            "interpretation_en": "A 70-year-old woman has an approximately 3.5–4 cm hard, ill-defined mass in the upper-inner left breast, with type 2 diabetes mellitus and sinus tachycardia. This supports the presence of a left breast mass and relevant comorbidities but does not independently confirm breast cancer or determine stage.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_017:img:breast_assessment:001",
+            "interpretation_en": "An approximately 33 mm mass is present at the 10–11 o'clock position of the left breast; both ultrasound and mammography classify it as BI-RADS 4C, and left axillary lymph nodes are visualized. BI-RADS 4C is highly suspicious for malignancy and requires tissue diagnosis; visualized axillary nodes do not establish metastasis.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_017_cp_002_action_001",
+              "ward_017_cp_002_action_002"
+            ],
+            "claim_ids": [
+              "ward_017_cp_002_claim_001",
+              "ward_017_cp_002_claim_003"
+            ],
+            "evidence_id": "ward_017:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_002_state_active_problems_004",
+              "ward_017_cp_002_state_active_problems_005",
+              "ward_017_cp_002_state_critical_facts_to_retain_001",
+              "ward_017_cp_002_state_critical_facts_to_retain_004",
+              "ward_017_cp_002_state_critical_facts_to_retain_005",
+              "ward_017_cp_002_state_facts_to_retract_or_correct_001",
+              "ward_017_cp_002_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_002_action_001",
+              "ward_017_cp_002_action_003"
+            ],
+            "claim_ids": [
+              "ward_017_cp_002_claim_001",
+              "ward_017_cp_002_claim_002"
+            ],
+            "evidence_id": "ward_017:img:breast_assessment:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_002_state_diagnoses_001",
+              "ward_017_cp_002_state_active_problems_001",
+              "ward_017_cp_002_state_active_problems_002",
+              "ward_017_cp_002_state_active_problems_003",
+              "ward_017_cp_002_state_blockers_001",
+              "ward_017_cp_002_state_blockers_002",
+              "ward_017_cp_002_state_blockers_003",
+              "ward_017_cp_002_state_critical_facts_to_retain_001",
+              "ward_017_cp_002_state_critical_facts_to_retain_002",
+              "ward_017_cp_002_state_critical_facts_to_retain_003",
+              "ward_017_cp_002_state_facts_to_retract_or_correct_001",
+              "ward_017_cp_002_state_facts_to_retract_or_correct_002",
+              "ward_017_cp_002_state_facts_to_retract_or_correct_003",
+              "ward_017_cp_002_state_required_delta_from_previous_checkpoint_001",
+              "ward_017_cp_002_state_required_delta_from_previous_checkpoint_002",
+              "ward_017_cp_002_state_treatment_readiness_001",
+              "ward_017_cp_002_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Highly suspicious left breast mass requiring tissue diagnosis",
+              "BI-RADS 4C left breast lesion requiring biopsy"
+            ],
+            "canonical_en": "The left breast mass is highly suspicious for malignancy and requires histologic confirmation.",
+            "claim_id": "ward_017_cp_002_claim_001",
+            "linked_evidence_ids": [
+              "ward_017:ehr:admission:001",
+              "ward_017:img:breast_assessment:001"
+            ],
+            "status": "suspected",
+            "supporting_evidence_ids": [
+              "ward_017:ehr:admission:001",
+              "ward_017:img:breast_assessment:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Pathology and nodal status remain undetermined",
+              "Breast cancer staging is not yet established"
+            ],
+            "canonical_en": "There is no available pathologic diagnosis of breast cancer or evidence confirming nodal metastasis; staging is incomplete.",
+            "claim_id": "ward_017_cp_002_claim_002",
+            "linked_evidence_ids": [
+              "ward_017:img:breast_assessment:001"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "ward_017:img:breast_assessment:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Periprocedural assessment of diabetes and sinus tachycardia is needed",
+              "Relevant comorbidities requiring perioperative optimization"
+            ],
+            "canonical_en": "Diabetes mellitus and sinus tachycardia are comorbid problems requiring assessment and management before further invasive treatment.",
+            "claim_id": "ward_017_cp_002_claim_003",
+            "linked_evidence_ids": [
+              "ward_017:ehr:admission:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_017:ehr:admission:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Ultrasound-guided core biopsy of the left breast lesion",
+              "Image-guided tissue diagnosis"
+            ],
+            "action_id": "ward_017_cp_002_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Perform image-guided core needle biopsy of the suspicious left breast mass and submit tissue for histopathology.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete or arrange as soon as possible during the current inpatient diagnostic and treatment phase, and decide subsequent treatment after awaiting pathology results.",
+            "indication_en": "BI-RADS 4C indicates high suspicion of malignancy and requires histological confirmation to guide subsequent treatment.",
+            "linked_evidence_ids": [
+              "ward_017:img:breast_assessment:001",
+              "ward_017:ehr:admission:001"
+            ],
+            "prerequisites_en": [
+              "Confirm the patient's informed consent and indication for puncture.",
+              "Assess bleeding risk, anticoagulant use, and procedural tolerance.",
+              "Clarify localization of the left breast lesion"
+            ],
+            "problem_en": "Left breast BI-RADS 4C mass, without histologic confirmation",
+            "target_and_laterality_en": "Approximately 33 mm mass at the 10–11 o'clock position of the left breast."
+          },
+          {
+            "acceptable_aliases_en": [
+              "Periprocedural medical optimization",
+              "Pre-procedure assessment of diabetes and sinus tachycardia"
+            ],
+            "action_id": "ward_017_cp_002_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Assess and manage diabetes mellitus and sinus tachycardia in the peri-procedural period before further invasive procedures or treatment.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete appropriate assessment before puncture or other invasive treatment",
+            "indication_en": "It is necessary to confirm the safety of the procedure and subsequent treatment, as well as the status of comorbidity control.",
+            "linked_evidence_ids": [
+              "ward_017:ehr:admission:001"
+            ],
+            "prerequisites_en": [
+              "Obtain current vital signs, blood glucose, and relevant clinical assessment data",
+              "Perform electrocardiographic or internal medicine assessment according to clinical need"
+            ],
+            "problem_en": "Comorbid type 2 diabetes mellitus and sinus tachycardia",
+            "target_and_laterality_en": "Patient systemic peri-procedural management; no laterality."
+          },
+          {
+            "acceptable_aliases_en": [
+              "Further assessment of visualized left axillary nodes",
+              "Targeted axillary ultrasound and possible biopsy"
+            ],
+            "action_id": "ward_017_cp_002_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Have the breast surgery team further assess the left axillary lymph nodes in conjunction with pathology, with targeted ultrasound or sampling if clinically indicated.",
+            "canonical_prohibited_action_en": null,
+            "category": "acceptable_alternative",
+            "critical_omission_if_missing": false,
+            "deadline_or_time_window_en": "Complete as soon as possible after histological examination of the breast lesion or according to clinical imaging needs.",
+            "indication_en": "Whether regional lymph node involvement is present needs to be determined after obtaining more diagnostic information",
+            "linked_evidence_ids": [
+              "ward_017:img:breast_assessment:001"
+            ],
+            "prerequisites_en": [
+              "Breast specialty assessment",
+              "Determine whether to sample based on breast lesion pathology and axillary imaging characteristics."
+            ],
+            "problem_en": "Left axillary lymph nodes are visible, but their nature is undetermined.",
+            "target_and_laterality_en": "Left axillary lymph node; left side."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Approximately 33 mm left breast mass",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A left axillary lymph node is visible on imaging; its nature is undetermined.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Pending completion of histologic diagnosis and necessary axillary evaluation.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Type 2 diabetes mellitus",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001"
+              ],
+              "state_id": "ward_017_cp_002_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Sinus tachycardia",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001"
+              ],
+              "state_id": "ward_017_cp_002_state_active_problems_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Lack of histologic results for the breast mass",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is not yet a confirmed pathological status of the axillary lymph nodes.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Before diagnosis and staging are clarified, the final treatment plan cannot yet be determined",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "70-year-old female, left breast upper inner quadrant mass, clinically approximately 3.5–4 cm, imaging approximately 33 mm",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001",
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Both ultrasound and mammography are BI-RADS 4C.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Left axillary lymph nodes are visible but metastasis is not confirmed.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Comorbid type 2 diabetes mellitus and sinus tachycardia",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001"
+              ],
+              "state_id": "ward_017_cp_002_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The patient is currently still in an active inpatient diagnostic and treatment process.",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001"
+              ],
+              "state_id": "ward_017_cp_002_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Left breast mass, imaging BI-RADS 4C, highly suspicious for malignancy but not yet pathologically confirmed.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Directly record the left breast mass as confirmed breast cancer",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001",
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Recording visible left axillary lymph nodes as axillary lymph node metastases.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Determine TNM staging in the absence of pathology and complete staging evidence",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "During hospitalization, preliminary clinical assessment and breast imaging assessment have been completed; diagnostic testing should currently continue, and it is inappropriate to directly regard this as confirmed diagnosis or stop assessment because imaging is highly suspicious.",
+            "linked_evidence_ids": [
+              "ward_017:ehr:admission:001",
+              "ward_017:img:breast_assessment:001"
+            ],
+            "state_id": "ward_017_cp_002_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "New breast imaging evidence shows an approximately 33 mm left breast mass classified as BI-RADS 4C on both ultrasound and mammography, with visualized left axillary lymph nodes.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Compared with the previous checkpoint, suspicion for malignancy has increased based on imaging, but pathologic confirmation is still unavailable; diagnostic and staging blockers remain unresolved.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_002_state_required_delta_from_previous_checkpoint_002",
+              "status": "state_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Readiness for definitive breast cancer treatment has not yet been reached; entry into the puncture sampling and peri-procedural assessment process is possible.",
+            "linked_evidence_ids": [
+              "ward_017:img:breast_assessment:001"
+            ],
+            "state_id": "ward_017_cp_002_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Directly describing BI-RADS 4C as pathologically confirmed breast cancer",
+            "Start or claim completion of definitive antitumor treatment without pathological evidence.",
+            "Directly diagnose visible left axillary lymph nodes as metastases",
+            "Determining that diabetes mellitus or sinus tachycardia is stable or decompensated in the absence of current clinical data."
+          ],
+          "critical_omission_rules_en": [
+            "Omission of the need for histologic sampling of a BI-RADS 4C lesion",
+            "Omission of the limitation that diagnosis and staging have not yet been completed",
+            "Omission of peri-procedural assessment of diabetes mellitus and sinus tachycardia.",
+            "Omission that continued diagnosis and treatment are currently still needed rather than direct stopping or routine follow-up."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Breast cancer has not yet been confirmed",
+            "Staging has not yet been completed.",
+            "Histological confirmation is required",
+            "Imaging-visible axillary lymph nodes must not be equated with metastasis.",
+            "Diabetes and sinus tachycardia require peri-procedural assessment."
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "Imaging is highly suspicious for malignancy but cannot replace histologic diagnosis. The patient remains in an active inpatient diagnostic process, with key diagnostic and staging blockers unresolved; routine follow-up or stopping investigation is not safe. Image-guided tissue diagnosis of the left breast lesion and appropriate axillary and peri-procedural assessment should proceed.",
+          "remaining_blockers_en": [
+            "The breast mass does not yet have a histologic diagnosis",
+            "The nature of the left axillary lymph node and whether it is involved are undetermined.",
+            "There is not yet sufficient information to complete staging and formulate a definitive treatment plan.",
+            "Data on current control of comorbidities and peri-procedural risk are insufficient"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_017_cp_002",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_017:ehr:admission:001",
+          "ward_017:img:breast_assessment:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_017:ehr:preoperative_decision:001",
+          "ward_017:ehr:recovery:001",
+          "ward_017:ehr:terminal:001",
+          "ward_017:img:breast_mri:001",
+          "ward_017:path:core_biopsy:001",
+          "ward_017:path:sentinel_frozen:001",
+          "ward_017:proc:core_biopsy:001",
+          "ward_017:proc:definitive_surgery:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_017",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_017_s2_node_001_completed": true,
+            "ward_017_s2_node_002_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Left breast mass, suspected cancer",
+            "age_years": 70,
+            "initial_time": "2124-05-03T09:51:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-05-06T16:31:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_017:ehr:admission:001",
+            "ward_017:img:breast_assessment:001"
+          ]
+        },
+        "public_snapshot_sha256": "c64386e48733cc8b0e67c925c2663d4018178a7ec6332e4a82b92ecfe8d1993f",
+        "public_time": "2124-05-06T16:31:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "action_selection"
+        ]
+      },
+      "sequence_index": 2
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_017:ehr:admission:001",
+            "interpretation_en": "A 70-year-old woman was admitted for a hard, ill-defined left breast mass, with type 2 diabetes mellitus and sinus tachycardia as comorbidities; these are contextual clinical facts.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "ward_017:img:breast_assessment:001",
+            "interpretation_en": "A roughly 33 mm left breast mass was assessed as BI-RADS 4C on both ultrasound and mammography, with visualized left axillary lymph nodes; imaging is highly suspicious for malignancy but does not by itself establish the final diagnosis or stage.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_017:path:core_biopsy:001",
+            "interpretation_en": "Core needle biopsy of the left breast mass indicates invasive carcinoma; immunohistochemistry is still being completed, so tissue evidence supports invasive malignancy but receptor and other immunophenotypic information remain incomplete.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_017:proc:core_biopsy:001",
+            "interpretation_en": "Ultrasound-guided core needle biopsy of the left breast mass was completed under local anesthesia, followed by pressure bandaging; this confirms that tissue sampling was performed.",
+            "role": "supporting"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_017_cp_004_action_003"
+            ],
+            "claim_ids": [
+              "ward_017_cp_004_claim_004"
+            ],
+            "evidence_id": "ward_017:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_004_state_active_problems_004",
+              "ward_017_cp_004_state_active_problems_005",
+              "ward_017_cp_004_state_facts_to_retract_or_correct_003",
+              "ward_017_cp_004_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_004_action_002"
+            ],
+            "claim_ids": [
+              "ward_017_cp_004_claim_002"
+            ],
+            "evidence_id": "ward_017:img:breast_assessment:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_004_state_diagnoses_002",
+              "ward_017_cp_004_state_active_problems_003",
+              "ward_017_cp_004_state_critical_facts_to_retain_001",
+              "ward_017_cp_004_state_critical_facts_to_retain_004",
+              "ward_017_cp_004_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_004_action_001",
+              "ward_017_cp_004_action_002",
+              "ward_017_cp_004_action_003"
+            ],
+            "claim_ids": [
+              "ward_017_cp_004_claim_001",
+              "ward_017_cp_004_claim_003",
+              "ward_017_cp_004_claim_004"
+            ],
+            "evidence_id": "ward_017:path:core_biopsy:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_004_state_diagnoses_001",
+              "ward_017_cp_004_state_active_problems_001",
+              "ward_017_cp_004_state_active_problems_002",
+              "ward_017_cp_004_state_active_problems_003",
+              "ward_017_cp_004_state_blockers_001",
+              "ward_017_cp_004_state_blockers_002",
+              "ward_017_cp_004_state_critical_facts_to_retain_002",
+              "ward_017_cp_004_state_critical_facts_to_retain_003",
+              "ward_017_cp_004_state_facts_to_retract_or_correct_002",
+              "ward_017_cp_004_state_facts_to_retract_or_correct_003",
+              "ward_017_cp_004_state_required_delta_from_previous_checkpoint_001",
+              "ward_017_cp_004_state_treatment_readiness_001",
+              "ward_017_cp_004_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_004_action_001",
+              "ward_017_cp_004_action_003"
+            ],
+            "claim_ids": [
+              "ward_017_cp_004_claim_001"
+            ],
+            "evidence_id": "ward_017:proc:core_biopsy:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_004_state_resolved_problems_001",
+              "ward_017_cp_004_state_required_delta_from_previous_checkpoint_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "invasive breast carcinoma on core biopsy",
+              "biopsy-indicated invasive carcinoma",
+              "invasive malignancy identified in breast core biopsy"
+            ],
+            "canonical_en": "The left breast mass has tissue evidence indicating invasive carcinoma",
+            "claim_id": "ward_017_cp_004_claim_001",
+            "linked_evidence_ids": [
+              "ward_017:path:core_biopsy:001",
+              "ward_017:proc:core_biopsy:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_017:path:core_biopsy:001",
+              "ward_017:proc:core_biopsy:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "BI-RADS 4C left breast mass",
+              "highly suspicious breast lesion",
+              "visualized left axillary nodes"
+            ],
+            "canonical_en": "The left breast lesion is highly suspicious for malignancy on imaging, with visualized left axillary lymph nodes",
+            "claim_id": "ward_017_cp_004_claim_002",
+            "linked_evidence_ids": [
+              "ward_017:img:breast_assessment:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_017:img:breast_assessment:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "pending immunohistochemistry",
+              "incomplete receptor profiling",
+              "pathology characterization pending"
+            ],
+            "canonical_en": "Immunohistochemistry is pending, so complete pathological characterization and treatment readiness have not been achieved",
+            "claim_id": "ward_017_cp_004_claim_003",
+            "linked_evidence_ids": [
+              "ward_017:path:core_biopsy:001"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "ward_017:path:core_biopsy:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "active inpatient breast cancer workup",
+              "pre-treatment readiness phase",
+              "ongoing diagnostic and treatment planning"
+            ],
+            "canonical_en": "The patient remains in inpatient management after tissue diagnosis and before complete staging and treatment decision-making",
+            "claim_id": "ward_017_cp_004_claim_004",
+            "linked_evidence_ids": [
+              "ward_017:ehr:admission:001",
+              "ward_017:path:core_biopsy:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_017:ehr:admission:001",
+              "ward_017:path:core_biopsy:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "finish IHC testing",
+              "review pending immunohistochemistry",
+              "complete biopsy immunophenotyping"
+            ],
+            "action_id": "ward_017_cp_004_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Complete and review immunohistochemistry on the left breast biopsy specimen",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as feasible, before final treatment planning",
+            "indication_en": "Available pathology and immunophenotypic information needs to be clarified to support subsequent staging and treatment decisions.",
+            "linked_evidence_ids": [
+              "ward_017:path:core_biopsy:001",
+              "ward_017:proc:core_biopsy:001"
+            ],
+            "prerequisites_en": [
+              "Completed left breast core biopsy specimen"
+            ],
+            "problem_en": "Immunohistochemistry is still in progress, and pathological characterization is incomplete (Immunohistochemistry is pending and pathological characterization is incomplete).",
+            "target_and_laterality_en": "Left breast core biopsy specimen"
+          },
+          {
+            "acceptable_aliases_en": [
+              "multidisciplinary breast cancer review",
+              "staging and treatment planning consultation",
+              "breast oncology treatment planning"
+            ],
+            "action_id": "ward_017_cp_004_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Arrange breast-surgery and relevant-specialty review for staging and treatment planning based on the pathology results",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Promptly after immunohistochemistry becomes available.",
+            "indication_en": "Existing histological, imaging, and patient comorbidity information needs to be incorporated into subsequent management decisions.",
+            "linked_evidence_ids": [
+              "ward_017:img:breast_assessment:001",
+              "ward_017:path:core_biopsy:001"
+            ],
+            "prerequisites_en": [
+              "Review available biopsy pathology and breast imaging",
+              "Assess in conjunction with immunohistochemistry results when available."
+            ],
+            "problem_en": "Invasive carcinoma is indicated, but complete staging and definitive treatment are not complete",
+            "target_and_laterality_en": "Left invasive breast carcinoma and visualized left axillary nodes."
+          },
+          {
+            "acceptable_aliases_en": [
+              "continue inpatient care",
+              "monitor diabetes and sinus tachycardia",
+              "ongoing inpatient management"
+            ],
+            "action_id": "ward_017_cp_004_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue inpatient monitoring and comorbidity management until key diagnostic and treatment-planning issues are addressed",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Continued throughout the current admission",
+            "indication_en": "Pending pathology and treatment-readiness blockers remain (Pending pathology and treatment-readiness blockers remain).",
+            "linked_evidence_ids": [
+              "ward_017:ehr:admission:001",
+              "ward_017:path:core_biopsy:001",
+              "ward_017:proc:core_biopsy:001"
+            ],
+            "prerequisites_en": [
+              "Ongoing clinical assessment."
+            ],
+            "problem_en": "The patient remains in active inpatient care, with type 2 diabetes mellitus and sinus tachycardia.",
+            "target_and_laterality_en": "Overall patient status and left breast malignant neoplasm diagnosis-and-treatment pathway"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Immunohistochemistry has not yet been completed.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_004_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Complete pathological characterization and treatment readiness have not yet been completed",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_004_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Complete staging not established",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001",
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_004_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Inpatient diagnosis and treatment are still ongoing (Active inpatient management)",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001"
+              ],
+              "state_id": "ward_017_cp_004_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Type 2 diabetes mellitus and sinus tachycardia",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001"
+              ],
+              "state_id": "ward_017_cp_004_state_active_problems_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Await immunohistochemistry results to complete pathological characterization.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_004_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Staging and treatment planning require complete pathology.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_004_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Approximately 33 mm left breast mass, imaging BI-RADS 4C",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_004_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Core biopsy indicates invasive carcinoma",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_004_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Immunohistochemistry remains pending (Immunohistochemistry remains pending).",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_004_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Left axillary lymph nodes are visualized on imaging but metastasis is unconfirmed",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_004_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Left breast mass with core-biopsy indication of invasive carcinoma (Left breast mass with core-biopsy indication of invasive carcinoma).",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_004_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "BI-RADS 4C lesion of the left breast",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_004_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Visible left axillary lymph nodes must not be described as confirmed lymph node metastasis.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001"
+              ],
+              "state_id": "ward_017_cp_004_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not state that immunohistochemistry pending is negative or complete (Do not state that immunohistochemistry is negative or complete).",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_004_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current status cannot be stated as completed staging or definitive treatment (Do not state that staging or definitive treatment is complete)",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001",
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_004_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Continue inpatient investigation and treatment planning while awaiting the pending pathology result; stopping or transition to routine follow-up is not appropriate yet.",
+            "linked_evidence_ids": [
+              "ward_017:ehr:admission:001",
+              "ward_017:path:core_biopsy:001"
+            ],
+            "state_id": "ward_017_cp_004_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Since the previous checkpoint, core biopsy completion and pathology indicating invasive carcinoma became available; immunohistochemistry remains pending, so diagnostic information progressed but treatment readiness is incomplete.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001",
+                "ward_017:proc:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_004_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_diagnostic_evidence",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "Tissue sampling of the left breast mass has been completed (Tissue sampling of the left breast mass completed)",
+              "linked_evidence_ids": [
+                "ward_017:proc:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_004_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Histologic indication of invasive carcinoma has been confirmed, but because immunohistochemistry is pending, complete pathological classification and readiness for final treatment decision-making have not yet been achieved. Biopsy indicates invasive carcinoma, but pending immunohistochemistry prevents complete pathological characterization and final treatment readiness.",
+            "linked_evidence_ids": [
+              "ward_017:path:core_biopsy:001"
+            ],
+            "state_id": "ward_017_cp_004_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Pending immunohistochemistry results must not be treated as completed, negative, or a specific receptor status.",
+            "Imaging-visible axillary lymph nodes must not be described as proven metastases."
+          ],
+          "critical_omission_rules_en": [
+            "Making a final treatment decision without completed or reviewed immunohistochemistry constitutes a critical omission.",
+            "Directly stopping inpatient diagnosis and treatment or transitioning to routine follow-up before staging and treatment preparation are completed is a critical omission."
+          ],
+          "preliminary_risk_triggers_en": []
+        },
+        "stopping": {
+          "decision": "wait_for_pending_result",
+          "rationale_en": "Tissue evidence indicates invasive carcinoma, but immunohistochemistry remains pending and staging and treatment planning are not yet complete. The pending pathology should be awaited while care continues; stopping or transitioning to routine follow-up is not currently safe.",
+          "remaining_blockers_en": [
+            "Immunohistochemistry results are pending.",
+            "Complete pathological classification and treatment preparation have not been completed.",
+            "Complete staging and a definitive treatment plan have not yet been determined"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_017_cp_004",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_017:ehr:admission:001",
+          "ward_017:img:breast_assessment:001",
+          "ward_017:path:core_biopsy:001",
+          "ward_017:proc:core_biopsy:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_017:ehr:preoperative_decision:001",
+          "ward_017:ehr:recovery:001",
+          "ward_017:ehr:terminal:001",
+          "ward_017:img:breast_mri:001",
+          "ward_017:path:sentinel_frozen:001",
+          "ward_017:proc:definitive_surgery:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_017",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_017_s2_node_001_completed": true,
+            "ward_017_s2_node_002_completed": true,
+            "ward_017_s2_node_003_completed": true,
+            "ward_017_s2_node_004_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Left breast mass, suspected cancer",
+            "age_years": 70,
+            "initial_time": "2124-05-03T09:51:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-05-07T19:17:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_017:ehr:admission:001",
+            "ward_017:img:breast_assessment:001",
+            "ward_017:path:core_biopsy:001",
+            "ward_017:proc:core_biopsy:001"
+          ]
+        },
+        "public_snapshot_sha256": "16c35e4f023ba6f0d260afd160c226ca57afa360ba2760466aa2f72c67fa1677",
+        "public_time": "2124-05-07T19:17:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 4
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_017:ehr:admission:001",
+            "interpretation_en": "A 70-year-old woman with an approximately 3.5–4 cm left upper-inner breast mass, type 2 diabetes, and sinus tachycardia; this provides perioperative risk and continuity-of-care context.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "ward_017:ehr:preoperative_decision:001",
+            "interpretation_en": "The preoperative record confirms invasive carcinoma of the left breast and documents planned left simple mastectomy, sentinel lymph node biopsy, low-level nodal management, and skin grafting.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_017:img:breast_assessment:001",
+            "interpretation_en": "An approximately 33 mm left breast mass at 10–11 o'clock was assessed as BI-RADS 4C on ultrasound and mammography, with left axillary nodes visualized; this supports malignancy assessment and regional nodal evaluation.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_017:img:breast_mri:001",
+            "interpretation_en": "The upper-inner left breast mass was BI-RADS 4C and a left internal mammary node was seen; complete pathology and staging integration remain necessary, and metastasis cannot be established from this imaging alone.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_017:path:core_biopsy:001",
+            "interpretation_en": "Core biopsy of the left breast mass indicates invasive carcinoma, while immunohistochemistry is still being completed; invasive carcinoma is confirmed, but receptor status and other immunophenotypic details remain undetermined.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_017:path:sentinel_frozen:001",
+            "interpretation_en": "Frozen sections from multiple left axillary sentinel and parasentinel node groups showed no definitive malignancy; this is an intraoperative frozen result and does not replace final permanent pathology or exclude micrometastasis.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_017:proc:core_biopsy:001",
+            "interpretation_en": "Ultrasound-guided core needle biopsy of the left breast mass was completed, followed by postoperative pressure bandaging.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_017:proc:definitive_surgery:001",
+            "interpretation_en": "Left simple mastectomy, sentinel lymph node biopsy, low-level nodal management, and skin grafting were completed; chest-wall and axillary drains remain in place, and the patient is currently in postoperative inpatient management.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_017_cp_008_action_003"
+            ],
+            "claim_ids": [
+              "ward_017_cp_008_claim_003"
+            ],
+            "evidence_id": "ward_017:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_008_state_diagnoses_003",
+              "ward_017_cp_008_state_critical_facts_to_retain_006"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_008_action_001"
+            ],
+            "claim_ids": [
+              "ward_017_cp_008_claim_001",
+              "ward_017_cp_008_claim_005"
+            ],
+            "evidence_id": "ward_017:ehr:preoperative_decision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_008_state_required_delta_from_previous_checkpoint_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_017_cp_008_claim_002"
+            ],
+            "evidence_id": "ward_017:img:breast_assessment:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_008_state_diagnoses_002"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_008_action_004"
+            ],
+            "claim_ids": [
+              "ward_017_cp_008_claim_002",
+              "ward_017_cp_008_claim_004"
+            ],
+            "evidence_id": "ward_017:img:breast_mri:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_008_state_diagnoses_002",
+              "ward_017_cp_008_state_active_problems_004",
+              "ward_017_cp_008_state_blockers_004"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_008_action_004"
+            ],
+            "claim_ids": [
+              "ward_017_cp_008_claim_001",
+              "ward_017_cp_008_claim_006"
+            ],
+            "evidence_id": "ward_017:path:core_biopsy:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_008_state_diagnoses_001",
+              "ward_017_cp_008_state_active_problems_003",
+              "ward_017_cp_008_state_blockers_001",
+              "ward_017_cp_008_state_blockers_002",
+              "ward_017_cp_008_state_critical_facts_to_retain_001",
+              "ward_017_cp_008_state_critical_facts_to_retain_005",
+              "ward_017_cp_008_state_facts_to_retract_or_correct_002",
+              "ward_017_cp_008_state_required_delta_from_previous_checkpoint_001",
+              "ward_017_cp_008_state_required_delta_from_previous_checkpoint_005",
+              "ward_017_cp_008_state_treatment_readiness_001",
+              "ward_017_cp_008_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_008_action_004"
+            ],
+            "claim_ids": [
+              "ward_017_cp_008_claim_007"
+            ],
+            "evidence_id": "ward_017:path:sentinel_frozen:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_008_state_active_problems_003",
+              "ward_017_cp_008_state_blockers_001",
+              "ward_017_cp_008_state_critical_facts_to_retain_003",
+              "ward_017_cp_008_state_facts_to_retract_or_correct_001",
+              "ward_017_cp_008_state_required_delta_from_previous_checkpoint_003",
+              "ward_017_cp_008_state_required_delta_from_previous_checkpoint_005",
+              "ward_017_cp_008_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_017_cp_008_claim_008"
+            ],
+            "evidence_id": "ward_017:proc:core_biopsy:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_008_state_resolved_problems_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_008_action_001",
+              "ward_017_cp_008_action_002",
+              "ward_017_cp_008_action_003",
+              "ward_017_cp_008_action_004"
+            ],
+            "claim_ids": [
+              "ward_017_cp_008_claim_005",
+              "ward_017_cp_008_claim_009"
+            ],
+            "evidence_id": "ward_017:proc:definitive_surgery:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_008_state_active_problems_001",
+              "ward_017_cp_008_state_active_problems_002",
+              "ward_017_cp_008_state_active_problems_003",
+              "ward_017_cp_008_state_resolved_problems_002",
+              "ward_017_cp_008_state_blockers_001",
+              "ward_017_cp_008_state_critical_facts_to_retain_002",
+              "ward_017_cp_008_state_critical_facts_to_retain_004",
+              "ward_017_cp_008_state_facts_to_retract_or_correct_002",
+              "ward_017_cp_008_state_required_delta_from_previous_checkpoint_002",
+              "ward_017_cp_008_state_required_delta_from_previous_checkpoint_004",
+              "ward_017_cp_008_state_treatment_readiness_001",
+              "ward_017_cp_008_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "biopsy-proven invasive breast carcinoma",
+              "invasive carcinoma of the left breast"
+            ],
+            "canonical_en": "Invasive carcinoma of the left breast is confirmed by core needle biopsy.",
+            "claim_id": "ward_017_cp_008_claim_001",
+            "linked_evidence_ids": [
+              "ward_017:ehr:preoperative_decision:001",
+              "ward_017:path:core_biopsy:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_017:path:core_biopsy:001",
+              "ward_017:ehr:preoperative_decision:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "BI-RADS 4C left breast mass",
+              "highly suspicious left breast lesion"
+            ],
+            "canonical_en": "The approximately 33 mm left breast mass is highly suspicious for malignancy on imaging.",
+            "claim_id": "ward_017_cp_008_claim_002",
+            "linked_evidence_ids": [
+              "ward_017:img:breast_assessment:001",
+              "ward_017:img:breast_mri:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_017:img:breast_assessment:001",
+              "ward_017:img:breast_mri:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "perioperative diabetes and sinus tachycardia",
+              "type 2 diabetes with sinus tachycardia"
+            ],
+            "canonical_en": "The patient has type 2 diabetes mellitus and sinus tachycardia requiring consideration in perioperative and postoperative management.",
+            "claim_id": "ward_017_cp_008_claim_003",
+            "linked_evidence_ids": [
+              "ward_017:ehr:admission:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_017:ehr:admission:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "indeterminate internal mammary node",
+              "MRI-visible left internal mammary lymph node"
+            ],
+            "canonical_en": "A left internal mammary lymph node is visible on MRI, but metastatic involvement is not established.",
+            "claim_id": "ward_017_cp_008_claim_004",
+            "linked_evidence_ids": [
+              "ward_017:img:breast_mri:001"
+            ],
+            "status": "suspected",
+            "supporting_evidence_ids": [
+              "ward_017:img:breast_mri:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "completed definitive left breast surgery",
+              "completed left mastectomy with sentinel node biopsy"
+            ],
+            "canonical_en": "Left simple mastectomy, sentinel lymph node biopsy, low-level nodal management, and skin grafting have been completed.",
+            "claim_id": "ward_017_cp_008_claim_005",
+            "linked_evidence_ids": [
+              "ward_017:ehr:preoperative_decision:001",
+              "ward_017:proc:definitive_surgery:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_017:proc:definitive_surgery:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "pending immunohistochemistry",
+              "final pathology pending"
+            ],
+            "canonical_en": "Immunohistochemistry and complete final pathology information remain pending.",
+            "claim_id": "ward_017_cp_008_claim_006",
+            "linked_evidence_ids": [
+              "ward_017:path:core_biopsy:001"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "ward_017:path:core_biopsy:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "negative axillary sentinel node frozen section",
+              "no definitive malignancy on axillary node frozen section"
+            ],
+            "canonical_en": "Frozen sections of left axillary sentinel and parasentinel nodes showed no definitive malignancy, but final nodal pathology is not yet established.",
+            "claim_id": "ward_017_cp_008_claim_007",
+            "linked_evidence_ids": [
+              "ward_017:path:sentinel_frozen:001"
+            ],
+            "status": "negative",
+            "supporting_evidence_ids": [
+              "ward_017:path:sentinel_frozen:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "completed ultrasound-guided core biopsy",
+              "completed breast core needle biopsy"
+            ],
+            "canonical_en": "Core needle biopsy of the left breast mass has been completed.",
+            "claim_id": "ward_017_cp_008_claim_008",
+            "linked_evidence_ids": [
+              "ward_017:proc:core_biopsy:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_017:proc:core_biopsy:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "post-mastectomy inpatient care with drains",
+              "postoperative breast surgery management"
+            ],
+            "canonical_en": "The patient is currently in postoperative inpatient management after left breast surgery, with chest-wall and axillary drains still in place.",
+            "claim_id": "ward_017_cp_008_claim_009",
+            "linked_evidence_ids": [
+              "ward_017:proc:definitive_surgery:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_017:proc:definitive_surgery:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "postoperative inpatient monitoring",
+              "continue postoperative care"
+            ],
+            "action_id": "ward_017_cp_008_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue inpatient observation and perioperative management after left breast surgery.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Immediately and continuously until safe discharge criteria are met.",
+            "indication_en": "Vital signs, bleeding, infection, the incision and skin graft area, and drainage need to be monitored.",
+            "linked_evidence_ids": [
+              "ward_017:ehr:preoperative_decision:001",
+              "ward_017:proc:definitive_surgery:001"
+            ],
+            "prerequisites_en": [
+              "Left breast surgery has been completed",
+              "Has conditions for postoperative care and monitoring"
+            ],
+            "problem_en": "After left mastectomy and skin grafting, a drainage tube is currently still in place.",
+            "target_and_laterality_en": "Left breast surgical area, chest wall, and axilla; patient's general condition."
+          },
+          {
+            "acceptable_aliases_en": [
+              "drain management and wound assessment",
+              "postoperative wound and graft monitoring"
+            ],
+            "action_id": "ward_017_cp_008_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue chest-wall and axillary drain management and assess the incisions and skin-graft site.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Start immediately, continuing until the drainage and wound meet drain-removal and discharge criteria",
+            "indication_en": "Ensure unobstructed drainage and promptly identify fluid collection, hematoma, infection, or skin graft-related problems.",
+            "linked_evidence_ids": [
+              "ward_017:proc:definitive_surgery:001"
+            ],
+            "prerequisites_en": [
+              "Relevant surgery has been completed",
+              "Drainage volume may be recorded and the local wound observed"
+            ],
+            "problem_en": "Chest-wall and axillary drains remain in place; the postoperative incision and skin-graft area require observation.",
+            "target_and_laterality_en": "Left chest wall, axilla, and skin-graft area."
+          },
+          {
+            "acceptable_aliases_en": [
+              "perioperative diabetes and tachycardia management",
+              "monitor glucose and cardiac status"
+            ],
+            "action_id": "ward_017_cp_008_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Provide perioperative monitoring and management for type 2 diabetes mellitus and sinus tachycardia.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Immediately after surgery and throughout the hospitalization.",
+            "indication_en": "After surgery, metabolic and heart-rate-related risks should be monitored and managed according to clinical circumstances.",
+            "linked_evidence_ids": [
+              "ward_017:ehr:admission:001",
+              "ward_017:proc:definitive_surgery:001"
+            ],
+            "prerequisites_en": [
+              "Verify past medical history and current medications.",
+              "Obtain relevant vital-sign or laboratory data according to clinical need."
+            ],
+            "problem_en": "The patient has type 2 diabetes mellitus and sinus tachycardia.",
+            "target_and_laterality_en": "The patient as a whole; no laterality."
+          },
+          {
+            "acceptable_aliases_en": [
+              "review final pathology and biomarkers",
+              "complete postoperative staging and adjuvant treatment assessment"
+            ],
+            "action_id": "ward_017_cp_008_action_004",
+            "action_scope": "prospective",
+            "canonical_action_en": "Obtain and review the complete final surgical pathology, permanent nodal pathology, and immunohistochemistry, then use them for staging and adjuvant treatment assessment.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Review pathology results promptly once available, and complete multidisciplinary assessment at the postoperative follow-up point.",
+            "indication_en": "These results determine final pathological staging, receptor status, and discussion of subsequent adjuvant treatment.",
+            "linked_evidence_ids": [
+              "ward_017:img:breast_mri:001",
+              "ward_017:path:core_biopsy:001",
+              "ward_017:path:sentinel_frozen:001",
+              "ward_017:proc:definitive_surgery:001"
+            ],
+            "prerequisites_en": [
+              "Resection and lymph node sampling have been completed.",
+              "Await completion of the relevant testing by the pathology laboratory."
+            ],
+            "problem_en": "Final pathology, permanent lymph node sections, and immunohistochemistry have not yet been completed or disclosed.",
+            "target_and_laterality_en": "Left breast resection specimen and left axillary lymph-node specimen; integrate left internal mammary lymph-node imaging if necessary."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Management after definitive surgery for left breast cancer.",
+              "linked_evidence_ids": [
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_008_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Chest wall and axillary drainage tubes remain in place.",
+              "linked_evidence_ids": [
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_008_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Final surgical pathology, margins, permanent sections of lymph nodes, and immunohistochemistry results have not been made public or completed.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001",
+                "ward_017:path:sentinel_frozen:001",
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_008_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The nature of the imaging abnormality of the left internal mammary lymph node region has not been determined.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_mri:001"
+              ],
+              "state_id": "ward_017_cp_008_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Monitoring of the wound, skin-graft area, drainage tube, and perioperative complications is required.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_017_cp_008_state_active_problems_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Lacking complete final pathology, including tumor histology, grade, size, margins, and final lymph-node status.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001",
+                "ward_017:path:sentinel_frozen:001",
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_008_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Immunohistochemistry has not yet been completed, and receptor status and the basis for adjuvant systemic treatment remain unclear.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_008_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is still no evidence that the skin graft area, surgical incision, and drainage status have met discharge criteria.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_017_cp_008_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Whether the left internal mammary lymph node is involved remains undetermined.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_mri:001"
+              ],
+              "state_id": "ward_017_cp_008_state_blockers_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Left invasive breast carcinoma has been confirmed by core needle biopsy.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_008_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Left simple mastectomy, sentinel lymph node biopsy, low-level nodal management, and skin grafting have been completed.",
+              "linked_evidence_ids": [
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_008_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Frozen sections of axillary sentinel and para-sentinel lymph nodes show no definite evidence of malignancy, but this is not equivalent to final lymph-node negativity.",
+              "linked_evidence_ids": [
+                "ward_017:path:sentinel_frozen:001"
+              ],
+              "state_id": "ward_017_cp_008_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Chest-wall and axillary drainage tubes remain in place.",
+              "linked_evidence_ids": [
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_008_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Immunohistochemistry and complete final pathology have not yet been completed.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_008_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The patient has type 2 diabetes mellitus and sinus tachycardia.",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001"
+              ],
+              "state_id": "ward_017_cp_008_state_critical_facts_to_retain_006",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Left breast invasive carcinoma (Left breast invasive carcinoma), confirmed by core needle biopsy.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_008_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Approximately 33 mm left breast imaging BI-RADS 4C mass.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_assessment:001",
+                "ward_017:img:breast_mri:001"
+              ],
+              "state_id": "ward_017_cp_008_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Combined type 2 diabetes mellitus and sinus tachycardia.",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001"
+              ],
+              "state_id": "ward_017_cp_008_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "The final conclusion of “left axillary lymph node negative” should be corrected to “no definite evidence of malignancy on frozen section, permanent pathology pending”.",
+              "linked_evidence_ids": [
+                "ward_017:path:sentinel_frozen:001"
+              ],
+              "state_id": "ward_017_cp_008_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The statement “surgery completed” as “all treatment completed” should be corrected; postoperative management, final pathology, and subsequent adjuvant treatment decisions have not yet been completed.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001",
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_008_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Continue postoperative inpatient management and monitoring; await final pathology and immunohistochemistry, and make subsequent oncology and breast surgery decisions according to the results. It is currently not appropriate to stop management or directly transition to routine follow-up.",
+            "linked_evidence_ids": [
+              "ward_017:path:core_biopsy:001",
+              "ward_017:path:sentinel_frozen:001",
+              "ward_017:proc:definitive_surgery:001"
+            ],
+            "state_id": "ward_017_cp_008_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "New preoperative documentation confirms left breast invasive carcinoma and the operative plan.",
+              "linked_evidence_ids": [
+                "ward_017:ehr:preoperative_decision:001",
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_008_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The definitive surgery record is newly available and documents completion of mastectomy, nodal procedures, and skin grafting.",
+              "linked_evidence_ids": [
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_008_state_required_delta_from_previous_checkpoint_002",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Frozen sections of the left axillary sentinel and parasentinel nodes newly show no definitive malignancy.",
+              "linked_evidence_ids": [
+                "ward_017:path:sentinel_frozen:001"
+              ],
+              "state_id": "ward_017_cp_008_state_required_delta_from_previous_checkpoint_003",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The state changed from post-biopsy treatment planning to postoperative inpatient management after definitive surgery, with drains in place and monitoring ongoing.",
+              "linked_evidence_ids": [
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_008_state_required_delta_from_previous_checkpoint_004",
+              "status": "state_change",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Immunohistochemistry remains incomplete, and final surgical and permanent nodal pathology are not available.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001",
+                "ward_017:path:sentinel_frozen:001"
+              ],
+              "state_id": "ward_017_cp_008_state_required_delta_from_previous_checkpoint_005",
+              "status": "pending_status",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "Diagnostic biopsy of the left breast mass has been completed.",
+              "linked_evidence_ids": [
+                "ward_017:proc:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_008_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The planned resection surgery for the primary left breast tumor has been completed.",
+              "linked_evidence_ids": [
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_008_state_resolved_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Local definitive surgery has been completed, but conditions for formulating a final adjuvant treatment and staging plan based on complete pathology are not yet in place.",
+            "linked_evidence_ids": [
+              "ward_017:path:core_biopsy:001",
+              "ward_017:proc:definitive_surgery:001"
+            ],
+            "state_id": "ward_017_cp_008_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Describing negative frozen sections of axillary lymph nodes as final negative lymph nodes.",
+            "Fabricating final pathology, margins, ER/PR/HER2, Ki-67, grade, or TNM staging.",
+            "Mistaking completion of definitive surgery for completion of the entire breast cancer treatment.",
+            "Directly determine that safe discharge is possible while drains remain in place and there is no evidence of wound, skin graft, and overall discharge assessment."
+          ],
+          "critical_omission_rules_en": [
+            "The blocking item that final pathology and immunohistochemistry are pending must be retained.",
+            "Postoperative incision, skin-graft area, and drain management must be addressed.",
+            "It must be made clear that the current status remains inpatient postoperative management, rather than a completed follow-up outcome.",
+            "Diabetes mellitus and sinus tachycardia must be retained as the context for perioperative management."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Continued treatment is needed",
+            "Awaiting key pathology results",
+            "Currently not appropriate to stop or directly transfer to routine follow-up"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_treatment",
+          "rationale_en": "Although definitive left breast surgery has been completed and axillary node frozen sections showed no definitive malignancy, the patient remains in postoperative inpatient care with chest-wall and axillary drains. Immunohistochemistry, final surgical pathology, and permanent nodal pathology are not complete, so the full subsequent treatment plan cannot yet be established. Treatment and postoperative monitoring should continue; stopping or directly transitioning to routine follow-up is not safe.",
+          "remaining_blockers_en": [
+            "Postoperative wound, skin-graft site, and drainage-tube management have not yet been completed.",
+            "Final surgical pathology and permanent lymph-node pathology have not yet been obtained.",
+            "Immunohistochemistry is still pending.",
+            "The abnormal nature of the left internal mammary lymph node and final staging have not yet been clarified."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_017_cp_008",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_017:ehr:admission:001",
+          "ward_017:ehr:preoperative_decision:001",
+          "ward_017:img:breast_assessment:001",
+          "ward_017:img:breast_mri:001",
+          "ward_017:path:core_biopsy:001",
+          "ward_017:path:sentinel_frozen:001",
+          "ward_017:proc:core_biopsy:001",
+          "ward_017:proc:definitive_surgery:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_017:ehr:recovery:001",
+          "ward_017:ehr:terminal:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_017",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_017_s2_node_001_completed": true,
+            "ward_017_s2_node_002_completed": true,
+            "ward_017_s2_node_003_completed": true,
+            "ward_017_s2_node_004_completed": true,
+            "ward_017_s2_node_005_completed": true,
+            "ward_017_s2_node_006_completed": true,
+            "ward_017_s2_node_007_completed": true,
+            "ward_017_s2_node_008_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Left breast mass, suspected cancer",
+            "age_years": 70,
+            "initial_time": "2124-05-03T09:51:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-05-08T17:01:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_017:ehr:admission:001",
+            "ward_017:ehr:preoperative_decision:001",
+            "ward_017:img:breast_assessment:001",
+            "ward_017:img:breast_mri:001",
+            "ward_017:path:core_biopsy:001",
+            "ward_017:path:sentinel_frozen:001",
+            "ward_017:proc:core_biopsy:001",
+            "ward_017:proc:definitive_surgery:001"
+          ]
+        },
+        "public_snapshot_sha256": "68dc80bc16b1cdea739ffef6100a78a69e2330d58a481704177240e73c9e823b",
+        "public_time": "2124-05-08T17:01:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 8
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_017:ehr:admission:001",
+            "interpretation_en": "Initial admission documented a hard left-breast mass with type 2 diabetes and sinus tachycardia, relevant to perioperative management.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "ward_017:ehr:preoperative_decision:001",
+            "interpretation_en": "Preoperative documentation confirmed invasive carcinoma of the left breast and planned mastectomy, sentinel-node biopsy, low-level nodal management, and skin grafting.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_017:ehr:recovery:001",
+            "interpretation_en": "Postoperatively, the incision was well approximated and dry without drainage; chest-wall and axillary drains were patent, and the patient ambulated and received rehabilitation guidance.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_017:img:breast_assessment:001",
+            "interpretation_en": "A roughly 33-mm left-breast mass was BI-RADS 4C, with visualized left axillary nodes, supporting malignancy assessment and regional nodal evaluation.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_017:img:breast_mri:001",
+            "interpretation_en": "MRI showed a BI-RADS 4C upper-inner left-breast lesion and a left internal-mammary-region node; this alone does not establish internal mammary nodal metastasis.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_017:path:core_biopsy:001",
+            "interpretation_en": "Core biopsy indicated invasive carcinoma of the left breast; immunohistochemistry was incomplete, so receptor and molecular information remained pending.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_017:path:sentinel_frozen:001",
+            "interpretation_en": "Frozen sections from multiple left axillary sentinel and parasentinel nodes showed no definitive malignancy; this does not replace final pathology.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_017:proc:core_biopsy:001",
+            "interpretation_en": "Ultrasound-guided core biopsy of the left-breast mass was completed under local anesthesia.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_017:proc:definitive_surgery:001",
+            "interpretation_en": "Left simple mastectomy, sentinel-node biopsy, low-level nodal management, and skin grafting were completed, with chest-wall and axillary drains left in place.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_017_cp_009_action_003"
+            ],
+            "claim_ids": [
+              "ward_017_cp_009_claim_004"
+            ],
+            "evidence_id": "ward_017:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_009_state_active_problems_004",
+              "ward_017_cp_009_state_critical_facts_to_retain_001",
+              "ward_017_cp_009_state_critical_facts_to_retain_006"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_009_action_002"
+            ],
+            "claim_ids": [
+              "ward_017_cp_009_claim_001"
+            ],
+            "evidence_id": "ward_017:ehr:preoperative_decision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_009_state_diagnoses_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_009_action_001",
+              "ward_017_cp_009_action_004"
+            ],
+            "claim_ids": [
+              "ward_017_cp_009_claim_004",
+              "ward_017_cp_009_claim_005",
+              "ward_017_cp_009_claim_007",
+              "ward_017_cp_009_claim_008"
+            ],
+            "evidence_id": "ward_017:ehr:recovery:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_009_state_diagnoses_002",
+              "ward_017_cp_009_state_active_problems_001",
+              "ward_017_cp_009_state_blockers_003",
+              "ward_017_cp_009_state_critical_facts_to_retain_005",
+              "ward_017_cp_009_state_required_delta_from_previous_checkpoint_001",
+              "ward_017_cp_009_state_required_delta_from_previous_checkpoint_002",
+              "ward_017_cp_009_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_017_cp_009_claim_002"
+            ],
+            "evidence_id": "ward_017:img:breast_assessment:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_009_action_002"
+            ],
+            "claim_ids": [
+              "ward_017_cp_009_claim_003"
+            ],
+            "evidence_id": "ward_017:img:breast_mri:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_009_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_009_action_002",
+              "ward_017_cp_009_action_004"
+            ],
+            "claim_ids": [
+              "ward_017_cp_009_claim_001",
+              "ward_017_cp_009_claim_005",
+              "ward_017_cp_009_claim_006",
+              "ward_017_cp_009_claim_008"
+            ],
+            "evidence_id": "ward_017:path:core_biopsy:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_009_state_diagnoses_001",
+              "ward_017_cp_009_state_active_problems_002",
+              "ward_017_cp_009_state_active_problems_003",
+              "ward_017_cp_009_state_resolved_problems_001",
+              "ward_017_cp_009_state_blockers_001",
+              "ward_017_cp_009_state_blockers_002",
+              "ward_017_cp_009_state_critical_facts_to_retain_001",
+              "ward_017_cp_009_state_critical_facts_to_retain_004",
+              "ward_017_cp_009_state_facts_to_retract_or_correct_004",
+              "ward_017_cp_009_state_required_delta_from_previous_checkpoint_002",
+              "ward_017_cp_009_state_treatment_readiness_001",
+              "ward_017_cp_009_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_009_action_002"
+            ],
+            "claim_ids": [
+              "ward_017_cp_009_claim_002",
+              "ward_017_cp_009_claim_007"
+            ],
+            "evidence_id": "ward_017:path:sentinel_frozen:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_009_state_critical_facts_to_retain_003",
+              "ward_017_cp_009_state_facts_to_retract_or_correct_002"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "ward_017:proc:core_biopsy:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_009_state_resolved_problems_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_017_cp_009_action_001",
+              "ward_017_cp_009_action_002",
+              "ward_017_cp_009_action_004"
+            ],
+            "claim_ids": [
+              "ward_017_cp_009_claim_004",
+              "ward_017_cp_009_claim_005",
+              "ward_017_cp_009_claim_008"
+            ],
+            "evidence_id": "ward_017:proc:definitive_surgery:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_017_cp_009_state_diagnoses_002",
+              "ward_017_cp_009_state_active_problems_001",
+              "ward_017_cp_009_state_active_problems_002",
+              "ward_017_cp_009_state_active_problems_003",
+              "ward_017_cp_009_state_resolved_problems_002",
+              "ward_017_cp_009_state_blockers_002",
+              "ward_017_cp_009_state_blockers_003",
+              "ward_017_cp_009_state_critical_facts_to_retain_002",
+              "ward_017_cp_009_state_facts_to_retract_or_correct_003",
+              "ward_017_cp_009_state_required_delta_from_previous_checkpoint_002",
+              "ward_017_cp_009_state_treatment_readiness_001",
+              "ward_017_cp_009_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "confirmed invasive breast carcinoma",
+              "invasive carcinoma of the left breast"
+            ],
+            "canonical_en": "Invasive carcinoma of the left breast is confirmed by core biopsy.",
+            "claim_id": "ward_017_cp_009_claim_001",
+            "linked_evidence_ids": [
+              "ward_017:ehr:preoperative_decision:001",
+              "ward_017:path:core_biopsy:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_017:ehr:preoperative_decision:001",
+              "ward_017:path:core_biopsy:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "negative sentinel-node frozen section",
+              "no definitive malignancy on nodal frozen section"
+            ],
+            "canonical_en": "Frozen sections of left axillary sentinel and parasentinel nodes show no definitive malignancy.",
+            "claim_id": "ward_017_cp_009_claim_002",
+            "linked_evidence_ids": [
+              "ward_017:path:sentinel_frozen:001",
+              "ward_017:img:breast_assessment:001"
+            ],
+            "status": "negative",
+            "supporting_evidence_ids": [
+              "ward_017:path:sentinel_frozen:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "indeterminate internal mammary node",
+              "internal mammary nodal status pending"
+            ],
+            "canonical_en": "The metastatic status of the left internal mammary-region node cannot be determined from the available evidence.",
+            "claim_id": "ward_017_cp_009_claim_003",
+            "linked_evidence_ids": [
+              "ward_017:img:breast_mri:001"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "ward_017:img:breast_mri:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "stable early postoperative recovery",
+              "early post-mastectomy recovery"
+            ],
+            "canonical_en": "The patient is in the early postoperative recovery phase after left mastectomy, with currently stable incision and drain findings.",
+            "claim_id": "ward_017_cp_009_claim_004",
+            "linked_evidence_ids": [
+              "ward_017:ehr:recovery:001",
+              "ward_017:proc:definitive_surgery:001",
+              "ward_017:ehr:admission:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_017:ehr:recovery:001",
+              "ward_017:proc:definitive_surgery:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "definitive surgery completed with adjuvant planning pending",
+              "postoperative pathology pending"
+            ],
+            "canonical_en": "Definitive local surgery is completed, but postoperative pathology and immunohistochemistry remain insufficient for final adjuvant systemic-treatment decisions.",
+            "claim_id": "ward_017_cp_009_claim_005",
+            "linked_evidence_ids": [
+              "ward_017:proc:definitive_surgery:001",
+              "ward_017:path:core_biopsy:001",
+              "ward_017:ehr:recovery:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_017:proc:definitive_surgery:001",
+              "ward_017:path:core_biopsy:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "IHC pending",
+              "receptor testing incomplete"
+            ],
+            "canonical_en": "Immunohistochemistry is still pending.",
+            "claim_id": "ward_017_cp_009_claim_006",
+            "linked_evidence_ids": [
+              "ward_017:path:core_biopsy:001"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "ward_017:path:core_biopsy:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "clean dry incision with patent drains",
+              "uncomplicated early wound appearance"
+            ],
+            "canonical_en": "The postoperative incision is dry and well approximated without visible drainage, and chest-wall and axillary drains are patent.",
+            "claim_id": "ward_017_cp_009_claim_007",
+            "linked_evidence_ids": [
+              "ward_017:ehr:recovery:001",
+              "ward_017:path:sentinel_frozen:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_017:ehr:recovery:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "continue postoperative care",
+              "not ready to stop the care pathway"
+            ],
+            "canonical_en": "Inpatient postoperative management and key pathology results remain necessary; the overall care process should not stop.",
+            "claim_id": "ward_017_cp_009_claim_008",
+            "linked_evidence_ids": [
+              "ward_017:ehr:recovery:001",
+              "ward_017:path:core_biopsy:001",
+              "ward_017:proc:definitive_surgery:001"
+            ],
+            "status": "planned",
+            "supporting_evidence_ids": [
+              "ward_017:ehr:recovery:001",
+              "ward_017:path:core_biopsy:001",
+              "ward_017:proc:definitive_surgery:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "continue postoperative inpatient care",
+              "monitor wound and drains"
+            ],
+            "action_id": "ward_017_cp_009_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue inpatient monitoring and management of the incision, skin graft, and chest-wall/axillary drains.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Immediately and continuously until explicit discharge criteria are met.",
+            "indication_en": "The patient is currently still hospitalized and has indwelling chest-wall and axillary drainage tubes; continued stability must be confirmed and bleeding, infection, drainage abnormalities, or skin-flap problems identified.",
+            "linked_evidence_ids": [
+              "ward_017:ehr:recovery:001",
+              "ward_017:proc:definitive_surgery:001"
+            ],
+            "prerequisites_en": [
+              "Postoperative vital signs and clinical observations are available.",
+              "Wound and drainage assessment by the surgical team"
+            ],
+            "problem_en": "Early postoperative status after left mastectomy and skin-flap grafting",
+            "target_and_laterality_en": "Left chest-wall surgical incision, skin-graft area, and left axillary drainage tube"
+          },
+          {
+            "acceptable_aliases_en": [
+              "final pathology and IHC review",
+              "postoperative oncology review"
+            ],
+            "action_id": "ward_017_cp_009_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Obtain and review complete postoperative pathology and immunohistochemistry, followed by breast-oncology assessment.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as possible after postoperative pathology and immunohistochemistry are issued; no specific plan may be formulated from blank information before results are clarified.",
+            "indication_en": "Existing evidence clearly shows that immunohistochemistry has not yet been completed, and frozen section cannot replace final pathology; subsequent adjuvant treatment needs to rely on complete pathology and receptor information.",
+            "linked_evidence_ids": [
+              "ward_017:path:core_biopsy:001",
+              "ward_017:proc:definitive_surgery:001",
+              "ward_017:ehr:preoperative_decision:001",
+              "ward_017:img:breast_mri:001",
+              "ward_017:path:sentinel_frozen:001"
+            ],
+            "prerequisites_en": [
+              "The final surgical specimen pathology report and immunohistochemistry results are available.",
+              "Reviewed by the clinical team in conjunction with pathology results."
+            ],
+            "problem_en": "Postoperative staging and treatment-planning information for invasive breast cancer are incomplete",
+            "target_and_laterality_en": "Left breast surgical specimen and related lymph node specimens"
+          },
+          {
+            "acceptable_aliases_en": [
+              "perioperative diabetes management",
+              "monitor sinus tachycardia"
+            ],
+            "action_id": "ward_017_cp_009_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue assessment and management of perioperative comorbidities, including type 2 diabetes and sinus tachycardia.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Continued during hospitalization",
+            "indication_en": "The admission record clearly documents type 2 diabetes mellitus and sinus tachycardia.",
+            "linked_evidence_ids": [
+              "ward_017:ehr:admission:001"
+            ],
+            "prerequisites_en": [
+              "Monitor vital signs and relevant indicators according to in-hospital procedures",
+              "Managed by the clinical team in conjunction with prior treatment regimens."
+            ],
+            "problem_en": "Perioperative comorbidities may affect recovery and discharge safety.",
+            "target_and_laterality_en": "Whole-body perioperative status; no laterality."
+          },
+          {
+            "acceptable_aliases_en": [
+              "discharge planning and oncology follow-up",
+              "continuity-of-care planning"
+            ],
+            "action_id": "ward_017_cp_009_action_004",
+            "action_scope": "prospective",
+            "canonical_action_en": "After wound, drain, functional status, and discharge criteria are confirmed stable, establish discharge and breast-oncology follow-up arrangements.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete preliminary arrangements before discharge and return for follow-up promptly according to pathology results",
+            "indication_en": "The patient remains early postoperatively as an inpatient, and key pathology results and treatment planning have not yet been completed.",
+            "linked_evidence_ids": [
+              "ward_017:ehr:recovery:001",
+              "ward_017:path:core_biopsy:001",
+              "ward_017:proc:definitive_surgery:001"
+            ],
+            "prerequisites_en": [
+              "Wound and skin-flap status are stable.",
+              "Drainage management and tube-removal/with-tube plan are clarified",
+              "The patient's activity and comorbidity management meet the discharge criteria set by the team",
+              "Pathology results can be tracked subsequently"
+            ],
+            "problem_en": "Discharge or subsequent follow-up arrangements have not yet been provided.",
+            "target_and_laterality_en": "Continuous care after left breast cancer surgery; no additional laterality"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Postoperative incision, skin graft, and chest-wall/axillary drains require monitoring",
+              "linked_evidence_ids": [
+                "ward_017:ehr:recovery:001",
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_009_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Immunohistochemistry and complete final postoperative pathology are not yet available",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001",
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_009_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Adjuvant treatment and continuity-of-care plan are not yet determined",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001",
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_009_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Type 2 diabetes and sinus tachycardia remain perioperative comorbidity considerations",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001"
+              ],
+              "state_id": "ward_017_cp_009_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Immunohistochemistry is still pending",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_009_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Complete postoperative pathology, margin status, and final nodal status are not provided in the public evidence",
+              "linked_evidence_ids": [
+                "ward_017:proc:definitive_surgery:001",
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_009_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Drains remain in place and discharge criteria have not been established during this early inpatient postoperative period",
+              "linked_evidence_ids": [
+                "ward_017:ehr:recovery:001",
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_009_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "70-year-old female, left breast invasive carcinoma confirmed by puncture pathology",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001",
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_009_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "On 2124-05-08, left simple mastectomy, sentinel lymph node biopsy, low-level lymph node management, and skin grafting were completed",
+              "linked_evidence_ids": [
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_009_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Frozen sections of left axillary sentinel/peri-sentinel lymph nodes show no definite evidence of malignancy, but this is not equivalent to final lymph node negativity.",
+              "linked_evidence_ids": [
+                "ward_017:path:sentinel_frozen:001"
+              ],
+              "state_id": "ward_017_cp_009_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Immunohistochemistry and the complete postoperative pathology results are still pending completion.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_009_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "On 2124-05-09, the incision was well approximated and dry, with no drainage; chest-wall and axillary drainage were unobstructed.",
+              "linked_evidence_ids": [
+                "ward_017:ehr:recovery:001"
+              ],
+              "state_id": "ward_017_cp_009_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Comorbid type 2 diabetes mellitus and sinus tachycardia",
+              "linked_evidence_ids": [
+                "ward_017:ehr:admission:001"
+              ],
+              "state_id": "ward_017_cp_009_state_critical_facts_to_retain_006",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Invasive carcinoma of the left breast",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001",
+                "ward_017:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_017_cp_009_state_diagnoses_001",
+              "status": "confirmed",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Early postoperative state after left breast cancer surgery",
+              "linked_evidence_ids": [
+                "ward_017:proc:definitive_surgery:001",
+                "ward_017:ehr:recovery:001"
+              ],
+              "state_id": "ward_017_cp_009_state_diagnoses_002",
+              "status": "active",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Writing the left internal mammary-region lymph node shadow as confirmed metastasis should be corrected.",
+              "linked_evidence_ids": [
+                "ward_017:img:breast_mri:001"
+              ],
+              "state_id": "ward_017_cp_009_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Writing a negative frozen section as final pathology or all regional lymph nodes being negative should be corrected",
+              "linked_evidence_ids": [
+                "ward_017:path:sentinel_frozen:001"
+              ],
+              "state_id": "ward_017_cp_009_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Writing completion of surgery as completion of all breast-cancer treatment should be corrected.",
+              "linked_evidence_ids": [
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_009_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Supplementing ER, PR, HER2, Ki-67, margins, or TNM staging when results are lacking should be avoided.",
+              "linked_evidence_ids": [
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_009_state_facts_to_retract_or_correct_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Continue inpatient postoperative observation and drainage, wound, and skin-graft management; after awaiting pathology and immunohistochemistry results, conduct oncologic specialty assessment and subsequent treatment planning.",
+            "linked_evidence_ids": [
+              "ward_017:ehr:recovery:001",
+              "ward_017:proc:definitive_surgery:001",
+              "ward_017:path:core_biopsy:001"
+            ],
+            "state_id": "ward_017_cp_009_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "New postoperative recovery evidence: the incision is well approximated and dry without drainage; chest-wall and axillary drains are patent, and the patient ambulated and received rehabilitation guidance.",
+              "linked_evidence_ids": [
+                "ward_017:ehr:recovery:001"
+              ],
+              "state_id": "ward_017_cp_009_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The state updates from immediate completion of surgery to early postoperative recovery management; definitive surgery is complete, but inpatient management and key pathology results remain outstanding.",
+              "linked_evidence_ids": [
+                "ward_017:ehr:recovery:001",
+                "ward_017:proc:definitive_surgery:001",
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_009_state_required_delta_from_previous_checkpoint_002",
+              "status": "state_update",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "Diagnostic sampling of the left-breast mass is complete",
+              "linked_evidence_ids": [
+                "ward_017:proc:core_biopsy:001",
+                "ward_017:path:core_biopsy:001"
+              ],
+              "state_id": "ward_017_cp_009_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The planned definitive left-breast surgery is complete",
+              "linked_evidence_ids": [
+                "ward_017:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_017_cp_009_state_resolved_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Local definitive surgery has been completed; however, because immunohistochemistry and complete postoperative pathology have not been completed, conditions are not yet in place to determine an adjuvant systemic treatment regimen.",
+            "linked_evidence_ids": [
+              "ward_017:proc:definitive_surgery:001",
+              "ward_017:path:core_biopsy:001"
+            ],
+            "state_id": "ward_017_cp_009_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Describing no definite evidence of malignancy on frozen section as final lymph node negativity",
+            "Describe the internal mammary-region lymph node seen on MRI as confirmed metastasis.",
+            "Speculating on ER, PR, HER2, Ki-67, margins, or TNM stage when results are not provided.",
+            "Ignore the indwelling drainage tube and early postoperative inpatient status and directly recommend stopping management or discharge",
+            "Equating completion of definitive surgery with completion of all breast cancer treatment"
+          ],
+          "critical_omission_rules_en": [
+            "The blocking information that immunohistochemistry and complete postoperative pathology are not completed must be retained.",
+            "Incision, skin flap, and drainage management must continue.",
+            "Pathology-result review and subsequent oncology specialist assessment must be arranged.",
+            "Perioperative comorbidities such as type 2 diabetes mellitus and sinus tachycardia must be considered"
+          ],
+          "preliminary_risk_triggers_en": [
+            "Continued treatment/postoperative management is needed",
+            "Key pathology results are pending.",
+            "It is currently inappropriate to stop the entire diagnostic and treatment process.",
+            "Direct transition to routine follow-up is not supported for the time being"
+          ]
+        },
+        "stopping": {
+          "decision": "wait_for_pending_result",
+          "rationale_en": "Although definitive left-breast surgery is complete and the current incision and drain findings are stable, immunohistochemistry and complete postoperative pathology remain pending, and inpatient postoperative monitoring with drains is still required. The overall care pathway should not stop, and routine follow-up alone is not yet safe; await key pathology while continuing postoperative management.",
+          "remaining_blockers_en": [
+            "Immunohistochemistry has not yet been completed",
+            "Complete postoperative pathology, margins, and final lymph node status have not been provided in public evidence",
+            "The patient remains in the early postoperative inpatient period with an indwelling drain; discharge conditions and continuous follow-up arrangements are unclear"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_017_cp_009",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_017:ehr:admission:001",
+          "ward_017:ehr:preoperative_decision:001",
+          "ward_017:ehr:recovery:001",
+          "ward_017:img:breast_assessment:001",
+          "ward_017:img:breast_mri:001",
+          "ward_017:path:core_biopsy:001",
+          "ward_017:path:sentinel_frozen:001",
+          "ward_017:proc:core_biopsy:001",
+          "ward_017:proc:definitive_surgery:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_017:ehr:terminal:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_017",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_017_s2_node_001_completed": true,
+            "ward_017_s2_node_002_completed": true,
+            "ward_017_s2_node_003_completed": true,
+            "ward_017_s2_node_004_completed": true,
+            "ward_017_s2_node_005_completed": true,
+            "ward_017_s2_node_006_completed": true,
+            "ward_017_s2_node_007_completed": true,
+            "ward_017_s2_node_008_completed": true,
+            "ward_017_s2_node_009_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Left breast mass, suspected cancer",
+            "age_years": 70,
+            "initial_time": "2124-05-03T09:51:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-05-09T08:00:00+08:00",
+          "stage": "S3",
+          "visible_evidence_ids": [
+            "ward_017:ehr:admission:001",
+            "ward_017:ehr:preoperative_decision:001",
+            "ward_017:ehr:recovery:001",
+            "ward_017:img:breast_assessment:001",
+            "ward_017:img:breast_mri:001",
+            "ward_017:path:core_biopsy:001",
+            "ward_017:path:sentinel_frozen:001",
+            "ward_017:proc:core_biopsy:001",
+            "ward_017:proc:definitive_surgery:001"
+          ]
+        },
+        "public_snapshot_sha256": "6ca4eb94b06499c3aa671b1441ece560f31d7b691bc53434cf64569a5eeb67e6",
+        "public_time": "2124-05-09T08:00:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 9
+    }
+  ],
+  "milestone_candidates": [
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Left breast biopsy pathology has indicated invasive carcinoma, and the preoperative record confirms invasive carcinoma of the left breast."
+      ],
+      "current_status": "complete",
+      "milestone_id": "ward_017_ms_01",
+      "milestone_type": "diagnostic_closure",
+      "name_en": "Diagnostic closure",
+      "partial_criteria_en": [
+        "Imaging is BI-RADS 4C and needle sampling has been completed, but before biopsy pathology is disclosed, it remains only highly suspicious."
+      ],
+      "safety_invalidation_rules_en": [
+        "If subsequent pathology negates invasive carcinoma, this milestone needs to be reassessed; currently, an unreleased pathological subtype must not be added."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Obtain complete postoperative pathology, final lymph node status, and immunohistochemistry, and complete oncology specialty treatment planning."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_017_ms_02",
+      "milestone_type": "staging_or_treatment_readiness",
+      "name_en": "Staging or treatment readiness",
+      "partial_criteria_en": [
+        "Imaging assessment, sentinel lymph node frozen assessment, and definitive surgery have been completed, but immunohistochemistry and complete postoperative pathology are still pending."
+      ],
+      "safety_invalidation_rules_en": [
+        "If key pathology data are missing or results cannot be tracked, it must not be deemed that treatment conditions are ready."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Left simple mastectomy, sentinel lymph-node biopsy, low-level lymph-node management, and skin grafting have all been completed."
+      ],
+      "current_status": "complete",
+      "milestone_id": "ward_017_ms_03",
+      "milestone_type": "definitive_intervention",
+      "name_en": "Definitive intervention",
+      "partial_criteria_en": [
+        "The surgical plan was completed preoperatively but has not yet been performed, or only part of the surgical steps have been completed."
+      ],
+      "safety_invalidation_rules_en": [
+        "If serious postoperative problems requiring reoperation occur, the status of local definitive treatment needs to be reassessed by the clinical team."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "The incision and skin flap are stable, drainage management is complete or has a clear safety plan, postoperative issues not requiring continued hospitalization have been assessed, and a postoperative management plan has been completed."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_017_ms_04",
+      "milestone_type": "postoperative_or_response_management",
+      "name_en": "Postoperative or response management",
+      "partial_criteria_en": [
+        "The incision is well approximated and dry, drainage is unobstructed, and the patient can get out of bed, but a drainage tube remains in place and the patient is in the early inpatient recovery period."
+      ],
+      "safety_invalidation_rules_en": [
+        "When bleeding, infection, drainage obstruction, skin flap problems, or other unstable manifestations occur, the milestone must not be marked completed."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Meet discharge criteria, clarify drainage/wound management and pathology-result tracking, and complete breast oncology specialty follow-up or referral arrangements."
+      ],
+      "current_status": "not_started",
+      "milestone_id": "ward_017_ms_05",
+      "milestone_type": "disposition_and_continuity",
+      "name_en": "Disposition and continuity of care",
+      "partial_criteria_en": [
+        "The patient has received rehabilitation guidance, but public evidence does not show that discharge, pathology tracking, or specialist follow-up arrangements have been completed."
+      ],
+      "safety_invalidation_rules_en": [
+        "Must not determine completion when discharge conditions are unclear, there is no plan for drainage management, or key pathology results cannot be tracked."
+      ]
+    }
+  ],
+  "normalized_evidence": [
+    {
+      "available_time": "2124-05-03T10:55:00+08:00",
+      "available_time_utc": "2124-05-03T02:55:00Z",
+      "case_id": "ward_017",
+      "clinical_time": "2124-05-03T09:51:00+08:00",
+      "clinical_time_utc": "2124-05-03T01:51:00Z",
+      "content_summary": "A 70-year-old woman was admitted for further diagnosis and treatment after noticing a mass in the upper-inner left breast for approximately 1 weeks. The mass measured approximately 3.5 to 4 cm, was hard, and had indistinct borders; comorbidities included type 2 diabetes mellitus and sinus tachycardia.",
+      "evidence_id": "ward_017:ehr:admission:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "A 70-year-old woman was admitted for further diagnosis and treatment after noticing a mass in the upper-inner left breast for approximately 1 weeks. The mass measured approximately 3.5 to 4 cm, was hard, and had indistinct borders; comorbidities included type 2 diabetes mellitus and sinus tachycardia.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC017 Admission Assessment",
+      "unit": null
+    },
+    {
+      "available_time": "2124-05-06T16:31:00+08:00",
+      "available_time_utc": "2124-05-06T08:31:00Z",
+      "case_id": "ward_017",
+      "clinical_time": "2124-05-06T10:12:00+08:00",
+      "clinical_time_utc": "2124-05-06T02:12:00Z",
+      "content_summary": "An approximately 33 mm mass in the left breast in the 10 to 11 o'clock direction; both ultrasound and mammography assessed it as BI-RADS 4C; left axillary lymph nodes were visualized.",
+      "evidence_id": "ward_017:img:breast_assessment:001",
+      "laterality": null,
+      "module": "imaging_results",
+      "raw_content": "An approximately 33 mm mass in the left breast in the 10 to 11 o'clock direction; both ultrasound and mammography assessed it as BI-RADS 4C; left axillary lymph nodes were visualized.",
+      "record_kind": "deidentified_imaging_summary",
+      "structured_value": null,
+      "title": "SRC017 breast imaging",
+      "unit": null
+    },
+    {
+      "available_time": "2124-05-06T19:30:00+08:00",
+      "available_time_utc": "2124-05-06T11:30:00Z",
+      "case_id": "ward_017",
+      "clinical_time": "2124-05-06T19:15:00+08:00",
+      "clinical_time_utc": "2124-05-06T11:15:00Z",
+      "content_summary": "Core needle biopsy of the left breast mass was completed under local anesthesia and ultrasound guidance, followed by postoperative pressure bandaging.",
+      "evidence_id": "ward_017:proc:core_biopsy:001",
+      "laterality": null,
+      "module": "procedure_records",
+      "raw_content": "Core needle biopsy of the left breast mass was completed under local anesthesia and ultrasound guidance, followed by postoperative pressure bandaging.",
+      "record_kind": "deidentified_procedure_summary",
+      "structured_value": null,
+      "title": "SRC017 core needle biopsy",
+      "unit": null
+    },
+    {
+      "available_time": "2124-05-07T19:17:00+08:00",
+      "available_time_utc": "2124-05-07T11:17:00Z",
+      "case_id": "ward_017",
+      "clinical_time": "2124-05-07T18:45:00+08:00",
+      "clinical_time_utc": "2124-05-07T10:45:00Z",
+      "content_summary": "Core needle biopsy of the left breast mass indicated invasive carcinoma; immunohistochemistry is still being completed.",
+      "evidence_id": "ward_017:path:core_biopsy:001",
+      "laterality": null,
+      "module": "pathology_results",
+      "raw_content": "Core needle biopsy of the left breast mass indicated invasive carcinoma; immunohistochemistry is still being completed.",
+      "record_kind": "deidentified_pathology_summary",
+      "structured_value": null,
+      "title": "SRC017 Needle Biopsy Pathology",
+      "unit": null
+    },
+    {
+      "available_time": "2124-05-08T03:10:00+08:00",
+      "available_time_utc": "2124-05-07T19:10:00Z",
+      "case_id": "ward_017",
+      "clinical_time": "2124-05-05T11:43:00+08:00",
+      "clinical_time_utc": "2124-05-05T03:43:00Z",
+      "content_summary": "The mass in the upper inner quadrant of the left breast was assessed as BI-RADS 4C, and a lymph node was also seen in the left internal mammary region; most of the remaining lesions in both breasts were of lower categories.",
+      "evidence_id": "ward_017:img:breast_mri:001",
+      "laterality": null,
+      "module": "imaging_results",
+      "raw_content": "The mass in the upper inner quadrant of the left breast was assessed as BI-RADS 4C, and a lymph node was also seen in the left internal mammary region; most of the remaining lesions in both breasts were of lower categories.",
+      "record_kind": "deidentified_imaging_summary",
+      "structured_value": null,
+      "title": "SRC017 breast MRI",
+      "unit": null
+    },
+    {
+      "available_time": "2124-05-08T08:30:00+08:00",
+      "available_time_utc": "2124-05-08T00:30:00Z",
+      "case_id": "ward_017",
+      "clinical_time": "2124-05-08T08:15:00+08:00",
+      "clinical_time_utc": "2124-05-08T00:15:00Z",
+      "content_summary": "The diagnosis of invasive carcinoma of the left breast is confirmed. Simple mastectomy, sentinel lymph node biopsy, and management of the low-level lymph node group are planned; because of the extent of resection and skin tension, skin harvesting and grafting are also planned.",
+      "evidence_id": "ward_017:ehr:preoperative_decision:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "The diagnosis of invasive carcinoma of the left breast is confirmed. Simple mastectomy, sentinel lymph node biopsy, and management of the low-level lymph node group are planned; because of the extent of resection and skin tension, skin harvesting and grafting are also planned.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC017 Preoperative Decision",
+      "unit": null
+    },
+    {
+      "available_time": "2124-05-08T17:00:00+08:00",
+      "available_time_utc": "2124-05-08T09:00:00Z",
+      "case_id": "ward_017",
+      "clinical_time": "2124-05-08T14:30:00+08:00",
+      "clinical_time_utc": "2124-05-08T06:30:00Z",
+      "content_summary": "Under general anesthesia, left simple mastectomy, sentinel lymph node biopsy, low-level lymph node management, and skin grafting were completed, with chest wall and axillary drains left in place.",
+      "evidence_id": "ward_017:proc:definitive_surgery:001",
+      "laterality": null,
+      "module": "procedure_records",
+      "raw_content": "Under general anesthesia, left simple mastectomy, sentinel lymph node biopsy, low-level lymph node management, and skin grafting were completed, with chest wall and axillary drains left in place.",
+      "record_kind": "deidentified_procedure_summary",
+      "structured_value": null,
+      "title": "SRC017 Left Breast Surgery",
+      "unit": null
+    },
+    {
+      "available_time": "2124-05-08T15:51:00+08:00",
+      "available_time_utc": "2124-05-08T07:51:00Z",
+      "case_id": "ward_017",
+      "clinical_time": "2124-05-08T15:51:00+08:00",
+      "clinical_time_utc": "2124-05-08T07:51:00Z",
+      "content_summary": "Frozen sections from multiple groups of left axillary sentinel and parasentinel lymph nodes showed no definitive evidence of malignancy.",
+      "evidence_id": "ward_017:path:sentinel_frozen:001",
+      "laterality": null,
+      "module": "pathology_results",
+      "raw_content": "Frozen sections from multiple groups of left axillary sentinel and parasentinel lymph nodes showed no definitive evidence of malignancy.",
+      "record_kind": "deidentified_pathology_summary",
+      "structured_value": null,
+      "title": "SRC017 sentinel frozen section",
+      "unit": null
+    },
+    {
+      "available_time": "2124-05-09T08:00:00+08:00",
+      "available_time_utc": "2124-05-09T00:00:00Z",
+      "case_id": "ward_017",
+      "clinical_time": "2124-05-09T08:00:00+08:00",
+      "clinical_time_utc": "2124-05-09T00:00:00Z",
+      "content_summary": "The incision was well approximated and dry without drainage; chest wall and axillary drainage was unobstructed. The patient ambulated out of bed and received rehabilitation guidance.",
+      "evidence_id": "ward_017:ehr:recovery:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "The incision was well approximated and dry without drainage; chest wall and axillary drainage was unobstructed. The patient ambulated out of bed and received rehabilitation guidance.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC017 Postoperative Recovery",
+      "unit": null
+    },
+    {
+      "available_time": "2124-05-13T13:30:00+08:00",
+      "available_time_utc": "2124-05-13T05:30:00Z",
+      "case_id": "ward_017",
+      "clinical_time": "2124-05-13T13:30:00+08:00",
+      "clinical_time_utc": "2124-05-13T05:30:00Z",
+      "content_summary": "Postoperative vital signs were stable, and the wound was grade I/Class A. The chest wall tube had been removed. Axillary drainage remained relatively high. The patient was discharged with the axillary drainage tube in place, with arrangements for tube removal and pathology follow-up.",
+      "evidence_id": "ward_017:ehr:terminal:001",
+      "laterality": null,
+      "module": "disposition",
+      "raw_content": "Postoperative vital signs were stable, and the wound was grade I/Class A. The chest wall tube had been removed. Axillary drainage remained relatively high. The patient was discharged with the axillary drainage tube in place, with arrangements for tube removal and pathology follow-up.",
+      "record_kind": "deidentified_terminal_summary",
+      "structured_value": null,
+      "title": "SRC017 Discharge Terminal Status",
+      "unit": null
+    }
+  ],
+  "process_gold": {
+    "status": "source_recorded_not_layer_gold_clinically_validated",
+    "transition_count": 10,
+    "transitions": [
+      {
+        "clock_after": "2124-05-03T10:55:00+08:00",
+        "clock_before": "2124-05-03T09:51:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review left breast admission",
+            "Review the admission assessment for a left breast mass",
+            "left breast mass admission"
+          ],
+          "action_id": "ehr:ward_017:001",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_017:ehr:admission:001"
+          ],
+          "target": "left_breast_mass_admission_case005"
+        },
+        "release_evidence_ids": [
+          "ward_017:ehr:admission:001"
+        ],
+        "sequence_index": 0,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_017_s2_node_001_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_017_s2_node_001"
+      },
+      {
+        "clock_after": "2124-05-06T16:31:00+08:00",
+        "clock_before": "2124-05-03T10:55:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review breast imaging",
+            "review BI-RADS 4C imaging",
+            "Review left breast BI-RADS 4C imaging",
+            "left breast birads4c ultrasound and mammography"
+          ],
+          "action_id": "ehr:ward_017:002",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_017:img:breast_assessment:001"
+          ],
+          "target": "left_breast_birads4c_ultrasound_and_mammography_case005"
+        },
+        "release_evidence_ids": [
+          "ward_017:img:breast_assessment:001"
+        ],
+        "sequence_index": 1,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_017_s2_node_002_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_017_s2_node_002"
+      },
+      {
+        "clock_after": "2124-05-06T19:30:00+08:00",
+        "clock_before": "2124-05-06T16:31:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "perform left breast core biopsy",
+            "Perform left breast core needle biopsy",
+            "ultrasound guided left breast core biopsy"
+          ],
+          "action_id": "ehr:ward_017:003",
+          "action_type": "perform_procedure",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_017:proc:core_biopsy:001"
+          ],
+          "target": "ultrasound_guided_left_breast_core_biopsy_case005"
+        },
+        "release_evidence_ids": [
+          "ward_017:proc:core_biopsy:001"
+        ],
+        "sequence_index": 2,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_017_s2_node_003_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_017_s2_node_003"
+      },
+      {
+        "clock_after": "2124-05-07T19:17:00+08:00",
+        "clock_before": "2124-05-06T19:30:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review core biopsy pathology",
+            "review invasive carcinoma biopsy",
+            "Review pathology of invasive carcinoma from left breast core needle biopsy",
+            "left breast core biopsy invasive carcinoma"
+          ],
+          "action_id": "ehr:ward_017:004",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_017:path:core_biopsy:001"
+          ],
+          "target": "left_breast_core_biopsy_invasive_carcinoma_case005"
+        },
+        "release_evidence_ids": [
+          "ward_017:path:core_biopsy:001"
+        ],
+        "sequence_index": 3,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_017_s2_node_004_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_017_s2_node_004"
+      },
+      {
+        "clock_after": "2124-05-08T03:10:00+08:00",
+        "clock_before": "2124-05-07T19:17:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review breast MRI",
+            "review left breast MRI",
+            "Review left breast preoperative MRI",
+            "left breast preoperative mri"
+          ],
+          "action_id": "ehr:ward_017:005",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_017:img:breast_mri:001"
+          ],
+          "target": "left_breast_preoperative_mri_case005"
+        },
+        "release_evidence_ids": [
+          "ward_017:img:breast_mri:001"
+        ],
+        "sequence_index": 4,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_017_s2_node_005_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_017_s2_node_005"
+      },
+      {
+        "clock_after": "2124-05-08T08:30:00+08:00",
+        "clock_before": "2124-05-08T03:10:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review definitive surgery plan",
+            "Review the left mastectomy and skin grafting plan",
+            "left mastectomy sentinel low level node and skin graft plan"
+          ],
+          "action_id": "ehr:ward_017:006",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_017:ehr:preoperative_decision:001"
+          ],
+          "target": "left_mastectomy_sentinel_low_level_node_and_skin_graft_plan_case005"
+        },
+        "release_evidence_ids": [
+          "ward_017:ehr:preoperative_decision:001"
+        ],
+        "sequence_index": 5,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_017_s2_node_006_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_017_s2_node_006"
+      },
+      {
+        "clock_after": "2124-05-08T17:00:00+08:00",
+        "clock_before": "2124-05-08T08:30:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "perform recorded left breast operation",
+            "perform left mastectomy with skin graft",
+            "Perform left simple mastectomy, sentinel lymph node biopsy, low-level axillary lymph node dissection, and skin grafting",
+            "left simple mastectomy sentinel low level node and skin graft"
+          ],
+          "action_id": "ehr:ward_017:007",
+          "action_type": "perform_procedure",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_017:proc:definitive_surgery:001"
+          ],
+          "target": "left_simple_mastectomy_sentinel_low_level_node_and_skin_graft_case005"
+        },
+        "release_evidence_ids": [
+          "ward_017:proc:definitive_surgery:001"
+        ],
+        "sequence_index": 6,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_017_s2_node_007_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_017_s2_node_007"
+      },
+      {
+        "clock_after": "2124-05-08T17:01:00+08:00",
+        "clock_before": "2124-05-08T17:00:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review sentinel frozen pathology",
+            "Review the frozen pathology of the left sentinel and parasentinel lymph nodes",
+            "left sentinel and parasentinel frozen pathology"
+          ],
+          "action_id": "ehr:ward_017:008",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_017:path:sentinel_frozen:001"
+          ],
+          "target": "left_sentinel_and_parasentinel_frozen_pathology_case005"
+        },
+        "release_evidence_ids": [
+          "ward_017:path:sentinel_frozen:001"
+        ],
+        "sequence_index": 7,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_017_s2_node_008_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_017_s2_node_008"
+      },
+      {
+        "clock_after": "2124-05-09T08:00:00+08:00",
+        "clock_before": "2124-05-08T17:01:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "monitor mastectomy recovery",
+            "monitor postoperative recovery",
+            "Monitor postoperative recovery after left mastectomy",
+            "left mastectomy postoperative recovery"
+          ],
+          "action_id": "ehr:ward_017:009",
+          "action_type": "monitor_or_defer",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_017:ehr:recovery:001"
+          ],
+          "target": "left_mastectomy_postoperative_recovery_case005"
+        },
+        "release_evidence_ids": [
+          "ward_017:ehr:recovery:001"
+        ],
+        "sequence_index": 8,
+        "stage_after": "S3",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_017_s2_node_009_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_017_s2_node_009"
+      },
+      {
+        "clock_after": "2124-05-13T13:30:00+08:00",
+        "clock_before": "2124-05-09T08:00:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "discharge with drain follow-up",
+            "discharge with axillary drain",
+            "Discharge with an axillary drain in place",
+            "home with axillary drain"
+          ],
+          "action_id": "ehr:ward_017:010",
+          "action_type": "discharge",
+          "gold_source_type": "ehr_derived_terminal_gold",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_017:ehr:terminal:001"
+          ],
+          "target": "home_with_axillary_drain_case005"
+        },
+        "release_evidence_ids": [
+          "ward_017:ehr:terminal:001"
+        ],
+        "sequence_index": 9,
+        "stage_after": "S3",
+        "stage_before": "S3",
+        "state_updates": {
+          "disposition": "home",
+          "encounter_active": false,
+          "terminal": true
+        },
+        "terminal": true,
+        "transition_id": "ward_017_s3_terminal_001"
+      }
+    ]
+  },
+  "schema_version": "ward-runtime-gold-1.0",
+  "gold_version": "ward-anonymous-runtime-1.0"
+}

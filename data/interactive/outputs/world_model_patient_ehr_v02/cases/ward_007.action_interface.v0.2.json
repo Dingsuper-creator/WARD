@@ -1,0 +1,47 @@
+{
+  "interface_version": "ward-patient-ehr-action-interface-0.2.0",
+  "status": "development_non_official",
+  "case_id": "ward_007",
+  "scenario_path": "outputs/world_model_patient_ehr_v01/cases/ward_007.patient_ehr.json",
+  "scenario_sha256": "df38dfa52acf552bc5bab3e2a2cb44cc6d24770a1b27485f6480a27a4fd7e3fe",
+  "ontology_path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_007.v0.2.json",
+  "ontology_sha256": "1f8a43649cd1c90d0d078f2830ba2be07c3329c92f8d96629ef0d39979a5e9be",
+  "public_capabilities": [
+    "communicate_with_patient",
+    "review_ehr_documents",
+    "order_diagnostic_tests",
+    "review_results",
+    "request_consultation",
+    "manage_treatment",
+    "perform_procedures",
+    "monitor_or_defer",
+    "manage_disposition"
+  ],
+  "transition_concepts": {
+    "ward_007_s2_node_001": "ehr.breast_admission_core_biopsy_readiness",
+    "ward_007_s2_node_002": "procedure.breast_core_biopsy",
+    "ward_007_s2_node_003": "ehr.post_core_biopsy_status",
+    "ward_007_s2_node_004": "result.paired_core_pathology",
+    "ward_007_s2_node_005": "consultation.preoperative_risk_review",
+    "ward_007_s2_node_006": "ehr.definitive_breast_surgery_readiness",
+    "ward_007_s2_node_007": "procedure.breast_conserving_sentinel_and_fascial_surgery",
+    "ward_007_s2_node_008": "ehr.post_definitive_breast_surgery_status",
+    "ward_007_s2_node_009": "result.late_xray_update",
+    "ward_007_s2_node_010": "result.late_mri_and_ct_updates",
+    "ward_007_s2_node_011": "consultation.postoperative_followup",
+    "ward_007_s3_terminal_001": "disposition.home_after_inpatient_breast_surgery"
+  },
+  "decision_policy": {
+    "free_text_target_allowed": true,
+    "exact_hidden_identifier_required": false,
+    "schema_valid_non_gold_action_class": "valid_exploration_no_recorded_outcome",
+    "recognized_non_current_action_class": "recognized_non_current_action",
+    "gold_equivalent_action_class": "ehr_path_advanced",
+    "counterfactual_clinical_outcomes_simulated": false
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

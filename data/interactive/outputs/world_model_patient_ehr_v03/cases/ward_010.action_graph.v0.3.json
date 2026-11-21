@@ -1,0 +1,89 @@
+{
+  "graph_version": "ward-patient-ehr-action-graph-0.3.0",
+  "status": "development_non_official",
+  "case_id": "ward_010",
+  "scenario_sha256": "98874486f8fd5b461f2ae8b1e36e0e0eec6d62ec06c473b79aa9e5e531058da5",
+  "action_interface_sha256": "8473f13e16b77e5b291a9d5ac68b96d670f2673799425e4c27afcf073c9c8ecd",
+  "action_ontology_sha256": "3ffb00560984ca19fab0c34932e36a2400244abf7a8eb05b5cf29ee808bd4718",
+  "nodes": {
+    "ward_010_s2_node_001": {
+      "requires": []
+    },
+    "ward_010_s2_node_002": {
+      "requires": [
+        "ward_010_s2_node_001"
+      ]
+    },
+    "ward_010_s2_node_003": {
+      "requires": [
+        "ward_010_s2_node_001"
+      ]
+    },
+    "ward_010_s2_node_004": {
+      "requires": [
+        "ward_010_s2_node_002",
+        "ward_010_s2_node_003"
+      ]
+    },
+    "ward_010_s2_node_005": {
+      "requires": [
+        "ward_010_s2_node_002",
+        "ward_010_s2_node_003",
+        "ward_010_s2_node_004"
+      ]
+    },
+    "ward_010_s2_node_006": {
+      "requires": [
+        "ward_010_s2_node_002",
+        "ward_010_s2_node_003",
+        "ward_010_s2_node_004"
+      ]
+    },
+    "ward_010_s2_node_007": {
+      "requires": [
+        "ward_010_s2_node_004",
+        "ward_010_s2_node_005"
+      ]
+    },
+    "ward_010_s2_node_008": {
+      "requires": [
+        "ward_010_s2_node_006"
+      ]
+    },
+    "ward_010_s2_node_009": {
+      "requires": [
+        "ward_010_s2_node_005"
+      ]
+    },
+    "ward_010_s2_node_010": {
+      "requires": [
+        "ward_010_s2_node_005",
+        "ward_010_s2_node_006",
+        "ward_010_s2_node_007",
+        "ward_010_s2_node_008",
+        "ward_010_s2_node_009"
+      ]
+    },
+    "ward_010_s3_terminal_001": {
+      "requires": [
+        "ward_010_s2_node_010"
+      ]
+    }
+  },
+  "policy": {
+    "multiple_recorded_actions_may_be_available": true,
+    "recorded_sequence_index_is_not_a_required_execution_order": true,
+    "prerequisites_are_enforced": true,
+    "environment_clock_never_moves_backward": true,
+    "counterfactual_outcomes_invented": false,
+    "paired_primary_pathology_single_gate": true,
+    "reconstruction_requires_mastectomy": true,
+    "reconstruction_not_gated_on_final_node_pathology": true,
+    "frozen_results_not_overcalled_as_final_pathology": true
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

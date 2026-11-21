@@ -1,0 +1,10 @@
+{
+  "schema_version": "ward-successor-lineage-1.0",
+  "method": "same-case evidence identity alignment to approved reference text",
+  "original_visibility_contract_preserved": true,
+  "original_transition_graph_preserved": true,
+  "reference_transition_graph_imported": false,
+  "structured_clock_offset_years": 100,
+  "retained_source_time_field_count": 4,
+  "reference_data_manifest_sha256": "aee9632afa72e5a5f43dcca40d4e4b67c85ea04af827436f08fd94e4ce9d2ea5"
+}

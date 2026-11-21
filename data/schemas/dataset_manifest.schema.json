@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$id": "urn:ward:data-manifest:1",
+  "required": [
+    "schema_version",
+    "track",
+    "dataset_kind",
+    "case_count",
+    "case_ids",
+    "files"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "ward-data-manifest-1.0"
+    },
+    "track": {
+      "enum": [
+        "longitudinal",
+        "interactive"
+      ]
+    },
+    "case_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "case_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^ward_[0-9]{3}$"
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256",
+          "size_bytes"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    }
+  }
+}

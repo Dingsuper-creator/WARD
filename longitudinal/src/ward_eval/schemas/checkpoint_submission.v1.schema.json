@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ward.local/schemas/checkpoint-submission-v1.json",
+  "title": "WARD checkpoint submission v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "case_id",
+    "checkpoint_id",
+    "public_snapshot_sha256",
+    "language",
+    "submission_status"
+  ],
+  "properties": {
+    "schema_version": {"const": "ward-checkpoint-submission-1.1"},
+    "case_id": {"type": "string", "pattern": "^ward_[0-9]{3}$"},
+    "checkpoint_id": {"type": "string", "pattern": "^ward_[0-9]{3}_cp_[0-9]{3}$"},
+    "public_snapshot_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "language": {"type": "string", "minLength": 2},
+    "submission_status": {
+      "enum": [
+        "complete",
+        "schema_invalid",
+        "missing_output",
+        "refusal",
+        "truncated",
+        "multiple_submissions",
+        "unsupported_format",
+        "translation_failed",
+        "transport_error"
+      ]
+    },
+    "raw_output_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "error_code": {"type": ["string", "null"]},
+    "key_evidence": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/evidence"}
+    },
+    "utilization_links": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/utilization"}
+    },
+    "claims": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/claim"}
+    },
+    "patient_state": {"$ref": "#/$defs/patient_state"},
+    "actions": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/action"}
+    },
+    "safety": {"$ref": "#/$defs/safety"},
+    "stopping": {"$ref": "#/$defs/stopping"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"submission_status": {"const": "complete"}}},
+      "then": {
+        "required": [
+          "key_evidence",
+          "utilization_links",
+          "claims",
+          "patient_state",
+          "actions",
+          "safety",
+          "stopping"
+        ]
+      }
+    }
+  ],
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_id", "role"],
+      "properties": {
+        "evidence_id": {"type": "string", "minLength": 1},
+        "role": {"enum": ["contextual", "critical", "not_applicable", "supporting"]},
+        "interpretation_en": {"type": ["string", "null"]}
+      }
+    },
+    "utilization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_id", "claim_ids", "state_ids", "action_ids"],
+      "properties": {
+        "evidence_id": {"type": "string", "minLength": 1},
+        "claim_ids": {"type": "array", "items": {"type": "string", "pattern": "^pred_"}},
+        "state_ids": {"type": "array", "items": {"type": "string", "pattern": "^pred_"}},
+        "action_ids": {"type": "array", "items": {"type": "string", "pattern": "^pred_"}},
+        "expected_outcome_en": {"type": ["string", "null"]}
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_id", "text_en", "status", "evidence_ids"],
+      "properties": {
+        "claim_id": {"type": "string", "pattern": "^pred_"},
+        "text_en": {"type": "string", "minLength": 1},
+        "status": {
+          "enum": ["completed", "confirmed", "negative", "pending", "planned", "suspected"]
+        },
+        "evidence_ids": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "state_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state_id", "text_en", "status", "evidence_ids"],
+      "properties": {
+        "state_id": {"type": "string", "pattern": "^pred_"},
+        "text_en": {"type": "string", "minLength": 1},
+        "status": {"type": ["string", "null"]},
+        "evidence_ids": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "patient_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "diagnoses",
+        "active_problems",
+        "resolved_problems",
+        "blockers",
+        "critical_facts_to_retain",
+        "facts_to_retract_or_correct",
+        "required_delta_from_previous_checkpoint",
+        "treatment_readiness",
+        "management_state"
+      ],
+      "properties": {
+        "diagnoses": {"type": "array", "items": {"$ref": "#/$defs/state_item"}},
+        "active_problems": {"type": "array", "items": {"$ref": "#/$defs/state_item"}},
+        "resolved_problems": {"type": "array", "items": {"$ref": "#/$defs/state_item"}},
+        "blockers": {"type": "array", "items": {"$ref": "#/$defs/state_item"}},
+        "critical_facts_to_retain": {"type": "array", "items": {"$ref": "#/$defs/state_item"}},
+        "facts_to_retract_or_correct": {"type": "array", "items": {"$ref": "#/$defs/state_item"}},
+        "required_delta_from_previous_checkpoint": {"type": "array", "items": {"$ref": "#/$defs/state_item"}},
+        "treatment_readiness": {
+          "oneOf": [{"$ref": "#/$defs/state_item"}, {"type": "null"}]
+        },
+        "management_state": {
+          "oneOf": [{"$ref": "#/$defs/state_item"}, {"type": "null"}]
+        }
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "action_id",
+        "text_en",
+        "category",
+        "action_scope",
+        "evidence_ids",
+        "critical_omission_if_missing"
+      ],
+      "properties": {
+        "action_id": {"type": "string", "pattern": "^pred_"},
+        "text_en": {"type": "string", "minLength": 1},
+        "category": {
+          "enum": [
+            "acceptable_alternative",
+            "acceptable_recorded",
+            "contraindicated_or_harmful",
+            "low_priority",
+            "necessary"
+          ]
+        },
+        "action_scope": {"enum": ["avoid", "prospective", "recorded"]},
+        "evidence_ids": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "critical_omission_if_missing": {"type": "boolean"},
+        "problem_en": {"type": ["string", "null"]},
+        "indication_en": {"type": ["string", "null"]},
+        "target_and_laterality_en": {"type": ["string", "null"]},
+        "priority": {"type": ["string", "null"]},
+        "deadline_or_time_window_en": {"type": ["string", "null"]},
+        "prerequisites_en": {"type": "array", "items": {"type": "string"}},
+        "prohibited_action_en": {"type": ["string", "null"]}
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hard_failure_rules", "critical_omission_rules", "preliminary_risk_triggers"],
+      "properties": {
+        "hard_failure_rules": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "critical_omission_rules": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "preliminary_risk_triggers": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "stopping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "remaining_blockers", "rationale_en"],
+      "properties": {
+        "decision": {
+          "enum": [
+            "continue_investigation",
+            "continue_treatment",
+            "safe_to_discharge_or_follow_up",
+            "wait_for_pending_result"
+          ]
+        },
+        "remaining_blockers": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "rationale_en": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

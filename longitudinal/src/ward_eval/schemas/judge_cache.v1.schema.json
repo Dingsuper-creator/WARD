@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ward.example/schemas/judge_cache.v1.schema.json",
+  "title": "WARD Judge cache v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "protocol_version", "decision_policy", "dataset_sha256", "judge_run_manifest_sha256", "human_labels_sha256", "decisions"],
+  "properties": {
+    "schema_version": {"const": "ward-judge-cache-1.0"},
+    "protocol_version": {"const": "ward-semantic-judge-1.0"},
+    "decision_policy": {"enum": ["dual_consensus_human", "primary_judge_b"]},
+    "dataset_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "judge_run_manifest_sha256": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "human_labels_sha256": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "decisions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["verdict", "confidence", "source", "item_id"],
+        "properties": {
+          "verdict": {"enum": ["equivalent", "partial", "contradiction", "unrelated", "abstain"]},
+          "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+          "source": {"enum": ["dual_judge_consensus", "primary_judge_b", "human_adjudication"]},
+          "item_id": {"type": "string", "pattern": "^ward_jjob_[0-9a-f]{20}$"},
+          "reason_codes": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    }
+  }
+}

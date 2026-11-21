@@ -1,0 +1,39 @@
+{
+  "manifest_version": "ward-world-model-interaction-scorer-freeze-manifest-0.1.0",
+  "freeze_id": "ward-world-model-interaction-scorer-baseline-2026-07-23-v0.1",
+  "status": "frozen_interaction_experiment_baseline_not_formal_release",
+  "baseline_dataset": {
+    "case_count": 10,
+    "case_ids": [
+      "ward_001",
+      "ward_002",
+      "ward_003",
+      "ward_004",
+      "ward_005",
+      "ward_006",
+      "ward_007",
+      "ward_008",
+      "ward_009",
+      "ward_010"
+    ],
+    "future_cases_append_by_new_manifest_only": true,
+    "existing_cases_may_not_be_removed_or_replaced": true
+  },
+  "frozen_versions": {
+    "deterministic_engine": "ward-world-model-candidate-scorer-0.4",
+    "formal_scorer_candidate": "ward-world-model-formal-scorer-candidate-0.2.0",
+    "scoring_profile": "ward-world-model-scoring-profile-0.2.0",
+    "structured_terminology_layer": "ward-world-model-formal-layers-candidate-0.1.1",
+    "semantic_judge_prompt": "ward-world-model-llm-judge-task-level-prompt-0.2.1-development",
+    "semantic_judge_adapter": "ward-world-model-judge-output-adapter-0.2.1"
+  },
+  "capability_boundaries": {
+    "automatic_core_use_for_interaction_experiments": true,
+    "automatic_semantic_judge_scoring": false,
+    "critical_omission_automatic_finalization": false,
+    "safety_issue_automatic_finalization": false,
+    "official_scoring_allowed": false,
+    "separate_formal_release_signoff_required": true
+  },
+  "official_scoring_allowed": false
+}

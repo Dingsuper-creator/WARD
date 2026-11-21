@@ -1,0 +1,986 @@
+{
+  "scenario_version": "ward-patient-ehr-case-0.1.0",
+  "status": "deterministic_clinician_confirmed_case_bundle_candidate",
+  "case_id": "ward_002",
+  "workflow_contract_version": "ward-inpatient-S1-S2-S3-0.1.0",
+  "scorer_freeze": {
+    "freeze_id": "ward-world-model-interaction-scorer-baseline-2026-07-23-v0.1",
+    "manifest_sha256": "72dd8e46a360db7a9e107124166a57145547ec941c6d7ef757956a1b69de62dc"
+  },
+  "public_context": {
+    "setting": "inpatient_breast_surgery",
+    "age_years": 72,
+    "sex": "female",
+    "admission_diagnosis": "Breast mass",
+    "initial_time": "2124-07-31T13:35:43.400000"
+  },
+  "initial_state": {
+    "stage": "S2",
+    "clock": "2124-07-31T13:35:43.400000",
+    "visible_evidence_ids": [],
+    "state_facts": {
+      "encounter_active": true,
+      "terminal": false
+    }
+  },
+  "evidence_store": {
+    "doc:001": {
+      "evidence_id": "doc:001",
+      "record_kind": "document",
+      "title": "Breast Surgery Same-Day Postoperative Record",
+      "clinical_time": "2124-08-05T14:02:00",
+      "available_time": "2124-08-02T10:48:23.840000",
+      "content": "Today, the patient underwent right breast-conserving surgery for breast cancer + sentinel lymph node biopsy + fascial tissue flap reconstruction under general anesthesia. The procedure was uneventful, and the patient returned safely. Postoperative 1h record: The patient is currently awake, with no complaints of discomfort; vital signs are stable, blood pressure 145/97 mmHg, heart rate 108 beats/min, and the wound is dry without exudate. Postoperative 2h record: The patient has no complaints of discomfort; vital signs are stable, blood pressure 147/100 mmHg, heart rate 110 beats/min, and the wound is dry without exudate. Postoperative 3h record: The patient has no complaints of discomfort; vital signs are stable, blood pressure 150/98 mmHg, heart rate 102 beats/min, and the wound is dry without exudate.",
+      "direct_identifiers_removed": true
+    },
+    "doc:004": {
+      "evidence_id": "doc:004",
+      "record_kind": "document",
+      "title": "Preoperative Summary, Breast Surgery",
+      "clinical_time": "2124-08-01T09:00:00",
+      "available_time": "2124-07-31T14:57:00.927000",
+      "content": "The patient found a right breast mass during a physical examination 10 days ago, without tenderness, local skin ulceration, redness, or swelling of the breast; whether the skin was thinned; no dilated subcutaneous veins were seen, and there were no eczematous changes of the nipple skin. No nipple discharge. On 2124-07-26, the patient underwent breast ultrasonography at Outside Hospital A, which showed a 20*22mm hypoechoic lesion in the upper outer right breast, with a somewhat indistinct boundary, spiculated margins, and irregular shape, BI-RADS category 5. An enlarged lymph node measuring approximately 11*6mm was seen in the right axilla. Mammography showed an irregular mass in the upper outer right breast, BI-RADS category 5. The patient was admitted from the outpatient clinic for further diagnosis and treatment with a provisional diagnosis of “right breast mass, suspected cancer.” Since onset, the patient has been alert, with fair general condition, sleep, and appetite; bowel movements and urination have been normal, and there has been no significant weight gain or loss. Physical examination: The breasts were symmetrical. There was no redness, swelling, ulceration, depression, or peau d’orange change of the skin of either breast. Both nipples were at the same level, without retraction or deviation, and there were no eczematous changes of the nipples. A mass approximately 2 cm in diameter was palpable in the upper outer right breast; it was hard, poorly mobile, and ill-defined, without adherence to the skin or obvious tenderness. No discharge. No definite mass was palpable in the contralateral breast. No abnormally enlarged lymph nodes were palpable in either axilla or either supraclavicular region. Primary surgeon: ***; resident physician. Preoperative assessment of the patient: General condition was fair, vital signs were stable, cardiopulmonary examination was unremarkable, body temperature was normal, contraindications to surgery had been excluded, and the indication was clear. 1. A core needle biopsy of the right breast mass was to be performed to establish the pathological diagnosis preoperatively and thereby guide the surgical approach. 2. The patient was informed of the necessity and risks of the biopsy; the patient indicated understanding and consented to the biopsy. 3. The patient had completed the relevant examinations, with no obvious contraindications to surgery identified. Core needle biopsy of right breast mass. Core needle biopsy of right breast mass. Local anesthesia. 1. Bleeding: meticulous hemostasis during the procedure. 2. Infection: strict aseptic technique. 3. Injury to surrounding nerves and soft tissues: careful manipulation.",
+      "direct_identifiers_removed": true
+    },
+    "doc:005": {
+      "evidence_id": "doc:005",
+      "record_kind": "document",
+      "title": "New Consultation Record",
+      "clinical_time": "2124-08-01T08:35:00",
+      "available_time": "2124-08-01T08:35:56.273000",
+      "content": "Patient diagnosis: 1; admission diagnosis: breast mass (right breast, suspected cancer). The patient found a right breast mass during a physical examination 10 days ago, without tenderness or local breast skin ulceration, redness, or swelling; whether the skin was thinned was unclear; no dilated subcutaneous veins were seen; there were no eczematous changes of the nipple skin. No nipple discharge. On 2124-07-26, breast ultrasonography at outside Hospital A showed a 20*22mm hypoechoic lesion in the upper outer right breast, with a poorly defined boundary, spiculated margins, and irregular shape, BI-RADS category 5. An enlarged lymph node measuring approximately 11*6mm was seen in the right axilla. Mammography showed an irregular mass in the upper outer right breast, BI-RADS category 5. The patient was admitted from the outpatient clinic for further diagnosis and treatment under the working diagnosis of “right breast mass, suspected cancer.” Since disease onset, the patient has been alert and in fair spirits, with fair sleep and appetite, normal bowel movements and urination, and no significant weight gain or loss. Report date: 2124-07-31 17:47:12 Report No.: [Report number deleted] Clinical diagnosis: breast mass Examination name: echocardiography Echocardiographic examination technique: Imaging description (medical staff ID C002001): Examination approach: transthoracic Image grade: C Examination items: two-dimensional, three-dimensional, M-mode, color Doppler (pulsed-wave, continuous-wave), tissue Doppler I. Main M-mode measurements (unit: mm): Name Measurement Normal reference range Aortic root internal diameter 34 20-37 Left atrial internal diameter 43 19-40 Left ventricular end-diastolic internal diameter 51 35-56 Left ventricular end-systolic internal diameter 35 20-37 Interventricular septal thickness 11 6-11 Left ventricular posterior wall thickness 9 6-11 II. Two-dimensional and three-dimensional echocardiographic description: 1. Left atrial enlargement. Widening of the proximal ascending aorta, with an internal diameter of approximately 39mm. 2. The left ventricular wall is not thickened, and no obvious abnormalities in segmental contraction of the left ventricular wall are seen at rest. 3. No obvious thickening of any cardiac valve is seen, and valve opening is not restricted. III. Color Doppler ultrasonographic description: 1. No obvious shunt is seen at the atrial or ventricular septal level. 2. Mild mitral regurgitation. Diastolic blood flow through the mitral orifice shows a single peak: E=119cm/s. 3. Trace aortic regurgitation. 4. Mild tricuspid regurgitation, with a maximum regurgitant velocity of approximately 2.7m/s and an estimated pulmonary artery systolic pressure of approximately 38mmHg. IV. Left cardiac function measurements: Name Measurement Name Measurement Left ventricular end-diastolic volume (ml) 126 Left ventricular end-systolic volume (ml) 50 Left ventricular ejection fraction (%) 60 Left ventricular fractional shortening (%) 32 Stroke volume (ml) 76 V. Tissue Doppler examination: At the mitral annular level: interventricular septal side E'=8.5cm/s, E/E'=14.0. Left ventricular lateral wall E'=9.9cm/s, E/E'=12.0. Diagnostic impression (medical staff ID C002001): Left atrial enlargement with mild mitral insufficiency; widening of the proximal ascending aorta; mild tricuspid insufficiency. Purpose of consultation: Assistance with treatment. The patient has a history of atrial fibrillation and is currently receiving anticoagulation. Echocardiography has been completed. Please assess the surgical risk. Requesting department: Breast Surgery Consultation request time: 2124-08-01 08:31 -------------------------------------------------------------------------------------------------------------------------------------------------- Medical history reviewed. The patient was admitted for planned breast surgery and previously underwent radiofrequency ablation for atrial fibrillation 2 times. Persistent atrial fibrillation has been present since 2120, with comorbid hypertension and diabetes mellitus. The patient has been taking rivaroxaban, metoprolol, and atorvastatin long-term, occasionally experiences palpitations, and has no chest tightness or chest pain after activity. PE: Alert; admission BP 143/95mmHg; irregular cardiac rhythm; ventricular rate approximately 80bpm. Ancillary tests: white blood cell count 5.53x109/L; neutrophils % 50.8％; hemoglobin 145g/L; platelet count 222x109/L; alanine aminotransferase 43↑ IU/L; aspartate aminotransferase 39↑ IU/L; albumin 39g/L; creatinine 63μmol/L; low-density lipoprotein cholesterol 1.60mmol/L; potassium 3.55mmol/L; quantitative D-dimer 0.30mg/L. 【Electrocardiogram】Atrial flutter, ventricular rate 79bpm. 【Echocardiography】Left atrial enlargement with mild mitral insufficiency, widening of the proximal ascending aorta, mild tricuspid insufficiency, LVEF 60%. Recommendations: 1. Continue current low-molecular-weight heparin anticoagulation, with gastric protection and other supportive measures; continue oral metoprolol and atorvastatin. 2. The patient reports that previous coronary angiography showed a localized Cardiology 2124-8-1",
+      "direct_identifiers_removed": true
+    },
+    "doc:006": {
+      "evidence_id": "doc:006",
+      "record_kind": "document",
+      "title": "New Consultation Record",
+      "clinical_time": "2124-08-01T08:38:00",
+      "available_time": "2124-08-01T08:38:03.347000",
+      "content": "Patient diagnosis: 1, admission diagnosis: breast mass (right breast, suspected cancer); Chief complaint: right breast mass discovered on physical examination 10 days ago, intermittent stabbing pain in the right breast for 2 months. History of present illness: The patient discovered a right breast mass during a physical examination 10 days ago, without tenderness or local skin ulceration, redness, or swelling of the breast; whether the skin was thinned; no dilated subcutaneous veins were seen, and there were no eczematous changes of the nipple skin. No nipple discharge. On 2124-07-26, breast ultrasound at Outside Hospital A showed a 20*22mm hypoechoic lesion in the upper outer right breast, with a somewhat indistinct boundary, spiculated margins, and irregular morphology, BI-RADS category 5. An enlarged lymph node measuring approximately 11*6mm was seen in the right axilla. Mammography showed an irregular mass in the upper outer right breast, BI-RADS category 5. The patient was admitted from the outpatient clinic under “right breast mass, suspected cancer” for further diagnosis and treatment. Since onset, the patient has been alert, with fair general condition, sleep, and appetite; bowel movements and urination are normal, and there has been no significant increase or decrease in body weight. Physical examination: Both breasts are symmetric; the skin of both breasts shows no redness, swelling, ulceration, retraction, or peau d'orange changes; both nipples are at the same level, without retraction or deviation, and there are no eczematous changes of the nipples. A mass approximately 2 cm in diameter is palpable in the upper outer right breast; it is hard, poorly mobile, and ill-defined, without adhesion to the skin or obvious tenderness. No discharge. No definite mass is palpable in the contralateral breast. No abnormally enlarged lymph nodes are palpable in either axilla or either supraclavicular region. Ancillary examinations: 2124-07-26 Outside Hospital A breast ultrasound: A 20*22mm hypoechoic lesion was seen in the upper outer right breast, with a somewhat indistinct boundary, spiculated margins, and irregular morphology, BI-RADS category 5. An enlarged lymph node measuring approximately 11*6mm was seen in the right axilla. 2124-07-26 Outside Hospital A mammography: Irregular mass in the upper outer right breast, BI-RADS category 5. Report date: 2124-07-31 17:47:12 Report number: [report number deleted] Clinical diagnosis: breast mass Examination name: echocardiography Echocardiographic examination technique: Imaging description (medical staff ID C002001): Examination approach: transthoracic Image grade: C Examination items: two-dimensional, three-dimensional, M-mode, color Doppler (pulsed-wave, continuous-wave), tissue Doppler. I. Main M-mode measurements (unit: mm): Name Measurement Normal reference range Aortic root internal diameter 34 20-37 Left atrial internal diameter 43 19-40 Left ventricular end-diastolic internal diameter 51 35-56 Left ventricular end-systolic internal diameter 35 20-37 Interventricular septal thickness 11 6-11 Left ventricular posterior wall thickness 9 6-11 II. Two-dimensional and three-dimensional echocardiographic description: 1. Left atrial enlargement. Widening of the proximal ascending aorta, with an internal diameter of approximately 39mm. 2. The left ventricular wall is not thickened, and no obvious abnormality in systolic motion of any left ventricular wall segment is seen at rest. 3. No obvious thickening of any cardiac valve is seen, and valve opening is not restricted. III. Color Doppler ultrasound description: 1. No obvious shunt is seen at the atrial or ventricular septal level. 2. Mild mitral regurgitation. Diastolic blood flow through the mitral orifice shows a single peak: E=119cm/s. 3. Trivial aortic regurgitation. 4. Mild tricuspid regurgitation, with a maximum regurgitant velocity of approximately 2.7m/s and an estimated pulmonary artery systolic pressure of approximately 38mmHg. IV. Left heart function measurements: Name Measurement Name Measurement Left ventricular end-diastolic volume (ml) 126 Left ventricular end-systolic volume (ml) 50 Left ventricular ejection fraction (%) 60 Left ventricular fractional shortening (%) 32 Stroke volume (ml) 76 V. Tissue Doppler examination: At the level of the mitral annulus: interventricular septal side E'=8.5cm/s, E/E'=14.0. Left ventricular lateral wall E'=9.9cm/s, E/E'=12.0. Diagnostic impression (medical staff ID C002001): Left atrial enlargement with mild mitral insufficiency; widening of the proximal ascending aorta; mild tricuspid insufficiency. Purpose of consultation: Assistance with treatment; the patient has a history of atrial fibrillation and is currently receiving anticoagulation; please assess the anesthesia risk. Requesting department: Breast Surgery. Consultation request time: 2124-08-01 08:36 -------------------------------------------------------------------------------------------------------------------------------------------------- The patient is a 72-year-old woman with a 10-year history of atrial fibrillation. She underwent radiofrequency ablation in 2115-01 and 2120-11, and has been taking rivaroxaban 10mg qd and Betaloc 47.5mg qd long-term; type 2 diabetes mellitus, taking Forxiga 10mg qd; hypertension, with a previous maximum systolic blood pressure of 180mmHg, taking candesartan cilexetil tablets 8mg qd (taken in winter) and amlodipine besylate tablets 5mg qd; also taking Lipitor 10mg qd. She denies a history of chronic diseases such as coronary heart disease or COPD. 【Ancillary examinations】Alanine aminotransferase 43↑ IU/L, aspartate aminotransferase 39↑ IU/L, alkaline phosphatase 41↓ IU/L; the remaining laboratory tests were unremarkable. 【Electrocardiogram】Atrial flutter. 【Echocardiography】Left atrial enlargement with mild mitral insufficiency, widening of the proximal ascending aorta, mild tricuspid insufficiency, EF 60%. Consultation opinion: Complete preoperative examinations, including pulmonary function testing. The patient is elderly and has chronic conditions including atrial fibrillation, hypertension, and diabetes; the risk of perioperative arrhythmia is high. Fully inform the patient and family, monitor closely during the perioperative period, and contact us promptly if any issues arise. Thank you for the consultation! Department of Anesthesiology *** 2124-8-1",
+      "direct_identifiers_removed": true
+    },
+    "doc:007": {
+      "evidence_id": "doc:007",
+      "record_kind": "document",
+      "title": "Consultation Recommendation Management Record",
+      "clinical_time": "2124-08-01T11:00:00",
+      "available_time": "2124-08-01T11:43:44.790000",
+      "content": "Department of Anesthesiology 2124-8-1 Complete preoperative examinations, including pulmonary function testing. The patient is elderly and has a history of chronic diseases including atrial fibrillation, hypertension, and diabetes, with a high risk of perioperative arrhythmia. The patient and family were fully informed; closely monitor during the perioperative period and contact us promptly if any issues arise. Thank you for the consultation! According to the consultation recommendations, the risk of perioperative arrhythmia is high. The patient and family were fully informed, and close monitoring should be performed during the perioperative period.",
+      "direct_identifiers_removed": true
+    },
+    "doc:010": {
+      "evidence_id": "doc:010",
+      "record_kind": "document",
+      "title": "First Postoperative Progress Note from Breast Surgery",
+      "clinical_time": "2124-08-01T20:59:00",
+      "available_time": "2124-08-01T11:47:16.067000",
+      "content": "Local anesthesia. Core needle biopsy of right breast mass. The patient was placed in the supine position, and routine disinfection and draping were performed. A puncture site in the right nipple-areolar region was selected, and local infiltration anesthesia was administered subcutaneously and around the mass using 1% lidocaine. A 3mm small incision was made at the puncture site. Under ultrasound guidance, multiple biopsy samples were obtained using a spring-loaded core needle and submitted for rapid paraffin pathology. The puncture site was disinfected again and dressed with a pressure bandage. The procedure was completed. Postoperatively, the incision was dressed with a chest compression bandage. Closely monitor vital signs and observe the wound for active bleeding or oozing.",
+      "direct_identifiers_removed": true
+    },
+    "doc:011": {
+      "evidence_id": "doc:011",
+      "record_kind": "document",
+      "title": "Record on the day of surgery",
+      "clinical_time": "2124-08-01T22:59:00",
+      "available_time": "2124-08-01T11:47:42.430000",
+      "content": "Today, the patient underwent core needle biopsy of the right breast mass under local anesthesia. The procedure was uneventful, and the patient returned safely. Postoperative 1h record: The patient reported no discomfort; vital signs were stable, blood pressure was 128/76 mmHg, heart rate was 70 beats/min, and the wound was dry without exudate. Postoperative 2h record: The patient reported no discomfort; vital signs were stable, blood pressure was 130/78 mmHg, heart rate was 68 beats/min, and the wound was dry without exudate. Postoperative 3h record: The patient reported no discomfort; vital signs were stable, blood pressure was 132/82 mmHg, heart rate was 72 beats/min, and the wound was dry without exudate.",
+      "direct_identifiers_removed": true
+    },
+    "doc:012": {
+      "evidence_id": "doc:012",
+      "record_kind": "document",
+      "title": "Preoperative Summary, Breast Surgery",
+      "clinical_time": "2124-08-05T07:20:00",
+      "available_time": "2124-08-01T11:50:50.997000",
+      "content": "The patient discovered a right breast mass during a physical examination 10 days ago. There was no tenderness and no localized breast skin ulceration, redness, or swelling; the presence or absence of skin thinning was not specified. No dilated subcutaneous veins were seen, and there were no eczematous changes of the nipple skin or nipple discharge. On 2124-07-26, breast ultrasonography at outside hospital A showed a 20*22mm hypoechoic lesion in the upper outer quadrant of the right breast, with an indistinct boundary, rough margins, and an irregular shape, BI-RADS category 5. An enlarged lymph node measuring approximately 11*6mm was seen in the right axilla. Mammography showed an irregular mass in the upper outer quadrant of the right breast, BI-RADS category 5. The patient was admitted from the outpatient clinic for further diagnosis and treatment with the provisional diagnosis of “right breast mass, suspected cancer.” Since onset, the patient has been alert and in fair spirits, with fair sleep and appetite, normal bowel and bladder function, and no significant change in weight. Physical examination: Both breasts were symmetrical. The skin of both breasts showed no redness, swelling, ulceration, dimpling, or peau d’orange. Both nipples were at the same level, without retraction or deviation, and there were no eczematous changes of the nipples. A mass approximately 2 cm in diameter was palpable in the upper outer quadrant of the right breast; it was hard, poorly mobile, and poorly defined, without adhesion to the skin or obvious tenderness. There was no nipple discharge. No definite mass was palpable in the contralateral breast. No abnormally enlarged lymph nodes were palpable in either axilla or either supraclavicular region. Operating surgeon: Attending physician ***. Preoperative assessment: The patient’s general condition was fair, vital signs were stable, cardiopulmonary examination was unremarkable, and body temperature was normal. Contraindications to surgery had been excluded, and the indications were clear. 1. Needle biopsy pathology of the right breast mass indicated malignancy, constituting an indication for surgical excision. 2. The patient was fully informed of the necessity and risks of surgery, expressed understanding, and consented to surgery. 3. The patient had completed the relevant examinations, and no obvious contraindications to surgery were identified. Breast-conserving surgery for right breast cancer plus sentinel lymph node biopsy, with axillary lymph node dissection or simple mastectomy for right breast cancer to be performed if necessary. Breast-conserving surgery for right breast cancer plus sentinel lymph node biopsy, with axillary lymph node dissection or simple mastectomy for right breast cancer to be performed if necessary. General anesthesia. 1, bleeding: meticulous intraoperative hemostasis. 2, infection: strict aseptic technique. 3, injury to surrounding nerves and soft tissues: careful surgical technique.",
+      "direct_identifiers_removed": true
+    },
+    "doc:013": {
+      "evidence_id": "doc:013",
+      "record_kind": "document",
+      "title": "Consultation Recommendation Management Record",
+      "clinical_time": "2124-08-01T21:00:00",
+      "available_time": "2124-08-02T10:38:48.790000",
+      "content": "Cardiology 2124-8-1 1. Continue the current low-molecular-weight heparin anticoagulation, with adjunctive gastric protection and other measures, and continue oral metoprolol and atorvastatin; 2. The patient reported that prior coronary angiography showed localized... In accordance with the consultation recommendations, continue the current low-molecular-weight heparin anticoagulation, with adjunctive gastric protection and other measures, and continue oral metoprolol and atorvastatin.",
+      "direct_identifiers_removed": true
+    },
+    "doc:014": {
+      "evidence_id": "doc:014",
+      "record_kind": "document",
+      "title": "First Postoperative Progress Note from Breast Surgery",
+      "clinical_time": "2124-08-05T12:02:00",
+      "available_time": "2124-08-02T10:47:33.867000",
+      "content": "General anesthesia. Right breast-conserving surgery for breast cancer + sentinel lymph node biopsy + fascial tissue flap reconstruction [breast conservation + sentinel lymph node]. The patient was placed supine with both upper extremities abducted. After induction of anesthesia, the surgical field was disinfected and draped. 5ml methylene blue was injected into the right areolar region, followed by massage for 5 minutes. A No. 10 blade was used to make a curved right axillary incision approximately 5cm in length. The skin and subcutaneous fat were divided layer by layer with electrocautery to enter the axilla. The first-echelon blue-stained lymph node was identified by following the blue-stained axillary lymphatic vessels, excised, and submitted for intraoperative frozen-section examination. The results showed: “Right axillary para-sentinel lymph node 1”: no metastatic carcinoma was identified in the lymph node on frozen section. “Right axillary para-sentinel lymph node 2”: macrometastatic carcinoma was identified in 1/1 lymph nodes on frozen section. “Right axillary para-sentinel lymph node 3”: no metastatic carcinoma was identified in the lymph node on frozen section. “Right axillary para-sentinel lymph node 4”: no metastatic carcinoma was identified in the lymph node on frozen section. “Right axillary sentinel lymph node 1”: no metastatic carcinoma was identified in the lymph node on frozen section. “Right axillary sentinel lymph node 2”: no metastatic carcinoma was identified in the lymph node on frozen section. “Right axillary sentinel lymph node 3”: no metastatic carcinoma was identified in the lymph node on frozen section. “Right axillary sentinel lymph node 4”: no metastatic carcinoma was identified in the lymph node on frozen section. Right breast-conserving surgery for breast cancer was then performed. An incision approximately 5 cm long was made through the skin and subcutaneous tissue. The edge of the skin flap was elevated, and electrocautery was used to perform undermining dissection between the subcutaneous fat and glandular tissue. The mass and more than 2cm of the surrounding breast tissue were widely excised down to the pectoralis major fascia, with partial excision of the pectoralis major fascia. Sutures and titanium clips were used to mark each margin of the specimen. Intraoperative mammography confirmed complete excision of the mass. The margins were submitted for frozen-section pathological examination, which showed that the suture-marked “superior, medial, inferior, and lateral margins” of the “right breast-conserving specimen” were all free of carcinoma. The margins were negative. Meticulous hemostasis was achieved. After placement of titanium clips, fascial tissue around the residual cavity was mobilized and transferred as a tissue flap for reconstruction. 2-0 silk sutures were used for ligation and fixation. The residual cavity and subcutaneous layer were closed with interrupted 4-0 silk sutures, and the skin was closed with a continuous intradermal suture using 4-0 slowly absorbable Vicryl. The procedure was completed. Postoperatively, the wound was dressed with a compressive chest band, and routine fluid replacement and supportive treatment were provided. Vital signs were closely monitored, with attention to any active bleeding or oozing from the wound.",
+      "direct_identifiers_removed": true
+    },
+    "doc:015": {
+      "evidence_id": "doc:015",
+      "record_kind": "document",
+      "title": "Breast Surgery Postoperative Day 1 Record",
+      "clinical_time": "2124-08-06T07:30:00",
+      "available_time": "2124-08-02T10:49:03.703000",
+      "content": "*** Attending physician rounds\nChief complaint: The patient reports no particular discomfort.\nPhysical examination: The patient is alert, with fair mental status and fair general condition. Morning body temperature was 36.5 °C; heart rate was 74 beats/min, with a regular rhythm. The abdomen was soft, without tenderness. Upon removing the dressing, the right-sided surgical incision was found to be well approximated, dry, and without drainage or incisional redness or swelling.\nManagement:\n1. The dressing was changed once; the wound was kept under a pressure dressing, and the patient's wound healing will be closely monitored.\n2. The patient's postoperative vital signs are currently stable, and her general condition is good. Discharge this afternoon was approved. After all pathology reports are available, the specialty nurse will notify the patient to return to this hospital to attend the multidisciplinary consultation clinic, where a further diagnostic and treatment or follow-up plan will be formulated.\n3. The patient is status post breast cancer surgery; a consultation with this hospital's Department of Rehabilitation Medicine was requested.",
+      "direct_identifiers_removed": true
+    },
+    "doc:016": {
+      "evidence_id": "doc:016",
+      "record_kind": "document",
+      "title": "New Consultation Record",
+      "clinical_time": "2124-08-06T07:31:00",
+      "available_time": "2124-08-06T07:31:04.593000",
+      "content": "Patient diagnosis: 1; admission diagnosis: breast mass (right breast, suspected cancer). The patient discovered a right breast mass during a physical examination 10 days ago. There was no tenderness or local breast skin ulceration, redness, or swelling; it was unclear whether the skin was thinned. No dilated subcutaneous veins were observed, and there were no eczematous changes of the nipple skin. There was no nipple discharge. On 2124-07-26, breast ultrasonography at outside Hospital A showed a 20*22mm hypoechoic lesion in the upper outer right breast, with poorly defined borders, spiculated margins, and an irregular shape, BI-RADS category 5. An enlarged lymph node measuring approximately 11*6mm was seen in the right axilla. Mammography showed an irregular mass in the upper outer right breast, BI-RADS category 5. The patient was admitted from the outpatient clinic with “right breast mass, suspected cancer” for further diagnosis and treatment. Since onset, the patient has been alert and in fair spirits, with fair sleep and appetite, normal bowel movements and urination, and no significant change in weight. Heart-type fatty acid-binding protein 2.20μg/L (reference range 0--5μg/L); CK-MB mass 1.7ng/mL (reference range 0.3--4ng/mL); quantitative myoglobin 30.7ng/mL (reference value <70ng/mL); high-sensitivity troponin I 3.1pg/mL (reference value <30pg/mL); 1,5-anhydro-D-sorbitol 20.4↓ μmol/L (reference range 69.0--265.0μmol/L); alanine aminotransferase 43↑ IU/L (reference range 7--40IU/L). Purpose of consultation: assistance with treatment; please have the Department of Rehabilitation assist with functional exercises. Requesting department: Breast Surgery. Consultation requested at: 2124-08-06 07:29. -------------------------------------------------------------------------------------------------------------------------------------------------- Medical history duly reviewed. The patient, a 72-year-old woman, was admitted because of “a right breast mass discovered during a physical examination 10 days ago and intermittent stabbing pain in the right breast for 2 months.” Physical examination: alert, in fair spirits, able to hear and understand, and cooperative with the examination. The wound showed no redness, swelling, or exudation. There was no swelling of the upper arm or forearm. The ranges of motion of the cervical spine and shoulder joint were mildly restricted. Rehabilitation assessment: tenderness around the wound (+), NRS2-3′; mildly restricted ranges of motion of the cervical spine and shoulder joint. Diagnosis: status post breast-conserving resection for right breast cancer (pain, motor dysfunction, and limited ADL). Recommendations: 1. Rehabilitation assessment *1; 2. Exercise therapy (breathing training and active limb training); 3. Manual drainage and edema-reduction therapy for lymphedema (manual drainage). Pay attention to physical stamina, exercise intensity, and the condition of the wound. Rehabilitation goals: relieve pain, maintain muscle strength, improve joint range of motion, and improve ADL ability. Follow up. Thank you for the consultation! Department of Rehabilitation Medicine 2124-08-0607:56:18",
+      "direct_identifiers_removed": true
+    },
+    "doc:017": {
+      "evidence_id": "doc:017",
+      "record_kind": "document",
+      "title": "Consultation Recommendation Management Record",
+      "clinical_time": "2124-08-06T08:00:00",
+      "available_time": "2124-08-06T09:20:19.943000",
+      "content": "Department of Rehabilitation Medicine 2124-08-0607:56:18 1. Rehabilitation assessment *1; 2. Exercise therapy (respiratory training and active limb training); 3. Manual drainage and swelling reduction therapy for lymphedema (manual drainage); pay attention to physical strength, exercise intensity, and the condition of the wound. Rehabilitation goals: relieve pain, maintain muscle strength, improve joint range of motion, enhance ADL ability. Follow up. Thank you for the consultation! The patient was instructed to undergo rehabilitation training in accordance with the consultation recommendations.",
+      "direct_identifiers_removed": true
+    },
+    "doc:020": {
+      "evidence_id": "doc:020",
+      "record_kind": "document",
+      "title": "Breast surgery preoperative discussion record",
+      "clinical_time": "2124-08-01T08:45:00",
+      "available_time": "2124-07-31T14:56:27.827000",
+      "content": "***, Chief Physician; ***, Attending Physician; ***, Resident Physician. The patient discovered a right breast mass during a physical examination 10 days ago, without tenderness or local skin ulceration, redness, or swelling of the breast; whether the skin was thinned; no dilated subcutaneous veins were seen, and there were no eczematous changes of the nipple skin. No nipple discharge. On 2124-07-26, the patient underwent breast ultrasonography at outside hospital A, which showed: a 20*22mm hypoechoic lesion in the upper outer right breast, with a poorly defined boundary, spiculated margins, and irregular morphology, BI-RADS category 5. An enlarged lymph node measuring approximately 11*6mm was seen in the right axilla. Mammography showed an irregular mass in the upper outer right breast, BI-RADS category 5. For further diagnosis and treatment, the patient was admitted from the outpatient clinic with a provisional diagnosis of “right breast mass, suspected cancer.” Since disease onset, the patient has been alert, with fair mental status, sleep, and appetite; bowel movements and urination have been normal, and there has been no significant weight gain or loss. Physical examination: Both breasts were symmetrical; the skin of both breasts showed no redness, swelling, ulceration, dimpling, or peau d'orange changes; both nipples were at the same level, without retraction or deviation, and there were no eczematous changes of the nipples. A mass approximately 2 cm in diameter was palpable in the upper outer right breast; it was hard, poorly mobile, and poorly demarcated, without adhesion to the skin or obvious tenderness. No discharge. No definite mass was palpable in the contralateral breast. No abnormally enlarged lymph nodes were palpable in either axilla or either supraclavicular region. 1. A core needle biopsy of the right breast mass is planned to establish the pathology preoperatively and thereby guide the surgical approach. 2. The patient was informed of the necessity and risks of the biopsy; the patient expressed understanding and consented to the biopsy. 3. The patient has completed the relevant examinations, with no obvious contraindications to surgery identified. Core needle biopsy of the right breast mass. Whether staged surgery is required: No. General condition is fair, vital signs are stable, cardiopulmonary examination is unremarkable, body temperature is normal, contraindications to surgery have been excluded, and the indication is clear. 1, bleeding: meticulous hemostasis during the procedure. 2, infection: strict aseptic technique. 3, injury to surrounding nerves and soft tissues: operate carefully. *** Resident Physician's opinion: A core needle biopsy of the right breast mass is planned to establish the pathology preoperatively and thereby guide the surgical approach. *** Attending Physician's opinion: To establish the patient's pathology, a core needle biopsy of the right breast mass is planned. *** Chief Physician's opinion: Agree to perform core needle biopsy of the right breast mass. Agree to perform core needle biopsy of the right breast mass.",
+      "direct_identifiers_removed": true
+    },
+    "doc:027": {
+      "evidence_id": "doc:027",
+      "record_kind": "document",
+      "title": "Preoperative Informed Consent Form Template for Breast-Conserving Surgery for Breast Cancer",
+      "clinical_time": "2124-08-04T18:32:46",
+      "available_time": "2124-08-04T18:35:25",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:028": {
+      "evidence_id": "doc:028",
+      "record_kind": "document",
+      "title": "Preoperative Informed Consent Form for Core Needle Biopsy of a Breast Mass",
+      "clinical_time": "2124-08-01T09:22:05",
+      "available_time": "2124-08-01T09:22:26",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:030": {
+      "evidence_id": "doc:030",
+      "record_kind": "document",
+      "title": "First ward-round note by the attending physician of breast surgery",
+      "clinical_time": "2124-08-01T08:00:00",
+      "available_time": "2124-07-31T14:51:55.550000",
+      "content": "The patient has no history of taking hormone-containing foods or medications and has a family history of breast cancer. 1. The patient is an elderly woman. 2. The patient was admitted because a right breast mass had been found on physical examination for 10 days, with intermittent stabbing pain in the right breast for 2 months. 3. Physical examination revealed symmetric breasts; the skin of both breasts showed no redness, swelling, ulceration, dimpling, or peau d'orange changes; the bilateral nipples were at the same level, without retraction or deviation, and there were no eczematous changes of the nipples. A mass approximately 2 cm in diameter was palpable in the upper outer quadrant of the right breast; it was hard, poorly mobile, and poorly defined, without adhesion to the skin or obvious tenderness. There was no discharge. No definite mass was palpable in the contralateral breast. No abnormally enlarged lymph nodes were palpable in either axilla or either supraclavicular region. 4. Ancillary examinations: 2124-07-26 Breast ultrasonography at outside Hospital A: a 20*22mm hypoechoic lesion was seen in the upper outer quadrant of the right breast, with a poorly defined boundary, spiculated margins, and an irregular shape, BI-RADS category 5. An enlarged lymph node measuring approximately 11*6mm was seen in the right axilla. 2124-07-26 Mammography at outside Hospital A: an irregular mass in the upper outer quadrant of the right breast, BI-RADS category 5. 1. Mammary lobular hyperplasia: mammary lobular hyperplasia is common in premenopausal women, with breast pain related to the menstrual cycle and a nodular sensation of breast thickening on physical examination as its main clinical manifestations. The breast pain has no fixed location, may persist throughout the menstrual cycle, and is relieved after the onset of menstruation; on examination, a nodular sensation or localized thickening may be palpable in the upper outer quadrant of the breast. This patient is a 72-year-old woman; the mass is poorly defined, without skin adhesion, and no enlarged lymph nodes are palpable in the ipsilateral axilla; therefore, this is not consistent with this diagnosis. 2. Paget disease of the nipple: patients with Paget disease of the nipple mostly present with eczematous changes of the nipple-areolar skin, local skin redness, mild erosion and serous exudation, and thickened and hardened skin with clear boundaries. Pruritus or burning pain is often present. This patient has no symptoms such as pruritus or erosion of the nipple and areola; therefore, this disease is not currently considered likely. 1. The patient has completed a complete blood count, liver and renal function tests, electrolyte and blood glucose tests, routine urinalysis, and coagulation function tests. No contraindications to surgery were identified. The specific treatment plan will be determined after the patient completes preoperative imaging examinations. 2. The patient has a previous history of atrial fibrillation and is currently receiving anticoagulation. Echocardiography has been completed, and consultations with the departments of cardiology and anesthesiology have been requested.",
+      "direct_identifiers_removed": true
+    },
+    "doc:031": {
+      "evidence_id": "doc:031",
+      "record_kind": "document",
+      "title": "Breast Surgery Postoperative Day 1 Record",
+      "clinical_time": "2124-08-02T08:00:00",
+      "available_time": "2124-08-01T11:48:13.657000",
+      "content": "*** Chief Physician Ward Round: The patient underwent core needle biopsy of the right breast mass under local anesthesia yesterday and reported no particular discomfort today. Physical examination: The patient's demeanor and mental status were acceptable; vital signs were stable. Morning temperature was 36.5 °C, and heart rate was 74 beats/min. A chest bandage was in place for compression. The puncture site was healing well, dry, and without exudate; no subcutaneous ecchymosis was observed. Ancillary examination: 2124-08-01 Color Doppler ultrasonography of the liver, gallbladder, pancreas, spleen, kidneys, and portal vein: fatty liver; intrahepatic cystic lesion, considered a hepatic cyst, follow-up recommended; no obvious abnormalities were observed in the gallbladder, pancreatic body, spleen, or kidneys; no obvious abnormality was observed in portal venous blood flow. Management: 1. The dressing was changed once, and wound healing will continue to be observed. 2. Await the pathology results of the core needle biopsy specimen to determine the subsequent surgical approach.",
+      "direct_identifiers_removed": true
+    },
+    "doc:033": {
+      "evidence_id": "doc:033",
+      "record_kind": "document",
+      "title": "VTE in Surgical Inpatients",
+      "clinical_time": "2124-07-31T14:06:03",
+      "available_time": "2124-07-31T14:06:30",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:035": {
+      "evidence_id": "doc:035",
+      "record_kind": "document",
+      "title": "Breast surgery preoperative discussion record",
+      "clinical_time": "2124-08-05T07:10:00",
+      "available_time": "2124-08-01T11:50:16.517000",
+      "content": "***, Chief Physician; ***, Attending Physician; ***, Resident Physician. The patient discovered a right breast mass during a physical examination 10 days ago, without tenderness or localized skin ulceration, redness, or swelling of the breast; whether there was skin thinning; no dilated subcutaneous veins were seen, and there were no eczematous changes of the nipple skin. No nipple discharge. On 2124-07-26, the patient underwent breast ultrasonography at Outside Hospital A, which showed a 20*22mm hypoechoic lesion in the upper outer right breast, with a poorly defined boundary, spiculated margins, and irregular morphology, BI-RADS category 5. An enlarged lymph node measuring approximately 11*6mm was seen in the right axilla. Mammography showed an irregular mass in the upper outer right breast, BI-RADS category 5. For further diagnosis and treatment, the patient was admitted from the outpatient clinic with a provisional diagnosis of “right breast mass, suspected carcinoma.” Since onset, the patient has been alert, with fair mental status, sleep, and appetite; bowel movements and urination have been normal, and there has been no significant weight gain or loss. Physical examination: Both breasts were symmetrical; the skin of both breasts showed no redness, swelling, ulceration, depression, or peau d’orange changes; both nipples were at the same level, without retraction or deviation, and there were no eczematous changes of the nipples. A mass approximately 2 cm in diameter was palpable in the upper outer right breast; it was hard, poorly mobile, and poorly demarcated, without adhesion to the skin or significant tenderness. No discharge. No definite mass was palpable in the contralateral breast. No abnormally enlarged lymph nodes were palpable in either axilla or either supraclavicular region. 1. Needle biopsy pathology of the patient's right breast mass indicated malignancy, constituting an indication for surgical resection. 2. The patient was fully informed of the necessity and risks of surgery, expressed understanding, and consented to surgery. 3. The patient has completed the relevant examinations, with no obvious contraindications to surgery identified. Right breast-conserving surgery for breast cancer + sentinel lymph node biopsy, with possible axillary lymph node dissection and possible simple mastectomy for right breast cancer. Whether staged surgery is required: No. General condition was fair, vital signs were stable, cardiopulmonary examination was unremarkable, body temperature was normal, contraindications to surgery had been excluded, and the indications were clear. 1. Bleeding: meticulous hemostasis during surgery. 2. Infection: strict aseptic technique. 3. Injury to surrounding nerves and soft tissues: careful manipulation. *** Resident Physician's opinion: Needle biopsy pathology of the patient's right breast mass indicated malignancy, requiring surgical treatment. *** Attending Physician's opinion: In conjunction with the patient's imaging findings, right breast cancer has been confirmed; therefore, right breast-conserving surgery will be performed. If an intraoperative margin is positive, the margin will be re-excised; if it remains positive, simple mastectomy for right breast cancer will be performed. *** Chief Physician's opinion: Agree to perform right breast-conserving surgery for breast cancer + sentinel lymph node biopsy, with possible axillary lymph node dissection and possible simple mastectomy for right breast cancer. Agree to perform right breast-conserving surgery for breast cancer + sentinel lymph node biopsy, with possible axillary lymph node dissection and possible simple mastectomy for right breast cancer.",
+      "direct_identifiers_removed": true
+    },
+    "doc:036": {
+      "evidence_id": "doc:036",
+      "record_kind": "document",
+      "title": "Preoperative Informed Consent Form for Ultrasound-Guided Needle Biopsy of a Breast Mass",
+      "clinical_time": "2124-08-01T09:16:08",
+      "available_time": "2124-08-01T09:16:23",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "ehr:terminal:001": {
+      "evidence_id": "ehr:terminal:001",
+      "record_kind": "ehr_derived_terminal_state",
+      "title": "Final Inpatient Status and Discharge Disposition",
+      "clinical_time": "2124-08-06T13:00:00",
+      "available_time": "2124-08-06T13:00:00",
+      "content": "During this hospitalization, surgery for the primary right breast lesion and the axillary surgery documented in the source record were completed; the discharge diagnosis was malignant neoplasm of the upper outer quadrant of the breast, the treatment outcome was cured, and the discharge disposition was discharge on medical advice.",
+      "derivation": "deterministic paraphrase restricted to the approved encounter and recorded surgery facts",
+      "direct_identifiers_removed": true
+    },
+    "img:001": {
+      "evidence_id": "img:001",
+      "record_kind": "imaging",
+      "title": "Inpatient MRI",
+      "clinical_time": "2124-08-02T13:45:57",
+      "available_time": "2124-08-05T21:30:09",
+      "content": "Mass in the upper outer right breast; local postoperative changes in both breasts; cortical thickening of the right axillary lymph nodes, with visualization of the right internal mammary lymph nodes. Please correlate with contrast-enhanced breast MRI.\nPlain scan: Local postoperative changes in both breasts. The skin surfaces of both breasts are mildly irregular. No obvious thickening of the skin or areolae is seen, neither nipple is retracted, and the subcutaneous structures have clear layers. The glandular tissue of both breasts is scattered in distribution and approximately symmetric. A mass is visible in the upper outer right breast, showing isointense signal on T1W, slightly hyperintense signal on T2W, and hyperintense signal on DWI, with an ADC value of approximately 0.9×10-3mm2/s. No abnormal signal is seen in the retromammary spaces bilaterally. The cortex of the right axillary lymph nodes is thickened. No obviously enlarged lymph nodes are seen in the left axilla. The right internal mammary lymph nodes are visualized.",
+      "direct_identifiers_removed": true
+    },
+    "img:004": {
+      "evidence_id": "img:004",
+      "record_kind": "imaging",
+      "title": "Echocardiography",
+      "clinical_time": "2124-07-31T17:46:03",
+      "available_time": "2124-07-31T17:47:12",
+      "content": "Left atrial enlargement with mild mitral regurgitation; widening of the proximal ascending aorta; mild tricuspid regurgitation\nExamination approach: transthoracic. Image quality: Grade C. Examination items: two-dimensional, three-dimensional, M-mode, color Doppler (pulsed-wave, continuous-wave), tissue Doppler. I. Main M-mode measurements (unit: mm): Name Measurement Reference range Aortic root internal diameter 34 20-37 Left atrial diameter 43 19-40 Left ventricular end-diastolic diameter 51 35-56 Left ventricular end-systolic diameter 35 20-37 Interventricular septal thickness 11 6-11 Left ventricular posterior wall thickness 9 6-11 II. Two-dimensional and three-dimensional echocardiographic findings: 1. Left atrial enlargement. The proximal ascending aorta is widened, with an internal diameter of approximately 39mm. 2. The left ventricular wall is not thickened; no obvious abnormalities in segmental left ventricular wall contraction are seen at rest. 3. No obvious thickening of any cardiac valve is seen, and valve opening is not restricted. III. Color Doppler ultrasound findings: 1. No obvious shunt is seen at the atrial or ventricular septal level. 2. Mild mitral regurgitation. Diastolic transmitral flow shows a single peak: E=119cm/s. 3. Trace aortic regurgitation. 4. Mild tricuspid regurgitation, with a maximum regurgitant velocity of approximately 2.7m/s; estimated pulmonary artery systolic pressure is approximately 38mmHg. IV. Left ventricular function measurements: Name Measurement Name Measurement Left ventricular end-diastolic volume (mL) 126 Left ventricular end-systolic volume (mL) 50 Left ventricular ejection fraction (%) 60 Left ventricular fractional shortening (%) 32 Stroke volume (mL) 76 V. Tissue Doppler examination: At the mitral annulus: interventricular septal side E'=8.5cm/s, E/E'=14.0. Left ventricular lateral wall E'=9.9cm/s, E/E'=12.0.",
+      "direct_identifiers_removed": true
+    },
+    "path:001": {
+      "evidence_id": "path:001",
+      "record_kind": "pathology",
+      "title": "Routine Pathology",
+      "clinical_time": "2124-08-02T09:25:00.597000",
+      "available_time": "2124-08-02T21:08:54",
+      "content": "{\"remark\":\"\",\"mirrorUnder\":\"\",\"molecularTestResults\":\"\",\"specialInspectionCurrentDiagnosis\":\"‘Right breast mass CNB specimen’: invasive carcinoma.\",\"immunohistochemistryAndSpecialStaining\":\"\"}",
+      "direct_identifiers_removed": true
+    },
+    "path:008": {
+      "evidence_id": "path:008",
+      "record_kind": "pathology",
+      "title": "Cytopathology",
+      "clinical_time": "2124-08-01T00:00:00",
+      "available_time": "2124-08-02T17:02:44",
+      "content": "Atypical cells and a small number of lymphocytes are seen, favoring metastatic carcinoma.",
+      "direct_identifiers_removed": true
+    },
+    "surg:001": {
+      "evidence_id": "surg:001",
+      "record_kind": "surgery",
+      "title": "Breast-conserving resection for breast cancer",
+      "clinical_time": "2124-08-05T08:00:00",
+      "available_time": "2124-08-05T11:30:00",
+      "content": "Breast-conserving resection for breast cancer",
+      "direct_identifiers_removed": true
+    },
+    "surg:002": {
+      "evidence_id": "surg:002",
+      "record_kind": "surgery",
+      "title": "Sentinel Lymph Node Biopsy",
+      "clinical_time": "2124-08-05T08:00:00",
+      "available_time": "2124-08-05T11:30:00",
+      "content": "Sentinel lymph node biopsy",
+      "direct_identifiers_removed": true
+    },
+    "surg:003": {
+      "evidence_id": "surg:003",
+      "record_kind": "surgery",
+      "title": "Fascioplasty",
+      "clinical_time": "2124-08-05T08:00:00",
+      "available_time": "2124-08-05T11:30:00",
+      "content": "Fascioplasty",
+      "direct_identifiers_removed": true
+    },
+    "surg:004": {
+      "evidence_id": "surg:004",
+      "record_kind": "surgery",
+      "title": "Breast Needle Biopsy",
+      "clinical_time": "2124-08-01T19:50:00",
+      "available_time": "2124-08-01T20:20:00",
+      "content": "Breast needle biopsy",
+      "direct_identifiers_removed": true
+    },
+    "surg:005": {
+      "evidence_id": "surg:005",
+      "record_kind": "surgery",
+      "title": "Axillary lymph node biopsy",
+      "clinical_time": "2124-08-01T13:45:18",
+      "available_time": "2124-08-01T14:25:18",
+      "content": "Axillary lymph node biopsy",
+      "direct_identifiers_removed": true
+    }
+  },
+  "transitions": [
+    {
+      "transition_id": "ward_002_s2_node_001",
+      "sequence_index": 0,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-31T13:35:43.400000",
+      "clock_after": "2124-07-31T14:06:30",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_001",
+        "action_type": "review_document",
+        "target": "preoperative_vte_and_baseline_risk_assessment",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "preoperative vte and baseline risk assessment"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:033"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_001"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:033"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_001_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_002",
+      "sequence_index": 1,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-31T14:06:30",
+      "clock_after": "2124-08-01T08:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_002",
+        "action_type": "review_document",
+        "target": "right_breast_attending_assessment_and_working_diagnosis",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right breast attending assessment and working diagnosis"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:030"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_002"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:030"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_002_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_003",
+      "sequence_index": 2,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-01T08:00:00",
+      "clock_after": "2124-08-01T09:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_003",
+        "action_type": "review_document",
+        "target": "breast_preoperative_plan_and_consent",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "breast preoperative plan and consent"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:004",
+          "doc:020"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_003"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:004",
+        "doc:020"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_003_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_004",
+      "sequence_index": 3,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-01T09:00:00",
+      "clock_after": "2124-08-01T09:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_004",
+        "action_type": "order_imaging",
+        "target": "preoperative_cardiac_ultrasound",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "preoperative cardiac ultrasound"
+        ],
+        "gold_source_type": "ehr_observed_result_implies_order",
+        "source_evidence_ids": [
+          "img:004"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_004"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "img:004"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_004_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_005",
+      "sequence_index": 4,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-01T09:00:00",
+      "clock_after": "2124-08-01T09:22:26",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_005",
+        "action_type": "review_document",
+        "target": "right_breast_core_biopsy_consent_and_readiness",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right breast core biopsy consent and readiness"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:028",
+          "doc:036"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_005",
+          "ward_002_evt_006"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:028",
+        "doc:036"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_005_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_006",
+      "sequence_index": 5,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-01T09:22:26",
+      "clock_after": "2124-08-01T11:43:44.790000",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_006",
+        "action_type": "request_consultation",
+        "target": "anesthesia_and_perioperative_arrhythmia_risk_review",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "anesthesia and perioperative arrhythmia risk review"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:005",
+          "doc:006",
+          "doc:007"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_007"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:005",
+        "doc:006",
+        "doc:007"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_006_completed": true,
+        "atrial_fibrillation_risk_reviewed": true,
+        "anticoagulation_risk_reviewed": true,
+        "perioperative_review_is_hard_prerequisite": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_007",
+      "sequence_index": 6,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-01T11:43:44.790000",
+      "clock_after": "2124-08-02T08:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_007",
+        "action_type": "perform_procedure",
+        "target": "right_breast_core_needle_biopsy",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right breast core needle biopsy"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "surg:004",
+          "doc:010",
+          "doc:011",
+          "doc:031"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_008",
+          "ward_002_evt_011"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "surg:004",
+        "doc:010",
+        "doc:011",
+        "doc:031"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_007_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_008",
+      "sequence_index": 7,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-02T08:00:00",
+      "clock_after": "2124-08-05T07:20:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_008",
+        "action_type": "review_document",
+        "target": "definitive_breast_surgery_preoperative_preparation",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "definitive breast surgery preoperative preparation"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:012",
+          "doc:035"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_009"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:012",
+        "doc:035"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_008_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_009",
+      "sequence_index": 8,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-05T07:20:00",
+      "clock_after": "2124-08-05T07:20:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_009",
+        "action_type": "perform_procedure",
+        "target": "right_axillary_lymph_node_biopsy",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right axillary lymph node biopsy"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "surg:005"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_010"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "surg:005"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_009_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_010",
+      "sequence_index": 9,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-05T07:20:00",
+      "clock_after": "2124-08-06T07:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_010",
+        "action_type": "request_consultation",
+        "target": "perioperative_specialty_management_update",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "perioperative specialty management update"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:013",
+          "doc:015"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_012"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:013",
+        "doc:015"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_010_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_011",
+      "sequence_index": 10,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-06T07:30:00",
+      "clock_after": "2124-08-06T07:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_011",
+        "action_type": "review_result",
+        "target": "right_axillary_lymph_node_cytology",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right axillary lymph node cytology"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "path:008"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_014"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "path:008"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_011_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_012",
+      "sequence_index": 11,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-06T07:30:00",
+      "clock_after": "2124-08-06T07:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_012",
+        "action_type": "review_result",
+        "target": "right_breast_core_biopsy_pathology",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right breast core biopsy pathology"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "path:001"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_015"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "path:001"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_012_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_013",
+      "sequence_index": 12,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-06T07:30:00",
+      "clock_after": "2124-08-06T07:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_013",
+        "action_type": "review_document",
+        "target": "right_breast_conserving_surgery_consent",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right breast conserving surgery consent"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:027"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_016"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:027"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_013_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_014",
+      "sequence_index": 13,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-06T07:30:00",
+      "clock_after": "2124-08-06T07:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_014",
+        "action_type": "perform_procedure",
+        "target": "right_breast_conserving_surgery",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right breast conserving surgery"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "surg:001",
+          "surg:003"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_017"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "surg:001",
+        "surg:003"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_014_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_018",
+      "sequence_index": 14,
+      "stage_before": "S2",
+      "stage_after": "S3",
+      "clock_before": "2124-08-06T07:30:00",
+      "clock_after": "2124-08-06T07:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_018",
+        "action_type": "perform_procedure",
+        "target": "right_axillary_management_after_positive_cytology",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right axillary management after positive cytology"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "surg:002"
+        ],
+        "source_event_ids": [],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "surg:002"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_018_completed": true,
+        "source_recorded_sentinel_node_biopsy_completed": true,
+        "clinician_confirmed_axillary_dissection_indication": true,
+        "source_plan_discrepancy_flagged": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_015",
+      "sequence_index": 15,
+      "stage_before": "S3",
+      "stage_after": "S3",
+      "clock_before": "2124-08-06T07:30:00",
+      "clock_after": "2124-08-06T07:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_015",
+        "action_type": "review_document",
+        "target": "postoperative_status_after_definitive_breast_surgery",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "postoperative status after definitive breast surgery"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:001",
+          "doc:014"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_013"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:001",
+        "doc:014"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_015_completed": true,
+        "postoperative_documents_released_after_surgery": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_016",
+      "sequence_index": 16,
+      "stage_before": "S3",
+      "stage_after": "S3",
+      "clock_before": "2124-08-06T07:30:00",
+      "clock_after": "2124-08-06T07:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_016",
+        "action_type": "review_result",
+        "target": "late_available_breast_mri_result",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "late available breast mri result"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "img:001"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_018"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "img:001"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_016_completed": true,
+        "late_mri_released_without_retroactive_effect": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s2_node_017",
+      "sequence_index": 17,
+      "stage_before": "S3",
+      "stage_after": "S3",
+      "clock_before": "2124-08-06T07:30:00",
+      "clock_after": "2124-08-06T09:20:19.943000",
+      "gold_action": {
+        "action_id": "ehr:ward_002:ward_002_s2_node_017",
+        "action_type": "request_consultation",
+        "target": "postoperative_rehabilitation_and_lymphedema_care",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "postoperative rehabilitation and lymphedema care"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:016",
+          "doc:017"
+        ],
+        "source_event_ids": [
+          "ward_002_evt_019"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:016",
+        "doc:017"
+      ],
+      "state_updates": {
+        "ward_002_s2_node_017_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_002_s3_terminal_001",
+      "sequence_index": 18,
+      "stage_before": "S3",
+      "stage_after": "S3",
+      "clock_before": "2124-08-06T09:20:19.943000",
+      "clock_after": "2124-08-06T13:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_002:discharge",
+        "action_type": "discharge",
+        "target": "home_after_inpatient_breast_surgery",
+        "parameters": {},
+        "accepted_action_type_aliases": [
+          "discharge_patient",
+          "end_episode"
+        ],
+        "accepted_target_aliases": [
+          "discharge on medical advice",
+          "discharge home"
+        ],
+        "gold_source_type": "ehr_derived_terminal_gold",
+        "source_evidence_ids": [],
+        "source_event_ids": [],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "ehr:terminal:001"
+      ],
+      "state_updates": {
+        "disposition": "discharge on medical advice",
+        "encounter_active": false,
+        "terminal": true
+      },
+      "terminal": true
+    }
+  ],
+  "policy": {
+    "strict_next_gold_action": false,
+    "partial_order_prerequisites_enforced": true,
+    "terminology_aliases_allowed": true,
+    "off_trajectory_action_advances_state": false,
+    "off_trajectory_action_releases_evidence": false,
+    "future_evidence_hidden": true,
+    "late_available_results_not_retroactive": true,
+    "patient_llm_used": false,
+    "ehr_is_authoritative_historical_fact_source": true,
+    "clinician_review_is_authoritative_dependency_source": true
+  },
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

@@ -1,0 +1,124 @@
+{
+  "graph_version": "ward-patient-ehr-action-graph-0.3.0",
+  "status": "development_non_official",
+  "case_id": "ward_004",
+  "scenario_sha256": "032253aeea7f3233c8fa938ec3b5acd03b372efd6892a7699dee5ebc60725b3d",
+  "action_interface_sha256": "8d322cc8f1252685fa7121fc0c0752667ea19ffcdb3a4a96d9b976ba73d326f5",
+  "action_ontology_sha256": "870cba4bd6d014cf3dca4768b9b803a3d8977be9c685a79364e8e4ac29842fd6",
+  "nodes": {
+    "ward_004_s2_node_001": {
+      "requires": []
+    },
+    "ward_004_s2_node_002": {
+      "requires": [
+        "ward_004_s2_node_001"
+      ]
+    },
+    "ward_004_s2_node_003": {
+      "requires": [
+        "ward_004_s2_node_001"
+      ]
+    },
+    "ward_004_s2_node_004": {
+      "requires": [
+        "ward_004_s2_node_003"
+      ]
+    },
+    "ward_004_s2_node_005": {
+      "requires": [
+        "ward_004_s2_node_002",
+        "ward_004_s2_node_003"
+      ]
+    },
+    "ward_004_s2_node_006": {
+      "requires": [
+        "ward_004_s2_node_005"
+      ]
+    },
+    "ward_004_s2_node_007": {
+      "requires": [
+        "ward_004_s2_node_001"
+      ]
+    },
+    "ward_004_s2_node_008": {
+      "requires": [
+        "ward_004_s2_node_004"
+      ]
+    },
+    "ward_004_s2_node_009": {
+      "requires": [
+        "ward_004_s2_node_005"
+      ]
+    },
+    "ward_004_s2_node_010": {
+      "requires": [
+        "ward_004_s2_node_001",
+        "ward_004_s2_node_009"
+      ]
+    },
+    "ward_004_s2_node_011": {
+      "requires": [
+        "ward_004_s2_node_010"
+      ]
+    },
+    "ward_004_s2_node_012": {
+      "requires": [
+        "ward_004_s2_node_010",
+        "ward_004_s2_node_011"
+      ]
+    },
+    "ward_004_s2_node_013": {
+      "requires": [
+        "ward_004_s2_node_010",
+        "ward_004_s2_node_011",
+        "ward_004_s2_node_012"
+      ]
+    },
+    "ward_004_s2_node_014": {
+      "requires": [
+        "ward_004_s2_node_012",
+        "ward_004_s2_node_013"
+      ]
+    },
+    "ward_004_s2_node_015": {
+      "requires": [
+        "ward_004_s2_node_007",
+        "ward_004_s2_node_013"
+      ]
+    },
+    "ward_004_s2_node_016": {
+      "requires": [
+        "ward_004_s2_node_014"
+      ]
+    },
+    "ward_004_s2_node_017": {
+      "requires": [
+        "ward_004_s2_node_014"
+      ]
+    },
+    "ward_004_s3_terminal_001": {
+      "requires": [
+        "ward_004_s2_node_006",
+        "ward_004_s2_node_008",
+        "ward_004_s2_node_014",
+        "ward_004_s2_node_015",
+        "ward_004_s2_node_016",
+        "ward_004_s2_node_017"
+      ]
+    }
+  },
+  "policy": {
+    "multiple_recorded_actions_may_be_available": true,
+    "recorded_sequence_index_is_not_a_required_execution_order": true,
+    "prerequisites_are_enforced": true,
+    "environment_clock_never_moves_backward": true,
+    "counterfactual_outcomes_invented": false,
+    "breast_primary_and_nodal_dependencies_separated": true,
+    "late_imaging_not_retroactive": true
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

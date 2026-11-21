@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ward.local/schemas/prompt-request-manifest-v1.json",
+  "title": "WARD prompt request manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "checkpoint_id",
+    "prompt_template_version",
+    "system_prompt_sha256",
+    "user_prompt_sha256",
+    "tool_schema_sha256",
+    "public_snapshot_sha256",
+    "visible_evidence_sha256",
+    "request_sha256",
+    "gold_exposed",
+    "future_evidence_exposed",
+    "exposed_fields",
+    "clinical_data_trust_policy"
+  ],
+  "properties": {
+    "case_id": {"type": "string", "pattern": "^ward_[0-9]{3}$"},
+    "checkpoint_id": {"type": "string", "pattern": "^ward_[0-9]{3}_cp_[0-9]{3}$"},
+    "prompt_template_version": {"type": "string", "minLength": 1},
+    "system_prompt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "user_prompt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "tool_schema_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "public_snapshot_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "visible_evidence_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "request_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "gold_exposed": {"const": false},
+    "future_evidence_exposed": {"const": false},
+    "clinical_data_trust_policy": {"const": "untrusted_delimited_data"},
+    "exposed_fields": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "request_payload": {"type": ["object", "null"]},
+    "private_prompt_archive_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"}
+  }
+}

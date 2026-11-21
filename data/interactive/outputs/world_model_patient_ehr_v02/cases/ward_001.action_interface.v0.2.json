@@ -1,0 +1,47 @@
+{
+  "interface_version": "ward-patient-ehr-action-interface-0.2.0",
+  "status": "development_non_official",
+  "case_id": "ward_001",
+  "scenario_path": "outputs/world_model_patient_ehr_v01/cases/ward_001.patient_ehr.json",
+  "scenario_sha256": "b066e0b43c0674e3fdcf13e035bab5e18dda5608fe814c2607015917515ec5c0",
+  "ontology_path": "outputs/world_model_patient_ehr_v02/action_ontology.v0.2.json",
+  "ontology_sha256": "3074e22c849a792a48e62d46f7f2b621d39838a66acd6e97cec0d855c7f144c6",
+  "public_capabilities": [
+    "communicate_with_patient",
+    "review_ehr_documents",
+    "order_diagnostic_tests",
+    "review_results",
+    "request_consultation",
+    "manage_treatment",
+    "perform_procedures",
+    "monitor_or_defer",
+    "manage_disposition"
+  ],
+  "transition_concepts": {
+    "ward_001_transition_000": "patient.history_and_presenting_problem",
+    "ward_001_transition_001": "ehr.admission_assessment",
+    "ward_001_transition_002": "ehr.preoperative_consent_and_risk",
+    "ward_001_transition_003": "diagnostic.abdominal_ultrasound",
+    "ward_001_transition_004": "diagnostic.breast_ultrasound_contrast",
+    "ward_001_transition_005": "diagnostic.cardiac_and_venous_ultrasound",
+    "ward_001_transition_006": "procedure.right_breast_core_biopsy",
+    "ward_001_transition_007": "procedure.left_supraclavicular_node_biopsy",
+    "ward_001_transition_008": "result.right_breast_core_pathology",
+    "ward_001_transition_009": "result.left_supraclavicular_cytology",
+    "ward_001_transition_010": "procedure.breast_conserving_surgery_sentinel_node",
+    "ward_001_transition_011": "disposition.home_followup_pending_results"
+  },
+  "decision_policy": {
+    "free_text_target_allowed": true,
+    "exact_hidden_identifier_required": false,
+    "schema_valid_non_gold_action_class": "valid_exploration_no_recorded_outcome",
+    "recognized_non_current_action_class": "recognized_non_current_action",
+    "gold_equivalent_action_class": "ehr_path_advanced",
+    "counterfactual_clinical_outcomes_simulated": false
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

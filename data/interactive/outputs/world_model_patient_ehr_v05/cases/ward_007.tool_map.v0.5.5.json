@@ -1,0 +1,114 @@
+{
+  "tool_map_version": "ward-patient-ehr-tool-map-0.5.5",
+  "status": "development_non_official_freeze_candidate",
+  "case_id": "ward_007",
+  "scenario_sha256": "df38dfa52acf552bc5bab3e2a2cb44cc6d24770a1b27485f6480a27a4fd7e3fe",
+  "freeze_manifest_sha256": "72dd8e46a360db7a9e107124166a57145547ec941c6d7ef757956a1b69de62dc",
+  "action_interface_sha256": "5c9464e2b85cf6e9484eb96ccf066796fbd1631e3dba10fec8148ed8790ea1ed",
+  "action_ontology_sha256": "1f8a43649cd1c90d0d078f2830ba2be07c3329c92f8d96629ef0d39979a5e9be",
+  "action_graph_sha256": "014a426715e53196a87e56ae367a5305ab05c1b4a954b7ffaf997862785364d8",
+  "state_based_adapter_version": "ward-patient-ehr-event-relative-phase-adapter-0.5.5",
+  "action_envelope_version": "ward-patient-ehr-role-separated-action-envelope-0.1.0",
+  "event_frame_version": "ward-patient-ehr-clinical-event-frame-0.1.0",
+  "lifecycle_policy_version": "ward-patient-ehr-clinical-event-lifecycle-policy-0.1.0",
+  "lifecycle_policy_path": "outputs/world_model_patient_ehr_v05/CLINICAL_EVENT_LIFECYCLE_POLICY.v0.1.json",
+  "lifecycle_policy_sha256": "9c005e75cf35f992f051d2ef22ca1576e5a8e9333892aba743707be4c5f5e518",
+  "event_phase_frame_version": "ward-patient-ehr-event-phase-frame-0.1.0",
+  "event_relative_phase_policy_version": "ward-patient-ehr-event-relative-phase-policy-0.1.0",
+  "event_relative_phase_policy_path": "outputs/world_model_patient_ehr_v05/EVENT_RELATIVE_PHASE_POLICY.v0.1.json",
+  "event_relative_phase_policy_sha256": "bc04b150e26f1c791d3bbc14a78506ac2d7bbae13f31a7a6e456a444b845e4c6",
+  "state_routes_path": "outputs/world_model_patient_ehr_v05/cases/ward_007.state_routes.v0.5.5.json",
+  "state_routes_sha256": "98d7709efe67c3ba574a14abcc4f7ee983dee732e0ce1e72250428e2bc7d2cf0",
+  "tool_design": {
+    "model_calls_tools": true,
+    "recorded_ehr_controls_releasable_results": true,
+    "unrecorded_clinically_valid_actions_allowed": true,
+    "counterfactual_results_invented": false,
+    "tool_facade_is_case_reusable": true,
+    "coarse_available_action_families_visible": false,
+    "structured_resource_fields_optional": true,
+    "ordinary_clinical_language_supported": true,
+    "state_based_outcome_validation": true,
+    "exact_hidden_identifier_required": false,
+    "query_and_structured_fields_are_command_surface": true,
+    "intent_and_rationale_are_non_routing_context": true,
+    "ambiguous_equal_candidates_do_not_advance": true,
+    "clinical_event_lifecycle_enabled": true,
+    "event_relative_phase_decoupled": true,
+    "surgery_anchor_required_for_derived_surgical_phase": true,
+    "post_biopsy_is_postoperative": false,
+    "phase_conflicts_audited": true,
+    "phase_conflicts_automatically_override_structured_field": false
+  },
+  "public_tools": [
+    "patient.ask",
+    "ehr.search",
+    "ehr.read",
+    "ehr.order",
+    "procedure.perform",
+    "treatment.start",
+    "care.transition"
+  ],
+  "public_ehr_modules": [
+    "history",
+    "admission_documents",
+    "progress_notes",
+    "preoperative_documents",
+    "laboratory_results",
+    "imaging_results",
+    "pathology_results",
+    "procedure_records",
+    "medications",
+    "consultations",
+    "surgery",
+    "discharge_documents"
+  ],
+  "tool_action_defaults": {
+    "patient.ask": "request_patient_information",
+    "ehr.search": "review_document",
+    "ehr.read": "review_document",
+    "ehr.order": "order_imaging",
+    "procedure.perform": "perform_procedure",
+    "treatment.start": "start_treatment",
+    "care.transition": "monitor_or_defer"
+  },
+  "module_action_overrides": {
+    "history": {
+      "ehr.search": "request_patient_information",
+      "ehr.read": "request_patient_information"
+    },
+    "laboratory_results": {
+      "ehr.search": "review_result",
+      "ehr.read": "review_result",
+      "ehr.order": "order_laboratory"
+    },
+    "imaging_results": {
+      "ehr.search": "review_result",
+      "ehr.read": "review_result",
+      "ehr.order": "order_imaging"
+    },
+    "pathology_results": {
+      "ehr.search": "review_result",
+      "ehr.read": "review_result",
+      "ehr.order": "order_laboratory"
+    },
+    "consultations": {
+      "ehr.order": "request_consultation"
+    },
+    "discharge_documents": {
+      "care.transition": "discharge"
+    },
+    "surgery": {
+      "procedure.perform": "perform_procedure"
+    }
+  },
+  "gold_action_visible": false,
+  "dependency_graph_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true,
+  "clinical_review_decision_sha256": "66c1e33a3b66465b5232fa91278332a98925db3ffdf9c13f81f93451c2988d20",
+  "reviewed_mapping_sha256": "ba7457c69a5408645ead4cfa898eb733275fbae54dada1eff0ca25976e9413c1",
+  "artifact_revision": "0.5.5"
+}

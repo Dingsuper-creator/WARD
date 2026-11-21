@@ -1,0 +1,261 @@
+{
+  "route_contract_version": "ward-patient-ehr-state-route-contract-0.5.6",
+  "status": "development_non_official_batch_binding_candidate",
+  "case_id": "ward_009",
+  "scenario_sha256": "21d1304320aa910bdc52da44265e6499d7b7f0b1b53b325f28d0df0f9219d025",
+  "freeze_manifest_sha256": "72dd8e46a360db7a9e107124166a57145547ec941c6d7ef757956a1b69de62dc",
+  "action_interface_sha256": "4e8ff699f6b2d15973614cd5d5196a2c38c98ac5f9b2e2f748f58ce841603cd2",
+  "action_ontology_sha256": "f3f23b528b8d274c6a706fb459673dac28f42b3bf72497b913794d737fa9a8bf",
+  "action_graph_sha256": "704ab78e5c1a40265906a839e9868856be33c7bbaf11030ae3708135cfa3cadb",
+  "lifecycle_policy_sha256": "9c005e75cf35f992f051d2ef22ca1576e5a8e9333892aba743707be4c5f5e518",
+  "event_relative_phase_policy_sha256": "bc04b150e26f1c791d3bbc14a78506ac2d7bbae13f31a7a6e456a444b845e4c6",
+  "source_clinical_mapping_sha256": "0614eea87e42ee37ac4f43b8c8f051b004758866294cae852e06a09d2eee1e61",
+  "routing_policy": {
+    "reviewed_ontology_concept_routing_enabled": true,
+    "feature_fallback_enabled": true,
+    "available_state_preferred": true,
+    "unique_top_candidate_required": true,
+    "query_and_structured_fields_are_command_surface": true,
+    "intent_and_rationale_are_non_routing_context": true,
+    "exact_hidden_identifier_required": false,
+    "clinical_event_lifecycle_enabled": true,
+    "event_relative_time_decoupled_from_surgical_phase": true,
+    "surgery_anchor_required_for_derived_surgical_phase": true,
+    "post_biopsy_is_postoperative": false
+  },
+  "routes": {
+    "ward_009_s2_node_001": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.breast_admission_assessment"
+      ],
+      "features": [
+        "admission",
+        "breast"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_009_s2_node_002": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.breast_surgery_readiness_and_vte"
+      ],
+      "features": [
+        "breast",
+        "risk",
+        "surgery"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_009_s2_node_003": {
+      "action_types": [
+        "request_consultation"
+      ],
+      "public_tools": [
+        "ehr.order"
+      ],
+      "modules": [
+        "consultations"
+      ],
+      "concept_ids": [
+        "consultation.preoperative_multidisciplinary_review"
+      ],
+      "features": [
+        "consultation",
+        "preoperative"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_009_s2_node_004": {
+      "action_types": [
+        "review_result"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "laboratory_results",
+        "imaging_results",
+        "pathology_results",
+        "procedure_records"
+      ],
+      "concept_ids": [
+        "result.preoperative_breast_ultrasound"
+      ],
+      "features": [
+        "breast",
+        "preoperative"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_009_s2_node_005": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.breast_quadrant_or_mass_excision_consent"
+      ],
+      "features": [
+        "breast",
+        "consent"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_009_s2_node_006": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "public_tools": [
+        "procedure.perform"
+      ],
+      "modules": [
+        "procedure_records",
+        "surgery"
+      ],
+      "concept_ids": [
+        "procedure.breast_conserving_sentinel_and_fascial_surgery"
+      ],
+      "features": [
+        "breast",
+        "conserving",
+        "fascial",
+        "sentinel_node",
+        "surgery"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_009_s2_node_007": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.post_breast_surgery_status"
+      ],
+      "features": [
+        "breast",
+        "surgery"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_009_s3_terminal_001": {
+      "action_types": [
+        "discharge"
+      ],
+      "public_tools": [
+        "care.transition"
+      ],
+      "modules": [
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "disposition.home_after_inpatient_breast_surgery"
+      ],
+      "features": [
+        "breast",
+        "discharge",
+        "surgery"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    }
+  },
+  "gold_action_visible": false,
+  "dependency_graph_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true,
+  "artifact_revision": "0.5.6"
+}

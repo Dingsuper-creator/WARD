@@ -1,0 +1,4000 @@
+{
+  "case_id": "ward_028",
+  "checkpoints": [
+    {
+      "answer": {
+        "layer1_evidence": [],
+        "layer2_utilization_links": [],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Oncology inpatient encounter with unverified maintenance-chemotherapy indication",
+              "Insufficient evidence to establish the malignancy details or treatment readiness"
+            ],
+            "canonical_en": "The patient is currently in an inpatient oncology encounter with an admission diagnosis label of maintenance chemotherapy for malignant neoplasm; the specific cancer type, site, pathology, stage, prior treatment, and maintenance regimen are not supported by the allowed evidence.",
+            "claim_id": "ward_028_cp_000_claim_001",
+            "linked_evidence_ids": [],
+            "status": "pending",
+            "supporting_evidence_ids": []
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Review the complete cancer history and treatment indication",
+              "Confirm the diagnosis and rationale for maintenance therapy"
+            ],
+            "action_id": "ward_028_cp_000_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Verify the complete oncology record and indication for maintenance chemotherapy",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete as soon as possible before deciding to initiate or continue maintenance chemotherapy.",
+            "indication_en": "Need to confirm pathological diagnosis, tumor site, staging, prior treatment, basis for efficacy, and the proposed maintenance regimen",
+            "linked_evidence_ids": [],
+            "prerequisites_en": [
+              "Obtain prior pathology, imaging, staging, treatment, and oncology specialty records"
+            ],
+            "problem_en": "There is no supporting evidence permitting a specific malignant-tumor diagnosis and indication for maintenance chemotherapy",
+            "target_and_laterality_en": "Systemic tumor condition; laterality not applicable"
+          },
+          {
+            "acceptable_aliases_en": [
+              "Pre-treatment safety assessment",
+              "Baseline assessment before maintenance therapy"
+            ],
+            "action_id": "ward_028_cp_000_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Perform a current clinical and safety assessment before maintenance chemotherapy",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete before administration",
+            "indication_en": "Assess whether organ-function abnormalities, hematologic abnormalities, infection, or other contraindicating factors affecting chemotherapy safety are present.",
+            "linked_evidence_ids": [],
+            "prerequisites_en": [
+              "Specify the intended medication, dose, cycle, and prior treatment status; obtain necessary current examination data."
+            ],
+            "problem_en": "Current clinical status, laboratory testing, and specific chemotherapy regimen information are lacking.",
+            "target_and_laterality_en": "Systemic status; laterality not applicable"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Cancer diagnosis details, staging, prior treatment, and maintenance regimen lack allowed supporting evidence",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_000_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Active inpatient oncology encounter",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_000_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Missing pathology, imaging, staging, and prior-treatment information needed to confirm the diagnosis and treatment indication",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_000_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Missing current clinical status, laboratory results, and regimen details needed to assess maintenance-chemotherapy safety",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_000_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "The patient is a 62-year-old man.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_000_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current setting is a longitudinal oncology inpatient encounter, encounter_active=true.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_000_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The public evidence list is empty.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_000_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The admission diagnosis label is “Maintenance chemotherapy for malignant neoplasm,” but it is not equivalent to a confirmed diagnosis or completed treatment.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_000_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Malignant neoplasm (admission diagnosis label only; specific diagnosis not established)",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_000_state_diagnoses_001",
+              "status": "pending",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Do not upgrade an admission diagnosis label to a confirmed specific malignant neoplasm, stage, or pathologic diagnosis.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_000_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Treatment response, toxicity, laboratory results, or discharge criteria must not be assumed to have been obtained.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_000_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "The inpatient encounter is still ongoing; verification and assessment should currently continue, and maintenance chemotherapy must not be stopped from investigation, initiated, or confirmed based only on the admission-diagnosis label.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_028_cp_000_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "The conditions for maintenance chemotherapy cannot be confirmed on the basis of permitted evidence; information verification and safety assessment must first be completed.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_028_cp_000_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Treating the admission-diagnosis label as a confirmed pathological diagnosis, stage, or treatment indication.",
+            "Confirming that administration can proceed in the absence of current safety assessment and regimen verification.",
+            "Fabricate unpublished test results, treatment response, toxicity, or future results."
+          ],
+          "critical_omission_rules_en": [
+            "Omission of verification of pathology/diagnosis and treatment indication.",
+            "Failure to assess current status and safety before maintenance chemotherapy.",
+            "Omission of an explicit statement of the limitation that permitted evidence is lacking."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Insufficient evidence.",
+            "Maintenance chemotherapy cannot be initiated or confirmed on this basis.",
+            "There is no basis for stopping investigation or transitioning to follow-up."
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "The allowed evidence set is empty and the inpatient oncology encounter remains active. The admission diagnosis label alone cannot establish the diagnosis, treatment readiness, or safety; therefore investigation should not stop, and treatment completion or follow-up disposition cannot be confirmed.",
+          "remaining_blockers_en": [
+            "The primary tumor diagnosis and staging have not been confirmed by permitting evidence.",
+            "Prior treatment, the maintenance chemotherapy regimen, and treatment indication are not clear.",
+            "Current laboratory, organ function, infection, and other chemotherapy safety information are missing."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_028_cp_000",
+      "question": {
+        "allowed_evidence_ids": [],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_028:ehr:longitudinal_terminal",
+          "ward_028:ehr:visit_01_admission",
+          "ward_028:ehr:visit_01_outcome",
+          "ward_028:ehr:visit_02_admission",
+          "ward_028:ehr:visit_02_outcome",
+          "ward_028:ehr:visit_03_admission",
+          "ward_028:ehr:visit_03_outcome",
+          "ward_028:ehr:visit_04_admission",
+          "ward_028:ehr:visit_04_outcome",
+          "ward_028:lab:visit_01_results",
+          "ward_028:lab:visit_02_results",
+          "ward_028:lab:visit_03_results",
+          "ward_028:lab:visit_04_results",
+          "ward_028:tx:visit_01_treatment",
+          "ward_028:tx:visit_02_treatment",
+          "ward_028:tx:visit_03_treatment",
+          "ward_028:tx:visit_04_treatment"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_028",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 62,
+            "initial_time": "2124-01-11T10:15:30+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-01-11T10:15:30+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": []
+        },
+        "public_snapshot_sha256": "b39d245e6f6cc8af54382c5ccd3f440d520c08e22f4389d09fbf4cc87ff05d98",
+        "public_time": "2124-01-11T10:15:30+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 0
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_028:ehr:visit_01_admission",
+            "interpretation_en": "Documents admission for maintenance chemotherapy for malignant neoplasm, with structured diagnoses including gastric malignancy, personal history of cerebral infarction, and hypertension; it establishes the oncology treatment context but does not by itself prove readiness for chemotherapy administration.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "ward_028:lab:visit_01_results",
+            "interpretation_en": "The laboratory summary shows mild anemia with a microcytic/hypochromic tendency (hemoglobin 123 g/L, hematocrit 0.388, MCV 81.5 fL, MCH 25.8 pg, RDW 25.4%) and low ferritin of 9.1 ng/mL, supporting iron depletion or possible iron-deficiency anemia; elevated cystatin C and heparin-binding protein are also reported, but their clinical significance cannot be determined from this summary alone.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_028_cp_002_action_001",
+              "ward_028_cp_002_action_002"
+            ],
+            "claim_ids": [
+              "ward_028_cp_002_claim_001",
+              "ward_028_cp_002_claim_003"
+            ],
+            "evidence_id": "ward_028:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_002_state_diagnoses_001",
+              "ward_028_cp_002_state_diagnoses_002",
+              "ward_028_cp_002_state_diagnoses_004",
+              "ward_028_cp_002_state_diagnoses_005",
+              "ward_028_cp_002_state_active_problems_001",
+              "ward_028_cp_002_state_blockers_001",
+              "ward_028_cp_002_state_blockers_002",
+              "ward_028_cp_002_state_critical_facts_to_retain_001",
+              "ward_028_cp_002_state_critical_facts_to_retain_002",
+              "ward_028_cp_002_state_facts_to_retract_or_correct_001",
+              "ward_028_cp_002_state_facts_to_retract_or_correct_003",
+              "ward_028_cp_002_state_required_delta_from_previous_checkpoint_001",
+              "ward_028_cp_002_state_required_delta_from_previous_checkpoint_002",
+              "ward_028_cp_002_state_treatment_readiness_001",
+              "ward_028_cp_002_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_028_cp_002_action_001",
+              "ward_028_cp_002_action_002"
+            ],
+            "claim_ids": [
+              "ward_028_cp_002_claim_002",
+              "ward_028_cp_002_claim_003"
+            ],
+            "evidence_id": "ward_028:lab:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_002_state_diagnoses_003",
+              "ward_028_cp_002_state_active_problems_001",
+              "ward_028_cp_002_state_active_problems_002",
+              "ward_028_cp_002_state_active_problems_003",
+              "ward_028_cp_002_state_blockers_001",
+              "ward_028_cp_002_state_blockers_002",
+              "ward_028_cp_002_state_blockers_003",
+              "ward_028_cp_002_state_critical_facts_to_retain_003",
+              "ward_028_cp_002_state_critical_facts_to_retain_004",
+              "ward_028_cp_002_state_facts_to_retract_or_correct_001",
+              "ward_028_cp_002_state_facts_to_retract_or_correct_002",
+              "ward_028_cp_002_state_facts_to_retract_or_correct_003",
+              "ward_028_cp_002_state_required_delta_from_previous_checkpoint_001",
+              "ward_028_cp_002_state_required_delta_from_previous_checkpoint_002",
+              "ward_028_cp_002_state_treatment_readiness_001",
+              "ward_028_cp_002_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "documented gastric cancer",
+              "inpatient maintenance chemotherapy for malignancy",
+              "oncology admission for maintenance treatment"
+            ],
+            "canonical_en": "Gastric malignancy is documented, and the patient is currently in an oncology inpatient setting for maintenance chemotherapy for malignant neoplasm.",
+            "claim_id": "ward_028_cp_002_claim_001",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:ehr:visit_01_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "mild microcytic hypochromic anemia",
+              "iron depletion with possible iron-deficiency anemia",
+              "laboratory pattern consistent with iron-deficiency anemia"
+            ],
+            "canonical_en": "Mild anemia with microcytic, hypochromic features and depleted iron stores is present; iron-deficiency anemia is supported but still requires clinical confirmation.",
+            "claim_id": "ward_028_cp_002_claim_002",
+            "linked_evidence_ids": [
+              "ward_028:lab:visit_01_results"
+            ],
+            "status": "suspected",
+            "supporting_evidence_ids": [
+              "ward_028:lab:visit_01_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "chemotherapy completion not documented",
+              "disposition readiness not established",
+              "treatment completion cannot be confirmed"
+            ],
+            "canonical_en": "The available evidence is insufficient to confirm that maintenance chemotherapy has been administered or that discharge and follow-up criteria have been met.",
+            "claim_id": "ward_028_cp_002_claim_003",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:lab:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:lab:visit_01_results"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "pre-chemotherapy safety assessment",
+              "oncology treatment-readiness review",
+              "verify regimen and laboratory fitness before chemotherapy"
+            ],
+            "action_id": "ward_028_cp_002_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Before administering maintenance chemotherapy, complete an oncology treatment-readiness review including the specific regimen, administration record, CBC, hepatic and renal function, and current symptoms and signs, then decide whether to proceed, modify, or hold treatment.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before the next chemotherapy administration and during the current hospitalization",
+            "indication_en": "The patient is in an inpatient setting for maintenance chemotherapy for malignant tumor, but available information is insufficient to demonstrate that administration has been safely given or treatment has been completed.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:lab:visit_01_results"
+            ],
+            "prerequisites_en": [
+              "Obtain the complete chemotherapy regimen and previous administration records",
+              "Recheck the current complete blood count, liver and kidney function, and clinical status",
+              "Decision to be made by the responsible oncology team in conjunction with regimen-specific thresholds"
+            ],
+            "problem_en": "Maintenance chemotherapy administration conditions and completion status are not confirmed by current evidence",
+            "target_and_laterality_en": "Systemic antitumor treatment; laterality not involved."
+          },
+          {
+            "acceptable_aliases_en": [
+              "evaluate iron-deficiency anemia",
+              "complete iron studies and anemia workup",
+              "assess need for iron replacement"
+            ],
+            "action_id": "ward_028_cp_002_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Further evaluate low ferritin with mild microcytic hypochromic anemia using the complete CBC, iron studies, and clinical history to determine whether iron replacement or other management is indicated.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization or before the chemotherapy plan is determined",
+            "indication_en": "Hemoglobin, red cell index, and ferritin abnormalities together support possible iron deficiency.",
+            "linked_evidence_ids": [
+              "ward_028:lab:visit_01_results",
+              "ward_028:ehr:visit_01_admission"
+            ],
+            "prerequisites_en": [
+              "Review complete blood count and iron metabolism indicators",
+              "Assess symptoms, bleeding risk, nutritional status, and relevant medical history",
+              "The clinical team will determine management in conjunction with the background of gastric malignant tumor"
+            ],
+            "problem_en": "The cause and management of anemia and insufficient iron stores are unclear.",
+            "target_and_laterality_en": "Systemic hematologic issues; no laterality involved"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "The specific regimen, administration status, and pre-treatment safety conditions for this maintenance chemotherapy need confirmation.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Mild microcytic hypochromic anemia and low ferritin",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Cystatin C and heparin-binding protein are elevated; their clinical significance awaits determination in conjunction with complete medical history, physical examination, and other results",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Specific drugs, doses, administration records, and efficacy information for this chemotherapy are lacking.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A complete clinical assessment sufficient to confirm current safe administration or safe discharge is lacking",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The etiology and management plan for anemia and low ferritin have not yet been clarified",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "62-year-old man, oncology inpatient admission, with admission diagnosis of maintenance chemotherapy for malignant tumor",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_028_cp_002_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Structured records include gastric malignant neoplasm, hypertension, and a personal history of cerebral infarction",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_028_cp_002_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Hemoglobin 123 g/L, mean corpuscular volume 81.5 fL, mean corpuscular hemoglobin 25.8 pg, red cell distribution width 25.4%, ferritin 9.1 ng/mL",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Elevated cystatin C and heparin-binding protein have been reported, but a specific cause or severity cannot be determined from the summary alone.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Documented gastric malignancy",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_028_cp_002_state_diagnoses_001",
+              "status": "active",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Inpatient maintenance chemotherapy treatment context",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_028_cp_002_state_diagnoses_002",
+              "status": "active",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Mild anemia with depleted iron stores, possible iron-deficiency anemia",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_diagnoses_003",
+              "status": "suspected",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Hypertension",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_028_cp_002_state_diagnoses_004",
+              "status": "documented_background",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Personal history of cerebral infarction",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_028_cp_002_state_diagnoses_005",
+              "status": "documented_background",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "The admission diagnosis of gastric malignant tumor must not be interpreted as completed staging or completion of this chemotherapy.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Laboratory abnormalities must not be directly interpreted as active infection, renal insufficiency, or active bleeding",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Must not determine that discharge or transition to follow-up is possible in the absence of administration and clinical-stability documentation",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Inpatient oncology treatment is still ongoing or at least has not been proven complete; evaluation should currently continue, and the clinical team should determine whether to administer, adjust, or defer treatment.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:lab:visit_01_results"
+            ],
+            "state_id": "ward_028_cp_002_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Admission documentation and current hospitalization laboratory results are newly available compared with the previous checkpoint.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Mild anemia with low ferritin and microcytic/hypochromic features is newly identified, and the inpatient maintenance-chemotherapy context is documented.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:lab:visit_01_results"
+              ],
+              "state_id": "ward_028_cp_002_state_required_delta_from_previous_checkpoint_002",
+              "status": "clinical_state_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "It is not yet possible to confirm readiness for maintenance chemotherapy administration solely on the basis of current public evidence; the clinical team should first review the complete blood count, liver and renal function, symptoms, signs, prior treatment, and regimen-specific requirements.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:lab:visit_01_results"
+            ],
+            "state_id": "ward_028_cp_002_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "A structured admission diagnosis must not be interpreted as chemotherapy having been completed or discharge conditions having been met",
+            "Chemotherapy eligibility must not be confirmed solely from the current summary",
+            "Elevated cystatin C or heparin-binding protein must not alone be diagnosed as specific organ dysfunction or infection.",
+            "Current evidence must not substitute for the responsible oncologist's regimen-specific safety assessment"
+          ],
+          "critical_omission_rules_en": [
+            "If complete blood count, liver-kidney function, and clinical status have not been rechecked, safe administration of maintenance chemotherapy should not be confirmed.",
+            "If the etiology and management of low ferritin and anemia have not been assessed, the related problems should not be considered resolved",
+            "If there are no records of chemotherapy administration, course completion, and stability, it should not be determined that inpatient management can be stopped or that transition to follow-up can occur."
+          ],
+          "preliminary_risk_triggers_en": [
+            "needs_clinician_review",
+            "not_ready_for_stopping",
+            "chemotherapy_readiness_unconfirmed",
+            "mild_anemia_with_possible_iron_deficiency"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "The available evidence establishes an oncology inpatient maintenance-chemotherapy context and mild anemia with low ferritin, but does not establish treatment completion, clinical stability, or safe discharge. Investigation should therefore continue rather than stopping or moving directly to follow-up.",
+          "remaining_blockers_en": [
+            "The chemotherapy regimen and administration-completion status are unclear.",
+            "Complete pre-treatment safety and clinical stability assessment is lacking",
+            "The cause of anemia and low ferritin and the management plan have not been clarified"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_028_cp_002",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_028:ehr:visit_01_admission",
+          "ward_028:lab:visit_01_results"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_028:ehr:longitudinal_terminal",
+          "ward_028:ehr:visit_01_outcome",
+          "ward_028:ehr:visit_02_admission",
+          "ward_028:ehr:visit_02_outcome",
+          "ward_028:ehr:visit_03_admission",
+          "ward_028:ehr:visit_03_outcome",
+          "ward_028:ehr:visit_04_admission",
+          "ward_028:ehr:visit_04_outcome",
+          "ward_028:lab:visit_02_results",
+          "ward_028:lab:visit_03_results",
+          "ward_028:lab:visit_04_results",
+          "ward_028:tx:visit_01_treatment",
+          "ward_028:tx:visit_02_treatment",
+          "ward_028:tx:visit_03_treatment",
+          "ward_028:tx:visit_04_treatment"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_028",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_028_s2_node_001_completed": true,
+            "ward_028_s2_node_002_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 62,
+            "initial_time": "2124-01-11T10:15:30+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-01-11T16:46:51+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_028:ehr:visit_01_admission",
+            "ward_028:lab:visit_01_results"
+          ]
+        },
+        "public_snapshot_sha256": "84c8d5ddb394a5d3a0097731c9784d02c1e762797c9ff732a3da74e96705935b",
+        "public_time": "2124-01-11T16:46:51+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "action_selection"
+        ]
+      },
+      "sequence_index": 2
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_028:ehr:visit_01_admission",
+            "interpretation_en": "The prior admission record supports hospitalization for maintenance chemotherapy for malignancy; structured diagnoses include malignant neoplasm of the stomach, hypertension, and personal history of cerebral infarction.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_01_outcome",
+            "interpretation_en": "The first hospitalization outcome records maintenance chemotherapy for malignancy and an improved treatment outcome; it does not establish tumor response or completion of treatment.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_02_admission",
+            "interpretation_en": "The patient is currently readmitted to oncology with the same admission diagnosis of maintenance chemotherapy for malignancy; gastric malignancy, hypertension, and prior cerebral infarction remain documented.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_028:lab:visit_01_results",
+            "interpretation_en": "Prior laboratory results show a mild microcytic/hypochromic anemia pattern, low ferritin, and elevated cystatin C and heparin-binding protein; these provide background for treatment-safety and problem monitoring.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:lab:visit_02_results",
+            "interpretation_en": "Current laboratory results continue to show mild anemia and low ferritin, with cystatin C higher than previously; elevated bile acids, glycocholic acid, heparin-binding protein, and basophil percentage are also reported. The summary alone cannot determine the cause or whether chemotherapy administration thresholds are met.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_028:tx:visit_01_treatment",
+            "interpretation_en": "The first hospitalization documents intravenous administration of chemotherapeutic drugs, supporting prior delivery of chemotherapy; it does not document current-admission administration or provide the regimen, dose, or cycle details.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_028_cp_005_action_001",
+              "ward_028_cp_005_action_002"
+            ],
+            "claim_ids": [
+              "ward_028_cp_005_claim_001",
+              "ward_028_cp_005_claim_002"
+            ],
+            "evidence_id": "ward_028:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_005_state_diagnoses_001",
+              "ward_028_cp_005_state_diagnoses_002",
+              "ward_028_cp_005_state_diagnoses_003",
+              "ward_028_cp_005_state_diagnoses_004",
+              "ward_028_cp_005_state_blockers_001",
+              "ward_028_cp_005_state_critical_facts_to_retain_001",
+              "ward_028_cp_005_state_critical_facts_to_retain_006",
+              "ward_028_cp_005_state_required_delta_from_previous_checkpoint_004",
+              "ward_028_cp_005_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_028_cp_005_action_003"
+            ],
+            "claim_ids": [
+              "ward_028_cp_005_claim_003"
+            ],
+            "evidence_id": "ward_028:ehr:visit_01_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_005_state_resolved_problems_001",
+              "ward_028_cp_005_state_critical_facts_to_retain_003",
+              "ward_028_cp_005_state_facts_to_retract_or_correct_001",
+              "ward_028_cp_005_state_required_delta_from_previous_checkpoint_001",
+              "ward_028_cp_005_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_028_cp_005_action_001",
+              "ward_028_cp_005_action_002",
+              "ward_028_cp_005_action_003",
+              "ward_028_cp_005_action_004"
+            ],
+            "claim_ids": [
+              "ward_028_cp_005_claim_001",
+              "ward_028_cp_005_claim_002",
+              "ward_028_cp_005_claim_004"
+            ],
+            "evidence_id": "ward_028:ehr:visit_02_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_005_state_diagnoses_001",
+              "ward_028_cp_005_state_diagnoses_002",
+              "ward_028_cp_005_state_diagnoses_003",
+              "ward_028_cp_005_state_diagnoses_004",
+              "ward_028_cp_005_state_active_problems_001",
+              "ward_028_cp_005_state_blockers_001",
+              "ward_028_cp_005_state_blockers_002",
+              "ward_028_cp_005_state_blockers_003",
+              "ward_028_cp_005_state_critical_facts_to_retain_001",
+              "ward_028_cp_005_state_critical_facts_to_retain_002",
+              "ward_028_cp_005_state_critical_facts_to_retain_006",
+              "ward_028_cp_005_state_facts_to_retract_or_correct_002",
+              "ward_028_cp_005_state_required_delta_from_previous_checkpoint_002",
+              "ward_028_cp_005_state_required_delta_from_previous_checkpoint_004",
+              "ward_028_cp_005_state_treatment_readiness_001",
+              "ward_028_cp_005_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_028_cp_005_action_002",
+              "ward_028_cp_005_action_005"
+            ],
+            "claim_ids": [
+              "ward_028_cp_005_claim_005",
+              "ward_028_cp_005_claim_006"
+            ],
+            "evidence_id": "ward_028:lab:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_005_state_active_problems_002",
+              "ward_028_cp_005_state_active_problems_003",
+              "ward_028_cp_005_state_active_problems_005",
+              "ward_028_cp_005_state_blockers_002",
+              "ward_028_cp_005_state_critical_facts_to_retain_004",
+              "ward_028_cp_005_state_critical_facts_to_retain_005",
+              "ward_028_cp_005_state_facts_to_retract_or_correct_003",
+              "ward_028_cp_005_state_required_delta_from_previous_checkpoint_003",
+              "ward_028_cp_005_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_028_cp_005_action_002",
+              "ward_028_cp_005_action_004",
+              "ward_028_cp_005_action_005"
+            ],
+            "claim_ids": [
+              "ward_028_cp_005_claim_005",
+              "ward_028_cp_005_claim_006"
+            ],
+            "evidence_id": "ward_028:lab:visit_02_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_005_state_active_problems_002",
+              "ward_028_cp_005_state_active_problems_003",
+              "ward_028_cp_005_state_active_problems_004",
+              "ward_028_cp_005_state_active_problems_005",
+              "ward_028_cp_005_state_blockers_002",
+              "ward_028_cp_005_state_critical_facts_to_retain_004",
+              "ward_028_cp_005_state_critical_facts_to_retain_005",
+              "ward_028_cp_005_state_facts_to_retract_or_correct_003",
+              "ward_028_cp_005_state_required_delta_from_previous_checkpoint_003",
+              "ward_028_cp_005_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_028_cp_005_action_001",
+              "ward_028_cp_005_action_003"
+            ],
+            "claim_ids": [
+              "ward_028_cp_005_claim_007"
+            ],
+            "evidence_id": "ward_028:tx:visit_01_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_005_state_blockers_001",
+              "ward_028_cp_005_state_critical_facts_to_retain_003",
+              "ward_028_cp_005_state_facts_to_retract_or_correct_002",
+              "ward_028_cp_005_state_required_delta_from_previous_checkpoint_001",
+              "ward_028_cp_005_state_treatment_readiness_001",
+              "ward_028_cp_005_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "readmission for maintenance chemotherapy",
+              "gastric malignant neoplasm",
+              "gastric cancer on maintenance chemotherapy"
+            ],
+            "canonical_en": "The patient is currently readmitted for maintenance chemotherapy for malignancy, with gastric malignancy as the documented primary cancer diagnosis.",
+            "claim_id": "ward_028_cp_005_claim_001",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:ehr:visit_02_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:ehr:visit_02_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "hypertension",
+              "history of cerebral infarction",
+              "prior stroke history"
+            ],
+            "canonical_en": "Hypertension and a personal history of cerebral infarction are documented comorbidities or past history.",
+            "claim_id": "ward_028_cp_005_claim_002",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:ehr:visit_02_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:ehr:visit_02_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "improved clinical outcome without documented remission",
+              "treatment completion not established"
+            ],
+            "canonical_en": "The first hospitalization was recorded as clinically improved, but there is insufficient evidence that the malignancy is in remission, chemotherapy is complete, or treatment can stop.",
+            "claim_id": "ward_028_cp_005_claim_003",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_outcome"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:ehr:visit_01_outcome"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "active inpatient encounter",
+              "current treatment administration not documented"
+            ],
+            "canonical_en": "The current hospitalization remains active, and current-admission chemotherapy administration or discharge planning has not been publicly documented.",
+            "claim_id": "ward_028_cp_005_claim_004",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_02_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:ehr:visit_02_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "mild anemia with low ferritin",
+              "possible iron deficiency pattern",
+              "microcytic or hypochromic red-cell pattern"
+            ],
+            "canonical_en": "The patient has persistent mild anemia and low ferritin with abnormal red-cell indices, suggesting possible iron deficiency, but the etiology is not established by the available evidence.",
+            "claim_id": "ward_028_cp_005_claim_005",
+            "linked_evidence_ids": [
+              "ward_028:lab:visit_01_results",
+              "ward_028:lab:visit_02_results"
+            ],
+            "status": "suspected",
+            "supporting_evidence_ids": [
+              "ward_028:lab:visit_01_results",
+              "ward_028:lab:visit_02_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "worsening cystatin C abnormality",
+              "abnormal renal and hepatobiliary laboratory markers"
+            ],
+            "canonical_en": "Cystatin C is elevated and higher than previously, with elevated bile-acid-related markers; further assessment with complete renal and hepatic function data and clinical context is needed.",
+            "claim_id": "ward_028_cp_005_claim_006",
+            "linked_evidence_ids": [
+              "ward_028:lab:visit_01_results",
+              "ward_028:lab:visit_02_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:lab:visit_01_results",
+              "ward_028:lab:visit_02_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "prior intravenous chemotherapy",
+              "current chemotherapy regimen not specified"
+            ],
+            "canonical_en": "Intravenous chemotherapy was documented during the prior hospitalization, but the current regimen, dose, cycle, and administration status are not available.",
+            "claim_id": "ward_028_cp_005_claim_007",
+            "linked_evidence_ids": [
+              "ward_028:tx:visit_01_treatment"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:tx:visit_01_treatment"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "chemotherapy regimen reconciliation",
+              "verify chemotherapy orders"
+            ],
+            "action_id": "ward_028_cp_005_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Verify the current chemotherapy regimen, drugs, dose, cycle, prior administration, and current administration plan.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization, before any administration this time",
+            "indication_en": "The patient was rehospitalized for maintenance chemotherapy for a malignant tumor, with only prior intravenous chemotherapy records",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:ehr:visit_02_admission",
+              "ward_028:tx:visit_01_treatment"
+            ],
+            "prerequisites_en": [
+              "Obtain current medical orders and complete oncologic treatment records.",
+              "The oncology team verifies indications and prior exposure."
+            ],
+            "problem_en": "The current chemotherapy regimen and this administration status are unclear",
+            "target_and_laterality_en": "Systemic antitumor treatment; laterality not applicable."
+          },
+          {
+            "acceptable_aliases_en": [
+              "pre-chemotherapy safety assessment",
+              "review CBC renal and hepatic function"
+            ],
+            "action_id": "ward_028_cp_005_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Before deciding on further chemotherapy, review complete blood counts, renal function, hepatic function, and relevant chemistry results together with symptoms and examination findings.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization and before chemotherapy administration this time",
+            "indication_en": "The current laboratory summary cannot confirm whether administration thresholds are met or the clinical significance of abnormalities",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:ehr:visit_02_admission",
+              "ward_028:lab:visit_01_results",
+              "ward_028:lab:visit_02_results"
+            ],
+            "prerequisites_en": [
+              "Obtain complete laboratory results and reference ranges",
+              "Complete assessment of clinical symptoms and signs"
+            ],
+            "problem_en": "There are anemia, low ferritin, elevated cystatin C, and bile-acid-related abnormalities.",
+            "target_and_laterality_en": "Systemic treatment safety assessment; laterality not applicable"
+          },
+          {
+            "acceptable_aliases_en": [
+              "ongoing response and toxicity assessment",
+              "do not stop therapy based on improvement alone"
+            ],
+            "action_id": "ward_028_cp_005_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue documenting and assessing antitumor treatment response and toxicity; do not use the recorded improvement alone as the sole basis for stopping chemotherapy.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization and subsequent treatment assessment period",
+            "indication_en": "The patient is currently rehospitalized because of maintenance chemotherapy.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_outcome",
+              "ward_028:ehr:visit_02_admission",
+              "ward_028:tx:visit_01_treatment"
+            ],
+            "prerequisites_en": [
+              "Clarify treatment goals and assessment time points",
+              "Obtain available efficacy and toxicity data"
+            ],
+            "problem_en": "Only improved treatment outcome has been recorded previously; evidence of tumor efficacy and completion of the treatment course is lacking",
+            "target_and_laterality_en": "Systemic therapy related to gastric malignancy; laterality not applicable."
+          },
+          {
+            "acceptable_aliases_en": [
+              "discharge and follow-up planning",
+              "continuity-of-care arrangement"
+            ],
+            "action_id": "ward_028_cp_005_action_004",
+            "action_scope": "prospective",
+            "canonical_action_en": "After treatment completion and clinical stabilization, establish a clear discharge, follow-up, and continuity-of-care plan.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before the end of the current hospitalization",
+            "indication_en": "The current hospitalization remains active, and it cannot be inferred from prior discharge records alone that this episode can transition to follow-up",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_02_admission",
+              "ward_028:lab:visit_02_results"
+            ],
+            "prerequisites_en": [
+              "Complete the current treatment and safety assessment.",
+              "Specify the follow-up time, monitoring items, and warnings for return to the hospital."
+            ],
+            "problem_en": "There is currently no publicly available outcome of this hospitalization or follow-up arrangement.",
+            "target_and_laterality_en": "Continuous oncologic treatment and follow-up; laterality not applicable."
+          },
+          {
+            "acceptable_aliases_en": [
+              "evaluate iron deficiency pattern",
+              "anemia and iron-status assessment"
+            ],
+            "action_id": "ward_028_cp_005_action_005",
+            "action_scope": "recorded",
+            "canonical_action_en": "Assess the clinical significance of low ferritin and mild anemia and manage according to the complete evaluation; do not determine the cause or supplementation regimen from the summary alone.",
+            "canonical_prohibited_action_en": null,
+            "category": "acceptable_recorded",
+            "critical_omission_if_missing": false,
+            "deadline_or_time_window_en": "During the current hospitalization or at recent outpatient reassessment.",
+            "indication_en": "The abnormalities may suggest iron-deficiency changes, but the existing evidence has not established the cause.",
+            "linked_evidence_ids": [
+              "ward_028:lab:visit_01_results",
+              "ward_028:lab:visit_02_results"
+            ],
+            "prerequisites_en": [
+              "Review the complete blood count and iron metabolism data.",
+              "Assess in conjunction with bleeding, nutrition, and tumor treatment-related conditions."
+            ],
+            "problem_en": "Persistent mild anemia, low ferritin, and abnormal red blood cell indices",
+            "target_and_laterality_en": "Systemic hematologic issue; laterality not applicable"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Active oncology hospitalization with current chemotherapy administration status unclear",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_028_cp_005_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Mild anemia, low ferritin, and abnormal red-cell indices",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results",
+                "ward_028:lab:visit_02_results"
+              ],
+              "state_id": "ward_028_cp_005_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Elevated cystatin C, higher than previously",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results",
+                "ward_028:lab:visit_02_results"
+              ],
+              "state_id": "ward_028_cp_005_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Elevated bile acids and glycocholic acid",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_02_results"
+              ],
+              "state_id": "ward_028_cp_005_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Elevated heparin-binding protein",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results",
+                "ward_028:lab:visit_02_results"
+              ],
+              "state_id": "ward_028_cp_005_state_active_problems_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Current chemotherapy regimen, dose, cycle, and complete pre-treatment safety assessment are unavailable",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:ehr:visit_02_admission",
+                "ward_028:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_028_cp_005_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Complete renal function, hepatic function, blood counts, and symptom data are unavailable, so treatment eligibility cannot be confirmed",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results",
+                "ward_028:lab:visit_02_results",
+                "ward_028:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_028_cp_005_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current disposition and continuity-of-care plan are not documented",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_028_cp_005_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Gastric malignant neoplasm and maintenance chemotherapy for malignant neoplasm are the main diagnostic and treatment background in the record.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_028_cp_005_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current inpatient hospitalization remains active.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_028_cp_005_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Intravenous chemotherapy was administered during a prior hospitalization, and the outcome of the first hospitalization was recorded as improvement.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_outcome",
+                "ward_028:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_028_cp_005_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Both current and prior findings include mild anemia and low ferritin.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results",
+                "ward_028:lab:visit_02_results"
+              ],
+              "state_id": "ward_028_cp_005_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current cystatin C is elevated compared with prior values, and abnormalities in bile-acid-related indicators are present.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results",
+                "ward_028:lab:visit_02_results"
+              ],
+              "state_id": "ward_028_cp_005_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A personal history of hypertension and cerebral infarction needs to be retained in treatment assessment.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_028_cp_005_state_critical_facts_to_retain_006",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Malignant neoplasm of the stomach",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_028_cp_005_state_diagnoses_001",
+              "status": "Principal tumor diagnosis in the record",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Maintenance chemotherapy for malignant neoplasm",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_028_cp_005_state_diagnoses_002",
+              "status": "Current admission diagnosis",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Hypertension",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_028_cp_005_state_diagnoses_003",
+              "status": "Comorbidity in the record",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Personal history of cerebral infarction",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_028_cp_005_state_diagnoses_004",
+              "status": "Past history in the record",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "The first hospitalization treatment outcome “improvement” must not be corrected or expanded into complete tumor remission.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_028_cp_005_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Prior intravenous chemotherapy records must not be treated as chemotherapy already completed during the current hospitalization.",
+              "linked_evidence_ids": [
+                "ward_028:tx:visit_01_treatment",
+                "ward_028:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_028_cp_005_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not interpret existing laboratory abnormalities alone as definite acute kidney injury, hepatobiliary disease, or chemotherapy toxicity.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results",
+                "ward_028:lab:visit_02_results"
+              ],
+              "state_id": "ward_028_cp_005_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Active oncology inpatient management phase; current treatment assessment and safety monitoring should continue, and transition to stopping treatment or follow-up cannot be based solely on prior improvement.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_outcome",
+              "ward_028:ehr:visit_02_admission",
+              "ward_028:tx:visit_01_treatment"
+            ],
+            "state_id": "ward_028_cp_005_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "New prior-discharge outcome records an improved treatment outcome; prior intravenous chemotherapy is newly visible.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_outcome",
+                "ward_028:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_028_cp_005_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A second oncology hospitalization is newly visible with the same maintenance-chemotherapy admission diagnosis.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_028_cp_005_state_required_delta_from_previous_checkpoint_002",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Laboratory abnormalities persist; RDW increased from 25.4% to 26.6% and cystatin C from 1.12 to 1.35 mg/L, with newly documented bile-acid-related abnormalities.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results",
+                "ward_028:lab:visit_02_results"
+              ],
+              "state_id": "ward_028_cp_005_state_required_delta_from_previous_checkpoint_003",
+              "status": "change",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "No publicly documented change in the core diagnostic background of gastric malignancy, maintenance chemotherapy, hypertension, or prior cerebral infarction.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_028_cp_005_state_required_delta_from_previous_checkpoint_004",
+              "status": "no_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "First hospitalization completed with an improved recorded outcome",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_028_cp_005_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Partially available but not yet confirmed; there is a background of admission for maintenance chemotherapy and a record of prior intravenous chemotherapy, but current pre-administration laboratory and regimen-verification data are incomplete, so safe administration cannot be confirmed on this basis.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:ehr:visit_02_admission",
+              "ward_028:tx:visit_01_treatment",
+              "ward_028:lab:visit_01_results",
+              "ward_028:lab:visit_02_results"
+            ],
+            "state_id": "ward_028_cp_005_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Do not directly confirm that chemotherapy can be safely implemented when the current regimen, administration status, and pre-administration laboratory safety have not been verified.",
+            "Prior discharge or treatment-improvement records must not be interpreted as the current hospitalization having been completed or antitumor treatment being able to stop.",
+            "Must not diagnose acute kidney injury, hepatobiliary disease, or chemotherapy toxicity based only on summarized abnormal laboratory results."
+          ],
+          "critical_omission_rules_en": [
+            "Omission of verification of the current chemotherapy regimen and administration status is a key omission.",
+            "Omission of complete blood count, renal function, and liver function rechecking is a key omission.",
+            "Omission of the current hospitalization outcome and continuity follow-up arrangements is a key omission."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Chemotherapy administration safety cannot currently be confirmed.",
+            "The current hospitalization remains active",
+            "Improvement should not be equated with tumor remission or treatment completion",
+            "Renal, hepatic, and hematologic indices need to be rechecked"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_treatment",
+          "rationale_en": "The current hospitalization remains active and is again for maintenance chemotherapy for malignancy. Although the first hospitalization recorded an improved outcome, there is no evidence of tumor remission, chemotherapy completion, or readiness to stop treatment; persistent anemia, low ferritin, elevated cystatin C, and bile-acid-related abnormalities are also present. Stopping or directly transitioning to follow-up is therefore not safe at this point; oncology management and regimen and pre-treatment safety verification should continue.",
+          "remaining_blockers_en": [
+            "The current chemotherapy regimen, dose, cycle, and administration status for this time have not been publicly provided",
+            "Complete pre-administration hematologic, renal function, and liver function safety data are insufficient.",
+            "The current hospitalization outcome and discharge follow-up plan have not been disclosed",
+            "There is a lack of efficacy evidence sufficient to prove tumor remission or treatment completion."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_028_cp_005",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_028:ehr:visit_01_admission",
+          "ward_028:ehr:visit_01_outcome",
+          "ward_028:ehr:visit_02_admission",
+          "ward_028:lab:visit_01_results",
+          "ward_028:lab:visit_02_results",
+          "ward_028:tx:visit_01_treatment"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_028:ehr:longitudinal_terminal",
+          "ward_028:ehr:visit_02_outcome",
+          "ward_028:ehr:visit_03_admission",
+          "ward_028:ehr:visit_03_outcome",
+          "ward_028:ehr:visit_04_admission",
+          "ward_028:ehr:visit_04_outcome",
+          "ward_028:lab:visit_03_results",
+          "ward_028:lab:visit_04_results",
+          "ward_028:tx:visit_02_treatment",
+          "ward_028:tx:visit_03_treatment",
+          "ward_028:tx:visit_04_treatment"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_028",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_028_s2_node_001_completed": true,
+            "ward_028_s2_node_002_completed": true,
+            "ward_028_s2_node_003_completed": true,
+            "ward_028_s2_node_004_completed": true,
+            "ward_028_s2_node_005_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 62,
+            "initial_time": "2124-01-11T10:15:30+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-02-05T16:28:15+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_028:ehr:visit_01_admission",
+            "ward_028:ehr:visit_01_outcome",
+            "ward_028:ehr:visit_02_admission",
+            "ward_028:lab:visit_01_results",
+            "ward_028:lab:visit_02_results",
+            "ward_028:tx:visit_01_treatment"
+          ]
+        },
+        "public_snapshot_sha256": "c49d617680051249266061f322843d4af1e7e697e03b62244508666eddad5ef5",
+        "public_time": "2124-02-05T16:28:15+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "action_selection"
+        ]
+      },
+      "sequence_index": 5
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_028:ehr:visit_01_admission",
+            "interpretation_en": null,
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_01_outcome",
+            "interpretation_en": "The first hospitalization was for maintenance chemotherapy for malignant neoplasm, with documented improvement at discharge.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_02_admission",
+            "interpretation_en": "The second hospitalization was also for maintenance chemotherapy, with gastric malignancy, history of cerebral infarction, and hypertension documented.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_02_outcome",
+            "interpretation_en": "The second hospitalization had a documented improved treatment outcome at discharge.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_03_admission",
+            "interpretation_en": "The third hospitalization continued to be for maintenance chemotherapy, with gastric malignancy, history of cerebral infarction, and hypertension documented.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_03_outcome",
+            "interpretation_en": "The third hospitalization had a documented improved treatment outcome at discharge.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_04_admission",
+            "interpretation_en": "The fourth hospitalization is active for maintenance chemotherapy for malignant neoplasm, with leukopenia newly documented.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_028:lab:visit_01_results",
+            "interpretation_en": "The first hospitalization laboratory summary shows anemia-pattern abnormalities, low ferritin, and elevated cystatin C.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:lab:visit_02_results",
+            "interpretation_en": "The second hospitalization shows persistent anemia-pattern abnormalities, low ferritin, elevated cystatin C, and abnormal bile-acid-related results.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:lab:visit_03_results",
+            "interpretation_en": "The third hospitalization shows anemia-pattern abnormalities, low ferritin, elevated cystatin C, and increased uric acid, alkaline phosphatase, and abnormal prothrombin.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:lab:visit_04_results",
+            "interpretation_en": "The current hospitalization laboratory summary shows low hemoglobin and hematocrit, low ferritin, elevated total bilirubin, uric acid, and cystatin C; it does not provide the leukopenia value or severity.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_028:tx:visit_01_treatment",
+            "interpretation_en": "Intravenous chemotherapy was documented during the first hospitalization.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:tx:visit_02_treatment",
+            "interpretation_en": "Intravenous chemotherapy was documented during the second hospitalization.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:tx:visit_03_treatment",
+            "interpretation_en": "Intravenous chemotherapy was documented during the third hospitalization.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:tx:visit_04_treatment",
+            "interpretation_en": "By the current time point, intravenous chemotherapy has been documented during the fourth hospitalization; efficacy or tolerance cannot be determined from this record alone.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_012_claim_005"
+            ],
+            "evidence_id": "ward_028:ehr:visit_01_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_012_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_012_claim_005"
+            ],
+            "evidence_id": "ward_028:ehr:visit_02_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_012_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "ward_028:ehr:visit_03_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_012_state_required_delta_from_previous_checkpoint_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_012_claim_005"
+            ],
+            "evidence_id": "ward_028:ehr:visit_03_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_012_state_facts_to_retract_or_correct_001",
+              "ward_028_cp_012_state_required_delta_from_previous_checkpoint_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_028_cp_012_action_001",
+              "ward_028_cp_012_action_002",
+              "ward_028_cp_012_action_004"
+            ],
+            "claim_ids": [
+              "ward_028_cp_012_claim_001",
+              "ward_028_cp_012_claim_002"
+            ],
+            "evidence_id": "ward_028:ehr:visit_04_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_012_state_diagnoses_001",
+              "ward_028_cp_012_state_diagnoses_002",
+              "ward_028_cp_012_state_diagnoses_003",
+              "ward_028_cp_012_state_diagnoses_004",
+              "ward_028_cp_012_state_diagnoses_005",
+              "ward_028_cp_012_state_active_problems_001",
+              "ward_028_cp_012_state_active_problems_002",
+              "ward_028_cp_012_state_critical_facts_to_retain_001",
+              "ward_028_cp_012_state_critical_facts_to_retain_002",
+              "ward_028_cp_012_state_facts_to_retract_or_correct_001",
+              "ward_028_cp_012_state_facts_to_retract_or_correct_002",
+              "ward_028_cp_012_state_required_delta_from_previous_checkpoint_001",
+              "ward_028_cp_012_state_treatment_readiness_001",
+              "ward_028_cp_012_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "ward_028:lab:visit_03_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_012_state_required_delta_from_previous_checkpoint_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_028_cp_012_action_001",
+              "ward_028_cp_012_action_003",
+              "ward_028_cp_012_action_004"
+            ],
+            "claim_ids": [
+              "ward_028_cp_012_claim_002",
+              "ward_028_cp_012_claim_003",
+              "ward_028_cp_012_claim_004"
+            ],
+            "evidence_id": "ward_028:lab:visit_04_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_012_state_active_problems_002",
+              "ward_028_cp_012_state_active_problems_003",
+              "ward_028_cp_012_state_active_problems_004",
+              "ward_028_cp_012_state_active_problems_005",
+              "ward_028_cp_012_state_critical_facts_to_retain_002",
+              "ward_028_cp_012_state_critical_facts_to_retain_003",
+              "ward_028_cp_012_state_critical_facts_to_retain_004",
+              "ward_028_cp_012_state_facts_to_retract_or_correct_001",
+              "ward_028_cp_012_state_facts_to_retract_or_correct_002",
+              "ward_028_cp_012_state_facts_to_retract_or_correct_003",
+              "ward_028_cp_012_state_required_delta_from_previous_checkpoint_001",
+              "ward_028_cp_012_state_treatment_readiness_001",
+              "ward_028_cp_012_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "ward_028:tx:visit_03_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_012_state_required_delta_from_previous_checkpoint_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_028_cp_012_action_004"
+            ],
+            "claim_ids": [
+              "ward_028_cp_012_claim_001"
+            ],
+            "evidence_id": "ward_028:tx:visit_04_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_012_state_active_problems_001",
+              "ward_028_cp_012_state_critical_facts_to_retain_005",
+              "ward_028_cp_012_state_required_delta_from_previous_checkpoint_001",
+              "ward_028_cp_012_state_treatment_readiness_001",
+              "ward_028_cp_012_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "inpatient maintenance chemotherapy for gastric cancer",
+              "maintenance antineoplastic treatment"
+            ],
+            "canonical_en": "The patient is undergoing inpatient maintenance chemotherapy for gastric malignancy",
+            "claim_id": "ward_028_cp_012_claim_001",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:tx:visit_04_treatment"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:tx:visit_04_treatment"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "documented leukopenia of unspecified severity",
+              "leukopenia without quantified count"
+            ],
+            "canonical_en": "Leukopenia is documented during the current hospitalization, but its severity and exact white-cell count are unavailable",
+            "claim_id": "ward_028_cp_012_claim_002",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:lab:visit_04_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:lab:visit_04_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "anemia-pattern laboratory abnormalities",
+              "iron-store depletion suggested by low ferritin"
+            ],
+            "canonical_en": "Current laboratory findings include anemia-pattern abnormalities and low ferritin",
+            "claim_id": "ward_028_cp_012_claim_003",
+            "linked_evidence_ids": [
+              "ward_028:lab:visit_04_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:lab:visit_04_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "abnormal bilirubin, uric acid, and cystatin C results",
+              "current biochemical abnormalities"
+            ],
+            "canonical_en": "Current biochemical abnormalities include elevated total bilirubin, uric acid, and cystatin C",
+            "claim_id": "ward_028_cp_012_claim_004",
+            "linked_evidence_ids": [
+              "ward_028:lab:visit_04_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:lab:visit_04_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "improved outcomes in the first three admissions",
+              "prior chemotherapy admissions with improvement"
+            ],
+            "canonical_en": "Treatment outcomes of the three prior hospitalizations were documented as improved",
+            "claim_id": "ward_028_cp_012_claim_005",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_outcome",
+              "ward_028:ehr:visit_02_outcome",
+              "ward_028:ehr:visit_03_outcome"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:ehr:visit_01_outcome",
+              "ward_028:ehr:visit_02_outcome",
+              "ward_028:ehr:visit_03_outcome"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "CBC and ANC review",
+              "verify leukopenia and neutrophil count"
+            ],
+            "action_id": "ward_028_cp_012_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Review the current complete blood count and absolute neutrophil count",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Recheck before deciding to continue or adjust chemotherapy and before discharge.",
+            "indication_en": "The severity of leukopenia and chemotherapy-related infection risk need to be assessed.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:lab:visit_04_results"
+            ],
+            "prerequisites_en": [
+              "Obtain the current complete blood count report and differential count"
+            ],
+            "problem_en": "Current hospitalization documents leukopenia, but specific white blood cell and neutrophil counts are lacking.",
+            "target_and_laterality_en": "Systemic hematologic assessment; no laterality."
+          },
+          {
+            "acceptable_aliases_en": [
+              "infection and fever assessment",
+              "clinical infection screening"
+            ],
+            "action_id": "ward_028_cp_012_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Assess infection symptoms, vital signs, and fever",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete as soon as possible during the current hospitalization, and continue monitoring after chemotherapy.",
+            "indication_en": "In the context of leukopenia, clinical clues for infection or febrile neutropenia need to be investigated.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_04_admission"
+            ],
+            "prerequisites_en": [
+              "Obtain current medical history, physical examination, vital signs, and body temperature."
+            ],
+            "problem_en": "Leukopenia has been documented, but current infection status and vital signs have not been made public.",
+            "target_and_laterality_en": "Systemic clinical assessment; no laterality."
+          },
+          {
+            "acceptable_aliases_en": [
+              "organ-function review before chemotherapy",
+              "review bilirubin, uric acid, and cystatin C"
+            ],
+            "action_id": "ward_028_cp_012_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Review hepatic and renal function and abnormal uric acid and bilirubin results before deciding further chemotherapy",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before the next chemotherapy administration or discharge decision.",
+            "indication_en": "Confirm current biochemical abnormalities and their impact on chemotherapy dose, timing, and safety.",
+            "linked_evidence_ids": [
+              "ward_028:lab:visit_04_results"
+            ],
+            "prerequisites_en": [
+              "Obtain complete liver function, renal function, electrolytes, and relevant chemotherapy-regimen information"
+            ],
+            "problem_en": "Current total bilirubin, uric acid, and cystatin C are elevated, and continuing chemotherapy may require organ-function assessment.",
+            "target_and_laterality_en": "Hepatic, renal, and metabolic status; no laterality."
+          },
+          {
+            "acceptable_aliases_en": [
+              "oncology treatment decision",
+              "chemotherapy continuation or hold decision"
+            ],
+            "action_id": "ward_028_cp_012_action_004",
+            "action_scope": "prospective",
+            "canonical_action_en": "Have oncology determine whether to continue, modify, or hold chemotherapy based on hematologic, infection, and organ-function assessment",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization and before the next chemotherapy.",
+            "indication_en": "Subsequent antitumor treatment decisions need to be made after safety information is complete.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:lab:visit_04_results",
+              "ward_028:tx:visit_04_treatment"
+            ],
+            "prerequisites_en": [
+              "Complete current complete blood count, infection assessment, and recheck of liver and kidney function."
+            ],
+            "problem_en": "Current inpatient chemotherapy has been documented, but the clinical significance of leukopenia and multiple biochemical abnormalities has not yet been fully assessed.",
+            "target_and_laterality_en": "Antitumor treatment; no laterality."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Current inpatient chemotherapy management",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission",
+                "ward_028:tx:visit_04_treatment"
+              ],
+              "state_id": "ward_028_cp_012_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Leukopenia; severity and specific count not provided",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission",
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_012_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Low hemoglobin and hematocrit",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_012_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Low ferritin.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_012_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Elevated total bilirubin, uric acid, and cystatin C.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_012_state_active_problems_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Total white blood cell count and absolute neutrophil count are lacking, making it impossible to stratify leukopenia or neutropenia risk.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_012_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Information on current symptoms, vital signs, and infection assessment is lacking",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_012_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Complete clinical information sufficient to judge current chemotherapy tolerance and treatment effect is lacking.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_028_cp_012_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Gastric malignancy and the background of inpatient maintenance chemotherapy",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission"
+              ],
+              "state_id": "ward_028_cp_012_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current inpatient record notes leukopenia, but does not quantify its severity",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission",
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_012_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current low ferritin and anemia-like abnormalities.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_012_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current total bilirubin, uric acid, and cystatin C are elevated.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_012_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current hospitalization has documented intravenous chemotherapy drugs.",
+              "linked_evidence_ids": [
+                "ward_028:tx:visit_04_treatment"
+              ],
+              "state_id": "ward_028_cp_012_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Gastric malignancy",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission"
+              ],
+              "state_id": "ward_028_cp_012_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Maintenance chemotherapy for malignant neoplasm",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission"
+              ],
+              "state_id": "ward_028_cp_012_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Personal history of cerebral infarction",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission"
+              ],
+              "state_id": "ward_028_cp_012_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Hypertension",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission"
+              ],
+              "state_id": "ward_028_cp_012_state_diagnoses_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Leukopenia, current hospitalization record.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission"
+              ],
+              "state_id": "ward_028_cp_012_state_diagnoses_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "The improved outcomes of the prior three hospitalizations cannot be extrapolated as current treatment effect",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_outcome",
+                "ward_028:ehr:visit_02_outcome",
+                "ward_028:ehr:visit_03_outcome",
+                "ward_028:ehr:visit_04_admission",
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_012_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Leukopenia cannot be directly equated with neutropenia or infection.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission",
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_012_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Organ failure or tumor lysis syndrome cannot be diagnosed solely on the basis of biochemical abnormalities in the summary.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_012_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Current inpatient treatment is still ongoing or has just been recorded as completed; it is not yet possible to safely determine treatment-course completion, current efficacy, or discharge to follow-up.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:lab:visit_04_results",
+              "ward_028:tx:visit_04_treatment"
+            ],
+            "state_id": "ward_028_cp_012_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Since the previous checkpoint, records from the third hospitalization and the active fourth hospitalization were added. The current record newly documents leukopenia and persistent hematologic, low-ferritin, and biochemical abnormalities.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_03_admission",
+                "ward_028:ehr:visit_03_outcome",
+                "ward_028:lab:visit_03_results",
+                "ward_028:tx:visit_03_treatment",
+                "ward_028:ehr:visit_04_admission",
+                "ward_028:lab:visit_04_results",
+                "ward_028:tx:visit_04_treatment"
+              ],
+              "state_id": "ward_028_cp_012_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_current_evidence",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Intravenous chemotherapy during the current hospitalization has been documented, but blood cell counts, infection status, and organ function still need to be verified before further chemotherapy decisions; current treatment conditions cannot be fully confirmed from the summary.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:lab:visit_04_results",
+              "ward_028:tx:visit_04_treatment"
+            ],
+            "state_id": "ward_028_cp_012_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [],
+          "critical_omission_rules_en": [
+            "Continuing or adjusting chemotherapy without verifying the current blood cell count, infection status, and organ function may cause clinical harm."
+          ],
+          "preliminary_risk_triggers_en": []
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "The patient remains in active inpatient chemotherapy management with documented leukopenia and several biochemical abnormalities. Key safety data are missing, so it is not yet safe to stop investigation, discharge, or transition to routine follow-up.",
+          "remaining_blockers_en": [
+            "The specific value and severity of leukopenia are unknown.",
+            "Current infection status, vital signs, and symptoms are not publicly available",
+            "Liver and kidney function and other chemotherapy-related safety data are incomplete.",
+            "Whether the current course is completed and whether discharge criteria are met are not recorded."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_028_cp_012",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_028:ehr:visit_01_admission",
+          "ward_028:ehr:visit_01_outcome",
+          "ward_028:ehr:visit_02_admission",
+          "ward_028:ehr:visit_02_outcome",
+          "ward_028:ehr:visit_03_admission",
+          "ward_028:ehr:visit_03_outcome",
+          "ward_028:ehr:visit_04_admission",
+          "ward_028:lab:visit_01_results",
+          "ward_028:lab:visit_02_results",
+          "ward_028:lab:visit_03_results",
+          "ward_028:lab:visit_04_results",
+          "ward_028:tx:visit_01_treatment",
+          "ward_028:tx:visit_02_treatment",
+          "ward_028:tx:visit_03_treatment",
+          "ward_028:tx:visit_04_treatment"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_028:ehr:longitudinal_terminal",
+          "ward_028:ehr:visit_04_outcome"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_028",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_028_s2_node_001_completed": true,
+            "ward_028_s2_node_002_completed": true,
+            "ward_028_s2_node_003_completed": true,
+            "ward_028_s2_node_004_completed": true,
+            "ward_028_s2_node_005_completed": true,
+            "ward_028_s2_node_006_completed": true,
+            "ward_028_s2_node_007_completed": true,
+            "ward_028_s2_node_008_completed": true,
+            "ward_028_s2_node_009_completed": true,
+            "ward_028_s2_node_010_completed": true,
+            "ward_028_s2_node_011_completed": true,
+            "ward_028_s2_node_012_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 62,
+            "initial_time": "2124-01-11T10:15:30+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-07-06T17:13:28+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_028:ehr:visit_01_admission",
+            "ward_028:ehr:visit_01_outcome",
+            "ward_028:ehr:visit_02_admission",
+            "ward_028:ehr:visit_02_outcome",
+            "ward_028:ehr:visit_03_admission",
+            "ward_028:ehr:visit_03_outcome",
+            "ward_028:ehr:visit_04_admission",
+            "ward_028:lab:visit_01_results",
+            "ward_028:lab:visit_02_results",
+            "ward_028:lab:visit_03_results",
+            "ward_028:lab:visit_04_results",
+            "ward_028:tx:visit_01_treatment",
+            "ward_028:tx:visit_02_treatment",
+            "ward_028:tx:visit_03_treatment",
+            "ward_028:tx:visit_04_treatment"
+          ]
+        },
+        "public_snapshot_sha256": "75b8d7dc9ad256f87738107726dc5c7bea56af531f4fba59bcf97651b57e7733",
+        "public_time": "2124-07-06T17:13:28+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 12
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_028:ehr:visit_01_admission",
+            "interpretation_en": "The first admission documents hospitalization for maintenance chemotherapy for malignant neoplasm, with gastric malignancy, history of cerebral infarction, and hypertension.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_01_outcome",
+            "interpretation_en": "The first hospitalization outcome documents maintenance chemotherapy for malignant neoplasm and an improved treatment outcome.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_02_admission",
+            "interpretation_en": "The second admission documents continued maintenance chemotherapy for malignant neoplasm with gastric malignancy, history of cerebral infarction, and hypertension.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_02_outcome",
+            "interpretation_en": "The second hospitalization outcome records an improved treatment outcome.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_03_admission",
+            "interpretation_en": "The third admission documents continued maintenance chemotherapy for malignant neoplasm.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_03_outcome",
+            "interpretation_en": "The third hospitalization outcome records an improved treatment outcome.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_04_admission",
+            "interpretation_en": "The fourth admission documents continued maintenance chemotherapy and leukopenia.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_028:ehr:visit_04_outcome",
+            "interpretation_en": "The most recent hospitalization outcome documents maintenance chemotherapy for malignant neoplasm and an improved treatment outcome.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_028:lab:visit_01_results",
+            "interpretation_en": "The first hospitalization laboratory summary shows anemia-related and microcytic-hypochromic abnormalities, low ferritin, and elevated cystatin C.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:lab:visit_02_results",
+            "interpretation_en": "The second hospitalization laboratory summary shows persistent mild anemia, low ferritin, elevated cystatin C, and abnormalities in some bile-acid-related measures.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:lab:visit_03_results",
+            "interpretation_en": "The third hospitalization laboratory summary shows mild anemia, low ferritin, elevated cystatin C, and elevated uric acid, alkaline phosphatase, and abnormal prothrombin.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:lab:visit_04_results",
+            "interpretation_en": "The fourth hospitalization laboratory summary is accompanied by leukopenia documented at admission and shows mild anemia, low ferritin, elevated total bilirubin, elevated uric acid, and elevated cystatin C. Complete leukocyte and neutrophil values are not provided in the summary.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_028:tx:visit_01_treatment",
+            "interpretation_en": "Intravenous administration of chemotherapeutic drugs was documented during the first hospitalization.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:tx:visit_02_treatment",
+            "interpretation_en": "Intravenous administration of chemotherapeutic drugs was documented during the second hospitalization.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:tx:visit_03_treatment",
+            "interpretation_en": "Intravenous administration of chemotherapeutic drugs was documented during the third hospitalization.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_028:tx:visit_04_treatment",
+            "interpretation_en": "Intravenous administration of chemotherapeutic drugs was documented during the fourth hospitalization, indicating that the current maintenance chemotherapy was administered.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_013_claim_001"
+            ],
+            "evidence_id": "ward_028:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_diagnoses_001",
+              "ward_028_cp_013_state_diagnoses_002",
+              "ward_028_cp_013_state_diagnoses_003",
+              "ward_028_cp_013_state_diagnoses_004",
+              "ward_028_cp_013_state_critical_facts_to_retain_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_013_claim_002"
+            ],
+            "evidence_id": "ward_028:ehr:visit_01_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_013_claim_001"
+            ],
+            "evidence_id": "ward_028:ehr:visit_02_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_diagnoses_001",
+              "ward_028_cp_013_state_diagnoses_002",
+              "ward_028_cp_013_state_diagnoses_003",
+              "ward_028_cp_013_state_diagnoses_004",
+              "ward_028_cp_013_state_critical_facts_to_retain_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_013_claim_002"
+            ],
+            "evidence_id": "ward_028:ehr:visit_02_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_013_claim_001"
+            ],
+            "evidence_id": "ward_028:ehr:visit_03_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_diagnoses_001",
+              "ward_028_cp_013_state_diagnoses_002",
+              "ward_028_cp_013_state_diagnoses_003",
+              "ward_028_cp_013_state_diagnoses_004",
+              "ward_028_cp_013_state_critical_facts_to_retain_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_013_claim_002"
+            ],
+            "evidence_id": "ward_028:ehr:visit_03_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_028_cp_013_action_001",
+              "ward_028_cp_013_action_002",
+              "ward_028_cp_013_action_003"
+            ],
+            "claim_ids": [
+              "ward_028_cp_013_claim_001",
+              "ward_028_cp_013_claim_003"
+            ],
+            "evidence_id": "ward_028:ehr:visit_04_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_diagnoses_001",
+              "ward_028_cp_013_state_diagnoses_002",
+              "ward_028_cp_013_state_diagnoses_003",
+              "ward_028_cp_013_state_diagnoses_004",
+              "ward_028_cp_013_state_active_problems_001",
+              "ward_028_cp_013_state_blockers_001",
+              "ward_028_cp_013_state_critical_facts_to_retain_001",
+              "ward_028_cp_013_state_critical_facts_to_retain_002",
+              "ward_028_cp_013_state_facts_to_retract_or_correct_002",
+              "ward_028_cp_013_state_required_delta_from_previous_checkpoint_001",
+              "ward_028_cp_013_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_028_cp_013_action_003"
+            ],
+            "claim_ids": [
+              "ward_028_cp_013_claim_002"
+            ],
+            "evidence_id": "ward_028:ehr:visit_04_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_critical_facts_to_retain_004",
+              "ward_028_cp_013_state_facts_to_retract_or_correct_001",
+              "ward_028_cp_013_state_required_delta_from_previous_checkpoint_001",
+              "ward_028_cp_013_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_013_claim_004"
+            ],
+            "evidence_id": "ward_028:lab:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_active_problems_002",
+              "ward_028_cp_013_state_active_problems_003"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_013_claim_004"
+            ],
+            "evidence_id": "ward_028:lab:visit_02_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_active_problems_002",
+              "ward_028_cp_013_state_active_problems_003"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_013_claim_004"
+            ],
+            "evidence_id": "ward_028:lab:visit_03_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_active_problems_002",
+              "ward_028_cp_013_state_active_problems_003"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_028_cp_013_action_001",
+              "ward_028_cp_013_action_002",
+              "ward_028_cp_013_action_003"
+            ],
+            "claim_ids": [
+              "ward_028_cp_013_claim_003",
+              "ward_028_cp_013_claim_004"
+            ],
+            "evidence_id": "ward_028:lab:visit_04_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_active_problems_001",
+              "ward_028_cp_013_state_active_problems_002",
+              "ward_028_cp_013_state_active_problems_003",
+              "ward_028_cp_013_state_active_problems_004",
+              "ward_028_cp_013_state_active_problems_005",
+              "ward_028_cp_013_state_blockers_001",
+              "ward_028_cp_013_state_blockers_002",
+              "ward_028_cp_013_state_critical_facts_to_retain_002",
+              "ward_028_cp_013_state_critical_facts_to_retain_003",
+              "ward_028_cp_013_state_facts_to_retract_or_correct_002",
+              "ward_028_cp_013_state_required_delta_from_previous_checkpoint_001",
+              "ward_028_cp_013_state_treatment_readiness_001",
+              "ward_028_cp_013_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_013_claim_005"
+            ],
+            "evidence_id": "ward_028:tx:visit_01_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_critical_facts_to_retain_005"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_013_claim_005"
+            ],
+            "evidence_id": "ward_028:tx:visit_02_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_critical_facts_to_retain_005"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_028_cp_013_claim_005"
+            ],
+            "evidence_id": "ward_028:tx:visit_03_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_critical_facts_to_retain_005"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_028_cp_013_action_003"
+            ],
+            "claim_ids": [
+              "ward_028_cp_013_claim_005"
+            ],
+            "evidence_id": "ward_028:tx:visit_04_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_028_cp_013_state_critical_facts_to_retain_005",
+              "ward_028_cp_013_state_treatment_readiness_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "gastric cancer with maintenance chemotherapy",
+              "maintenance antineoplastic therapy for gastric malignancy"
+            ],
+            "canonical_en": "The patient has gastric malignancy and is receiving maintenance chemotherapy for malignant neoplasm.",
+            "claim_id": "ward_028_cp_013_claim_001",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:ehr:visit_02_admission",
+              "ward_028:ehr:visit_03_admission",
+              "ward_028:ehr:visit_04_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:ehr:visit_01_admission",
+              "ward_028:ehr:visit_02_admission",
+              "ward_028:ehr:visit_03_admission",
+              "ward_028:ehr:visit_04_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "improved treatment outcome",
+              "clinical improvement documented at discharge"
+            ],
+            "canonical_en": "The treatment outcomes of the documented hospitalizations, including the most recent one, were recorded as improved.",
+            "claim_id": "ward_028_cp_013_claim_002",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_01_outcome",
+              "ward_028:ehr:visit_02_outcome",
+              "ward_028:ehr:visit_03_outcome",
+              "ward_028:ehr:visit_04_outcome"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:ehr:visit_01_outcome",
+              "ward_028:ehr:visit_02_outcome",
+              "ward_028:ehr:visit_03_outcome",
+              "ward_028:ehr:visit_04_outcome"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "documented leukopenia with unavailable severity data",
+              "leukopenia, severity not gradable from the available summary"
+            ],
+            "canonical_en": "Current records document leukopenia, but the summary does not provide complete leukocyte or neutrophil data sufficient to grade its severity.",
+            "claim_id": "ward_028_cp_013_claim_003",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:lab:visit_04_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:lab:visit_04_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "persistent anemia and iron depletion markers with elevated cystatin C",
+              "laboratory abnormalities including anemia, low ferritin, hyperuricemia, and elevated bilirubin"
+            ],
+            "canonical_en": "Current and prior laboratory summaries repeatedly document mild anemia, low ferritin, and elevated cystatin C; the current summary also documents elevated total bilirubin and uric acid.",
+            "claim_id": "ward_028_cp_013_claim_004",
+            "linked_evidence_ids": [
+              "ward_028:lab:visit_01_results",
+              "ward_028:lab:visit_02_results",
+              "ward_028:lab:visit_03_results",
+              "ward_028:lab:visit_04_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:lab:visit_01_results",
+              "ward_028:lab:visit_02_results",
+              "ward_028:lab:visit_03_results",
+              "ward_028:lab:visit_04_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "four documented inpatient chemotherapy administrations",
+              "intravenous antineoplastic treatment delivered"
+            ],
+            "canonical_en": "Intravenous chemotherapeutic drug administration was documented during all four hospitalizations, indicating that maintenance chemotherapy was administered.",
+            "claim_id": "ward_028_cp_013_claim_005",
+            "linked_evidence_ids": [
+              "ward_028:tx:visit_01_treatment",
+              "ward_028:tx:visit_02_treatment",
+              "ward_028:tx:visit_03_treatment",
+              "ward_028:tx:visit_04_treatment"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_028:tx:visit_01_treatment",
+              "ward_028:tx:visit_02_treatment",
+              "ward_028:tx:visit_03_treatment",
+              "ward_028:tx:visit_04_treatment"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "repeat or review CBC with differential",
+              "evaluate leukopenia and infection risk"
+            ],
+            "action_id": "ward_028_cp_013_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Review the complete current blood count, especially the leukocyte and neutrophil counts, and assess infection risk together with clinical symptoms.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before discharge or deciding on the next cycle of chemotherapy",
+            "indication_en": "The current inpatient record and laboratory summary suggest leukopenia, but complete white-blood-cell and neutrophil data are not provided.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:lab:visit_04_results"
+            ],
+            "prerequisites_en": [
+              "Obtain the current complete blood count and differential count"
+            ],
+            "problem_en": "Leukopenia is present and its severity is unclear.",
+            "target_and_laterality_en": "Systemic; laterality not applicable."
+          },
+          {
+            "acceptable_aliases_en": [
+              "review liver and kidney function before further chemotherapy",
+              "assess chemotherapy readiness based on organ function"
+            ],
+            "action_id": "ward_028_cp_013_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Review hepatic and renal function and the related laboratory abnormalities, and have the clinical team determine whether subsequent chemotherapy requires adjustment or deferral.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before the next cycle of chemotherapy and at discharge follow-up",
+            "indication_en": "The current laboratory summary documents multiple abnormalities that may affect treatment safety, but does not provide complete organ function information.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:lab:visit_04_results"
+            ],
+            "prerequisites_en": [
+              "Obtain complete liver and kidney function, blood cell counts, and clinical assessment."
+            ],
+            "problem_en": "Elevated cystatin C, total bilirubin, and uric acid, accompanied by leukopenia.",
+            "target_and_laterality_en": "Systemic; laterality not applicable."
+          },
+          {
+            "acceptable_aliases_en": [
+              "arrange oncology follow-up and laboratory monitoring",
+              "confirm discharge and continuity plan"
+            ],
+            "action_id": "ward_028_cp_013_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Verify the discharge plan and continuity-of-care follow-up, including timing of repeat blood counts, hepatic and renal tests, and oncology review.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before discharge and follow up according to the oncology plan",
+            "indication_en": "The recorded improvement needs to be linked with subsequent laboratory monitoring and oncology management.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_04_outcome",
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:lab:visit_04_results",
+              "ward_028:tx:visit_04_treatment"
+            ],
+            "prerequisites_en": [
+              "The clinical team confirms that there are currently no acute issues requiring continued hospitalization."
+            ],
+            "problem_en": "The most recent treatment outcome was recorded as improvement, but hematological and biochemical abnormalities remain",
+            "target_and_laterality_en": "Systemic; laterality not applicable."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Leukopenia, with severity not graded by the visible summary",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission",
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_013_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Mild anemia and low ferritin.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results",
+                "ward_028:lab:visit_02_results",
+                "ward_028:lab:visit_03_results",
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_013_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Elevated cystatin C",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_01_results",
+                "ward_028:lab:visit_02_results",
+                "ward_028:lab:visit_03_results",
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_013_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Elevated total bilirubin.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_013_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Elevated uric acid.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_013_state_active_problems_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Complete white blood cell count and neutrophil count are lacking, making it impossible to determine the severity of leukopenia.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission",
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_013_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is insufficient information to determine whether current hepatic and renal function abnormalities affect subsequent treatment.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_013_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Gastric malignant neoplasm and maintenance chemotherapy background",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:ehr:visit_02_admission",
+                "ward_028:ehr:visit_03_admission",
+                "ward_028:ehr:visit_04_admission"
+              ],
+              "state_id": "ward_028_cp_013_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The fourth hospitalization record documents leukopenia",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission",
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_013_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current laboratory summary contains abnormalities of anemia, low ferritin, cystatin C, total bilirubin, and uric acid.",
+              "linked_evidence_ids": [
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_013_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The most recent treatment outcome is recorded as improvement.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_outcome"
+              ],
+              "state_id": "ward_028_cp_013_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "All four hospitalizations documented intravenous injection of chemotherapy drugs",
+              "linked_evidence_ids": [
+                "ward_028:tx:visit_01_treatment",
+                "ward_028:tx:visit_02_treatment",
+                "ward_028:tx:visit_03_treatment",
+                "ward_028:tx:visit_04_treatment"
+              ],
+              "state_id": "ward_028_cp_013_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Gastric malignancy.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:ehr:visit_02_admission",
+                "ward_028:ehr:visit_03_admission",
+                "ward_028:ehr:visit_04_admission"
+              ],
+              "state_id": "ward_028_cp_013_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Maintenance chemotherapy for malignant neoplasm.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:ehr:visit_02_admission",
+                "ward_028:ehr:visit_03_admission",
+                "ward_028:ehr:visit_04_admission"
+              ],
+              "state_id": "ward_028_cp_013_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "History of cerebral infarction",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:ehr:visit_02_admission",
+                "ward_028:ehr:visit_03_admission",
+                "ward_028:ehr:visit_04_admission"
+              ],
+              "state_id": "ward_028_cp_013_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Hypertension",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_admission",
+                "ward_028:ehr:visit_02_admission",
+                "ward_028:ehr:visit_03_admission",
+                "ward_028:ehr:visit_04_admission"
+              ],
+              "state_id": "ward_028_cp_013_state_diagnoses_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Do not interpret improvement in treatment outcome as tumor cure or complete remission",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_01_outcome",
+                "ward_028:ehr:visit_02_outcome",
+                "ward_028:ehr:visit_03_outcome",
+                "ward_028:ehr:visit_04_outcome"
+              ],
+              "state_id": "ward_028_cp_013_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Must not infer the severity of leukopenia or infection status in the absence of specific white blood cell and neutrophil values",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_admission",
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_013_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "The outcome of the most recent inpatient treatment was recorded as improved; this record alone should not currently be used to confirm complete tumor remission or completion of all antitumor treatment.",
+            "linked_evidence_ids": [
+              "ward_028:ehr:visit_04_outcome",
+              "ward_028:ehr:visit_04_admission",
+              "ward_028:lab:visit_04_results"
+            ],
+            "state_id": "ward_028_cp_013_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "The fourth hospitalization outcome documenting improvement and the fourth hospitalization laboratory summary are newly available; current records add leukopenia and several laboratory abnormalities.",
+              "linked_evidence_ids": [
+                "ward_028:ehr:visit_04_outcome",
+                "ward_028:ehr:visit_04_admission",
+                "ward_028:lab:visit_04_results"
+              ],
+              "state_id": "ward_028_cp_013_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Administration of this intravenous chemotherapy has been documented; suitability for the next-cycle treatment still needs to be determined in conjunction with blood cell counts, liver and renal function, and clinical assessment.",
+            "linked_evidence_ids": [
+              "ward_028:tx:visit_04_treatment",
+              "ward_028:lab:visit_04_results"
+            ],
+            "state_id": "ward_028_cp_013_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Do not confirm safety of subsequent chemotherapy or exclude severe myelosuppression without verifying leukocyte and neutrophil counts",
+            "Recorded improvement must not be interpreted as tumor cure or complete remission."
+          ],
+          "critical_omission_rules_en": [
+            "Omission of assessment of leukopenia severity and infection risk",
+            "Omission of review of cystatin C, total bilirubin, and uric acid abnormalities.",
+            "Omission of specific post-discharge hematologic, biochemical, and oncology follow-up arrangements"
+          ],
+          "preliminary_risk_triggers_en": []
+        },
+        "stopping": {
+          "decision": "safe_to_discharge_or_follow_up",
+          "rationale_en": "The available record documents an improved outcome from the most recent hospitalization and does not show evidence requiring continued hospitalization. Therefore, after the clinical team confirms no acute instability and completes discharge handoff, discharge with close follow-up may be reasonable. However, leukopenia and several laboratory abnormalities remain incompletely characterized, so medical management should not stop and the next chemotherapy cycle should not be considered safe without review.",
+          "remaining_blockers_en": [
+            "Complete white blood cell and neutrophil counts are not seen in the current summary.",
+            "Complete liver and kidney function and hematologic safety before subsequent chemotherapy still require confirmation by the clinical team."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_028_cp_013",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_028:ehr:visit_01_admission",
+          "ward_028:ehr:visit_01_outcome",
+          "ward_028:ehr:visit_02_admission",
+          "ward_028:ehr:visit_02_outcome",
+          "ward_028:ehr:visit_03_admission",
+          "ward_028:ehr:visit_03_outcome",
+          "ward_028:ehr:visit_04_admission",
+          "ward_028:ehr:visit_04_outcome",
+          "ward_028:lab:visit_01_results",
+          "ward_028:lab:visit_02_results",
+          "ward_028:lab:visit_03_results",
+          "ward_028:lab:visit_04_results",
+          "ward_028:tx:visit_01_treatment",
+          "ward_028:tx:visit_02_treatment",
+          "ward_028:tx:visit_03_treatment",
+          "ward_028:tx:visit_04_treatment"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_028:ehr:longitudinal_terminal"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_028",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_028_s2_node_001_completed": true,
+            "ward_028_s2_node_002_completed": true,
+            "ward_028_s2_node_003_completed": true,
+            "ward_028_s2_node_004_completed": true,
+            "ward_028_s2_node_005_completed": true,
+            "ward_028_s2_node_006_completed": true,
+            "ward_028_s2_node_007_completed": true,
+            "ward_028_s2_node_008_completed": true,
+            "ward_028_s2_node_009_completed": true,
+            "ward_028_s2_node_010_completed": true,
+            "ward_028_s2_node_011_completed": true,
+            "ward_028_s2_node_012_completed": true,
+            "ward_028_s2_node_013_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 62,
+            "initial_time": "2124-01-11T10:15:30+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-07-08T00:32:27+08:00",
+          "stage": "S3",
+          "visible_evidence_ids": [
+            "ward_028:ehr:visit_01_admission",
+            "ward_028:ehr:visit_01_outcome",
+            "ward_028:ehr:visit_02_admission",
+            "ward_028:ehr:visit_02_outcome",
+            "ward_028:ehr:visit_03_admission",
+            "ward_028:ehr:visit_03_outcome",
+            "ward_028:ehr:visit_04_admission",
+            "ward_028:ehr:visit_04_outcome",
+            "ward_028:lab:visit_01_results",
+            "ward_028:lab:visit_02_results",
+            "ward_028:lab:visit_03_results",
+            "ward_028:lab:visit_04_results",
+            "ward_028:tx:visit_01_treatment",
+            "ward_028:tx:visit_02_treatment",
+            "ward_028:tx:visit_03_treatment",
+            "ward_028:tx:visit_04_treatment"
+          ]
+        },
+        "public_snapshot_sha256": "ca9a16731d6db93b1b33210c8be52ed61e0d1a1d65a3bd452654d69f21904220",
+        "public_time": "2124-07-08T00:32:27+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 13
+    }
+  ],
+  "milestone_candidates": [
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Inpatient records consistently document diagnoses of gastric malignant tumor and maintenance chemotherapy for malignant tumor"
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_028_ms_01",
+      "milestone_type": "diagnostic_closure",
+      "name_en": "Diagnostic closure",
+      "partial_criteria_en": [
+        "The diagnosis appears repeatedly in multiple hospitalization records, but current data do not provide complete pathology, staging, or efficacy assessment."
+      ],
+      "safety_invalidation_rules_en": [
+        "New evidence inconsistent with the primary diagnosis appears and is clinically confirmed."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Complete review of current blood counts, liver and kidney function, and relevant abnormalities, and have the clinical team confirm conditions for subsequent treatment."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_028_ms_02",
+      "milestone_type": "staging_or_treatment_readiness",
+      "name_en": "Staging or treatment readiness",
+      "partial_criteria_en": [
+        "Intravenous chemotherapy has been administered during this hospitalization, but the severity of leukopenia and complete organ function data remain unclear"
+      ],
+      "safety_invalidation_rules_en": [
+        "Identify severe hematologic or organ-function abnormalities requiring treatment to be deferred or adjusted"
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "There is evidence that the established definitive antitumor treatment plan has been completed, and post-treatment assessment has been completed."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_028_ms_03",
+      "milestone_type": "definitive_intervention",
+      "name_en": "Definitive intervention",
+      "partial_criteria_en": [
+        "All four hospitalizations record that intravenous chemotherapy was administered, but the complete treatment regimen, planned endpoint, or treatment-completion assessment has not been disclosed."
+      ],
+      "safety_invalidation_rules_en": [
+        "Evidence suggesting treatment-related severe toxicity has appeared without completion of safe management"
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Complete standardized efficacy or post-treatment status assessment and formulate a subsequent management plan."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_028_ms_04",
+      "milestone_type": "postoperative_or_response_management",
+      "name_en": "Postoperative or response management",
+      "partial_criteria_en": [
+        "The most recent and previous hospitalization outcomes are both recorded as improved, but no objective tumor response assessment is provided."
+      ],
+      "safety_invalidation_rules_en": [
+        "Disease progression or unaddressed severe treatment toxicity is identified."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Confirm that there are no acute issues requiring continued hospitalization, complete discharge handoff, and clarify complete blood count, biochemistry, and oncology follow-up arrangements"
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_028_ms_05",
+      "milestone_type": "disposition_and_continuity",
+      "name_en": "Disposition and continuity of care",
+      "partial_criteria_en": [
+        "The most recent hospitalization outcome is recorded as improved and a pre-discharge outcome record appears, but the current summary does not fully present the follow-up plan and laboratory re-examination arrangements."
+      ],
+      "safety_invalidation_rules_en": [
+        "There is an unevaluated acute unstable condition or inability to safely conduct discharge monitoring."
+      ]
+    }
+  ],
+  "normalized_evidence": [
+    {
+      "available_time": "2124-01-11T11:20:43+08:00",
+      "available_time_utc": "2124-01-11T03:20:43Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-01-11T10:15:30+08:00",
+      "clinical_time_utc": "2124-01-11T02:15:30Z",
+      "content_summary": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the stomach, personal history of cerebral infarction, hypertension.",
+      "evidence_id": "ward_028:ehr:visit_01_admission",
+      "laterality": null,
+      "module": "admission_documents",
+      "raw_content": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the stomach, personal history of cerebral infarction, hypertension.",
+      "record_kind": "deidentified_inpatient_admission_summary",
+      "structured_value": null,
+      "title": "Admission Assessment for Hospitalization No. 1",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-11T16:46:51+08:00",
+      "available_time_utc": "2124-01-11T08:46:51Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-01-11T16:46:51+08:00",
+      "clinical_time_utc": "2124-01-11T08:46:51Z",
+      "content_summary": "The structured data from this hospitalization include 10 laboratory reports and 94 results. Abnormal results documented in the summary include: red cell distribution width 25.4％ (above the upper limit of the reference range); mean corpuscular volume 81.5fl (below the lower limit of the reference range); mean corpuscular hemoglobin 25.8pg (below the lower limit of the reference range); hemoglobin 123g/L (below the lo…",
+      "evidence_id": "ward_028:lab:visit_01_results",
+      "laterality": null,
+      "module": "laboratory_results",
+      "raw_content": "The structured data from this hospitalization include 10 laboratory reports and 94 results. Abnormal results documented in the summary include: red cell distribution width 25.4％ (above the upper limit of the reference range); mean corpuscular volume 81.5fl (below the lower limit of the reference range); mean corpuscular hemoglobin 25.8pg (below the lower limit of the reference range); hemoglobin 123g/L (below the lower limit of the reference range); hematocrit 0.388％ (below the lower limit of the reference range); cystatin C 1.12mg/L (above the upper limit of the reference range); heparin-binding protein 24.8ng/mL (above the upper limit of the reference range); ferritin 9.1ng/mL (below the lower limit of the reference range).",
+      "record_kind": "deidentified_laboratory_summary",
+      "structured_value": null,
+      "title": "Laboratory Results from the 1th Hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-11T20:02:31+08:00",
+      "available_time_utc": "2124-01-11T12:02:31Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-01-11T20:02:31+08:00",
+      "clinical_time_utc": "2124-01-11T12:02:31Z",
+      "content_summary": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "evidence_id": "ward_028:tx:visit_01_treatment",
+      "laterality": null,
+      "module": "antineoplastic_treatments",
+      "raw_content": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "record_kind": "deidentified_antineoplastic_treatment_summary",
+      "structured_value": null,
+      "title": "Treatment during the 1th hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-02-05T10:55:29+08:00",
+      "available_time_utc": "2124-02-05T02:55:29Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-02-05T09:48:56+08:00",
+      "clinical_time_utc": "2124-02-05T01:48:56Z",
+      "content_summary": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the stomach, personal history of cerebral infarction, hypertension.",
+      "evidence_id": "ward_028:ehr:visit_02_admission",
+      "laterality": null,
+      "module": "admission_documents",
+      "raw_content": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the stomach, personal history of cerebral infarction, hypertension.",
+      "record_kind": "deidentified_inpatient_admission_summary",
+      "structured_value": null,
+      "title": "Admission assessment for hospitalization No. 2",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-12T08:00:00+08:00",
+      "available_time_utc": "2124-01-12T00:00:00Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-01-12T08:00:00+08:00",
+      "clinical_time_utc": "2124-01-12T00:00:00Z",
+      "content_summary": "Discharge diagnosis: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "evidence_id": "ward_028:ehr:visit_01_outcome",
+      "laterality": null,
+      "module": "outcome_documents",
+      "raw_content": "Discharge diagnosis: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "record_kind": "deidentified_inpatient_outcome_summary",
+      "structured_value": null,
+      "title": "Discharge outcome of the 1th hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-02-05T16:28:15+08:00",
+      "available_time_utc": "2124-02-05T08:28:15Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-02-05T16:28:15+08:00",
+      "clinical_time_utc": "2124-02-05T08:28:15Z",
+      "content_summary": "The structured data from this hospitalization include 8 laboratory reports and 100 results. Abnormal results recorded in the summary include: bile acids 18.1μmol/L (above the upper limit of the reference range); red blood cell distribution width 26.6％ (above the upper limit of the reference range); mean corpuscular hemoglobin 26.6pg (below the lower limit of the reference range); hemoglobin 124g/L (below the lower l…",
+      "evidence_id": "ward_028:lab:visit_02_results",
+      "laterality": null,
+      "module": "laboratory_results",
+      "raw_content": "The structured data from this hospitalization include 8 laboratory reports and 100 results. Abnormal results recorded in the summary include: bile acids 18.1μmol/L (above the upper limit of the reference range); red blood cell distribution width 26.6％ (above the upper limit of the reference range); mean corpuscular hemoglobin 26.6pg (below the lower limit of the reference range); hemoglobin 124g/L (below the lower limit of the reference range); hematocrit 0.384％ (below the lower limit of the reference range); basophils % 1.2％ (above the upper limit of the reference range); heparin-binding protein 44.2ng/mL (above the upper limit of the reference range); ferritin 9.1ng/mL (below the lower limit of the reference range); cystatin C 1.35mg/L (above the upper limit of the reference range); glycocholic acid 3.0μg/mL (above the upper limit of the reference range).",
+      "record_kind": "deidentified_laboratory_summary",
+      "structured_value": null,
+      "title": "Laboratory Results from Hospitalization No. 2",
+      "unit": null
+    },
+    {
+      "available_time": "2124-02-05T19:47:54+08:00",
+      "available_time_utc": "2124-02-05T11:47:54Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-02-05T19:47:54+08:00",
+      "clinical_time_utc": "2124-02-05T11:47:54Z",
+      "content_summary": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "evidence_id": "ward_028:tx:visit_02_treatment",
+      "laterality": null,
+      "module": "antineoplastic_treatments",
+      "raw_content": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "record_kind": "deidentified_antineoplastic_treatment_summary",
+      "structured_value": null,
+      "title": "Treatment During the 2th Hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-03-13T10:17:31+08:00",
+      "available_time_utc": "2124-03-13T02:17:31Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-03-13T09:07:23+08:00",
+      "clinical_time_utc": "2124-03-13T01:07:23Z",
+      "content_summary": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the stomach, personal history of cerebral infarction, hypertension.",
+      "evidence_id": "ward_028:ehr:visit_03_admission",
+      "laterality": null,
+      "module": "admission_documents",
+      "raw_content": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the stomach, personal history of cerebral infarction, hypertension.",
+      "record_kind": "deidentified_inpatient_admission_summary",
+      "structured_value": null,
+      "title": "Admission Assessment for the 3th Hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-02-06T08:00:00+08:00",
+      "available_time_utc": "2124-02-06T00:00:00Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-02-06T08:00:00+08:00",
+      "clinical_time_utc": "2124-02-06T00:00:00Z",
+      "content_summary": "Discharge diagnosis: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "evidence_id": "ward_028:ehr:visit_02_outcome",
+      "laterality": null,
+      "module": "outcome_documents",
+      "raw_content": "Discharge diagnosis: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "record_kind": "deidentified_inpatient_outcome_summary",
+      "structured_value": null,
+      "title": "Discharge outcome of hospitalization No. 2",
+      "unit": null
+    },
+    {
+      "available_time": "2124-03-13T16:08:10+08:00",
+      "available_time_utc": "2124-03-13T08:08:10Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-03-13T16:08:10+08:00",
+      "clinical_time_utc": "2124-03-13T08:08:10Z",
+      "content_summary": "The structured data from this hospitalization include 8 laboratory reports and 100 results. Abnormal results documented in the summary include: heparin-binding protein 33.5ng/mL (above the upper limit of the reference range); hematocrit 0.379％ (below the lower limit of the reference range); hemoglobin 122g/L (below the lower limit of the reference range); red cell distribution width 23.8％ (above the upper limit of t…",
+      "evidence_id": "ward_028:lab:visit_03_results",
+      "laterality": null,
+      "module": "laboratory_results",
+      "raw_content": "The structured data from this hospitalization include 8 laboratory reports and 100 results. Abnormal results documented in the summary include: heparin-binding protein 33.5ng/mL (above the upper limit of the reference range); hematocrit 0.379％ (below the lower limit of the reference range); hemoglobin 122g/L (below the lower limit of the reference range); red cell distribution width 23.8％ (above the upper limit of the reference range); cystatin C 1.31mg/L (above the upper limit of the reference range); uric acid 447.5μmol/L (above the upper limit of the reference range); alkaline phosphatase 148U/L (above the upper limit of the reference range); abnormal prothrombin 40.83mAU/mL (above the upper limit of the reference range); ferritin 8.1ng/mL (below the lower limit of the reference range).",
+      "record_kind": "deidentified_laboratory_summary",
+      "structured_value": null,
+      "title": "Laboratory results from the 3th hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-03-13T19:38:33+08:00",
+      "available_time_utc": "2124-03-13T11:38:33Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-03-13T19:38:33+08:00",
+      "clinical_time_utc": "2124-03-13T11:38:33Z",
+      "content_summary": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "evidence_id": "ward_028:tx:visit_03_treatment",
+      "laterality": null,
+      "module": "antineoplastic_treatments",
+      "raw_content": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "record_kind": "deidentified_antineoplastic_treatment_summary",
+      "structured_value": null,
+      "title": "The 3th inpatient treatment",
+      "unit": null
+    },
+    {
+      "available_time": "2124-07-05T13:23:16+08:00",
+      "available_time_utc": "2124-07-05T05:23:16Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-07-05T09:54:30+08:00",
+      "clinical_time_utc": "2124-07-05T01:54:30Z",
+      "content_summary": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the stomach, personal history of cerebral infarction, hypertension, and leukopenia.",
+      "evidence_id": "ward_028:ehr:visit_04_admission",
+      "laterality": null,
+      "module": "admission_documents",
+      "raw_content": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the stomach, personal history of cerebral infarction, hypertension, and leukopenia.",
+      "record_kind": "deidentified_inpatient_admission_summary",
+      "structured_value": null,
+      "title": "Admission assessment for the 4th hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-03-14T08:30:00+08:00",
+      "available_time_utc": "2124-03-14T00:30:00Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-03-14T08:30:00+08:00",
+      "clinical_time_utc": "2124-03-14T00:30:00Z",
+      "content_summary": "Discharge diagnosis: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "evidence_id": "ward_028:ehr:visit_03_outcome",
+      "laterality": null,
+      "module": "outcome_documents",
+      "raw_content": "Discharge diagnosis: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "record_kind": "deidentified_inpatient_outcome_summary",
+      "structured_value": null,
+      "title": "Discharge outcome of hospitalization number 3",
+      "unit": null
+    },
+    {
+      "available_time": "2124-07-06T06:47:09+08:00",
+      "available_time_utc": "2124-07-05T22:47:09Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-07-06T06:47:09+08:00",
+      "clinical_time_utc": "2124-07-05T22:47:09Z",
+      "content_summary": "The structured data for this hospitalization include 8 laboratory reports and 100 results. Abnormal results recorded in the summary include: heparin-binding protein 28.11ng/mL (above the upper limit of the reference range); hematocrit 0.396％ (below the lower limit of the reference range); hemoglobin 129g/L (below the lower limit of the reference range); red blood cell distribution width 20.3％ (above the upper limit …",
+      "evidence_id": "ward_028:lab:visit_04_results",
+      "laterality": null,
+      "module": "laboratory_results",
+      "raw_content": "The structured data for this hospitalization include 8 laboratory reports and 100 results. Abnormal results recorded in the summary include: heparin-binding protein 28.11ng/mL (above the upper limit of the reference range); hematocrit 0.396％ (below the lower limit of the reference range); hemoglobin 129g/L (below the lower limit of the reference range); red blood cell distribution width 20.3％ (above the upper limit of the reference range); ferritin 8.5ng/mL (below the lower limit of the reference range); total bilirubin 24.5μmol/L (above the upper limit of the reference range); uric acid 517.3μmol/L (above the upper limit of the reference range); cystatin C 1.56mg/L (above the upper limit of the reference range).",
+      "record_kind": "deidentified_laboratory_summary",
+      "structured_value": null,
+      "title": "Laboratory Results from Hospitalization No. 4",
+      "unit": null
+    },
+    {
+      "available_time": "2124-07-06T17:13:28+08:00",
+      "available_time_utc": "2124-07-06T09:13:28Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-07-06T17:13:28+08:00",
+      "clinical_time_utc": "2124-07-06T09:13:28Z",
+      "content_summary": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "evidence_id": "ward_028:tx:visit_04_treatment",
+      "laterality": null,
+      "module": "antineoplastic_treatments",
+      "raw_content": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "record_kind": "deidentified_antineoplastic_treatment_summary",
+      "structured_value": null,
+      "title": "Inpatient Treatment No. 4",
+      "unit": null
+    },
+    {
+      "available_time": "2124-07-08T00:32:27+08:00",
+      "available_time_utc": "2124-07-07T16:32:27Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-07-08T07:30:00+08:00",
+      "clinical_time_utc": "2124-07-07T23:30:00Z",
+      "content_summary": "Discharge diagnosis from the most recent hospitalization: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "evidence_id": "ward_028:ehr:visit_04_outcome",
+      "laterality": null,
+      "module": "outcome_documents",
+      "raw_content": "Discharge diagnosis from the most recent hospitalization: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "record_kind": "deidentified_inpatient_outcome_summary",
+      "structured_value": null,
+      "title": "Outcome before discharge from the 4th hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-07-08T07:30:00+08:00",
+      "available_time_utc": "2124-07-07T23:30:00Z",
+      "case_id": "ward_028",
+      "clinical_time": "2124-07-08T07:30:00+08:00",
+      "clinical_time_utc": "2124-07-07T23:30:00Z",
+      "content_summary": "The longitudinal observation window included a total of 4 hospitalizations; the boundaries of each hospitalization were included in the model-visible trajectory, and follow-up began after the final hospitalization.",
+      "evidence_id": "ward_028:ehr:longitudinal_terminal",
+      "laterality": null,
+      "module": "disposition",
+      "raw_content": "The longitudinal observation window included a total of 4 hospitalizations; the boundaries of each hospitalization were included in the model-visible trajectory, and follow-up began after the final hospitalization.",
+      "record_kind": "deidentified_terminal_summary",
+      "structured_value": null,
+      "title": "Final discharge status at the end of the longitudinal observation period",
+      "unit": null
+    }
+  ],
+  "process_gold": {
+    "status": "source_recorded_not_layer_gold_clinically_validated",
+    "transition_count": 14,
+    "transitions": [
+      {
+        "clock_after": "2124-01-11T11:20:43+08:00",
+        "clock_before": "2124-01-11T10:15:30+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-01-11 oncology admission assessment",
+            "Review the 2124-01-11 oncology inpatient admission assessment",
+            "2124-01-11 oncology admission assessment"
+          ],
+          "action_id": "ehr:ward_028:001",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:ehr:visit_01_admission"
+          ],
+          "target": "2124-01-11 oncology admission assessment"
+        },
+        "release_evidence_ids": [
+          "ward_028:ehr:visit_01_admission"
+        ],
+        "sequence_index": 0,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_028_s2_node_001_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_028_s2_node_001"
+      },
+      {
+        "clock_after": "2124-01-11T16:46:51+08:00",
+        "clock_before": "2124-01-11T11:20:43+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-01-11 oncology admission laboratory results",
+            "Review the 2124-01-11 oncology hospitalization examination results",
+            "2124-01-11 oncology admission laboratory results"
+          ],
+          "action_id": "ehr:ward_028:002",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:lab:visit_01_results"
+          ],
+          "target": "2124-01-11 oncology admission laboratory results"
+        },
+        "release_evidence_ids": [
+          "ward_028:lab:visit_01_results"
+        ],
+        "sequence_index": 1,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_028_s2_node_002_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_028_s2_node_002"
+      },
+      {
+        "clock_after": "2124-01-11T20:02:31+08:00",
+        "clock_before": "2124-01-11T16:46:51+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "start the 2124-01-11 admission recorded antineoplastic therapy",
+            "Administer the antineoplastic therapy recorded during the 2124-01-11 hospitalization",
+            "2124-01-11 admission recorded antineoplastic therapy"
+          ],
+          "action_id": "ehr:ward_028:003",
+          "action_type": "start_treatment",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:tx:visit_01_treatment"
+          ],
+          "target": "2124-01-11 admission recorded antineoplastic therapy"
+        },
+        "release_evidence_ids": [
+          "ward_028:tx:visit_01_treatment"
+        ],
+        "sequence_index": 2,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_028_s2_node_003_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_028_s2_node_003"
+      },
+      {
+        "clock_after": "2124-02-05T10:55:29+08:00",
+        "clock_before": "2124-01-11T20:02:31+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-02-05 oncology admission assessment",
+            "Review the 2124-02-05 oncology hospitalization admission assessment",
+            "2124-02-05 oncology admission assessment"
+          ],
+          "action_id": "ehr:ward_028:004",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:ehr:visit_01_outcome",
+            "ward_028:ehr:visit_02_admission"
+          ],
+          "target": "2124-02-05 oncology admission assessment"
+        },
+        "release_evidence_ids": [
+          "ward_028:ehr:visit_01_outcome",
+          "ward_028:ehr:visit_02_admission"
+        ],
+        "sequence_index": 3,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_028_s2_node_004_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_028_s2_node_004"
+      },
+      {
+        "clock_after": "2124-02-05T16:28:15+08:00",
+        "clock_before": "2124-02-05T10:55:29+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-02-05 oncology admission laboratory results",
+            "Review the 2124-02-05 oncology admission test results",
+            "2124-02-05 oncology admission laboratory results"
+          ],
+          "action_id": "ehr:ward_028:005",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:lab:visit_02_results"
+          ],
+          "target": "2124-02-05 oncology admission laboratory results"
+        },
+        "release_evidence_ids": [
+          "ward_028:lab:visit_02_results"
+        ],
+        "sequence_index": 4,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_028_s2_node_005_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_028_s2_node_005"
+      },
+      {
+        "clock_after": "2124-02-05T19:47:54+08:00",
+        "clock_before": "2124-02-05T16:28:15+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "start the 2124-02-05 admission recorded antineoplastic therapy",
+            "Administer the antineoplastic therapy documented during the 2124-02-05 admission",
+            "2124-02-05 admission recorded antineoplastic therapy"
+          ],
+          "action_id": "ehr:ward_028:006",
+          "action_type": "start_treatment",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:tx:visit_02_treatment"
+          ],
+          "target": "2124-02-05 admission recorded antineoplastic therapy"
+        },
+        "release_evidence_ids": [
+          "ward_028:tx:visit_02_treatment"
+        ],
+        "sequence_index": 5,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_028_s2_node_006_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_028_s2_node_006"
+      },
+      {
+        "clock_after": "2124-03-13T10:17:31+08:00",
+        "clock_before": "2124-02-05T19:47:54+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-03-13 oncology admission assessment",
+            "Review the 2124-03-13 oncology admission assessment",
+            "2124-03-13 oncology admission assessment"
+          ],
+          "action_id": "ehr:ward_028:007",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:ehr:visit_02_outcome",
+            "ward_028:ehr:visit_03_admission"
+          ],
+          "target": "2124-03-13 oncology admission assessment"
+        },
+        "release_evidence_ids": [
+          "ward_028:ehr:visit_02_outcome",
+          "ward_028:ehr:visit_03_admission"
+        ],
+        "sequence_index": 6,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_028_s2_node_007_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_028_s2_node_007"
+      },
+      {
+        "clock_after": "2124-03-13T16:08:10+08:00",
+        "clock_before": "2124-03-13T10:17:31+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-03-13 oncology admission laboratory results",
+            "Review the 2124-03-13 oncology admission laboratory results",
+            "2124-03-13 oncology admission laboratory results"
+          ],
+          "action_id": "ehr:ward_028:008",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:lab:visit_03_results"
+          ],
+          "target": "2124-03-13 oncology admission laboratory results"
+        },
+        "release_evidence_ids": [
+          "ward_028:lab:visit_03_results"
+        ],
+        "sequence_index": 7,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_028_s2_node_008_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_028_s2_node_008"
+      },
+      {
+        "clock_after": "2124-03-13T19:38:33+08:00",
+        "clock_before": "2124-03-13T16:08:10+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "start the 2124-03-13 admission recorded antineoplastic therapy",
+            "Administer the antineoplastic therapy recorded during the 2124-03-13 hospitalization",
+            "2124-03-13 admission recorded antineoplastic therapy"
+          ],
+          "action_id": "ehr:ward_028:009",
+          "action_type": "start_treatment",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:tx:visit_03_treatment"
+          ],
+          "target": "2124-03-13 admission recorded antineoplastic therapy"
+        },
+        "release_evidence_ids": [
+          "ward_028:tx:visit_03_treatment"
+        ],
+        "sequence_index": 8,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_028_s2_node_009_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_028_s2_node_009"
+      },
+      {
+        "clock_after": "2124-07-05T13:23:16+08:00",
+        "clock_before": "2124-03-13T19:38:33+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-07-05 oncology admission assessment",
+            "Review the 2124-07-05 oncology hospitalization admission assessment",
+            "2124-07-05 oncology admission assessment"
+          ],
+          "action_id": "ehr:ward_028:010",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:ehr:visit_03_outcome",
+            "ward_028:ehr:visit_04_admission"
+          ],
+          "target": "2124-07-05 oncology admission assessment"
+        },
+        "release_evidence_ids": [
+          "ward_028:ehr:visit_03_outcome",
+          "ward_028:ehr:visit_04_admission"
+        ],
+        "sequence_index": 9,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_028_s2_node_010_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_028_s2_node_010"
+      },
+      {
+        "clock_after": "2124-07-06T06:47:09+08:00",
+        "clock_before": "2124-07-05T13:23:16+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-07-05 oncology admission laboratory results",
+            "Review the 2124-07-05 oncology admission laboratory results",
+            "2124-07-05 oncology admission laboratory results"
+          ],
+          "action_id": "ehr:ward_028:011",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:lab:visit_04_results"
+          ],
+          "target": "2124-07-05 oncology admission laboratory results"
+        },
+        "release_evidence_ids": [
+          "ward_028:lab:visit_04_results"
+        ],
+        "sequence_index": 10,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_028_s2_node_011_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_028_s2_node_011"
+      },
+      {
+        "clock_after": "2124-07-06T17:13:28+08:00",
+        "clock_before": "2124-07-06T06:47:09+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "start the 2124-07-05 admission recorded antineoplastic therapy",
+            "Administer the antineoplastic therapy documented during the 2124-07-05 admission",
+            "2124-07-05 admission recorded antineoplastic therapy"
+          ],
+          "action_id": "ehr:ward_028:012",
+          "action_type": "start_treatment",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:tx:visit_04_treatment"
+          ],
+          "target": "2124-07-05 admission recorded antineoplastic therapy"
+        },
+        "release_evidence_ids": [
+          "ward_028:tx:visit_04_treatment"
+        ],
+        "sequence_index": 11,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_028_s2_node_012_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_028_s2_node_012"
+      },
+      {
+        "clock_after": "2124-07-08T00:32:27+08:00",
+        "clock_before": "2124-07-06T17:13:28+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "monitor final oncology admission treatment outcome",
+            "monitor the final oncology admission treatment outcome",
+            "Monitor the treatment outcome of the final oncology hospitalization",
+            "final oncology admission treatment outcome"
+          ],
+          "action_id": "ehr:ward_028:013",
+          "action_type": "monitor_or_defer",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:ehr:visit_04_outcome"
+          ],
+          "target": "final oncology admission treatment outcome"
+        },
+        "release_evidence_ids": [
+          "ward_028:ehr:visit_04_outcome"
+        ],
+        "sequence_index": 12,
+        "stage_after": "S3",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_028_s2_node_013_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_028_s2_node_013"
+      },
+      {
+        "clock_after": "2124-07-08T07:30:00+08:00",
+        "clock_before": "2124-07-08T00:32:27+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "discharge to oncology follow-up",
+            "discharge to longitudinal oncology follow-up",
+            "Discharge to longitudinal oncology follow-up"
+          ],
+          "action_id": "ehr:ward_028:014",
+          "action_type": "discharge",
+          "gold_source_type": "ehr_derived_terminal_gold",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_028:ehr:longitudinal_terminal"
+          ],
+          "target": "discharge to longitudinal oncology follow-up"
+        },
+        "release_evidence_ids": [
+          "ward_028:ehr:longitudinal_terminal"
+        ],
+        "sequence_index": 13,
+        "stage_after": "S3",
+        "stage_before": "S3",
+        "state_updates": {
+          "disposition": "home",
+          "encounter_active": false,
+          "terminal": true
+        },
+        "terminal": true,
+        "transition_id": "ward_028_s3_terminal_001"
+      }
+    ]
+  },
+  "schema_version": "ward-runtime-gold-1.0",
+  "gold_version": "ward-anonymous-runtime-1.0"
+}

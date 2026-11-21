@@ -1,0 +1,90 @@
+{
+  "graph_version": "ward-patient-ehr-action-graph-0.3.0",
+  "status": "development_non_official",
+  "case_id": "ward_006",
+  "scenario_sha256": "396ac4e16a21f11ead0b489dfa35753bb8a62907bc0f591b7d4c0f2fb54d21b0",
+  "action_interface_sha256": "f92df9ca7dfd4748b5be3a37481f31e87a62a51149ebe2844f0bd174bcec9927",
+  "action_ontology_sha256": "10f92a793ca13c5cd0ea7b73e812f00b4d11d6e2c9120302ac5a59a27afa822c",
+  "nodes": {
+    "ward_006_s2_node_001": {
+      "requires": []
+    },
+    "ward_006_s2_node_002": {
+      "requires": [
+        "ward_006_s2_node_001"
+      ]
+    },
+    "ward_006_s2_node_003": {
+      "requires": [
+        "ward_006_s2_node_002"
+      ]
+    },
+    "ward_006_s2_node_004": {
+      "requires": [
+        "ward_006_s2_node_002"
+      ]
+    },
+    "ward_006_s2_node_005": {
+      "requires": [
+        "ward_006_s2_node_003",
+        "ward_006_s2_node_004"
+      ]
+    },
+    "ward_006_s2_node_006": {
+      "requires": [
+        "ward_006_s2_node_005"
+      ]
+    },
+    "ward_006_s2_node_007": {
+      "requires": [
+        "ward_006_s2_node_005",
+        "ward_006_s2_node_006"
+      ]
+    },
+    "ward_006_s2_node_008": {
+      "requires": [
+        "ward_006_s2_node_005",
+        "ward_006_s2_node_006"
+      ]
+    },
+    "ward_006_s2_node_009": {
+      "requires": [
+        "ward_006_s2_node_005",
+        "ward_006_s2_node_006"
+      ]
+    },
+    "ward_006_s2_node_010": {
+      "requires": [
+        "ward_006_s2_node_007",
+        "ward_006_s2_node_008",
+        "ward_006_s2_node_009"
+      ]
+    },
+    "ward_006_s2_node_011": {
+      "requires": [
+        "ward_006_s2_node_010"
+      ]
+    },
+    "ward_006_s3_terminal_001": {
+      "requires": [
+        "ward_006_s2_node_011"
+      ]
+    }
+  },
+  "policy": {
+    "multiple_recorded_actions_may_be_available": true,
+    "recorded_sequence_index_is_not_a_required_execution_order": true,
+    "prerequisites_are_enforced": true,
+    "environment_clock_never_moves_backward": true,
+    "counterfactual_outcomes_invented": false,
+    "left_primary_nodal_and_right_quadrant_actions_separated": true,
+    "right_malignancy_not_inferred": true,
+    "anesthesia_review_hard_prerequisite": true,
+    "mixed_postoperative_evidence_split": true
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

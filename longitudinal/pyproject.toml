@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ward-benchmark-longitudinal"
+version = "1.0.0"
+description = "Checkpoint runner and deterministic longitudinal evaluation"
+requires-python = ">=3.11"
+dependencies = ["jsonschema>=4.23,<5"]
+
+[project.scripts]
+ward-longitudinal-run = "ward_eval.entrypoints:run_main"
+ward-longitudinal-eval = "ward_eval.entrypoints:eval_main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ward_eval = ["schemas/*.json", "config/*.json"]

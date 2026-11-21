@@ -1,0 +1,66 @@
+{
+  "graph_version": "ward-patient-ehr-action-graph-0.3.0",
+  "status": "development_non_official",
+  "case_id": "ward_009",
+  "scenario_sha256": "21d1304320aa910bdc52da44265e6499d7b7f0b1b53b325f28d0df0f9219d025",
+  "action_interface_sha256": "4e8ff699f6b2d15973614cd5d5196a2c38c98ac5f9b2e2f748f58ce841603cd2",
+  "action_ontology_sha256": "f3f23b528b8d274c6a706fb459673dac28f42b3bf72497b913794d737fa9a8bf",
+  "nodes": {
+    "ward_009_s2_node_001": {
+      "requires": []
+    },
+    "ward_009_s2_node_002": {
+      "requires": [
+        "ward_009_s2_node_001"
+      ]
+    },
+    "ward_009_s2_node_003": {
+      "requires": [
+        "ward_009_s2_node_002"
+      ]
+    },
+    "ward_009_s2_node_004": {
+      "requires": [
+        "ward_009_s2_node_002"
+      ]
+    },
+    "ward_009_s2_node_005": {
+      "requires": [
+        "ward_009_s2_node_002",
+        "ward_009_s2_node_003",
+        "ward_009_s2_node_004"
+      ]
+    },
+    "ward_009_s2_node_006": {
+      "requires": [
+        "ward_009_s2_node_005"
+      ]
+    },
+    "ward_009_s2_node_007": {
+      "requires": [
+        "ward_009_s2_node_006"
+      ]
+    },
+    "ward_009_s3_terminal_001": {
+      "requires": [
+        "ward_009_s2_node_007"
+      ]
+    }
+  },
+  "policy": {
+    "multiple_recorded_actions_may_be_available": true,
+    "recorded_sequence_index_is_not_a_required_execution_order": true,
+    "prerequisites_are_enforced": true,
+    "environment_clock_never_moves_backward": true,
+    "counterfactual_outcomes_invented": false,
+    "pathology_not_inferred": true,
+    "preoperative_ultrasound_hard_gate": true,
+    "actual_surgery_authoritative": true,
+    "consent_template_mismatch_preserved": true
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

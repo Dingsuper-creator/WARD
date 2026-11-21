@@ -1,0 +1,94 @@
+{
+  "graph_version": "ward-patient-ehr-action-graph-0.3.0",
+  "status": "development_non_official",
+  "case_id": "ward_003",
+  "scenario_sha256": "cf1dadad50b527a0cec67bae6ca4033e5432014c5207e6a3e92031c205709937",
+  "action_interface_sha256": "c38ab5ab43b76734505078816ae5db34e17a278ff6b48d7285eab667afbd580a",
+  "action_ontology_sha256": "fbe183ee8f3af214f663c71e698af06cd97ca922138c6bfa731b559f45a787b0",
+  "nodes": {
+    "ward_003_s2_node_001": {
+      "requires": []
+    },
+    "ward_003_s2_node_002": {
+      "requires": [
+        "ward_003_s2_node_001"
+      ]
+    },
+    "ward_003_s2_node_003": {
+      "requires": [
+        "ward_003_s2_node_004"
+      ]
+    },
+    "ward_003_s2_node_004": {
+      "requires": [
+        "ward_003_s2_node_002"
+      ]
+    },
+    "ward_003_s2_node_005": {
+      "requires": [
+        "ward_003_s2_node_004"
+      ]
+    },
+    "ward_003_s2_node_006": {
+      "requires": [
+        "ward_003_s2_node_004"
+      ]
+    },
+    "ward_003_s2_node_007": {
+      "requires": [
+        "ward_003_s2_node_004"
+      ]
+    },
+    "ward_003_s2_node_008": {
+      "requires": [
+        "ward_003_s2_node_005",
+        "ward_003_s2_node_006"
+      ]
+    },
+    "ward_003_s2_node_009": {
+      "requires": [
+        "ward_003_s2_node_001",
+        "ward_003_s2_node_006",
+        "ward_003_s2_node_008"
+      ]
+    },
+    "ward_003_s2_node_010": {
+      "requires": [
+        "ward_003_s2_node_009"
+      ]
+    },
+    "ward_003_s2_node_011": {
+      "requires": [
+        "ward_003_s2_node_010",
+        "ward_003_s2_node_012"
+      ]
+    },
+    "ward_003_s2_node_012": {
+      "requires": [
+        "ward_003_s2_node_007",
+        "ward_003_s2_node_009",
+        "ward_003_s2_node_010"
+      ]
+    },
+    "ward_003_s3_terminal_001": {
+      "requires": [
+        "ward_003_s2_node_003",
+        "ward_003_s2_node_011"
+      ]
+    }
+  },
+  "policy": {
+    "multiple_recorded_actions_may_be_available": true,
+    "recorded_sequence_index_is_not_a_required_execution_order": true,
+    "prerequisites_are_enforced": true,
+    "environment_clock_never_moves_backward": true,
+    "counterfactual_outcomes_invented": false,
+    "primary_and_nodal_surgery_dependencies_separated": true,
+    "late_fna_consent_not_hard_prerequisite": true
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

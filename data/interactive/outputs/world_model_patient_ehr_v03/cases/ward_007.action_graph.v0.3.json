@@ -1,0 +1,87 @@
+{
+  "graph_version": "ward-patient-ehr-action-graph-0.3.0",
+  "status": "development_non_official",
+  "case_id": "ward_007",
+  "scenario_sha256": "df38dfa52acf552bc5bab3e2a2cb44cc6d24770a1b27485f6480a27a4fd7e3fe",
+  "action_interface_sha256": "5c9464e2b85cf6e9484eb96ccf066796fbd1631e3dba10fec8148ed8790ea1ed",
+  "action_ontology_sha256": "1f8a43649cd1c90d0d078f2830ba2be07c3329c92f8d96629ef0d39979a5e9be",
+  "nodes": {
+    "ward_007_s2_node_001": {
+      "requires": []
+    },
+    "ward_007_s2_node_002": {
+      "requires": [
+        "ward_007_s2_node_001"
+      ]
+    },
+    "ward_007_s2_node_003": {
+      "requires": [
+        "ward_007_s2_node_002"
+      ]
+    },
+    "ward_007_s2_node_004": {
+      "requires": [
+        "ward_007_s2_node_002"
+      ]
+    },
+    "ward_007_s2_node_005": {
+      "requires": [
+        "ward_007_s2_node_003"
+      ]
+    },
+    "ward_007_s2_node_006": {
+      "requires": [
+        "ward_007_s2_node_003",
+        "ward_007_s2_node_004",
+        "ward_007_s2_node_005"
+      ]
+    },
+    "ward_007_s2_node_007": {
+      "requires": [
+        "ward_007_s2_node_006"
+      ]
+    },
+    "ward_007_s2_node_008": {
+      "requires": [
+        "ward_007_s2_node_007"
+      ]
+    },
+    "ward_007_s2_node_009": {
+      "requires": [
+        "ward_007_s2_node_008"
+      ]
+    },
+    "ward_007_s2_node_010": {
+      "requires": [
+        "ward_007_s2_node_008"
+      ]
+    },
+    "ward_007_s2_node_011": {
+      "requires": [
+        "ward_007_s2_node_008"
+      ]
+    },
+    "ward_007_s3_terminal_001": {
+      "requires": [
+        "ward_007_s2_node_009",
+        "ward_007_s2_node_010",
+        "ward_007_s2_node_011"
+      ]
+    }
+  },
+  "policy": {
+    "multiple_recorded_actions_may_be_available": true,
+    "recorded_sequence_index_is_not_a_required_execution_order": true,
+    "prerequisites_are_enforced": true,
+    "environment_clock_never_moves_backward": true,
+    "counterfactual_outcomes_invented": false,
+    "paired_pathology_single_gate": true,
+    "late_imaging_nonretroactive": true,
+    "three_components_one_definitive_episode": true
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

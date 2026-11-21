@@ -1,0 +1,28 @@
+{
+  "schema_version": "ward-model-roster-1.0",
+  "roster_id": "ward-checkpoint-example",
+  "checkpoint_scope": "all",
+  "gateway": {
+    "base_url_env": "WARD_BASE_URL",
+    "api_key_env": "WARD_API_KEY"
+  },
+  "execution": {
+    "global_concurrency": 4,
+    "per_model_concurrency": 4,
+    "timeout_seconds": 600,
+    "transport_retry_limit": 2,
+    "max_tokens": 32768,
+    "stream": false,
+    "native_response_format": false,
+    "tools_enabled": false,
+    "max_tool_calls": 0
+  },
+  "models": [
+    {
+      "model_id": "your-model-id",
+      "protocol": "openai_chat",
+      "temperature": 0,
+      "strip_outer_json_fence": false
+    }
+  ]
+}

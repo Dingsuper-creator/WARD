@@ -1,0 +1,720 @@
+{
+  "scenario_version": "ward-patient-ehr-case-0.1.0",
+  "status": "deterministic_clinician_confirmed_case_bundle_candidate",
+  "case_id": "ward_003",
+  "workflow_contract_version": "ward-inpatient-S1-S2-S3-0.1.0",
+  "scorer_freeze": {
+    "freeze_id": "ward-world-model-interaction-scorer-baseline-2026-07-23-v0.1",
+    "manifest_sha256": "72dd8e46a360db7a9e107124166a57145547ec941c6d7ef757956a1b69de62dc"
+  },
+  "public_context": {
+    "setting": "inpatient_thyroid_surgery",
+    "age_years": 48,
+    "sex": "female",
+    "admission_diagnosis": "Thyroid tumor",
+    "initial_time": "2124-07-01T10:47:42.523000"
+  },
+  "initial_state": {
+    "stage": "S2",
+    "clock": "2124-07-01T10:47:42.523000",
+    "visible_evidence_ids": [],
+    "state_facts": {
+      "encounter_active": true,
+      "terminal": false
+    }
+  },
+  "evidence_store": {
+    "doc:001": {
+      "evidence_id": "doc:001",
+      "record_kind": "document",
+      "title": "Admission Record",
+      "clinical_time": "2124-07-01T11:28:00",
+      "available_time": "2124-07-01T11:38:34.860000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:002": {
+      "evidence_id": "doc:002",
+      "record_kind": "document",
+      "title": "Initial Progress Note",
+      "clinical_time": "2124-07-01T13:46:00",
+      "available_time": "2124-07-01T13:49:03.910000",
+      "content": "{'chief_complaint': 'Thyroid nodules discovered more than 1 month(s) ago', 'present_illness': 'The patient underwent thyroid ultrasonography at Outside Hospital B on 2124.5.28 because of fatigue, spontaneous sweating, and night sweats, which showed: a solid nodule in the thyroid isthmus, ACR category TI-RADS5, with FNA recommended; a solid nodule in the left thyroid lobe, ACR TI-RADS category 4, with FNA if necessary; one category 3 nodule each in the right and left thyroid lobes; no obvious enlarged lymph nodes were seen in the bilateral neck. On 2124.6.3, repeat aspiration at Outside Hospital B showed ([pathology number removed]): smears from the left thyroid and isthmic nodules showed atypically proliferating thyroid follicular epithelium, with a small number of nuclear grooves. The patient currently has no difficulty swallowing or breathing, no hand tremors or palpitations, but has fatigue and sweating, and was admitted for preoperative evaluation. At present: alert, in fair spirits, appetite fair, bowel movements and urination normal, sleeping well at night, fatigue and sweating, denies recent weight loss. Temperature: 36.3°C; pulse: 116 beats/min; respiration: 18 breaths/min; blood pressure: 118/82mmHg. Alert, in fair spirits, neck supple, trachea midline, no jugular venous distention, and no abnormal carotid pulsation. No masses were palpable in either thyroid lobe, and no enlarged lymph nodes were palpable. Patient’s vitality: vitality present. Form: moves freely. Voice: resonant. Breathing: even. Tongue appearance: tongue body: pale red in color, normal in shape, soft and mobile. Tongue coating: white in color and thin in quality. Pulse: thready pulse at the left cun position. Thready pulse at the right cun position. Inquiry: alert and in fair spirits. 1, First, Western medicine', 'diagnosis_basis': '1. The patient, male, 48 years old, was admitted because of “thyroid nodules discovered more than 1 month(s) ago.” 2. On admission: alert, in fair spirits, appetite fair, bowel movements and urination normal, sleeping well at night, and denies recent weight loss. 3. Physical examination: alert, in fair spirits, neck supple, trachea midline, no jugular venous distention, and no abnormal carotid pulsation. No masses were palpable in either thyroid lobe, and no enlarged lymph nodes were palpable. 4. Ancillary examinations: Thyroid ultrasonography performed at Outside Hospital B on 2124.5.28 showed: a solid nodule in the thyroid isthmus, ACR category TI-RADS5, with FNA recommended; a solid nodule in the left thyroid lobe, ACR TI-RADS category 4, with FNA if necessary; one category 3 nodule each in the right and left thyroid lobes; no obvious enlarged lymph nodes were seen in the bilateral neck. On 2124.6.3, repeat aspiration at Outside Hospital B showed ([pathology number removed]): smears from the left thyroid and isthmic nodules showed atypically proliferating thyroid follicular epithelium, with a small number of nuclear grooves. 2, Second, basis for Western medicine diagnosis: history of hypertension for 3 years; taking antihypertensive medication, details unknown; history of diabetes mellitus for 4 years; taking Janumet 1# QD and dapagliflozin 1# QD; history of hyperlipidemia. 3, Basis for traditional Chinese medicine syndrome differentiation: The patient has goiter disease, with a pale-red tongue, thin white coating, and thready pulse. This is due to the patient’s usual internal injury from emotions leading to stagnation of qi movement, impaired regulation and free flow by the liver, impeded blood circulation, qi stagnation and blood stasis, and accumulation in the anterior neck, resulting in the formation of goiter swelling. Based on comprehensive analysis of the four examinations, this disease belongs to “goiter disease, qi stagnation and blood stasis syndrome.” Treatment is planned to promote qi and invigorate blood, soften hardness, and dissipate nodules. Western medicine', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:005": {
+      "evidence_id": "doc:005",
+      "record_kind": "document",
+      "title": "VTE in Medical Inpatients",
+      "clinical_time": "2124-07-01T11:23:05",
+      "available_time": "2124-07-01T11:23:08",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:008": {
+      "evidence_id": "doc:008",
+      "record_kind": "document",
+      "title": "Preoperative Informed Consent Form for Fine-Needle Aspiration of the Thyroid and Cervical Lymph Nodes",
+      "clinical_time": "2124-07-01T16:08:49",
+      "available_time": "2124-07-02T10:10:04",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:009": {
+      "evidence_id": "doc:009",
+      "record_kind": "document",
+      "title": "General Surgery Preoperative Informed Consent Form—Second Surgical Department",
+      "clinical_time": "2124-07-03T09:39:02",
+      "available_time": "2124-07-03T09:40:22",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:010": {
+      "evidence_id": "doc:010",
+      "record_kind": "document",
+      "title": "Informed Consent Form for Neurophysiological Monitoring",
+      "clinical_time": "2124-07-03T09:42:05",
+      "available_time": "2124-07-03T09:42:46",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:011": {
+      "evidence_id": "doc:011",
+      "record_kind": "document",
+      "title": "Informed Consent Form for Self-Paid Medications and Medical Consumables",
+      "clinical_time": "2124-07-03T09:43:02",
+      "available_time": "2124-07-03T09:43:35",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:015": {
+      "evidence_id": "doc:015",
+      "record_kind": "document",
+      "title": "New Consultation Record",
+      "clinical_time": "2124-07-04T08:37:00",
+      "available_time": "2124-07-04T08:37:42.677000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:016": {
+      "evidence_id": "doc:016",
+      "record_kind": "document",
+      "title": "First Attending Physician Ward Round Record",
+      "clinical_time": "2124-07-02T10:10:00",
+      "available_time": "2124-07-02T10:36:50.203000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:018": {
+      "evidence_id": "doc:018",
+      "record_kind": "document",
+      "title": "Department Transfer-Out Record",
+      "clinical_time": "2124-07-03T08:38:00",
+      "available_time": "2124-07-02T10:40:49.957000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:019": {
+      "evidence_id": "doc:019",
+      "record_kind": "document",
+      "title": "Invasive Diagnostic and Therapeutic Procedure Record",
+      "clinical_time": "2124-07-01T17:22:00",
+      "available_time": "2124-07-02T11:26:07.957000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "ehr:terminal:001": {
+      "evidence_id": "ehr:terminal:001",
+      "record_kind": "ehr_derived_terminal_state",
+      "title": "Final Inpatient Status and Discharge Disposition",
+      "clinical_time": "2124-07-05T08:00:00",
+      "available_time": "2124-07-05T08:00:00",
+      "content": "During hospitalization, the total thyroidectomy, regional lymph node management, and postoperative rehabilitation documented in the source record were completed. The discharge diagnosis was malignant thyroid tumor, the treatment outcome was cured, and the discharge disposition was discharge per medical advice.",
+      "derivation": "deterministic paraphrase restricted to the approved encounter and recorded surgery facts",
+      "direct_identifiers_removed": true
+    },
+    "img:008": {
+      "evidence_id": "img:008",
+      "record_kind": "imaging",
+      "title": "Color Doppler ultrasound",
+      "clinical_time": "2124-07-01T14:12:29",
+      "available_time": "2124-07-01T15:58:09",
+      "content": "Solid nodules near the isthmus and in the posterolateral middle portion of the left thyroid lobe: provisionally C-TIRADS category 4C (3-4 points); FNA has been performed at an outside hospital, revised to C-TIRADS category 6. Solid nodules in the anterolateral lower pole and central anterior aspect of the mid-upper pole of the right thyroid lobe: provisionally C-TIRADS category 4B (2 points); FNA is recommended. Bilateral thyroid nodules, provisionally C-TIRADS category 3; please correlate clinically. Abnormal lymph node in left cervical level III: mildly suspicious for metastatic lymph node; FNA is recommended. (Explanation: C-TIRADS categories 1-2, probability of malignancy 0%; C-TIRADS category 3, probability of malignancy <2%; C-TIRADS category 4A, probability of malignancy 2-10%; C-TIRADS category 4B, probability of malignancy 10-50%; C-TIRADS category 4C, probability of malignancy 50-90%; C-TIRADS category 5, probability of malignancy >90%; C-TIRADS category 6, biopsy-proven malignant nodule. Revised C-TIRADS refers to the category after modification of the nodule risk level based on the physician's experience or medical history. Reference: Endocrine, 2120, 256-279)\nThyroid: Both thyroid lobes are normal in contour, with smooth capsules, homogeneous internal echogenicity, and multiple variably sized predominantly cystic and predominantly solid nodules within the parenchyma. The largest on the left measures 9.9 ×6.0 mm, and the largest on the right measures 5.4× 2.5mm. Elastography shows that the above nodules are soft to intermediate, with elasticity scores of 2-3 points (using a 5-point scoring method). CFI shows normal blood supply in the thyroid parenchyma. Within the left thyroid lobe near the isthmus, there is a mass with a transverse diameter of 8.3mm, an anteroposterior diameter of 10.1mm, and a craniocaudal diameter of 10.5mm. It is closely abutting the capsule, grows in a vertical orientation (1 point), has irregular margins (1 point), has a solid internal structure (1 point), and is hypoechoic (0 point). No obvious punctate hyperechoic foci are seen. CFI shows predominantly peripheral blood supply in the mass, with sparse vascularity. Elastography shows that the nodule is hard, with an elasticity score of 4 points (using a 5-point scoring method). In the posterolateral middle portion of the left thyroid lobe, there is a mass with a transverse diameter of 7.9mm, an anteroposterior diameter of 10.0mm, and a craniocaudal diameter of 10.1mm. It is closely abutting the capsule, grows in a vertical orientation (1 point), has irregular margins (1 point), has a solid internal structure (1 point), and is hypoechoic (0 point). No obvious punctate hyperechoic foci are seen. CFI shows predominantly peripheral blood supply in the mass, with sparse vascularity. Elastography shows that the nodule is hard, with an elasticity score of 4 points (using a 5-point scoring method). In the anterolateral lower pole of the right thyroid lobe, there is a mass with a transverse diameter of 3.9mm, an anteroposterior diameter of 4.1mm, and a craniocaudal diameter of 4.8mm. It is 1.2mm from the anterior capsule, grows in a vertical orientation (1 point), has smooth margins (0 point), has a solid internal structure (1 point), and is hypoechoic (0 point). No obvious punctate hyperechoic foci are seen. CFI shows predominantly peripheral blood supply in the mass, with sparse vascularity. Elastography shows that the nodule is hard, with an elasticity score of 4 points (using a 5-point scoring method). In the central anterior aspect of the mid-upper pole of the right thyroid lobe, there is a mass with a transverse diameter of 2.1mm, an anteroposterior diameter of 2.4mm, and a craniocaudal diameter of 1.9mm. It is closely abutting the anterior capsule, grows in a vertical orientation (1 point), has smooth margins (0 point), has a solid internal structure (1 point), and is hypoechoic (0 point). No obvious punctate hyperechoic foci are seen. CFI shows predominantly peripheral blood supply in the mass, with sparse vascularity. Elastography shows that the nodule is hard, with an elasticity score of 4 points (using a 5-point scoring method). One lymph node is seen in left cervical level III, measuring approximately 10.8×3.6mm. The lymphatic hilum is not seen. CDFI: a small amount of blood-flow signal is seen. No obvious abnormally enlarged lymph nodes are seen in the right neck. Three-dimensional ultrasonography shows no obvious abnormal distribution in the gland or soft tissues. Three-dimensional color and power Doppler ultrasonography shows no large, tortuous vessels with a radial distribution in either the sagittal or coronal plane.",
+      "direct_identifiers_removed": true
+    },
+    "img:009": {
+      "evidence_id": "img:009",
+      "record_kind": "imaging",
+      "title": "Preoperative ultrasound localization of the neck",
+      "clinical_time": "2124-07-01T14:13:08",
+      "available_time": "2124-07-01T15:57:28",
+      "content": "Solid nodules near the isthmus and in the posterolateral aspect of the middle portion of the left thyroid lobe: provisionally C-TIRADS category 4C (3-4 points); FNA has already been performed at an outside hospital, and the category is revised to C-TIRADS category 6. Solid nodules in the anterolateral aspect of the lower pole and the central anterior aspect of the mid-upper pole of the right thyroid lobe: provisionally C-TIRADS category 4B (2 points); FNA is recommended. Bilateral thyroid nodules, provisionally C-TIRADS category 3; please correlate clinically. Abnormal lymph node in left cervical level III: mildly suspicious for metastatic lymph node; FNA is recommended. No obvious abnormalities in the bilateral submandibular glands. (If the nodules are malignant, according to the eighth edition of the AJCC, the stage may be T1bN1bM0; the final stage is subject to the surgical findings.) (Explanation: C-TIRADS categories 1-2, probability of malignancy 0%; C-TIRADS category 3, probability of malignancy <2%; C-TIRADS category 4A, probability of malignancy 2-10%; C-TIRADS category 4B, probability of malignancy 10-50%; C-TIRADS category 4C, probability of malignancy 50-90%; C-TIRADS category 5, probability of malignancy >90%; C-TIRADS category 6, biopsy-proven malignant nodule. Revised C-TIRADS refers to the category after the risk level of a nodule has been revised based on the physician's experience or the medical history. Reference: Endocrine, 2120, 256-279)\nBoth thyroid lobes are normal in contour, with smooth capsules and homogeneous internal echogenicity. Multiple predominantly cystic and predominantly solid nodules of varying sizes are seen within the parenchyma. The largest on the left measures 9.9 ×6.0 mm, and the largest on the right measures 5.4× 2.5mm. Elastography shows that the above nodules are soft to intermediate, with elasticity scores of 2-3 points (a 5-point scoring system). CFI shows normal blood supply to the thyroid parenchyma. Within the left thyroid lobe near the isthmus, there is a mass with a transverse diameter of 8.3mm, an anteroposterior diameter of 10.1mm, and a craniocaudal diameter of 10.5mm. It abuts the capsule, grows in a taller-than-wide orientation (1 points), has irregular margins (1 points), has a solid internal structure (1 points), and is hypoechoic (0 points). No obvious punctate echogenic foci are seen. CFI shows predominantly peripheral blood flow in the mass, with sparse vascularity. Elastography shows that the nodule is hard, with an elasticity score of 4 points (a 5-point scoring system). In the posterolateral aspect of the middle portion of the left thyroid lobe, there is a mass with a transverse diameter of 7.9mm, an anteroposterior diameter of 10.0mm, and a craniocaudal diameter of 10.1mm. It abuts the capsule, grows in a taller-than-wide orientation (1 points), has irregular margins (1 points), has a solid internal structure (1 points), and is hypoechoic (0 points). No obvious punctate echogenic foci are seen. CFI shows predominantly peripheral blood flow in the mass, with sparse vascularity. Elastography shows that the nodule is hard, with an elasticity score of 4 points (a 5-point scoring system). In the anterolateral aspect of the lower pole of the right thyroid lobe, there is a mass with a transverse diameter of 3.9mm, an anteroposterior diameter of 4.1mm, and a craniocaudal diameter of 4.8mm. It is 1.2mm from the anterior capsule, grows in a taller-than-wide orientation (1 points), has smooth margins (0 points), has a solid internal structure (1 points), and is hypoechoic (0 points). No obvious punctate echogenic foci are seen. CFI shows predominantly peripheral blood flow in the mass, with sparse vascularity. Elastography shows that the nodule is hard, with an elasticity score of 4 points (a 5-point scoring system). In the central anterior aspect of the mid-upper pole of the right thyroid lobe, there is a mass with a transverse diameter of 2.1mm, an anteroposterior diameter of 2.4mm, and a craniocaudal diameter of 1.9mm. It abuts the anterior capsule, grows in a taller-than-wide orientation (1 points), has smooth margins (0 points), has a solid internal structure (1 points), and is hypoechoic (0 points). No obvious punctate echogenic foci are seen. CFI shows predominantly peripheral blood flow in the mass, with sparse vascularity. Elastography shows that the nodule is hard, with an elasticity score of 4 points (a 5-point scoring system). No obvious abnormal mass echogenicity is seen in either parathyroid region. Left cervical lymph nodes: level VI, normal appearance; level II, normal appearance; level III, mildly suspicious, located lateral to the jugular vein, measuring approximately 10.8×3.6mm, and slightly plump in morphology; level IV, normal appearance; level V, normal appearance. Right cervical lymph nodes: level VI, normal appearance; level II, normal appearance; level III, normal appearance; level IV, normal appearance; level V, normal appearance. Flow velocities in the bilateral carotid arteries, jugular veins, superior thyroid arteries, and inferior thyroid arteries are essentially normal, without obvious signs of compression or invasion. Three-dimensional ultrasonography shows no obvious abnormal distribution pattern in the glands or soft tissues. Three-dimensional color and power Doppler ultrasonography shows no large, tortuous vessels with a radial distribution on either sagittal or coronal planes. The bilateral submandibular glands are essentially normal in shape and size, with smooth capsules, poorly defined boundaries with the surrounding tissues, normal and homogeneously distributed parenchymal echogenicity, and mildly increased blood supply on CFI. No obvious dilatation of the bilateral submandibular gland ducts is seen.",
+      "direct_identifiers_removed": true
+    },
+    "img:010": {
+      "evidence_id": "img:010",
+      "record_kind": "imaging",
+      "title": "Fine-needle aspiration",
+      "clinical_time": "2124-07-02T07:58:18",
+      "available_time": "2124-07-02T08:17:31",
+      "content": "Solid nodule at the middle-lower pole of the right thyroid lobe: provisionally classified as C-TIRADS category 4B. Lymph node in left cervical level III. Ultrasound-guided fine-needle aspiration was performed 5 time(s) on each of the above nodule and lymph node; await cytological results. (Note: ① If ultrasound suggests that the nodule is suspicious for malignancy, or is C-TIRADS category 4B, 4C, or 5, while cytology is benign, repeat aspiration is recommended; ② If cytology indicates \"a small number of thyroid epithelial cells and blood cells are seen on the smear,\" repeat aspiration is also recommended.) (Explanation: C-TIRADS categories 1-2, probability of malignancy 0%; C-TIRADS category 3, probability of malignancy <2%; C-TIRADS category 4A, probability of malignancy 2-10%; C-TIRADS category 4B, probability of malignancy 10-50%; C-TIRADS category 4C, probability of malignancy 50-90%; C-TIRADS category 5, probability of malignancy >90%; C-TIRADS category 6, biopsy-proven malignant nodule. Modified C-TIRADS refers to classification after modification of the nodule's risk of malignancy based on the physician's experience or medical history. Reference: Endocrine, 2120, 256-279)\nA nodule measuring approximately 3.6 × 4.3 × 5.0mm is seen in the central ventral portion of the middle-lower pole of the right thyroid lobe. It grows in a vertical orientation (1 point[s]), has smooth and regular margins (0 point[s]), and no halo is seen. Its internal structure is solid (1 point[s]) and hypoechoic (0 point[s]); no obvious punctate hyperechoic foci are seen. CFI shows peripheral vascularity in the nodule, with sparse blood flow. Elastography shows that the nodule is hard, with an elasticity score of 4 point(s) (5-point scoring method). Aspiration record: The patient was placed in the supine position with the neck fully exposed. Routine disinfection was performed. A 7-gauge fine aspiration needle was used, and aspiration was performed under ultrasound guidance. The aspirated specimen was satisfactory, and 1 smear(s) were prepared. A specimen for multigene testing was retained. No bleeding occurred after local compression of the aspiration site. Monitor the aspiration site after the procedure. Seek prompt medical attention in the event of severe symptoms such as bleeding, neck swelling, or difficulty breathing. A lymph node measuring approximately 10.1 × 3.9 × 12.8 mm is seen in left cervical level III. No fusion between lymph nodes is seen. The capsule is smooth and regular, with clear demarcation from the surrounding soft tissue. The lymph node is oval, and its hilum is eccentric. The interior of the lymph node is hypoechoic (compared with the adjacent muscle), with relatively uniform distribution. No obvious calcific hyperechoic foci or liquefactive anechoic areas are seen. CFI demonstrates hilar vessels in the lymph node, with sparse blood flow. Elastography shows the lymph node hardness to be hard (elasticity score: 3 point[s], 4-point scoring method). Aspiration record: The patient was placed in the supine position with the neck fully exposed. Routine disinfection was performed. A 7-gauge fine aspiration needle was used, and aspiration was performed under ultrasound guidance. The aspirated specimen was satisfactory, and 1 smear(s) were prepared. A specimen for multigene testing was retained. No bleeding occurred after local compression of the aspiration site. Monitor the aspiration site after the procedure. Seek prompt medical attention in the event of severe symptoms such as bleeding or swelling at the aspiration site.",
+      "direct_identifiers_removed": true
+    },
+    "path:006": {
+      "evidence_id": "path:006",
+      "record_kind": "pathology",
+      "title": "Cytopathology",
+      "clinical_time": "2124-07-02T00:00:00",
+      "available_time": "2124-07-02T16:53:50",
+      "content": "Follicular epithelial cells arranged in sheets and papillary formations are seen. Some cells are crowded, with enlarged nuclei; nuclear grooves and intranuclear inclusions are visible in occasional cells, consistent with papillary thyroid carcinoma. Note: Bethesda reporting category VI",
+      "direct_identifiers_removed": true
+    },
+    "path:007": {
+      "evidence_id": "path:007",
+      "record_kind": "pathology",
+      "title": "Cytopathology",
+      "clinical_time": "2124-07-02T00:00:00",
+      "available_time": "2124-07-02T16:54:02",
+      "content": "Lymphocytes are seen; no evidence of malignancy is seen.",
+      "direct_identifiers_removed": true
+    },
+    "surg:001": {
+      "evidence_id": "surg:001",
+      "record_kind": "surgery",
+      "title": "Cervical lymph node biopsy",
+      "clinical_time": "2124-07-02T07:58:42",
+      "available_time": "2124-07-02T08:30:42",
+      "content": "Cervical lymph node biopsy",
+      "direct_identifiers_removed": true
+    },
+    "surg:002": {
+      "evidence_id": "surg:002",
+      "record_kind": "surgery",
+      "title": "Ultrasound-Guided Percutaneous Thyroid Biopsy",
+      "clinical_time": "2124-07-02T07:58:10",
+      "available_time": "2124-07-02T08:30:10",
+      "content": "Ultrasound-guided percutaneous thyroid biopsy",
+      "direct_identifiers_removed": true
+    },
+    "surg:003": {
+      "evidence_id": "surg:003",
+      "record_kind": "surgery",
+      "title": "Total Thyroidectomy",
+      "clinical_time": "2124-07-03T16:00:00",
+      "available_time": "2124-07-03T18:00:00",
+      "content": "Total thyroidectomy",
+      "direct_identifiers_removed": true
+    },
+    "surg:004": {
+      "evidence_id": "surg:004",
+      "record_kind": "surgery",
+      "title": "Regional lymph node excision",
+      "clinical_time": "2124-07-03T16:00:00",
+      "available_time": "2124-07-03T18:00:00",
+      "content": "Regional lymph node excision",
+      "direct_identifiers_removed": true
+    },
+    "surg:005": {
+      "evidence_id": "surg:005",
+      "record_kind": "surgery",
+      "title": "Intraoperative neurophysiological monitoring",
+      "clinical_time": "2124-07-03T16:00:00",
+      "available_time": "2124-07-03T18:00:00",
+      "content": "Intraoperative neurophysiological monitoring",
+      "direct_identifiers_removed": true
+    },
+    "surg:006": {
+      "evidence_id": "surg:006",
+      "record_kind": "surgery",
+      "title": "Nanocarbon Lymph Node Tracing and Negative Imaging",
+      "clinical_time": "2124-07-03T16:00:00",
+      "available_time": "2124-07-03T18:00:00",
+      "content": "Carbon nanoparticle lymph node tracing and negative imaging",
+      "direct_identifiers_removed": true
+    }
+  },
+  "transitions": [
+    {
+      "transition_id": "ward_003_s2_node_001",
+      "sequence_index": 0,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-01T10:47:42.523000",
+      "clock_after": "2124-07-01T13:49:03.910000",
+      "gold_action": {
+        "action_id": "ehr:ward_003:ward_003_s2_node_001",
+        "action_type": "review_document",
+        "target": "thyroid_admission_assessment_and_baseline_vte_risk",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "thyroid admission assessment and baseline vte risk"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:001",
+          "doc:002",
+          "doc:005"
+        ],
+        "source_event_ids": [
+          "ward_003_evt_001",
+          "ward_003_evt_002"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:001",
+        "doc:002",
+        "doc:005"
+      ],
+      "state_updates": {
+        "ward_003_s2_node_001_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_003_s2_node_002",
+      "sequence_index": 1,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-01T13:49:03.910000",
+      "clock_after": "2124-07-01T15:58:09",
+      "gold_action": {
+        "action_id": "ehr:ward_003:ward_003_s2_node_002",
+        "action_type": "order_imaging",
+        "target": "bilateral_thyroid_and_cervical_node_ultrasound_mapping",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "bilateral thyroid and cervical node ultrasound mapping"
+        ],
+        "gold_source_type": "ehr_observed_result_implies_order",
+        "source_evidence_ids": [
+          "img:008",
+          "img:009"
+        ],
+        "source_event_ids": [
+          "ward_003_evt_003",
+          "ward_003_evt_004"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "img:008",
+        "img:009"
+      ],
+      "state_updates": {
+        "ward_003_s2_node_002_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_003_s2_node_004",
+      "sequence_index": 2,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-01T15:58:09",
+      "clock_after": "2124-07-02T08:30:42",
+      "gold_action": {
+        "action_id": "ehr:ward_003:ward_003_s2_node_004",
+        "action_type": "perform_procedure",
+        "target": "right_thyroid_and_left_level_iii_node_fna",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right thyroid and left level iii node fna"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "img:010",
+          "surg:001",
+          "surg:002"
+        ],
+        "source_event_ids": [
+          "ward_003_evt_005",
+          "ward_003_evt_006"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "img:010",
+        "surg:001",
+        "surg:002"
+      ],
+      "state_updates": {
+        "ward_003_s2_node_004_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_003_s2_node_003",
+      "sequence_index": 3,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-02T08:30:42",
+      "clock_after": "2124-07-02T10:10:04",
+      "gold_action": {
+        "action_id": "ehr:ward_003:ward_003_s2_node_003",
+        "action_type": "review_document",
+        "target": "late_available_thyroid_and_node_fna_consent_record",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "late available thyroid and node fna consent record"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:008"
+        ],
+        "source_event_ids": [
+          "ward_003_evt_007"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:008"
+      ],
+      "state_updates": {
+        "ward_003_s2_node_003_completed": true,
+        "late_fna_consent_released_non_retroactively": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_003_s2_node_005",
+      "sequence_index": 4,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-02T10:10:04",
+      "clock_after": "2124-07-02T11:26:07.957000",
+      "gold_action": {
+        "action_id": "ehr:ward_003:ward_003_s2_node_005",
+        "action_type": "review_document",
+        "target": "post_fna_status_and_invasive_procedure_documentation",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "post fna status and invasive procedure documentation"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:016",
+          "doc:019"
+        ],
+        "source_event_ids": [
+          "ward_003_evt_009"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:016",
+        "doc:019"
+      ],
+      "state_updates": {
+        "ward_003_s2_node_005_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_003_s2_node_006",
+      "sequence_index": 5,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-02T11:26:07.957000",
+      "clock_after": "2124-07-02T16:53:50",
+      "gold_action": {
+        "action_id": "ehr:ward_003:ward_003_s2_node_006",
+        "action_type": "review_result",
+        "target": "fna_cytology_result_papillary_thyroid_carcinoma",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "fna cytology result papillary thyroid carcinoma"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "path:006"
+        ],
+        "source_event_ids": [
+          "ward_003_evt_010"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "path:006"
+      ],
+      "state_updates": {
+        "ward_003_s2_node_006_completed": true,
+        "positive_cytology_reviewed": true,
+        "positive_cytology_gates_primary_surgery": true,
+        "specimen_site_binding_excluded": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_003_s2_node_007",
+      "sequence_index": 6,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-02T16:53:50",
+      "clock_after": "2124-07-02T16:54:02",
+      "gold_action": {
+        "action_id": "ehr:ward_003:ward_003_s2_node_007",
+        "action_type": "review_result",
+        "target": "fna_cytology_result_no_malignancy",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "fna cytology result no malignancy"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "path:007"
+        ],
+        "source_event_ids": [
+          "ward_003_evt_011"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "path:007"
+      ],
+      "state_updates": {
+        "ward_003_s2_node_007_completed": true,
+        "negative_cytology_reviewed": true,
+        "negative_cytology_informs_regional_extent": true,
+        "specimen_site_binding_excluded": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_003_s2_node_008",
+      "sequence_index": 7,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-02T16:54:02",
+      "clock_after": "2124-07-03T08:38:00",
+      "gold_action": {
+        "action_id": "ehr:ward_003:ward_003_s2_node_008",
+        "action_type": "review_document",
+        "target": "transfer_to_thyroid_surgery_after_fna_results",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "transfer to thyroid surgery after fna results"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:018"
+        ],
+        "source_event_ids": [
+          "ward_003_evt_008"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:018"
+      ],
+      "state_updates": {
+        "ward_003_s2_node_008_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_003_s2_node_009",
+      "sequence_index": 8,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-03T08:38:00",
+      "clock_after": "2124-07-03T09:43:35",
+      "gold_action": {
+        "action_id": "ehr:ward_003:ward_003_s2_node_009",
+        "action_type": "review_document",
+        "target": "total_thyroidectomy_readiness",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "total thyroidectomy readiness"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:009",
+          "doc:010",
+          "doc:011"
+        ],
+        "source_event_ids": [
+          "ward_003_evt_012",
+          "ward_003_evt_013",
+          "ward_003_evt_014"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:009",
+        "doc:010",
+        "doc:011"
+      ],
+      "state_updates": {
+        "ward_003_s2_node_009_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_003_s2_node_010",
+      "sequence_index": 9,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-03T09:43:35",
+      "clock_after": "2124-07-03T18:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_003:ward_003_s2_node_010",
+        "action_type": "perform_procedure",
+        "target": "total_thyroidectomy_with_nerve_monitoring",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "total thyroidectomy with nerve monitoring"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "surg:003",
+          "surg:005"
+        ],
+        "source_event_ids": [
+          "ward_003_evt_015"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "surg:003",
+        "surg:005"
+      ],
+      "state_updates": {
+        "ward_003_s2_node_010_completed": true,
+        "primary_thyroid_surgery_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_003_s2_node_012",
+      "sequence_index": 10,
+      "stage_before": "S2",
+      "stage_after": "S3",
+      "clock_before": "2124-07-03T18:00:00",
+      "clock_after": "2124-07-03T18:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_003:ward_003_s2_node_012",
+        "action_type": "perform_procedure",
+        "target": "recorded_regional_node_resection_with_carbon_tracing",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "recorded regional node resection with carbon tracing"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "surg:004",
+          "surg:006"
+        ],
+        "source_event_ids": [],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "surg:004",
+        "surg:006"
+      ],
+      "state_updates": {
+        "ward_003_s2_node_012_completed": true,
+        "source_recorded_regional_node_surgery_completed": true,
+        "source_region_unspecified": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_003_s2_node_011",
+      "sequence_index": 11,
+      "stage_before": "S3",
+      "stage_after": "S3",
+      "clock_before": "2124-07-03T18:00:00",
+      "clock_after": "2124-07-04T08:37:42.677000",
+      "gold_action": {
+        "action_id": "ehr:ward_003:ward_003_s2_node_011",
+        "action_type": "request_consultation",
+        "target": "post_thyroidectomy_voice_swallow_and_mobility_rehabilitation",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "post thyroidectomy voice swallow and mobility rehabilitation"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:015"
+        ],
+        "source_event_ids": [
+          "ward_003_evt_016",
+          "ward_003_evt_017",
+          "ward_003_evt_018"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:015"
+      ],
+      "state_updates": {
+        "ward_003_s2_node_011_completed": true,
+        "postoperative_rehabilitation_released": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_003_s3_terminal_001",
+      "sequence_index": 12,
+      "stage_before": "S3",
+      "stage_after": "S3",
+      "clock_before": "2124-07-04T08:37:42.677000",
+      "clock_after": "2124-07-05T08:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_003:discharge",
+        "action_type": "discharge",
+        "target": "home_after_inpatient_thyroid_surgery",
+        "parameters": {},
+        "accepted_action_type_aliases": [
+          "discharge_patient",
+          "end_episode"
+        ],
+        "accepted_target_aliases": [
+          "discharge on medical advice",
+          "discharge home"
+        ],
+        "gold_source_type": "ehr_derived_terminal_gold",
+        "source_evidence_ids": [],
+        "source_event_ids": [],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "ehr:terminal:001"
+      ],
+      "state_updates": {
+        "disposition": "discharge on medical advice",
+        "encounter_active": false,
+        "terminal": true
+      },
+      "terminal": true
+    }
+  ],
+  "policy": {
+    "strict_next_gold_action": false,
+    "partial_order_prerequisites_enforced": true,
+    "terminology_aliases_allowed": true,
+    "off_trajectory_action_advances_state": false,
+    "off_trajectory_action_releases_evidence": false,
+    "future_evidence_hidden": true,
+    "late_available_results_not_retroactive": true,
+    "patient_llm_used": false,
+    "ehr_is_authoritative_historical_fact_source": true,
+    "clinician_review_is_authoritative_dependency_source": true
+  },
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

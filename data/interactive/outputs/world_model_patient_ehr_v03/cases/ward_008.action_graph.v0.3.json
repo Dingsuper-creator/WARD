@@ -1,0 +1,70 @@
+{
+  "graph_version": "ward-patient-ehr-action-graph-0.3.0",
+  "status": "development_non_official",
+  "case_id": "ward_008",
+  "scenario_sha256": "cb4b4fc685a48608d1e3e1cf4c1905bf2feed1072c9554b9d8877dc1081aefc2",
+  "action_interface_sha256": "f30a93b22f8220d6ad83318dbf463dbcc7c12bc8753b3b0a59b1019c959dca8d",
+  "action_ontology_sha256": "c5968f2d6a6024861e45585cb8292088dba538e54b2208f0cb955ea21ac4a98e",
+  "nodes": {
+    "ward_008_s2_node_001": {
+      "requires": []
+    },
+    "ward_008_s2_node_002": {
+      "requires": [
+        "ward_008_s2_node_001"
+      ]
+    },
+    "ward_008_s2_node_003": {
+      "requires": [
+        "ward_008_s2_node_002"
+      ]
+    },
+    "ward_008_s2_node_004": {
+      "requires": [
+        "ward_008_s2_node_002",
+        "ward_008_s2_node_003"
+      ]
+    },
+    "ward_008_s2_node_005": {
+      "requires": [
+        "ward_008_s2_node_004"
+      ]
+    },
+    "ward_008_s2_node_006": {
+      "requires": [
+        "ward_008_s2_node_004"
+      ]
+    },
+    "ward_008_s2_node_007": {
+      "requires": [
+        "ward_008_s2_node_005",
+        "ward_008_s2_node_006"
+      ]
+    },
+    "ward_008_s2_node_008": {
+      "requires": [
+        "ward_008_s2_node_007"
+      ]
+    },
+    "ward_008_s3_terminal_001": {
+      "requires": [
+        "ward_008_s2_node_008"
+      ]
+    }
+  },
+  "policy": {
+    "multiple_recorded_actions_may_be_available": true,
+    "recorded_sequence_index_is_not_a_required_execution_order": true,
+    "prerequisites_are_enforced": true,
+    "environment_clock_never_moves_backward": true,
+    "counterfactual_outcomes_invented": false,
+    "consent_without_unrecorded_biopsy_action": true,
+    "breast_and_gynecologic_branches_separate": true,
+    "paired_quadrant_records_without_site_overbinding": true
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

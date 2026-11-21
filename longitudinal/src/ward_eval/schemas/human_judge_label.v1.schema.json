@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ward.example/schemas/human_judge_label.v1.schema.json",
+  "title": "WARD human Judge label v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "item_id", "annotator_id", "role", "verdict", "confidence", "reason_codes", "reviewed_at", "notes"],
+  "properties": {
+    "schema_version": {"const": "ward-human-judge-label-1.0"},
+    "item_id": {"type": "string", "pattern": "^ward_jjob_[0-9a-f]{20}$"},
+    "annotator_id": {"type": "string", "minLength": 1},
+    "role": {"enum": ["adjudicator"]},
+    "verdict": {"type": ["string", "null"], "enum": ["equivalent", "partial", "contradiction", "unrelated", "abstain", null]},
+    "confidence": {"type": ["string", "null"], "enum": ["high", "medium", "low", null]},
+    "reason_codes": {"type": "array", "items": {"enum": ["same_meaning", "acceptable_paraphrase", "missing_detail", "extra_detail", "scope_mismatch", "status_mismatch", "negation_conflict", "laterality_conflict", "temporality_conflict", "unit_or_value_conflict", "action_conflict", "insufficient_context", "different_concept", "ambiguous"]}, "uniqueItems": true},
+    "reviewed_at": {"type": ["string", "null"]},
+    "notes": {"type": "string"},
+    "review_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dimension", "state_bucket", "prediction_en", "gold_en", "aliases_en"],
+      "properties": {
+        "dimension": {"type": "string"},
+        "state_bucket": {"type": ["string", "null"]},
+        "prediction_en": {"type": "string"},
+        "gold_en": {"type": "string"},
+        "aliases_en": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

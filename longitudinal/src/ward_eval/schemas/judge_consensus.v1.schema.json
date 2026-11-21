@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ward.example/schemas/judge_consensus.v1.schema.json",
+  "title": "WARD Judge consensus v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "item_id", "judge_a_verdict", "judge_b_verdict", "pre_adjudication_status", "final_verdict", "final_source"],
+  "properties": {
+    "schema_version": {"const": "ward-judge-consensus-1.0"},
+    "item_id": {"type": "string", "pattern": "^ward_jjob_[0-9a-f]{20}$"},
+    "judge_a_verdict": {"enum": ["equivalent", "partial", "contradiction", "unrelated", "abstain", null]},
+    "judge_b_verdict": {"enum": ["equivalent", "partial", "contradiction", "unrelated", "abstain", null]},
+    "pre_adjudication_status": {"enum": ["consensus", "primary_judge_b", "human_required"]},
+    "final_verdict": {"enum": ["equivalent", "partial", "contradiction", "unrelated", "abstain"]},
+    "final_source": {"enum": ["dual_judge_consensus", "primary_judge_b", "human_adjudication"]}
+  }
+}

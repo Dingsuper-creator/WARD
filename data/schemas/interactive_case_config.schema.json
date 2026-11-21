@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$id": "urn:ward:interactive-case-config:1",
+  "required": [
+    "case_id",
+    "adapter",
+    "scenario",
+    "interface",
+    "ontology",
+    "graph",
+    "tool_map",
+    "freeze_manifest",
+    "prompt_contract"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^ward_[0-9]{3}$"
+    },
+    "adapter": {
+      "enum": [
+        "v055",
+        "v056"
+      ]
+    },
+    "data_root": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scenario": {
+      "type": "string",
+      "minLength": 1
+    },
+    "interface": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ontology": {
+      "type": "string",
+      "minLength": 1
+    },
+    "graph": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tool_map": {
+      "type": "string",
+      "minLength": 1
+    },
+    "freeze_manifest": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prompt_contract": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

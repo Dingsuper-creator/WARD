@@ -1,0 +1,107 @@
+{
+  "tool_map_version": "ward-patient-ehr-tool-map-0.5.6",
+  "status": "development_non_official_batch_binding_candidate",
+  "case_id": "ward_005",
+  "scenario_sha256": "1ab60e04f14f902300082d9d90776481fb69642d373e16a96383c97495ca70eb",
+  "action_interface_sha256": "c0641f53155983d59540ab762a6bd409af2f19bfd91c70cbe23219a59e2d3188",
+  "action_ontology_sha256": "71c7acec7a01bbc5efca56a5ec7d0158292d66554b9bc2f56a9145c349bdf279",
+  "action_graph_sha256": "5e0992f50c80e3d57709dada4194837836db9395829f824653a448746f597458",
+  "tool_design": {
+    "model_calls_tools": true,
+    "recorded_ehr_controls_releasable_results": true,
+    "unrecorded_clinically_valid_actions_allowed": true,
+    "counterfactual_results_invented": false,
+    "tool_facade_is_case_reusable": true,
+    "coarse_available_action_families_visible": false,
+    "reviewed_ontology_concept_routing": true,
+    "feature_fallback_enabled": true,
+    "exact_hidden_identifier_required": false,
+    "query_and_structured_fields_are_command_surface": true,
+    "intent_and_rationale_are_non_routing_context": true,
+    "event_relative_phase_decoupled": true
+  },
+  "public_tools": [
+    "patient.ask",
+    "ehr.search",
+    "ehr.read",
+    "ehr.order",
+    "procedure.perform",
+    "treatment.start",
+    "care.transition"
+  ],
+  "public_ehr_modules": [
+    "history",
+    "admission_documents",
+    "progress_notes",
+    "preoperative_documents",
+    "laboratory_results",
+    "imaging_results",
+    "pathology_results",
+    "procedure_records",
+    "medications",
+    "consultations",
+    "surgery",
+    "discharge_documents"
+  ],
+  "tool_action_defaults": {
+    "patient.ask": "request_patient_information",
+    "ehr.search": "review_document",
+    "ehr.read": "review_document",
+    "ehr.order": "order_imaging",
+    "procedure.perform": "perform_procedure",
+    "treatment.start": "start_treatment",
+    "care.transition": "monitor_or_defer"
+  },
+  "module_action_overrides": {
+    "history": {
+      "ehr.search": "request_patient_information",
+      "ehr.read": "request_patient_information"
+    },
+    "laboratory_results": {
+      "ehr.search": "review_result",
+      "ehr.read": "review_result",
+      "ehr.order": "order_laboratory"
+    },
+    "imaging_results": {
+      "ehr.search": "review_result",
+      "ehr.read": "review_result",
+      "ehr.order": "order_imaging"
+    },
+    "pathology_results": {
+      "ehr.search": "review_result",
+      "ehr.read": "review_result",
+      "ehr.order": "order_laboratory"
+    },
+    "consultations": {
+      "ehr.order": "request_consultation"
+    },
+    "discharge_documents": {
+      "care.transition": "discharge"
+    },
+    "surgery": {
+      "procedure.perform": "perform_procedure"
+    }
+  },
+  "gold_action_visible": false,
+  "dependency_graph_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true,
+  "clinical_review_decision_sha256": "661ab649509c1c34585e5db7400620af373f7c887acb9d76e04491e90d40b902",
+  "reviewed_mapping_sha256": "b6e011d6c32f96a6daf73caaeadbe2503cf7d89c891298ae9fb82ab90b1d7d71",
+  "freeze_manifest_sha256": "72dd8e46a360db7a9e107124166a57145547ec941c6d7ef757956a1b69de62dc",
+  "state_based_adapter_version": "ward-patient-ehr-reviewed-ontology-adapter-0.5.6",
+  "action_envelope_version": "ward-patient-ehr-role-separated-action-envelope-0.1.0",
+  "event_frame_version": "ward-patient-ehr-clinical-event-frame-0.1.0",
+  "lifecycle_policy_version": "ward-patient-ehr-clinical-event-lifecycle-policy-0.1.0",
+  "lifecycle_policy_path": "outputs/world_model_patient_ehr_v05/CLINICAL_EVENT_LIFECYCLE_POLICY.v0.1.json",
+  "lifecycle_policy_sha256": "9c005e75cf35f992f051d2ef22ca1576e5a8e9333892aba743707be4c5f5e518",
+  "event_phase_frame_version": "ward-patient-ehr-event-phase-frame-0.1.0",
+  "event_relative_phase_policy_version": "ward-patient-ehr-event-relative-phase-policy-0.1.0",
+  "event_relative_phase_policy_path": "outputs/world_model_patient_ehr_v05/EVENT_RELATIVE_PHASE_POLICY.v0.1.json",
+  "event_relative_phase_policy_sha256": "bc04b150e26f1c791d3bbc14a78506ac2d7bbae13f31a7a6e456a444b845e4c6",
+  "state_routes_path": "outputs/world_model_patient_ehr_v05/cases/ward_005.state_routes.v0.5.6.json",
+  "state_routes_sha256": "a53a7b212dcc4f8cc8b04beab306b7d5b25f132381351c79eaf4b92e5d25768f",
+  "artifact_revision": "0.5.6"
+}

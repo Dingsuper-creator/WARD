@@ -1,0 +1,3914 @@
+{
+  "case_id": "ward_020",
+  "checkpoints": [
+    {
+      "answer": {
+        "layer1_evidence": [],
+        "layer2_utilization_links": [],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Left knee degenerative lesion",
+              "Degenerative disease of the left knee",
+              "Suspected degenerative pathology of the left knee"
+            ],
+            "canonical_en": "Degenerative lesion of the left knee is the admission diagnosis, but no usable public evidence is available at this checkpoint; diagnostic closure cannot be confirmed.",
+            "claim_id": "ward_020_cp_000_claim_001",
+            "linked_evidence_ids": [],
+            "status": "pending",
+            "supporting_evidence_ids": []
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Continue diagnostic workup and treatment-readiness assessment",
+              "Complete preoperative assessment before definitive treatment"
+            ],
+            "action_id": "ward_020_cp_000_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue and document diagnostic evaluation and treatment-readiness assessment for the left knee lesion, using subsequently available evidence before deciding on surgery or other definitive treatment.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete before definitive treatment or discharge; specific timing is to be determined by the clinical team according to the condition.",
+            "indication_en": "There is currently no publicly available evidence permitted for use, and the patient remains in an active inpatient orthopedic surgical setting.",
+            "linked_evidence_ids": [],
+            "prerequisites_en": [
+              "Obtain and verify the actually disclosed history, physical examination, relevant imaging, and necessary preoperative assessment data.",
+              "The clinical team evaluates diagnosis, surgical indications, and perioperative risk in conjunction with actual results."
+            ],
+            "problem_en": "Left knee degenerative lesion has not yet been confirmed by disclosed evidence, and treatment conditions have not been assessed.",
+            "target_and_laterality_en": "Left knee; diagnostic confirmation and treatment preparation."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Diagnostic confirmation and treatment readiness for the left knee lesion are incomplete.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_020_cp_000_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "No allowed public evidence is available, preventing diagnostic confirmation, severity assessment, operative-indication assessment, or safe disposition judgment.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_020_cp_000_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "The patient is a 72-year-old woman.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_020_cp_000_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current setting is an inpatient orthopedic-surgery-related assessment.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_020_cp_000_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The admission diagnosis is recorded as degenerative disease of the left knee.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_020_cp_000_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "As of the current time point, there is no publicly available evidence permitted for use.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_020_cp_000_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Degenerative lesion of the left knee: documented as the admission diagnosis but not confirmed by available public evidence.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_020_cp_000_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Do not equate an admission diagnosis with a confirmed final diagnosis.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_020_cp_000_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Undisclosed imaging, laboratory, pathology, anesthesia, surgery, or postoperative results must not be supplemented or assumed.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_020_cp_000_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Inpatient orthopedic surgical assessment is ongoing; current evidence is insufficient, and investigation cannot be stopped, unconfirmed definitive treatment cannot be implemented, or transition to routine follow-up cannot occur.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_020_cp_000_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Unable to assess; the current information should not be used to determine that conditions for surgery or other definitive treatment have been met.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_020_cp_000_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "The admission diagnosis must not be treated as a confirmed diagnosis.",
+            "Do not infer that surgery has been completed, treatment efficacy has met the standard, or the patient is suitable for discharge when there is no disclosed evidence.",
+            "Do not fabricate future examination results or treatment outcomes."
+          ],
+          "critical_omission_rules_en": [
+            "Before stopping or transitioning to follow-up, there must be sufficient evidence of diagnosis, treatment indication, and disposition safety.",
+            "If surgery is planned, appropriate preoperative and perioperative safety assessments must be completed."
+          ],
+          "preliminary_risk_triggers_en": [
+            "evidence_insufficient",
+            "diagnostic_uncertainty",
+            "active_encounter"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "No allowed public evidence is available and the inpatient encounter remains active. The admission diagnosis alone cannot establish the final diagnosis or treatment safety, so stopping, discharge, or routine follow-up is not safe; clinical evidence acquisition and assessment should continue.",
+          "remaining_blockers_en": [
+            "There is no released evidence that is permitted for use.",
+            "Diagnostic closure, treatment preparation, definitive treatment status, and discharge safety have all not been determined."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_020_cp_000",
+      "question": {
+        "allowed_evidence_ids": [],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_020:ehr:admission:001",
+          "ward_020:ehr:discharge_readiness:001",
+          "ward_020:ehr:postoperative_day1:001",
+          "ward_020:ehr:preoperative_decision:001",
+          "ward_020:ehr:rehabilitation:001",
+          "ward_020:ehr:terminal:001",
+          "ward_020:img:knee_alignment:001",
+          "ward_020:img:postoperative_knee_xray:001",
+          "ward_020:img:vte_cardiac:001",
+          "ward_020:proc:knee_replacement:001",
+          "ward_020:tx:rivaroxaban:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_020",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false
+          },
+          "public_context": {
+            "admission_diagnosis": "Degenerative lesion of the left knee",
+            "age_years": 72,
+            "initial_time": "2124-12-05T14:22:00+08:00",
+            "setting": "inpatient_orthopedic_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-12-05T14:22:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": []
+        },
+        "public_snapshot_sha256": "98f6315f89d609d0a9de932e1fc2e031fae90194bdbc4ef4441de6c731b18a2f",
+        "public_time": "2124-12-05T14:22:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 0
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_020:ehr:admission:001",
+            "interpretation_en": "Severe left knee pain, deformity, and limited mobility impair daily life; inadequate response to conservative treatment supports admission for surgery.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_020:ehr:preoperative_decision:001",
+            "interpretation_en": "The clinical and imaging diagnosis of left knee osteoarthritis is clear, and left total knee arthroplasty with VTE prophylaxis is planned; this establishes treatment planning, not completion of surgery.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:img:knee_alignment:001",
+            "interpretation_en": "Imaging supports left knee osteoarthritis. Post-removal changes from prior fixation in the left femur are relevant surgical anatomic context; right knee and other joint degeneration are not the primary current surgical diagnosis.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:img:vte_cardiac:001",
+            "interpretation_en": "Vascular ultrasound indicates an intermuscular venous thrombosis in the right calf, contralateral to the planned left knee surgery. Echocardiography shows only mild valvular regurgitation. The thrombosis is a key perioperative safety and management issue.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_020_cp_003_action_001"
+            ],
+            "claim_ids": [
+              "ward_020_cp_003_claim_001"
+            ],
+            "evidence_id": "ward_020:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_003_state_diagnoses_001",
+              "ward_020_cp_003_state_active_problems_001",
+              "ward_020_cp_003_state_required_delta_from_previous_checkpoint_003",
+              "ward_020_cp_003_state_treatment_readiness_001",
+              "ward_020_cp_003_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_003_action_001",
+              "ward_020_cp_003_action_002",
+              "ward_020_cp_003_action_003"
+            ],
+            "claim_ids": [
+              "ward_020_cp_003_claim_001",
+              "ward_020_cp_003_claim_002"
+            ],
+            "evidence_id": "ward_020:ehr:preoperative_decision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_003_state_diagnoses_001",
+              "ward_020_cp_003_state_active_problems_001",
+              "ward_020_cp_003_state_active_problems_002",
+              "ward_020_cp_003_state_active_problems_003",
+              "ward_020_cp_003_state_blockers_001",
+              "ward_020_cp_003_state_blockers_002",
+              "ward_020_cp_003_state_critical_facts_to_retain_001",
+              "ward_020_cp_003_state_critical_facts_to_retain_002",
+              "ward_020_cp_003_state_critical_facts_to_retain_003",
+              "ward_020_cp_003_state_critical_facts_to_retain_004",
+              "ward_020_cp_003_state_required_delta_from_previous_checkpoint_001",
+              "ward_020_cp_003_state_required_delta_from_previous_checkpoint_003",
+              "ward_020_cp_003_state_treatment_readiness_001",
+              "ward_020_cp_003_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_003_action_001",
+              "ward_020_cp_003_action_003"
+            ],
+            "claim_ids": [
+              "ward_020_cp_003_claim_001",
+              "ward_020_cp_003_claim_003"
+            ],
+            "evidence_id": "ward_020:img:knee_alignment:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_003_state_diagnoses_001",
+              "ward_020_cp_003_state_active_problems_001",
+              "ward_020_cp_003_state_critical_facts_to_retain_001",
+              "ward_020_cp_003_state_critical_facts_to_retain_005",
+              "ward_020_cp_003_state_required_delta_from_previous_checkpoint_001",
+              "ward_020_cp_003_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_003_action_002",
+              "ward_020_cp_003_action_003"
+            ],
+            "claim_ids": [
+              "ward_020_cp_003_claim_004"
+            ],
+            "evidence_id": "ward_020:img:vte_cardiac:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_003_state_diagnoses_002",
+              "ward_020_cp_003_state_active_problems_003",
+              "ward_020_cp_003_state_blockers_001",
+              "ward_020_cp_003_state_critical_facts_to_retain_002",
+              "ward_020_cp_003_state_critical_facts_to_retain_004",
+              "ward_020_cp_003_state_required_delta_from_previous_checkpoint_002",
+              "ward_020_cp_003_state_treatment_readiness_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Symptomatic left knee osteoarthritis",
+              "End-stage left knee degenerative osteoarthritis"
+            ],
+            "canonical_en": "Left knee osteoarthritis with substantial daily-life impairment despite ineffective conservative treatment",
+            "claim_id": "ward_020_cp_003_claim_001",
+            "linked_evidence_ids": [
+              "ward_020:ehr:admission:001",
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:img:knee_alignment:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:admission:001",
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:img:knee_alignment:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Planned left total knee replacement",
+              "Planned left TKA"
+            ],
+            "canonical_en": "Left total knee arthroplasty is planned, with no evidence that it has been completed",
+            "claim_id": "ward_020_cp_003_claim_002",
+            "linked_evidence_ids": [
+              "ward_020:ehr:preoperative_decision:001"
+            ],
+            "status": "planned",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:preoperative_decision:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Prior left femoral fixation-removal changes",
+              "Post-hardware-removal femoral changes"
+            ],
+            "canonical_en": "Post-removal changes from prior fixation in the middle and lower left femur are relevant surgical background",
+            "claim_id": "ward_020_cp_003_claim_003",
+            "linked_evidence_ids": [
+              "ward_020:img:knee_alignment:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:img:knee_alignment:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Right calf intramuscular venous thrombosis",
+              "Contralateral calf venous thrombosis"
+            ],
+            "canonical_en": "Right calf intermuscular venous thrombosis is an active perioperative safety issue; echocardiography shows only mild valvular regurgitation",
+            "claim_id": "ward_020_cp_003_claim_004",
+            "linked_evidence_ids": [
+              "ward_020:img:vte_cardiac:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:img:vte_cardiac:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Perform left TKA after perioperative clearance",
+              "Proceed with left total knee replacement when safe"
+            ],
+            "action_id": "ward_020_cp_003_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Proceed with left total knee arthroplasty after completion of safety assessment and confirmation of feasibility",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization, but must not be mechanically implemented before thrombus-related safety issues are addressed.",
+            "indication_en": "The diagnosis is clear, conservative treatment is ineffective, and a surgical plan has been made.",
+            "linked_evidence_ids": [
+              "ward_020:ehr:admission:001",
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:img:knee_alignment:001"
+            ],
+            "prerequisites_en": [
+              "Complete right lower-leg thrombosis risk stratification and perioperative management decisions.",
+              "Complete routine preoperative verification and informed consent",
+              "Confirm surgical timing and anesthesia/surgical safety."
+            ],
+            "problem_en": "Left knee osteoarthritis with symptoms significantly affecting life.",
+            "target_and_laterality_en": "Left knee"
+          },
+          {
+            "acceptable_aliases_en": [
+              "Perioperative management of right calf venous thrombosis",
+              "VTE risk assessment and prophylaxis planning"
+            ],
+            "action_id": "ward_020_cp_003_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Immediately assess the perioperative risk of the right calf intermuscular venous thrombosis and establish or confirm a VTE prophylaxis/antithrombotic management plan",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete immediately before surgery and continue through the perioperative period",
+            "indication_en": "Preoperative vascular ultrasound suggests thrombosis, and major orthopedic surgery is imminent",
+            "linked_evidence_ids": [
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:img:vte_cardiac:001"
+            ],
+            "prerequisites_en": [
+              "Verify thrombosis laterality, extent, and clinical manifestations",
+              "Make clinical decisions in conjunction with bleeding risk and the surgical plan.",
+              "Have the relevant clinical team confirm the antithrombotic and mechanical prophylaxis plan."
+            ],
+            "problem_en": "Right lower leg intermuscular vein thrombosis",
+            "target_and_laterality_en": "Right calf."
+          },
+          {
+            "acceptable_aliases_en": [
+              "Laterality verification",
+              "Side-specific perioperative documentation"
+            ],
+            "action_id": "ward_020_cp_003_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Verify and document the operative left-knee side separately from the thrombosis in the right calf to prevent laterality error",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Preoperatively and at all perioperative handoffs.",
+            "indication_en": "Imaging clearly indicates a right lower-leg thrombus, while the planned surgical site is the left knee.",
+            "linked_evidence_ids": [
+              "ward_020:img:knee_alignment:001",
+              "ward_020:img:vte_cardiac:001",
+              "ward_020:ehr:preoperative_decision:001"
+            ],
+            "prerequisites_en": [
+              "Review laterality in imaging and medical records",
+              "Preoperative team communication and explicit documentation in the record."
+            ],
+            "problem_en": "The surgical side and thrombus side are different",
+            "target_and_laterality_en": "Left knee surgery; right calf thrombus."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Left knee osteoarthritis causing pain, deformity, and functional limitation",
+              "linked_evidence_ids": [
+                "ward_020:ehr:admission:001",
+                "ward_020:ehr:preoperative_decision:001",
+                "ward_020:img:knee_alignment:001"
+              ],
+              "state_id": "ward_020_cp_003_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Planned left total knee arthroplasty, not yet documented as completed",
+              "linked_evidence_ids": [
+                "ward_020:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_020_cp_003_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Perioperative management of right calf intermuscular venous thrombosis",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001",
+                "ward_020:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_020_cp_003_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Risk stratification of the right calf thrombosis and its impact on surgical timing and anticoagulation remain to be addressed",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001",
+                "ward_020:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_020_cp_003_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "No evidence documents completion of surgery or a postoperative state",
+              "linked_evidence_ids": [
+                "ward_020:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_020_cp_003_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "The planned operative side is the left knee",
+              "linked_evidence_ids": [
+                "ward_020:ehr:preoperative_decision:001",
+                "ward_020:img:knee_alignment:001"
+              ],
+              "state_id": "ward_020_cp_003_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The thrombosis side is the right calf and laterality cannot be confused",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001",
+                "ward_020:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_020_cp_003_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Left total knee arthroplasty is only in planned status",
+              "linked_evidence_ids": [
+                "ward_020:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_020_cp_003_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "VTE prevention/management needs to be implemented and documented.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:preoperative_decision:001",
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_003_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Imaging changes after removal of prior left femoral internal fixation.",
+              "linked_evidence_ids": [
+                "ward_020:img:knee_alignment:001"
+              ],
+              "state_id": "ward_020_cp_003_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Left knee osteoarthritis",
+              "linked_evidence_ids": [
+                "ward_020:ehr:admission:001",
+                "ward_020:ehr:preoperative_decision:001",
+                "ward_020:img:knee_alignment:001"
+              ],
+              "state_id": "ward_020_cp_003_state_diagnoses_001",
+              "status": "confirmed",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right calf intermuscular venous thrombosis",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_003_state_diagnoses_002",
+              "status": "active",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [],
+          "management_state": {
+            "canonical_en": "Inpatient preoperative stage; not yet entered the postoperative management or follow-up stage.",
+            "linked_evidence_ids": [
+              "ward_020:ehr:admission:001",
+              "ward_020:ehr:preoperative_decision:001"
+            ],
+            "state_id": "ward_020_cp_003_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "New imaging and preoperative decision evidence clarify the left knee osteoarthritis diagnosis and surgical plan.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:preoperative_decision:001",
+                "ward_020:img:knee_alignment:001"
+              ],
+              "state_id": "ward_020_cp_003_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right calf intermuscular venous thrombosis is newly recognized as an active perioperative safety issue.",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_003_state_required_delta_from_previous_checkpoint_002",
+              "status": "new_active_problem",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The state has progressed from initial admission assessment to inpatient preoperative preparation; no surgery completion or postoperative transition is documented.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:admission:001",
+                "ward_020:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_020_cp_003_state_required_delta_from_previous_checkpoint_003",
+              "status": "management_state_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Information related to the left knee diagnosis and surgical indication is basically clear, and left total knee arthroplasty has been planned; however, it cannot be regarded as unconditionally ready for surgery before right lower-leg thrombosis risk assessment and a perioperative VTE plan are clarified.",
+            "linked_evidence_ids": [
+              "ward_020:ehr:admission:001",
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:img:knee_alignment:001",
+              "ward_020:img:vte_cardiac:001"
+            ],
+            "state_id": "ward_020_cp_003_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Planned left total knee arthroplasty must not be stated as completed.",
+            "Do not confuse the left knee surgical side with the right lower-leg thrombosis side",
+            "Right calf thrombus must not be directly diagnosed as pulmonary embolism.",
+            "Must not recommend safe discharge or transition to routine follow-up before thrombus-related risks are addressed."
+          ],
+          "critical_omission_rules_en": [
+            "Right calf intermuscular vein thrombosis must be identified and managed.",
+            "The planned-surgery status of left knee osteoarthritis must be retained.",
+            "Laterality verification must be performed",
+            "A VTE prophylaxis/antithrombotic regimen must be formulated or confirmed"
+          ],
+          "preliminary_risk_triggers_en": [
+            "active_perioperative_VTE_issue",
+            "laterality_sensitive",
+            "not_postoperative",
+            "not_ready_for_stopping"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_treatment",
+          "rationale_en": "The patient remains in the inpatient preoperative phase. Although the left-knee diagnosis and surgical plan are clear, the active right-calf intermuscular venous thrombosis requires perioperative management and definitive surgery has not been completed. Stopping, discharge, or routine follow-up is therefore not safe; preoperative assessment and treatment management should continue.",
+          "remaining_blockers_en": [
+            "Perioperative risk stratification and management planning for thrombosis of the right calf intermuscular vein have not been completed in public evidence.",
+            "Left total knee arthroplasty has not been completed or documented as completed",
+            "There is not yet evidence of postoperative recovery, complication assessment, or discharge follow-up arrangements."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_020_cp_003",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_020:ehr:admission:001",
+          "ward_020:ehr:preoperative_decision:001",
+          "ward_020:img:knee_alignment:001",
+          "ward_020:img:vte_cardiac:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_020:ehr:discharge_readiness:001",
+          "ward_020:ehr:postoperative_day1:001",
+          "ward_020:ehr:rehabilitation:001",
+          "ward_020:ehr:terminal:001",
+          "ward_020:img:postoperative_knee_xray:001",
+          "ward_020:proc:knee_replacement:001",
+          "ward_020:tx:rivaroxaban:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_020",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_020_s2_node_001_completed": true,
+            "ward_020_s2_node_002_completed": true,
+            "ward_020_s2_node_003_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Degenerative lesion of the left knee",
+            "age_years": 72,
+            "initial_time": "2124-12-05T14:22:00+08:00",
+            "setting": "inpatient_orthopedic_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-12-09T08:59:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_020:ehr:admission:001",
+            "ward_020:ehr:preoperative_decision:001",
+            "ward_020:img:knee_alignment:001",
+            "ward_020:img:vte_cardiac:001"
+          ]
+        },
+        "public_snapshot_sha256": "9e9c1c562f2400c0167960e48697cba2ba1b6d862e76b45c286983120b1244b1",
+        "public_time": "2124-12-09T08:59:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "action_selection"
+        ]
+      },
+      "sequence_index": 3
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_020:ehr:admission:001",
+            "interpretation_en": "Progressive left knee pain, deformity, and limited mobility despite insufficient response to conservative treatment support the symptomatic surgical-treatment context.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_020:ehr:postoperative_day1:001",
+            "interpretation_en": "Postoperatively, vital signs and distal limb neurovascular status were stable without obvious swelling; hemoglobin was approximately 87 g/L with documented postoperative anemia and no evidence of transfusion.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:ehr:preoperative_decision:001",
+            "interpretation_en": "Left knee osteoarthritis was clinically and radiographically clear, impaired daily life, and failed conservative treatment; left total knee arthroplasty and VTE prophylaxis were planned.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:ehr:rehabilitation:001",
+            "interpretation_en": "Postoperative left knee pain and restricted range of motion were present; mobilization, exercise therapy, ADL training, and fall prevention were recommended.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:img:knee_alignment:001",
+            "interpretation_en": "Imaging supports left knee osteoarthritis and post-removal changes of prior left femoral fixation; degenerative changes also involve the right knee and other lower-extremity joints.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_020:img:postoperative_knee_xray:001",
+            "interpretation_en": "Postoperative radiography indicates the left knee prosthesis is in place and well positioned.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:img:vte_cardiac:001",
+            "interpretation_en": "Preoperative vascular ultrasound showed an intermuscular venous thrombosis in the right calf, contralateral to the operated left knee. Echocardiography showed only mild valvular regurgitation. The right-calf thrombosis remains an active management issue.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:proc:knee_replacement:001",
+            "interpretation_en": "Left total knee arthroplasty with patelloplasty and joint release was completed under general anesthesia with cemented fixation; no serious intraoperative complication was documented.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_020_cp_007_claim_001"
+            ],
+            "evidence_id": "ward_020:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_007_state_diagnoses_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_007_action_003",
+              "ward_020_cp_007_action_004",
+              "ward_020_cp_007_action_005"
+            ],
+            "claim_ids": [
+              "ward_020_cp_007_claim_004",
+              "ward_020_cp_007_claim_005"
+            ],
+            "evidence_id": "ward_020:ehr:postoperative_day1:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_007_state_diagnoses_004",
+              "ward_020_cp_007_state_active_problems_003",
+              "ward_020_cp_007_state_active_problems_005",
+              "ward_020_cp_007_state_critical_facts_to_retain_003",
+              "ward_020_cp_007_state_critical_facts_to_retain_004",
+              "ward_020_cp_007_state_facts_to_retract_or_correct_003",
+              "ward_020_cp_007_state_required_delta_from_previous_checkpoint_002",
+              "ward_020_cp_007_state_treatment_readiness_001",
+              "ward_020_cp_007_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_007_action_001"
+            ],
+            "claim_ids": [
+              "ward_020_cp_007_claim_001",
+              "ward_020_cp_007_claim_002"
+            ],
+            "evidence_id": "ward_020:ehr:preoperative_decision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_007_state_diagnoses_001",
+              "ward_020_cp_007_state_facts_to_retract_or_correct_002"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_007_action_002",
+              "ward_020_cp_007_action_005"
+            ],
+            "claim_ids": [
+              "ward_020_cp_007_claim_007"
+            ],
+            "evidence_id": "ward_020:ehr:rehabilitation:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_007_state_active_problems_001",
+              "ward_020_cp_007_state_active_problems_004",
+              "ward_020_cp_007_state_blockers_002",
+              "ward_020_cp_007_state_critical_facts_to_retain_006",
+              "ward_020_cp_007_state_facts_to_retract_or_correct_003",
+              "ward_020_cp_007_state_required_delta_from_previous_checkpoint_003",
+              "ward_020_cp_007_state_treatment_readiness_001",
+              "ward_020_cp_007_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_020_cp_007_claim_001"
+            ],
+            "evidence_id": "ward_020:img:knee_alignment:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_007_state_diagnoses_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_007_action_004"
+            ],
+            "claim_ids": [
+              "ward_020_cp_007_claim_002",
+              "ward_020_cp_007_claim_003"
+            ],
+            "evidence_id": "ward_020:img:postoperative_knee_xray:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_007_state_active_problems_005",
+              "ward_020_cp_007_state_resolved_problems_003",
+              "ward_020_cp_007_state_critical_facts_to_retain_005",
+              "ward_020_cp_007_state_facts_to_retract_or_correct_003",
+              "ward_020_cp_007_state_required_delta_from_previous_checkpoint_004"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_007_action_001",
+              "ward_020_cp_007_action_005"
+            ],
+            "claim_ids": [
+              "ward_020_cp_007_claim_006"
+            ],
+            "evidence_id": "ward_020:img:vte_cardiac:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_007_state_diagnoses_002",
+              "ward_020_cp_007_state_active_problems_002",
+              "ward_020_cp_007_state_blockers_001",
+              "ward_020_cp_007_state_critical_facts_to_retain_002",
+              "ward_020_cp_007_state_facts_to_retract_or_correct_001",
+              "ward_020_cp_007_state_required_delta_from_previous_checkpoint_005",
+              "ward_020_cp_007_state_treatment_readiness_001",
+              "ward_020_cp_007_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_007_action_001",
+              "ward_020_cp_007_action_002",
+              "ward_020_cp_007_action_004"
+            ],
+            "claim_ids": [
+              "ward_020_cp_007_claim_002"
+            ],
+            "evidence_id": "ward_020:proc:knee_replacement:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_007_state_diagnoses_003",
+              "ward_020_cp_007_state_active_problems_002",
+              "ward_020_cp_007_state_active_problems_005",
+              "ward_020_cp_007_state_resolved_problems_001",
+              "ward_020_cp_007_state_resolved_problems_002",
+              "ward_020_cp_007_state_critical_facts_to_retain_001",
+              "ward_020_cp_007_state_facts_to_retract_or_correct_002",
+              "ward_020_cp_007_state_required_delta_from_previous_checkpoint_001",
+              "ward_020_cp_007_state_required_delta_from_previous_checkpoint_005",
+              "ward_020_cp_007_state_treatment_readiness_001",
+              "ward_020_cp_007_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "confirmed symptomatic left knee osteoarthritis",
+              "advanced degenerative left knee disease"
+            ],
+            "canonical_en": "Left knee osteoarthritis is confirmed and causes substantial functional limitation",
+            "claim_id": "ward_020_cp_007_claim_001",
+            "linked_evidence_ids": [
+              "ward_020:ehr:admission:001",
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:img:knee_alignment:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:admission:001",
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:img:knee_alignment:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "completed left TKA",
+              "left total knee replacement completed"
+            ],
+            "canonical_en": "Left total knee arthroplasty has been completed",
+            "claim_id": "ward_020_cp_007_claim_002",
+            "linked_evidence_ids": [
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:proc:knee_replacement:001",
+              "ward_020:img:postoperative_knee_xray:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_020:proc:knee_replacement:001",
+              "ward_020:img:postoperative_knee_xray:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "well-positioned left knee prosthesis",
+              "radiographically satisfactory prosthesis position"
+            ],
+            "canonical_en": "The postoperative left knee prosthesis is in place and well positioned",
+            "claim_id": "ward_020_cp_007_claim_003",
+            "linked_evidence_ids": [
+              "ward_020:img:postoperative_knee_xray:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:img:postoperative_knee_xray:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "postoperative anemia",
+              "postoperative hemoglobin about 87 g/L"
+            ],
+            "canonical_en": "Postoperative anemia is present with hemoglobin approximately 87 g/L",
+            "claim_id": "ward_020_cp_007_claim_004",
+            "linked_evidence_ids": [
+              "ward_020:ehr:postoperative_day1:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:postoperative_day1:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "intact distal neurovascular status",
+              "stable distal perfusion, sensation, and movement"
+            ],
+            "canonical_en": "Postoperative distal neurovascular status of the left limb is stable without obvious swelling",
+            "claim_id": "ward_020_cp_007_claim_005",
+            "linked_evidence_ids": [
+              "ward_020:ehr:postoperative_day1:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:postoperative_day1:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "right calf muscular-vein thrombosis",
+              "right calf distal venous thrombosis"
+            ],
+            "canonical_en": "Right intermuscular calf venous thrombosis remains an active problem requiring ongoing assessment and management",
+            "claim_id": "ward_020_cp_007_claim_006",
+            "linked_evidence_ids": [
+              "ward_020:img:vte_cardiac:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:img:vte_cardiac:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "ongoing postoperative rehabilitation",
+              "limited postoperative knee range of motion"
+            ],
+            "canonical_en": "Postoperative rehabilitation management remains ongoing with pain and restricted range of motion",
+            "claim_id": "ward_020_cp_007_claim_007",
+            "linked_evidence_ids": [
+              "ward_020:ehr:rehabilitation:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:rehabilitation:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "continue VTE management",
+              "manage right calf venous thrombosis"
+            ],
+            "action_id": "ward_020_cp_007_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue and document management of the right-calf venous thrombosis and perioperative VTE risk",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Immediately and continuously until discharge and subsequent follow-up",
+            "indication_en": "There is already right calf intermuscular vein thrombosis, and the patient is in a high-risk stage after joint replacement surgery.",
+            "linked_evidence_ids": [
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:img:vte_cardiac:001",
+              "ward_020:proc:knee_replacement:001"
+            ],
+            "prerequisites_en": [
+              "Have the clinical team determine the plan in conjunction with bleeding risk, surgical status, and existing medical orders."
+            ],
+            "problem_en": "Right calf intermuscular vein thrombosis and postoperative VTE risk.",
+            "target_and_laterality_en": "Right lower-leg venous system and whole-body VTE risk; not the left knee prosthesis itself."
+          },
+          {
+            "acceptable_aliases_en": [
+              "continue physical rehabilitation",
+              "postoperative mobility and ADL training"
+            ],
+            "action_id": "ward_020_cp_007_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue postoperative rehabilitation, mobility training, and fall prevention",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Continue during the current hospitalization and arrange continuous rehabilitation after discharge",
+            "indication_en": "Rehabilitation assessment has identified pain and restricted activity and proposed training recommendations",
+            "linked_evidence_ids": [
+              "ward_020:ehr:rehabilitation:001",
+              "ward_020:proc:knee_replacement:001"
+            ],
+            "prerequisites_en": [
+              "Proceed according to surgical orders and tolerance; assess safety of activity"
+            ],
+            "problem_en": "Postoperative left knee pain, limited range of motion, and need for functional recovery",
+            "target_and_laterality_en": "Left knee and overall walking and activities of daily living ability."
+          },
+          {
+            "acceptable_aliases_en": [
+              "monitor postoperative hemoglobin",
+              "assess postoperative anemia"
+            ],
+            "action_id": "ward_020_cp_007_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Monitor postoperative anemia and clinical symptoms, with further management assessed by the clinical team if indicated",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Continue monitoring after inpatient surgery and repeat examinations as clinically needed.",
+            "indication_en": "There is an established record of postoperative anemia",
+            "linked_evidence_ids": [
+              "ward_020:ehr:postoperative_day1:001"
+            ],
+            "prerequisites_en": [
+              "Determine in conjunction with vital signs, bleeding manifestations, symptoms, and repeat laboratory results."
+            ],
+            "problem_en": "Postoperative anemia with hemoglobin approximately 87 g/L",
+            "target_and_laterality_en": "Systemic; no laterality."
+          },
+          {
+            "acceptable_aliases_en": [
+              "postoperative wound and neurovascular monitoring",
+              "monitor for prosthetic and infectious complications"
+            ],
+            "action_id": "ward_020_cp_007_action_004",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue monitoring the incision, infection, prosthesis-related complications, and left-limb neurovascular status",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Continue during the current hospitalization, with planned follow-up after discharge",
+            "indication_en": "Although the current imaging position is good and distal status is stable, postoperative management has not yet been completed",
+            "linked_evidence_ids": [
+              "ward_020:ehr:postoperative_day1:001",
+              "ward_020:img:postoperative_knee_xray:001",
+              "ward_020:proc:knee_replacement:001"
+            ],
+            "prerequisites_en": [
+              "Routine postoperative physical examination and repeat imaging or laboratory testing as clinically needed."
+            ],
+            "problem_en": "Early postoperative safety monitoring after left knee joint replacement",
+            "target_and_laterality_en": "Left knee surgical site and left lower limb"
+          },
+          {
+            "acceptable_aliases_en": [
+              "discharge planning and follow-up",
+              "postoperative continuity planning"
+            ],
+            "action_id": "ward_020_cp_007_action_005",
+            "action_scope": "prospective",
+            "canonical_action_en": "Arrange discharge and follow-up after functional, medical-stability, and continuity-of-care criteria are met",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Assess early during hospitalization and complete before discharge",
+            "indication_en": "The patient remains in the early postoperative period, with restricted activity, anemia, and a need for management of right calf venous thrombosis",
+            "linked_evidence_ids": [
+              "ward_020:ehr:rehabilitation:001",
+              "ward_020:ehr:postoperative_day1:001",
+              "ward_020:img:vte_cardiac:001"
+            ],
+            "prerequisites_en": [
+              "Confirm activity and fall safety, controllable symptoms, a clear thrombosis management plan, and completion of discharge instructions and follow-up arrangements"
+            ],
+            "problem_en": "Evidence for safe discharge and continuous follow-up is still currently lacking.",
+            "target_and_laterality_en": "The patient as a whole; postoperative rehabilitation of the left knee and thrombosis of the right calf both need to be included."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Postoperative left knee pain and limited range of motion.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:rehabilitation:001"
+              ],
+              "state_id": "ward_020_cp_007_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right calf intermuscular vein thrombosis and perioperative VTE risk.",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001",
+                "ward_020:proc:knee_replacement:001"
+              ],
+              "state_id": "ward_020_cp_007_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative anemia.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:postoperative_day1:001"
+              ],
+              "state_id": "ward_020_cp_007_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Fall risk and functional recovery needs",
+              "linked_evidence_ids": [
+                "ward_020:ehr:rehabilitation:001"
+              ],
+              "state_id": "ward_020_cp_007_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Continued monitoring of the wound, prosthesis, and neurovascular status is needed.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:postoperative_day1:001",
+                "ward_020:img:postoperative_knee_xray:001",
+                "ward_020:proc:knee_replacement:001"
+              ],
+              "state_id": "ward_020_cp_007_state_active_problems_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "There is not yet evidence that the right calf venous thrombosis has resolved or received adequate management.",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_007_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is no evidence yet that rehabilitation goals, activity capacity, and fall-safety assessment have been completed.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:rehabilitation:001"
+              ],
+              "state_id": "ward_020_cp_007_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is still no record of discharge and continuity follow-up arrangements.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_020_cp_007_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "The surgical side is the left knee; left total knee arthroplasty has been completed.",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001"
+              ],
+              "state_id": "ward_020_cp_007_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Preoperative ultrasound indicated an intermuscular venous thrombosis in the right calf; the laterality differs from the surgical side.",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_007_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative distal blood supply, sensation, and active movement are normal, with no obvious swelling.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:postoperative_day1:001"
+              ],
+              "state_id": "ward_020_cp_007_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Hemoglobin approximately 87 g/L, with postoperative anemia; no evidence of transfusion was seen.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:postoperative_day1:001"
+              ],
+              "state_id": "ward_020_cp_007_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative imaging indicates that the implant is in place and well positioned.",
+              "linked_evidence_ids": [
+                "ward_020:img:postoperative_knee_xray:001"
+              ],
+              "state_id": "ward_020_cp_007_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Rehabilitation recommendations include joint mobility, exercise therapy, ADL training, and fall prevention.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:rehabilitation:001"
+              ],
+              "state_id": "ward_020_cp_007_state_critical_facts_to_retain_006",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Confirmed left knee osteoarthritis.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:admission:001",
+                "ward_020:ehr:preoperative_decision:001",
+                "ward_020:img:knee_alignment:001"
+              ],
+              "state_id": "ward_020_cp_007_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right intermuscular calf venous thrombosis",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_007_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Status post left total knee arthroplasty (status post left total knee arthroplasty).",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001"
+              ],
+              "state_id": "ward_020_cp_007_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative anemia, hemoglobin approximately 87 g/L",
+              "linked_evidence_ids": [
+                "ward_020:ehr:postoperative_day1:001"
+              ],
+              "state_id": "ward_020_cp_007_state_diagnoses_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Misdocumenting a right calf intermuscular venous thrombosis as a left lower-extremity thrombosis.",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_007_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Describing the completed left knee replacement as only planned.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:preoperative_decision:001",
+                "ward_020:proc:knee_replacement:001"
+              ],
+              "state_id": "ward_020_cp_007_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Misinterpreting good implant position as completion of all postoperative recovery or absence of long-term risk.",
+              "linked_evidence_ids": [
+                "ward_020:img:postoperative_knee_xray:001",
+                "ward_020:ehr:rehabilitation:001",
+                "ward_020:ehr:postoperative_day1:001"
+              ],
+              "state_id": "ward_020_cp_007_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Early postoperative inpatient management phase; continue rehabilitation, VTE/thrombus management, and monitoring for anemia and complications.",
+            "linked_evidence_ids": [
+              "ward_020:proc:knee_replacement:001",
+              "ward_020:img:vte_cardiac:001",
+              "ward_020:ehr:postoperative_day1:001",
+              "ward_020:ehr:rehabilitation:001"
+            ],
+            "state_id": "ward_020_cp_007_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "New operative evidence shows that definitive left total knee arthroplasty has been completed.",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001"
+              ],
+              "state_id": "ward_020_cp_007_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": [
+                "ward_020:proc:knee_replacement:001"
+              ]
+            },
+            {
+              "canonical_en": "New postoperative assessment shows stable vital and distal neurovascular findings, with postoperative anemia.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:postoperative_day1:001"
+              ],
+              "state_id": "ward_020_cp_007_state_required_delta_from_previous_checkpoint_002",
+              "status": "new_evidence",
+              "supporting_evidence_ids": [
+                "ward_020:ehr:postoperative_day1:001"
+              ]
+            },
+            {
+              "canonical_en": "New rehabilitation assessment confirms postoperative pain and restricted range of motion and recommends rehabilitation and fall prevention.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:rehabilitation:001"
+              ],
+              "state_id": "ward_020_cp_007_state_required_delta_from_previous_checkpoint_003",
+              "status": "new_evidence",
+              "supporting_evidence_ids": [
+                "ward_020:ehr:rehabilitation:001"
+              ]
+            },
+            {
+              "canonical_en": "New postoperative radiography indicates a well-positioned left knee prosthesis.",
+              "linked_evidence_ids": [
+                "ward_020:img:postoperative_knee_xray:001"
+              ],
+              "state_id": "ward_020_cp_007_state_required_delta_from_previous_checkpoint_004",
+              "status": "new_evidence",
+              "supporting_evidence_ids": [
+                "ward_020:img:postoperative_knee_xray:001"
+              ]
+            },
+            {
+              "canonical_en": "The state changed from preoperative readiness to postoperative management; the right-calf venous thrombosis remains an unresolved active problem.",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001",
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_007_state_required_delta_from_previous_checkpoint_005",
+              "status": "state_change",
+              "supporting_evidence_ids": [
+                "ward_020:proc:knee_replacement:001",
+                "ward_020:img:vte_cardiac:001"
+              ]
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "Definitive surgical treatment for left knee osteoarthritis has been completed",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001"
+              ],
+              "state_id": "ward_020_cp_007_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The surgery itself did not record serious intraoperative complications",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001"
+              ],
+              "state_id": "ward_020_cp_007_state_resolved_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative imaging indicates that the implant is in place and well positioned.",
+              "linked_evidence_ids": [
+                "ward_020:img:postoperative_knee_xray:001"
+              ],
+              "state_id": "ward_020_cp_007_state_resolved_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Left knee replacement has been completed, and conditions are available to continue postoperative rehabilitation and monitoring; however, right lower-leg venous thrombosis, postoperative anemia, and functional safety still require management, and this cannot be used to determine that conditions for safe discharge have been met.",
+            "linked_evidence_ids": [
+              "ward_020:proc:knee_replacement:001",
+              "ward_020:img:vte_cardiac:001",
+              "ward_020:ehr:postoperative_day1:001",
+              "ward_020:ehr:rehabilitation:001"
+            ],
+            "state_id": "ward_020_cp_007_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Misdocument the right calf intermuscular vein thrombosis as left-sided or consider it resolved.",
+            "Omission of postoperative VTE risk and thrombus management.",
+            "Equating good postoperative implant position with resolution of all postoperative problems.",
+            "Suggesting safe discharge before confirming functional safety, thrombosis management, and continuity-of-care arrangements."
+          ],
+          "critical_omission_rules_en": [
+            "The surgical side must be retained as the left knee and the thrombus side as the right calf.",
+            "Postoperative anemia and rehabilitation limitations must be stated.",
+            "Continued rehabilitation, complication monitoring, and thrombosis management must be proposed.",
+            "Treatment response or discharge outcome must not be supplemented based on unreleased future results."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Continued treatment and inpatient evaluation are needed.",
+            "It is currently inappropriate to stop.",
+            "Current evidence is insufficient to support safe discharge or transition to follow-up alone."
+          ]
+        },
+        "stopping": {
+          "decision": "continue_treatment",
+          "rationale_en": "The left knee replacement is complete, the prosthesis is well positioned radiographically, and distal neurovascular findings are stable. However, the patient remains in the early postoperative period with right-calf intermuscular venous thrombosis, postoperative anemia, pain, restricted mobility, and fall risk. There is no evidence that postoperative management or discharge continuity planning is complete. Therefore, stopping is not safe and direct transition to follow-up is not supported; treatment and inpatient assessment should continue.",
+          "remaining_blockers_en": [
+            "The current management plan and stability of right calf intermuscular vein thrombosis have not yet been clarified in the evidence.",
+            "Postoperative anemia still requires clinical monitoring.",
+            "Left knee pain, limited range of motion, and fall risk have not yet been resolved.",
+            "There is not yet a clear discharge and continuity follow-up arrangement."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_020_cp_007",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_020:ehr:admission:001",
+          "ward_020:ehr:postoperative_day1:001",
+          "ward_020:ehr:preoperative_decision:001",
+          "ward_020:ehr:rehabilitation:001",
+          "ward_020:img:knee_alignment:001",
+          "ward_020:img:postoperative_knee_xray:001",
+          "ward_020:img:vte_cardiac:001",
+          "ward_020:proc:knee_replacement:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_020:ehr:discharge_readiness:001",
+          "ward_020:ehr:terminal:001",
+          "ward_020:tx:rivaroxaban:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_020",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_020_s2_node_001_completed": true,
+            "ward_020_s2_node_002_completed": true,
+            "ward_020_s2_node_003_completed": true,
+            "ward_020_s2_node_004_completed": true,
+            "ward_020_s2_node_005_completed": true,
+            "ward_020_s2_node_006_completed": true,
+            "ward_020_s2_node_007_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Degenerative lesion of the left knee",
+            "age_years": 72,
+            "initial_time": "2124-12-05T14:22:00+08:00",
+            "setting": "inpatient_orthopedic_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-12-11T11:32:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_020:ehr:admission:001",
+            "ward_020:ehr:postoperative_day1:001",
+            "ward_020:ehr:preoperative_decision:001",
+            "ward_020:ehr:rehabilitation:001",
+            "ward_020:img:knee_alignment:001",
+            "ward_020:img:postoperative_knee_xray:001",
+            "ward_020:img:vte_cardiac:001",
+            "ward_020:proc:knee_replacement:001"
+          ]
+        },
+        "public_snapshot_sha256": "974ce146d16b933ac5f0d02162505a5db3b63a8649ca7d0c99b89026acd60f8b",
+        "public_time": "2124-12-11T11:32:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 7
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_020:ehr:admission:001",
+            "interpretation_en": "Left knee pain, deformity, and limited mobility with inadequate response to conservative treatment support surgical treatment for symptomatic left knee degenerative disease.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_020:ehr:discharge_readiness:001",
+            "interpretation_en": "After postoperative antimicrobial, anticoagulation, and rehabilitation treatment, the patient is stable; the incision is dry without redness or swelling, and limb sensation, perfusion, and voluntary movement are good, meeting documented discharge-readiness criteria.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:ehr:postoperative_day1:001",
+            "interpretation_en": "Postoperative vital signs and distal neurovascular status are stable without obvious swelling; hemoglobin is approximately 87 g/L, with documented postoperative anemia and no evidence of transfusion.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:ehr:preoperative_decision:001",
+            "interpretation_en": "Left knee osteoarthritis was clinically and radiographically clear, impaired daily life, and failed conservative treatment; left total knee arthroplasty and venous thromboembolism prophylaxis were planned.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_020:ehr:rehabilitation:001",
+            "interpretation_en": "Postoperative left knee pain and restricted range of motion were documented; mobilization, exercise therapy, activities-of-daily-living training, and fall prevention were recommended.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:img:knee_alignment:001",
+            "interpretation_en": "Imaging supports left knee osteoarthritis and post-removal changes from prior fixation in the left femur; degenerative changes are also present in the right knee and other lower-extremity joints.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_020:img:postoperative_knee_xray:001",
+            "interpretation_en": "Postoperative imaging shows left knee arthroplasty changes, and the clinical record indicates that the prosthesis is in place and well positioned.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:img:vte_cardiac:001",
+            "interpretation_en": "Preoperative vascular ultrasound indicated an intermuscular venous thrombosis in the right calf, contralateral to the operated left knee. Echocardiography showed only mild valvular regurgitation. The right-calf venous thrombosis remains a key issue for anticoagulation and follow-up.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:proc:knee_replacement:001",
+            "interpretation_en": "Left total knee arthroplasty, patelloplasty, and knee release were completed with cemented prosthetic fixation; no serious intraoperative complication was documented.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_020_cp_008_action_001"
+            ],
+            "claim_ids": [
+              "ward_020_cp_008_claim_001",
+              "ward_020_cp_008_claim_002"
+            ],
+            "evidence_id": "ward_020:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_008_state_diagnoses_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_008_action_001",
+              "ward_020_cp_008_action_002",
+              "ward_020_cp_008_action_003",
+              "ward_020_cp_008_action_004",
+              "ward_020_cp_008_action_005",
+              "ward_020_cp_008_action_006"
+            ],
+            "claim_ids": [
+              "ward_020_cp_008_claim_006"
+            ],
+            "evidence_id": "ward_020:ehr:discharge_readiness:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_008_state_active_problems_001",
+              "ward_020_cp_008_state_active_problems_004",
+              "ward_020_cp_008_state_resolved_problems_003",
+              "ward_020_cp_008_state_blockers_001",
+              "ward_020_cp_008_state_blockers_002",
+              "ward_020_cp_008_state_critical_facts_to_retain_004",
+              "ward_020_cp_008_state_facts_to_retract_or_correct_003",
+              "ward_020_cp_008_state_facts_to_retract_or_correct_004",
+              "ward_020_cp_008_state_required_delta_from_previous_checkpoint_001",
+              "ward_020_cp_008_state_treatment_readiness_001",
+              "ward_020_cp_008_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_008_action_005"
+            ],
+            "claim_ids": [
+              "ward_020_cp_008_claim_005"
+            ],
+            "evidence_id": "ward_020:ehr:postoperative_day1:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_008_state_diagnoses_003",
+              "ward_020_cp_008_state_active_problems_002",
+              "ward_020_cp_008_state_resolved_problems_003",
+              "ward_020_cp_008_state_blockers_002",
+              "ward_020_cp_008_state_critical_facts_to_retain_003",
+              "ward_020_cp_008_state_critical_facts_to_retain_004",
+              "ward_020_cp_008_state_facts_to_retract_or_correct_003",
+              "ward_020_cp_008_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_008_action_001",
+              "ward_020_cp_008_action_002"
+            ],
+            "claim_ids": [
+              "ward_020_cp_008_claim_001",
+              "ward_020_cp_008_claim_002"
+            ],
+            "evidence_id": "ward_020:ehr:preoperative_decision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_008_state_diagnoses_001",
+              "ward_020_cp_008_state_active_problems_001",
+              "ward_020_cp_008_state_blockers_001",
+              "ward_020_cp_008_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_008_action_001",
+              "ward_020_cp_008_action_003",
+              "ward_020_cp_008_action_004"
+            ],
+            "claim_ids": [
+              "ward_020_cp_008_claim_006",
+              "ward_020_cp_008_claim_007"
+            ],
+            "evidence_id": "ward_020:ehr:rehabilitation:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_008_state_active_problems_003",
+              "ward_020_cp_008_state_active_problems_004",
+              "ward_020_cp_008_state_critical_facts_to_retain_005",
+              "ward_020_cp_008_state_facts_to_retract_or_correct_003",
+              "ward_020_cp_008_state_treatment_readiness_001",
+              "ward_020_cp_008_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_020_cp_008_claim_001"
+            ],
+            "evidence_id": "ward_020:img:knee_alignment:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_008_state_diagnoses_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_008_action_003",
+              "ward_020_cp_008_action_005"
+            ],
+            "claim_ids": [
+              "ward_020_cp_008_claim_004"
+            ],
+            "evidence_id": "ward_020:img:postoperative_knee_xray:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_008_state_diagnoses_004",
+              "ward_020_cp_008_state_active_problems_004",
+              "ward_020_cp_008_state_resolved_problems_001",
+              "ward_020_cp_008_state_critical_facts_to_retain_001",
+              "ward_020_cp_008_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_008_action_002",
+              "ward_020_cp_008_action_004",
+              "ward_020_cp_008_action_006"
+            ],
+            "claim_ids": [
+              "ward_020_cp_008_claim_003",
+              "ward_020_cp_008_claim_007"
+            ],
+            "evidence_id": "ward_020:img:vte_cardiac:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_008_state_diagnoses_002",
+              "ward_020_cp_008_state_active_problems_001",
+              "ward_020_cp_008_state_active_problems_004",
+              "ward_020_cp_008_state_critical_facts_to_retain_002",
+              "ward_020_cp_008_state_facts_to_retract_or_correct_002",
+              "ward_020_cp_008_state_facts_to_retract_or_correct_003",
+              "ward_020_cp_008_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_008_action_005"
+            ],
+            "claim_ids": [
+              "ward_020_cp_008_claim_003",
+              "ward_020_cp_008_claim_004"
+            ],
+            "evidence_id": "ward_020:proc:knee_replacement:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_008_state_diagnoses_004",
+              "ward_020_cp_008_state_resolved_problems_001",
+              "ward_020_cp_008_state_resolved_problems_002",
+              "ward_020_cp_008_state_critical_facts_to_retain_001",
+              "ward_020_cp_008_state_facts_to_retract_or_correct_001",
+              "ward_020_cp_008_state_facts_to_retract_or_correct_004",
+              "ward_020_cp_008_state_treatment_readiness_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "confirmed left knee osteoarthritis",
+              "symptomatic left knee degenerative joint disease"
+            ],
+            "canonical_en": "Left knee osteoarthritis with clinically significant functional limitation is confirmed",
+            "claim_id": "ward_020_cp_008_claim_001",
+            "linked_evidence_ids": [
+              "ward_020:ehr:admission:001",
+              "ward_020:img:knee_alignment:001",
+              "ward_020:ehr:preoperative_decision:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:admission:001",
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:img:knee_alignment:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "prepared for left total knee replacement",
+              "indication for left TKA established"
+            ],
+            "canonical_en": "Indication and treatment readiness for left total knee arthroplasty were established",
+            "claim_id": "ward_020_cp_008_claim_002",
+            "linked_evidence_ids": [
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:ehr:admission:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:ehr:admission:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "completed left total knee arthroplasty",
+              "uncomplicated documented intraoperative course"
+            ],
+            "canonical_en": "Definitive left knee arthroplasty was completed without a documented serious intraoperative complication",
+            "claim_id": "ward_020_cp_008_claim_003",
+            "linked_evidence_ids": [
+              "ward_020:img:vte_cardiac:001",
+              "ward_020:proc:knee_replacement:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_020:proc:knee_replacement:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "well-positioned left knee prosthesis",
+              "postoperative radiograph shows satisfactory prosthesis position"
+            ],
+            "canonical_en": "The left knee prosthesis is in place and documented as well positioned",
+            "claim_id": "ward_020_cp_008_claim_004",
+            "linked_evidence_ids": [
+              "ward_020:img:postoperative_knee_xray:001",
+              "ward_020:proc:knee_replacement:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:img:postoperative_knee_xray:001",
+              "ward_020:proc:knee_replacement:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "stable postoperative status with anemia",
+              "postoperative anemia without documented transfusion"
+            ],
+            "canonical_en": "The postoperative condition is generally stable, with documented postoperative anemia",
+            "claim_id": "ward_020_cp_008_claim_005",
+            "linked_evidence_ids": [
+              "ward_020:ehr:postoperative_day1:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:postoperative_day1:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "ready for discharge with ongoing follow-up",
+              "discharge-ready but requiring continuity of care"
+            ],
+            "canonical_en": "Documented discharge readiness is achieved, while anticoagulation, rehabilitation, and wound surveillance remain necessary",
+            "claim_id": "ward_020_cp_008_claim_006",
+            "linked_evidence_ids": [
+              "ward_020:ehr:discharge_readiness:001",
+              "ward_020:ehr:rehabilitation:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:discharge_readiness:001",
+              "ward_020:ehr:rehabilitation:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "right calf muscular venous thrombosis",
+              "contralateral calf vein thrombosis"
+            ],
+            "canonical_en": "Right-calf intermuscular venous thrombosis is an active problem requiring ongoing management and is contralateral to the operated left knee",
+            "claim_id": "ward_020_cp_008_claim_007",
+            "linked_evidence_ids": [
+              "ward_020:img:vte_cardiac:001",
+              "ward_020:ehr:rehabilitation:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:img:vte_cardiac:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "continue left TKA rehabilitation",
+              "postoperative knee rehabilitation and fall prevention"
+            ],
+            "action_id": "ward_020_cp_008_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue postoperative rehabilitation after left total knee arthroplasty, including mobilization, exercise therapy, ADL training, and fall prevention",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Immediately and continuously; continue after discharge according to the rehabilitation plan.",
+            "indication_en": "Rehabilitation assessment has documented pain and activity limitation and made the above recommendations",
+            "linked_evidence_ids": [
+              "ward_020:ehr:rehabilitation:001",
+              "ward_020:ehr:discharge_readiness:001",
+              "ward_020:ehr:admission:001",
+              "ward_020:ehr:preoperative_decision:001"
+            ],
+            "prerequisites_en": [
+              "Vital signs are stable",
+              "Distal blood supply, sensation, and active movement of the affected limb are good."
+            ],
+            "problem_en": "Postoperative left knee pain, limited range of motion, and functional recovery",
+            "target_and_laterality_en": "Left knee and related mobility"
+          },
+          {
+            "acceptable_aliases_en": [
+              "continue anticoagulation for right calf thrombosis",
+              "manage right-calf venous thrombosis"
+            ],
+            "action_id": "ward_020_cp_008_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Verify and continue the anticoagulation/VTE management plan for the right-calf intermuscular venous thrombosis",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Verify before discharge and continue through the course specified by the clinical plan",
+            "indication_en": "Preoperative vascular ultrasound already documented thrombosis, and discharge-preparation records mention anticoagulation treatment",
+            "linked_evidence_ids": [
+              "ward_020:img:vte_cardiac:001",
+              "ward_020:ehr:discharge_readiness:001",
+              "ward_020:ehr:preoperative_decision:001"
+            ],
+            "prerequisites_en": [
+              "Verify bleeding risk, medications, doses, treatment course, and the surgical team plan",
+              "Clarify the laterality of the right-sided thrombus and left knee surgery."
+            ],
+            "problem_en": "Right lower leg intermuscular vein thrombosis",
+            "target_and_laterality_en": "Right calf intermuscular vein"
+          },
+          {
+            "acceptable_aliases_en": [
+              "monitor postoperative wound and limb status",
+              "monitor knee pain, ROM, and function"
+            ],
+            "action_id": "ward_020_cp_008_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Perform ongoing surveillance of the incision, limb neurovascular status, pain, range of motion, and function",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Continue as planned during hospitalization and after discharge",
+            "indication_en": "Although the patient is currently stable and the incision is good, postoperative rehabilitation assessment still includes pain and restricted activity.",
+            "linked_evidence_ids": [
+              "ward_020:ehr:discharge_readiness:001",
+              "ward_020:ehr:rehabilitation:001",
+              "ward_020:img:postoperative_knee_xray:001"
+            ],
+            "prerequisites_en": [
+              "Postoperative observation and rehabilitation follow-up arrangements are in place."
+            ],
+            "problem_en": "Recovery after left knee replacement and potential wound, neurovascular, or functional problems.",
+            "target_and_laterality_en": "Left knee surgical incision and left lower extremity"
+          },
+          {
+            "acceptable_aliases_en": [
+              "discharge with follow-up",
+              "transition to outpatient postoperative care"
+            ],
+            "action_id": "ward_020_cp_008_action_004",
+            "action_scope": "recorded",
+            "canonical_action_en": "Discharge to continuity follow-up after confirming medications, rehabilitation, wound care, warning signs, and follow-up arrangements",
+            "canonical_prohibited_action_en": null,
+            "category": "acceptable_recorded",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Can be prepared at the current time point; implement after discharge verification is completed",
+            "indication_en": "The current record clearly meets discharge-readiness criteria",
+            "linked_evidence_ids": [
+              "ward_020:ehr:discharge_readiness:001",
+              "ward_020:ehr:rehabilitation:001",
+              "ward_020:img:vte_cardiac:001"
+            ],
+            "prerequisites_en": [
+              "Specify the anticoagulation regimen and course.",
+              "Provide rehabilitation, wound-care, and fall-prevention guidance",
+              "Arrange postoperative follow-up and explain warnings for seeking medical attention, such as fever, incision changes, limb swelling or pain, or respiratory symptoms"
+            ],
+            "problem_en": "Postoperatively stable and meets the documented discharge-readiness criteria",
+            "target_and_laterality_en": "Continuity of care for postoperative left knee and right calf thrombosis"
+          },
+          {
+            "acceptable_aliases_en": [
+              "monitor postoperative anemia",
+              "follow hemoglobin after surgery"
+            ],
+            "action_id": "ward_020_cp_008_action_005",
+            "action_scope": "prospective",
+            "canonical_action_en": "Recheck hemoglobin and clinically assess postoperative anemia as indicated",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": false,
+            "deadline_or_time_window_en": "Recheck before discharge or during follow-up as clinically needed",
+            "indication_en": "Anemia was documented on the first postoperative day; there is currently no evidence of transfusion.",
+            "linked_evidence_ids": [
+              "ward_020:ehr:postoperative_day1:001",
+              "ward_020:ehr:discharge_readiness:001",
+              "ward_020:img:postoperative_knee_xray:001",
+              "ward_020:proc:knee_replacement:001"
+            ],
+            "prerequisites_en": [
+              "Conduct clinical assessment in conjunction with symptoms, vital signs, and signs of bleeding.",
+              "Do not independently infer the need for transfusion based solely on the current record"
+            ],
+            "problem_en": "Postoperative anemia, hemoglobin approximately 87 g/L",
+            "target_and_laterality_en": "Systemic hematologic status"
+          },
+          {
+            "acceptable_aliases_en": [
+              "VTE and bleeding warning education",
+              "patient education for calf thrombosis"
+            ],
+            "action_id": "ward_020_cp_008_action_006",
+            "action_scope": "prospective",
+            "canonical_action_en": "Educate the patient about the right-calf thrombosis and postoperative thrombotic or bleeding warning symptoms, and verify understanding",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete before discharge and reinforce during follow-up.",
+            "indication_en": "A documented thrombus is present and transfer to post-discharge continuous management is planned.",
+            "linked_evidence_ids": [
+              "ward_020:img:vte_cardiac:001",
+              "ward_020:ehr:discharge_readiness:001"
+            ],
+            "prerequisites_en": [
+              "Clarify the actual anticoagulation regimen",
+              "Provide understandable written or verbal warnings and pathways for seeking medical care."
+            ],
+            "problem_en": "Right calf intermuscular vein thrombosis and postoperative anticoagulation safety.",
+            "target_and_laterality_en": "Right lower-leg thrombosis and safety of systemic anticoagulation"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Intermuscular venous thrombosis of the right lower leg, requiring continued anticoagulation or management according to the clinical plan",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001",
+                "ward_020:ehr:discharge_readiness:001",
+                "ward_020:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_020_cp_008_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative anemia, requiring clinical monitoring.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:postoperative_day1:001"
+              ],
+              "state_id": "ward_020_cp_008_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative left knee pain and limited range of motion require rehabilitation and fall prevention",
+              "linked_evidence_ids": [
+                "ward_020:ehr:rehabilitation:001"
+              ],
+              "state_id": "ward_020_cp_008_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Continuous follow-up after discharge for incision, prosthesis, function, and thrombotic risk",
+              "linked_evidence_ids": [
+                "ward_020:ehr:discharge_readiness:001",
+                "ward_020:ehr:rehabilitation:001",
+                "ward_020:img:postoperative_knee_xray:001",
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_008_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Publicly available evidence does not provide the specific discharge anticoagulant, dose, treatment course, or follow-up arrangement; these should be verified and clarified before discharge",
+              "linked_evidence_ids": [
+                "ward_020:ehr:discharge_readiness:001",
+                "ward_020:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_020_cp_008_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Public evidence does not provide a plan for follow-up hemoglobin rechecking after anemia; it should be included in follow-up or rechecked as clinically needed.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:postoperative_day1:001",
+                "ward_020:ehr:discharge_readiness:001"
+              ],
+              "state_id": "ward_020_cp_008_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "The surgical side is the left knee; the replacement prosthesis is recorded as well positioned",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001",
+                "ward_020:img:postoperative_knee_xray:001"
+              ],
+              "state_id": "ward_020_cp_008_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right calf intermuscular venous thrombosis differs from the surgical side and must not be omitted or assigned the wrong side.",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_008_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative hemoglobin approximately 87 g/L, recorded as postoperative anemia with no evidence of transfusion",
+              "linked_evidence_ids": [
+                "ward_020:ehr:postoperative_day1:001"
+              ],
+              "state_id": "ward_020_cp_008_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The incision is dry without redness or swelling; sensation, blood supply, and active movement of the affected limb are good",
+              "linked_evidence_ids": [
+                "ward_020:ehr:discharge_readiness:001",
+                "ward_020:ehr:postoperative_day1:001"
+              ],
+              "state_id": "ward_020_cp_008_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Rehabilitation priorities include range-of-motion training, activities-of-daily-living training, and fall prevention",
+              "linked_evidence_ids": [
+                "ward_020:ehr:rehabilitation:001"
+              ],
+              "state_id": "ward_020_cp_008_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Left knee osteoarthritis/degenerative disease (confirmed).",
+              "linked_evidence_ids": [
+                "ward_020:ehr:admission:001",
+                "ward_020:ehr:preoperative_decision:001",
+                "ward_020:img:knee_alignment:001"
+              ],
+              "state_id": "ward_020_cp_008_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right calf intermuscular vein thrombosis (recorded, active problem)",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_008_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative anemia (hemoglobin approximately 87 g/L)",
+              "linked_evidence_ids": [
+                "ward_020:ehr:postoperative_day1:001"
+              ],
+              "state_id": "ward_020_cp_008_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative status after left knee joint replacement.",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001",
+                "ward_020:img:postoperative_knee_xray:001"
+              ],
+              "state_id": "ward_020_cp_008_state_diagnoses_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Do not continue to describe the preoperative left knee replacement plan as not yet implemented",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001",
+                "ward_020:img:postoperative_knee_xray:001"
+              ],
+              "state_id": "ward_020_cp_008_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right calf thrombosis must not be incorrectly written as left lower-extremity thrombosis or as resolved",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_008_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not describe discharge preparation as meaning that all risks and problems have disappeared",
+              "linked_evidence_ids": [
+                "ward_020:ehr:discharge_readiness:001",
+                "ward_020:img:vte_cardiac:001",
+                "ward_020:ehr:postoperative_day1:001",
+                "ward_020:ehr:rehabilitation:001"
+              ],
+              "state_id": "ward_020_cp_008_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not describe the absence of recorded severe intraoperative complications as exclusion of all postoperative complications.",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001",
+                "ward_020:ehr:discharge_readiness:001"
+              ],
+              "state_id": "ward_020_cp_008_state_facts_to_retract_or_correct_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Stable postoperative recovery period, having received antimicrobial, anticoagulation, and rehabilitation treatment; discharge with transition to continuous follow-up may be considered, but right calf thrombosis, postoperative anemia, and rehabilitation limitations have not been removed from management status.",
+            "linked_evidence_ids": [
+              "ward_020:ehr:discharge_readiness:001",
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:ehr:rehabilitation:001",
+              "ward_020:img:vte_cardiac:001",
+              "ward_020:ehr:postoperative_day1:001"
+            ],
+            "state_id": "ward_020_cp_008_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "New discharge-preparation evidence documents stability, a dry noninflamed incision, intact limb neurovascular status and voluntary movement, and fulfillment of discharge-readiness criteria.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:discharge_readiness:001"
+              ],
+              "state_id": "ward_020_cp_008_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": [
+                "ward_020:ehr:discharge_readiness:001"
+              ]
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "Definitive surgical treatment for left knee osteoarthritis has been completed",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001",
+                "ward_020:img:postoperative_knee_xray:001"
+              ],
+              "state_id": "ward_020_cp_008_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Severe intraoperative complications: none seen in the current record.",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001"
+              ],
+              "state_id": "ward_020_cp_008_state_resolved_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current incision redness/swelling and marked neurovascular abnormalities of the affected limb: not seen in the current record",
+              "linked_evidence_ids": [
+                "ward_020:ehr:discharge_readiness:001",
+                "ward_020:ehr:postoperative_day1:001"
+              ],
+              "state_id": "ward_020_cp_008_state_resolved_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Left knee replacement treatment has been completed, and the current record meets discharge-readiness standards; arrangements for continued anticoagulation, rehabilitation, wound observation, and anemia monitoring still need confirmation.",
+            "linked_evidence_ids": [
+              "ward_020:proc:knee_replacement:001",
+              "ward_020:ehr:discharge_readiness:001",
+              "ward_020:ehr:rehabilitation:001"
+            ],
+            "state_id": "ward_020_cp_008_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Do not misstate the intermuscular venous thrombosis in the right calf as left-sided or claim that it has resolved",
+            "Discharge preparation must not be miswritten as all active problems and risks having disappeared",
+            "Do not add conclusions of transfusion, thrombosis resolution, infection exclusion, or long-term efficacy without evidence.",
+            "Must not stop rehabilitation, incision, or neurovascular monitoring because the prosthesis position is good"
+          ],
+          "critical_omission_rules_en": [
+            "Omission of ongoing anticoagulation/management and follow-up for right lower-leg thrombosis is a critical omission",
+            "Omission of postoperative rehabilitation, fall prevention, and wound observation is a key omission.",
+            "Before discharge handoff clearly specifies medications, warning symptoms, and follow-up arrangements, continuity of care should not be considered complete."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Clinical review is required.",
+            "Check anticoagulation continuity before discharge.",
+            "Note the laterality of the right lower-leg thrombus",
+            "Postoperative anemia requires monitoring."
+          ]
+        },
+        "stopping": {
+          "decision": "safe_to_discharge_or_follow_up",
+          "rationale_en": "The record documents clinical stability, a dry noninflamed incision, intact limb neurovascular status and voluntary movement, and explicit discharge readiness. Discharge to follow-up is therefore reasonable after confirming anticoagulation, rehabilitation, wound care, and follow-up arrangements. However, right-calf intermuscular venous thrombosis, postoperative anemia, and postoperative functional limitation remain active issues, so all management should not simply stop.",
+          "remaining_blockers_en": [
+            "The specific anticoagulant medication, dose, treatment course, and return-visit arrangements need to be confirmed before discharge.",
+            "Clinical assessment of postoperative anemia or hemoglobin recheck as needed needs to be arranged",
+            "Rehabilitation, wound care, fall prevention, and warning-sign education need to be implemented."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_020_cp_008",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_020:ehr:admission:001",
+          "ward_020:ehr:discharge_readiness:001",
+          "ward_020:ehr:postoperative_day1:001",
+          "ward_020:ehr:preoperative_decision:001",
+          "ward_020:ehr:rehabilitation:001",
+          "ward_020:img:knee_alignment:001",
+          "ward_020:img:postoperative_knee_xray:001",
+          "ward_020:img:vte_cardiac:001",
+          "ward_020:proc:knee_replacement:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_020:ehr:terminal:001",
+          "ward_020:tx:rivaroxaban:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_020",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_020_s2_node_001_completed": true,
+            "ward_020_s2_node_002_completed": true,
+            "ward_020_s2_node_003_completed": true,
+            "ward_020_s2_node_004_completed": true,
+            "ward_020_s2_node_005_completed": true,
+            "ward_020_s2_node_006_completed": true,
+            "ward_020_s2_node_007_completed": true,
+            "ward_020_s2_node_008_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Degenerative lesion of the left knee",
+            "age_years": 72,
+            "initial_time": "2124-12-05T14:22:00+08:00",
+            "setting": "inpatient_orthopedic_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-12-11T16:31:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_020:ehr:admission:001",
+            "ward_020:ehr:discharge_readiness:001",
+            "ward_020:ehr:postoperative_day1:001",
+            "ward_020:ehr:preoperative_decision:001",
+            "ward_020:ehr:rehabilitation:001",
+            "ward_020:img:knee_alignment:001",
+            "ward_020:img:postoperative_knee_xray:001",
+            "ward_020:img:vte_cardiac:001",
+            "ward_020:proc:knee_replacement:001"
+          ]
+        },
+        "public_snapshot_sha256": "d5e694fdb2a3eb5afb2dff07487cc15b63d00b36f175a7853b3fb5f350714d4d",
+        "public_time": "2124-12-11T16:31:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "action_selection"
+        ]
+      },
+      "sequence_index": 8
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_020:ehr:admission:001",
+            "interpretation_en": "Progressive left knee symptoms significantly impaired mobility and conservative treatment was insufficient, supporting an indication for surgery.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_020:ehr:discharge_readiness:001",
+            "interpretation_en": "The postoperative condition is stable; the incision is dry without redness or swelling, and limb sensation, perfusion, and voluntary movement are good, meeting documented discharge-readiness criteria.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:ehr:postoperative_day1:001",
+            "interpretation_en": "Postoperative vital signs and distal limb status were stable; hemoglobin was approximately 87 g/L, indicating documented postoperative anemia without evidence of transfusion.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:ehr:preoperative_decision:001",
+            "interpretation_en": "Left knee osteoarthritis was clinically and radiographically clear, symptoms affected daily life, conservative treatment failed, and left total knee arthroplasty with VTE prophylaxis was planned.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_020:ehr:rehabilitation:001",
+            "interpretation_en": "Postoperative left knee pain and limited range of motion remain, requiring mobilization, exercise, ADL training, and fall prevention.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:img:knee_alignment:001",
+            "interpretation_en": "Imaging supports left knee osteoarthritis and also documents post-removal changes of prior left femoral fixation and degenerative changes in other joints.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_020:img:postoperative_knee_xray:001",
+            "interpretation_en": "Postoperative radiography documents the left knee prosthesis in place and well positioned.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:img:vte_cardiac:001",
+            "interpretation_en": "Preoperative vascular ultrasound showed an intermuscular venous thrombosis in the right calf, contralateral to the operated left knee; echocardiography showed only mild valvular regurgitation.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:proc:knee_replacement:001",
+            "interpretation_en": "Left total knee arthroplasty, patelloplasty, and joint release were completed with cemented fixation; no serious intraoperative complication was documented.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_020:tx:rivaroxaban:001",
+            "interpretation_en": "The discharge record clearly lists rivaroxaban 10 mg once daily, but the appropriate treatment duration for the pre-existing right calf venous thrombosis still requires clinical verification.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_020_cp_009_claim_001"
+            ],
+            "evidence_id": "ward_020:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_009_state_diagnoses_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_009_action_002",
+              "ward_020_cp_009_action_003",
+              "ward_020_cp_009_action_004",
+              "ward_020_cp_009_action_005"
+            ],
+            "claim_ids": [
+              "ward_020_cp_009_claim_006"
+            ],
+            "evidence_id": "ward_020:ehr:discharge_readiness:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_009_state_blockers_001",
+              "ward_020_cp_009_state_critical_facts_to_retain_004",
+              "ward_020_cp_009_state_facts_to_retract_or_correct_003",
+              "ward_020_cp_009_state_required_delta_from_previous_checkpoint_002",
+              "ward_020_cp_009_state_treatment_readiness_001",
+              "ward_020_cp_009_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_009_action_004"
+            ],
+            "claim_ids": [
+              "ward_020_cp_009_claim_007"
+            ],
+            "evidence_id": "ward_020:ehr:postoperative_day1:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_009_state_active_problems_002",
+              "ward_020_cp_009_state_critical_facts_to_retain_005"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_009_action_001"
+            ],
+            "claim_ids": [
+              "ward_020_cp_009_claim_001",
+              "ward_020_cp_009_claim_002"
+            ],
+            "evidence_id": "ward_020:ehr:preoperative_decision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_009_state_diagnoses_001",
+              "ward_020_cp_009_state_resolved_problems_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_009_action_003",
+              "ward_020_cp_009_action_005"
+            ],
+            "claim_ids": [
+              "ward_020_cp_009_claim_008"
+            ],
+            "evidence_id": "ward_020:ehr:rehabilitation:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_009_state_active_problems_001",
+              "ward_020_cp_009_state_active_problems_004",
+              "ward_020_cp_009_state_critical_facts_to_retain_005",
+              "ward_020_cp_009_state_facts_to_retract_or_correct_003",
+              "ward_020_cp_009_state_treatment_readiness_001",
+              "ward_020_cp_009_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_020_cp_009_claim_001"
+            ],
+            "evidence_id": "ward_020:img:knee_alignment:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_009_state_diagnoses_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_009_action_002"
+            ],
+            "claim_ids": [
+              "ward_020_cp_009_claim_005"
+            ],
+            "evidence_id": "ward_020:img:postoperative_knee_xray:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_009_state_critical_facts_to_retain_003",
+              "ward_020_cp_009_state_facts_to_retract_or_correct_003",
+              "ward_020_cp_009_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_009_action_001"
+            ],
+            "claim_ids": [
+              "ward_020_cp_009_claim_003",
+              "ward_020_cp_009_claim_004"
+            ],
+            "evidence_id": "ward_020:img:vte_cardiac:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_009_state_diagnoses_002",
+              "ward_020_cp_009_state_active_problems_003",
+              "ward_020_cp_009_state_active_problems_004",
+              "ward_020_cp_009_state_blockers_001",
+              "ward_020_cp_009_state_critical_facts_to_retain_001",
+              "ward_020_cp_009_state_critical_facts_to_retain_002",
+              "ward_020_cp_009_state_facts_to_retract_or_correct_001",
+              "ward_020_cp_009_state_facts_to_retract_or_correct_003",
+              "ward_020_cp_009_state_required_delta_from_previous_checkpoint_001",
+              "ward_020_cp_009_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_009_action_002"
+            ],
+            "claim_ids": [
+              "ward_020_cp_009_claim_005"
+            ],
+            "evidence_id": "ward_020:proc:knee_replacement:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_009_state_resolved_problems_001",
+              "ward_020_cp_009_state_resolved_problems_002",
+              "ward_020_cp_009_state_critical_facts_to_retain_001",
+              "ward_020_cp_009_state_critical_facts_to_retain_003",
+              "ward_020_cp_009_state_facts_to_retract_or_correct_001",
+              "ward_020_cp_009_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_020_cp_009_action_001",
+              "ward_020_cp_009_action_003"
+            ],
+            "claim_ids": [
+              "ward_020_cp_009_claim_004",
+              "ward_020_cp_009_claim_009"
+            ],
+            "evidence_id": "ward_020:tx:rivaroxaban:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_020_cp_009_state_active_problems_003",
+              "ward_020_cp_009_state_active_problems_004",
+              "ward_020_cp_009_state_blockers_001",
+              "ward_020_cp_009_state_critical_facts_to_retain_004",
+              "ward_020_cp_009_state_facts_to_retract_or_correct_002",
+              "ward_020_cp_009_state_required_delta_from_previous_checkpoint_001",
+              "ward_020_cp_009_state_required_delta_from_previous_checkpoint_002",
+              "ward_020_cp_009_state_treatment_readiness_001",
+              "ward_020_cp_009_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "confirmed left knee osteoarthritis",
+              "left knee degenerative osteoarthritis"
+            ],
+            "canonical_en": "Left knee osteoarthritis is confirmed",
+            "claim_id": "ward_020_cp_009_claim_001",
+            "linked_evidence_ids": [
+              "ward_020:ehr:admission:001",
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:img:knee_alignment:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:admission:001",
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:img:knee_alignment:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "left TKA decision completed",
+              "surgical planning completed"
+            ],
+            "canonical_en": "The preoperative decision for left total knee arthroplasty was completed",
+            "claim_id": "ward_020_cp_009_claim_002",
+            "linked_evidence_ids": [
+              "ward_020:ehr:preoperative_decision:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:preoperative_decision:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "right calf intermuscular venous thrombosis",
+              "pre-existing right calf vein thrombosis"
+            ],
+            "canonical_en": "A pre-existing intermuscular venous thrombosis was present in the right calf",
+            "claim_id": "ward_020_cp_009_claim_003",
+            "linked_evidence_ids": [
+              "ward_020:img:vte_cardiac:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:img:vte_cardiac:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "anticoagulation duration needs verification",
+              "verify treatment regimen for calf thrombosis"
+            ],
+            "canonical_en": "The anticoagulation plan and duration for the right calf venous thrombosis require clinical verification",
+            "claim_id": "ward_020_cp_009_claim_004",
+            "linked_evidence_ids": [
+              "ward_020:img:vte_cardiac:001",
+              "ward_020:tx:rivaroxaban:001"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "ward_020:img:vte_cardiac:001",
+              "ward_020:tx:rivaroxaban:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "completed left TKA",
+              "well-positioned left knee prosthesis"
+            ],
+            "canonical_en": "Left total knee arthroplasty was completed with the prosthesis in place and well positioned",
+            "claim_id": "ward_020_cp_009_claim_005",
+            "linked_evidence_ids": [
+              "ward_020:proc:knee_replacement:001",
+              "ward_020:img:postoperative_knee_xray:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_020:proc:knee_replacement:001",
+              "ward_020:img:postoperative_knee_xray:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "clinically ready for discharge",
+              "discharge criteria documented as met"
+            ],
+            "canonical_en": "The current record supports discharge readiness",
+            "claim_id": "ward_020_cp_009_claim_006",
+            "linked_evidence_ids": [
+              "ward_020:ehr:discharge_readiness:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:discharge_readiness:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "postoperative anemia",
+              "hemoglobin about 87 g/L"
+            ],
+            "canonical_en": "Documented postoperative anemia is present, with hemoglobin approximately 87 g/L",
+            "claim_id": "ward_020_cp_009_claim_007",
+            "linked_evidence_ids": [
+              "ward_020:ehr:postoperative_day1:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:postoperative_day1:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "ongoing postoperative knee rehabilitation need",
+              "limited postoperative knee ROM"
+            ],
+            "canonical_en": "Postoperative left knee pain and limited range of motion still require rehabilitation management",
+            "claim_id": "ward_020_cp_009_claim_008",
+            "linked_evidence_ids": [
+              "ward_020:ehr:rehabilitation:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:ehr:rehabilitation:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "documented rivaroxaban regimen with unspecified duration"
+            ],
+            "canonical_en": "Rivaroxaban 10 mg once daily is documented, but its specific duration for the pre-existing thrombosis is unspecified",
+            "claim_id": "ward_020_cp_009_claim_009",
+            "linked_evidence_ids": [
+              "ward_020:tx:rivaroxaban:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_020:tx:rivaroxaban:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "verify anticoagulation plan before discharge",
+              "confirm rivaroxaban duration and follow-up"
+            ],
+            "action_id": "ward_020_cp_009_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Before discharge, verify the anticoagulation indication, rivaroxaban dose, and duration for the pre-existing right calf venous thrombosis and document a clear follow-up plan",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before discharge; if already discharged, verify as soon as possible at post-discharge follow-up.",
+            "indication_en": "Prevent prophylactic medication records from being mistaken for a completed thrombosis-treatment regimen, and ensure continuous management",
+            "linked_evidence_ids": [
+              "ward_020:ehr:preoperative_decision:001",
+              "ward_020:img:vte_cardiac:001",
+              "ward_020:tx:rivaroxaban:001"
+            ],
+            "prerequisites_en": [
+              "Verify imaging and clinical records of the existing thrombus in the right lower leg.",
+              "The anticoagulation regimen is to be confirmed by the clinically responsible team"
+            ],
+            "problem_en": "There is an existing right calf intermuscular venous thrombosis, and the specific anticoagulation course is not clear",
+            "target_and_laterality_en": "Pre-existing intermuscular venous thrombosis in the right lower leg; rivaroxaban regimen"
+          },
+          {
+            "acceptable_aliases_en": [
+              "routine postoperative TKA follow-up",
+              "monitor left knee arthroplasty recovery"
+            ],
+            "action_id": "ward_020_cp_009_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue routine postoperative monitoring of the left knee incision, neurovascular status, prosthesis, and functional recovery",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": false,
+            "deadline_or_time_window_en": "Follow the orthopedic follow-up plan after discharge; seek medical attention promptly if abnormal symptoms occur.",
+            "indication_en": "The current imaging position is good, but postoperative recovery and complications still need observation.",
+            "linked_evidence_ids": [
+              "ward_020:ehr:discharge_readiness:001",
+              "ward_020:img:postoperative_knee_xray:001",
+              "ward_020:proc:knee_replacement:001"
+            ],
+            "prerequisites_en": [
+              "Follow orthopedic postoperative follow-up arrangements",
+              "Assess in conjunction with clinical symptoms."
+            ],
+            "problem_en": "Recovery period after left total knee arthroplasty",
+            "target_and_laterality_en": "Status after left total knee arthroplasty"
+          },
+          {
+            "acceptable_aliases_en": [
+              "discharge with follow-up",
+              "transition to outpatient postoperative care"
+            ],
+            "action_id": "ward_020_cp_009_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Proceed to discharge or outpatient follow-up after anticoagulation verification, discharge education, and continuity planning are documented",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": false,
+            "deadline_or_time_window_en": "Current hospitalization phase completed",
+            "indication_en": "The patient's vital signs, incision, and affected limb status are stable, and the record indicates discharge-readiness criteria have been met.",
+            "linked_evidence_ids": [
+              "ward_020:ehr:discharge_readiness:001",
+              "ward_020:tx:rivaroxaban:001",
+              "ward_020:ehr:rehabilitation:001"
+            ],
+            "prerequisites_en": [
+              "Verify the anticoagulation regimen.",
+              "Complete education on rehabilitation, fall prevention, and warning symptoms",
+              "Clarify follow-up arrangements."
+            ],
+            "problem_en": "The current record is consistent with discharge readiness, but continuity-management verification still needs to be completed",
+            "target_and_laterality_en": "Patient as a whole; focus on postoperative recovery of the left knee and management of right calf thrombosis"
+          },
+          {
+            "acceptable_aliases_en": [
+              "monitor postoperative anemia",
+              "follow hemoglobin after surgery"
+            ],
+            "action_id": "ward_020_cp_009_action_004",
+            "action_scope": "prospective",
+            "canonical_action_en": "Follow postoperative anemia and related symptoms, with repeat CBC if clinically indicated",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": false,
+            "deadline_or_time_window_en": "At early follow-up after discharge or when symptoms such as dizziness, fatigue, and shortness of breath occur.",
+            "indication_en": "Clinical stability and recovery trend need confirmation; current evidence does not support directly inferring a need for transfusion.",
+            "linked_evidence_ids": [
+              "ward_020:ehr:postoperative_day1:001",
+              "ward_020:ehr:discharge_readiness:001"
+            ],
+            "prerequisites_en": [
+              "Assess in conjunction with symptoms and vital signs.",
+              "Repeat complete blood count according to clinical judgment."
+            ],
+            "problem_en": "Postoperative anemia with hemoglobin of approximately 87 g/L",
+            "target_and_laterality_en": "Systemic hematologic status"
+          },
+          {
+            "acceptable_aliases_en": [
+              "postoperative knee rehabilitation",
+              "fall prevention after TKA"
+            ],
+            "action_id": "ward_020_cp_009_action_005",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue left knee range-of-motion exercise, functional rehabilitation, ADL training, and fall-prevention education",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": false,
+            "deadline_or_time_window_en": "Continue immediately, and proceed according to the rehabilitation plan after discharge.",
+            "indication_en": "Rehabilitation assessment has clarified functional limitations and proposed corresponding training recommendations.",
+            "linked_evidence_ids": [
+              "ward_020:ehr:rehabilitation:001",
+              "ward_020:ehr:discharge_readiness:001"
+            ],
+            "prerequisites_en": [
+              "Follow the rehabilitation team's guidance.",
+              "Progressive training according to pain and safety status"
+            ],
+            "problem_en": "Postoperative left knee pain, limited range of motion, and fall risk due to advanced age",
+            "target_and_laterality_en": "Postoperative left knee function and the patient's ability to perform activities of daily living"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Postoperative left knee pain and limited range of motion",
+              "linked_evidence_ids": [
+                "ward_020:ehr:rehabilitation:001"
+              ],
+              "state_id": "ward_020_cp_009_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative anemia, hemoglobin approximately 87 g/L",
+              "linked_evidence_ids": [
+                "ward_020:ehr:postoperative_day1:001"
+              ],
+              "state_id": "ward_020_cp_009_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Anticoagulation duration for pre-existing right calf thrombosis requires verification",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001",
+                "ward_020:tx:rivaroxaban:001"
+              ],
+              "state_id": "ward_020_cp_009_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Ongoing postoperative fall and VTE-related risk management is needed",
+              "linked_evidence_ids": [
+                "ward_020:ehr:rehabilitation:001",
+                "ward_020:img:vte_cardiac:001",
+                "ward_020:tx:rivaroxaban:001"
+              ],
+              "state_id": "ward_020_cp_009_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Before discharge, the clinical team should verify the indication, dose, and duration of anticoagulation for the pre-existing right calf thrombosis and document follow-up.",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001",
+                "ward_020:tx:rivaroxaban:001",
+                "ward_020:ehr:discharge_readiness:001"
+              ],
+              "state_id": "ward_020_cp_009_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "The surgical side is the left knee, and the thrombosis side is the right lower leg; laterality must remain distinguished.",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001",
+                "ward_020:proc:knee_replacement:001"
+              ],
+              "state_id": "ward_020_cp_009_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right calf intermuscular vein thrombosis was present preoperatively.",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_009_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Left total knee arthroplasty has been completed, with good prosthesis position on imaging.",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001",
+                "ward_020:img:postoperative_knee_xray:001"
+              ],
+              "state_id": "ward_020_cp_009_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current record is favorable for discharge, but the specific anticoagulation course of rivaroxaban still needs to be verified.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:discharge_readiness:001",
+                "ward_020:tx:rivaroxaban:001"
+              ],
+              "state_id": "ward_020_cp_009_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative anemia and limited left-knee activity still require follow-up and rehabilitation management.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:postoperative_day1:001",
+                "ward_020:ehr:rehabilitation:001"
+              ],
+              "state_id": "ward_020_cp_009_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Left knee osteoarthritis",
+              "linked_evidence_ids": [
+                "ward_020:ehr:admission:001",
+                "ward_020:ehr:preoperative_decision:001",
+                "ward_020:img:knee_alignment:001"
+              ],
+              "state_id": "ward_020_cp_009_state_diagnoses_001",
+              "status": "confirmed",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Pre-existing intermuscular venous thrombosis of the right calf",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_009_state_diagnoses_002",
+              "status": "confirmed",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "The preoperative thrombus in the right calf must not be written as a left-sided thrombus, a new postoperative thrombus, or a prosthesis-related thrombus.",
+              "linked_evidence_ids": [
+                "ward_020:img:vte_cardiac:001",
+                "ward_020:proc:knee_replacement:001"
+              ],
+              "state_id": "ward_020_cp_009_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A record of rivaroxaban 10 mg once daily must not be interpreted as confirmation of a complete thrombosis-treatment course.",
+              "linked_evidence_ids": [
+                "ward_020:tx:rivaroxaban:001"
+              ],
+              "state_id": "ward_020_cp_009_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not claim evidence of long-term function, long-term efficacy, or complete disappearance of thrombosis.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:discharge_readiness:001",
+                "ward_020:img:postoperative_knee_xray:001",
+                "ward_020:ehr:rehabilitation:001",
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_009_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Stable postoperative recovery and entry into the discharge and continuity-of-care stage; the current stable status cannot be interpreted as disappearance of thrombotic risk or rehabilitation needs.",
+            "linked_evidence_ids": [
+              "ward_020:ehr:discharge_readiness:001",
+              "ward_020:tx:rivaroxaban:001",
+              "ward_020:ehr:rehabilitation:001",
+              "ward_020:img:vte_cardiac:001"
+            ],
+            "state_id": "ward_020_cp_009_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "New discharge medication evidence documents rivaroxaban 10 mg once daily, while the specific treatment duration for the pre-existing right calf thrombosis remains to be verified.",
+              "linked_evidence_ids": [
+                "ward_020:tx:rivaroxaban:001",
+                "ward_020:img:vte_cardiac:001"
+              ],
+              "state_id": "ward_020_cp_009_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The patient has progressed from postoperative inpatient management to discharge preparation and continuity planning, with anticoagulation verification as a key continuity issue.",
+              "linked_evidence_ids": [
+                "ward_020:ehr:discharge_readiness:001",
+                "ward_020:tx:rivaroxaban:001"
+              ],
+              "state_id": "ward_020_cp_009_state_required_delta_from_previous_checkpoint_002",
+              "status": "state_update",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "The indication and preoperative decision for left knee arthroplasty are no longer unresolved",
+              "linked_evidence_ids": [
+                "ward_020:ehr:preoperative_decision:001",
+                "ward_020:proc:knee_replacement:001"
+              ],
+              "state_id": "ward_020_cp_009_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Definitive surgery is completed with no serious intraoperative complication documented",
+              "linked_evidence_ids": [
+                "ward_020:proc:knee_replacement:001"
+              ],
+              "state_id": "ward_020_cp_009_state_resolved_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Left total knee replacement has been completed; postoperative incision, distal neurovascular status, and vital-sign records are stable, providing a basis for discharge readiness; however, verification of the anticoagulation course and continuity of rehabilitation still need to be completed.",
+            "linked_evidence_ids": [
+              "ward_020:proc:knee_replacement:001",
+              "ward_020:img:postoperative_knee_xray:001",
+              "ward_020:ehr:discharge_readiness:001",
+              "ward_020:tx:rivaroxaban:001",
+              "ward_020:ehr:rehabilitation:001"
+            ],
+            "state_id": "ward_020_cp_009_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Do not confuse the surgical side, left knee, with the thrombosis side, right calf.",
+            "It must not be asserted that the right calf thrombosis has been adequately treated without verifying the treatment course.",
+            "Do not interpret the current discharge-preparation record as the absence of VTE, bleeding, anemia, infection, or fall risk.",
+            "Long-term efficacy, thrombus disappearance, or complete functional recovery must not be claimed based on undisclosed results."
+          ],
+          "critical_omission_rules_en": [
+            "Failure to verify the existing right lower-leg venous thrombosis and anticoagulation course is a critical safety omission.",
+            "Omission of postoperative rehabilitation and fall prevention is an important continuity-of-care omission.",
+            "Omission of follow-up for postoperative anemia and warnings for abnormal symptoms is an important safety omission."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Clinical review is required.",
+            "The anticoagulation course for existing right lower-leg venous thrombosis is unclear.",
+            "Postoperative status of the left knee is stable but rehabilitation and follow-up are still needed"
+          ]
+        },
+        "stopping": {
+          "decision": "safe_to_discharge_or_follow_up",
+          "rationale_en": "The available evidence shows stable vital signs, a dry incision without redness or swelling, intact limb neurovascular status, and a well-positioned left knee prosthesis; the record meets documented discharge-readiness criteria. Discharge with continuity follow-up is therefore reasonable rather than continued inpatient investigation of all issues. Management must not stop completely: the anticoagulation duration for the pre-existing right calf thrombosis requires clinical verification, and postoperative anemia, limited knee motion, and fall risk require ongoing follow-up.",
+          "remaining_blockers_en": [
+            "Before discharge, verify the anticoagulation indication, rivaroxaban dose, and specific course for the pre-existing right calf venous thrombosis.",
+            "Complete continuity confirmation for discharge medications, rehabilitation, fall prevention, and follow-up arrangements."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_020_cp_009",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_020:ehr:admission:001",
+          "ward_020:ehr:discharge_readiness:001",
+          "ward_020:ehr:postoperative_day1:001",
+          "ward_020:ehr:preoperative_decision:001",
+          "ward_020:ehr:rehabilitation:001",
+          "ward_020:img:knee_alignment:001",
+          "ward_020:img:postoperative_knee_xray:001",
+          "ward_020:img:vte_cardiac:001",
+          "ward_020:proc:knee_replacement:001",
+          "ward_020:tx:rivaroxaban:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_020:ehr:terminal:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_020",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_020_s2_node_001_completed": true,
+            "ward_020_s2_node_002_completed": true,
+            "ward_020_s2_node_003_completed": true,
+            "ward_020_s2_node_004_completed": true,
+            "ward_020_s2_node_005_completed": true,
+            "ward_020_s2_node_006_completed": true,
+            "ward_020_s2_node_007_completed": true,
+            "ward_020_s2_node_008_completed": true,
+            "ward_020_s2_node_009_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Degenerative lesion of the left knee",
+            "age_years": 72,
+            "initial_time": "2124-12-05T14:22:00+08:00",
+            "setting": "inpatient_orthopedic_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-12-11T16:37:00+08:00",
+          "stage": "S3",
+          "visible_evidence_ids": [
+            "ward_020:ehr:admission:001",
+            "ward_020:ehr:discharge_readiness:001",
+            "ward_020:ehr:postoperative_day1:001",
+            "ward_020:ehr:preoperative_decision:001",
+            "ward_020:ehr:rehabilitation:001",
+            "ward_020:img:knee_alignment:001",
+            "ward_020:img:postoperative_knee_xray:001",
+            "ward_020:img:vte_cardiac:001",
+            "ward_020:proc:knee_replacement:001",
+            "ward_020:tx:rivaroxaban:001"
+          ]
+        },
+        "public_snapshot_sha256": "f434f0c2c609a2e2a56c750daba2adb5964d9b87a8222d4db5851a5684c09ef9",
+        "public_time": "2124-12-11T16:37:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 9
+    }
+  ],
+  "milestone_candidates": [
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Left knee osteoarthritis has clinical and imaging support.",
+        "Symptoms and failure of conservative treatment have been documented."
+      ],
+      "current_status": "complete",
+      "milestone_id": "ward_020_ms_01",
+      "milestone_type": "diagnostic_closure",
+      "name_en": "Diagnostic closure",
+      "partial_criteria_en": [
+        "Left knee degeneration has been documented, but evidence of clinical impact or treatment failure is incomplete"
+      ],
+      "safety_invalidation_rules_en": [
+        "Mistaking right knee or other joint degeneration as the primary diagnosis",
+        "New evidence appears that negates the diagnosis of left knee osteoarthritis"
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Complete preoperative systematic assessment and make a decision regarding left knee replacement",
+        "VTE risk has been identified and there is an anticoagulation or prevention plan"
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_020_ms_02",
+      "milestone_type": "staging_or_treatment_readiness",
+      "name_en": "Staging or treatment readiness",
+      "partial_criteria_en": [
+        "Surgical decision-making is complete, but the VTE management plan or important risks have not yet been verified"
+      ],
+      "safety_invalidation_rules_en": [
+        "Ignore the preoperatively existing right calf venous thrombosis.",
+        "Considering risk management complete without verifying the anticoagulation regimen"
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Left total knee arthroplasty has been completed",
+        "Postoperative imaging shows the implant in place and well positioned",
+        "No severe intraoperative complications were recorded."
+      ],
+      "current_status": "complete",
+      "milestone_id": "ward_020_ms_03",
+      "milestone_type": "definitive_intervention",
+      "name_en": "Definitive intervention",
+      "partial_criteria_en": [
+        "Surgery has been completed, but postoperative imaging or complication documentation is incomplete"
+      ],
+      "safety_invalidation_rules_en": [
+        "Miswrite planned surgery as completed, or miswrite the left knee as the right knee",
+        "Evidence has emerged suggesting severe untreated postoperative complications"
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Postoperative incision and neurovascular status of the affected limb are stable",
+        "Anti-infective, anticoagulation, and rehabilitation management have been implemented.",
+        "Clarify medication, rehabilitation, and abnormal-symptom monitoring plans before discharge."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_020_ms_04",
+      "milestone_type": "postoperative_or_response_management",
+      "name_en": "Postoperative or response management",
+      "partial_criteria_en": [
+        "The patient is currently clinically stable and has begun rehabilitation and anticoagulation, but the anticoagulation course or anemia follow-up has not yet been fully clarified."
+      ],
+      "safety_invalidation_rules_en": [
+        "Incision infection, neurovascular abnormalities, significant bleeding, or other serious complications have not been addressed",
+        "Mistaking a stable short-term postoperative status for proven long-term efficacy."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Meets the documented discharge-readiness criteria",
+        "The indication, dose, and course of anticoagulation have been verified.",
+        "Complete rehabilitation, fall prevention, anemia monitoring, and follow-up arrangements."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_020_ms_05",
+      "milestone_type": "disposition_and_continuity",
+      "name_en": "Disposition and continuity of care",
+      "partial_criteria_en": [
+        "Discharge-preparation status has been recorded, but the anticoagulation course and continuity follow-up details for the right calf thrombosis still require verification."
+      ],
+      "safety_invalidation_rules_en": [
+        "Discharge when the key anticoagulation regimen has not been verified and there is no safe handoff.",
+        "No rehabilitation, medication, or warning-symptom instructions"
+      ]
+    }
+  ],
+  "normalized_evidence": [
+    {
+      "available_time": "2124-12-06T16:39:00+08:00",
+      "available_time_utc": "2124-12-06T08:39:00Z",
+      "case_id": "ward_020",
+      "clinical_time": "2124-12-05T14:22:00+08:00",
+      "clinical_time_utc": "2124-12-05T06:22:00Z",
+      "content_summary": "72-year-old woman with left knee pain for nearly 1 years that had markedly worsened, difficulty going up and down stairs, joint deformity, and limited mobility. Conservative treatment was insufficiently effective, and she was admitted for surgical treatment.",
+      "evidence_id": "ward_020:ehr:admission:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "72-year-old woman with left knee pain for nearly 1 years that had markedly worsened, difficulty going up and down stairs, joint deformity, and limited mobility. Conservative treatment was insufficiently effective, and she was admitted for surgical treatment.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC020 Admission Assessment",
+      "unit": null
+    },
+    {
+      "available_time": "2124-12-06T10:36:00+08:00",
+      "available_time_utc": "2124-12-06T02:36:00Z",
+      "case_id": "ward_020",
+      "clinical_time": "2124-12-06T10:16:00+08:00",
+      "clinical_time_utc": "2124-12-06T02:16:00Z",
+      "content_summary": "Osteoarthritic changes of the left knee, with changes following prior removal of internal fixation from the middle and lower segments of the left femur; degenerative changes are also present in the right knee and other lower-extremity joints.",
+      "evidence_id": "ward_020:img:knee_alignment:001",
+      "laterality": null,
+      "module": "imaging_results",
+      "raw_content": "Osteoarthritic changes of the left knee, with changes following prior removal of internal fixation from the middle and lower segments of the left femur; degenerative changes are also present in the right knee and other lower-extremity joints.",
+      "record_kind": "deidentified_imaging_summary",
+      "structured_value": null,
+      "title": "SRC020 Knee Joint Imaging",
+      "unit": null
+    },
+    {
+      "available_time": "2124-12-07T14:36:00+08:00",
+      "available_time_utc": "2124-12-07T06:36:00Z",
+      "case_id": "ward_020",
+      "clinical_time": "2124-12-06T14:03:00+08:00",
+      "clinical_time_utc": "2124-12-06T06:03:00Z",
+      "content_summary": "Vascular ultrasound indicated an intermuscular venous thrombosis in the right calf; note that its laterality differs from that of the surgically treated left knee. Echocardiography showed only mild valvular regurgitation.",
+      "evidence_id": "ward_020:img:vte_cardiac:001",
+      "laterality": null,
+      "module": "imaging_results",
+      "raw_content": "Vascular ultrasound indicated an intermuscular venous thrombosis in the right calf; note that its laterality differs from that of the surgically treated left knee. Echocardiography showed only mild valvular regurgitation.",
+      "record_kind": "deidentified_imaging_summary",
+      "structured_value": null,
+      "title": "SRC020 Preoperative VTE and Cardiac Assessment",
+      "unit": null
+    },
+    {
+      "available_time": "2124-12-09T08:59:00+08:00",
+      "available_time_utc": "2124-12-09T00:59:00Z",
+      "case_id": "ward_020",
+      "clinical_time": "2124-12-09T08:58:00+08:00",
+      "clinical_time_utc": "2124-12-09T00:58:00Z",
+      "content_summary": "The clinical and imaging diagnosis of left knee osteoarthritis was clear, the symptoms significantly affected daily life, and conservative treatment was ineffective; following systemic evaluation, left total knee arthroplasty was planned, with VTE prophylaxis to be implemented.",
+      "evidence_id": "ward_020:ehr:preoperative_decision:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "The clinical and imaging diagnosis of left knee osteoarthritis was clear, the symptoms significantly affected daily life, and conservative treatment was ineffective; following systemic evaluation, left total knee arthroplasty was planned, with VTE prophylaxis to be implemented.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC020 Preoperative Decision",
+      "unit": null
+    },
+    {
+      "available_time": "2124-12-10T08:41:00+08:00",
+      "available_time_utc": "2124-12-10T00:41:00Z",
+      "case_id": "ward_020",
+      "clinical_time": "2124-12-09T08:00:00+08:00",
+      "clinical_time_utc": "2124-12-09T00:00:00Z",
+      "content_summary": "Left total knee arthroplasty, patelloplasty, and knee joint release were completed under general anesthesia, with cemented fixation of the prosthesis; no serious intraoperative complications were documented.",
+      "evidence_id": "ward_020:proc:knee_replacement:001",
+      "laterality": null,
+      "module": "procedure_records",
+      "raw_content": "Left total knee arthroplasty, patelloplasty, and knee joint release were completed under general anesthesia, with cemented fixation of the prosthesis; no serious intraoperative complications were documented.",
+      "record_kind": "deidentified_procedure_summary",
+      "structured_value": null,
+      "title": "SRC020 Left Total Knee Replacement",
+      "unit": null
+    },
+    {
+      "available_time": "2124-12-10T09:16:00+08:00",
+      "available_time_utc": "2124-12-10T01:16:00Z",
+      "case_id": "ward_020",
+      "clinical_time": "2124-12-10T08:56:00+08:00",
+      "clinical_time_utc": "2124-12-10T00:56:00Z",
+      "content_summary": "Vital signs were stable; distal blood supply, sensation, and voluntary movement of the affected limb were normal, with no obvious swelling. Hemoglobin was approximately 87 g/L; postoperative anemia was documented, but there was no evidence of blood transfusion.",
+      "evidence_id": "ward_020:ehr:postoperative_day1:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "Vital signs were stable; distal blood supply, sensation, and voluntary movement of the affected limb were normal, with no obvious swelling. Hemoglobin was approximately 87 g/L; postoperative anemia was documented, but there was no evidence of blood transfusion.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC020 Postoperative Day 1",
+      "unit": null
+    },
+    {
+      "available_time": "2124-12-10T10:04:00+08:00",
+      "available_time_utc": "2124-12-10T02:04:00Z",
+      "case_id": "ward_020",
+      "clinical_time": "2124-12-10T10:04:00+08:00",
+      "clinical_time_utc": "2124-12-10T02:04:00Z",
+      "content_summary": "Rehabilitation assessment showed postoperative left knee pain and limited range of motion. Joint mobilization, exercise therapy, and ADL training were recommended, with attention to fall prevention.",
+      "evidence_id": "ward_020:ehr:rehabilitation:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "Rehabilitation assessment showed postoperative left knee pain and limited range of motion. Joint mobilization, exercise therapy, and ADL training were recommended, with attention to fall prevention.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC020 Rehabilitation Consultation",
+      "unit": null
+    },
+    {
+      "available_time": "2124-12-11T11:32:00+08:00",
+      "available_time_utc": "2124-12-11T03:32:00Z",
+      "case_id": "ward_020",
+      "clinical_time": "2124-12-11T10:05:00+08:00",
+      "clinical_time_utc": "2124-12-11T02:05:00Z",
+      "content_summary": "Postoperative changes of left knee arthroplasty; the clinical record indicates that the prosthesis is in place and well positioned.",
+      "evidence_id": "ward_020:img:postoperative_knee_xray:001",
+      "laterality": null,
+      "module": "imaging_results",
+      "raw_content": "Postoperative changes of left knee arthroplasty; the clinical record indicates that the prosthesis is in place and well positioned.",
+      "record_kind": "deidentified_imaging_summary",
+      "structured_value": null,
+      "title": "SRC020 postoperative knee radiograph",
+      "unit": null
+    },
+    {
+      "available_time": "2124-12-11T16:31:00+08:00",
+      "available_time_utc": "2124-12-11T08:31:00Z",
+      "case_id": "ward_020",
+      "clinical_time": "2124-12-11T16:27:00+08:00",
+      "clinical_time_utc": "2124-12-11T08:27:00Z",
+      "content_summary": "After postoperative antimicrobial, anticoagulation, and rehabilitation treatment, the patient's condition was stable; the incision was dry without redness or swelling, and sensation, blood supply, and voluntary movement of the affected limb were good, meeting the criteria for discharge readiness.",
+      "evidence_id": "ward_020:ehr:discharge_readiness:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "After postoperative antimicrobial, anticoagulation, and rehabilitation treatment, the patient's condition was stable; the incision was dry without redness or swelling, and sensation, blood supply, and voluntary movement of the affected limb were good, meeting the criteria for discharge readiness.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC020 Discharge Preparation",
+      "unit": null
+    },
+    {
+      "available_time": "2124-12-11T16:37:00+08:00",
+      "available_time_utc": "2124-12-11T08:37:00Z",
+      "case_id": "ward_020",
+      "clinical_time": "2124-12-11T16:31:00+08:00",
+      "clinical_time_utc": "2124-12-11T08:31:00Z",
+      "content_summary": "The discharge medication record clearly documents rivaroxaban 10 mg once daily. This patient already had an intermuscular venous thrombosis in the right calf before surgery; the specific treatment duration still requires clinical verification.",
+      "evidence_id": "ward_020:tx:rivaroxaban:001",
+      "laterality": null,
+      "module": "treatments",
+      "raw_content": "The discharge medication record clearly documents rivaroxaban 10 mg once daily. This patient already had an intermuscular venous thrombosis in the right calf before surgery; the specific treatment duration still requires clinical verification.",
+      "record_kind": "deidentified_treatment_summary",
+      "structured_value": null,
+      "title": "SRC020 Rivaroxaban Regimen",
+      "unit": null
+    },
+    {
+      "available_time": "2124-12-12T14:00:00+08:00",
+      "available_time_utc": "2124-12-12T06:00:00Z",
+      "case_id": "ward_020",
+      "clinical_time": "2124-12-12T14:00:00+08:00",
+      "clinical_time_utc": "2124-12-12T06:00:00Z",
+      "content_summary": "Following left total knee arthroplasty, the patient's general condition was stable, with no wound redness, swelling, or exudate, and joint mobility was acceptable. The patient was discharged with anticoagulant and symptomatic medications and was instructed to continue functional exercises and follow-up.",
+      "evidence_id": "ward_020:ehr:terminal:001",
+      "laterality": null,
+      "module": "disposition",
+      "raw_content": "Following left total knee arthroplasty, the patient's general condition was stable, with no wound redness, swelling, or exudate, and joint mobility was acceptable. The patient was discharged with anticoagulant and symptomatic medications and was instructed to continue functional exercises and follow-up.",
+      "record_kind": "deidentified_terminal_summary",
+      "structured_value": null,
+      "title": "SRC020 Final Discharge Status",
+      "unit": null
+    }
+  ],
+  "process_gold": {
+    "status": "source_recorded_not_layer_gold_clinically_validated",
+    "transition_count": 10,
+    "transitions": [
+      {
+        "clock_after": "2124-12-06T16:39:00+08:00",
+        "clock_before": "2124-12-05T14:22:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review orthopedic admission",
+            "review left knee admission",
+            "Review the admission assessment for left knee osteoarthritis",
+            "left knee osteoarthritis admission"
+          ],
+          "action_id": "ehr:ward_020:001",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_020:ehr:admission:001"
+          ],
+          "target": "left_knee_osteoarthritis_admission_case008"
+        },
+        "release_evidence_ids": [
+          "ward_020:ehr:admission:001"
+        ],
+        "sequence_index": 0,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_020_s2_node_001_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_020_s2_node_001"
+      },
+      {
+        "clock_after": "2124-12-07T14:36:00+08:00",
+        "clock_before": "2124-12-06T16:39:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review preoperative orthopedic and safety imaging",
+            "review preoperative orthopedic imaging and safety assessment",
+            "review knee alignment imaging and calf thrombosis cardiac assessment",
+            "Review the preoperative orthopedic imaging and thrombosis and cardiac safety assessment",
+            "preoperative orthopedic imaging and vascular cardiac assessment"
+          ],
+          "action_id": "ehr:ward_020:002",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_020:img:knee_alignment:001",
+            "ward_020:img:vte_cardiac:001"
+          ],
+          "target": "preoperative_orthopedic_imaging_and_vascular_cardiac_assessment_case008"
+        },
+        "release_evidence_ids": [
+          "ward_020:img:knee_alignment:001",
+          "ward_020:img:vte_cardiac:001"
+        ],
+        "sequence_index": 1,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_020_s2_node_002_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_020_s2_node_002"
+      },
+      {
+        "clock_after": "2124-12-09T08:59:00+08:00",
+        "clock_before": "2124-12-07T14:36:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review TKA decision",
+            "review left TKA decision",
+            "Review the preoperative decision for left total knee arthroplasty",
+            "left total knee arthroplasty preoperative decision"
+          ],
+          "action_id": "ehr:ward_020:003",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_020:ehr:preoperative_decision:001"
+          ],
+          "target": "left_total_knee_arthroplasty_preoperative_decision_case008"
+        },
+        "release_evidence_ids": [
+          "ward_020:ehr:preoperative_decision:001"
+        ],
+        "sequence_index": 2,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_020_s2_node_003_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_020_s2_node_003"
+      },
+      {
+        "clock_after": "2124-12-10T08:41:00+08:00",
+        "clock_before": "2124-12-09T08:59:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "perform recorded left knee replacement",
+            "perform left total knee arthroplasty",
+            "Perform left total knee arthroplasty, patellar plasty, and lysis",
+            "left total knee arthroplasty patellar plasty and lysis"
+          ],
+          "action_id": "ehr:ward_020:004",
+          "action_type": "perform_procedure",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_020:proc:knee_replacement:001"
+          ],
+          "target": "left_total_knee_arthroplasty_patellar_plasty_and_lysis_case008"
+        },
+        "release_evidence_ids": [
+          "ward_020:proc:knee_replacement:001"
+        ],
+        "sequence_index": 3,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_020_s2_node_004_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_020_s2_node_004"
+      },
+      {
+        "clock_after": "2124-12-10T09:16:00+08:00",
+        "clock_before": "2124-12-10T08:41:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "monitor day one after TKA",
+            "monitor postoperative day one",
+            "Monitor postoperative day one after left total knee arthroplasty and anemia",
+            "left tka postoperative day one and anemia monitoring"
+          ],
+          "action_id": "ehr:ward_020:005",
+          "action_type": "monitor_or_defer",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_020:ehr:postoperative_day1:001"
+          ],
+          "target": "left_tka_postoperative_day_one_and_anemia_monitoring_case008"
+        },
+        "release_evidence_ids": [
+          "ward_020:ehr:postoperative_day1:001"
+        ],
+        "sequence_index": 4,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_020_s2_node_005_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_020_s2_node_005"
+      },
+      {
+        "clock_after": "2124-12-10T10:04:00+08:00",
+        "clock_before": "2124-12-10T09:16:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "request postoperative rehabilitation",
+            "request rehabilitation assessment",
+            "Request postoperative rehabilitation assessment following left total knee arthroplasty",
+            "left tka rehabilitation assessment"
+          ],
+          "action_id": "ehr:ward_020:006",
+          "action_type": "request_consultation",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_020:ehr:rehabilitation:001"
+          ],
+          "target": "left_tka_rehabilitation_assessment_case008"
+        },
+        "release_evidence_ids": [
+          "ward_020:ehr:rehabilitation:001"
+        ],
+        "sequence_index": 5,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_020_s2_node_006_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_020_s2_node_006"
+      },
+      {
+        "clock_after": "2124-12-11T11:32:00+08:00",
+        "clock_before": "2124-12-10T10:04:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review postoperative knee X-ray",
+            "Review the postoperative X-ray following left total knee arthroplasty",
+            "left total knee arthroplasty postoperative xray"
+          ],
+          "action_id": "ehr:ward_020:007",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_020:img:postoperative_knee_xray:001"
+          ],
+          "target": "left_total_knee_arthroplasty_postoperative_xray_case008"
+        },
+        "release_evidence_ids": [
+          "ward_020:img:postoperative_knee_xray:001"
+        ],
+        "sequence_index": 6,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_020_s2_node_007_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_020_s2_node_007"
+      },
+      {
+        "clock_after": "2124-12-11T16:31:00+08:00",
+        "clock_before": "2124-12-11T11:32:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "assess postoperative discharge readiness",
+            "assess discharge readiness",
+            "Assess discharge readiness after left total knee replacement",
+            "left tka discharge readiness"
+          ],
+          "action_id": "ehr:ward_020:008",
+          "action_type": "monitor_or_defer",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_020:ehr:discharge_readiness:001"
+          ],
+          "target": "left_tka_discharge_readiness_case008"
+        },
+        "release_evidence_ids": [
+          "ward_020:ehr:discharge_readiness:001"
+        ],
+        "sequence_index": 7,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_020_s2_node_008_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_020_s2_node_008"
+      },
+      {
+        "clock_after": "2124-12-11T16:37:00+08:00",
+        "clock_before": "2124-12-11T16:31:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "start documented rivaroxaban plan",
+            "start rivaroxaban plan",
+            "Start the rivaroxaban regimen after left total knee arthroplasty",
+            "rivaroxaban after left tka with right calf thrombosis"
+          ],
+          "action_id": "ehr:ward_020:009",
+          "action_type": "start_treatment",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_020:tx:rivaroxaban:001"
+          ],
+          "target": "rivaroxaban_after_left_tka_with_right_calf_thrombosis_case008"
+        },
+        "release_evidence_ids": [
+          "ward_020:tx:rivaroxaban:001"
+        ],
+        "sequence_index": 8,
+        "stage_after": "S3",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_020_s2_node_009_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_020_s2_node_009"
+      },
+      {
+        "clock_after": "2124-12-12T14:00:00+08:00",
+        "clock_before": "2124-12-11T16:37:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "discharge after supported TKA recovery",
+            "discharge after left TKA",
+            "Discharge after left total knee arthroplasty",
+            "home after left total knee arthroplasty"
+          ],
+          "action_id": "ehr:ward_020:010",
+          "action_type": "discharge",
+          "gold_source_type": "ehr_derived_terminal_gold",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_020:ehr:terminal:001"
+          ],
+          "target": "home_after_left_total_knee_arthroplasty_case008"
+        },
+        "release_evidence_ids": [
+          "ward_020:ehr:terminal:001"
+        ],
+        "sequence_index": 9,
+        "stage_after": "S3",
+        "stage_before": "S3",
+        "state_updates": {
+          "disposition": "home",
+          "encounter_active": false,
+          "terminal": true
+        },
+        "terminal": true,
+        "transition_id": "ward_020_s3_terminal_001"
+      }
+    ]
+  },
+  "schema_version": "ward-runtime-gold-1.0",
+  "gold_version": "ward-anonymous-runtime-1.0"
+}

@@ -1,0 +1,43 @@
+{
+  "interface_version": "ward-patient-ehr-action-interface-0.2.0",
+  "status": "development_non_official",
+  "case_id": "ward_009",
+  "scenario_path": "outputs/world_model_patient_ehr_v01/cases/ward_009.patient_ehr.json",
+  "scenario_sha256": "21d1304320aa910bdc52da44265e6499d7b7f0b1b53b325f28d0df0f9219d025",
+  "ontology_path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_009.v0.2.json",
+  "ontology_sha256": "f3f23b528b8d274c6a706fb459673dac28f42b3bf72497b913794d737fa9a8bf",
+  "public_capabilities": [
+    "communicate_with_patient",
+    "review_ehr_documents",
+    "order_diagnostic_tests",
+    "review_results",
+    "request_consultation",
+    "manage_treatment",
+    "perform_procedures",
+    "monitor_or_defer",
+    "manage_disposition"
+  ],
+  "transition_concepts": {
+    "ward_009_s2_node_001": "ehr.breast_admission_assessment",
+    "ward_009_s2_node_002": "ehr.breast_surgery_readiness_and_vte",
+    "ward_009_s2_node_003": "consultation.preoperative_multidisciplinary_review",
+    "ward_009_s2_node_004": "result.preoperative_breast_ultrasound",
+    "ward_009_s2_node_005": "ehr.breast_quadrant_or_mass_excision_consent",
+    "ward_009_s2_node_006": "procedure.breast_conserving_sentinel_and_fascial_surgery",
+    "ward_009_s2_node_007": "ehr.post_breast_surgery_status",
+    "ward_009_s3_terminal_001": "disposition.home_after_inpatient_breast_surgery"
+  },
+  "decision_policy": {
+    "free_text_target_allowed": true,
+    "exact_hidden_identifier_required": false,
+    "schema_valid_non_gold_action_class": "valid_exploration_no_recorded_outcome",
+    "recognized_non_current_action_class": "recognized_non_current_action",
+    "gold_equivalent_action_class": "ehr_path_advanced",
+    "counterfactual_clinical_outcomes_simulated": false
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

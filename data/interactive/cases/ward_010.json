@@ -1,0 +1,12 @@
+{
+  "scenario": "outputs/world_model_patient_ehr_v01/cases/ward_010.patient_ehr.json",
+  "interface": "outputs/world_model_patient_ehr_v02/cases/ward_010.action_interface.v0.2.json",
+  "ontology": "outputs/world_model_patient_ehr_v02/action_ontology.ward_010.v0.2.json",
+  "graph": "outputs/world_model_patient_ehr_v03/cases/ward_010.action_graph.v0.3.json",
+  "tool_map": "outputs/world_model_patient_ehr_v05/cases/ward_010.tool_map.v0.5.6.json",
+  "case_id": "ward_010",
+  "adapter": "v056",
+  "freeze_manifest": "outputs/world_model_interaction_scorer_freeze_v01/FREEZE_MANIFEST.json",
+  "prompt_contract": "outputs/world_model_patient_ehr_v05/PROMPT_CONTRACT.v0.5.4.json",
+  "data_root": ".."
+}

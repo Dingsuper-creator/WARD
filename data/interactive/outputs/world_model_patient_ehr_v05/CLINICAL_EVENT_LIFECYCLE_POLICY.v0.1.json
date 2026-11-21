@@ -1,0 +1,190 @@
+{
+  "policy_version": "ward-patient-ehr-clinical-event-lifecycle-policy-0.1.0",
+  "status": "development_non_official",
+  "scope": "case-independent clinical event lifecycle and temporal relations",
+  "temporal_relations": {
+    "before": [
+      "\\bbefore\\b",
+      "\\bprior to\\b",
+      "\\bpre[- ]?(?:procedure|operative|treatment|test)\\b",
+      "preoperative",
+      "before examination",
+      "before treatment",
+      "before procedure"
+    ],
+    "after": [
+      "\\bafter\\b",
+      "\\bfollowing\\b",
+      "\\bpost[- ]?(?:procedure|operative|treatment|test|biopsy)\\b",
+      "postoperative",
+      "after examination",
+      "after treatment",
+      "after procedure",
+      "after biopsy",
+      "after needle puncture"
+    ],
+    "during": [
+      "\\bduring\\b",
+      "\\bintraoperative\\b",
+      "\\bintra-procedural\\b",
+      "intraoperative",
+      "during examination",
+      "during treatment",
+      "during procedure"
+    ]
+  },
+  "event_statuses": {
+    "planned": [
+      "\\bplan(?:ned)?\\b",
+      "\\bproposed\\b",
+      "\\bscheduled\\b",
+      "\\bprepare for\\b",
+      "plan",
+      "planned",
+      "preparation"
+    ],
+    "consented": [
+      "\\bconsent(?:ed)?\\b",
+      "\\binformed consent\\b",
+      "informed consent",
+      "consent form"
+    ],
+    "ordered": [
+      "\\border(?:ed)?\\b",
+      "\\brequest(?:ed)?\\b",
+      "requested",
+      "ordered",
+      "order placed",
+      "request"
+    ],
+    "performed": [
+      "\\bperform(?:ed)?\\b",
+      "\\bunderwent\\b",
+      "\\bstatus post\\b",
+      "performed",
+      "underwent",
+      "procedure completed"
+    ],
+    "completed": [
+      "\\bcompleted\\b",
+      "\\bfinished\\b",
+      "completed",
+      "finished"
+    ],
+    "resulted": [
+      "\\bresult(?:ed| available)?\\b",
+      "\\breport(?:ed| available)?\\b",
+      "\\bshowed\\b",
+      "\\bdemonstrated\\b",
+      "results show",
+      "report indicates",
+      "results available"
+    ],
+    "pending": [
+      "\\bpending\\b",
+      "\\bawaiting\\b",
+      "\\bwait(?:ing)? for\\b",
+      "results pending",
+      "waiting",
+      "not yet completed",
+      "results not yet available"
+    ]
+  },
+  "phase_mapping": {
+    "before": "preoperative",
+    "after": "postoperative",
+    "during": "operative"
+  },
+  "status_precedence": [
+    "pending",
+    "resulted",
+    "completed",
+    "performed",
+    "ordered",
+    "consented",
+    "planned"
+  ],
+  "event_feature_families": {
+    "procedure": [
+      "generic_procedure",
+      "biopsy",
+      "surgery",
+      "physical_exam",
+      "sentinel_node",
+      "fascial",
+      "mastectomy"
+    ],
+    "diagnostic_test": [
+      "generic_diagnostic_test",
+      "imaging",
+      "xray",
+      "mri",
+      "ct",
+      "pathology",
+      "surgical_pathology"
+    ],
+    "consultation": [
+      "generic_consultation",
+      "consultation"
+    ],
+    "care_transition": [
+      "generic_care_transition",
+      "discharge",
+      "followup"
+    ],
+    "treatment": [
+      "generic_treatment"
+    ]
+  },
+  "generic_event_terms": {
+    "procedure": [
+      "\\b(?:procedure|operation|surgery|biopsy|endoscopy|intervention)\\b",
+      "procedure",
+      "surgery",
+      "biopsy",
+      "needle puncture",
+      "endoscopy"
+    ],
+    "diagnostic_test": [
+      "\\b(?:test|scan|imaging|radiograph|x[- ]?ray|ct|mri|pathology)\\b",
+      "examination",
+      "imaging",
+      "pathology"
+    ],
+    "consultation": [
+      "\\b(?:consultation|consult|referral)\\b",
+      "consultation",
+      "consultation request",
+      "referral"
+    ],
+    "care_transition": [
+      "\\b(?:admission|discharge|transfer|follow[- ]?up)\\b",
+      "admission",
+      "discharge",
+      "transfer between departments",
+      "follow-up"
+    ],
+    "treatment": [
+      "\\b(?:treatment|therapy|chemotherapy|radiotherapy|radiation)\\b",
+      "treatment",
+      "chemotherapy",
+      "radiotherapy"
+    ]
+  },
+  "inference_policy": {
+    "temporal_relation_requires_referenced_event_feature": true,
+    "after_relation_implies_referenced_event_completed": true,
+    "structured_and_text_phase_conflicts_are_audited": true,
+    "phase_conflict_automatically_overrides_structured_field": false,
+    "unique_safe_state_candidate_required_for_advance": true,
+    "ambiguous_candidates_advance": false,
+    "background_fields_used_for_routing": false,
+    "llm_semantic_judge_used": false
+  },
+  "gold_action_visible": false,
+  "dependency_graph_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

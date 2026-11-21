@@ -1,0 +1,137 @@
+{
+  "policy_version": "ward-patient-ehr-clinical-event-lifecycle-policy-0.1.0",
+  "status": "development_non_official",
+  "scope": "case-independent clinical event lifecycle and temporal relations",
+  "temporal_relations": {
+    "before": [
+      "\\bbefore\\b",
+      "\\bprior to\\b",
+      "\\bpre[- ]?(?:procedure|operative|treatment|test)\\b"
+    ],
+    "after": [
+      "\\bafter\\b",
+      "\\bfollowing\\b",
+      "\\bpost[- ]?(?:procedure|operative|treatment|test|biopsy)\\b"
+    ],
+    "during": [
+      "\\bduring\\b",
+      "\\bintraoperative\\b",
+      "\\bintra-procedural\\b"
+    ]
+  },
+  "event_statuses": {
+    "planned": [
+      "\\bplan(?:ned)?\\b",
+      "\\bproposed\\b",
+      "\\bscheduled\\b",
+      "\\bprepare for\\b"
+    ],
+    "consented": [
+      "\\bconsent(?:ed)?\\b",
+      "\\binformed consent\\b"
+    ],
+    "ordered": [
+      "\\border(?:ed)?\\b",
+      "\\brequest(?:ed)?\\b"
+    ],
+    "performed": [
+      "\\bperform(?:ed)?\\b",
+      "\\bunderwent\\b",
+      "\\bstatus post\\b"
+    ],
+    "completed": [
+      "\\bcompleted\\b",
+      "\\bfinished\\b"
+    ],
+    "resulted": [
+      "\\bresult(?:ed| available)?\\b",
+      "\\breport(?:ed| available)?\\b",
+      "\\bshowed\\b",
+      "\\bdemonstrated\\b"
+    ],
+    "pending": [
+      "\\bpending\\b",
+      "\\bawaiting\\b",
+      "\\bwait(?:ing)? for\\b"
+    ]
+  },
+  "phase_mapping": {
+    "before": "preoperative",
+    "after": "postoperative",
+    "during": "operative"
+  },
+  "status_precedence": [
+    "pending",
+    "resulted",
+    "completed",
+    "performed",
+    "ordered",
+    "consented",
+    "planned"
+  ],
+  "event_feature_families": {
+    "procedure": [
+      "generic_procedure",
+      "biopsy",
+      "surgery",
+      "physical_exam",
+      "sentinel_node",
+      "fascial",
+      "mastectomy"
+    ],
+    "diagnostic_test": [
+      "generic_diagnostic_test",
+      "imaging",
+      "xray",
+      "mri",
+      "ct",
+      "pathology",
+      "surgical_pathology"
+    ],
+    "consultation": [
+      "generic_consultation",
+      "consultation"
+    ],
+    "care_transition": [
+      "generic_care_transition",
+      "discharge",
+      "followup"
+    ],
+    "treatment": [
+      "generic_treatment"
+    ]
+  },
+  "generic_event_terms": {
+    "procedure": [
+      "\\b(?:procedure|operation|surgery|biopsy|endoscopy|intervention)\\b"
+    ],
+    "diagnostic_test": [
+      "\\b(?:test|scan|imaging|radiograph|x[- ]?ray|ct|mri|pathology)\\b"
+    ],
+    "consultation": [
+      "\\b(?:consultation|consult|referral)\\b"
+    ],
+    "care_transition": [
+      "\\b(?:admission|discharge|transfer|follow[- ]?up)\\b"
+    ],
+    "treatment": [
+      "\\b(?:treatment|therapy|chemotherapy|radiotherapy|radiation)\\b"
+    ]
+  },
+  "inference_policy": {
+    "temporal_relation_requires_referenced_event_feature": true,
+    "after_relation_implies_referenced_event_completed": true,
+    "structured_and_text_phase_conflicts_are_audited": true,
+    "phase_conflict_automatically_overrides_structured_field": false,
+    "unique_safe_state_candidate_required_for_advance": true,
+    "ambiguous_candidates_advance": false,
+    "background_fields_used_for_routing": false,
+    "llm_semantic_judge_used": false
+  },
+  "gold_action_visible": false,
+  "dependency_graph_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

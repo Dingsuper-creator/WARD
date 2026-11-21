@@ -1,0 +1,3772 @@
+{
+  "case_id": "ward_038",
+  "checkpoints": [
+    {
+      "answer": {
+        "layer1_evidence": [],
+        "layer2_utilization_links": [],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Insufficient available evidence",
+              "No evaluable clinical evidence",
+              "Diagnostic and treatment status indeterminate"
+            ],
+            "canonical_en": "No specific clinically evaluable evidence is publicly available at this checkpoint; diagnosis, staging, treatment response, and safety for follow-up cannot be confirmed.",
+            "claim_id": "ward_038_cp_000_claim_001",
+            "linked_evidence_ids": [],
+            "status": "pending",
+            "supporting_evidence_ids": []
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Complete clinical data review",
+              "Verify diagnosis, treatment readiness, and safety assessment",
+              "Obtain missing oncology decision data"
+            ],
+            "action_id": "ward_038_cp_000_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Obtain and verify the clinical information required for current decision-making, including the specific cancer diagnosis and stage, treatment regimen, recent laboratory results, response or toxicity assessment, and discharge-safety assessment.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete before making a decision to continue treatment, stop assessment, discharge, or transition to follow-up.",
+            "indication_en": "A verifiable clinical factual basis needs to be established before continuing maintenance chemotherapy, adjusting treatment, stopping inpatient assessment, or transitioning to follow-up.",
+            "linked_evidence_ids": [],
+            "prerequisites_en": [
+              "Obtain the patient's medical records, laboratory tests, imaging, pathology, and treatment records, and have the clinical team verify their temporal validity."
+            ],
+            "problem_en": "There is currently no specific clinical evidence available for assessment; diagnosis, treatment readiness, treatment tolerability, efficacy, or conditions for safety follow-up cannot be confirmed.",
+            "target_and_laterality_en": "The patient's overall tumor diagnosis-and-treatment status; laterality not applicable."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Specific clinical evidence that can be evaluated is lacking.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_038_cp_000_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current indication, tolerance, efficacy, and safety of maintenance chemotherapy cannot be confirmed.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_038_cp_000_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "There is a lack of evidence usable for decision-making, such as diagnosis, staging, laboratory testing, imaging, pathology, or treatment response.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_038_cp_000_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Safety assessment required for discharge or transition to follow-up is lacking.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_038_cp_000_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "The patient is a 55-year-old woman.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_038_cp_000_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current setting is longitudinal inpatient management in oncology.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_038_cp_000_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The admission diagnosis is described as maintenance chemotherapy for a malignant tumor.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_038_cp_000_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There are currently no specific public evidence items.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_038_cp_000_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "The admission diagnosis is recorded as maintenance chemotherapy for malignant tumor, but specific tumor type, staging, and evidence of current response are lacking.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_038_cp_000_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [],
+          "management_state": {
+            "canonical_en": "The inpatient encounter remains active; based on currently disclosed information, evaluation must not be stopped, a treatment-completion judgment made, or transition to follow-up performed.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_038_cp_000_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Indeterminate; currently disclosed information is insufficient to confirm treatment readiness.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_038_cp_000_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Without supplementary verifiable clinical evidence, determining that the patient has completed treatment, treatment is effective, the patient is suitable for discharge, or suitable for safe follow-up."
+          ],
+          "critical_omission_rules_en": [
+            "Missing diagnostic staging, recent laboratory tests, treatment toxicity or efficacy, or discharge safety assessment will limit judgment of current treatment and outcome."
+          ],
+          "preliminary_risk_triggers_en": []
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "No specific evidence is publicly available at this checkpoint, so diagnosis, treatment readiness, response, and safety cannot be confirmed. Investigation should continue, and stopping or transition to follow-up is not yet safe.",
+          "remaining_blockers_en": [
+            "Specific clinical evidence is lacking to confirm diagnosis, staging, treatment status, efficacy, toxicity, and conditions for safe follow-up."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_038_cp_000",
+      "question": {
+        "allowed_evidence_ids": [],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_038:ehr:longitudinal_terminal",
+          "ward_038:ehr:visit_01_admission",
+          "ward_038:ehr:visit_01_outcome",
+          "ward_038:ehr:visit_02_admission",
+          "ward_038:ehr:visit_02_outcome",
+          "ward_038:img:visit_01_results",
+          "ward_038:img:visit_02_results",
+          "ward_038:lab:visit_01_results",
+          "ward_038:lab:visit_02_results",
+          "ward_038:tx:visit_01_treatment",
+          "ward_038:tx:visit_02_treatment"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_038",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 55,
+            "initial_time": "2124-01-10T16:16:14+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Female"
+          },
+          "public_time": "2124-01-10T16:16:14+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": []
+        },
+        "public_snapshot_sha256": "1b246709e64bb9eaf7a3704c3ef35fa5629bfc8fbd91e63a04f657e3125d1f4f",
+        "public_time": "2124-01-10T16:16:14+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 0
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_038:ehr:visit_01_admission",
+            "interpretation_en": "The admission record supports that the patient is hospitalized in oncology with known breast malignancy and secondary malignant neoplasm of bone; the admission purpose is maintenance chemotherapy for malignant neoplasm.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:img:visit_01_results",
+            "interpretation_en": "Vascular Doppler reports mural thrombus formation in the right internal jugular vein, supporting an active right internal jugular vein thrombosis; the summary does not establish thrombus acuity, extent, symptoms, or pulmonary embolism.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:lab:visit_01_results",
+            "interpretation_en": "The laboratory summary shows mild hypokalemia, anemia with macrocytic indices, and elevations in several tumor markers and heparin-binding protein; these findings require clinical correlation and do not independently establish cancer progression or infection.",
+            "role": "supporting"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_038_cp_002_action_001"
+            ],
+            "claim_ids": [
+              "ward_038_cp_002_claim_001"
+            ],
+            "evidence_id": "ward_038:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_002_state_diagnoses_001",
+              "ward_038_cp_002_state_diagnoses_002",
+              "ward_038_cp_002_state_active_problems_004",
+              "ward_038_cp_002_state_blockers_002",
+              "ward_038_cp_002_state_critical_facts_to_retain_001",
+              "ward_038_cp_002_state_critical_facts_to_retain_002",
+              "ward_038_cp_002_state_required_delta_from_previous_checkpoint_003",
+              "ward_038_cp_002_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_002_action_001",
+              "ward_038_cp_002_action_002",
+              "ward_038_cp_002_action_003"
+            ],
+            "claim_ids": [
+              "ward_038_cp_002_claim_002"
+            ],
+            "evidence_id": "ward_038:img:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_002_state_diagnoses_003",
+              "ward_038_cp_002_state_active_problems_001",
+              "ward_038_cp_002_state_blockers_002",
+              "ward_038_cp_002_state_critical_facts_to_retain_003",
+              "ward_038_cp_002_state_facts_to_retract_or_correct_003",
+              "ward_038_cp_002_state_required_delta_from_previous_checkpoint_001",
+              "ward_038_cp_002_state_required_delta_from_previous_checkpoint_003",
+              "ward_038_cp_002_state_treatment_readiness_001",
+              "ward_038_cp_002_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_002_action_001",
+              "ward_038_cp_002_action_004",
+              "ward_038_cp_002_action_005"
+            ],
+            "claim_ids": [
+              "ward_038_cp_002_claim_003"
+            ],
+            "evidence_id": "ward_038:lab:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_002_state_active_problems_002",
+              "ward_038_cp_002_state_active_problems_003",
+              "ward_038_cp_002_state_active_problems_005",
+              "ward_038_cp_002_state_blockers_002",
+              "ward_038_cp_002_state_critical_facts_to_retain_004",
+              "ward_038_cp_002_state_facts_to_retract_or_correct_001",
+              "ward_038_cp_002_state_facts_to_retract_or_correct_002",
+              "ward_038_cp_002_state_required_delta_from_previous_checkpoint_002",
+              "ward_038_cp_002_state_required_delta_from_previous_checkpoint_003",
+              "ward_038_cp_002_state_treatment_readiness_001",
+              "ward_038_cp_002_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "breast cancer with bone metastasis",
+              "metastatic breast malignancy",
+              "maintenance chemotherapy admission"
+            ],
+            "canonical_en": "The patient has breast malignancy with secondary malignant neoplasm of bone and is currently in an oncology inpatient maintenance-chemotherapy setting.",
+            "claim_id": "ward_038_cp_002_claim_001",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_01_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:ehr:visit_01_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "right internal jugular vein thrombosis",
+              "right IJ vein thrombus",
+              "right internal jugular venous thrombosis"
+            ],
+            "canonical_en": "Vascular Doppler supports mural thrombosis of the right internal jugular vein.",
+            "claim_id": "ward_038_cp_002_claim_002",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:img:visit_01_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "mild hypokalemia",
+              "macrocytic anemia pattern",
+              "elevated tumor markers requiring correlation"
+            ],
+            "canonical_en": "Mild hypokalemia and anemia with macrocytic red-cell indices are present; the clinical significance of elevated tumor markers remains pending correlation with trends and disease assessment.",
+            "claim_id": "ward_038_cp_002_claim_003",
+            "linked_evidence_ids": [
+              "ward_038:lab:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:lab:visit_01_results"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "oncology treatment-plan review",
+              "chemotherapy safety review",
+              "defer chemotherapy pending safety assessment"
+            ],
+            "action_id": "ward_038_cp_002_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Have the oncology team review the maintenance-chemotherapy plan and treatment tolerance, deferring the specific chemotherapy decision if necessary until thrombosis and laboratory abnormalities are assessed.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization, before the decision on the next chemotherapy administration.",
+            "indication_en": "Thrombosis, bleeding risk, electrolytes, and hematologic status need comprehensive assessment before continuing chemotherapy",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_01_admission",
+              "ward_038:img:visit_01_results",
+              "ward_038:lab:visit_01_results"
+            ],
+            "prerequisites_en": [
+              "Obtain current symptoms, vital signs, medication history, and prior chemotherapy information.",
+              "Review complete blood count, electrolytes, and renal and hepatic function."
+            ],
+            "problem_en": "Hospitalized maintenance chemotherapy for malignant tumor with newly identified venous thrombosis and laboratory abnormalities",
+            "target_and_laterality_en": "Current maintenance chemotherapy plan; laterality not applicable."
+          },
+          {
+            "acceptable_aliases_en": [
+              "right IJ thrombosis assessment",
+              "venous thrombosis workup",
+              "pulmonary embolism symptom assessment"
+            ],
+            "action_id": "ward_038_cp_002_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Promptly assess the clinical significance, acuity, extent, catheter association, and pulmonary-embolism symptoms related to the right internal jugular vein thrombosis, together with bleeding risk.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as possible, during the current hospitalization",
+            "indication_en": "Imaging has indicated venous thrombosis; subsequent management needs to be determined and dangerous complications ruled out",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_01_results"
+            ],
+            "prerequisites_en": [
+              "Verify the original Doppler report and prior imaging",
+              "Ask about symptoms such as neck/upper-limb swelling and pain, dyspnea, and chest pain.",
+              "Assess bleeding risk and related medications"
+            ],
+            "problem_en": "Right internal jugular vein wall thrombosis.",
+            "target_and_laterality_en": "Right internal jugular vein."
+          },
+          {
+            "acceptable_aliases_en": [
+              "anticoagulation decision",
+              "thrombosis management decision",
+              "anticoagulation risk-benefit assessment"
+            ],
+            "action_id": "ward_038_cp_002_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Based on thrombosis and bleeding-risk assessment, the clinical team should decide whether to initiate or adjust anticoagulation or other thrombosis management; a drug or dose should not be prescribed automatically from this summary alone.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as possible after completing the initial assessment",
+            "indication_en": "The thrombosis is supported by imaging, but the specific anticoagulation indication and regimen depend on unpublished clinical risk information",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_01_results"
+            ],
+            "prerequisites_en": [
+              "Complete assessment of acuity and chronicity, extent, catheter association, and bleeding risk.",
+              "Verify platelet count, renal function, and current anticoagulant/antiplatelet medications"
+            ],
+            "problem_en": "Right internal jugular vein thrombosis",
+            "target_and_laterality_en": "Right internal jugular vein thrombosis; no other laterality applicable"
+          },
+          {
+            "acceptable_aliases_en": [
+              "hypokalemia reassessment",
+              "potassium replacement assessment",
+              "repeat potassium measurement"
+            ],
+            "action_id": "ward_038_cp_002_action_004",
+            "action_scope": "prospective",
+            "canonical_action_en": "Recheck the low potassium result and manage and remeasure it in the context of ECG findings, renal function, medications, and symptoms.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Recently and recheck before chemotherapy administration",
+            "indication_en": "There is hypokalemia, which needs to be confirmed and assessed for whether supplementation and monitoring are needed",
+            "linked_evidence_ids": [
+              "ward_038:lab:visit_01_results"
+            ],
+            "prerequisites_en": [
+              "Repeat serum potassium and related electrolytes",
+              "Assess the electrocardiogram, renal function, and factors causing ongoing loss"
+            ],
+            "problem_en": "Potassium 3.39 mmol/L.",
+            "target_and_laterality_en": "Systemic electrolyte status; laterality not applicable."
+          },
+          {
+            "acceptable_aliases_en": [
+              "anemia reassessment",
+              "macrocytosis workup",
+              "repeat CBC"
+            ],
+            "action_id": "ward_038_cp_002_action_005",
+            "action_scope": "prospective",
+            "canonical_action_en": "Repeat the complete blood count and reassess the anemia and macrocytic indices, using prior trends and possible causes to determine monitoring or further workup.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Recently, before continuation of chemotherapy.",
+            "indication_en": "Hematologic abnormalities and their impact on chemotherapy tolerance need to be confirmed.",
+            "linked_evidence_ids": [
+              "ward_038:lab:visit_01_results"
+            ],
+            "prerequisites_en": [
+              "Repeat complete blood count and reticulocyte count and other relevant examinations as clinically judged.",
+              "Assess in conjunction with nutrition, medications, myelosuppression, and prior results"
+            ],
+            "problem_en": "Hemoglobin 105 g/L, decreased red blood cell count, and elevated MCV.",
+            "target_and_laterality_en": "Systemic hematologic status; laterality not applicable."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Right internal jugular vein thrombosis",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Mild hypokalemia, potassium 3.39 mmol/L",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Anemia with macrocytic red-cell index abnormalities: hemoglobin 105 g/L, MCV 100.8 fL",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Need for inpatient maintenance chemotherapy in oncology.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_038_cp_002_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Multiple tumor markers are elevated and require interpretation in conjunction with clinical information and dynamic trends.",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_active_problems_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Assessment of thrombosis acuity/chronicity, extent, symptoms, catheter association, and bleeding risk is still lacking.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_038_cp_002_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is still insufficient evidence to confirm that a specific chemotherapy regimen can be safely administered or continued.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission",
+                "ward_038:img:visit_01_results",
+                "ward_038:lab:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is still no complete safety and continuity arrangement for discharge or transition to follow-up.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_038_cp_002_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "The current setting is inpatient maintenance chemotherapy in oncology.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_038_cp_002_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Breast malignancy and secondary malignant neoplasm of bone have been specified in the admission record",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_038_cp_002_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Vascular Doppler suggests right internal jugular vein wall thrombosis",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Abnormal results including potassium 3.39 mmol/L, hemoglobin 105 g/L, and MCV 100.8 fL",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Malignant neoplasm of the breast (recorded).",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_038_cp_002_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Secondary malignant tumor of bone (documented).",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_038_cp_002_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right internal jugular vein wall thrombosis (supported by vascular Doppler).",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Do not directly interpret elevated tumor markers as tumor progression.",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not directly interpret elevated heparin-binding protein as infection.",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "In the absence of evidence, a right internal jugular vein thrombus must not be interpreted as pulmonary embolism, acute thrombus, or catheter-related thrombus.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "The patient is currently still in the active inpatient management stage. The right internal jugular vein thrombus requires clinical assessment and management decisions; hypokalemia and anemia require review and correction/monitoring.",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_01_results",
+              "ward_038:lab:visit_01_results"
+            ],
+            "state_id": "ward_038_cp_002_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Compared with the previous assessment point, a new vascular Doppler result indicates right internal jugular vein mural thrombosis.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "New laboratory abnormality summary compared with the previous time point, including hypokalemia, anemia, and macrocytic red cell index abnormalities.",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_required_delta_from_previous_checkpoint_002",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The inpatient maintenance chemotherapy background persists, but treatment safety assessment needs have increased because of newly added thrombosis and laboratory abnormalities; there is currently no evidence that any problem has been resolved.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission",
+                "ward_038:img:visit_01_results",
+                "ward_038:lab:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_002_state_required_delta_from_previous_checkpoint_003",
+              "status": "state_update",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Conditions are not yet fully in place to directly proceed with maintenance chemotherapy on this basis; thrombosis management assessment must first be completed, complete blood count and electrolytes reviewed, and the responsible team must comprehensively judge chemotherapy tolerance and risk.",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_01_admission",
+              "ward_038:img:visit_01_results",
+              "ward_038:lab:visit_01_results"
+            ],
+            "state_id": "ward_038_cp_002_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Do not miswrite internal jugular vein thrombosis as pulmonary embolism or unconditionally determine it to be acute/catheter-related thrombosis",
+            "Tumor progression must not be determined solely on the basis of elevated tumor markers",
+            "Anticoagulant medication and dose must not be automatically determined without assessing bleeding risk and thrombus characteristics",
+            "Do not claim that treatment can be safely stopped when thrombosis and laboratory abnormalities have not been managed or assessed"
+          ],
+          "critical_omission_rules_en": [
+            "Omission of thrombus-related symptoms and pulmonary embolism risk assessment is a key omission",
+            "Omission of the safety recheck of the chemotherapy plan is a critical omission.",
+            "Omission of review and monitoring of hypokalemia and anemia is a key omission."
+          ],
+          "preliminary_risk_triggers_en": [
+            "There is a safety risk related to right internal jugular vein thrombosis.",
+            "There are treatment-tolerance risks related to hypokalemia and anemia",
+            "Current evidence is insufficient to support safely stopping inpatient assessment or directly transitioning to follow-up"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_treatment",
+          "rationale_en": "The patient remains in active inpatient oncology management, with newly identified right internal jugular vein thrombosis and hypokalemia/anemia-related abnormalities. The available evidence does not show that these issues are resolved or that safe discharge/follow-up criteria are met, so evaluation should not stop; treatment management and safety review should continue.",
+          "remaining_blockers_en": [
+            "The acuity/chronicity, extent, catheter association, symptoms, and bleeding risk of right internal jugular vein thrombosis have not yet been clarified.",
+            "Laboratory abnormalities such as hypokalemia and anemia still require review and management.",
+            "Complete chemotherapy tolerance, discharge conditions, and continuity follow-up arrangements have not yet been disclosed"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_038_cp_002",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_038:ehr:visit_01_admission",
+          "ward_038:img:visit_01_results",
+          "ward_038:lab:visit_01_results"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_038:ehr:longitudinal_terminal",
+          "ward_038:ehr:visit_01_outcome",
+          "ward_038:ehr:visit_02_admission",
+          "ward_038:ehr:visit_02_outcome",
+          "ward_038:img:visit_02_results",
+          "ward_038:lab:visit_02_results",
+          "ward_038:tx:visit_01_treatment",
+          "ward_038:tx:visit_02_treatment"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_038",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_038_s2_node_001_completed": true,
+            "ward_038_s2_node_002_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 55,
+            "initial_time": "2124-01-10T16:16:14+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Female"
+          },
+          "public_time": "2124-01-11T04:11:22+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_038:ehr:visit_01_admission",
+            "ward_038:img:visit_01_results",
+            "ward_038:lab:visit_01_results"
+          ]
+        },
+        "public_snapshot_sha256": "ce3a28be5305a73444c31aa7e8fa5b066bc54912dbe5b4d4014806b944b339cc",
+        "public_time": "2124-01-11T04:11:22+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "action_selection"
+        ]
+      },
+      "sequence_index": 2
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_038:ehr:visit_01_admission",
+            "interpretation_en": "The prior oncology admission supports breast malignancy with secondary malignant neoplasm of bone and a maintenance-chemotherapy indication.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:ehr:visit_01_outcome",
+            "interpretation_en": "The prior hospitalization was documented as improved, but this does not by itself establish tumor response or disease control.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_038:ehr:visit_02_admission",
+            "interpretation_en": "The current oncology admission again lists maintenance chemotherapy for malignancy, indicating that the treatment course remains active.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:img:visit_01_results",
+            "interpretation_en": "Prior vascular Doppler showed mural thrombus formation in the right internal jugular vein. This remains an important thrombotic problem; the available evidence does not establish resolution or current anticoagulation.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:img:visit_02_results",
+            "interpretation_en": "The current ECG summary reports QS or rS patterns with poor R-wave development in V1 and V2 and changes in lead II and the T wave, with clinical correlation recommended; the summary alone cannot diagnose acute or prior myocardial infarction.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:lab:visit_01_results",
+            "interpretation_en": "Prior laboratory abnormalities included mild hypokalemia, anemia with macrocytic indices, and elevations of several tumor markers; these provide context but cannot alone establish disease progression.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_038:lab:visit_02_results",
+            "interpretation_en": "Current results show persistent mild anemia with macrocytic indices; CA125, CA724, CEA, and CA153 remain above reference ranges, with mild monocytosis and elevated magnesium. Persistent tumor-marker abnormalities require clinical and imaging correlation and do not alone prove progression.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:tx:visit_01_treatment",
+            "interpretation_en": "The prior admission documents intravenous chemotherapeutic drug administration, supporting prior systemic anticancer treatment, but does not provide the current regimen, dose, or completion status.",
+            "role": "supporting"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_038_cp_005_action_001"
+            ],
+            "claim_ids": [
+              "ward_038_cp_005_claim_001"
+            ],
+            "evidence_id": "ward_038:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_005_state_diagnoses_001",
+              "ward_038_cp_005_state_critical_facts_to_retain_001",
+              "ward_038_cp_005_state_required_delta_from_previous_checkpoint_004"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_038_cp_005_claim_002"
+            ],
+            "evidence_id": "ward_038:ehr:visit_01_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_005_state_resolved_problems_001",
+              "ward_038_cp_005_state_critical_facts_to_retain_006",
+              "ward_038_cp_005_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_005_action_001"
+            ],
+            "claim_ids": [
+              "ward_038_cp_005_claim_001",
+              "ward_038_cp_005_claim_003"
+            ],
+            "evidence_id": "ward_038:ehr:visit_02_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_005_state_diagnoses_001",
+              "ward_038_cp_005_state_diagnoses_002",
+              "ward_038_cp_005_state_active_problems_001",
+              "ward_038_cp_005_state_critical_facts_to_retain_001",
+              "ward_038_cp_005_state_critical_facts_to_retain_002",
+              "ward_038_cp_005_state_required_delta_from_previous_checkpoint_001",
+              "ward_038_cp_005_state_required_delta_from_previous_checkpoint_004",
+              "ward_038_cp_005_state_treatment_readiness_001",
+              "ward_038_cp_005_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_005_action_002"
+            ],
+            "claim_ids": [
+              "ward_038_cp_005_claim_004"
+            ],
+            "evidence_id": "ward_038:img:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_005_state_active_problems_002",
+              "ward_038_cp_005_state_blockers_003",
+              "ward_038_cp_005_state_critical_facts_to_retain_003",
+              "ward_038_cp_005_state_facts_to_retract_or_correct_004",
+              "ward_038_cp_005_state_required_delta_from_previous_checkpoint_004",
+              "ward_038_cp_005_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_005_action_001",
+              "ward_038_cp_005_action_003"
+            ],
+            "claim_ids": [
+              "ward_038_cp_005_claim_005"
+            ],
+            "evidence_id": "ward_038:img:visit_02_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_005_state_active_problems_003",
+              "ward_038_cp_005_state_blockers_002",
+              "ward_038_cp_005_state_critical_facts_to_retain_004",
+              "ward_038_cp_005_state_facts_to_retract_or_correct_002",
+              "ward_038_cp_005_state_required_delta_from_previous_checkpoint_002",
+              "ward_038_cp_005_state_treatment_readiness_001",
+              "ward_038_cp_005_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_005_action_004"
+            ],
+            "claim_ids": [
+              "ward_038_cp_005_claim_006",
+              "ward_038_cp_005_claim_007"
+            ],
+            "evidence_id": "ward_038:lab:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_005_state_active_problems_004",
+              "ward_038_cp_005_state_active_problems_005",
+              "ward_038_cp_005_state_blockers_004",
+              "ward_038_cp_005_state_critical_facts_to_retain_005",
+              "ward_038_cp_005_state_facts_to_retract_or_correct_003",
+              "ward_038_cp_005_state_required_delta_from_previous_checkpoint_003"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_005_action_001",
+              "ward_038_cp_005_action_004"
+            ],
+            "claim_ids": [
+              "ward_038_cp_005_claim_006",
+              "ward_038_cp_005_claim_007"
+            ],
+            "evidence_id": "ward_038:lab:visit_02_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_005_state_active_problems_004",
+              "ward_038_cp_005_state_active_problems_005",
+              "ward_038_cp_005_state_blockers_004",
+              "ward_038_cp_005_state_critical_facts_to_retain_005",
+              "ward_038_cp_005_state_facts_to_retract_or_correct_003",
+              "ward_038_cp_005_state_required_delta_from_previous_checkpoint_003",
+              "ward_038_cp_005_state_treatment_readiness_001",
+              "ward_038_cp_005_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_005_action_001"
+            ],
+            "claim_ids": [
+              "ward_038_cp_005_claim_008"
+            ],
+            "evidence_id": "ward_038:tx:visit_01_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_005_state_critical_facts_to_retain_006",
+              "ward_038_cp_005_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Breast cancer with bone metastasis",
+              "Metastatic breast cancer involving bone"
+            ],
+            "canonical_en": "Breast malignancy with secondary malignant neoplasm of bone",
+            "claim_id": "ward_038_cp_005_claim_001",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_01_admission",
+              "ward_038:ehr:visit_02_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:ehr:visit_01_admission",
+              "ward_038:ehr:visit_02_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Improved treatment outcome during prior admission"
+            ],
+            "canonical_en": "Prior hospitalization chemotherapy outcome documented as improved",
+            "claim_id": "ward_038_cp_005_claim_002",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_01_outcome"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_038:ehr:visit_01_outcome"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Ongoing maintenance chemotherapy admission"
+            ],
+            "canonical_en": "The current maintenance-chemotherapy course remains active",
+            "claim_id": "ward_038_cp_005_claim_003",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_02_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:ehr:visit_02_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Right internal jugular vein thrombus",
+              "Right internal jugular venous mural thrombosis"
+            ],
+            "canonical_en": "Previously documented right internal jugular vein mural thrombus with current status and treatment pending verification",
+            "claim_id": "ward_038_cp_005_claim_004",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:img:visit_01_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Nonspecific abnormal ECG requiring clinical correlation"
+            ],
+            "canonical_en": "Abnormal ECG findings requiring clinical correlation without diagnostic confirmation of myocardial infarction",
+            "claim_id": "ward_038_cp_005_claim_005",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_02_results"
+            ],
+            "status": "suspected",
+            "supporting_evidence_ids": [
+              "ward_038:img:visit_02_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Mild anemia with macrocytosis",
+              "Macrocytic anemia pattern"
+            ],
+            "canonical_en": "Current mild macrocytic anemia pattern",
+            "claim_id": "ward_038_cp_005_claim_006",
+            "linked_evidence_ids": [
+              "ward_038:lab:visit_01_results",
+              "ward_038:lab:visit_02_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:lab:visit_01_results",
+              "ward_038:lab:visit_02_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Persistently elevated tumor markers requiring correlation"
+            ],
+            "canonical_en": "Tumor markers remain above reference ranges but are insufficient alone to determine cancer progression",
+            "claim_id": "ward_038_cp_005_claim_007",
+            "linked_evidence_ids": [
+              "ward_038:lab:visit_01_results",
+              "ward_038:lab:visit_02_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:lab:visit_01_results",
+              "ward_038:lab:visit_02_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Prior intravenous cytotoxic chemotherapy"
+            ],
+            "canonical_en": "Intravenous chemotherapy was administered during the prior hospitalization",
+            "claim_id": "ward_038_cp_005_claim_008",
+            "linked_evidence_ids": [
+              "ward_038:tx:visit_01_treatment"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_038:tx:visit_01_treatment"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Verify chemotherapy regimen and treatment readiness",
+              "Oncology chemotherapy safety review"
+            ],
+            "action_id": "ward_038_cp_005_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Oncology review of the current maintenance-chemotherapy regimen, cycle, administration status, and pre-treatment safety parameters before deciding on this cycle",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization, before any further chemotherapy administration.",
+            "indication_en": "The current inpatient diagnosis is maintenance chemotherapy, and public evidence does not provide the current regimen and complete administration conditions.",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_01_admission",
+              "ward_038:ehr:visit_02_admission",
+              "ward_038:tx:visit_01_treatment",
+              "ward_038:lab:visit_02_results",
+              "ward_038:img:visit_02_results"
+            ],
+            "prerequisites_en": [
+              "Verify the current regimen and prior treatment records",
+              "Review the complete blood count, liver and kidney function, and other regimen-related safety indicators.",
+              "Assess the impact of current electrocardiographic abnormalities and thrombotic issues on treatment"
+            ],
+            "problem_en": "Malignant neoplasm of the breast with secondary malignant neoplasm of bone, currently hospitalized for maintenance chemotherapy",
+            "target_and_laterality_en": "Current antitumor treatment; laterality not applicable."
+          },
+          {
+            "acceptable_aliases_en": [
+              "Evaluate right internal jugular vein thrombosis",
+              "Review thrombus and anticoagulation status"
+            ],
+            "action_id": "ward_038_cp_005_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Verify the current status, symptoms, and prior or current anticoagulation management of the right internal jugular vein mural thrombus, with subsequent management decided by the clinical team",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Verify as soon as possible during the current hospitalization.",
+            "indication_en": "Current evidence does not state whether thrombosis persists, progresses, or has received treatment",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_01_results"
+            ],
+            "prerequisites_en": [
+              "Review prior and current treatment records.",
+              "Assess bleeding- and thrombosis-related symptoms.",
+              "Review vascular imaging as clinically needed."
+            ],
+            "problem_en": "Prior record of right internal jugular vein wall thrombosis",
+            "target_and_laterality_en": "Right internal jugular vein"
+          },
+          {
+            "acceptable_aliases_en": [
+              "Clinical correlation of abnormal ECG",
+              "Further evaluation of abnormal electrocardiogram"
+            ],
+            "action_id": "ward_038_cp_005_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Correlate the current ECG abnormality with symptoms, vital signs, and cardiac history, and perform further cardiac assessment if clinically indicated before determining treatment implications",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as possible during the current hospitalization, especially before chemotherapy or when relevant symptoms occur",
+            "indication_en": "The report explicitly recommends clinical correlation, and myocardial infarction cannot be diagnosed from the summary alone.",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_02_results"
+            ],
+            "prerequisites_en": [
+              "Ask about related symptoms such as chest pain, dyspnea, and syncope",
+              "Review vital signs and available prior electrocardiograms or cardiac history",
+              "The clinical team determines whether repeat electrocardiography or other testing is needed."
+            ],
+            "problem_en": "The current electrocardiogram has QS or rS waveforms, poor R-wave progression, and lead II and T-wave changes",
+            "target_and_laterality_en": "Current ECG abnormality; laterality is not applicable"
+          },
+          {
+            "acceptable_aliases_en": [
+              "Monitor anemia and laboratory abnormalities",
+              "Trend CBC and tumor markers with clinical correlation"
+            ],
+            "action_id": "ward_038_cp_005_action_004",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue monitoring the complete blood count and relevant laboratory parameters, with clinical assessment of the mild macrocytic anemia and abnormal tumor markers",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Recheck as planned during the current hospitalization and subsequent oncology treatment follow-up",
+            "indication_en": "Current hemoglobin, hematocrit, and MCV are abnormal, and multiple tumor markers remain elevated",
+            "linked_evidence_ids": [
+              "ward_038:lab:visit_01_results",
+              "ward_038:lab:visit_02_results"
+            ],
+            "prerequisites_en": [
+              "Interpret hematologic results in conjunction with symptoms and treatment history",
+              "Further assess the cause of anemia as clinically needed.",
+              "Interpret tumor markers comprehensively with clinical and imaging data."
+            ],
+            "problem_en": "Current mild macrocytic anemia and tumor markers persistently above the reference range",
+            "target_and_laterality_en": "Systemic laboratory abnormalities; laterality not applicable."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "The current maintenance chemotherapy course is still ongoing",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_038_cp_005_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Prior record of right internal jugular vein wall thrombosis; current status and treatment require verification.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_005_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Electrocardiographic abnormality requiring assessment of clinical relevance",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_005_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Mild macrocytic anemia",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_005_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Tumor markers remain above the reference range; treatment-response status cannot be judged on this basis alone.",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_005_state_active_problems_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Information on the current chemotherapy regimen, completion of administration, and treatment tolerability is still lacking",
+              "linked_evidence_ids": [],
+              "state_id": "ward_038_cp_005_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Symptoms, vital signs, and further clinical assessment of the electrocardiographic abnormalities are still lacking.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_005_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Information on the current status of the right internal jugular vein thrombus and anticoagulation management is still lacking.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_005_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There remains a lack of integrated clinical and imaging evidence sufficient to determine tumor efficacy or progression.",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_005_state_blockers_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Breast malignancy with secondary malignant neoplasm of bone",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission",
+                "ward_038:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_038_cp_005_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Currently admitted again for maintenance chemotherapy",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_038_cp_005_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Prior right internal jugular vein wall thrombosis formation",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_005_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current electrocardiogram is abnormal and the report recommends analysis of clinical relevance",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_005_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current mild macrocytic anemia and persistently abnormal tumor markers.",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_005_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Intravenous chemotherapy was received during a prior hospitalization, and the discharge outcome was documented as improvement.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_outcome",
+                "ward_038:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_038_cp_005_state_critical_facts_to_retain_006",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Breast malignancy with secondary malignant neoplasm of bone",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission",
+                "ward_038:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_038_cp_005_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current admission for maintenance chemotherapy.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_038_cp_005_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Do not revise or extend the prior treatment outcome “improvement” to complete remission, stable disease, or imaging response.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_038_cp_005_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not directly correct the current ECG summary to acute or prior myocardial infarction.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_005_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Tumor marker abnormalities must not be directly corrected to tumor progression",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_005_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "It must not be assumed that the right internal jugular vein thrombus has disappeared or that anticoagulation has been received.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_005_state_facts_to_retract_or_correct_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "The current stage is active inpatient oncology management; intravenous chemotherapy was previously received; chemotherapy safety assessment, abnormal electrocardiogram assessment, thrombosis status verification, and follow-up of anemia and laboratory abnormalities currently need to be completed in parallel.",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_02_admission",
+              "ward_038:tx:visit_01_treatment",
+              "ward_038:img:visit_01_results",
+              "ward_038:img:visit_02_results",
+              "ward_038:lab:visit_02_results"
+            ],
+            "state_id": "ward_038_cp_005_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "A new second oncology admission documents that the maintenance-chemotherapy course remains active.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_038_cp_005_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A new abnormal ECG finding requires correlation with symptoms, vital signs, and clinical assessment; myocardial infarction cannot be diagnosed from the summary alone.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_005_state_required_delta_from_previous_checkpoint_002",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current laboratories continue to show mild anemia, macrocytic indices, and elevated tumor markers; the available data are insufficient to determine disease progression.",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_005_state_required_delta_from_previous_checkpoint_003",
+              "status": "updated_laboratory_status",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The prior diagnoses of breast malignancy with bone metastasis and right internal jugular venous mural thrombus remain retained; no available evidence demonstrates resolution.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission",
+                "ward_038:ehr:visit_02_admission",
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_005_state_required_delta_from_previous_checkpoint_004",
+              "status": "no_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "The outcome of previous inpatient treatment was recorded as improvement; however, this does not represent complete remission in the oncologic sense or exclusion of disease progression",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_038_cp_005_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Maintenance chemotherapy may continue to be evaluated by oncology, but specific implementation for this cycle should be decided after clarifying the current treatment regimen, hematologic and organ function, the clinical significance of ECG abnormalities, and thrombosis management; public evidence is insufficient to confirm that administration criteria have been met.",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_02_admission",
+              "ward_038:lab:visit_02_results",
+              "ward_038:img:visit_02_results"
+            ],
+            "state_id": "ward_038_cp_005_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Do not directly diagnose an ECG summary as acute or prior myocardial infarction",
+            "Must not interpret elevated tumor markers alone as tumor progression or chemotherapy failure",
+            "Do not assume that the internal jugular vein thrombus has resolved or has received anticoagulation.",
+            "Must not assert that chemotherapy in this cycle can be safely completed without verifying the current regimen and pretreatment safety indicators."
+          ],
+          "critical_omission_rules_en": [
+            "Omission of assessment of the clinical relevance of the current ECG abnormality",
+            "Omission of verification of the current status of right internal jugular vein thrombosis and anticoagulation status",
+            "Omission of verification of the chemotherapy regimen and pre-treatment safety indicators.",
+            "Omission of ongoing monitoring of anemia and laboratory abnormalities"
+          ],
+          "preliminary_risk_triggers_en": [
+            "Clinical review is required.",
+            "Current ECG abnormalities are present",
+            "The status of the prior right internal jugular vein thrombosis is unclear.",
+            "Current mild macrocytic anemia",
+            "Abnormal tumor markers cannot alone determine progression."
+          ]
+        },
+        "stopping": {
+          "decision": "continue_treatment",
+          "rationale_en": "The patient remains in an active oncology admission for maintenance-chemotherapy management, with an ECG abnormality and a prior internal jugular venous thrombus requiring clarification. Although the prior hospitalization outcome was documented as improved, that does not support stopping treatment or transitioning to routine follow-up. Current chemotherapy safety, ECG significance, and thrombus status should be assessed before oncology-directed continuation or modification of treatment.",
+          "remaining_blockers_en": [
+            "The current maintenance chemotherapy regimen, cycle, and administration completion status have not been disclosed.",
+            "The symptom correlation and clinical significance of the electrocardiographic abnormality have not yet been clarified.",
+            "Current status of right internal jugular vein thrombosis and anticoagulation management are unclear",
+            "There is insufficient integrated evidence to judge tumor efficacy or progression."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_038_cp_005",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_038:ehr:visit_01_admission",
+          "ward_038:ehr:visit_01_outcome",
+          "ward_038:ehr:visit_02_admission",
+          "ward_038:img:visit_01_results",
+          "ward_038:img:visit_02_results",
+          "ward_038:lab:visit_01_results",
+          "ward_038:lab:visit_02_results",
+          "ward_038:tx:visit_01_treatment"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_038:ehr:longitudinal_terminal",
+          "ward_038:ehr:visit_02_outcome",
+          "ward_038:tx:visit_02_treatment"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_038",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_038_s2_node_001_completed": true,
+            "ward_038_s2_node_002_completed": true,
+            "ward_038_s2_node_003_completed": true,
+            "ward_038_s2_node_004_completed": true,
+            "ward_038_s2_node_005_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 55,
+            "initial_time": "2124-01-10T16:16:14+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Female"
+          },
+          "public_time": "2124-02-04T16:41:32+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_038:ehr:visit_01_admission",
+            "ward_038:ehr:visit_01_outcome",
+            "ward_038:ehr:visit_02_admission",
+            "ward_038:img:visit_01_results",
+            "ward_038:img:visit_02_results",
+            "ward_038:lab:visit_01_results",
+            "ward_038:lab:visit_02_results",
+            "ward_038:tx:visit_01_treatment"
+          ]
+        },
+        "public_snapshot_sha256": "c9fc738139362a091ee747ff424403548aa6dd3a7f39e4ad6f03a58b9d7aa53e",
+        "public_time": "2124-02-04T16:41:32+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "action_selection"
+        ]
+      },
+      "sequence_index": 5
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_038:ehr:visit_01_admission",
+            "interpretation_en": "The prior admission documents breast malignancy with secondary malignant neoplasm of bone, with admission for maintenance chemotherapy.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:ehr:visit_01_outcome",
+            "interpretation_en": "The first hospitalization was documented as improved after treatment, but this does not establish complete tumor response or completion of treatment goals.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_038:ehr:visit_02_admission",
+            "interpretation_en": "The patient is currently readmitted for maintenance chemotherapy for breast malignancy with secondary bone malignancy, indicating ongoing treatment.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:img:visit_01_results",
+            "interpretation_en": "Vascular Doppler showed mural thrombus in the right internal jugular vein; this prior thrombotic problem remains relevant to treatment safety, but its current status and management are not documented.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:img:visit_02_results",
+            "interpretation_en": "The current ECG shows QS or rS-like patterns in V1 and V2 and T-wave changes, with clinical correlation recommended; this summary alone cannot establish acute or prior myocardial infarction.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:lab:visit_01_results",
+            "interpretation_en": "The first hospitalization showed mild hypokalemia, anemia with macrocytic indices, and elevation of several tumor markers.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_038:lab:visit_02_results",
+            "interpretation_en": "Current testing still shows mild anemia with macrocytic indices, and CA125, CA724, CEA, and CA153 remain above reference ranges; mild monocytosis and elevated magnesium are also documented. Tumor-marker abnormalities alone cannot determine progression or treatment response.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_038:tx:visit_01_treatment",
+            "interpretation_en": "Intravenous chemotherapeutic drug administration was documented during the first hospitalization, supporting that maintenance chemotherapy had been administered previously.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_038:tx:visit_02_treatment",
+            "interpretation_en": "Intravenous chemotherapeutic drug administration is documented during the current hospitalization, indicating that treatment was administered; the specific drugs, doses, and course completion are not provided.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_038_cp_006_action_001"
+            ],
+            "claim_ids": [
+              "ward_038_cp_006_claim_001"
+            ],
+            "evidence_id": "ward_038:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_006_state_diagnoses_001",
+              "ward_038_cp_006_state_diagnoses_002",
+              "ward_038_cp_006_state_critical_facts_to_retain_001",
+              "ward_038_cp_006_state_required_delta_from_previous_checkpoint_003"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_006_action_004",
+              "ward_038_cp_006_action_005"
+            ],
+            "claim_ids": [
+              "ward_038_cp_006_claim_002"
+            ],
+            "evidence_id": "ward_038:ehr:visit_01_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_006_state_resolved_problems_001",
+              "ward_038_cp_006_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_006_action_001",
+              "ward_038_cp_006_action_002",
+              "ward_038_cp_006_action_005"
+            ],
+            "claim_ids": [
+              "ward_038_cp_006_claim_001",
+              "ward_038_cp_006_claim_003"
+            ],
+            "evidence_id": "ward_038:ehr:visit_02_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_006_state_diagnoses_001",
+              "ward_038_cp_006_state_diagnoses_002",
+              "ward_038_cp_006_state_active_problems_001",
+              "ward_038_cp_006_state_active_problems_002",
+              "ward_038_cp_006_state_resolved_problems_001",
+              "ward_038_cp_006_state_blockers_001",
+              "ward_038_cp_006_state_blockers_003",
+              "ward_038_cp_006_state_critical_facts_to_retain_001",
+              "ward_038_cp_006_state_critical_facts_to_retain_002",
+              "ward_038_cp_006_state_facts_to_retract_or_correct_001",
+              "ward_038_cp_006_state_facts_to_retract_or_correct_003",
+              "ward_038_cp_006_state_required_delta_from_previous_checkpoint_003",
+              "ward_038_cp_006_state_treatment_readiness_001",
+              "ward_038_cp_006_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_006_action_002",
+              "ward_038_cp_006_action_005"
+            ],
+            "claim_ids": [
+              "ward_038_cp_006_claim_004"
+            ],
+            "evidence_id": "ward_038:img:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_006_state_active_problems_002",
+              "ward_038_cp_006_state_blockers_003",
+              "ward_038_cp_006_state_critical_facts_to_retain_003",
+              "ward_038_cp_006_state_facts_to_retract_or_correct_003",
+              "ward_038_cp_006_state_required_delta_from_previous_checkpoint_003",
+              "ward_038_cp_006_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_006_action_001",
+              "ward_038_cp_006_action_003",
+              "ward_038_cp_006_action_005"
+            ],
+            "claim_ids": [
+              "ward_038_cp_006_claim_005"
+            ],
+            "evidence_id": "ward_038:img:visit_02_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_006_state_active_problems_003",
+              "ward_038_cp_006_state_blockers_002",
+              "ward_038_cp_006_state_critical_facts_to_retain_004",
+              "ward_038_cp_006_state_facts_to_retract_or_correct_002",
+              "ward_038_cp_006_state_required_delta_from_previous_checkpoint_002",
+              "ward_038_cp_006_state_treatment_readiness_001",
+              "ward_038_cp_006_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_006_action_004"
+            ],
+            "claim_ids": [
+              "ward_038_cp_006_claim_006",
+              "ward_038_cp_006_claim_007"
+            ],
+            "evidence_id": "ward_038:lab:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_006_state_active_problems_004",
+              "ward_038_cp_006_state_active_problems_005",
+              "ward_038_cp_006_state_critical_facts_to_retain_005",
+              "ward_038_cp_006_state_critical_facts_to_retain_006",
+              "ward_038_cp_006_state_required_delta_from_previous_checkpoint_003"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_006_action_001",
+              "ward_038_cp_006_action_004",
+              "ward_038_cp_006_action_005"
+            ],
+            "claim_ids": [
+              "ward_038_cp_006_claim_006",
+              "ward_038_cp_006_claim_007"
+            ],
+            "evidence_id": "ward_038:lab:visit_02_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_006_state_active_problems_004",
+              "ward_038_cp_006_state_active_problems_005",
+              "ward_038_cp_006_state_critical_facts_to_retain_005",
+              "ward_038_cp_006_state_critical_facts_to_retain_006",
+              "ward_038_cp_006_state_required_delta_from_previous_checkpoint_003"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_006_action_001"
+            ],
+            "claim_ids": [
+              "ward_038_cp_006_claim_003"
+            ],
+            "evidence_id": "ward_038:tx:visit_01_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_006_state_diagnoses_002"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_006_action_001",
+              "ward_038_cp_006_action_002",
+              "ward_038_cp_006_action_003",
+              "ward_038_cp_006_action_005"
+            ],
+            "claim_ids": [
+              "ward_038_cp_006_claim_003"
+            ],
+            "evidence_id": "ward_038:tx:visit_02_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_006_state_diagnoses_002",
+              "ward_038_cp_006_state_active_problems_001",
+              "ward_038_cp_006_state_resolved_problems_001",
+              "ward_038_cp_006_state_blockers_001",
+              "ward_038_cp_006_state_critical_facts_to_retain_002",
+              "ward_038_cp_006_state_facts_to_retract_or_correct_001",
+              "ward_038_cp_006_state_required_delta_from_previous_checkpoint_001",
+              "ward_038_cp_006_state_treatment_readiness_001",
+              "ward_038_cp_006_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "breast cancer with bone metastasis",
+              "metastatic breast cancer involving bone"
+            ],
+            "canonical_en": "The patient has breast malignancy with secondary malignant neoplasm of bone.",
+            "claim_id": "ward_038_cp_006_claim_001",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_01_admission",
+              "ward_038:ehr:visit_02_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:ehr:visit_01_admission",
+              "ward_038:ehr:visit_02_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "improved after the first chemotherapy admission"
+            ],
+            "canonical_en": "The first hospitalization documented improvement after maintenance chemotherapy.",
+            "claim_id": "ward_038_cp_006_claim_002",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_01_outcome"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_038:ehr:visit_01_outcome"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "ongoing maintenance chemotherapy",
+              "current inpatient intravenous chemotherapy"
+            ],
+            "canonical_en": "Maintenance chemotherapy is ongoing, and intravenous chemotherapeutic drugs were administered during the current hospitalization.",
+            "claim_id": "ward_038_cp_006_claim_003",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_02_admission",
+              "ward_038:tx:visit_01_treatment",
+              "ward_038:tx:visit_02_treatment"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:ehr:visit_02_admission",
+              "ward_038:tx:visit_01_treatment",
+              "ward_038:tx:visit_02_treatment"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "right internal jugular vein mural thrombosis of unclear current status"
+            ],
+            "canonical_en": "A prior right internal jugular vein mural thrombus was documented, but its current persistence and treatment status are unclear.",
+            "claim_id": "ward_038_cp_006_claim_004",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:img:visit_01_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "abnormal ECG requiring clinical correlation"
+            ],
+            "canonical_en": "The current ECG has abnormalities requiring clinical correlation and does not by itself establish myocardial infarction.",
+            "claim_id": "ward_038_cp_006_claim_005",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_02_results"
+            ],
+            "status": "suspected",
+            "supporting_evidence_ids": [
+              "ward_038:img:visit_02_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "persistent mild macrocytic anemia",
+              "mild anemia with macrocytosis"
+            ],
+            "canonical_en": "Mild anemia with macrocytic red-cell indices persists.",
+            "claim_id": "ward_038_cp_006_claim_006",
+            "linked_evidence_ids": [
+              "ward_038:lab:visit_01_results",
+              "ward_038:lab:visit_02_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:lab:visit_01_results",
+              "ward_038:lab:visit_02_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "persistently elevated tumor markers without definitive response assessment"
+            ],
+            "canonical_en": "Several tumor markers remain elevated, but the available evidence is insufficient to determine progression or chemotherapy response from these markers alone.",
+            "claim_id": "ward_038_cp_006_claim_007",
+            "linked_evidence_ids": [
+              "ward_038:lab:visit_01_results",
+              "ward_038:lab:visit_02_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:lab:visit_01_results",
+              "ward_038:lab:visit_02_results"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "continue planned maintenance chemotherapy",
+              "verify chemotherapy regimen and tolerance"
+            ],
+            "action_id": "ward_038_cp_006_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue or complete the current maintenance chemotherapy according to the oncology plan, verifying the drugs, doses, course, and treatment tolerance.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization, before the next administration or before deciding on discharge.",
+            "indication_en": "Current inpatient diagnosis and treatment records both support that maintenance chemotherapy is ongoing",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_01_admission",
+              "ward_038:ehr:visit_02_admission",
+              "ward_038:tx:visit_01_treatment",
+              "ward_038:tx:visit_02_treatment",
+              "ward_038:lab:visit_02_results",
+              "ward_038:img:visit_02_results"
+            ],
+            "prerequisites_en": [
+              "Oncology confirms the treatment regimen",
+              "Verify current vital signs, laboratory results, and cardiac safety.",
+              "Confirm prior thrombosis-management information."
+            ],
+            "problem_en": "Breast malignancy with secondary malignant neoplasm of bone, currently on maintenance chemotherapy",
+            "target_and_laterality_en": "Systemic antitumor treatment; no applicable laterality."
+          },
+          {
+            "acceptable_aliases_en": [
+              "assess right internal jugular vein thrombosis and anticoagulation needs"
+            ],
+            "action_id": "ward_038_cp_006_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Verify the current status of the right internal jugular mural thrombus, prior and current antithrombotic therapy, and bleeding risk; the clinical team should determine whether further vascular assessment or anticoagulation is needed.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization, during continued chemotherapy, and before discharge.",
+            "indication_en": "Prior vascular Doppler has documented thrombosis, but current status and management are unclear",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_01_results",
+              "ward_038:ehr:visit_02_admission",
+              "ward_038:tx:visit_02_treatment"
+            ],
+            "prerequisites_en": [
+              "Review prior imaging and medication records",
+              "Assess bleeding risk and relevant information such as platelets",
+              "In conjunction with symptoms and signs"
+            ],
+            "problem_en": "Previous right internal jugular vein mural thrombus.",
+            "target_and_laterality_en": "Right internal jugular vein; right side."
+          },
+          {
+            "acceptable_aliases_en": [
+              "evaluate abnormal ECG",
+              "correlate ECG changes with clinical and cardiac assessment"
+            ],
+            "action_id": "ward_038_cp_006_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Clinically correlate the abnormal ECG using symptoms, examination, prior ECGs, and repeat ECG or cardiac testing as clinically indicated; escalate immediately if acute ischemic symptoms are present.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as possible during the current hospitalization, especially before subsequent chemotherapy or discharge decisions.",
+            "indication_en": "The report explicitly recommends clinical correlation assessment, and the patient is receiving chemotherapy",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_02_results",
+              "ward_038:tx:visit_02_treatment"
+            ],
+            "prerequisites_en": [
+              "Obtain symptoms and vital signs.",
+              "The clinical team determines whether myocardial injury markers, repeat electrocardiogram, or cardiac imaging are needed"
+            ],
+            "problem_en": "Current electrocardiogram is abnormal",
+            "target_and_laterality_en": "Heart; no applicable laterality"
+          },
+          {
+            "acceptable_aliases_en": [
+              "monitor macrocytic anemia and laboratory abnormalities",
+              "trend CBC and chemistry tests"
+            ],
+            "action_id": "ward_038_cp_006_action_004",
+            "action_scope": "prospective",
+            "canonical_action_en": "Monitor the complete blood count and relevant chemistry results, assess the trend and possible causes of mild macrocytic anemia and electrolyte abnormalities, and manage as clinically indicated.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": false,
+            "deadline_or_time_window_en": "During the current hospitalization and at planned rechecks after chemotherapy.",
+            "indication_en": "Both hospitalizations documented anemia and macrocytic red blood cell index abnormalities, and electrolyte abnormalities were documented",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_01_outcome",
+              "ward_038:lab:visit_01_results",
+              "ward_038:lab:visit_02_results"
+            ],
+            "prerequisites_en": [
+              "Review complete blood count and biochemistry results.",
+              "Assess in conjunction with nutrition, medications, bleeding, and the chemotherapy context.",
+              "Decide whether supplemental or further examinations are needed according to the results."
+            ],
+            "problem_en": "Persistent mild anemia, macrocytic red-cell index abnormalities, and prior electrolyte abnormalities.",
+            "target_and_laterality_en": "Systemic; no applicable laterality."
+          },
+          {
+            "acceptable_aliases_en": [
+              "plan oncology follow-up and next chemotherapy cycle",
+              "establish discharge continuity plan"
+            ],
+            "action_id": "ward_038_cp_006_action_005",
+            "action_scope": "prospective",
+            "canonical_action_en": "After verifying treatment tolerance, the ECG abnormality, and thrombus management, establish a discharge and oncology follow-up plan including the next treatment schedule and response-assessment method.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before the end of the current hospitalization",
+            "indication_en": "Current active inpatient treatment is still ongoing; discontinuation cannot be decided on the basis of prior improvement or tumor-marker abnormalities alone.",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_02_admission",
+              "ward_038:lab:visit_02_results",
+              "ward_038:tx:visit_02_treatment",
+              "ward_038:img:visit_02_results",
+              "ward_038:img:visit_01_results",
+              "ward_038:ehr:visit_01_outcome"
+            ],
+            "prerequisites_en": [
+              "Complete current inpatient treatment and safety assessment.",
+              "Clarify thrombosis management and electrocardiogram assessment results.",
+              "Clarify the patient's discharge conditions and warning symptoms"
+            ],
+            "problem_en": "Completion of current treatment has not yet been documented, and unresolved safety issues are present.",
+            "target_and_laterality_en": "Systemic tumor management; no applicable laterality"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Currently hospitalized for and has received intravenous chemotherapy.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_02_admission",
+                "ward_038:tx:visit_02_treatment"
+              ],
+              "state_id": "ward_038_cp_006_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current status and management plan for right internal jugular vein mural thrombus are unclear.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results",
+                "ward_038:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_038_cp_006_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Abnormal electrocardiographic changes require assessment of clinical relevance.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_006_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Mild anemia with macrocytic red blood cell index abnormalities",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_006_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Multiple tumor markers remain above the reference range, but efficacy still cannot be judged on this basis.",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_006_state_active_problems_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "There is still no record of completion of the current chemotherapy course and discharge",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_02_admission",
+                "ward_038:tx:visit_02_treatment"
+              ],
+              "state_id": "ward_038_cp_006_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The abnormal electrocardiogram has not yet undergone correlation assessment with symptoms, prior electrocardiograms, and necessary cardiac examinations.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_006_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current status and antithrombotic management of the prior right internal jugular vein thrombosis are not documented.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results",
+                "ward_038:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_038_cp_006_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Breast malignancy with secondary malignant neoplasm of bone",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission",
+                "ward_038:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_038_cp_006_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Maintenance chemotherapy is ongoing, and intravenous chemotherapy has currently been administered",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_02_admission",
+                "ward_038:tx:visit_02_treatment"
+              ],
+              "state_id": "ward_038_cp_006_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Previous right internal jugular vein mural thrombus.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_006_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current abnormal electrocardiogram requires assessment of clinical relevance",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_006_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Mild anemia and macrocytic red-cell index abnormalities persist.",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_006_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Tumor marker abnormalities cannot alone determine treatment effect or progression",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_006_state_critical_facts_to_retain_006",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Breast malignancy with secondary malignant neoplasm of bone",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission",
+                "ward_038:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_038_cp_006_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "On maintenance chemotherapy.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission",
+                "ward_038:ehr:visit_02_admission",
+                "ward_038:tx:visit_01_treatment",
+                "ward_038:tx:visit_02_treatment"
+              ],
+              "state_id": "ward_038_cp_006_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Withdraw or correct any statement interpreting “improvement” after the first hospitalization as complete remission, disease cure, or completion of the current treatment course.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_outcome",
+                "ward_038:ehr:visit_02_admission",
+                "ward_038:tx:visit_02_treatment"
+              ],
+              "state_id": "ward_038_cp_006_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Withdraw or correct any statement that directly interprets the current electrocardiogram summary as acute myocardial infarction",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_006_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Withdraw or correct any unsupported statements that anticoagulation has been started, the thrombus has disappeared, or no management is needed.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results",
+                "ward_038:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_038_cp_006_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "The patient remains in an active oncology inpatient treatment stage; at this time it is inappropriate to regard treatment as completed or as having met criteria for safe cessation.",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_02_admission",
+              "ward_038:tx:visit_02_treatment",
+              "ward_038:img:visit_02_results"
+            ],
+            "state_id": "ward_038_cp_006_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "New documentation confirms intravenous chemotherapy was administered during the current hospitalization.",
+              "linked_evidence_ids": [
+                "ward_038:tx:visit_02_treatment"
+              ],
+              "state_id": "ward_038_cp_006_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A new abnormal ECG is available, showing QS or rS-like changes in V1 and V2 and T-wave changes requiring clinical correlation.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_006_state_required_delta_from_previous_checkpoint_002",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "No clinical-state change is shown for the established breast malignancy with bone secondary malignancy, prior right internal jugular mural thrombus, mild anemia with macrocytic indices, or elevated tumor markers.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission",
+                "ward_038:ehr:visit_02_admission",
+                "ward_038:img:visit_01_results",
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_006_state_required_delta_from_previous_checkpoint_003",
+              "status": "no_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "The record after the first hospitalization documented improvement; however, this does not mean that the malignancy or current treatment process has been resolved.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_outcome",
+                "ward_038:ehr:visit_02_admission",
+                "ward_038:tx:visit_02_treatment"
+              ],
+              "state_id": "ward_038_cp_006_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "There is documentation supporting implementation of current maintenance chemotherapy, but because ECG abnormalities and thrombosis management status are unclear, safety checks need to be completed before continuing treatment and discharge.",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_02_admission",
+              "ward_038:tx:visit_02_treatment",
+              "ward_038:img:visit_02_results",
+              "ward_038:img:visit_01_results"
+            ],
+            "state_id": "ward_038_cp_006_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Elevated tumor markers must not be used alone as evidence of disease progression or chemotherapy failure.",
+            "An abnormal ECG summary must not be directly diagnosed as acute myocardial infarction, and acute ischemic symptoms must not be ignored",
+            "Do not independently initiate, stop, or adjust anticoagulation before verifying right internal jugular vein thrombosis and bleeding risk.",
+            "Improvement recorded after the first hospitalization must not be interpreted as complete remission, cure, or completion of the current course.",
+            "Safe cessation or discharge must not be directly determined while current chemotherapy and key safety issues have not yet been closed"
+          ],
+          "critical_omission_rules_en": [
+            "If the current chemotherapy regimen, tolerability, and course status are lacking, verification should be supplemented before deciding subsequent administration",
+            "If symptoms, vital signs, and necessary clinical relevance assessment for an abnormal electrocardiogram are lacking, assessment should be completed before continuing treatment or discharge",
+            "If the current status of right internal jugular vein thrombosis, antithrombotic medication, and bleeding risk are lacking, record verification should be completed",
+            "If subsequent chemotherapy and oncology follow-up arrangements have not been made, continuity of care should not be considered complete."
+          ],
+          "preliminary_risk_triggers_en": [
+            "active_inpatient_treatment",
+            "oncology_safety_review_required",
+            "abnormal_ecg_requires_correlation",
+            "thrombus_status_unclear",
+            "mild_macrocytic_anemia"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_treatment",
+          "rationale_en": "At this time, the patient remains in active inpatient oncology treatment. Intravenous chemotherapy has been administered, but completion of the course and discharge from the current admission are not documented. The abnormal ECG and the prior right internal jugular mural thrombus are unresolved safety issues, and mild anemia with macrocytic indices still requires monitoring. Prior documentation of improvement and persistently elevated tumor markers do not support stopping treatment or moving directly to follow-up; treatment and necessary safety assessment should continue.",
+          "remaining_blockers_en": [
+            "The current inpatient chemotherapy has not yet been documented as completed",
+            "Abnormal ECG still requires clinical relevance assessment",
+            "The current status and management plan for right internal jugular vein mural thrombus are unclear.",
+            "Chemotherapy tolerance, hematological status, and post-discharge continuity-of-care arrangements still need to be confirmed."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_038_cp_006",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_038:ehr:visit_01_admission",
+          "ward_038:ehr:visit_01_outcome",
+          "ward_038:ehr:visit_02_admission",
+          "ward_038:img:visit_01_results",
+          "ward_038:img:visit_02_results",
+          "ward_038:lab:visit_01_results",
+          "ward_038:lab:visit_02_results",
+          "ward_038:tx:visit_01_treatment",
+          "ward_038:tx:visit_02_treatment"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_038:ehr:longitudinal_terminal",
+          "ward_038:ehr:visit_02_outcome"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_038",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_038_s2_node_001_completed": true,
+            "ward_038_s2_node_002_completed": true,
+            "ward_038_s2_node_003_completed": true,
+            "ward_038_s2_node_004_completed": true,
+            "ward_038_s2_node_005_completed": true,
+            "ward_038_s2_node_006_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 55,
+            "initial_time": "2124-01-10T16:16:14+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Female"
+          },
+          "public_time": "2124-02-04T19:59:38+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_038:ehr:visit_01_admission",
+            "ward_038:ehr:visit_01_outcome",
+            "ward_038:ehr:visit_02_admission",
+            "ward_038:img:visit_01_results",
+            "ward_038:img:visit_02_results",
+            "ward_038:lab:visit_01_results",
+            "ward_038:lab:visit_02_results",
+            "ward_038:tx:visit_01_treatment",
+            "ward_038:tx:visit_02_treatment"
+          ]
+        },
+        "public_snapshot_sha256": "a0f47e624d5426a9106d41c9b9a68a173ed626619445e0ffd0ed7097b38dee49",
+        "public_time": "2124-02-04T19:59:38+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 6
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_038:ehr:visit_01_admission",
+            "interpretation_en": "The prior admission documented malignant neoplasm of the breast with secondary malignant neoplasm of bone, with hospitalization for maintenance chemotherapy.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:ehr:visit_01_outcome",
+            "interpretation_en": "The first hospitalization outcome recorded improvement after treatment.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_038:ehr:visit_02_admission",
+            "interpretation_en": "The second admission again documented breast malignancy with bone metastasis and maintenance chemotherapy, indicating an ongoing need for cancer treatment.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:ehr:visit_02_outcome",
+            "interpretation_en": "The most recent pre-discharge outcome recorded improvement; this supports the current status but does not establish complete tumor remission.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_038:img:visit_01_results",
+            "interpretation_en": "Vascular Doppler showed mural thrombus formation in the right internal jugular vein, indicating a right internal jugular venous thrombotic lesion requiring clinical assessment and management consideration.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:img:visit_02_results",
+            "interpretation_en": "The ECG showed QS or rS-like patterns in V1 and V2 and changes in lead II and the T wave, with clinical correlation recommended; this finding alone does not diagnose acute myocardial infarction.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:lab:visit_01_results",
+            "interpretation_en": "The first hospitalization showed mild hypokalemia, anemia with macrocytic indices, and elevations in several tumor markers; these findings require clinical interpretation with subsequent trends.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_038:lab:visit_02_results",
+            "interpretation_en": "The second hospitalization continued to show anemia with macrocytic indices, persistent elevations of CA125, CA724, CEA, and CA153, plus monocytosis and mildly elevated magnesium.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_038:tx:visit_01_treatment",
+            "interpretation_en": "Intravenous chemotherapeutic drugs were administered during the first hospitalization.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_038:tx:visit_02_treatment",
+            "interpretation_en": "Intravenous chemotherapeutic drugs were administered during the second hospitalization, documenting treatment delivery for the current chemotherapy cycle.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_038_cp_007_action_004"
+            ],
+            "claim_ids": [
+              "ward_038_cp_007_claim_001"
+            ],
+            "evidence_id": "ward_038:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_007_state_diagnoses_001",
+              "ward_038_cp_007_state_diagnoses_002",
+              "ward_038_cp_007_state_critical_facts_to_retain_001",
+              "ward_038_cp_007_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_038_cp_007_claim_002"
+            ],
+            "evidence_id": "ward_038:ehr:visit_01_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_007_state_resolved_problems_001",
+              "ward_038_cp_007_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_007_action_004"
+            ],
+            "claim_ids": [
+              "ward_038_cp_007_claim_001"
+            ],
+            "evidence_id": "ward_038:ehr:visit_02_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_007_state_diagnoses_001",
+              "ward_038_cp_007_state_diagnoses_002",
+              "ward_038_cp_007_state_critical_facts_to_retain_001",
+              "ward_038_cp_007_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_007_action_005"
+            ],
+            "claim_ids": [
+              "ward_038_cp_007_claim_002"
+            ],
+            "evidence_id": "ward_038:ehr:visit_02_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_007_state_resolved_problems_001",
+              "ward_038_cp_007_state_critical_facts_to_retain_004",
+              "ward_038_cp_007_state_facts_to_retract_or_correct_001",
+              "ward_038_cp_007_state_required_delta_from_previous_checkpoint_001",
+              "ward_038_cp_007_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_007_action_001",
+              "ward_038_cp_007_action_004",
+              "ward_038_cp_007_action_005"
+            ],
+            "claim_ids": [
+              "ward_038_cp_007_claim_003"
+            ],
+            "evidence_id": "ward_038:img:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_007_state_diagnoses_003",
+              "ward_038_cp_007_state_active_problems_002",
+              "ward_038_cp_007_state_blockers_001",
+              "ward_038_cp_007_state_blockers_003",
+              "ward_038_cp_007_state_critical_facts_to_retain_002",
+              "ward_038_cp_007_state_required_delta_from_previous_checkpoint_001",
+              "ward_038_cp_007_state_treatment_readiness_001",
+              "ward_038_cp_007_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_007_action_002",
+              "ward_038_cp_007_action_004",
+              "ward_038_cp_007_action_005"
+            ],
+            "claim_ids": [
+              "ward_038_cp_007_claim_005"
+            ],
+            "evidence_id": "ward_038:img:visit_02_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_007_state_active_problems_005",
+              "ward_038_cp_007_state_blockers_002",
+              "ward_038_cp_007_state_blockers_003",
+              "ward_038_cp_007_state_critical_facts_to_retain_006",
+              "ward_038_cp_007_state_facts_to_retract_or_correct_002",
+              "ward_038_cp_007_state_required_delta_from_previous_checkpoint_001",
+              "ward_038_cp_007_state_treatment_readiness_001",
+              "ward_038_cp_007_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_007_action_003"
+            ],
+            "claim_ids": [
+              "ward_038_cp_007_claim_004"
+            ],
+            "evidence_id": "ward_038:lab:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_007_state_active_problems_003",
+              "ward_038_cp_007_state_active_problems_004",
+              "ward_038_cp_007_state_critical_facts_to_retain_005",
+              "ward_038_cp_007_state_facts_to_retract_or_correct_003"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_007_action_003"
+            ],
+            "claim_ids": [
+              "ward_038_cp_007_claim_004"
+            ],
+            "evidence_id": "ward_038:lab:visit_02_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_007_state_active_problems_003",
+              "ward_038_cp_007_state_active_problems_004",
+              "ward_038_cp_007_state_critical_facts_to_retain_005",
+              "ward_038_cp_007_state_facts_to_retract_or_correct_003",
+              "ward_038_cp_007_state_required_delta_from_previous_checkpoint_001",
+              "ward_038_cp_007_state_treatment_readiness_001",
+              "ward_038_cp_007_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_007_action_004"
+            ],
+            "claim_ids": [
+              "ward_038_cp_007_claim_002"
+            ],
+            "evidence_id": "ward_038:tx:visit_01_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_007_state_diagnoses_002",
+              "ward_038_cp_007_state_active_problems_001",
+              "ward_038_cp_007_state_critical_facts_to_retain_003",
+              "ward_038_cp_007_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_038_cp_007_action_004"
+            ],
+            "claim_ids": [
+              "ward_038_cp_007_claim_002"
+            ],
+            "evidence_id": "ward_038:tx:visit_02_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_038_cp_007_state_diagnoses_002",
+              "ward_038_cp_007_state_active_problems_001",
+              "ward_038_cp_007_state_critical_facts_to_retain_003",
+              "ward_038_cp_007_state_required_delta_from_previous_checkpoint_001",
+              "ward_038_cp_007_state_treatment_readiness_001",
+              "ward_038_cp_007_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "metastatic breast cancer on maintenance chemotherapy",
+              "breast cancer with bone metastasis receiving maintenance treatment"
+            ],
+            "canonical_en": "The patient has breast malignancy with secondary malignant neoplasm of bone and is receiving maintenance chemotherapy.",
+            "claim_id": "ward_038_cp_007_claim_001",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_01_admission",
+              "ward_038:ehr:visit_02_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:ehr:visit_01_admission",
+              "ward_038:ehr:visit_02_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "chemotherapy administered with recorded clinical improvement",
+              "recent chemotherapy cycle completed in the record with improvement"
+            ],
+            "canonical_en": "Intravenous chemotherapy was documented during both recent hospitalizations, and the most recent hospitalization recorded an improved treatment outcome.",
+            "claim_id": "ward_038_cp_007_claim_002",
+            "linked_evidence_ids": [
+              "ward_038:tx:visit_01_treatment",
+              "ward_038:tx:visit_02_treatment",
+              "ward_038:ehr:visit_01_outcome",
+              "ward_038:ehr:visit_02_outcome"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:tx:visit_01_treatment",
+              "ward_038:tx:visit_02_treatment",
+              "ward_038:ehr:visit_01_outcome",
+              "ward_038:ehr:visit_02_outcome"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "right internal jugular venous thrombosis",
+              "right internal jugular vein mural thrombus"
+            ],
+            "canonical_en": "An active right internal jugular vein mural thrombus is documented.",
+            "claim_id": "ward_038_cp_007_claim_003",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:img:visit_01_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "persistent anemia with macrocytic indices and elevated tumor markers",
+              "mild macrocytic anemia with abnormal tumor markers"
+            ],
+            "canonical_en": "Persistent mild macrocytic-pattern anemia and elevated tumor markers are documented.",
+            "claim_id": "ward_038_cp_007_claim_004",
+            "linked_evidence_ids": [
+              "ward_038:lab:visit_01_results",
+              "ward_038:lab:visit_02_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_038:lab:visit_01_results",
+              "ward_038:lab:visit_02_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "abnormal ECG requiring clinical correlation",
+              "nonspecific ECG changes pending clinical assessment"
+            ],
+            "canonical_en": "The ECG has abnormalities requiring clinical correlation, while acute coronary syndrome cannot be confirmed from the ECG summary alone.",
+            "claim_id": "ward_038_cp_007_claim_005",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_02_results"
+            ],
+            "status": "suspected",
+            "supporting_evidence_ids": [
+              "ward_038:img:visit_02_results"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "evaluate and manage right internal jugular venous thrombosis",
+              "confirm thrombosis treatment plan"
+            ],
+            "action_id": "ward_038_cp_007_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Have the oncology or appropriate clinical team assess the right internal jugular vein thrombus and establish or confirm a management plan.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before discharge or transfer to follow-up.",
+            "indication_en": "Vascular Doppler has clearly documented thrombosis, and there is currently no record of anticoagulation or another management plan.",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_01_results"
+            ],
+            "prerequisites_en": [
+              "Verify clinical information including bleeding risk, platelets, and renal function",
+              "Perform clinical assessment in conjunction with symptoms, catheter status, and thrombus extent."
+            ],
+            "problem_en": "Right internal jugular vein wall thrombosis.",
+            "target_and_laterality_en": "Right internal jugular vein."
+          },
+          {
+            "acceptable_aliases_en": [
+              "clinical correlation of abnormal ECG",
+              "evaluate ECG changes for acute cardiac disease"
+            ],
+            "action_id": "ward_038_cp_007_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Correlate the abnormal ECG with symptoms, examination, prior ECGs, and additional cardiac assessment as clinically indicated.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before discharge or during recent clinical assessment.",
+            "indication_en": "The imaging/ECG report explicitly recommends clinical correlation; the existing summary is insufficient to determine whether the nature is acute or chronic.",
+            "linked_evidence_ids": [
+              "ward_038:img:visit_02_results"
+            ],
+            "prerequisites_en": [
+              "Ask about symptoms such as chest pain, dyspnea, and syncope, and perform a physical examination",
+              "The clinical team will decide whether repeat electrocardiogram or myocardial-injury markers are needed."
+            ],
+            "problem_en": "There are abnormal ECG changes in leads V1, V2, and II and in the T wave.",
+            "target_and_laterality_en": "Heart and related electrocardiographic leads, no laterality"
+          },
+          {
+            "acceptable_aliases_en": [
+              "monitor and evaluate macrocytic anemia",
+              "follow up anemia during chemotherapy"
+            ],
+            "action_id": "ward_038_cp_007_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Review the complete blood count and relevant nutritional, bleeding, or marrow-suppression factors, with ongoing anemia monitoring.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": false,
+            "deadline_or_time_window_en": "Review before discharge and monitor during subsequent chemotherapy follow-up.",
+            "indication_en": "Both hospitalizations had decreased hemoglobin, red blood cell count, and hematocrit, accompanied by elevated MCV.",
+            "linked_evidence_ids": [
+              "ward_038:lab:visit_01_results",
+              "ward_038:lab:visit_02_results"
+            ],
+            "prerequisites_en": [
+              "In conjunction with symptoms, medications, bleeding status, and prior blood counts",
+              "Test vitamins or other anemia-related indicators as clinically needed."
+            ],
+            "problem_en": "Persistent mild macrocytic anemia.",
+            "target_and_laterality_en": "Systemic hematologic status, no laterality"
+          },
+          {
+            "acceptable_aliases_en": [
+              "oncology continuity plan after chemotherapy",
+              "confirm next chemotherapy and follow-up plan"
+            ],
+            "action_id": "ward_038_cp_007_action_004",
+            "action_scope": "prospective",
+            "canonical_action_en": "Confirm post-cycle medications, toxicity monitoring, oncology review, and the next-cycle plan, with continuity follow-up.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete as soon as possible before the end of this hospitalization or after discharge according to the oncology plan.",
+            "indication_en": "Both recent hospitalizations recorded intravenous chemotherapy, and the most recent outcome was improvement, but the subsequent regimen and follow-up arrangements are not specified in the disclosed evidence.",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_01_admission",
+              "ward_038:ehr:visit_02_admission",
+              "ward_038:tx:visit_01_treatment",
+              "ward_038:tx:visit_02_treatment",
+              "ward_038:img:visit_01_results",
+              "ward_038:img:visit_02_results"
+            ],
+            "prerequisites_en": [
+              "Confirm current treatment tolerance and key laboratory results.",
+              "Incorporate thrombosis and ECG issues into the subsequent plan"
+            ],
+            "problem_en": "Ongoing maintenance-chemotherapy management of metastatic breast malignancy.",
+            "target_and_laterality_en": "Systemic tumor treatment and continuity of care, no laterality"
+          },
+          {
+            "acceptable_aliases_en": [
+              "discharge with oncology follow-up after safety review",
+              "conditional discharge and continuity planning"
+            ],
+            "action_id": "ward_038_cp_007_action_005",
+            "action_scope": "recorded",
+            "canonical_action_en": "After the key issues are assessed and a safe plan is documented, arrange conditional discharge with oncology follow-up.",
+            "canonical_prohibited_action_en": null,
+            "category": "acceptable_recorded",
+            "critical_omission_if_missing": false,
+            "deadline_or_time_window_en": "After completion of the safety assessment",
+            "indication_en": "A pre-discharge outcome record is available, but safe management and a follow-up plan for thrombosis and electrocardiographic abnormalities still need to be confirmed.",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_02_outcome",
+              "ward_038:img:visit_01_results",
+              "ward_038:img:visit_02_results"
+            ],
+            "prerequisites_en": [
+              "Complete thrombosis management assessment.",
+              "Complete clinical relevance assessment of the electrocardiogram.",
+              "Specify follow-up, warning symptoms, and subsequent treatment arrangements"
+            ],
+            "problem_en": "The current hospitalization is in the pre-discharge stage and records post-treatment improvement",
+            "target_and_laterality_en": "Discharge and subsequent oncology care, no laterality"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Is receiving or has recently received intravenous maintenance chemotherapy.",
+              "linked_evidence_ids": [
+                "ward_038:tx:visit_01_treatment",
+                "ward_038:tx:visit_02_treatment"
+              ],
+              "state_id": "ward_038_cp_007_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right internal jugular vein wall thrombus; anticoagulation and further management status are not recorded.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_007_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Persistent mild macrocytic anemia.",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_007_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Multiple tumor markers are elevated; their trend and clinical significance need to be integrated with tumor assessment",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_007_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Abnormal electrocardiographic changes require assessment of clinical relevance.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_007_state_active_problems_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "The symptoms, extent, precipitating factors, and treatment plan for the right internal jugular vein thrombosis are not clear.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_007_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Whether the electrocardiographic abnormality has acute clinical significance is unclear.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_007_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "It is unclear whether thrombosis and electrocardiogram risk assessments were completed before discharge.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results",
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_007_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Breast malignancy with secondary malignant neoplasm of bone",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission",
+                "ward_038:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_038_cp_007_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right internal jugular vein wall thrombosis.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_007_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Both of the two recent hospitalizations have records of intravenous chemotherapy.",
+              "linked_evidence_ids": [
+                "ward_038:tx:visit_01_treatment",
+                "ward_038:tx:visit_02_treatment"
+              ],
+              "state_id": "ward_038_cp_007_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The most recent pre-discharge outcome record of hospitalization is improvement",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_02_outcome"
+              ],
+              "state_id": "ward_038_cp_007_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Persistent mild macrocytic anemia and elevation of multiple tumor markers",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_007_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There are ECG changes requiring clinical correlation assessment",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_007_state_critical_facts_to_retain_006",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Breast malignancy with secondary malignant neoplasm of bone (confirmed by inpatient diagnostic records)",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission",
+                "ward_038:ehr:visit_02_admission"
+              ],
+              "state_id": "ward_038_cp_007_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Maintenance chemotherapy status",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_admission",
+                "ward_038:ehr:visit_02_admission",
+                "ward_038:tx:visit_01_treatment",
+                "ward_038:tx:visit_02_treatment"
+              ],
+              "state_id": "ward_038_cp_007_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right internal jugular vein wall thrombosis.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_01_results"
+              ],
+              "state_id": "ward_038_cp_007_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Treatment outcome improvement cannot be corrected or extended as complete remission or cure.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_outcome",
+                "ward_038:ehr:visit_02_outcome"
+              ],
+              "state_id": "ward_038_cp_007_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "An abnormal electrocardiogram alone cannot be corrected to acute myocardial infarction.",
+              "linked_evidence_ids": [
+                "ward_038:img:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_007_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Elevated tumor markers alone cannot be corrected to tumor progression.",
+              "linked_evidence_ids": [
+                "ward_038:lab:visit_01_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_007_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Currently in the inpatient assessment/pre-discharge phase after maintenance chemotherapy for malignant tumor; the record shows post-treatment improvement, but ongoing management of thrombosis, abnormal electrocardiogram, and laboratory abnormalities remains necessary.",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_02_outcome",
+              "ward_038:tx:visit_02_treatment",
+              "ward_038:img:visit_01_results",
+              "ward_038:img:visit_02_results",
+              "ward_038:lab:visit_02_results"
+            ],
+            "state_id": "ward_038_cp_007_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "A pre-discharge outcome record was added for the most recent hospitalization, with treatment outcome \"improved.\" The currently available snapshot shows that intravenous chemotherapy was recorded during the 2nd hospitalization, and issues requiring ongoing assessment remain after treatment, including thrombosis, abnormal electrocardiogram, and laboratory abnormalities.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_02_outcome",
+                "ward_038:tx:visit_02_treatment",
+                "ward_038:img:visit_01_results",
+                "ward_038:img:visit_02_results",
+                "ward_038:lab:visit_02_results"
+              ],
+              "state_id": "ward_038_cp_007_state_required_delta_from_previous_checkpoint_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "The recorded outcomes of the 1st and 2nd hospitalizations were both improvement after treatment; no other resolved key problems were recorded.",
+              "linked_evidence_ids": [
+                "ward_038:ehr:visit_01_outcome",
+                "ward_038:ehr:visit_02_outcome"
+              ],
+              "state_id": "ward_038_cp_007_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Recent intravenous chemotherapy records are available and have been performed, but based on existing evidence complete discharge or subsequent-treatment readiness cannot be confirmed before confirming thrombosis management, assessing electrocardiographic abnormalities, and reviewing hematologic status.",
+            "linked_evidence_ids": [
+              "ward_038:ehr:visit_01_admission",
+              "ward_038:ehr:visit_02_admission",
+              "ward_038:tx:visit_01_treatment",
+              "ward_038:tx:visit_02_treatment",
+              "ward_038:img:visit_01_results",
+              "ward_038:img:visit_02_results",
+              "ward_038:lab:visit_02_results"
+            ],
+            "state_id": "ward_038_cp_007_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Directly stopping medical evaluation or discharging before assessing right internal jugular vein thrombosis may result in omission of thrombosis-related risk management.",
+            "Interpreting an abnormal electrocardiogram alone as acute myocardial infarction, or completely ignoring the abnormality without assessing its clinical relevance, may both cause harm."
+          ],
+          "critical_omission_rules_en": [
+            "When no thrombosis management plan, ECG relevance assessment, or continuous oncology follow-up plan is recorded, safe disposition should not be claimed to have been completed."
+          ],
+          "preliminary_risk_triggers_en": []
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "Although the most recent hospitalization recorded improvement and intravenous chemotherapy was documented, the right internal jugular thrombus and abnormal ECG still require clinical assessment, and continuity arrangements are not documented. Investigation should not stop yet; conditional discharge or follow-up can be considered only after risk assessment and a clear plan.",
+          "remaining_blockers_en": [
+            "Clinical assessment and management plan for right internal jugular vein thrombosis",
+            "Symptom relevance of abnormal electrocardiographic findings and necessary further cardiac assessment.",
+            "Post-discharge arrangements for tumor treatment and complication follow-up"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_038_cp_007",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_038:ehr:visit_01_admission",
+          "ward_038:ehr:visit_01_outcome",
+          "ward_038:ehr:visit_02_admission",
+          "ward_038:ehr:visit_02_outcome",
+          "ward_038:img:visit_01_results",
+          "ward_038:img:visit_02_results",
+          "ward_038:lab:visit_01_results",
+          "ward_038:lab:visit_02_results",
+          "ward_038:tx:visit_01_treatment",
+          "ward_038:tx:visit_02_treatment"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_038:ehr:longitudinal_terminal"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_038",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_038_s2_node_001_completed": true,
+            "ward_038_s2_node_002_completed": true,
+            "ward_038_s2_node_003_completed": true,
+            "ward_038_s2_node_004_completed": true,
+            "ward_038_s2_node_005_completed": true,
+            "ward_038_s2_node_006_completed": true,
+            "ward_038_s2_node_007_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Maintenance chemotherapy for malignant neoplasm",
+            "age_years": 55,
+            "initial_time": "2124-01-10T16:16:14+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Female"
+          },
+          "public_time": "2124-02-05T05:53:56+08:00",
+          "stage": "S3",
+          "visible_evidence_ids": [
+            "ward_038:ehr:visit_01_admission",
+            "ward_038:ehr:visit_01_outcome",
+            "ward_038:ehr:visit_02_admission",
+            "ward_038:ehr:visit_02_outcome",
+            "ward_038:img:visit_01_results",
+            "ward_038:img:visit_02_results",
+            "ward_038:lab:visit_01_results",
+            "ward_038:lab:visit_02_results",
+            "ward_038:tx:visit_01_treatment",
+            "ward_038:tx:visit_02_treatment"
+          ]
+        },
+        "public_snapshot_sha256": "973f117f906f679cdc85708a19bbfc2425df7d8be208b942af52e3ad46b514f1",
+        "public_time": "2124-02-05T05:53:56+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 7
+    }
+  ],
+  "milestone_candidates": [
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "The inpatient diagnosis explicitly records breast malignant neoplasm with secondary malignant neoplasm of bone.",
+        "The key complication of right internal jugular vein wall thrombosis has been documented by imaging."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_038_ms_01",
+      "milestone_type": "diagnostic_closure",
+      "name_en": "Diagnostic closure",
+      "partial_criteria_en": [
+        "The primary tumor diagnosis has been clarified, but the cause, acuity or chronicity, and complete clinical stratification of thrombosis still await assessment."
+      ],
+      "safety_invalidation_rules_en": [
+        "If subsequent reliable evidence negates the principal diagnosis, the clinical team should reverify the diagnosis."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Complete assessment of clinical tolerance, hematologic status, and key complications for the current chemotherapy cycle.",
+        "Clarify the safety management plan for thrombosis and abnormal electrocardiogram."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_038_ms_02",
+      "milestone_type": "staging_or_treatment_readiness",
+      "name_en": "Staging or treatment readiness",
+      "partial_criteria_en": [
+        "Known breast malignant neoplasm with secondary malignant neoplasm of bone and chemotherapy already administered, but no record has yet been seen of complete readiness assessment for thrombosis, electrocardiogram, and anemia."
+      ],
+      "safety_invalidation_rules_en": [
+        "If an unstable cardiac condition, severe thrombotic complication, or other safety issue unsuitable for treatment is identified, this milestone should be marked as safety-negative."
+      ]
+    },
+    {
+      "applicable": false,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria": [],
+      "current_status": "not_started",
+      "milestone_id": "ward_038_ms_03",
+      "milestone_type": "definitive_intervention",
+      "name_en": "Definitive intervention",
+      "partial_criteria": [],
+      "safety_invalidation_rules_en": [
+        "If the treatment goal or nature of the condition changes, oncology should redefine whether this milestone applies."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Complete supportable assessments of efficacy, toxicity, and complications.",
+        "Clarify the subsequent maintenance chemotherapy and monitoring plan."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_038_ms_04",
+      "milestone_type": "postoperative_or_response_management",
+      "name_en": "Postoperative or response management",
+      "partial_criteria_en": [
+        "The most recent hospitalization record notes improvement after treatment and intravenous chemotherapy has been administered, but no complete tumor efficacy assessment or subsequent management plan is seen."
+      ],
+      "safety_invalidation_rules_en": [
+        "If unacceptable treatment toxicity or uncontrolled major complications occur, considering this milestone complete should be suspended."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Confirm the responsible team for management or follow-up of thrombosis and electrocardiogram issues.",
+        "Clarify discharge conditions, follow-up time, subsequent chemotherapy arrangements, and warning symptoms."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_038_ms_05",
+      "milestone_type": "disposition_and_continuity",
+      "name_en": "Disposition and continuity of care",
+      "partial_criteria_en": [
+        "There is already a pre-discharge outcome record and the treatment result is improvement, but public evidence does not show complete discharge and continuity follow-up arrangements."
+      ],
+      "safety_invalidation_rules_en": [
+        "If unassessed high-risk symptoms, thrombotic complications, or unstable cardiac conditions still exist, this milestone should not be completed."
+      ]
+    }
+  ],
+  "normalized_evidence": [
+    {
+      "available_time": "2124-01-10T18:15:25+08:00",
+      "available_time_utc": "2124-01-10T10:15:25Z",
+      "case_id": "ward_038",
+      "clinical_time": "2124-01-10T16:16:14+08:00",
+      "clinical_time_utc": "2124-01-10T08:16:14Z",
+      "content_summary": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the breast, secondary malignant neoplasm of bone.",
+      "evidence_id": "ward_038:ehr:visit_01_admission",
+      "laterality": null,
+      "module": "admission_documents",
+      "raw_content": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the breast, secondary malignant neoplasm of bone.",
+      "record_kind": "deidentified_inpatient_admission_summary",
+      "structured_value": null,
+      "title": "Admission Assessment for Hospitalization No. 1",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-11T04:11:22+08:00",
+      "available_time_utc": "2124-01-10T20:11:22Z",
+      "case_id": "ward_038",
+      "clinical_time": "2124-01-11T04:11:22+08:00",
+      "clinical_time_utc": "2124-01-10T20:11:22Z",
+      "content_summary": "The structured data for this hospitalization included 9 laboratory reports and 95 results. Abnormal results documented in the summary included: potassium 3.39mmol/L (below the lower limit of the reference range); carbohydrate antigen 125 (CA125) 119.8U/mL (above the upper limit of the reference range); carbohydrate antigen 724 (CA724) 9.22U/mL (above the upper limit of the reference range); carcinoembryonic antigen …",
+      "evidence_id": "ward_038:lab:visit_01_results",
+      "laterality": null,
+      "module": "laboratory_results",
+      "raw_content": "The structured data for this hospitalization included 9 laboratory reports and 95 results. Abnormal results documented in the summary included: potassium 3.39mmol/L (below the lower limit of the reference range); carbohydrate antigen 125 (CA125) 119.8U/mL (above the upper limit of the reference range); carbohydrate antigen 724 (CA724) 9.22U/mL (above the upper limit of the reference range); carcinoembryonic antigen (CEA) 13.14ng/mL (above the upper limit of the reference range); carbohydrate antigen 153 (CA153) 16.3U/mL (above the upper limit of the reference range); hematocrit 0.324％ (below the lower limit of the reference range); hemoglobin 105g/L (below the lower limit of the reference range); mean corpuscular volume 100.8fl (above the upper limit of the reference range); red blood cell count 3.21x10^12/L (below the lower limit of the reference range); red cell distribution width 17.3％ (above the upper limit of the reference range); heparin-binding protein 32.2ng/mL (above the upper limit of the reference range).",
+      "record_kind": "deidentified_laboratory_summary",
+      "structured_value": null,
+      "title": "Laboratory Results from the 1th Hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-11T04:11:22+08:00",
+      "available_time_utc": "2124-01-10T20:11:22Z",
+      "case_id": "ward_038",
+      "clinical_time": "2124-01-11T04:11:22+08:00",
+      "clinical_time_utc": "2124-01-10T20:11:22Z",
+      "content_summary": "The structured data from this hospitalization include 1 imaging report(s); examination type: vascular Doppler; conclusion summary: mural thrombus formation in the right internal jugular vein.",
+      "evidence_id": "ward_038:img:visit_01_results",
+      "laterality": null,
+      "module": "imaging_results",
+      "raw_content": "The structured data from this hospitalization include 1 imaging report(s); examination type: vascular Doppler; conclusion summary: mural thrombus formation in the right internal jugular vein.",
+      "record_kind": "deidentified_imaging_summary",
+      "structured_value": null,
+      "title": "Imaging Results from Hospitalization No. 1",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-11T10:08:56+08:00",
+      "available_time_utc": "2124-01-11T02:08:56Z",
+      "case_id": "ward_038",
+      "clinical_time": "2124-01-11T10:08:56+08:00",
+      "clinical_time_utc": "2124-01-11T02:08:56Z",
+      "content_summary": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "evidence_id": "ward_038:tx:visit_01_treatment",
+      "laterality": null,
+      "module": "antineoplastic_treatments",
+      "raw_content": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "record_kind": "deidentified_antineoplastic_treatment_summary",
+      "structured_value": null,
+      "title": "Treatment during the 1th hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-02-04T11:11:23+08:00",
+      "available_time_utc": "2124-02-04T03:11:23Z",
+      "case_id": "ward_038",
+      "clinical_time": "2124-02-04T10:05:21+08:00",
+      "clinical_time_utc": "2124-02-04T02:05:21Z",
+      "content_summary": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the breast, secondary malignant neoplasm of bone.",
+      "evidence_id": "ward_038:ehr:visit_02_admission",
+      "laterality": null,
+      "module": "admission_documents",
+      "raw_content": "Admitting department: Oncology; admission diagnosis: maintenance chemotherapy for malignant neoplasm; structured diagnoses: maintenance chemotherapy for malignant neoplasm, malignant neoplasm of the breast, secondary malignant neoplasm of bone.",
+      "record_kind": "deidentified_inpatient_admission_summary",
+      "structured_value": null,
+      "title": "Admission assessment for hospitalization No. 2",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-12T08:00:00+08:00",
+      "available_time_utc": "2124-01-12T00:00:00Z",
+      "case_id": "ward_038",
+      "clinical_time": "2124-01-12T08:00:00+08:00",
+      "clinical_time_utc": "2124-01-12T00:00:00Z",
+      "content_summary": "Discharge diagnosis: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "evidence_id": "ward_038:ehr:visit_01_outcome",
+      "laterality": null,
+      "module": "outcome_documents",
+      "raw_content": "Discharge diagnosis: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "record_kind": "deidentified_inpatient_outcome_summary",
+      "structured_value": null,
+      "title": "Discharge outcome of the 1th hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-02-04T16:41:32+08:00",
+      "available_time_utc": "2124-02-04T08:41:32Z",
+      "case_id": "ward_038",
+      "clinical_time": "2124-02-04T16:41:32+08:00",
+      "clinical_time_utc": "2124-02-04T08:41:32Z",
+      "content_summary": "The structured data from this hospitalization include 8 laboratory reports and 94 results. Abnormal results recorded in the summary include: hematocrit 0.336％ (below the lower limit of the reference range); hemoglobin 108g/L (below the lower limit of the reference range); mean corpuscular volume 101.6fl (above the upper limit of the reference range); monocyte count 0.61x10^9/L (above the upper limit of the reference…",
+      "evidence_id": "ward_038:lab:visit_02_results",
+      "laterality": null,
+      "module": "laboratory_results",
+      "raw_content": "The structured data from this hospitalization include 8 laboratory reports and 94 results. Abnormal results recorded in the summary include: hematocrit 0.336％ (below the lower limit of the reference range); hemoglobin 108g/L (below the lower limit of the reference range); mean corpuscular volume 101.6fl (above the upper limit of the reference range); monocyte count 0.61x10^9/L (above the upper limit of the reference range); monocyte percentage 11.9％ (above the upper limit of the reference range); red blood cell count 3.31x10^12/L (below the lower limit of the reference range); red cell distribution width 17.7％ (above the upper limit of the reference range); carbohydrate antigen 125 (CA125) 92.1U/mL (above the upper limit of the reference range); carbohydrate antigen 724 (CA724) 9.28U/mL (above the upper limit of the reference range); carcinoembryonic antigen (CEA) 11.85ng/mL (above the upper limit of the reference range); carbohydrate antigen 153 (CA153) 16.4U/mL (above the upper limit of the reference range); magnesium 1.08mmol/L (above the upper limit of the reference range).",
+      "record_kind": "deidentified_laboratory_summary",
+      "structured_value": null,
+      "title": "Laboratory Results from Hospitalization No. 2",
+      "unit": null
+    },
+    {
+      "available_time": "2124-02-04T16:41:32+08:00",
+      "available_time_utc": "2124-02-04T08:41:32Z",
+      "case_id": "ward_038",
+      "clinical_time": "2124-02-04T16:41:32+08:00",
+      "clinical_time_utc": "2124-02-04T08:41:32Z",
+      "content_summary": "The structured data from this hospitalization include 1 imaging report(s); examination type: electrocardiogram; summary of findings: 1, V1, and V2 show QS or rS patterns, with the r wave appearing embryonic; clinical correlation is recommended. Changes in 2 and the T wave.",
+      "evidence_id": "ward_038:img:visit_02_results",
+      "laterality": null,
+      "module": "imaging_results",
+      "raw_content": "The structured data from this hospitalization include 1 imaging report(s); examination type: electrocardiogram; summary of findings: 1, V1, and V2 show QS or rS patterns, with the r wave appearing embryonic; clinical correlation is recommended. Changes in 2 and the T wave.",
+      "record_kind": "deidentified_imaging_summary",
+      "structured_value": null,
+      "title": "Imaging results from the 2th hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-02-04T19:59:38+08:00",
+      "available_time_utc": "2124-02-04T11:59:38Z",
+      "case_id": "ward_038",
+      "clinical_time": "2124-02-04T19:59:38+08:00",
+      "clinical_time_utc": "2124-02-04T11:59:38Z",
+      "content_summary": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "evidence_id": "ward_038:tx:visit_02_treatment",
+      "laterality": null,
+      "module": "antineoplastic_treatments",
+      "raw_content": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "record_kind": "deidentified_antineoplastic_treatment_summary",
+      "structured_value": null,
+      "title": "Treatment During the 2th Hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-02-05T05:53:56+08:00",
+      "available_time_utc": "2124-02-04T21:53:56Z",
+      "case_id": "ward_038",
+      "clinical_time": "2124-02-05T08:06:00+08:00",
+      "clinical_time_utc": "2124-02-05T00:06:00Z",
+      "content_summary": "Discharge diagnosis from the most recent hospitalization: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "evidence_id": "ward_038:ehr:visit_02_outcome",
+      "laterality": null,
+      "module": "outcome_documents",
+      "raw_content": "Discharge diagnosis from the most recent hospitalization: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "record_kind": "deidentified_inpatient_outcome_summary",
+      "structured_value": null,
+      "title": "Pre-Discharge Outcome of Hospitalization No. 2",
+      "unit": null
+    },
+    {
+      "available_time": "2124-02-05T08:06:00+08:00",
+      "available_time_utc": "2124-02-05T00:06:00Z",
+      "case_id": "ward_038",
+      "clinical_time": "2124-02-05T08:06:00+08:00",
+      "clinical_time_utc": "2124-02-05T00:06:00Z",
+      "content_summary": "A total of 2 hospitalizations were included in the longitudinal observation window; the boundaries of each hospitalization were included in the model-visible trajectory, and follow-up began after the final hospitalization.",
+      "evidence_id": "ward_038:ehr:longitudinal_terminal",
+      "laterality": null,
+      "module": "disposition",
+      "raw_content": "A total of 2 hospitalizations were included in the longitudinal observation window; the boundaries of each hospitalization were included in the model-visible trajectory, and follow-up began after the final hospitalization.",
+      "record_kind": "deidentified_terminal_summary",
+      "structured_value": null,
+      "title": "Final discharge status at the end of the longitudinal observation period",
+      "unit": null
+    }
+  ],
+  "process_gold": {
+    "status": "source_recorded_not_layer_gold_clinically_validated",
+    "transition_count": 8,
+    "transitions": [
+      {
+        "clock_after": "2124-01-10T18:15:25+08:00",
+        "clock_before": "2124-01-10T16:16:14+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-01-10 oncology admission assessment",
+            "Review the 2124-01-10 oncology inpatient admission assessment",
+            "2124-01-10 oncology admission assessment"
+          ],
+          "action_id": "ehr:ward_038:001",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_038:ehr:visit_01_admission"
+          ],
+          "target": "2124-01-10 oncology admission assessment"
+        },
+        "release_evidence_ids": [
+          "ward_038:ehr:visit_01_admission"
+        ],
+        "sequence_index": 0,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_038_s2_node_001_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_038_s2_node_001"
+      },
+      {
+        "clock_after": "2124-01-11T04:11:22+08:00",
+        "clock_before": "2124-01-10T18:15:25+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-01-10 oncology admission laboratory and imaging results",
+            "Review the 2124-01-10 oncology admission laboratory and imaging results",
+            "2124-01-10 oncology admission laboratory and imaging results"
+          ],
+          "action_id": "ehr:ward_038:002",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_038:lab:visit_01_results",
+            "ward_038:img:visit_01_results"
+          ],
+          "target": "2124-01-10 oncology admission laboratory and imaging results"
+        },
+        "release_evidence_ids": [
+          "ward_038:lab:visit_01_results",
+          "ward_038:img:visit_01_results"
+        ],
+        "sequence_index": 1,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_038_s2_node_002_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_038_s2_node_002"
+      },
+      {
+        "clock_after": "2124-01-11T10:08:56+08:00",
+        "clock_before": "2124-01-11T04:11:22+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "start the 2124-01-10 admission recorded antineoplastic therapy",
+            "Administer the antineoplastic therapy recorded during the 2124-01-10 hospitalization",
+            "2124-01-10 admission recorded antineoplastic therapy"
+          ],
+          "action_id": "ehr:ward_038:003",
+          "action_type": "start_treatment",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_038:tx:visit_01_treatment"
+          ],
+          "target": "2124-01-10 admission recorded antineoplastic therapy"
+        },
+        "release_evidence_ids": [
+          "ward_038:tx:visit_01_treatment"
+        ],
+        "sequence_index": 2,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_038_s2_node_003_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_038_s2_node_003"
+      },
+      {
+        "clock_after": "2124-02-04T11:11:23+08:00",
+        "clock_before": "2124-01-11T10:08:56+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-02-04 oncology admission assessment",
+            "Review the 2124-02-04 oncology admission assessment",
+            "2124-02-04 oncology admission assessment"
+          ],
+          "action_id": "ehr:ward_038:004",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_038:ehr:visit_01_outcome",
+            "ward_038:ehr:visit_02_admission"
+          ],
+          "target": "2124-02-04 oncology admission assessment"
+        },
+        "release_evidence_ids": [
+          "ward_038:ehr:visit_01_outcome",
+          "ward_038:ehr:visit_02_admission"
+        ],
+        "sequence_index": 3,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_038_s2_node_004_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_038_s2_node_004"
+      },
+      {
+        "clock_after": "2124-02-04T16:41:32+08:00",
+        "clock_before": "2124-02-04T11:11:23+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-02-04 oncology admission laboratory and imaging results",
+            "Review the 2124-02-04 oncology admission laboratory and imaging results",
+            "2124-02-04 oncology admission laboratory and imaging results"
+          ],
+          "action_id": "ehr:ward_038:005",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_038:lab:visit_02_results",
+            "ward_038:img:visit_02_results"
+          ],
+          "target": "2124-02-04 oncology admission laboratory and imaging results"
+        },
+        "release_evidence_ids": [
+          "ward_038:lab:visit_02_results",
+          "ward_038:img:visit_02_results"
+        ],
+        "sequence_index": 4,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_038_s2_node_005_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_038_s2_node_005"
+      },
+      {
+        "clock_after": "2124-02-04T19:59:38+08:00",
+        "clock_before": "2124-02-04T16:41:32+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "start the 2124-02-04 admission recorded antineoplastic therapy",
+            "Administer the antineoplastic treatment recorded during the 2124-02-04 hospitalization",
+            "2124-02-04 admission recorded antineoplastic therapy"
+          ],
+          "action_id": "ehr:ward_038:006",
+          "action_type": "start_treatment",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_038:tx:visit_02_treatment"
+          ],
+          "target": "2124-02-04 admission recorded antineoplastic therapy"
+        },
+        "release_evidence_ids": [
+          "ward_038:tx:visit_02_treatment"
+        ],
+        "sequence_index": 5,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_038_s2_node_006_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_038_s2_node_006"
+      },
+      {
+        "clock_after": "2124-02-05T05:53:56+08:00",
+        "clock_before": "2124-02-04T19:59:38+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "monitor final oncology admission treatment outcome",
+            "monitor the final oncology admission treatment outcome",
+            "Monitor the treatment outcome of the final oncology hospitalization",
+            "final oncology admission treatment outcome"
+          ],
+          "action_id": "ehr:ward_038:007",
+          "action_type": "monitor_or_defer",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_038:ehr:visit_02_outcome"
+          ],
+          "target": "final oncology admission treatment outcome"
+        },
+        "release_evidence_ids": [
+          "ward_038:ehr:visit_02_outcome"
+        ],
+        "sequence_index": 6,
+        "stage_after": "S3",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_038_s2_node_007_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_038_s2_node_007"
+      },
+      {
+        "clock_after": "2124-02-05T08:06:00+08:00",
+        "clock_before": "2124-02-05T05:53:56+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "discharge to oncology follow-up",
+            "discharge to longitudinal oncology follow-up",
+            "Discharge to longitudinal oncology follow-up"
+          ],
+          "action_id": "ehr:ward_038:008",
+          "action_type": "discharge",
+          "gold_source_type": "ehr_derived_terminal_gold",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_038:ehr:longitudinal_terminal"
+          ],
+          "target": "discharge to longitudinal oncology follow-up"
+        },
+        "release_evidence_ids": [
+          "ward_038:ehr:longitudinal_terminal"
+        ],
+        "sequence_index": 7,
+        "stage_after": "S3",
+        "stage_before": "S3",
+        "state_updates": {
+          "disposition": "home",
+          "encounter_active": false,
+          "terminal": true
+        },
+        "terminal": true,
+        "transition_id": "ward_038_s3_terminal_001"
+      }
+    ]
+  },
+  "schema_version": "ward-runtime-gold-1.0",
+  "gold_version": "ward-anonymous-runtime-1.0"
+}

@@ -1,0 +1,46 @@
+{
+  "interface_version": "ward-patient-ehr-action-interface-0.2.0",
+  "status": "development_non_official",
+  "case_id": "ward_010",
+  "scenario_path": "outputs/world_model_patient_ehr_v01/cases/ward_010.patient_ehr.json",
+  "scenario_sha256": "98874486f8fd5b461f2ae8b1e36e0e0eec6d62ec06c473b79aa9e5e531058da5",
+  "ontology_path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_010.v0.2.json",
+  "ontology_sha256": "3ffb00560984ca19fab0c34932e36a2400244abf7a8eb05b5cf29ee808bd4718",
+  "public_capabilities": [
+    "communicate_with_patient",
+    "review_ehr_documents",
+    "order_diagnostic_tests",
+    "review_results",
+    "request_consultation",
+    "manage_treatment",
+    "perform_procedures",
+    "monitor_or_defer",
+    "manage_disposition"
+  ],
+  "transition_concepts": {
+    "ward_010_s2_node_001": "ehr.breast_admission_vte_and_surgery_readiness",
+    "ward_010_s2_node_002": "ehr.mastectomy_and_reconstruction_consent",
+    "ward_010_s2_node_003": "result.paired_primary_breast_pathology",
+    "ward_010_s2_node_004": "consultation.mastectomy_reconstruction_multidisciplinary_review",
+    "ward_010_s2_node_005": "procedure.right_subcutaneous_mastectomy",
+    "ward_010_s2_node_006": "procedure.right_sentinel_node_biopsy",
+    "ward_010_s2_node_007": "procedure.right_immediate_implant_reconstruction",
+    "ward_010_s2_node_008": "result.sentinel_node_frozen_pair_no_definite_malignancy",
+    "ward_010_s2_node_009": "result.nipple_base_margin_pair_no_definite_malignancy",
+    "ward_010_s2_node_010": "ehr.post_mastectomy_sentinel_and_reconstruction_status",
+    "ward_010_s3_terminal_001": "disposition.home_after_mastectomy_and_reconstruction"
+  },
+  "decision_policy": {
+    "free_text_target_allowed": true,
+    "exact_hidden_identifier_required": false,
+    "schema_valid_non_gold_action_class": "valid_exploration_no_recorded_outcome",
+    "recognized_non_current_action_class": "recognized_non_current_action",
+    "gold_equivalent_action_class": "ehr_path_advanced",
+    "counterfactual_clinical_outcomes_simulated": false
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

@@ -1,0 +1,3602 @@
+{
+  "case_id": "ward_018",
+  "checkpoints": [
+    {
+      "answer": {
+        "layer1_evidence": [],
+        "layer2_utilization_links": [],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Right breast lump of indeterminate malignant potential",
+              "Suspected right breast cancer"
+            ],
+            "canonical_en": "Right breast mass with malignancy not yet established",
+            "claim_id": "ward_018_cp_000_claim_001",
+            "linked_evidence_ids": [],
+            "status": "suspected",
+            "supporting_evidence_ids": []
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Diagnostic workup of right breast mass",
+              "Core needle biopsy for suspected right breast malignancy when indicated"
+            ],
+            "action_id": "ward_018_cp_000_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Complete diagnostic evaluation of the right breast mass and obtain tissue pathology when clinically indicated",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete as soon as possible during hospitalization; the specific timing is determined by clinical assessment",
+            "indication_en": "Before definitive treatment, it is necessary to clarify whether this is a malignancy and its pathological nature",
+            "linked_evidence_ids": [],
+            "prerequisites_en": [
+              "Clinically assess and confirm indications for examination or sampling.",
+              "Assess procedure-related risk."
+            ],
+            "problem_en": "The nature of the right breast mass is unclear.",
+            "target_and_laterality_en": "Right breast; right breast"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "The pathological nature of the right breast mass needs clarification.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_000_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "There is currently no available public evidence supporting completion of diagnostic closure, staging, or treatment readiness",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_000_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "73-year-old woman",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_000_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right breast mass, suspected malignancy",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_000_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The patient is currently in an inpatient breast-surgery setting.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_000_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "No permitted evidence for use is currently disclosed",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_000_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Right breast mass, nature undetermined; admission diagnosis is suspected breast cancer",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_000_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [],
+          "management_state": {
+            "canonical_en": "Inpatient assessment phase, with no publicly available results of diagnostic tests yet",
+            "linked_evidence_ids": [],
+            "state_id": "ward_018_cp_000_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Conditions for definitive treatment are not yet present; diagnostic evidence is lacking, and staging and treatment-related information have not been released.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_018_cp_000_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Do not regard suspected breast cancer as pathologically confirmed",
+            "Staging, metastasis, receptor status, or treatment response must not be inferred when public evidence is absent",
+            "Definitive treatment or discharge follow-up must not be directly decided on this basis."
+          ],
+          "critical_omission_rules_en": [
+            "Omission of diagnostic assessment or necessary pathological confirmation is a key omission.",
+            "Diagnostic closure must not be claimed before subsequent diagnostic results are documented"
+          ],
+          "preliminary_risk_triggers_en": [
+            "Insufficient evidence.",
+            "Diagnosis has not been closed.",
+            "Assessment cannot be stopped on this basis."
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "Only the inpatient setting and admission diagnosis are available, and no allowed evidence is present. Suspected breast cancer cannot be treated as confirmed; it is not yet safe to stop investigation, discharge, or transition to routine follow-up. Diagnostic evaluation should continue.",
+          "remaining_blockers_en": [
+            "No available public evidence is present.",
+            "The pathological nature of the right breast mass is unclear",
+            "Staging and treatment-readiness status have not been assessed or disclosed"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_018_cp_000",
+      "question": {
+        "allowed_evidence_ids": [],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_018:ehr:admission:001",
+          "ward_018:ehr:axillary_ctpa_results:001",
+          "ward_018:ehr:preoperative_decision:001",
+          "ward_018:ehr:recovery:001",
+          "ward_018:ehr:terminal:001",
+          "ward_018:img:breast_vte_assessment:001",
+          "ward_018:path:core_biopsy:001",
+          "ward_018:path:sentinel_frozen:001",
+          "ward_018:proc:axillary_fna:001",
+          "ward_018:proc:core_biopsy:001",
+          "ward_018:proc:definitive_surgery:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_018",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false
+          },
+          "public_context": {
+            "admission_diagnosis": "Right breast mass, suspected cancer",
+            "age_years": 73,
+            "initial_time": "2124-09-29T09:52:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-09-29T09:52:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": []
+        },
+        "public_snapshot_sha256": "b98d5783b6fd54bdde46524f23c546fb11c9b9269d173a235b28ea634604f3c5",
+        "public_time": "2124-09-29T09:52:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 0
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_018:ehr:admission:001",
+            "interpretation_en": "A 73-year-old woman has an approximately 3 cm hard, poorly mobile upper-right-breast mass and was admitted for suspected breast cancer; this supports further diagnostic evaluation but does not establish malignancy.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:img:breast_vte_assessment:001",
+            "interpretation_en": "The approximately 3 cm right-breast mass at 12 o'clock is BI-RADS 4C with abnormal right axillary lymph nodes, indicating a substantial suspicion of malignancy requiring tissue diagnosis; intermuscular venous thrombosis in the right calf also requires separate thrombosis risk assessment and management.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_018_cp_002_action_001",
+              "ward_018_cp_002_action_003"
+            ],
+            "claim_ids": [
+              "ward_018_cp_002_claim_001"
+            ],
+            "evidence_id": "ward_018:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_002_state_diagnoses_001",
+              "ward_018_cp_002_state_active_problems_001",
+              "ward_018_cp_002_state_active_problems_004",
+              "ward_018_cp_002_state_critical_facts_to_retain_001",
+              "ward_018_cp_002_state_critical_facts_to_retain_002",
+              "ward_018_cp_002_state_critical_facts_to_retain_005",
+              "ward_018_cp_002_state_facts_to_retract_or_correct_001",
+              "ward_018_cp_002_state_treatment_readiness_001",
+              "ward_018_cp_002_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_002_action_001",
+              "ward_018_cp_002_action_002",
+              "ward_018_cp_002_action_003"
+            ],
+            "claim_ids": [
+              "ward_018_cp_002_claim_001",
+              "ward_018_cp_002_claim_002",
+              "ward_018_cp_002_claim_003"
+            ],
+            "evidence_id": "ward_018:img:breast_vte_assessment:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_002_state_diagnoses_001",
+              "ward_018_cp_002_state_diagnoses_002",
+              "ward_018_cp_002_state_diagnoses_003",
+              "ward_018_cp_002_state_active_problems_001",
+              "ward_018_cp_002_state_active_problems_002",
+              "ward_018_cp_002_state_active_problems_003",
+              "ward_018_cp_002_state_active_problems_004",
+              "ward_018_cp_002_state_critical_facts_to_retain_002",
+              "ward_018_cp_002_state_critical_facts_to_retain_003",
+              "ward_018_cp_002_state_critical_facts_to_retain_004",
+              "ward_018_cp_002_state_facts_to_retract_or_correct_001",
+              "ward_018_cp_002_state_facts_to_retract_or_correct_002",
+              "ward_018_cp_002_state_facts_to_retract_or_correct_003",
+              "ward_018_cp_002_state_required_delta_from_previous_checkpoint_001",
+              "ward_018_cp_002_state_required_delta_from_previous_checkpoint_002",
+              "ward_018_cp_002_state_treatment_readiness_001",
+              "ward_018_cp_002_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Suspicious right breast lesion requiring biopsy",
+              "BI-RADS 4C breast mass with suspicious axillary nodes",
+              "Suspected right breast cancer pending tissue diagnosis"
+            ],
+            "canonical_en": "A BI-RADS 4C right-breast mass with abnormal right axillary lymph nodes is suspicious for breast malignancy and requires histologic confirmation.",
+            "claim_id": "ward_018_cp_002_claim_001",
+            "linked_evidence_ids": [
+              "ward_018:ehr:admission:001",
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "status": "suspected",
+            "supporting_evidence_ids": [
+              "ward_018:ehr:admission:001",
+              "ward_018:img:breast_vte_assessment:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Abnormal right axillary lymph nodes",
+              "Suspicious axillary adenopathy pending evaluation"
+            ],
+            "canonical_en": "Right axillary lymph nodes are abnormal, with their nature and possible metastatic involvement pending further evaluation.",
+            "claim_id": "ward_018_cp_002_claim_002",
+            "linked_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Right calf intermuscular venous thrombosis",
+              "Right calf muscular vein thrombosis"
+            ],
+            "canonical_en": "Intermuscular venous thrombosis has been identified in the right calf and is an active thrombotic problem.",
+            "claim_id": "ward_018_cp_002_claim_003",
+            "linked_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Image-guided core biopsy of the right breast mass",
+              "Tissue diagnosis of the suspicious right-breast lesion"
+            ],
+            "action_id": "ward_018_cp_002_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Promptly perform image-guided core needle biopsy of the BI-RADS 4C right-breast mass and submit tissue for histopathology.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as possible during hospitalization; the specific timing is determined according to procedural safety assessment.",
+            "indication_en": "BI-RADS 4C and a clinically hard, poorly mobile mass require pathologic confirmation to guide subsequent treatment.",
+            "linked_evidence_ids": [
+              "ward_018:ehr:admission:001",
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "prerequisites_en": [
+              "Confirm patient informed consent and biopsy feasibility.",
+              "Assess bleeding risk, anticoagulation status, and the periprocedural plan in conjunction with the current thrombotic condition."
+            ],
+            "problem_en": "Suspected malignant mass of the right breast.",
+            "target_and_laterality_en": "Approximately 3 cm mass at the 12 o'clock position of the right breast."
+          },
+          {
+            "acceptable_aliases_en": [
+              "Management assessment for right calf muscular vein thrombosis",
+              "Evaluate treatment and monitoring for isolated calf venous thrombosis"
+            ],
+            "action_id": "ward_018_cp_002_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Immediately assess the right-calf intermuscular venous thrombosis, including symptoms, extent, bleeding risk, and an anticoagulation or other management plan, with appropriate monitoring.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Immediately assess and continue follow-up during the current hospitalization",
+            "indication_en": "Imaging has indicated active venous thrombosis, which may affect puncture and subsequent surgical planning; timely risk stratification and management are required.",
+            "linked_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "prerequisites_en": [
+              "Verify clinical information including symptoms, signs, prior bleeding history, kidney function, and medication information.",
+              "The responsible clinical team makes an individualized decision in conjunction with the procedure plan"
+            ],
+            "problem_en": "Right calf gastrocnemius intermuscular vein thrombosis",
+            "target_and_laterality_en": "Right calf gastrocnemius intermuscular vein"
+          },
+          {
+            "acceptable_aliases_en": [
+              "Plan staging and treatment after tissue diagnosis",
+              "Defer definitive breast treatment until diagnostic and axillary evaluation is adequate"
+            ],
+            "action_id": "ward_018_cp_002_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Develop subsequent staging and breast-cancer treatment planning after pathology and axillary assessment; do not determine definitive surgery or systemic therapy solely from the current imaging.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as possible after completing histologic diagnosis, with specific arrangements according to clinical results",
+            "indication_en": "Pathology and clear staging evidence are currently lacking; the treatment plan does not yet have a sufficient basis.",
+            "linked_evidence_ids": [
+              "ward_018:ehr:admission:001",
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "prerequisites_en": [
+              "Obtain breast tissue pathology results.",
+              "Further evaluate the right axillary lymph node",
+              "In conjunction with thrombosis management and overall surgical-risk assessment."
+            ],
+            "problem_en": "Suspected breast malignancy and abnormal axillary lymph nodes",
+            "target_and_laterality_en": "Right breast and right axilla."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Suspected malignant mass in the right breast, requiring histological diagnosis.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:admission:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Abnormal right axillary lymph node, requiring further assessment.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Intermuscular vein thrombosis of the right calf gastrocnemius muscle requires thrombosis-risk assessment and a management plan.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "During hospitalization, the breast diagnostic process and thrombosis safety management need to be coordinated.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:admission:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "There is still no pathology result for the breast mass.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_002_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is still no pathology of the right axillary lymph nodes or clear staging evidence",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_002_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Clinical thrombosis risk stratification, bleeding risk, and the specific treatment plan are not provided in public evidence.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_002_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "73-year-old woman",
+              "linked_evidence_ids": [
+                "ward_018:ehr:admission:001"
+              ],
+              "state_id": "ward_018_cp_002_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "BI-RADS 4C",
+              "linked_evidence_ids": [
+                "ward_018:ehr:admission:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Abnormal right axillary lymph nodes.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right calf gastrocnemius intermuscular vein thrombosis",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Currently undergoing inpatient diagnosis and treatment",
+              "linked_evidence_ids": [
+                "ward_018:ehr:admission:001"
+              ],
+              "state_id": "ward_018_cp_002_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Approximately 3 cm right breast mass, imaging assessed as BI-RADS 4C, suspected breast malignancy but without pathologic confirmation.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:admission:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Abnormal right axillary lymph node, nature undetermined",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right calf gastrocnemius intermuscular vein thrombosis",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Suspected breast cancer must not be documented as pathologically confirmed breast cancer.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:admission:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not write an abnormal right axillary lymph node as confirmed metastasis",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Thrombosis of the right lower-leg gastrocnemius intermuscular vein must not be written as pulmonary embolism or unconfirmed proximal deep vein thrombosis.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "The patient remains in the inpatient phase of further diagnosis and management; the priority is to promptly complete histologic confirmation of the breast lesion, evaluate axillary lymph nodes, and concurrently address safety issues related to right lower-leg venous thrombosis.",
+            "linked_evidence_ids": [
+              "ward_018:ehr:admission:001",
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "state_id": "ward_018_cp_002_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "New breast and venous ultrasound evidence shows a BI-RADS 4C right-breast mass, abnormal right axillary lymph nodes, and right-calf intermuscular venous thrombosis.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Compared with the previous checkpoint, imaging now supports increased suspicion of breast malignancy and identifies a thrombotic problem, while breast pathology and the nature of the lymph nodes remain undetermined.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_002_state_required_delta_from_previous_checkpoint_002",
+              "status": "state_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "The standards for completion of definitive breast cancer treatment preparation have not yet been met; diagnostic sampling and thrombosis-related assessment may be performed, but the final surgical or systemic treatment plan cannot be determined solely from the current imaging.",
+            "linked_evidence_ids": [
+              "ward_018:ehr:admission:001",
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "state_id": "ward_018_cp_002_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Must not directly write BI-RADS 4C or abnormal axillary lymph nodes as pathologically confirmed breast cancer or proven lymph node metastasis",
+            "Do not overlook thrombosis of the right calf gastrocnemius intermuscular vein.",
+            "Do not directly arrange invasive procedures or final surgery without assessing bleeding risk and thrombosis management.",
+            "Current conclusions must not be made based on unpublished future pathology, staging, or treatment results"
+          ],
+          "critical_omission_rules_en": [
+            "Omission of a histologic-confirmation plan is a key diagnostic-process omission",
+            "Omission of thrombosis risk assessment and a management plan is a critical safety omission",
+            "Omission of further assessment of the abnormal right axillary lymph node will result in incomplete staging information."
+          ],
+          "preliminary_risk_triggers_en": [
+            "diagnosis_not_closed",
+            "active_thrombotic_issue",
+            "inpatient_evaluation_required",
+            "not_safe_to_stop"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "The patient has a BI-RADS 4C breast mass, abnormal axillary nodes, and newly identified right-calf venous thrombosis. Breast diagnosis is not closed and the thrombosis requires timely safety assessment; therefore investigation should continue and routine follow-up alone is not safe.",
+          "remaining_blockers_en": [
+            "The breast mass does not yet have histopathologic confirmation",
+            "The nature and staging significance of abnormal right axillary lymph nodes are not clear.",
+            "Right lower-leg venous thrombosis still requires clinical risk stratification and a management plan.",
+            "A definitive treatment plan based on pathology and staging has not yet been formed."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_018_cp_002",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_018:ehr:admission:001",
+          "ward_018:img:breast_vte_assessment:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_018:ehr:axillary_ctpa_results:001",
+          "ward_018:ehr:preoperative_decision:001",
+          "ward_018:ehr:recovery:001",
+          "ward_018:ehr:terminal:001",
+          "ward_018:path:core_biopsy:001",
+          "ward_018:path:sentinel_frozen:001",
+          "ward_018:proc:axillary_fna:001",
+          "ward_018:proc:definitive_surgery:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_018",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_018_s2_node_001_completed": true,
+            "ward_018_s2_node_002_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Right breast mass, suspected cancer",
+            "age_years": 73,
+            "initial_time": "2124-09-29T09:52:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-09-29T20:20:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_018:ehr:admission:001",
+            "ward_018:img:breast_vte_assessment:001"
+          ]
+        },
+        "public_snapshot_sha256": "bc48245fb40dd7e557b1384aae33ede1b948adf9b50f7ef1944a356f1afeea50",
+        "public_time": "2124-09-29T20:20:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "action_selection"
+        ]
+      },
+      "sequence_index": 2
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_018:ehr:admission:001",
+            "interpretation_en": "A 73-year-old woman was admitted for a hard, poorly mobile approximately 3 cm right breast mass requiring further diagnosis and treatment; this provides clinical context but does not by itself establish cancer or stage.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "ward_018:img:breast_vte_assessment:001",
+            "interpretation_en": "The approximately 3 cm right breast mass at 12 o’clock was BI-RADS 4C with abnormal right axillary nodes, and intermuscular venous thrombosis was identified in the right calf. This supports high suspicion for malignancy, the need to clarify axillary nodal status, and an active venous thrombosis problem.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:path:core_biopsy:001",
+            "interpretation_en": "Core biopsy of the right breast mass was considered invasive carcinoma, with immunohistochemistry supporting breast origin. Right breast invasive carcinoma can be treated as the primary diagnosis at this time, while histologic subtype, receptor status, and stage remain incomplete.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:proc:axillary_fna:001",
+            "interpretation_en": "Two ultrasound-guided fine-needle aspirations of the abnormal right axillary node were completed and submitted for cytology. The procedure is complete, but the nodal cytology result is not available and nodal metastasis cannot yet be confirmed or excluded.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:proc:core_biopsy:001",
+            "interpretation_en": "Ultrasound-guided core needle biopsy of the right breast mass was completed under local anesthesia, providing the tissue basis for the current pathologic diagnosis.",
+            "role": "supporting"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_018_cp_005_action_002"
+            ],
+            "claim_ids": [],
+            "evidence_id": "ward_018:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_005_state_active_problems_004",
+              "ward_018_cp_005_state_critical_facts_to_retain_001",
+              "ward_018_cp_005_state_critical_facts_to_retain_005",
+              "ward_018_cp_005_state_facts_to_retract_or_correct_001",
+              "ward_018_cp_005_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_005_action_001",
+              "ward_018_cp_005_action_002",
+              "ward_018_cp_005_action_003"
+            ],
+            "claim_ids": [
+              "ward_018_cp_005_claim_001",
+              "ward_018_cp_005_claim_002",
+              "ward_018_cp_005_claim_003",
+              "ward_018_cp_005_claim_004"
+            ],
+            "evidence_id": "ward_018:img:breast_vte_assessment:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_005_state_diagnoses_002",
+              "ward_018_cp_005_state_diagnoses_003",
+              "ward_018_cp_005_state_active_problems_001",
+              "ward_018_cp_005_state_active_problems_002",
+              "ward_018_cp_005_state_active_problems_003",
+              "ward_018_cp_005_state_blockers_001",
+              "ward_018_cp_005_state_blockers_003",
+              "ward_018_cp_005_state_blockers_004",
+              "ward_018_cp_005_state_critical_facts_to_retain_001",
+              "ward_018_cp_005_state_critical_facts_to_retain_003",
+              "ward_018_cp_005_state_critical_facts_to_retain_004",
+              "ward_018_cp_005_state_facts_to_retract_or_correct_002",
+              "ward_018_cp_005_state_required_delta_from_previous_checkpoint_002",
+              "ward_018_cp_005_state_required_delta_from_previous_checkpoint_003",
+              "ward_018_cp_005_state_treatment_readiness_001",
+              "ward_018_cp_005_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_005_action_001",
+              "ward_018_cp_005_action_002",
+              "ward_018_cp_005_action_003"
+            ],
+            "claim_ids": [
+              "ward_018_cp_005_claim_001",
+              "ward_018_cp_005_claim_002",
+              "ward_018_cp_005_claim_004"
+            ],
+            "evidence_id": "ward_018:path:core_biopsy:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_005_state_diagnoses_001",
+              "ward_018_cp_005_state_active_problems_001",
+              "ward_018_cp_005_state_blockers_002",
+              "ward_018_cp_005_state_blockers_003",
+              "ward_018_cp_005_state_critical_facts_to_retain_002",
+              "ward_018_cp_005_state_facts_to_retract_or_correct_001",
+              "ward_018_cp_005_state_required_delta_from_previous_checkpoint_001",
+              "ward_018_cp_005_state_required_delta_from_previous_checkpoint_003",
+              "ward_018_cp_005_state_treatment_readiness_001",
+              "ward_018_cp_005_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_005_action_001",
+              "ward_018_cp_005_action_003"
+            ],
+            "claim_ids": [
+              "ward_018_cp_005_claim_002",
+              "ward_018_cp_005_claim_004"
+            ],
+            "evidence_id": "ward_018:proc:axillary_fna:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_005_state_diagnoses_002",
+              "ward_018_cp_005_state_active_problems_002",
+              "ward_018_cp_005_state_active_problems_004",
+              "ward_018_cp_005_state_blockers_001",
+              "ward_018_cp_005_state_blockers_003",
+              "ward_018_cp_005_state_critical_facts_to_retain_003",
+              "ward_018_cp_005_state_critical_facts_to_retain_005",
+              "ward_018_cp_005_state_facts_to_retract_or_correct_002",
+              "ward_018_cp_005_state_required_delta_from_previous_checkpoint_002",
+              "ward_018_cp_005_state_required_delta_from_previous_checkpoint_003",
+              "ward_018_cp_005_state_treatment_readiness_001",
+              "ward_018_cp_005_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_018_cp_005_claim_001"
+            ],
+            "evidence_id": "ward_018:proc:core_biopsy:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_005_state_diagnoses_001",
+              "ward_018_cp_005_state_active_problems_004",
+              "ward_018_cp_005_state_resolved_problems_001",
+              "ward_018_cp_005_state_critical_facts_to_retain_005",
+              "ward_018_cp_005_state_facts_to_retract_or_correct_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Right breast invasive breast carcinoma",
+              "Invasive breast cancer of the right breast"
+            ],
+            "canonical_en": "Invasive carcinoma of the right breast, breast origin",
+            "claim_id": "ward_018_cp_005_claim_001",
+            "linked_evidence_ids": [
+              "ward_018:path:core_biopsy:001",
+              "ward_018:proc:core_biopsy:001",
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_018:path:core_biopsy:001",
+              "ward_018:proc:core_biopsy:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Right axillary node abnormality; FNA cytology pending",
+              "Pending cytology of the right axillary lymph node"
+            ],
+            "canonical_en": "Abnormal right axillary lymph node with fine-needle aspiration cytology pending",
+            "claim_id": "ward_018_cp_005_claim_002",
+            "linked_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001",
+              "ward_018:proc:axillary_fna:001",
+              "ward_018:path:core_biopsy:001"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001",
+              "ward_018:proc:axillary_fna:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Right calf intermuscular vein thrombosis",
+              "Distal calf venous thrombosis"
+            ],
+            "canonical_en": "Intermuscular venous thrombosis of the right calf",
+            "claim_id": "ward_018_cp_005_claim_003",
+            "linked_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Incomplete breast cancer staging",
+              "Not yet ready for definitive treatment planning"
+            ],
+            "canonical_en": "Breast cancer staging and pre-treatment readiness are incomplete",
+            "claim_id": "ward_018_cp_005_claim_004",
+            "linked_evidence_ids": [
+              "ward_018:path:core_biopsy:001",
+              "ward_018:proc:axillary_fna:001",
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "ward_018:path:core_biopsy:001",
+              "ward_018:proc:axillary_fna:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Follow up axillary FNA cytology",
+              "Complete pathology-based staging assessment"
+            ],
+            "action_id": "ward_018_cp_005_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Retrieve and review right axillary lymph-node FNA cytology and complete pathology information needed for breast cancer staging",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as possible, before the definitive treatment decision.",
+            "indication_en": "The axillary puncture specimen has been sent for cytology, but the result has not yet been disclosed; axillary staging and reliable treatment planning cannot currently be completed.",
+            "linked_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001",
+              "ward_018:proc:axillary_fna:001",
+              "ward_018:path:core_biopsy:001"
+            ],
+            "prerequisites_en": [
+              "Confirm that the specimens have been submitted for testing and track the formal report.",
+              "Comprehensively reviewed by breast surgery, pathology, and relevant teams"
+            ],
+            "problem_en": "Right breast invasive cancer and abnormal right axillary lymph nodes",
+            "target_and_laterality_en": "Right breast and right axilla"
+          },
+          {
+            "acceptable_aliases_en": [
+              "Evaluate and manage right calf venous thrombosis",
+              "Coordinate VTE management with breast cancer treatment"
+            ],
+            "action_id": "ward_018_cp_005_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Clinically assess the right calf intermuscular venous thrombosis and coordinate thrombosis management with subsequent invasive treatment",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as possible during the current hospitalization",
+            "indication_en": "Imaging has indicated active venous thrombosis, which may affect arrangements for subsequent surgery or other invasive treatment.",
+            "linked_evidence_ids": [
+              "ward_018:ehr:admission:001",
+              "ward_018:img:breast_vte_assessment:001",
+              "ward_018:path:core_biopsy:001"
+            ],
+            "prerequisites_en": [
+              "Assess in conjunction with symptoms, bleeding risk, renal function, and other clinical data; these data are not currently public",
+              "The attending team decides whether and how to anticoagulate or re-examine"
+            ],
+            "problem_en": "Right lower leg intermuscular vein thrombosis",
+            "target_and_laterality_en": "Intermuscular venous system of the right lower leg"
+          },
+          {
+            "acceptable_aliases_en": [
+              "Multidisciplinary breast cancer treatment planning",
+              "Breast oncology MDT review"
+            ],
+            "action_id": "ward_018_cp_005_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "After necessary staging, pathology, and thrombosis-risk assessment, formulate the subsequent treatment plan through a breast multidisciplinary team",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as possible after the above information becomes available, before definitive treatment.",
+            "indication_en": "There is currently evidence for the main diagnosis, but complete staging, pathology information, and thrombosis management information are insufficient to support definitive treatment decisions.",
+            "linked_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001",
+              "ward_018:path:core_biopsy:001",
+              "ward_018:proc:axillary_fna:001"
+            ],
+            "prerequisites_en": [
+              "Obtain or confirm the pending axillary cytology.",
+              "Complete available pathology and receptor information",
+              "Complete clinical assessment of thrombosis."
+            ],
+            "problem_en": "Treatment readiness for invasive right breast cancer has not been completed.",
+            "target_and_laterality_en": "Right breast cancer and right axillary region."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Newly diagnosed invasive carcinoma of the right breast and issues of its staging, receptors, and treatment planning",
+              "linked_evidence_ids": [
+                "ward_018:path:core_biopsy:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_005_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Abnormal right axillary lymph node; cytology results need to be awaited",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001",
+                "ward_018:proc:axillary_fna:001"
+              ],
+              "state_id": "ward_018_cp_005_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Intermuscular venous thrombosis of the right calf, requiring clinical risk assessment and management.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_005_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The inpatient diagnosis-and-treatment process is still ongoing.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:admission:001",
+                "ward_018:proc:axillary_fna:001",
+                "ward_018:proc:core_biopsy:001"
+              ],
+              "state_id": "ward_018_cp_005_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Fine-needle aspiration cytology results of the right axillary lymph node are not public",
+              "linked_evidence_ids": [
+                "ward_018:proc:axillary_fna:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_005_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Complete pathological subtype and receptor status have not been made public",
+              "linked_evidence_ids": [
+                "ward_018:path:core_biopsy:001"
+              ],
+              "state_id": "ward_018_cp_005_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There is not yet complete tumor staging and treatment-readiness information.",
+              "linked_evidence_ids": [
+                "ward_018:path:core_biopsy:001",
+                "ward_018:proc:axillary_fna:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_005_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The thrombus management plan and its coordination with subsequent invasive treatment are not publicly available",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_005_state_blockers_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "73-year-old woman, approximately 3 cm mass at the 12 o'clock position of the right breast",
+              "linked_evidence_ids": [
+                "ward_018:ehr:admission:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_005_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Core-needle pathology considers invasive carcinoma, and immunohistochemistry supports breast origin.",
+              "linked_evidence_ids": [
+                "ward_018:path:core_biopsy:001"
+              ],
+              "state_id": "ward_018_cp_005_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Fine-needle aspiration has been performed for an abnormal right axillary lymph node; cytology results are pending.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001",
+                "ward_018:proc:axillary_fna:001"
+              ],
+              "state_id": "ward_018_cp_005_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right calf intermuscular vein thrombosis has been suggested by ultrasound",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_005_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The patient is currently still in an active inpatient diagnostic and treatment process.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:admission:001",
+                "ward_018:proc:axillary_fna:001",
+                "ward_018:proc:core_biopsy:001"
+              ],
+              "state_id": "ward_018_cp_005_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Right breast invasive breast carcinoma, of breast origin; histologic diagnosis has been obtained, but complete pathology data have not been made public",
+              "linked_evidence_ids": [
+                "ward_018:path:core_biopsy:001",
+                "ward_018:proc:core_biopsy:001"
+              ],
+              "state_id": "ward_018_cp_005_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Abnormal right axillary lymph node with fine-needle aspiration cytology pending",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001",
+                "ward_018:proc:axillary_fna:001"
+              ],
+              "state_id": "ward_018_cp_005_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right lower leg intermuscular vein thrombosis",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_005_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Update “suspected cancer” at admission to core-biopsy-supported invasive carcinoma of the right breast; however, do not update it as staging completed or axillary metastasis confirmed.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:admission:001",
+                "ward_018:path:core_biopsy:001",
+                "ward_018:proc:core_biopsy:001"
+              ],
+              "state_id": "ward_018_cp_005_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not misstate a completed axillary puncture procedure as a positive result for axillary metastasis.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001",
+                "ward_018:proc:axillary_fna:001"
+              ],
+              "state_id": "ward_018_cp_005_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Continue inpatient diagnosis, staging, and treatment preparation; concurrently manage right lower-leg intermuscular venous thrombosis. The case currently cannot safely be regarded as having completed the diagnostic or treatment process.",
+            "linked_evidence_ids": [
+              "ward_018:ehr:admission:001",
+              "ward_018:path:core_biopsy:001",
+              "ward_018:proc:axillary_fna:001",
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "state_id": "ward_018_cp_005_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Core biopsy pathology is newly available, updating the primary diagnosis from suspected right breast cancer to core-biopsy-supported invasive carcinoma of breast origin.",
+              "linked_evidence_ids": [
+                "ward_018:path:core_biopsy:001"
+              ],
+              "state_id": "ward_018_cp_005_state_required_delta_from_previous_checkpoint_001",
+              "status": "clinical_state_change",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right axillary node FNA has been completed, but cytology remains pending, so axillary staging is not complete.",
+              "linked_evidence_ids": [
+                "ward_018:proc:axillary_fna:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_005_state_required_delta_from_previous_checkpoint_002",
+              "status": "clinical_state_change",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Management has shifted from evaluation of a breast mass alone to breast cancer staging and treatment preparation, with concurrent management of right calf intermuscular venous thrombosis.",
+              "linked_evidence_ids": [
+                "ward_018:path:core_biopsy:001",
+                "ward_018:proc:axillary_fna:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_005_state_required_delta_from_previous_checkpoint_003",
+              "status": "management_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "Core needle sampling of the right breast mass has been completed.",
+              "linked_evidence_ids": [
+                "ward_018:proc:core_biopsy:001"
+              ],
+              "state_id": "ward_018_cp_005_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Preliminary evidence for the principal diagnosis of breast cancer is available, but conditions have not yet been met to complete full staging or make a definitive treatment decision on this basis; pending axillary cytology, complete pathology data, clinical assessment, and thrombosis management need to be considered.",
+            "linked_evidence_ids": [
+              "ward_018:path:core_biopsy:001",
+              "ward_018:proc:axillary_fna:001",
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "state_id": "ward_018_cp_005_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "The abnormal right axillary lymph node or completed puncture must not be interpreted as axillary metastasis positive.",
+            "Do not infer distant metastasis, pulmonary embolism, tumor stage, receptor status, or a specific treatment regimen in the absence of evidence.",
+            "Do not overlook the right calf intermuscular vein thrombosis.",
+            "It must not be claimed from the current data that diagnosis and treatment have been completed or can be safely stopped"
+          ],
+          "critical_omission_rules_en": [
+            "Failure to track axillary cytology results is a critical omission.",
+            "Failure to assess and manage the indicated right calf intermuscular venous thrombosis is a critical omission",
+            "Undertaking definitive treatment planning without completing necessary staging and verification of pathology information is a critical omission."
+          ],
+          "preliminary_risk_triggers_en": [
+            "active_malignancy",
+            "pending_staging",
+            "active_venous_thrombosis",
+            "inpatient_encounter_active"
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "Core pathology now supports invasive carcinoma of the right breast, but axillary cytology is pending and staging and treatment readiness are incomplete. The patient also has right calf intermuscular venous thrombosis requiring management and remains in an active inpatient encounter; investigation and active management should therefore continue rather than stop or transition to routine follow-up.",
+          "remaining_blockers_en": [
+            "Right axillary lymph node cytology result pending report.",
+            "Complete pathological subtype and receptor status have not been made public",
+            "Complete staging and treatment readiness for breast cancer are not yet complete",
+            "The management plan for right calf intermuscular venous thrombosis and its coordination with subsequent treatment have not been made public"
+          ]
+        }
+      },
+      "checkpoint_id": "ward_018_cp_005",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_018:ehr:admission:001",
+          "ward_018:img:breast_vte_assessment:001",
+          "ward_018:path:core_biopsy:001",
+          "ward_018:proc:axillary_fna:001",
+          "ward_018:proc:core_biopsy:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_018:ehr:axillary_ctpa_results:001",
+          "ward_018:ehr:preoperative_decision:001",
+          "ward_018:ehr:recovery:001",
+          "ward_018:ehr:terminal:001",
+          "ward_018:path:sentinel_frozen:001",
+          "ward_018:proc:definitive_surgery:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_018",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_018_s2_node_001_completed": true,
+            "ward_018_s2_node_002_completed": true,
+            "ward_018_s2_node_003_completed": true,
+            "ward_018_s2_node_004_completed": true,
+            "ward_018_s2_node_005_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Right breast mass, suspected cancer",
+            "age_years": 73,
+            "initial_time": "2124-09-29T09:52:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-10-01T00:02:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_018:ehr:admission:001",
+            "ward_018:img:breast_vte_assessment:001",
+            "ward_018:path:core_biopsy:001",
+            "ward_018:proc:axillary_fna:001",
+            "ward_018:proc:core_biopsy:001"
+          ]
+        },
+        "public_snapshot_sha256": "a589e5146575b956752399b17c860a209be1fd5109d45e317f979516c2f1de8d",
+        "public_time": "2124-10-01T00:02:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 5
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_018:ehr:admission:001",
+            "interpretation_en": "A 73-year-old woman was admitted for evaluation and treatment of an approximately 3 cm hard, poorly mobile right-breast mass.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "ward_018:ehr:axillary_ctpa_results:001",
+            "interpretation_en": "Right axillary FNA cytology showed lymphocytes without malignancy, and pulmonary artery CTA showed no obvious abnormality; negative cytology does not replace intraoperative assessment.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:ehr:preoperative_decision:001",
+            "interpretation_en": "Invasive right-breast carcinoma was confirmed; right simple mastectomy and sentinel-node biopsy were planned, with axillary management based on intraoperative findings.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:img:breast_vte_assessment:001",
+            "interpretation_en": "The approximately 3 cm 12 o'clock right-breast mass was BI-RADS 4C with abnormal right axillary nodes; right calf intermuscular venous thrombosis is an important active perioperative problem.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:path:core_biopsy:001",
+            "interpretation_en": "Core biopsy was considered invasive carcinoma, with immunohistochemistry supporting breast origin.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:path:sentinel_frozen:001",
+            "interpretation_en": "Frozen sections from multiple right sentinel, parasentinel, and related lymphoadipose tissues showed no malignancy; this is an intraoperative negative result and does not equal final pathologic staging.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:proc:axillary_fna:001",
+            "interpretation_en": "Two ultrasound-guided FNAs of the abnormal right axillary node were completed and submitted for cytology.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_018:proc:core_biopsy:001",
+            "interpretation_en": "Ultrasound-guided core biopsy of the right-breast mass was completed under local anesthesia.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_018:proc:definitive_surgery:001",
+            "interpretation_en": "Right simple mastectomy, sentinel-node biopsy, and management of the low-level lymph-node group were completed; chest-wall and axillary drains remain in place, indicating ongoing postoperative inpatient care.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_018_cp_009_claim_001"
+            ],
+            "evidence_id": "ward_018:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": []
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_009_action_003"
+            ],
+            "claim_ids": [
+              "ward_018_cp_009_claim_002",
+              "ward_018_cp_009_claim_003"
+            ],
+            "evidence_id": "ward_018:ehr:axillary_ctpa_results:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_009_state_diagnoses_002",
+              "ward_018_cp_009_state_facts_to_retract_or_correct_002",
+              "ward_018_cp_009_state_facts_to_retract_or_correct_003"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_009_action_001"
+            ],
+            "claim_ids": [
+              "ward_018_cp_009_claim_001",
+              "ward_018_cp_009_claim_004"
+            ],
+            "evidence_id": "ward_018:ehr:preoperative_decision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_009_state_diagnoses_001",
+              "ward_018_cp_009_state_critical_facts_to_retain_002",
+              "ward_018_cp_009_state_facts_to_retract_or_correct_001",
+              "ward_018_cp_009_state_required_delta_from_previous_checkpoint_001",
+              "ward_018_cp_009_state_required_delta_from_previous_checkpoint_002",
+              "ward_018_cp_009_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_009_action_003"
+            ],
+            "claim_ids": [
+              "ward_018_cp_009_claim_001",
+              "ward_018_cp_009_claim_005"
+            ],
+            "evidence_id": "ward_018:img:breast_vte_assessment:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_009_state_diagnoses_003",
+              "ward_018_cp_009_state_active_problems_004",
+              "ward_018_cp_009_state_critical_facts_to_retain_001",
+              "ward_018_cp_009_state_critical_facts_to_retain_004",
+              "ward_018_cp_009_state_facts_to_retract_or_correct_003",
+              "ward_018_cp_009_state_required_delta_from_previous_checkpoint_005",
+              "ward_018_cp_009_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_009_action_001"
+            ],
+            "claim_ids": [
+              "ward_018_cp_009_claim_001"
+            ],
+            "evidence_id": "ward_018:path:core_biopsy:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_009_state_diagnoses_001",
+              "ward_018_cp_009_state_resolved_problems_001",
+              "ward_018_cp_009_state_critical_facts_to_retain_002",
+              "ward_018_cp_009_state_facts_to_retract_or_correct_001",
+              "ward_018_cp_009_state_required_delta_from_previous_checkpoint_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_009_action_002"
+            ],
+            "claim_ids": [
+              "ward_018_cp_009_claim_006"
+            ],
+            "evidence_id": "ward_018:path:sentinel_frozen:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_009_state_resolved_problems_003",
+              "ward_018_cp_009_state_critical_facts_to_retain_003",
+              "ward_018_cp_009_state_facts_to_retract_or_correct_002",
+              "ward_018_cp_009_state_required_delta_from_previous_checkpoint_003",
+              "ward_018_cp_009_state_treatment_readiness_001",
+              "ward_018_cp_009_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_018_cp_009_claim_002"
+            ],
+            "evidence_id": "ward_018:proc:axillary_fna:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_009_state_diagnoses_002"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_018_cp_009_claim_001"
+            ],
+            "evidence_id": "ward_018:proc:core_biopsy:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_009_state_resolved_problems_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_009_action_001",
+              "ward_018_cp_009_action_002",
+              "ward_018_cp_009_action_004"
+            ],
+            "claim_ids": [
+              "ward_018_cp_009_claim_004",
+              "ward_018_cp_009_claim_007"
+            ],
+            "evidence_id": "ward_018:proc:definitive_surgery:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_009_state_diagnoses_004",
+              "ward_018_cp_009_state_active_problems_001",
+              "ward_018_cp_009_state_active_problems_002",
+              "ward_018_cp_009_state_resolved_problems_002",
+              "ward_018_cp_009_state_blockers_003",
+              "ward_018_cp_009_state_critical_facts_to_retain_001",
+              "ward_018_cp_009_state_critical_facts_to_retain_005",
+              "ward_018_cp_009_state_required_delta_from_previous_checkpoint_002",
+              "ward_018_cp_009_state_required_delta_from_previous_checkpoint_004",
+              "ward_018_cp_009_state_treatment_readiness_001",
+              "ward_018_cp_009_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "invasive right breast carcinoma",
+              "invasive breast cancer of the right breast"
+            ],
+            "canonical_en": "Invasive carcinoma of the right breast, breast origin",
+            "claim_id": "ward_018_cp_009_claim_001",
+            "linked_evidence_ids": [
+              "ward_018:ehr:admission:001",
+              "ward_018:img:breast_vte_assessment:001",
+              "ward_018:path:core_biopsy:001",
+              "ward_018:proc:core_biopsy:001",
+              "ward_018:ehr:preoperative_decision:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_018:path:core_biopsy:001",
+              "ward_018:ehr:preoperative_decision:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "negative right axillary cytology",
+              "no malignancy identified on right axillary FNA"
+            ],
+            "canonical_en": "Right axillary FNA cytology negative for malignant cells",
+            "claim_id": "ward_018_cp_009_claim_002",
+            "linked_evidence_ids": [
+              "ward_018:ehr:axillary_ctpa_results:001",
+              "ward_018:proc:axillary_fna:001"
+            ],
+            "status": "negative",
+            "supporting_evidence_ids": [
+              "ward_018:ehr:axillary_ctpa_results:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "negative CTPA for obvious pulmonary artery abnormality"
+            ],
+            "canonical_en": "CT pulmonary angiography showed no obvious pulmonary artery abnormality",
+            "claim_id": "ward_018_cp_009_claim_003",
+            "linked_evidence_ids": [
+              "ward_018:ehr:axillary_ctpa_results:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_018:ehr:axillary_ctpa_results:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "completed right simple mastectomy and sentinel node biopsy"
+            ],
+            "canonical_en": "Planned right simple mastectomy and sentinel lymph node biopsy were completed",
+            "claim_id": "ward_018_cp_009_claim_004",
+            "linked_evidence_ids": [
+              "ward_018:ehr:preoperative_decision:001",
+              "ward_018:proc:definitive_surgery:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_018:ehr:preoperative_decision:001",
+              "ward_018:proc:definitive_surgery:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "right calf muscular-vein thrombosis",
+              "intermuscular calf vein thrombosis"
+            ],
+            "canonical_en": "Right calf intermuscular venous thrombosis remains an active perioperative problem",
+            "claim_id": "ward_018_cp_009_claim_005",
+            "linked_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "negative intraoperative sentinel-node frozen section"
+            ],
+            "canonical_en": "Intraoperative frozen sections of multiple right sentinel and related lymphoid tissues showed no malignancy",
+            "claim_id": "ward_018_cp_009_claim_006",
+            "linked_evidence_ids": [
+              "ward_018:path:sentinel_frozen:001"
+            ],
+            "status": "negative",
+            "supporting_evidence_ids": [
+              "ward_018:path:sentinel_frozen:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "early postoperative state after right breast surgery"
+            ],
+            "canonical_en": "The patient is in early postoperative management after right breast cancer surgery, with chest-wall and axillary drains in place",
+            "claim_id": "ward_018_cp_009_claim_007",
+            "linked_evidence_ids": [
+              "ward_018:proc:definitive_surgery:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_018:proc:definitive_surgery:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "ongoing postoperative surgical care"
+            ],
+            "action_id": "ward_018_cp_009_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue postoperative inpatient management by the breast-surgery team",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Immediately and continue until postoperative discharge criteria are met.",
+            "indication_en": "Surgery has been completed and the drain remains in place; current inpatient management is still ongoing.",
+            "linked_evidence_ids": [
+              "ward_018:proc:definitive_surgery:001",
+              "ward_018:ehr:preoperative_decision:001",
+              "ward_018:path:core_biopsy:001"
+            ],
+            "prerequisites_en": [
+              "Ongoing clinical monitoring."
+            ],
+            "problem_en": "Early postoperative status after right breast cancer surgery",
+            "target_and_laterality_en": "Patient after right mastectomy"
+          },
+          {
+            "acceptable_aliases_en": [
+              "await final surgical pathology",
+              "review final pathology for staging"
+            ],
+            "action_id": "ward_018_cp_009_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Obtain and review final breast and lymph-node surgical pathology for pathologic staging and subsequent treatment assessment",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Promptly review postoperative pathology results when available.",
+            "indication_en": "A negative frozen section cannot replace final pathology; subsequent adjuvant treatment must be based on final pathology.",
+            "linked_evidence_ids": [
+              "ward_018:path:sentinel_frozen:001",
+              "ward_018:proc:definitive_surgery:001"
+            ],
+            "prerequisites_en": [
+              "The surgical specimen has completed pathological processing."
+            ],
+            "problem_en": "Final pathology and complete staging have not yet been disclosed",
+            "target_and_laterality_en": "Right mastectomy specimen and right axillary/sentinel lymph node specimens."
+          },
+          {
+            "acceptable_aliases_en": [
+              "perioperative management of right calf venous thrombosis"
+            ],
+            "action_id": "ward_018_cp_009_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue perioperative assessment and management of the right calf intermuscular venous thrombosis while accounting for surgical bleeding risk",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Immediate postoperative assessment and continued follow-up.",
+            "indication_en": "Imaging has documented thrombosis, and the patient has just undergone surgery; negative pulmonary artery CTA cannot negate venous thrombosis.",
+            "linked_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001",
+              "ward_018:ehr:axillary_ctpa_results:001"
+            ],
+            "prerequisites_en": [
+              "Assess bleeding risk, thrombosis risk, and perioperative status."
+            ],
+            "problem_en": "Right lower leg intermuscular vein thrombosis",
+            "target_and_laterality_en": "Right calf intermuscular vein"
+          },
+          {
+            "acceptable_aliases_en": [
+              "postoperative wound and drain monitoring"
+            ],
+            "action_id": "ward_018_cp_009_action_004",
+            "action_scope": "prospective",
+            "canonical_action_en": "Monitor the chest-wall and axillary wounds and drains, record drain output, and determine drain removal and discharge according to clinical criteria",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Assess daily and when abnormalities occur",
+            "indication_en": "The operative record clearly states that two drains remain in place.",
+            "linked_evidence_ids": [
+              "ward_018:proc:definitive_surgery:001"
+            ],
+            "prerequisites_en": [
+              "Postoperative signs and wound assessment."
+            ],
+            "problem_en": "Chest-wall and axillary drainage tubes remain in place",
+            "target_and_laterality_en": "Right chest wall and axilla"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Early postoperative recovery and incision monitoring.",
+              "linked_evidence_ids": [
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_009_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Chest wall and axillary drainage tube management.",
+              "linked_evidence_ids": [
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_009_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Final breast and lymph node pathology results and complete staging have not yet been publicly disclosed.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_009_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Perioperative risk management of right calf intermuscular venous thrombosis.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_009_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Final surgical pathology and complete staging are lacking",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_009_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative recovery data sufficient to support discharge and transition to routine follow-up are lacking",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_009_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The drain remains indwelling",
+              "linked_evidence_ids": [
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_009_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Right breast lesion and surgical laterality.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001",
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_009_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right breast invasive carcinoma, of breast origin",
+              "linked_evidence_ids": [
+                "ward_018:path:core_biopsy:001",
+                "ward_018:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_018_cp_009_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Negative intraoperative frozen section is not equivalent to final negative lymph nodes",
+              "linked_evidence_ids": [
+                "ward_018:path:sentinel_frozen:001"
+              ],
+              "state_id": "ward_018_cp_009_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right lower leg intermuscular vein thrombosis",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_009_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Chest-wall and axillary drainage tubes are in place.",
+              "linked_evidence_ids": [
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_009_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Invasive carcinoma of the right breast, breast origin",
+              "linked_evidence_ids": [
+                "ward_018:path:core_biopsy:001",
+                "ward_018:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_018_cp_009_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Abnormal right axillary lymph node, with no evidence of malignancy on fine-needle aspiration cytology",
+              "linked_evidence_ids": [
+                "ward_018:ehr:axillary_ctpa_results:001",
+                "ward_018:proc:axillary_fna:001"
+              ],
+              "state_id": "ward_018_cp_009_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right lower leg intermuscular vein thrombosis",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_009_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Postoperative status of right breast cancer",
+              "linked_evidence_ids": [
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_009_state_diagnoses_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Update preoperative suspected breast cancer to right breast invasive carcinoma supported by biopsy and confirmed by the preoperative record.",
+              "linked_evidence_ids": [
+                "ward_018:path:core_biopsy:001",
+                "ward_018:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_018_cp_009_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not describe negative axillary cytology or frozen section as completed final axillary staging",
+              "linked_evidence_ids": [
+                "ward_018:ehr:axillary_ctpa_results:001",
+                "ward_018:path:sentinel_frozen:001"
+              ],
+              "state_id": "ward_018_cp_009_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A negative pulmonary artery CTA must not be stated as absence of venous thrombosis.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:axillary_ctpa_results:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_009_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Continue inpatient postoperative management, monitoring incision, drainage, vital signs, and thrombosis-related risks; perform tumor staging and subsequent treatment assessment after awaiting final pathology.",
+            "linked_evidence_ids": [
+              "ward_018:proc:definitive_surgery:001",
+              "ward_018:path:sentinel_frozen:001",
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "state_id": "ward_018_cp_009_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Added: right breast invasive carcinoma has been confirmed in the preoperative record.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:preoperative_decision:001",
+                "ward_018:path:core_biopsy:001"
+              ],
+              "state_id": "ward_018_cp_009_state_required_delta_from_previous_checkpoint_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Added: right simple mastectomy, sentinel lymph node biopsy, and low-level lymph node group management have been completed.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:preoperative_decision:001",
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_009_state_required_delta_from_previous_checkpoint_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Added: intraoperative frozen sections of multiple right sentinel, para-sentinel, and related lymphatic adipose tissues showed no malignant component, but final pathology remains pending.",
+              "linked_evidence_ids": [
+                "ward_018:path:sentinel_frozen:001"
+              ],
+              "state_id": "ward_018_cp_009_state_required_delta_from_previous_checkpoint_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "New: chest-wall and axillary drainage tubes are in place, and the patient has transitioned from preoperative preparation to postoperative inpatient management.",
+              "linked_evidence_ids": [
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_009_state_required_delta_from_previous_checkpoint_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Retain: the right calf intermuscular venous thrombosis still requires perioperative attention.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_009_state_required_delta_from_previous_checkpoint_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "Diagnostic core needle biopsy for right breast cancer has been completed.",
+              "linked_evidence_ids": [
+                "ward_018:proc:core_biopsy:001",
+                "ward_018:path:core_biopsy:001"
+              ],
+              "state_id": "ward_018_cp_009_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right simple mastectomy and sentinel lymph node biopsy have been completed.",
+              "linked_evidence_ids": [
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_009_state_resolved_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Multiple relevant lymphoid tissues on intraoperative frozen sections showed no malignant component",
+              "linked_evidence_ids": [
+                "ward_018:path:sentinel_frozen:001"
+              ],
+              "state_id": "ward_018_cp_009_state_resolved_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "The primary diagnosis is clear and definitive surgery has been completed; postoperative recovery management and subsequent treatment decisions guided by final pathology remain incomplete.",
+            "linked_evidence_ids": [
+              "ward_018:ehr:preoperative_decision:001",
+              "ward_018:proc:definitive_surgery:001",
+              "ward_018:path:sentinel_frozen:001"
+            ],
+            "state_id": "ward_018_cp_009_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Treating negative intraoperative frozen sections or negative axillary cytology as negative final lymph node staging.",
+            "Ignoring the documented right lower-leg intermuscular venous thrombosis",
+            "Directly determine discharge eligibility or safe stopping while the drainage tube remains in place and postoperative recovery information is lacking.",
+            "Make definitive-treatment conclusions based on undisclosed final pathology or future results."
+          ],
+          "critical_omission_rules_en": [
+            "Right breast invasive cancer and surgical laterality must be retained",
+            "It must be stated that final pathology and complete staging are still pending.",
+            "Postoperative wound/drain management must be included.",
+            "Perioperative management of right calf venous thrombosis must be included"
+          ],
+          "preliminary_risk_triggers_en": [
+            "Continued treatment/postoperative management is needed",
+            "Await final pathology.",
+            "Current conditions for stopping or routine follow-up are not met."
+          ]
+        },
+        "stopping": {
+          "decision": "continue_treatment",
+          "rationale_en": "Definitive surgery has been completed, but the patient remains in early postoperative inpatient care with chest-wall and axillary drains in place. Final surgical pathology and complete staging are not yet available, and right calf intermuscular venous thrombosis remains an active issue. It is therefore not safe to stop or move directly to routine follow-up; postoperative management and monitoring should continue, with final pathology guiding subsequent cancer care.",
+          "remaining_blockers_en": [
+            "Postoperative recovery and drainage tube management have not yet been completed.",
+            "The final surgical pathology and complete staging have not yet been disclosed.",
+            "The right calf intermuscular venous thrombosis still requires perioperative risk management.",
+            "There is still no evidence that discharge and ongoing follow-up arrangements have been completed."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_018_cp_009",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_018:ehr:admission:001",
+          "ward_018:ehr:axillary_ctpa_results:001",
+          "ward_018:ehr:preoperative_decision:001",
+          "ward_018:img:breast_vte_assessment:001",
+          "ward_018:path:core_biopsy:001",
+          "ward_018:path:sentinel_frozen:001",
+          "ward_018:proc:axillary_fna:001",
+          "ward_018:proc:core_biopsy:001",
+          "ward_018:proc:definitive_surgery:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_018:ehr:recovery:001",
+          "ward_018:ehr:terminal:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_018",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_018_s2_node_001_completed": true,
+            "ward_018_s2_node_002_completed": true,
+            "ward_018_s2_node_003_completed": true,
+            "ward_018_s2_node_004_completed": true,
+            "ward_018_s2_node_005_completed": true,
+            "ward_018_s2_node_006_completed": true,
+            "ward_018_s2_node_007_completed": true,
+            "ward_018_s2_node_008_completed": true,
+            "ward_018_s2_node_009_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Right breast mass, suspected cancer",
+            "age_years": 73,
+            "initial_time": "2124-09-29T09:52:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-10-08T15:07:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_018:ehr:admission:001",
+            "ward_018:ehr:axillary_ctpa_results:001",
+            "ward_018:ehr:preoperative_decision:001",
+            "ward_018:img:breast_vte_assessment:001",
+            "ward_018:path:core_biopsy:001",
+            "ward_018:path:sentinel_frozen:001",
+            "ward_018:proc:axillary_fna:001",
+            "ward_018:proc:core_biopsy:001",
+            "ward_018:proc:definitive_surgery:001"
+          ]
+        },
+        "public_snapshot_sha256": "c9a5ce081494f72f8e90034e846d7b9279613a32b38cf11e3ced99dd8c3f2ccd",
+        "public_time": "2124-10-08T15:07:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 9
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_018:ehr:admission:001",
+            "interpretation_en": "An approximately 3 cm hard, poorly mobile right-breast mass provides the initial clinical context.",
+            "role": "contextual"
+          },
+          {
+            "evidence_id": "ward_018:ehr:axillary_ctpa_results:001",
+            "interpretation_en": "Right axillary FNA cytology showed no malignancy and pulmonary artery CTA showed no obvious abnormality; negative cytology does not replace intraoperative nodal assessment.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:ehr:preoperative_decision:001",
+            "interpretation_en": "Right-breast invasive carcinoma was confirmed preoperatively, and right simple mastectomy with sentinel lymph-node biopsy was planned.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:ehr:recovery:001",
+            "interpretation_en": "Postoperatively, the incision was dry, drains were patent, and vital signs were stable; rehabilitation and VTE-risk monitoring remain necessary.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:img:breast_vte_assessment:001",
+            "interpretation_en": "The approximately 3 cm 12-o'clock right-breast mass was BI-RADS 4C with abnormal right axillary nodes; intermuscular venous thrombosis in the right calf is an active safety problem.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:path:core_biopsy:001",
+            "interpretation_en": "Core biopsy was consistent with invasive carcinoma, with immunohistochemistry supporting breast origin.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:path:sentinel_frozen:001",
+            "interpretation_en": "Frozen sections from multiple right sentinel, parasentinel, and related lymphoadipose tissues showed no malignancy; this is not the final permanent-pathology stage.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_018:proc:axillary_fna:001",
+            "interpretation_en": "Two ultrasound-guided FNAs of the abnormal right axillary node were completed and submitted for cytology.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_018:proc:core_biopsy:001",
+            "interpretation_en": "Ultrasound-guided core biopsy of the right-breast mass was completed.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_018:proc:definitive_surgery:001",
+            "interpretation_en": "Right simple mastectomy, sentinel lymph-node biopsy, and management of the low-level nodal group were completed, with chest-wall and axillary drains left in place.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [],
+            "claim_ids": [],
+            "evidence_id": "ward_018:ehr:admission:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_010_state_critical_facts_to_retain_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_010_action_003"
+            ],
+            "claim_ids": [
+              "ward_018_cp_010_claim_002"
+            ],
+            "evidence_id": "ward_018:ehr:axillary_ctpa_results:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_010_state_diagnoses_003",
+              "ward_018_cp_010_state_resolved_problems_003",
+              "ward_018_cp_010_state_facts_to_retract_or_correct_001",
+              "ward_018_cp_010_state_facts_to_retract_or_correct_002"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_018_cp_010_claim_001"
+            ],
+            "evidence_id": "ward_018:ehr:preoperative_decision:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_010_state_diagnoses_001",
+              "ward_018_cp_010_state_critical_facts_to_retain_002"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_010_action_001",
+              "ward_018_cp_010_action_002",
+              "ward_018_cp_010_action_003",
+              "ward_018_cp_010_action_005"
+            ],
+            "claim_ids": [
+              "ward_018_cp_010_claim_005"
+            ],
+            "evidence_id": "ward_018:ehr:recovery:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_010_state_active_problems_001",
+              "ward_018_cp_010_state_active_problems_002",
+              "ward_018_cp_010_state_active_problems_003",
+              "ward_018_cp_010_state_blockers_002",
+              "ward_018_cp_010_state_critical_facts_to_retain_006",
+              "ward_018_cp_010_state_facts_to_retract_or_correct_003",
+              "ward_018_cp_010_state_required_delta_from_previous_checkpoint_001",
+              "ward_018_cp_010_state_required_delta_from_previous_checkpoint_002",
+              "ward_018_cp_010_state_treatment_readiness_001",
+              "ward_018_cp_010_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_010_action_002",
+              "ward_018_cp_010_action_003",
+              "ward_018_cp_010_action_005"
+            ],
+            "claim_ids": [
+              "ward_018_cp_010_claim_003"
+            ],
+            "evidence_id": "ward_018:img:breast_vte_assessment:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_010_state_diagnoses_002",
+              "ward_018_cp_010_state_active_problems_003",
+              "ward_018_cp_010_state_critical_facts_to_retain_001",
+              "ward_018_cp_010_state_critical_facts_to_retain_005",
+              "ward_018_cp_010_state_facts_to_retract_or_correct_002",
+              "ward_018_cp_010_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_010_action_004"
+            ],
+            "claim_ids": [
+              "ward_018_cp_010_claim_001"
+            ],
+            "evidence_id": "ward_018:path:core_biopsy:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_010_state_diagnoses_001",
+              "ward_018_cp_010_state_active_problems_004",
+              "ward_018_cp_010_state_resolved_problems_001",
+              "ward_018_cp_010_state_critical_facts_to_retain_002"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_010_action_004",
+              "ward_018_cp_010_action_005"
+            ],
+            "claim_ids": [
+              "ward_018_cp_010_claim_004"
+            ],
+            "evidence_id": "ward_018:path:sentinel_frozen:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_010_state_active_problems_004",
+              "ward_018_cp_010_state_blockers_001",
+              "ward_018_cp_010_state_critical_facts_to_retain_004",
+              "ward_018_cp_010_state_required_delta_from_previous_checkpoint_002",
+              "ward_018_cp_010_state_treatment_readiness_001",
+              "ward_018_cp_010_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_018_cp_010_claim_002"
+            ],
+            "evidence_id": "ward_018:proc:axillary_fna:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_010_state_diagnoses_003",
+              "ward_018_cp_010_state_facts_to_retract_or_correct_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_018_cp_010_claim_001"
+            ],
+            "evidence_id": "ward_018:proc:core_biopsy:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_010_state_resolved_problems_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_018_cp_010_action_001",
+              "ward_018_cp_010_action_002",
+              "ward_018_cp_010_action_003",
+              "ward_018_cp_010_action_004",
+              "ward_018_cp_010_action_005"
+            ],
+            "claim_ids": [
+              "ward_018_cp_010_claim_005"
+            ],
+            "evidence_id": "ward_018:proc:definitive_surgery:001",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_018_cp_010_state_active_problems_001",
+              "ward_018_cp_010_state_active_problems_002",
+              "ward_018_cp_010_state_active_problems_003",
+              "ward_018_cp_010_state_active_problems_004",
+              "ward_018_cp_010_state_resolved_problems_002",
+              "ward_018_cp_010_state_blockers_001",
+              "ward_018_cp_010_state_blockers_002",
+              "ward_018_cp_010_state_critical_facts_to_retain_003",
+              "ward_018_cp_010_state_critical_facts_to_retain_006",
+              "ward_018_cp_010_state_facts_to_retract_or_correct_003",
+              "ward_018_cp_010_state_required_delta_from_previous_checkpoint_002",
+              "ward_018_cp_010_state_treatment_readiness_001",
+              "ward_018_cp_010_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Right breast invasive carcinoma",
+              "Invasive breast carcinoma"
+            ],
+            "canonical_en": "Invasive carcinoma of the right breast, breast origin",
+            "claim_id": "ward_018_cp_010_claim_001",
+            "linked_evidence_ids": [
+              "ward_018:path:core_biopsy:001",
+              "ward_018:ehr:preoperative_decision:001",
+              "ward_018:proc:core_biopsy:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_018:path:core_biopsy:001",
+              "ward_018:ehr:preoperative_decision:001",
+              "ward_018:proc:core_biopsy:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Negative axillary FNA cytology",
+              "No malignancy identified on axillary cytology"
+            ],
+            "canonical_en": "Right axillary FNA cytology is negative for malignancy but does not exclude nodal metastasis",
+            "claim_id": "ward_018_cp_010_claim_002",
+            "linked_evidence_ids": [
+              "ward_018:ehr:axillary_ctpa_results:001",
+              "ward_018:proc:axillary_fna:001"
+            ],
+            "status": "negative",
+            "supporting_evidence_ids": [
+              "ward_018:ehr:axillary_ctpa_results:001",
+              "ward_018:proc:axillary_fna:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Right calf intermuscular venous thrombosis",
+              "Calf muscular-vein thrombosis"
+            ],
+            "canonical_en": "Intermuscular venous thrombosis in the right calf is an active VTE problem",
+            "claim_id": "ward_018_cp_010_claim_003",
+            "linked_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Negative sentinel-node frozen section",
+              "No malignancy on frozen section"
+            ],
+            "canonical_en": "Frozen sections of right sentinel and related lymphoid tissues show no malignancy; final staging awaits permanent pathology",
+            "claim_id": "ward_018_cp_010_claim_004",
+            "linked_evidence_ids": [
+              "ward_018:path:sentinel_frozen:001"
+            ],
+            "status": "pending",
+            "supporting_evidence_ids": [
+              "ward_018:path:sentinel_frozen:001"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Postoperative stable state after right mastectomy",
+              "Completed right simple mastectomy"
+            ],
+            "canonical_en": "Right simple mastectomy and related axillary surgery are completed; the patient is in an early stable postoperative state",
+            "claim_id": "ward_018_cp_010_claim_005",
+            "linked_evidence_ids": [
+              "ward_018:ehr:recovery:001",
+              "ward_018:proc:definitive_surgery:001"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_018:proc:definitive_surgery:001",
+              "ward_018:ehr:recovery:001"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Postoperative wound and drain monitoring",
+              "Continue postoperative surgical care"
+            ],
+            "action_id": "ward_018_cp_010_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue postoperative wound, vital-sign, and chest-wall/axillary drain management",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Immediately and continuously until explicit discharge criteria are met.",
+            "indication_en": "The incision, drainage tube, and vital signs require continuous observation to identify bleeding, infection, or drainage abnormalities.",
+            "linked_evidence_ids": [
+              "ward_018:ehr:recovery:001",
+              "ward_018:proc:definitive_surgery:001"
+            ],
+            "prerequisites_en": [
+              "Inpatient postoperative monitoring.",
+              "Document drainage volume and incision status."
+            ],
+            "problem_en": "Early postoperative recovery.",
+            "target_and_laterality_en": "Chest wall and right axilla after right mastectomy."
+          },
+          {
+            "acceptable_aliases_en": [
+              "Postoperative rehabilitation",
+              "Venous thromboembolism risk monitoring"
+            ],
+            "action_id": "ward_018_cp_010_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue postoperative rehabilitation and VTE-risk monitoring",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Immediately and continuously during hospitalization and subsequent management.",
+            "indication_en": "After surgery, the patient still has limited activity and documented lower-extremity venous thrombosis",
+            "linked_evidence_ids": [
+              "ward_018:img:breast_vte_assessment:001",
+              "ward_018:ehr:recovery:001",
+              "ward_018:proc:definitive_surgery:001"
+            ],
+            "prerequisites_en": [
+              "Assess bleeding risk and activity tolerance.",
+              "Develop a thrombosis management plan in conjunction with perioperative status"
+            ],
+            "problem_en": "Postoperative recovery of activity and pre-existing right calf intermuscular vein thrombosis",
+            "target_and_laterality_en": "Right lower leg and postoperative systemic VTE risk"
+          },
+          {
+            "acceptable_aliases_en": [
+              "Evaluate calf-vein thrombosis management",
+              "VTE consultation and risk-benefit assessment"
+            ],
+            "action_id": "ward_018_cp_010_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Clinically assess and manage the right calf intermuscular venous thrombosis while balancing anticoagulation and postoperative bleeding risk",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as possible, complete assessment early postoperatively",
+            "indication_en": "Imaging has documented thrombosis, and the patient is in a postoperative high-risk phase.",
+            "linked_evidence_ids": [
+              "ward_018:ehr:axillary_ctpa_results:001",
+              "ward_018:img:breast_vte_assessment:001",
+              "ward_018:proc:definitive_surgery:001",
+              "ward_018:ehr:recovery:001"
+            ],
+            "prerequisites_en": [
+              "Assess bleeding risk, thrombus extent, and symptoms",
+              "In conjunction with surgical and relevant specialty opinions."
+            ],
+            "problem_en": "Right lower leg intermuscular vein thrombosis",
+            "target_and_laterality_en": "Right calf intermuscular vein"
+          },
+          {
+            "acceptable_aliases_en": [
+              "Review final surgical pathology",
+              "Final pathologic staging"
+            ],
+            "action_id": "ward_018_cp_010_action_004",
+            "action_scope": "prospective",
+            "canonical_action_en": "Obtain and review permanent breast and lymph-node pathology for final staging and adjuvant-treatment assessment",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "As soon as permanent pathology is available, before discharge and subsequent oncology specialty arrangements.",
+            "indication_en": "A negative frozen section cannot replace permanent pathology; adjuvant treatment decisions require complete pathology information",
+            "linked_evidence_ids": [
+              "ward_018:path:sentinel_frozen:001",
+              "ward_018:path:core_biopsy:001",
+              "ward_018:proc:definitive_surgery:001"
+            ],
+            "prerequisites_en": [
+              "The surgical specimen undergoes permanent pathology processing.",
+              "Review tumor and lymph node pathological features"
+            ],
+            "problem_en": "Final pathology and tumor staging have not yet been completed",
+            "target_and_laterality_en": "Right mastectomy specimen and right axillary/sentinel lymph node specimens."
+          },
+          {
+            "acceptable_aliases_en": [
+              "Discharge readiness assessment",
+              "Postoperative follow-up planning"
+            ],
+            "action_id": "ward_018_cp_010_action_005",
+            "action_scope": "prospective",
+            "canonical_action_en": "Assess discharge and follow-up only after drain, wound, mobility, VTE management, and continuity arrangements meet criteria",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Continue assessment during hospitalization and arrange when conditions are met.",
+            "indication_en": "Currently stable, but the drainage tube remains in place, and pathology and VTE management still require subsequent handling",
+            "linked_evidence_ids": [
+              "ward_018:ehr:recovery:001",
+              "ward_018:proc:definitive_surgery:001",
+              "ward_018:img:breast_vte_assessment:001",
+              "ward_018:path:sentinel_frozen:001"
+            ],
+            "prerequisites_en": [
+              "Wound and drainage assessment.",
+              "Clarify the VTE management plan.",
+              "Arrange pathology review and oncology specialty follow-up."
+            ],
+            "problem_en": "The patient is currently still under inpatient postoperative management, and continuing care has not been completed.",
+            "target_and_laterality_en": "Continuous management after right mastectomy and for right lower-leg VTE."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Early postoperative recovery management",
+              "linked_evidence_ids": [
+                "ward_018:ehr:recovery:001",
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_010_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Chest wall and axillary drainage tube management.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:recovery:001",
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_010_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right calf intermuscular vein thrombosis and perioperative VTE risk.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001",
+                "ward_018:ehr:recovery:001",
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_010_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Await permanent pathology of the breast and lymph nodes to complete staging and adjuvant-treatment decisions",
+              "linked_evidence_ids": [
+                "ward_018:path:sentinel_frozen:001",
+                "ward_018:path:core_biopsy:001",
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_010_state_active_problems_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Permanent pathological results and complete pathological staging have not been made public.",
+              "linked_evidence_ids": [
+                "ward_018:path:sentinel_frozen:001",
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_010_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The drainage tube remains in place; discharge criteria cannot be determined from the current record alone",
+              "linked_evidence_ids": [
+                "ward_018:ehr:recovery:001",
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_010_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The adjuvant treatment regimen and subsequent continuity of oncologic specialty management have not yet been clarified.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_018_cp_010_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "73-year-old female, approximately 3 cm right breast mass.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:admission:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_010_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Invasive carcinoma of the right breast, with immunohistochemistry supporting breast origin",
+              "linked_evidence_ids": [
+                "ward_018:path:core_biopsy:001",
+                "ward_018:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_018_cp_010_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right simple mastectomy, sentinel lymph node biopsy, and low-level lymph node management have been completed",
+              "linked_evidence_ids": [
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_010_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "No malignancy on frozen section does not equal final lymph-node negativity",
+              "linked_evidence_ids": [
+                "ward_018:path:sentinel_frozen:001"
+              ],
+              "state_id": "ward_018_cp_010_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right lower-leg intermuscular venous thrombosis still needs to be included in perioperative management.",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_010_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Chest wall and axillary drainage tubes remain in place.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:recovery:001",
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_010_state_critical_facts_to_retain_006",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Right breast invasive carcinoma (of breast origin).",
+              "linked_evidence_ids": [
+                "ward_018:path:core_biopsy:001",
+                "ward_018:ehr:preoperative_decision:001"
+              ],
+              "state_id": "ward_018_cp_010_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Right lower leg intermuscular vein thrombosis",
+              "linked_evidence_ids": [
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_010_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Abnormal right axillary lymph node; fine-needle aspiration cytology showed no malignancy",
+              "linked_evidence_ids": [
+                "ward_018:ehr:axillary_ctpa_results:001",
+                "ward_018:proc:axillary_fna:001"
+              ],
+              "state_id": "ward_018_cp_010_state_diagnoses_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Negative right axillary FNA must not be interpreted as excluding lymph-node metastasis.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:axillary_ctpa_results:001",
+                "ward_018:proc:axillary_fna:001"
+              ],
+              "state_id": "ward_018_cp_010_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "No obvious abnormality on pulmonary artery CTA must not be interpreted as absence of venous thrombosis or absence of VTE risk",
+              "linked_evidence_ids": [
+                "ward_018:ehr:axillary_ctpa_results:001",
+                "ward_018:img:breast_vte_assessment:001"
+              ],
+              "state_id": "ward_018_cp_010_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not interpret current stable status as having met discharge or follow-up termination criteria.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:recovery:001",
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_010_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "In early postoperative inpatient management; the current incision is dry, drainage is patent, and vital signs are stable; continue recovery and VTE-risk monitoring; await permanent pathology and subsequent oncology-treatment assessment.",
+            "linked_evidence_ids": [
+              "ward_018:ehr:recovery:001",
+              "ward_018:img:breast_vte_assessment:001",
+              "ward_018:path:sentinel_frozen:001",
+              "ward_018:proc:definitive_surgery:001"
+            ],
+            "state_id": "ward_018_cp_010_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "New postoperative recovery evidence: incision is dry, drains are patent, and vital signs are stable; rehabilitation and VTE-risk monitoring continue.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:recovery:001"
+              ],
+              "state_id": "ward_018_cp_010_state_required_delta_from_previous_checkpoint_001",
+              "status": "clinical_state_change",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The state has progressed from immediate completion of surgery to early postoperative inpatient management, with permanent pathology and subsequent treatment assessment still pending.",
+              "linked_evidence_ids": [
+                "ward_018:ehr:recovery:001",
+                "ward_018:path:sentinel_frozen:001",
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_010_state_required_delta_from_previous_checkpoint_002",
+              "status": "management_change",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "Diagnostic sampling of the right breast primary tumor has been completed.",
+              "linked_evidence_ids": [
+                "ward_018:proc:core_biopsy:001",
+                "ward_018:path:core_biopsy:001"
+              ],
+              "state_id": "ward_018_cp_010_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Definitive surgery of the right breast has been completed",
+              "linked_evidence_ids": [
+                "ward_018:proc:definitive_surgery:001"
+              ],
+              "state_id": "ward_018_cp_010_state_resolved_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "CT pulmonary angiography showed no obvious pulmonary artery abnormality",
+              "linked_evidence_ids": [
+                "ward_018:ehr:axillary_ctpa_results:001"
+              ],
+              "state_id": "ward_018_cp_010_state_resolved_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "Local definitive surgery has been completed; conditions are present to continue postoperative monitoring and rehabilitation management, but conditions are not yet present, based on current evidence, to complete final staging, adjuvant-treatment decision-making, or safely stop management.",
+            "linked_evidence_ids": [
+              "ward_018:proc:definitive_surgery:001",
+              "ward_018:ehr:recovery:001",
+              "ward_018:path:sentinel_frozen:001"
+            ],
+            "state_id": "ward_018_cp_010_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Do not equate negative axillary FNA or negative sentinel frozen sections with final lymph node negativity.",
+            "Do not equate no obvious abnormality on pulmonary artery CTA with absence of VTE",
+            "Do not determine safe cessation or discharge before postoperative assessment, drainage management, and continuity-of-care arrangements are completed",
+            "Do not infer complete TNM staging or an adjuvant treatment regimen when permanent pathology has not been disclosed."
+          ],
+          "critical_omission_rules_en": [
+            "Right calf intermuscular vein thrombosis must be retained and managed.",
+            "Postoperative incision, drainage, and vital signs must continue to be monitored.",
+            "Permanent pathology must be followed up and subsequent oncology-treatment assessment completed.",
+            "Continuity follow-up and drainage management after discharge must be planned."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Current postoperative vital signs are stable.",
+            "Right calf intermuscular venous thrombosis is an active safety issue",
+            "Final pathology and staging have not been completed",
+            "The drainage tube remains in place; it is currently inappropriate to directly determine that discharge is possible or that it can be safely stopped."
+          ]
+        },
+        "stopping": {
+          "decision": "wait_for_pending_result",
+          "rationale_en": "The dry incision, patent drains, and stable vital signs support an early stable postoperative state. However, permanent pathology, final staging, VTE management, and continuity planning remain incomplete. Care should not be stopped, and unconditional follow-up is not yet safe; postoperative management should continue while awaiting the key pathology result.",
+          "remaining_blockers_en": [
+            "Permanent pathology of the breast and lymph nodes and final staging have not been disclosed.",
+            "The drainage tube remains in place and postoperative recovery is still at an early stage.",
+            "The perioperative management plan for right calf intermuscular venous thrombosis needs to be clarified.",
+            "Adjuvant treatment and arrangements for continuous follow-up have not been completed."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_018_cp_010",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_018:ehr:admission:001",
+          "ward_018:ehr:axillary_ctpa_results:001",
+          "ward_018:ehr:preoperative_decision:001",
+          "ward_018:ehr:recovery:001",
+          "ward_018:img:breast_vte_assessment:001",
+          "ward_018:path:core_biopsy:001",
+          "ward_018:path:sentinel_frozen:001",
+          "ward_018:proc:axillary_fna:001",
+          "ward_018:proc:core_biopsy:001",
+          "ward_018:proc:definitive_surgery:001"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_018:ehr:terminal:001"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_018",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_018_s2_node_001_completed": true,
+            "ward_018_s2_node_002_completed": true,
+            "ward_018_s2_node_003_completed": true,
+            "ward_018_s2_node_004_completed": true,
+            "ward_018_s2_node_005_completed": true,
+            "ward_018_s2_node_006_completed": true,
+            "ward_018_s2_node_007_completed": true,
+            "ward_018_s2_node_008_completed": true,
+            "ward_018_s2_node_009_completed": true,
+            "ward_018_s2_node_010_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Right breast mass, suspected cancer",
+            "age_years": 73,
+            "initial_time": "2124-09-29T09:52:00+08:00",
+            "setting": "inpatient_breast_surgery",
+            "sex": "female"
+          },
+          "public_time": "2124-10-09T08:00:00+08:00",
+          "stage": "S3",
+          "visible_evidence_ids": [
+            "ward_018:ehr:admission:001",
+            "ward_018:ehr:axillary_ctpa_results:001",
+            "ward_018:ehr:preoperative_decision:001",
+            "ward_018:ehr:recovery:001",
+            "ward_018:img:breast_vte_assessment:001",
+            "ward_018:path:core_biopsy:001",
+            "ward_018:path:sentinel_frozen:001",
+            "ward_018:proc:axillary_fna:001",
+            "ward_018:proc:core_biopsy:001",
+            "ward_018:proc:definitive_surgery:001"
+          ]
+        },
+        "public_snapshot_sha256": "c568bfaf43c2d45bc5622ffd199e16daeacbbca23c1937a441dd98f056d98be7",
+        "public_time": "2124-10-09T08:00:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 10
+    }
+  ],
+  "milestone_candidates": [
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Right breast invasive carcinoma has been supported by biopsy pathology and confirmed by immunohistochemistry to be of breast origin."
+      ],
+      "current_status": "complete",
+      "milestone_id": "ward_018_ms_01",
+      "milestone_type": "diagnostic_closure",
+      "name_en": "Diagnostic closure",
+      "partial_criteria_en": [
+        "Highly suspicious on imaging and clinically, but without pathological confirmation yet"
+      ],
+      "safety_invalidation_rules_en": [
+        "If subsequent pathology negates invasive breast carcinoma, the diagnosis needs to be re-examined."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Obtain complete permanent pathology and complete final staging and adjuvant-treatment assessment.",
+        "Complete the perioperative VTE risk and existing thrombosis management plan"
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_018_ms_02",
+      "milestone_type": "staging_or_treatment_readiness",
+      "name_en": "Staging or treatment readiness",
+      "partial_criteria_en": [
+        "Preoperative VTE and pulmonary artery assessment and sentinel frozen sections have been completed.",
+        "Definitive surgery has been completed, but permanent pathology and final staging are incomplete."
+      ],
+      "safety_invalidation_rules_en": [
+        "Do not substitute negative FNA or frozen section for permanent-pathology staging",
+        "If thrombus progression, bleeding, or postoperative instability occurs, treatment readiness becomes invalid."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Right simple mastectomy and planned sentinel lymph-node and related axillary management have been completed."
+      ],
+      "current_status": "complete",
+      "milestone_id": "ward_018_ms_03",
+      "milestone_type": "definitive_intervention",
+      "name_en": "Definitive intervention",
+      "partial_criteria_en": [
+        "Surgery has been completed, but postoperative recovery management and pathology review are still needed."
+      ],
+      "safety_invalidation_rules_en": [
+        "If major postoperative complications occur or additional local treatment is needed, the clinical pathway cannot be regarded as fully completed"
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Wound and drainage management completed",
+        "Postoperative activity recovery and VTE management plan are clear.",
+        "Complete necessary pathology review and linkage to subsequent treatment."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_018_ms_04",
+      "milestone_type": "postoperative_or_response_management",
+      "name_en": "Postoperative or response management",
+      "partial_criteria_en": [
+        "The current incision is dry, drainage is unobstructed, vital signs are stable, and rehabilitation and VTE monitoring have begun."
+      ],
+      "safety_invalidation_rules_en": [
+        "Do not determine completion if there is wound infection, bleeding, drainage abnormality, thrombus progression, or vital-sign instability"
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Meet clear discharge criteria and complete drain, wound, VTE, and rehabilitation guidance.",
+        "Arrange permanent pathology review, oncology specialist assessment, and subsequent follow-up"
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_018_ms_05",
+      "milestone_type": "disposition_and_continuity",
+      "name_en": "Disposition and continuity of care",
+      "partial_criteria_en": [
+        "Postoperative recovery and rehabilitation management are in place, but the patient remains hospitalized and the drainage tube is in place; there is no evidence that arrangements for continuity of care have been completed."
+      ],
+      "safety_invalidation_rules_en": [
+        "Must not determine completion when VTE management, drainage management, or pathology follow-up is not clearly defined",
+        "Do not discharge or transition to routine follow-up when unstable postoperative problems are present"
+      ]
+    }
+  ],
+  "normalized_evidence": [
+    {
+      "available_time": "2124-09-29T20:19:00+08:00",
+      "available_time_utc": "2124-09-29T12:19:00Z",
+      "case_id": "ward_018",
+      "clinical_time": "2124-09-29T09:52:00+08:00",
+      "clinical_time_utc": "2124-09-29T01:52:00Z",
+      "content_summary": "A 73-year-old woman was found on physical examination to have an approximately 3 cm mass in the upper part of the right breast 12 days ago. The mass was hard and poorly mobile. She was admitted for further diagnosis and treatment.",
+      "evidence_id": "ward_018:ehr:admission:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "A 73-year-old woman was found on physical examination to have an approximately 3 cm mass in the upper part of the right breast 12 days ago. The mass was hard and poorly mobile. She was admitted for further diagnosis and treatment.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC018 Admission Assessment",
+      "unit": null
+    },
+    {
+      "available_time": "2124-09-29T17:12:00+08:00",
+      "available_time_utc": "2124-09-29T09:12:00Z",
+      "case_id": "ward_018",
+      "clinical_time": "2124-09-29T17:06:00+08:00",
+      "clinical_time_utc": "2124-09-29T09:06:00Z",
+      "content_summary": "The mass in the right breast at approximately the 12 o'clock position, approximately 3 cm, was assessed as BI-RADS 4C; abnormal right axillary lymph nodes were noted. VTE ultrasonography also indicated an intermuscular venous thrombosis in the right calf.",
+      "evidence_id": "ward_018:img:breast_vte_assessment:001",
+      "laterality": null,
+      "module": "imaging_results",
+      "raw_content": "The mass in the right breast at approximately the 12 o'clock position, approximately 3 cm, was assessed as BI-RADS 4C; abnormal right axillary lymph nodes were noted. VTE ultrasonography also indicated an intermuscular venous thrombosis in the right calf.",
+      "record_kind": "deidentified_imaging_summary",
+      "structured_value": null,
+      "title": "SRC018 Breast and VTE Imaging",
+      "unit": null
+    },
+    {
+      "available_time": "2124-09-29T19:15:00+08:00",
+      "available_time_utc": "2124-09-29T11:15:00Z",
+      "case_id": "ward_018",
+      "clinical_time": "2124-09-29T18:05:00+08:00",
+      "clinical_time_utc": "2124-09-29T10:05:00Z",
+      "content_summary": "Core needle biopsy of the right breast mass was completed under local anesthesia and ultrasound guidance.",
+      "evidence_id": "ward_018:proc:core_biopsy:001",
+      "laterality": null,
+      "module": "procedure_records",
+      "raw_content": "Core needle biopsy of the right breast mass was completed under local anesthesia and ultrasound guidance.",
+      "record_kind": "deidentified_procedure_summary",
+      "structured_value": null,
+      "title": "SRC018 breast biopsy",
+      "unit": null
+    },
+    {
+      "available_time": "2124-09-30T15:46:00+08:00",
+      "available_time_utc": "2124-09-30T07:46:00Z",
+      "case_id": "ward_018",
+      "clinical_time": "2124-09-30T14:12:00+08:00",
+      "clinical_time_utc": "2124-09-30T06:12:00Z",
+      "content_summary": "Two ultrasound-guided fine-needle aspirations of the abnormal right axillary lymph node were completed, and the specimens were submitted for cytology.",
+      "evidence_id": "ward_018:proc:axillary_fna:001",
+      "laterality": null,
+      "module": "procedure_records",
+      "raw_content": "Two ultrasound-guided fine-needle aspirations of the abnormal right axillary lymph node were completed, and the specimens were submitted for cytology.",
+      "record_kind": "deidentified_procedure_summary",
+      "structured_value": null,
+      "title": "SRC018 axillary fine-needle aspiration",
+      "unit": null
+    },
+    {
+      "available_time": "2124-10-01T00:02:00+08:00",
+      "available_time_utc": "2124-09-30T16:02:00Z",
+      "case_id": "ward_018",
+      "clinical_time": "2124-09-30T18:02:00+08:00",
+      "clinical_time_utc": "2124-09-30T10:02:00Z",
+      "content_summary": "Core needle biopsy of the right breast mass at the 12 o'clock position was considered to represent invasive carcinoma; subsequent immunohistochemistry supported breast origin.",
+      "evidence_id": "ward_018:path:core_biopsy:001",
+      "laterality": null,
+      "module": "pathology_results",
+      "raw_content": "Core needle biopsy of the right breast mass at the 12 o'clock position was considered to represent invasive carcinoma; subsequent immunohistochemistry supported breast origin.",
+      "record_kind": "deidentified_pathology_summary",
+      "structured_value": null,
+      "title": "SRC018 Breast Needle Biopsy Pathology",
+      "unit": null
+    },
+    {
+      "available_time": "2124-10-07T17:20:00+08:00",
+      "available_time_utc": "2124-10-07T09:20:00Z",
+      "case_id": "ward_018",
+      "clinical_time": "2124-10-07T17:20:00+08:00",
+      "clinical_time_utc": "2124-10-07T09:20:00Z",
+      "content_summary": "Fine-needle aspiration smear of the right axilla showed lymphocytes, with no evidence of malignancy; pulmonary artery CTA showed no obvious pulmonary artery abnormality. Negative cytology does not replace intraoperative assessment of the nodule.",
+      "evidence_id": "ward_018:ehr:axillary_ctpa_results:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "Fine-needle aspiration smear of the right axilla showed lymphocytes, with no evidence of malignancy; pulmonary artery CTA showed no obvious pulmonary artery abnormality. Negative cytology does not replace intraoperative assessment of the nodule.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC018 Axillary Cytology and CTPA",
+      "unit": null
+    },
+    {
+      "available_time": "2124-10-08T07:30:00+08:00",
+      "available_time_utc": "2124-10-07T23:30:00Z",
+      "case_id": "ward_018",
+      "clinical_time": "2124-10-08T07:15:00+08:00",
+      "clinical_time_utc": "2124-10-07T23:15:00Z",
+      "content_summary": "The diagnosis of invasive carcinoma of the right breast was confirmed. Following VTE and pulmonary artery assessment, right simple mastectomy and sentinel lymph node biopsy were planned, with management of the axilla according to the intraoperative findings.",
+      "evidence_id": "ward_018:ehr:preoperative_decision:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "The diagnosis of invasive carcinoma of the right breast was confirmed. Following VTE and pulmonary artery assessment, right simple mastectomy and sentinel lymph node biopsy were planned, with management of the axilla according to the intraoperative findings.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC018 preoperative decision",
+      "unit": null
+    },
+    {
+      "available_time": "2124-10-08T15:06:00+08:00",
+      "available_time_utc": "2124-10-08T07:06:00Z",
+      "case_id": "ward_018",
+      "clinical_time": "2124-10-08T08:00:00+08:00",
+      "clinical_time_utc": "2124-10-08T00:00:00Z",
+      "content_summary": "Right simple mastectomy, sentinel lymph node biopsy, and management of the low-level lymph node group were completed under general anesthesia, with chest wall and axillary drains left in place.",
+      "evidence_id": "ward_018:proc:definitive_surgery:001",
+      "laterality": null,
+      "module": "procedure_records",
+      "raw_content": "Right simple mastectomy, sentinel lymph node biopsy, and management of the low-level lymph node group were completed under general anesthesia, with chest wall and axillary drains left in place.",
+      "record_kind": "deidentified_procedure_summary",
+      "structured_value": null,
+      "title": "SRC018 Right Breast Surgery",
+      "unit": null
+    },
+    {
+      "available_time": "2124-10-08T10:19:00+08:00",
+      "available_time_utc": "2124-10-08T02:19:00Z",
+      "case_id": "ward_018",
+      "clinical_time": "2124-10-08T10:19:00+08:00",
+      "clinical_time_utc": "2124-10-08T02:19:00Z",
+      "content_summary": "Frozen sections from multiple groups of right sentinel, parasentinel, and related lymphoadipose tissues showed no malignant components.",
+      "evidence_id": "ward_018:path:sentinel_frozen:001",
+      "laterality": null,
+      "module": "pathology_results",
+      "raw_content": "Frozen sections from multiple groups of right sentinel, parasentinel, and related lymphoadipose tissues showed no malignant components.",
+      "record_kind": "deidentified_pathology_summary",
+      "structured_value": null,
+      "title": "SRC018 Sentinel Node Frozen Section",
+      "unit": null
+    },
+    {
+      "available_time": "2124-10-09T08:00:00+08:00",
+      "available_time_utc": "2124-10-09T00:00:00Z",
+      "case_id": "ward_018",
+      "clinical_time": "2124-10-09T08:00:00+08:00",
+      "clinical_time_utc": "2124-10-09T00:00:00Z",
+      "content_summary": "The incision was dry without drainage, chest wall and axillary drains were patent, and vital signs were stable. Rehabilitation and VTE risk monitoring were continued.",
+      "evidence_id": "ward_018:ehr:recovery:001",
+      "laterality": null,
+      "module": "clinical_summaries",
+      "raw_content": "The incision was dry without drainage, chest wall and axillary drains were patent, and vital signs were stable. Rehabilitation and VTE risk monitoring were continued.",
+      "record_kind": "deidentified_clinical_summary",
+      "structured_value": null,
+      "title": "SRC018 Postoperative Recovery",
+      "unit": null
+    },
+    {
+      "available_time": "2124-10-10T14:00:00+08:00",
+      "available_time_utc": "2124-10-10T06:00:00Z",
+      "case_id": "ward_018",
+      "clinical_time": "2124-10-10T14:00:00+08:00",
+      "clinical_time_utc": "2124-10-10T06:00:00Z",
+      "content_summary": "Incision class I, healing grade A; general condition is good. Chest wall and axillary drainage remain above the thresholds for drain removal. The patient was discharged with the drains in place, with arrangements for drain removal, final pathology, and multidisciplinary follow-up.",
+      "evidence_id": "ward_018:ehr:terminal:001",
+      "laterality": null,
+      "module": "disposition",
+      "raw_content": "Incision class I, healing grade A; general condition is good. Chest wall and axillary drainage remain above the thresholds for drain removal. The patient was discharged with the drains in place, with arrangements for drain removal, final pathology, and multidisciplinary follow-up.",
+      "record_kind": "deidentified_terminal_summary",
+      "structured_value": null,
+      "title": "SRC018 Final Discharge Status",
+      "unit": null
+    }
+  ],
+  "process_gold": {
+    "status": "source_recorded_not_layer_gold_clinically_validated",
+    "transition_count": 11,
+    "transitions": [
+      {
+        "clock_after": "2124-09-29T20:19:00+08:00",
+        "clock_before": "2124-09-29T09:52:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review right breast admission",
+            "Review the admission assessment for the right breast mass",
+            "right breast mass admission"
+          ],
+          "action_id": "ehr:ward_018:001",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_018:ehr:admission:001"
+          ],
+          "target": "right_breast_mass_admission_case006"
+        },
+        "release_evidence_ids": [
+          "ward_018:ehr:admission:001"
+        ],
+        "sequence_index": 0,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_018_s2_node_001_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_018_s2_node_001"
+      },
+      {
+        "clock_after": "2124-09-29T20:20:00+08:00",
+        "clock_before": "2124-09-29T20:19:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review breast and VTE imaging",
+            "review breast and VTE findings",
+            "Review right breast and right calf thrombosis examination",
+            "right breast ultrasound and right calf thrombosis"
+          ],
+          "action_id": "ehr:ward_018:002",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_018:img:breast_vte_assessment:001"
+          ],
+          "target": "right_breast_ultrasound_and_right_calf_thrombosis_case006"
+        },
+        "release_evidence_ids": [
+          "ward_018:img:breast_vte_assessment:001"
+        ],
+        "sequence_index": 1,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_018_s2_node_002_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_018_s2_node_002"
+      },
+      {
+        "clock_after": "2124-09-29T20:21:00+08:00",
+        "clock_before": "2124-09-29T20:20:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "perform right breast core biopsy",
+            "Perform right breast core needle biopsy",
+            "right breast core biopsy"
+          ],
+          "action_id": "ehr:ward_018:003",
+          "action_type": "perform_procedure",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_018:proc:core_biopsy:001"
+          ],
+          "target": "right_breast_core_biopsy_case006"
+        },
+        "release_evidence_ids": [
+          "ward_018:proc:core_biopsy:001"
+        ],
+        "sequence_index": 2,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_018_s2_node_003_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_018_s2_node_003"
+      },
+      {
+        "clock_after": "2124-09-30T15:46:00+08:00",
+        "clock_before": "2124-09-29T20:21:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "perform axillary lymph node aspiration",
+            "perform right axillary FNA",
+            "Perform fine-needle aspiration of the right axillary lymph node",
+            "right axillary lymph node fine needle aspiration"
+          ],
+          "action_id": "ehr:ward_018:004",
+          "action_type": "perform_procedure",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_018:proc:axillary_fna:001"
+          ],
+          "target": "right_axillary_lymph_node_fine_needle_aspiration_case006"
+        },
+        "release_evidence_ids": [
+          "ward_018:proc:axillary_fna:001"
+        ],
+        "sequence_index": 3,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_018_s2_node_004_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_018_s2_node_004"
+      },
+      {
+        "clock_after": "2124-10-01T00:02:00+08:00",
+        "clock_before": "2124-09-30T15:46:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review breast core pathology",
+            "review core biopsy carcinoma",
+            "Review the pathology of invasive carcinoma from the right breast core biopsy",
+            "right breast core biopsy invasive carcinoma"
+          ],
+          "action_id": "ehr:ward_018:005",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_018:path:core_biopsy:001"
+          ],
+          "target": "right_breast_core_biopsy_invasive_carcinoma_case006"
+        },
+        "release_evidence_ids": [
+          "ward_018:path:core_biopsy:001"
+        ],
+        "sequence_index": 4,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_018_s2_node_005_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_018_s2_node_005"
+      },
+      {
+        "clock_after": "2124-10-07T17:20:00+08:00",
+        "clock_before": "2124-10-01T00:02:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review axillary cytology and CTPA",
+            "Review axillary cytology and pulmonary artery CTA",
+            "right axillary fna and negative ctpa"
+          ],
+          "action_id": "ehr:ward_018:006",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_018:ehr:axillary_ctpa_results:001"
+          ],
+          "target": "right_axillary_fna_and_negative_ctpa_case006"
+        },
+        "release_evidence_ids": [
+          "ward_018:ehr:axillary_ctpa_results:001"
+        ],
+        "sequence_index": 5,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_018_s2_node_006_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_018_s2_node_006"
+      },
+      {
+        "clock_after": "2124-10-08T07:30:00+08:00",
+        "clock_before": "2124-10-07T17:20:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review definitive surgery plan",
+            "Review the right mastectomy surgical plan",
+            "right mastectomy sentinel and low level node plan"
+          ],
+          "action_id": "ehr:ward_018:007",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_018:ehr:preoperative_decision:001"
+          ],
+          "target": "right_mastectomy_sentinel_and_low_level_node_plan_case006"
+        },
+        "release_evidence_ids": [
+          "ward_018:ehr:preoperative_decision:001"
+        ],
+        "sequence_index": 6,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_018_s2_node_007_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_018_s2_node_007"
+      },
+      {
+        "clock_after": "2124-10-08T15:06:00+08:00",
+        "clock_before": "2124-10-08T07:30:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "perform recorded right breast operation",
+            "perform right mastectomy and sentinel biopsy",
+            "Perform right simple mastectomy, sentinel biopsy, and low-level lymph node dissection",
+            "right simple mastectomy sentinel and low level node dissection"
+          ],
+          "action_id": "ehr:ward_018:008",
+          "action_type": "perform_procedure",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_018:proc:definitive_surgery:001"
+          ],
+          "target": "right_simple_mastectomy_sentinel_and_low_level_node_dissection_case006"
+        },
+        "release_evidence_ids": [
+          "ward_018:proc:definitive_surgery:001"
+        ],
+        "sequence_index": 7,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_018_s2_node_008_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_018_s2_node_008"
+      },
+      {
+        "clock_after": "2124-10-08T15:07:00+08:00",
+        "clock_before": "2124-10-08T15:06:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review sentinel frozen pathology",
+            "Review the frozen-section pathology of the right sentinel and parasentinel lymph nodes",
+            "right sentinel and parasentinel frozen pathology"
+          ],
+          "action_id": "ehr:ward_018:009",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_018:path:sentinel_frozen:001"
+          ],
+          "target": "right_sentinel_and_parasentinel_frozen_pathology_case006"
+        },
+        "release_evidence_ids": [
+          "ward_018:path:sentinel_frozen:001"
+        ],
+        "sequence_index": 8,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_018_s2_node_009_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_018_s2_node_009"
+      },
+      {
+        "clock_after": "2124-10-09T08:00:00+08:00",
+        "clock_before": "2124-10-08T15:07:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "monitor mastectomy recovery",
+            "monitor postoperative recovery",
+            "Monitor recovery after right mastectomy",
+            "right mastectomy postoperative recovery"
+          ],
+          "action_id": "ehr:ward_018:010",
+          "action_type": "monitor_or_defer",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_018:ehr:recovery:001"
+          ],
+          "target": "right_mastectomy_postoperative_recovery_case006"
+        },
+        "release_evidence_ids": [
+          "ward_018:ehr:recovery:001"
+        ],
+        "sequence_index": 9,
+        "stage_after": "S3",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_018_s2_node_010_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_018_s2_node_010"
+      },
+      {
+        "clock_after": "2124-10-10T14:00:00+08:00",
+        "clock_before": "2124-10-09T08:00:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "discharge with drain follow-up",
+            "discharge home with drains",
+            "Discharge with chest wall and axillary drains in place",
+            "home with chest wall and axillary drains"
+          ],
+          "action_id": "ehr:ward_018:011",
+          "action_type": "discharge",
+          "gold_source_type": "ehr_derived_terminal_gold",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_018:ehr:terminal:001"
+          ],
+          "target": "home_with_chest_wall_and_axillary_drains_case006"
+        },
+        "release_evidence_ids": [
+          "ward_018:ehr:terminal:001"
+        ],
+        "sequence_index": 10,
+        "stage_after": "S3",
+        "stage_before": "S3",
+        "state_updates": {
+          "disposition": "home",
+          "encounter_active": false,
+          "terminal": true
+        },
+        "terminal": true,
+        "transition_id": "ward_018_s3_terminal_001"
+      }
+    ]
+  },
+  "schema_version": "ward-runtime-gold-1.0",
+  "gold_version": "ward-anonymous-runtime-1.0"
+}

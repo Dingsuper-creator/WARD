@@ -1,0 +1,333 @@
+{
+  "route_contract_version": "ward-patient-ehr-state-route-contract-0.5.6",
+  "status": "development_non_official_batch_binding_candidate",
+  "case_id": "ward_001",
+  "scenario_sha256": "b066e0b43c0674e3fdcf13e035bab5e18dda5608fe814c2607015917515ec5c0",
+  "freeze_manifest_sha256": "72dd8e46a360db7a9e107124166a57145547ec941c6d7ef757956a1b69de62dc",
+  "action_interface_sha256": "b1a7b48e924ef81ecab70b8238ac9a13ee67872bb2b40ba25651c349d481dd64",
+  "action_ontology_sha256": "3074e22c849a792a48e62d46f7f2b621d39838a66acd6e97cec0d855c7f144c6",
+  "action_graph_sha256": "735e3178a56a9020f7cb49deb6c173bde5bdc598dfdf7f3dcfb15f6c09788abf",
+  "lifecycle_policy_sha256": "9c005e75cf35f992f051d2ef22ca1576e5a8e9333892aba743707be4c5f5e518",
+  "event_relative_phase_policy_sha256": "bc04b150e26f1c791d3bbc14a78506ac2d7bbae13f31a7a6e456a444b845e4c6",
+  "source_clinical_mapping_sha256": null,
+  "routing_policy": {
+    "reviewed_ontology_concept_routing_enabled": true,
+    "feature_fallback_enabled": true,
+    "available_state_preferred": true,
+    "unique_top_candidate_required": true,
+    "query_and_structured_fields_are_command_surface": true,
+    "intent_and_rationale_are_non_routing_context": true,
+    "exact_hidden_identifier_required": false,
+    "clinical_event_lifecycle_enabled": true,
+    "event_relative_time_decoupled_from_surgical_phase": true,
+    "surgery_anchor_required_for_derived_surgical_phase": true,
+    "post_biopsy_is_postoperative": false
+  },
+  "routes": {
+    "ward_001_transition_000": {
+      "action_types": [
+        "request_patient_information"
+      ],
+      "public_tools": [
+        "patient.ask",
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "history"
+      ],
+      "concept_ids": [
+        "patient.history_and_presenting_problem"
+      ],
+      "features": [
+        "history"
+      ],
+      "minimum_feature_matches": 1,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_001_transition_001": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.admission_assessment"
+      ],
+      "features": [
+        "admission"
+      ],
+      "minimum_feature_matches": 1,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_001_transition_002": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.preoperative_consent_and_risk"
+      ],
+      "features": [
+        "consent",
+        "preoperative",
+        "risk"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_001_transition_003": {
+      "action_types": [
+        "order_imaging"
+      ],
+      "public_tools": [
+        "ehr.order"
+      ],
+      "modules": [
+        "imaging_results"
+      ],
+      "concept_ids": [
+        "diagnostic.abdominal_ultrasound"
+      ],
+      "features": [],
+      "minimum_feature_matches": 0,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": false
+    },
+    "ward_001_transition_004": {
+      "action_types": [
+        "order_imaging"
+      ],
+      "public_tools": [
+        "ehr.order"
+      ],
+      "modules": [
+        "imaging_results"
+      ],
+      "concept_ids": [
+        "diagnostic.breast_ultrasound_contrast"
+      ],
+      "features": [
+        "breast"
+      ],
+      "minimum_feature_matches": 1,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_001_transition_005": {
+      "action_types": [
+        "order_imaging"
+      ],
+      "public_tools": [
+        "ehr.order"
+      ],
+      "modules": [
+        "imaging_results"
+      ],
+      "concept_ids": [
+        "diagnostic.cardiac_and_venous_ultrasound"
+      ],
+      "features": [],
+      "minimum_feature_matches": 0,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": false
+    },
+    "ward_001_transition_006": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "public_tools": [
+        "procedure.perform"
+      ],
+      "modules": [
+        "procedure_records",
+        "surgery"
+      ],
+      "concept_ids": [
+        "procedure.right_breast_core_biopsy"
+      ],
+      "features": [
+        "biopsy",
+        "breast"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_001_transition_007": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "public_tools": [
+        "procedure.perform"
+      ],
+      "modules": [
+        "procedure_records",
+        "surgery"
+      ],
+      "concept_ids": [
+        "procedure.left_supraclavicular_node_biopsy"
+      ],
+      "features": [
+        "biopsy"
+      ],
+      "minimum_feature_matches": 1,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_001_transition_008": {
+      "action_types": [
+        "review_result"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "laboratory_results",
+        "imaging_results",
+        "pathology_results",
+        "procedure_records"
+      ],
+      "concept_ids": [
+        "result.right_breast_core_pathology"
+      ],
+      "features": [
+        "breast",
+        "pathology"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_001_transition_009": {
+      "action_types": [
+        "review_result"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "laboratory_results",
+        "imaging_results",
+        "pathology_results",
+        "procedure_records"
+      ],
+      "concept_ids": [
+        "result.left_supraclavicular_cytology"
+      ],
+      "features": [],
+      "minimum_feature_matches": 0,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": false
+    },
+    "ward_001_transition_010": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "public_tools": [
+        "procedure.perform"
+      ],
+      "modules": [
+        "procedure_records",
+        "surgery"
+      ],
+      "concept_ids": [
+        "procedure.breast_conserving_surgery_sentinel_node"
+      ],
+      "features": [
+        "biopsy",
+        "breast",
+        "conserving",
+        "sentinel_node",
+        "surgery"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_001_transition_011": {
+      "action_types": [
+        "discharge"
+      ],
+      "public_tools": [
+        "care.transition"
+      ],
+      "modules": [
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "disposition.home_followup_pending_results"
+      ],
+      "features": [
+        "discharge",
+        "followup",
+        "imaging",
+        "pathology"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    }
+  },
+  "gold_action_visible": false,
+  "dependency_graph_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true,
+  "artifact_revision": "0.5.6"
+}

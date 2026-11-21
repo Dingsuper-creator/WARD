@@ -1,0 +1,782 @@
+{
+  "route_contract_version": "ward-patient-ehr-state-route-contract-0.5.6",
+  "status": "development_non_official_batch_binding_candidate",
+  "case_id": "ward_005",
+  "scenario_sha256": "1ab60e04f14f902300082d9d90776481fb69642d373e16a96383c97495ca70eb",
+  "freeze_manifest_sha256": "72dd8e46a360db7a9e107124166a57145547ec941c6d7ef757956a1b69de62dc",
+  "action_interface_sha256": "c0641f53155983d59540ab762a6bd409af2f19bfd91c70cbe23219a59e2d3188",
+  "action_ontology_sha256": "71c7acec7a01bbc5efca56a5ec7d0158292d66554b9bc2f56a9145c349bdf279",
+  "action_graph_sha256": "5e0992f50c80e3d57709dada4194837836db9395829f824653a448746f597458",
+  "lifecycle_policy_sha256": "9c005e75cf35f992f051d2ef22ca1576e5a8e9333892aba743707be4c5f5e518",
+  "event_relative_phase_policy_sha256": "bc04b150e26f1c791d3bbc14a78506ac2d7bbae13f31a7a6e456a444b845e4c6",
+  "source_clinical_mapping_sha256": "b6e011d6c32f96a6daf73caaeadbe2503cf7d89c891298ae9fb82ab90b1d7d71",
+  "routing_policy": {
+    "reviewed_ontology_concept_routing_enabled": true,
+    "feature_fallback_enabled": true,
+    "available_state_preferred": true,
+    "unique_top_candidate_required": true,
+    "query_and_structured_fields_are_command_surface": true,
+    "intent_and_rationale_are_non_routing_context": true,
+    "exact_hidden_identifier_required": false,
+    "clinical_event_lifecycle_enabled": true,
+    "event_relative_time_decoupled_from_surgical_phase": true,
+    "surgery_anchor_required_for_derived_surgical_phase": true,
+    "post_biopsy_is_postoperative": false
+  },
+  "routes": {
+    "ward_005_s2_node_001": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.breast_admission_and_vte_risk_review"
+      ],
+      "features": [
+        "admission",
+        "breast",
+        "risk"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_002": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.left_breast_core_biopsy_consent"
+      ],
+      "features": [
+        "biopsy",
+        "breast",
+        "consent"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_003": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.left_breast_core_biopsy_readiness"
+      ],
+      "features": [
+        "biopsy",
+        "breast",
+        "risk"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_004": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.ultrasound_guided_biopsy_consent"
+      ],
+      "features": [
+        "biopsy",
+        "consent"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_005": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "public_tools": [
+        "procedure.perform"
+      ],
+      "modules": [
+        "procedure_records",
+        "surgery"
+      ],
+      "concept_ids": [
+        "procedure.left_breast_core_biopsy"
+      ],
+      "features": [
+        "biopsy",
+        "breast"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_006": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.post_left_breast_core_biopsy_status"
+      ],
+      "features": [
+        "biopsy",
+        "breast"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_007": {
+      "action_types": [
+        "review_result"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "laboratory_results",
+        "imaging_results",
+        "pathology_results",
+        "procedure_records"
+      ],
+      "concept_ids": [
+        "result.left_breast_mammography"
+      ],
+      "features": [
+        "breast"
+      ],
+      "minimum_feature_matches": 1,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_008": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "public_tools": [
+        "procedure.perform"
+      ],
+      "modules": [
+        "procedure_records",
+        "surgery"
+      ],
+      "concept_ids": [
+        "procedure.left_axillary_and_supraclavicular_node_biopsies"
+      ],
+      "features": [],
+      "minimum_feature_matches": 0,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": false
+    },
+    "ward_005_s2_node_009": {
+      "action_types": [
+        "review_result"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "laboratory_results",
+        "imaging_results",
+        "pathology_results",
+        "procedure_records"
+      ],
+      "concept_ids": [
+        "result.left_breast_core_papillary_atypical_tumor"
+      ],
+      "features": [
+        "breast",
+        "pathology"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_010": {
+      "action_types": [
+        "review_result"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "laboratory_results",
+        "imaging_results",
+        "pathology_results",
+        "procedure_records"
+      ],
+      "concept_ids": [
+        "result.paired_node_cytology_no_malignancy"
+      ],
+      "features": [],
+      "minimum_feature_matches": 0,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": false
+    },
+    "ward_005_s2_node_011": {
+      "action_types": [
+        "review_result"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "laboratory_results",
+        "imaging_results",
+        "pathology_results",
+        "procedure_records"
+      ],
+      "concept_ids": [
+        "result.pet_ct_breast_and_indeterminate_t4_lesion"
+      ],
+      "features": [
+        "ct"
+      ],
+      "minimum_feature_matches": 1,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_012": {
+      "action_types": [
+        "review_result"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "laboratory_results",
+        "imaging_results",
+        "pathology_results",
+        "procedure_records"
+      ],
+      "concept_ids": [
+        "result.breast_mri_plain_report"
+      ],
+      "features": [
+        "breast",
+        "ct",
+        "mri"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_013": {
+      "action_types": [
+        "review_result"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "laboratory_results",
+        "imaging_results",
+        "pathology_results",
+        "procedure_records"
+      ],
+      "concept_ids": [
+        "result.chest_ct_report"
+      ],
+      "features": [
+        "ct"
+      ],
+      "minimum_feature_matches": 1,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_014": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.preoperative_pulmonary_and_staging_risk_review"
+      ],
+      "features": [
+        "preoperative",
+        "risk"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_015": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.left_breast_definitive_surgery_readiness"
+      ],
+      "features": [
+        "breast",
+        "mastectomy",
+        "risk",
+        "surgery"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_016": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.left_breast_definitive_surgery_consent"
+      ],
+      "features": [
+        "breast",
+        "consent",
+        "surgery"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_017": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "public_tools": [
+        "procedure.perform"
+      ],
+      "modules": [
+        "procedure_records",
+        "surgery"
+      ],
+      "concept_ids": [
+        "procedure.left_simple_mastectomy_with_regional_node_excision"
+      ],
+      "features": [
+        "mastectomy",
+        "surgery"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_018": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "public_tools": [
+        "procedure.perform"
+      ],
+      "modules": [
+        "procedure_records",
+        "surgery"
+      ],
+      "concept_ids": [
+        "procedure.left_sentinel_node_biopsy"
+      ],
+      "features": [
+        "biopsy",
+        "sentinel_node"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_019": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.post_definitive_left_breast_surgery_status"
+      ],
+      "features": [
+        "mastectomy",
+        "surgery"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_020": {
+      "action_types": [
+        "request_consultation"
+      ],
+      "public_tools": [
+        "ehr.order"
+      ],
+      "modules": [
+        "consultations"
+      ],
+      "concept_ids": [
+        "consultation.postoperative_rehabilitation"
+      ],
+      "features": [
+        "postoperative"
+      ],
+      "minimum_feature_matches": 1,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_021": {
+      "action_types": [
+        "request_consultation"
+      ],
+      "public_tools": [
+        "ehr.order"
+      ],
+      "modules": [
+        "consultations"
+      ],
+      "concept_ids": [
+        "consultation.t4_left_transverse_process_lesion"
+      ],
+      "features": [],
+      "minimum_feature_matches": 0,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": false
+    },
+    "ward_005_s2_node_022": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.t4_bone_biopsy_readiness"
+      ],
+      "features": [
+        "biopsy",
+        "ct",
+        "risk"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_023": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.t4_bone_biopsy_consent"
+      ],
+      "features": [
+        "biopsy",
+        "consent"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_024": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "public_tools": [
+        "procedure.perform"
+      ],
+      "modules": [
+        "procedure_records",
+        "surgery"
+      ],
+      "concept_ids": [
+        "procedure.bone_biopsy_target_pending_reconciliation"
+      ],
+      "features": [
+        "biopsy",
+        "ct"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_025": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "progress_notes",
+        "preoperative_documents",
+        "procedure_records",
+        "medications",
+        "consultations",
+        "surgery",
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "ehr.post_t4_bone_biopsy_status"
+      ],
+      "features": [
+        "biopsy",
+        "ct",
+        "pathology"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s2_node_026": {
+      "action_types": [
+        "review_result"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "laboratory_results",
+        "imaging_results",
+        "pathology_results",
+        "procedure_records"
+      ],
+      "concept_ids": [
+        "result.late_enhanced_breast_mri"
+      ],
+      "features": [
+        "breast",
+        "followup",
+        "mri"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    },
+    "ward_005_s3_terminal_001": {
+      "action_types": [
+        "discharge"
+      ],
+      "public_tools": [
+        "care.transition"
+      ],
+      "modules": [
+        "discharge_documents"
+      ],
+      "concept_ids": [
+        "disposition.home_after_inpatient_breast_and_bone_workup"
+      ],
+      "features": [
+        "breast",
+        "discharge"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [],
+      "forbidden_features": [],
+      "concept_match_preferred": true,
+      "feature_fallback_allowed": true
+    }
+  },
+  "gold_action_visible": false,
+  "dependency_graph_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true,
+  "artifact_revision": "0.5.6"
+}

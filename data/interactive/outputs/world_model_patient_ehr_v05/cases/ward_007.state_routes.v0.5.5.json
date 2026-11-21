@@ -1,0 +1,343 @@
+{
+  "route_contract_version": "ward-patient-ehr-state-route-contract-0.5.0",
+  "status": "development_non_official_freeze_candidate",
+  "case_id": "ward_007",
+  "scenario_sha256": "df38dfa52acf552bc5bab3e2a2cb44cc6d24770a1b27485f6480a27a4fd7e3fe",
+  "freeze_manifest_sha256": "72dd8e46a360db7a9e107124166a57145547ec941c6d7ef757956a1b69de62dc",
+  "action_interface_sha256": "5c9464e2b85cf6e9484eb96ccf066796fbd1631e3dba10fec8148ed8790ea1ed",
+  "action_ontology_sha256": "1f8a43649cd1c90d0d078f2830ba2be07c3329c92f8d96629ef0d39979a5e9be",
+  "action_graph_sha256": "014a426715e53196a87e56ae367a5305ab05c1b4a954b7ffaf997862785364d8",
+  "lifecycle_policy_sha256": "9c005e75cf35f992f051d2ef22ca1576e5a8e9333892aba743707be4c5f5e518",
+  "event_relative_phase_policy_sha256": "bc04b150e26f1c791d3bbc14a78506ac2d7bbae13f31a7a6e456a444b845e4c6",
+  "routing_policy": {
+    "structured_resource_fields_optional": true,
+    "ordinary_clinical_language_supported": true,
+    "exact_hidden_identifier_required": false,
+    "available_state_preferred": true,
+    "prerequisites_enforced_by_environment": true,
+    "unmatched_valid_actions_are_exploration": true,
+    "counterfactual_results_invented": false,
+    "query_and_structured_fields_are_command_surface": true,
+    "intent_and_rationale_are_non_routing_context": true,
+    "ambiguous_equal_candidates_do_not_advance": true,
+    "clinical_event_lifecycle_enabled": true,
+    "event_relative_time_decoupled_from_surgical_phase": true,
+    "surgery_anchor_required_for_derived_surgical_phase": true,
+    "post_biopsy_is_postoperative": false,
+    "phase_conflicts_audited": true,
+    "phase_conflicts_automatically_override_structured_field": false
+  },
+  "gold_action_visible": false,
+  "dependency_graph_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true,
+  "artifact_revision": "0.5.5",
+  "routes": {
+    "ward_007_s2_node_001": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "admission_documents",
+        "preoperative_documents",
+        "progress_notes"
+      ],
+      "features": [
+        "admission",
+        "preoperative",
+        "consent",
+        "risk"
+      ],
+      "minimum_feature_matches": 1,
+      "required_features": [],
+      "forbidden_features": []
+    },
+    "ward_007_s2_node_002": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "public_tools": [
+        "procedure.perform"
+      ],
+      "modules": [
+        "procedure_records",
+        "surgery"
+      ],
+      "features": [
+        "breast",
+        "biopsy"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [
+        "breast",
+        "biopsy"
+      ],
+      "forbidden_features": [
+        "physical_exam",
+        "surgery"
+      ]
+    },
+    "ward_007_s2_node_003": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "progress_notes",
+        "procedure_records"
+      ],
+      "features": [
+        "biopsy",
+        "breast"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [
+        "biopsy",
+        "breast"
+      ],
+      "forbidden_features": [
+        "surgery"
+      ],
+      "event_constraints": {
+        "required_temporal_relations": [
+          "after"
+        ],
+        "required_referenced_event_features": [
+          "biopsy"
+        ]
+      }
+    },
+    "ward_007_s2_node_004": {
+      "action_types": [
+        "review_result"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "pathology_results"
+      ],
+      "features": [
+        "pathology",
+        "biopsy",
+        "breast"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [
+        "pathology",
+        "biopsy"
+      ],
+      "forbidden_features": [
+        "surgery"
+      ]
+    },
+    "ward_007_s2_node_005": {
+      "action_types": [
+        "request_consultation"
+      ],
+      "public_tools": [
+        "ehr.order"
+      ],
+      "modules": [
+        "consultations"
+      ],
+      "features": [
+        "consultation",
+        "preoperative",
+        "risk"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [
+        "consultation"
+      ],
+      "forbidden_features": [
+        "postoperative"
+      ]
+    },
+    "ward_007_s2_node_006": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "preoperative_documents",
+        "progress_notes"
+      ],
+      "features": [
+        "preoperative",
+        "surgery",
+        "breast",
+        "conserving",
+        "sentinel_node",
+        "risk"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [
+        "surgery"
+      ],
+      "forbidden_features": [
+        "postoperative"
+      ]
+    },
+    "ward_007_s2_node_007": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "public_tools": [
+        "procedure.perform"
+      ],
+      "modules": [
+        "surgery",
+        "procedure_records"
+      ],
+      "features": [
+        "surgery",
+        "breast",
+        "conserving",
+        "sentinel_node",
+        "fascial"
+      ],
+      "minimum_feature_matches": 3,
+      "required_features": [
+        "surgery",
+        "breast",
+        "conserving"
+      ],
+      "forbidden_features": [
+        "physical_exam",
+        "biopsy"
+      ]
+    },
+    "ward_007_s2_node_008": {
+      "action_types": [
+        "review_document"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "progress_notes",
+        "procedure_records"
+      ],
+      "features": [
+        "surgery",
+        "breast"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [
+        "surgery",
+        "breast"
+      ],
+      "forbidden_features": [
+        "biopsy"
+      ],
+      "event_constraints": {
+        "required_temporal_relations": [
+          "after"
+        ],
+        "required_referenced_event_features": [
+          "surgery"
+        ]
+      }
+    },
+    "ward_007_s2_node_009": {
+      "action_types": [
+        "review_result"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "imaging_results"
+      ],
+      "features": [
+        "xray",
+        "imaging"
+      ],
+      "minimum_feature_matches": 1,
+      "required_features": [
+        "xray"
+      ],
+      "forbidden_features": []
+    },
+    "ward_007_s2_node_010": {
+      "action_types": [
+        "review_result"
+      ],
+      "public_tools": [
+        "ehr.search",
+        "ehr.read"
+      ],
+      "modules": [
+        "imaging_results"
+      ],
+      "features": [
+        "mri",
+        "ct"
+      ],
+      "minimum_feature_matches": 1,
+      "required_features": [],
+      "forbidden_features": [
+        "xray"
+      ]
+    },
+    "ward_007_s2_node_011": {
+      "action_types": [
+        "request_consultation"
+      ],
+      "public_tools": [
+        "ehr.order"
+      ],
+      "modules": [
+        "consultations"
+      ],
+      "features": [
+        "consultation",
+        "postoperative",
+        "followup"
+      ],
+      "minimum_feature_matches": 2,
+      "required_features": [
+        "consultation",
+        "postoperative"
+      ],
+      "forbidden_features": [
+        "preoperative"
+      ]
+    },
+    "ward_007_s3_terminal_001": {
+      "action_types": [
+        "discharge"
+      ],
+      "public_tools": [
+        "care.transition"
+      ],
+      "modules": [
+        "discharge_documents"
+      ],
+      "features": [
+        "discharge"
+      ],
+      "minimum_feature_matches": 1,
+      "required_features": [
+        "discharge"
+      ],
+      "forbidden_features": []
+    }
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "schema_version": "ward-data-manifest-1.0",
+  "track": "interactive",
+  "dataset_kind": "clinical_runtime_copy",
+  "status": "local_anonymous_successor",
+  "case_count": 10,
+  "case_ids": [
+    "ward_001",
+    "ward_002",
+    "ward_003",
+    "ward_004",
+    "ward_005",
+    "ward_006",
+    "ward_007",
+    "ward_008",
+    "ward_009",
+    "ward_010"
+  ],
+  "clinical_translation_performed": true,
+  "date_shift_performed": true,
+  "structured_date_offset_years": 100,
+  "translation_method": "approved_evidence_id_alignment_and_reviewed_short_text",
+  "identity_metadata_removed": true,
+  "source_archive_modified": false,
+  "source_policy_sha256": "ba5415e253fbda0401ae0a7c2937d467a21f84d169772b0a2116019409a514f1",
+  "transformation_counts": {
+    "literal_replacements": 279,
+    "pattern_replacements": 2,
+    "metadata_fields_removed": 301
+  },
+  "files": [
+    {
+      "path": "TRANSLATION_LINEAGE.json",
+      "sha256": "6671f5943161e4cda2b297f557a54df3fa228093c410aa0eae8b5b252a3d0461",
+      "size_bytes": 463
+    },
+    {
+      "path": "cases.json",
+      "sha256": "c4822177b58712439a675921f2202212c9aaee84eba8c52fce80e7b2a4d25384",
+      "size_bytes": 7291
+    },
+    {
+      "path": "cases/ward_001.json",
+      "sha256": "a35119101a95e08f25c53afae8d261f0eebc04bbba32e8b21fb57cf79d35d7fc",
+      "size_bytes": 690
+    },
+    {
+      "path": "cases/ward_002.json",
+      "sha256": "9f05294a7a3d24bc53851b70234a3966cfb56853b106b3eb3ac6dab77fb44357",
+      "size_bytes": 699
+    },
+    {
+      "path": "cases/ward_003.json",
+      "sha256": "3072a41d177be39154fe715958726536b543afa64452477d1d9659828cdd7eec",
+      "size_bytes": 699
+    },
+    {
+      "path": "cases/ward_004.json",
+      "sha256": "f061ed5b12278e1da33def7619977174f772a3c0b68a929ae1ad7f1e4f4dbe72",
+      "size_bytes": 699
+    },
+    {
+      "path": "cases/ward_005.json",
+      "sha256": "b0f3767d76cf96e0c345b7b2f678d91668cea1f84f8c5c02cd58af269d3ccb33",
+      "size_bytes": 699
+    },
+    {
+      "path": "cases/ward_006.json",
+      "sha256": "db586e25becfa654dbe3af61721fc11c3009b810a7d8a13478ef5967ff87b1c5",
+      "size_bytes": 699
+    },
+    {
+      "path": "cases/ward_007.json",
+      "sha256": "2f7e2725cbfa2a6b2d4d0c124c9ab26735a894f9d92b48f6c2cbc7e8c7064dd9",
+      "size_bytes": 699
+    },
+    {
+      "path": "cases/ward_008.json",
+      "sha256": "2bb8f6c05f629b20d0892565f9f77a4334e9da527f5f81d10455c4b010fca0cb",
+      "size_bytes": 699
+    },
+    {
+      "path": "cases/ward_009.json",
+      "sha256": "1d4b401cac5aefe4722bc2f7c30175ad6516d3bfadca14face5bb2bbcf1f8e56",
+      "size_bytes": 699
+    },
+    {
+      "path": "cases/ward_010.json",
+      "sha256": "c4ce7692f7923d355cfa4ec03a5b22764f2ecec30d6a9eb0606d898e239153af",
+      "size_bytes": 699
+    },
+    {
+      "path": "outputs/world_model_interaction_scorer_freeze_v01/FREEZE_MANIFEST.json",
+      "sha256": "72dd8e46a360db7a9e107124166a57145547ec941c6d7ef757956a1b69de62dc",
+      "size_bytes": 1480
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v01/cases/ward_001.patient_ehr.json",
+      "sha256": "b066e0b43c0674e3fdcf13e035bab5e18dda5608fe814c2607015917515ec5c0",
+      "size_bytes": 65515
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v01/cases/ward_002.patient_ehr.json",
+      "sha256": "02bc4770ead7f51fd7ceca305e3e4468e5b907119cbebcd7883c8025c131a953",
+      "size_bytes": 75325
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v01/cases/ward_003.patient_ehr.json",
+      "sha256": "cf1dadad50b527a0cec67bae6ca4033e5432014c5207e6a3e92031c205709937",
+      "size_bytes": 43095
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v01/cases/ward_004.patient_ehr.json",
+      "sha256": "032253aeea7f3233c8fa938ec3b5acd03b372efd6892a7699dee5ebc60725b3d",
+      "size_bytes": 35362
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v01/cases/ward_005.patient_ehr.json",
+      "sha256": "1ab60e04f14f902300082d9d90776481fb69642d373e16a96383c97495ca70eb",
+      "size_bytes": 59805
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v01/cases/ward_006.patient_ehr.json",
+      "sha256": "396ac4e16a21f11ead0b489dfa35753bb8a62907bc0f591b7d4c0f2fb54d21b0",
+      "size_bytes": 26899
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v01/cases/ward_007.patient_ehr.json",
+      "sha256": "df38dfa52acf552bc5bab3e2a2cb44cc6d24770a1b27485f6480a27a4fd7e3fe",
+      "size_bytes": 31915
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v01/cases/ward_008.patient_ehr.json",
+      "sha256": "cb4b4fc685a48608d1e3e1cf4c1905bf2feed1072c9554b9d8877dc1081aefc2",
+      "size_bytes": 21518
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v01/cases/ward_009.patient_ehr.json",
+      "sha256": "21d1304320aa910bdc52da44265e6499d7b7f0b1b53b325f28d0df0f9219d025",
+      "size_bytes": 20593
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v01/cases/ward_010.patient_ehr.json",
+      "sha256": "98874486f8fd5b461f2ae8b1e36e0e0eec6d62ec06c473b79aa9e5e531058da5",
+      "size_bytes": 34186
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/action_ontology.v0.2.json",
+      "sha256": "3074e22c849a792a48e62d46f7f2b621d39838a66acd6e97cec0d855c7f144c6",
+      "size_bytes": 9851
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_002.v0.2.json",
+      "sha256": "3b4852626819f8027018b7935dce9ae25f0beae8af5df05dcba9cb1e8148e90b",
+      "size_bytes": 17331
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_003.v0.2.json",
+      "sha256": "fbe183ee8f3af214f663c71e698af06cd97ca922138c6bfa731b559f45a787b0",
+      "size_bytes": 15843
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_004.v0.2.json",
+      "sha256": "870cba4bd6d014cf3dca4768b9b803a3d8977be9c685a79364e8e4ac29842fd6",
+      "size_bytes": 17403
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_005.v0.2.json",
+      "sha256": "71c7acec7a01bbc5efca56a5ec7d0158292d66554b9bc2f56a9145c349bdf279",
+      "size_bytes": 22181
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_006.v0.2.json",
+      "sha256": "10f92a793ca13c5cd0ea7b73e812f00b4d11d6e2c9120302ac5a59a27afa822c",
+      "size_bytes": 15511
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_007.v0.2.json",
+      "sha256": "1f8a43649cd1c90d0d078f2830ba2be07c3329c92f8d96629ef0d39979a5e9be",
+      "size_bytes": 15159
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_008.v0.2.json",
+      "sha256": "c5968f2d6a6024861e45585cb8292088dba538e54b2208f0cb955ea21ac4a98e",
+      "size_bytes": 14097
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_009.v0.2.json",
+      "sha256": "f3f23b528b8d274c6a706fb459673dac28f42b3bf72497b913794d737fa9a8bf",
+      "size_bytes": 13472
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_010.v0.2.json",
+      "sha256": "3ffb00560984ca19fab0c34932e36a2400244abf7a8eb05b5cf29ee808bd4718",
+      "size_bytes": 15122
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/cases/ward_001.action_interface.v0.2.json",
+      "sha256": "b1a7b48e924ef81ecab70b8238ac9a13ee67872bb2b40ba25651c349d481dd64",
+      "size_bytes": 2219
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/cases/ward_002.action_interface.v0.2.json",
+      "sha256": "2274a831c51855a37f15f18e5d904b340008ecb1f9aefafd53e98425d93d4a9d",
+      "size_bytes": 2632
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/cases/ward_003.action_interface.v0.2.json",
+      "sha256": "c38ab5ab43b76734505078816ae5db34e17a278ff6b48d7285eab667afbd580a",
+      "size_bytes": 2294
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/cases/ward_004.action_interface.v0.2.json",
+      "sha256": "8d322cc8f1252685fa7121fc0c0752667ea19ffcdb3a4a96d9b976ba73d326f5",
+      "size_bytes": 2626
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/cases/ward_005.action_interface.v0.2.json",
+      "sha256": "c0641f53155983d59540ab762a6bd409af2f19bfd91c70cbe23219a59e2d3188",
+      "size_bytes": 3318
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/cases/ward_006.action_interface.v0.2.json",
+      "sha256": "f92df9ca7dfd4748b5be3a37481f31e87a62a51149ebe2844f0bd174bcec9927",
+      "size_bytes": 2307
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/cases/ward_007.action_interface.v0.2.json",
+      "sha256": "5c9464e2b85cf6e9484eb96ccf066796fbd1631e3dba10fec8148ed8790ea1ed",
+      "size_bytes": 2190
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/cases/ward_008.action_interface.v0.2.json",
+      "sha256": "f30a93b22f8220d6ad83318dbf463dbcc7c12bc8753b3b0a59b1019c959dca8d",
+      "size_bytes": 2037
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/cases/ward_009.action_interface.v0.2.json",
+      "sha256": "4e8ff699f6b2d15973614cd5d5196a2c38c98ac5f9b2e2f748f58ce841603cd2",
+      "size_bytes": 1960
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v02/cases/ward_010.action_interface.v0.2.json",
+      "sha256": "8473f13e16b77e5b291a9d5ac68b96d670f2673799425e4c27afcf073c9c8ecd",
+      "size_bytes": 2250
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v03/cases/ward_001.action_graph.v0.3.json",
+      "sha256": "735e3178a56a9020f7cb49deb6c173bde5bdc598dfdf7f3dcfb15f6c09788abf",
+      "size_bytes": 2184
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v03/cases/ward_002.action_graph.v0.3.json",
+      "sha256": "84c30bc29531e05b7b2d42476192d264ca1712c7fcda715d03640a8f4dff5f28",
+      "size_bytes": 3096
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v03/cases/ward_003.action_graph.v0.3.json",
+      "sha256": "7c76efd1161426ddc2fd06146e2958936b58c5c8a2260395231d52bf5365f2e5",
+      "size_bytes": 2448
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v03/cases/ward_004.action_graph.v0.3.json",
+      "sha256": "2fe311bfcc83d71feedc0ea920ef3743d032bec1f55b3e125424d71e76220676",
+      "size_bytes": 3077
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v03/cases/ward_005.action_graph.v0.3.json",
+      "sha256": "5e0992f50c80e3d57709dada4194837836db9395829f824653a448746f597458",
+      "size_bytes": 4106
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v03/cases/ward_006.action_graph.v0.3.json",
+      "sha256": "52ae87a041639b06dafcf59caf7c1decd9af81fe7d5effe39c29e3b3b25fef4d",
+      "size_bytes": 2415
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v03/cases/ward_007.action_graph.v0.3.json",
+      "sha256": "014a426715e53196a87e56ae367a5305ab05c1b4a954b7ffaf997862785364d8",
+      "size_bytes": 2278
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v03/cases/ward_008.action_graph.v0.3.json",
+      "sha256": "1be6e8a9e81e04dfb692204ab4e8eba2f01edce1dbea1d97ef7c5031b0e58e97",
+      "size_bytes": 1960
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v03/cases/ward_009.action_graph.v0.3.json",
+      "sha256": "704ab78e5c1a40265906a839e9868856be33c7bbaf11030ae3708135cfa3cadb",
+      "size_bytes": 1868
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v03/cases/ward_010.action_graph.v0.3.json",
+      "sha256": "cddfa2d9822514c55966a31a21c6d108dd88e1c110125536fc342f6a0a3788e6",
+      "size_bytes": 2460
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/CLINICAL_EVENT_LIFECYCLE_POLICY.v0.1.json",
+      "sha256": "9c005e75cf35f992f051d2ef22ca1576e5a8e9333892aba743707be4c5f5e518",
+      "size_bytes": 4624
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/EVENT_RELATIVE_PHASE_POLICY.v0.1.json",
+      "sha256": "bc04b150e26f1c791d3bbc14a78506ac2d7bbae13f31a7a6e456a444b845e4c6",
+      "size_bytes": 2577
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/PROMPT_CONTRACT.v0.5.4.json",
+      "sha256": "8dbe29e632577336fb4ab38391b63418b46790a577050ee3d2b03776cef529c4",
+      "size_bytes": 9007
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_001.state_routes.v0.5.6.json",
+      "sha256": "d2f01ced190893cd3dd02366e67dfc1a52a229e4793b5ca7e15451f0221842d5",
+      "size_bytes": 8784
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_001.tool_map.v0.5.6.json",
+      "sha256": "58d2edcc59c3a30b254368f07a82b920e9c9f60f791bbebfa1471ed93f821e77",
+      "size_bytes": 4194
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_002.state_routes.v0.5.6.json",
+      "sha256": "ba5502fed42437d5cf0d9ed902e41278f2618406ee264f0693d48b250881bdee",
+      "size_bytes": 13670
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_002.tool_map.v0.5.6.json",
+      "sha256": "47bcac9e0164c2f6364e42ebd662f363e22144c0d4490c1d7bc22e0eb880eec5",
+      "size_bytes": 4396
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_003.state_routes.v0.5.6.json",
+      "sha256": "ac8be660f315296261b8e2c6658856ca1d3b58bac4375da0fd165d8ccc5b36f7",
+      "size_bytes": 9663
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_003.tool_map.v0.5.6.json",
+      "sha256": "ecd71400b824296b1415e2503356ad3fa947a2cdffddc42edca0c5862d45ef1c",
+      "size_bytes": 4396
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_004.state_routes.v0.5.6.json",
+      "sha256": "93315138eaec06a0b71192cfa0c6d38ed7d9f2adc30c0ac92d5237bce5c712ec",
+      "size_bytes": 13530
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_004.tool_map.v0.5.6.json",
+      "sha256": "1c98fed222102d3bfb7e1e970548602d41e0cd9fbd6039fd7fcd0d38c5eec5e5",
+      "size_bytes": 4396
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_005.state_routes.v0.5.6.json",
+      "sha256": "a53a7b212dcc4f8cc8b04beab306b7d5b25f132381351c79eaf4b92e5d25768f",
+      "size_bytes": 19495
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_005.tool_map.v0.5.6.json",
+      "sha256": "7a32c26766ba1dc8ee7ac1e56fa21f8a6ea3aeebfd9f5b3a1caa2e1f522fec60",
+      "size_bytes": 4396
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_006.state_routes.v0.5.6.json",
+      "sha256": "40e072669c9327974fde38faa1f4083804d5bfbb895b1501ac3a0775d98bcb67",
+      "size_bytes": 9401
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_006.tool_map.v0.5.6.json",
+      "sha256": "188a664edb4aad03eb3b8d620a3aee0c71f8d6b7f035146cc0f9be1db8b63d39",
+      "size_bytes": 4396
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_007.state_routes.v0.5.5.json",
+      "sha256": "98d7709efe67c3ba574a14abcc4f7ee983dee732e0ce1e72250428e2bc7d2cf0",
+      "size_bytes": 8033
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_007.tool_map.v0.5.5.json",
+      "sha256": "a4dbe32583ce67288691f4ef56f0437ab68f53520faa707731b07cb0d33db471",
+      "size_bytes": 4765
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_008.state_routes.v0.5.6.json",
+      "sha256": "13507f16f7387612a2e0447b743db222d08fae20b75343a8a075e4b4da02d29b",
+      "size_bytes": 7574
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_008.tool_map.v0.5.6.json",
+      "sha256": "bba359678c2fb1178a893452521b80fd1a71b440ebc6818ec9b3d4c11e9f2b1c",
+      "size_bytes": 4396
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_009.state_routes.v0.5.6.json",
+      "sha256": "0b21bdb7a42af21354b7aab23296e90f12f929fc01486d1973f3d4f20cf95447",
+      "size_bytes": 7157
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_009.tool_map.v0.5.6.json",
+      "sha256": "d542ebf533e3ae536b540e145d198b08a88a5f75fe3371e52fb8ce720ea469e5",
+      "size_bytes": 4396
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_010.state_routes.v0.5.6.json",
+      "sha256": "0d31236b8c97009f50911b64d6bcf2ffaf8b1ddeb140f23bbd72a0ed5e141532",
+      "size_bytes": 8814
+    },
+    {
+      "path": "outputs/world_model_patient_ehr_v05/cases/ward_010.tool_map.v0.5.6.json",
+      "sha256": "e7df941077b48939f3492230c5bd6900e55423cbdb6a68f874b7ceee0336cd53",
+      "size_bytes": 4396
+    }
+  ]
+}

@@ -1,0 +1,2496 @@
+{
+  "case_id": "ward_034",
+  "checkpoints": [
+    {
+      "answer": {
+        "layer1_evidence": [],
+        "layer2_utilization_links": [],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "admission diagnosis of esophageal malignancy",
+              "suspected esophageal cancer"
+            ],
+            "canonical_en": "Malignant neoplasm of the esophagus is listed as the admission diagnosis, but no reviewable public evidence currently supports pathologic confirmation or staging.",
+            "claim_id": "ward_034_cp_000_claim_001",
+            "linked_evidence_ids": [],
+            "status": "suspected",
+            "supporting_evidence_ids": []
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "obtain pathology confirmation",
+              "review biopsy pathology"
+            ],
+            "action_id": "ward_034_cp_000_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Verify and obtain diagnostic evidence for the esophageal lesion, prioritizing histopathologic confirmation and the relevant source reports.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete or verify as soon as possible during the current inpatient diagnosis and treatment phase",
+            "indication_en": "Admission diagnosis cannot alone replace pathology or other reviewable diagnostic evidence",
+            "linked_evidence_ids": [],
+            "prerequisites_en": [
+              "The clinical team should assess examination indications, risks, and feasibility according to the actual situation."
+            ],
+            "problem_en": "Suspected esophageal malignant tumor, but reviewable confirmatory evidence is lacking.",
+            "target_and_laterality_en": "Esophageal lesion; laterality or specific site not provided"
+          },
+          {
+            "acceptable_aliases_en": [
+              "complete staging workup",
+              "assess treatment readiness"
+            ],
+            "action_id": "ward_034_cp_000_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "After diagnostic evidence is established, perform cancer staging and treatment-readiness assessment.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "After diagnostic confirmation, complete before deciding treatment.",
+            "indication_en": "There is currently no public evidence supporting completion of staging, resectability, or treatment readiness",
+            "linked_evidence_ids": [],
+            "prerequisites_en": [
+              "Verify diagnostic evidence; the clinical team selects appropriate staging examinations and assessments"
+            ],
+            "problem_en": "Lack of staging and treatment suitability information",
+            "target_and_laterality_en": "Esophageal malignant tumor; specific site and extent have not yet been provided"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Suspected esophageal malignant neoplasm, with diagnostic confirmation and staging information lacking.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_000_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The inpatient encounter remains active.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_000_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Reviewable pathological or other diagnostic evidence is lacking.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_000_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Information on tumor staging, resectability, and treatment suitability is lacking.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_000_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Male, 59 years old.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_000_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current setting is longitudinal inpatient oncologic diagnosis and treatment.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_000_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The recorded admission diagnosis is esophageal malignant tumor.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_000_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "There are currently no visible evidence items.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_000_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Admission diagnosis: malignant neoplasm of the esophagus; currently only an admission diagnosis in the record, with no reviewable confirmatory evidence yet seen.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_000_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "The admission diagnosis must not be described as having obtained pathological confirmation.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_000_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Tumor stage, metastasis, resectability, treatment plan, or treatment effect must not be inferred.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_000_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Continue inpatient oncology diagnostic and treatment assessment; it currently cannot be used to determine that treatment has been completed or follow-up conditions have been met.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_034_cp_000_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "There is not yet a sufficient public-evidence basis to initiate definitive antitumor treatment; diagnostic confirmation and staging assessment need to be completed first.",
+            "linked_evidence_ids": [],
+            "state_id": "ward_034_cp_000_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Directly equate the admission diagnosis with pathological confirmation.",
+            "Infer stage, metastasis, resectability, treatment response, or prognosis in the absence of public evidence.",
+            "Stopping assessment, transferring to routine follow-up, or initiating unsupported definitive treatment when diagnosis and staging are unclear."
+          ],
+          "critical_omission_rules_en": [
+            "Omission of diagnostic confirmation and staging assessment will cause key clinical decisions to lack an evidentiary basis."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Insufficient evidence.",
+            "Clinical review is required.",
+            "Do not use this to confirm pathological diagnosis or staging."
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "There are no visible evidence items and only an admission diagnosis is recorded; pathologic diagnosis, stage, and treatment completion cannot be confirmed. Investigation should therefore continue rather than stopping or transitioning to follow-up.",
+          "remaining_blockers_en": [
+            "Evidence required for diagnostic confirmation is missing.",
+            "Staging and treatment-preparation information are missing."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_034_cp_000",
+      "question": {
+        "allowed_evidence_ids": [],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_034:ehr:longitudinal_terminal",
+          "ward_034:ehr:visit_01_admission",
+          "ward_034:ehr:visit_01_outcome",
+          "ward_034:img:visit_01_results",
+          "ward_034:lab:visit_01_results",
+          "ward_034:tx:visit_01_treatment"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_034",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false
+          },
+          "public_context": {
+            "admission_diagnosis": "Malignant neoplasm of the esophagus",
+            "age_years": 59,
+            "initial_time": "2124-01-08T13:03:39+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-01-08T13:03:39+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": []
+        },
+        "public_snapshot_sha256": "2c34594569df2dda07124a62476984144b3f910720c51aaafba68625c389d6c5",
+        "public_time": "2124-01-08T13:03:39+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 0
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_034:ehr:visit_01_admission",
+            "interpretation_en": "The admission record shows hospitalization in oncology for malignant neoplasm of the esophagus and includes maintenance chemotherapy for malignancy as a treatment-related diagnosis. It supports an active esophageal malignancy management problem, but does not establish completed histologic characterization, staging, chemotherapy administration, or response assessment.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_034_cp_001_action_001",
+              "ward_034_cp_001_action_002",
+              "ward_034_cp_001_action_003"
+            ],
+            "claim_ids": [
+              "ward_034_cp_001_claim_001",
+              "ward_034_cp_001_claim_002"
+            ],
+            "evidence_id": "ward_034:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_034_cp_001_state_diagnoses_001",
+              "ward_034_cp_001_state_diagnoses_002",
+              "ward_034_cp_001_state_active_problems_001",
+              "ward_034_cp_001_state_active_problems_002",
+              "ward_034_cp_001_state_active_problems_003",
+              "ward_034_cp_001_state_blockers_001",
+              "ward_034_cp_001_state_blockers_002",
+              "ward_034_cp_001_state_blockers_003",
+              "ward_034_cp_001_state_blockers_004",
+              "ward_034_cp_001_state_critical_facts_to_retain_002",
+              "ward_034_cp_001_state_critical_facts_to_retain_003",
+              "ward_034_cp_001_state_critical_facts_to_retain_004",
+              "ward_034_cp_001_state_critical_facts_to_retain_005",
+              "ward_034_cp_001_state_facts_to_retract_or_correct_001",
+              "ward_034_cp_001_state_facts_to_retract_or_correct_002",
+              "ward_034_cp_001_state_required_delta_from_previous_checkpoint_001",
+              "ward_034_cp_001_state_required_delta_from_previous_checkpoint_002",
+              "ward_034_cp_001_state_treatment_readiness_001",
+              "ward_034_cp_001_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "esophageal malignancy",
+              "malignant neoplasm of the esophagus",
+              "esophageal cancer"
+            ],
+            "canonical_en": "The current inpatient oncology problem is malignant neoplasm of the esophagus.",
+            "claim_id": "ward_034_cp_001_claim_001",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "maintenance chemotherapy is documented",
+              "maintenance-chemotherapy-related management",
+              "chemotherapy planning or management is recorded"
+            ],
+            "canonical_en": "The record indicates maintenance-chemotherapy-related management, but it does not confirm that chemotherapy was administered, that the regimen indication was verified, or that treatment prerequisites were met.",
+            "claim_id": "ward_034_cp_001_claim_002",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "confirm pathology and staging",
+              "review diagnostic pathology and clinical staging"
+            ],
+            "action_id": "ward_034_cp_001_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Verify the diagnostic basis, histologic characterization, and clinical stage of the esophageal malignancy.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current inpatient assessment",
+            "indication_en": "The admission record provides only a malignant tumor diagnosis; pathological and staging basis have not yet been disclosed.",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "prerequisites_en": [
+              "Obtain and review available pathology, imaging, and prior oncology-treatment materials"
+            ],
+            "problem_en": "Diagnostic and staging information for esophageal malignant tumor is incomplete.",
+            "target_and_laterality_en": "Esophageal lesion; no specific location or laterality provided"
+          },
+          {
+            "acceptable_aliases_en": [
+              "review the maintenance chemotherapy plan and treatment readiness",
+              "assess chemotherapy prerequisites"
+            ],
+            "action_id": "ward_034_cp_001_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "After verifying the diagnosis and treatment intent, assess the maintenance chemotherapy regimen and pretreatment safety prerequisites.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before administration of any planned chemotherapy",
+            "indication_en": "The structured diagnosis includes maintenance chemotherapy for malignant neoplasm; this cannot confirm that medication has been administered or that treatment conditions are met.",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "prerequisites_en": [
+              "Clarify the treatment regimen, indication, and treatment objective.",
+              "Complete assessment of clinical status and relevant laboratory and organ function; specific items are determined by the clinical team according to the regimen."
+            ],
+            "problem_en": "The record involves maintenance chemotherapy, but the specific regimen or conditions for implementation have not been confirmed.",
+            "target_and_laterality_en": "Systemic antitumor treatment; laterality not applicable."
+          },
+          {
+            "acceptable_aliases_en": [
+              "continue inpatient oncology management",
+              "document treatment administration, tolerance, and disposition planning"
+            ],
+            "action_id": "ward_034_cp_001_action_003",
+            "action_scope": "prospective",
+            "canonical_action_en": "Continue inpatient oncology assessment and longitudinal management, documenting actual treatment, tolerance, and the subsequent disposition plan.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization and before discharge",
+            "indication_en": "The publicly available encounter status shows an active inpatient visit, and there is no evidence yet of discharge or completed follow-up.",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "prerequisites_en": [
+              "Continue clinical monitoring and have the oncology team formulate a management plan"
+            ],
+            "problem_en": "The current hospitalization remains active, and treatment execution and continuity-of-care status are unclear",
+            "target_and_laterality_en": "Current inpatient oncology management; laterality not applicable"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Esophageal malignant tumor remains a current active diagnosis and treatment issue",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Inpatient oncology diagnosis and treatment are still ongoing.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Maintenance-chemotherapy-related treatment plan or management status requires further verification",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Visible pathological classification, staging, and prior treatment information are lacking.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Visible current treatment regimen, administration records, and treatment-condition assessment are lacking.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Lack of visible efficacy and adverse-reaction assessment",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A complete continuity-of-care arrangement supporting discharge or transition to routine follow-up is lacking",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_blockers_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Male, 59 years old.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_001_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Currently an active inpatient oncology encounter",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The admission diagnosis is esophageal malignancy.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The record involves maintenance chemotherapy for a malignant tumor",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current evidence does not show completed staging, chemotherapy administration, efficacy assessment, or discharge arrangements",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Malignant neoplasm of the esophagus (admission diagnosis)",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Diagnosis and treatment issue related to maintenance chemotherapy for malignant neoplasm (treatment-related diagnosis in the record)",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_diagnoses_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Do not interpret the structured diagnosis of “maintenance chemotherapy” as completed chemotherapy or confirmed treatment benefit.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Do not add unpublished pathology, staging, metastasis, regimen, dose, efficacy, or toxicity information.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Under active inpatient oncology management; treatment-related records have appeared, but whether treatment was actually administered and its outcome remain unclear.",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "state_id": "ward_034_cp_001_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Compared with the previous checkpoint, an inpatient admission assessment record has newly been disclosed, confirming the admission diagnosis as esophageal malignancy and documenting diagnostic and treatment issues related to maintenance chemotherapy for malignancy.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current status is updated from no visible evidence to clear evidence of an admission diagnosis and active oncology inpatient management; it still cannot be confirmed that treatment has been administered or treatment preparation has been completed.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_001_state_required_delta_from_previous_checkpoint_002",
+              "status": "state_update",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "At present, it cannot be confirmed on the basis of publicly available evidence that conditions for implementing maintenance chemotherapy or other antitumor treatment have been met; the clinical team needs to verify diagnosis, stage, regimen indication, organ function, and other safety prerequisites.",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "state_id": "ward_034_cp_001_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "An admission diagnosis or structured diagnosis related to maintenance chemotherapy must not be interpreted as completed chemotherapy, achieved efficacy, or completed staging",
+            "Pathologic subtype, metastasis status, specific treatment regimen, toxicity, or prognosis must not be inferred from the current single admission record.",
+            "Before diagnostic basis, staging, treatment regimen, and safety conditions are verified, antitumor treatment should not be automatically implemented on this basis"
+          ],
+          "critical_omission_rules_en": [
+            "Missing an active esophageal malignancy will lead to an incorrect status judgment.",
+            "Omission that the current hospitalization is still ongoing will lead to premature stopping or inappropriate discharge determination.",
+            "Omitting treatment implementation status and pre-treatment safety assessment would create a major clinical safety risk",
+            "Omission of subsequent continuous-care arrangements will create a risk of interruption of follow-up."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Clinician review is required.",
+            "Evidence is insufficient to confirm that chemotherapy has been implemented or treatment preparation has been completed",
+            "It is currently inappropriate to stop investigation or transition to routine follow-up."
+          ]
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "The patient remains in active inpatient oncology management, and the available evidence consists only of an admission diagnosis and a treatment-related record. It does not establish completed treatment, clinical stability, or safe discharge and follow-up readiness. Investigation and treatment-readiness assessment should therefore continue rather than stopping or transitioning directly to follow-up.",
+          "remaining_blockers_en": [
+            "Diagnostic basis, pathological classification, and staging have not yet been completely presented in the current disclosed evidence.",
+            "The specific regimen, indication, implementation status, and safety conditions for maintenance chemotherapy have not been confirmed",
+            "There is not yet evidence of efficacy, adverse reactions, or discharge continuity-of-care arrangements."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_034_cp_001",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_034:ehr:visit_01_admission"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_034:ehr:longitudinal_terminal",
+          "ward_034:ehr:visit_01_outcome",
+          "ward_034:img:visit_01_results",
+          "ward_034:lab:visit_01_results",
+          "ward_034:tx:visit_01_treatment"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_034",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_034_s2_node_001_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Malignant neoplasm of the esophagus",
+            "age_years": 59,
+            "initial_time": "2124-01-08T13:03:39+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-01-08T16:24:28+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_034:ehr:visit_01_admission"
+          ]
+        },
+        "public_snapshot_sha256": "7f2d412380890d9c0b2ddcf9cca601577987ff83be8deccef1ede7de3a2ba526",
+        "public_time": "2124-01-08T16:24:28+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update"
+        ]
+      },
+      "sequence_index": 1
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_034:ehr:visit_01_admission",
+            "interpretation_en": "The admission record documents malignant neoplasm of the esophagus and a diagnosis related to maintenance chemotherapy for malignancy. It supports the current inpatient oncology-management context but does not provide complete pathology, staging, or a specific chemotherapy regimen.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_034:img:visit_01_results",
+            "interpretation_en": "The electrocardiogram reported during this hospitalization was within normal limits. No electrocardiographic abnormality is documented, but this result does not replace oncologic staging or treatment-readiness assessment.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_034:lab:visit_01_results",
+            "interpretation_en": "The summary states that five laboratory reports and 36 results are present but lists no interpretable abnormal results. This supports only that no interpretable abnormality is reported in the available summary; it does not establish that all laboratory values are normal.",
+            "role": "supporting"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_034_cp_002_action_001",
+              "ward_034_cp_002_action_002"
+            ],
+            "claim_ids": [
+              "ward_034_cp_002_claim_001"
+            ],
+            "evidence_id": "ward_034:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_034_cp_002_state_diagnoses_001",
+              "ward_034_cp_002_state_active_problems_001",
+              "ward_034_cp_002_state_active_problems_002",
+              "ward_034_cp_002_state_active_problems_003",
+              "ward_034_cp_002_state_blockers_001",
+              "ward_034_cp_002_state_blockers_002",
+              "ward_034_cp_002_state_critical_facts_to_retain_002",
+              "ward_034_cp_002_state_treatment_readiness_001",
+              "ward_034_cp_002_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_034_cp_002_action_003"
+            ],
+            "claim_ids": [
+              "ward_034_cp_002_claim_002"
+            ],
+            "evidence_id": "ward_034:img:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_034_cp_002_state_critical_facts_to_retain_003",
+              "ward_034_cp_002_state_required_delta_from_previous_checkpoint_001",
+              "ward_034_cp_002_state_treatment_readiness_001",
+              "ward_034_cp_002_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_034_cp_002_action_002"
+            ],
+            "claim_ids": [
+              "ward_034_cp_002_claim_003"
+            ],
+            "evidence_id": "ward_034:lab:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_034_cp_002_state_active_problems_003",
+              "ward_034_cp_002_state_blockers_003",
+              "ward_034_cp_002_state_critical_facts_to_retain_004",
+              "ward_034_cp_002_state_required_delta_from_previous_checkpoint_001",
+              "ward_034_cp_002_state_treatment_readiness_001",
+              "ward_034_cp_002_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "esophageal malignancy under inpatient oncology management",
+              "maintenance chemotherapy is documented in the admission diagnosis"
+            ],
+            "canonical_en": "The current inpatient management context is malignant neoplasm of the esophagus, and the admission record mentions maintenance chemotherapy for malignancy.",
+            "claim_id": "ward_034_cp_002_claim_001",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "normal ECG",
+              "electrocardiogram without reported abnormality"
+            ],
+            "canonical_en": "The currently available electrocardiogram is documented as within normal limits.",
+            "claim_id": "ward_034_cp_002_claim_002",
+            "linked_evidence_ids": [
+              "ward_034:img:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_034:img:visit_01_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "no interpretable laboratory abnormality is listed",
+              "laboratory abnormality status is incompletely characterized"
+            ],
+            "canonical_en": "The available laboratory summary lists no interpretable abnormal results, but specific laboratory values and complete interpretability are insufficiently available.",
+            "claim_id": "ward_034_cp_002_claim_003",
+            "linked_evidence_ids": [
+              "ward_034:lab:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_034:lab:visit_01_results"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "oncology review of pathology and staging",
+              "complete oncologic diagnostic and treatment-intent review"
+            ],
+            "action_id": "ward_034_cp_002_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "The oncology team should continue reviewing the complete pathology, staging information, and treatment intent for esophageal malignancy.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete before current inpatient treatment decisions",
+            "indication_en": "This is needed to determine the treatment pathway and treatment readiness.",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "prerequisites_en": [
+              "Obtain or verify existing pathology and staging records"
+            ],
+            "problem_en": "Currently there is only an admission diagnosis, with complete pathology, staging, and treatment-goal information lacking.",
+            "target_and_laterality_en": "Esophageal malignancy; no laterality applicable."
+          },
+          {
+            "acceptable_aliases_en": [
+              "review complete labs before chemotherapy",
+              "regimen-specific laboratory safety assessment"
+            ],
+            "action_id": "ward_034_cp_002_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Review the complete laboratory results and collection times, and assess treatment safety in relation to the specific maintenance chemotherapy regimen.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before continuing or starting the relevant chemotherapy.",
+            "indication_en": "Suitability to continue chemotherapy cannot be confirmed solely because the summary states that no explanatory abnormalities are listed.",
+            "linked_evidence_ids": [
+              "ward_034:lab:visit_01_results",
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "prerequisites_en": [
+              "Obtain complete laboratory values",
+              "Clarify the current or proposed chemotherapy regimen and treatment goal."
+            ],
+            "problem_en": "The existing laboratory summary does not list specific values, and the specific chemotherapy regimen has not been made public.",
+            "target_and_laterality_en": "Systemic treatment readiness assessment; no laterality applicable."
+          },
+          {
+            "acceptable_aliases_en": [
+              "document normal ECG in treatment assessment",
+              "use ECG as one component of treatment readiness"
+            ],
+            "action_id": "ward_034_cp_002_action_003",
+            "action_scope": "recorded",
+            "canonical_action_en": "Incorporate the documented normal ECG into the current treatment-readiness assessment without using it alone as treatment clearance.",
+            "canonical_prohibited_action_en": null,
+            "category": "acceptable_recorded",
+            "critical_omission_if_missing": false,
+            "deadline_or_time_window_en": "Documentation and comprehensive assessment before treatment decisions.",
+            "indication_en": "May serve as supportive information for treatment-readiness assessment.",
+            "linked_evidence_ids": [
+              "ward_034:img:visit_01_results"
+            ],
+            "prerequisites_en": [
+              "In conjunction with complete medical history, physical assessment, laboratory results, and the specific regimen."
+            ],
+            "problem_en": "The electrocardiogram has recorded normal findings, but it can assess only limited electrocardiogram-related information.",
+            "target_and_laterality_en": "Overall pre-treatment assessment; no laterality applicable."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Inpatient oncology management of esophageal malignant tumor",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_002_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The admission diagnosis records maintenance chemotherapy for a malignant tumor, but the specific regimen and current treatment-course information have not been disclosed",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_002_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Staging, pathology completeness, and treatment readiness have not yet been sufficiently determined by current evidence.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission",
+                "ward_034:lab:visit_01_results"
+              ],
+              "state_id": "ward_034_cp_002_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Lacking pathology and staging information usable for complete judgment",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_002_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Information on the specific maintenance chemotherapy regimen, recent treatment course, and treatment goals is lacking",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_002_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The laboratory summary does not provide interpretable specific values; chemotherapy readiness cannot be confirmed solely on this basis",
+              "linked_evidence_ids": [
+                "ward_034:lab:visit_01_results"
+              ],
+              "state_id": "ward_034_cp_002_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "59-year-old male, longitudinal inpatient oncology management setting",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_002_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The admission diagnosis is esophageal malignant tumor, and maintenance chemotherapy for malignant tumor is mentioned.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_002_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current ECG conclusion is normal",
+              "linked_evidence_ids": [
+                "ward_034:img:visit_01_results"
+              ],
+              "state_id": "ward_034_cp_002_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The laboratory summary does not list interpretable abnormal results, but complete interpretable values are not provided.",
+              "linked_evidence_ids": [
+                "ward_034:lab:visit_01_results"
+              ],
+              "state_id": "ward_034_cp_002_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The encounter remains active and is not in a terminal state",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_002_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Malignant neoplasm of the esophagus (admission diagnosis)",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_002_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [],
+          "management_state": {
+            "canonical_en": "Inpatient tumor assessment and treatment-preparation stage; currently does not support stopping investigation or directly transitioning to follow-up.",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission",
+              "ward_034:img:visit_01_results",
+              "ward_034:lab:visit_01_results"
+            ],
+            "state_id": "ward_034_cp_002_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Compared with the previous checkpoint, an ECG and a laboratory summary are newly available: the ECG is documented as normal and the laboratory summary lists no interpretable abnormality. These data are insufficient to complete staging or establish treatment readiness.",
+              "linked_evidence_ids": [
+                "ward_034:img:visit_01_results",
+                "ward_034:lab:visit_01_results"
+              ],
+              "state_id": "ward_034_cp_002_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [],
+          "treatment_readiness": {
+            "canonical_en": "Not yet sufficiently determined; the ECG is recorded as normal, and the laboratory summary does not list abnormalities that can explain it, but assessment is still needed in combination with complete laboratory data, pathological staging, and the specific treatment regimen.",
+            "linked_evidence_ids": [
+              "ward_034:img:visit_01_results",
+              "ward_034:lab:visit_01_results",
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "state_id": "ward_034_cp_002_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "The admission diagnosis must not be treated as a complete pathology or staging conclusion.",
+            "“No explainable abnormalities listed” in a laboratory summary must not be restated as all laboratory indicators being normal.",
+            "Safe chemotherapy cannot be confirmed solely on the basis of a normal electrocardiogram or laboratory summary when the specific chemotherapy regimen and complete pre-treatment assessment are not clarified."
+          ],
+          "critical_omission_rules_en": [
+            "Pathology, staging, the specific treatment regimen, and complete laboratory data should continue to be verified.",
+            "Before the above key information is sufficiently clarified, investigation should not be stopped or directly transitioned to routine follow-up."
+          ],
+          "preliminary_risk_triggers_en": []
+        },
+        "stopping": {
+          "decision": "continue_investigation",
+          "rationale_en": "Current evidence confirms the inpatient oncology context, a normal ECG, and no interpretable abnormality listed in the laboratory summary, but it does not complete staging or establish readiness for a specific chemotherapy regimen. Investigation and treatment-readiness assessment should continue; stopping or transitioning to follow-up is not currently appropriate.",
+          "remaining_blockers_en": [
+            "Complete pathology and staging information are insufficient",
+            "Information on the specific maintenance-chemotherapy regimen, treatment goal, and treatment course is insufficient.",
+            "Complete laboratory values and pre-treatment safety assessment are insufficient."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_034_cp_002",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_034:ehr:visit_01_admission",
+          "ward_034:img:visit_01_results",
+          "ward_034:lab:visit_01_results"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_034:ehr:longitudinal_terminal",
+          "ward_034:ehr:visit_01_outcome",
+          "ward_034:tx:visit_01_treatment"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_034",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_034_s2_node_001_completed": true,
+            "ward_034_s2_node_002_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Malignant neoplasm of the esophagus",
+            "age_years": 59,
+            "initial_time": "2124-01-08T13:03:39+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-01-09T09:08:33+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_034:ehr:visit_01_admission",
+            "ward_034:img:visit_01_results",
+            "ward_034:lab:visit_01_results"
+          ]
+        },
+        "public_snapshot_sha256": "11b8ec9c07dc79d1b75f219b13535701bf9bb99f47265c919c816bb0964b0a37",
+        "public_time": "2124-01-09T09:08:33+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "action_selection"
+        ]
+      },
+      "sequence_index": 2
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_034:ehr:visit_01_admission",
+            "interpretation_en": "The admission record documents malignant neoplasm of the esophagus and a treatment-related diagnosis of maintenance chemotherapy for malignancy.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_034:img:visit_01_results",
+            "interpretation_en": "The ECG conclusion during this hospitalization is normal; this supports no documented ECG abnormality but does not establish tumor staging or treatment response.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_034:lab:visit_01_results",
+            "interpretation_en": "The current deidentified laboratory summary lists no interpretable abnormal results; detailed values and complete interpretability are limited.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_034:tx:visit_01_treatment",
+            "interpretation_en": "Intravenous injection of chemotherapeutic drugs is documented during this hospitalization.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_034_cp_003_action_001",
+              "ward_034_cp_003_action_002"
+            ],
+            "claim_ids": [
+              "ward_034_cp_003_claim_001",
+              "ward_034_cp_003_claim_002"
+            ],
+            "evidence_id": "ward_034:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_034_cp_003_state_diagnoses_001",
+              "ward_034_cp_003_state_active_problems_001",
+              "ward_034_cp_003_state_blockers_001",
+              "ward_034_cp_003_state_critical_facts_to_retain_001",
+              "ward_034_cp_003_state_critical_facts_to_retain_002",
+              "ward_034_cp_003_state_critical_facts_to_retain_003",
+              "ward_034_cp_003_state_facts_to_retract_or_correct_001",
+              "ward_034_cp_003_state_required_delta_from_previous_checkpoint_002",
+              "ward_034_cp_003_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [],
+            "claim_ids": [
+              "ward_034_cp_003_claim_003"
+            ],
+            "evidence_id": "ward_034:img:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_034_cp_003_state_resolved_problems_001",
+              "ward_034_cp_003_state_critical_facts_to_retain_005",
+              "ward_034_cp_003_state_facts_to_retract_or_correct_001",
+              "ward_034_cp_003_state_required_delta_from_previous_checkpoint_002",
+              "ward_034_cp_003_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_034_cp_003_action_002"
+            ],
+            "claim_ids": [
+              "ward_034_cp_003_claim_004"
+            ],
+            "evidence_id": "ward_034:lab:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_034_cp_003_state_active_problems_002",
+              "ward_034_cp_003_state_blockers_002",
+              "ward_034_cp_003_state_critical_facts_to_retain_006",
+              "ward_034_cp_003_state_facts_to_retract_or_correct_001",
+              "ward_034_cp_003_state_required_delta_from_previous_checkpoint_002",
+              "ward_034_cp_003_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_034_cp_003_action_001",
+              "ward_034_cp_003_action_002"
+            ],
+            "claim_ids": [
+              "ward_034_cp_003_claim_005"
+            ],
+            "evidence_id": "ward_034:tx:visit_01_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_034_cp_003_state_active_problems_001",
+              "ward_034_cp_003_state_active_problems_002",
+              "ward_034_cp_003_state_blockers_002",
+              "ward_034_cp_003_state_critical_facts_to_retain_004",
+              "ward_034_cp_003_state_required_delta_from_previous_checkpoint_001",
+              "ward_034_cp_003_state_required_delta_from_previous_checkpoint_002",
+              "ward_034_cp_003_state_treatment_readiness_001",
+              "ward_034_cp_003_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "esophageal malignancy",
+              "malignant tumor of the esophagus"
+            ],
+            "canonical_en": "The current principal diagnosis is malignant neoplasm of the esophagus.",
+            "claim_id": "ward_034_cp_003_claim_001",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "maintenance chemotherapy context",
+              "chemotherapy-related admission"
+            ],
+            "canonical_en": "The current hospitalization includes a treatment context of maintenance chemotherapy for malignancy.",
+            "claim_id": "ward_034_cp_003_claim_002",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "normal ECG",
+              "electrocardiogram within normal limits"
+            ],
+            "canonical_en": "The publicly available ECG conclusion is within normal limits.",
+            "claim_id": "ward_034_cp_003_claim_003",
+            "linked_evidence_ids": [
+              "ward_034:img:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_034:img:visit_01_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "no interpretable laboratory abnormality reported",
+              "laboratory summary without listed abnormalities"
+            ],
+            "canonical_en": "The current laboratory summary lists no interpretable abnormal results, but complete clinical interpretability of the laboratory data is limited.",
+            "claim_id": "ward_034_cp_003_claim_004",
+            "linked_evidence_ids": [
+              "ward_034:lab:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_034:lab:visit_01_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "IV chemotherapy documented",
+              "intravenous antineoplastic treatment"
+            ],
+            "canonical_en": "Intravenous chemotherapy administration is documented during this hospitalization.",
+            "claim_id": "ward_034_cp_003_claim_005",
+            "linked_evidence_ids": [
+              "ward_034:tx:visit_01_treatment"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_034:tx:visit_01_treatment"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "continue oncology-directed chemotherapy management",
+              "verify chemotherapy administration and tolerance"
+            ],
+            "action_id": "ward_034_cp_003_action_001",
+            "action_scope": "recorded",
+            "canonical_action_en": "Continue current inpatient chemotherapy management under the oncology team, verifying administered agents, doses, cycle details, and tolerance.",
+            "canonical_prohibited_action_en": null,
+            "category": "acceptable_recorded",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "During the current hospitalization and before the next treatment decision",
+            "indication_en": "There are inpatient chemotherapy records and hospitalization remains active.",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission",
+              "ward_034:tx:visit_01_treatment"
+            ],
+            "prerequisites_en": [
+              "The responsible oncology team confirms the treatment regimen.",
+              "Verify the administration record and the patient's current clinical status."
+            ],
+            "problem_en": "Inpatient chemotherapy management for esophageal malignancy.",
+            "target_and_laterality_en": "Systemic antitumor treatment; laterality not applicable."
+          },
+          {
+            "acceptable_aliases_en": [
+              "chemotherapy safety monitoring",
+              "review CBC and organ function before further treatment"
+            ],
+            "action_id": "ward_034_cp_003_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Complete and review chemotherapy-related monitoring, including complete blood count, biochemistry, organ function, and toxicity assessment; adjust treatment as clinically indicated.",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Before continuing or adding chemotherapy and during hospitalization, as clinically needed.",
+            "indication_en": "The current laboratory summary lists no abnormalities but lacks interpretable complete results, and inpatient treatment is still ongoing.",
+            "linked_evidence_ids": [
+              "ward_034:lab:visit_01_results",
+              "ward_034:tx:visit_01_treatment",
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "prerequisites_en": [
+              "Obtain complete interpretable laboratory results.",
+              "Review in conjunction with symptoms, signs, and prior treatment records."
+            ],
+            "problem_en": "Chemotherapy safety and conditions for subsequent treatment have not yet been completely confirmed by the current summary",
+            "target_and_laterality_en": "Systemic treatment safety monitoring; laterality not applicable"
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Current inpatient oncology treatment management",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission",
+                "ward_034:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_034_cp_003_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Intravenous chemotherapy has been documented; continued assessment of the treatment course and safety is needed",
+              "linked_evidence_ids": [
+                "ward_034:tx:visit_01_treatment",
+                "ward_034:lab:visit_01_results"
+              ],
+              "state_id": "ward_034_cp_003_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "Lack of complete interpretable tumor staging, histology, and efficacy information",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_003_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current summary is insufficient to confirm all chemotherapy-related safety indicators and conditions for subsequent disposition.",
+              "linked_evidence_ids": [
+                "ward_034:lab:visit_01_results",
+                "ward_034:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_034_cp_003_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "No released record of discharge or transfer to follow-up arrangements has been seen.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_003_state_blockers_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "59-year-old man, hospitalized in oncology.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_003_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The principal diagnosis is esophageal malignancy",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_003_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The current hospitalization record includes a maintenance chemotherapy background.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_003_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Intravenous chemotherapy drugs have been recorded during this hospitalization.",
+              "linked_evidence_ids": [
+                "ward_034:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_034_cp_003_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "ECG conclusion: normal.",
+              "linked_evidence_ids": [
+                "ward_034:img:visit_01_results"
+              ],
+              "state_id": "ward_034_cp_003_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The laboratory summary does not list explainable abnormalities, but the information is incomplete",
+              "linked_evidence_ids": [
+                "ward_034:lab:visit_01_results"
+              ],
+              "state_id": "ward_034_cp_003_state_critical_facts_to_retain_006",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Esophageal malignant tumor (confirmed by the admission record; specific staging and histological information have not been disclosed).",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_003_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "A normal electrocardiogram or no abnormalities listed in a laboratory summary must not be interpreted as tumor remission, clear staging, or confirmation of all chemotherapy safety.",
+              "linked_evidence_ids": [
+                "ward_034:img:visit_01_results",
+                "ward_034:lab:visit_01_results",
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_003_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Undisclosed future examination results, treatment efficacy, or discharge arrangements must not be inferred.",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_003_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "Inpatient treatment is still ongoing or disposition has not yet been completed; it is currently inappropriate to regard definitive treatment, efficacy management, or continuity follow-up arrangements as completed.",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission",
+              "ward_034:tx:visit_01_treatment"
+            ],
+            "state_id": "ward_034_cp_003_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "Newly available evidence documents intravenous chemotherapy during the hospitalization.",
+              "linked_evidence_ids": [
+                "ward_034:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_034_cp_003_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Compared with the previous checkpoint, no explicit clinical change is shown in the diagnosis, ECG, or laboratory summary; the treatment state is updated to documented chemotherapy administration.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission",
+                "ward_034:img:visit_01_results",
+                "ward_034:lab:visit_01_results",
+                "ward_034:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_034_cp_003_state_required_delta_from_previous_checkpoint_002",
+              "status": "state_update",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "Currently publicly available electrocardiogram abnormalities: none seen; the electrocardiogram conclusion is normal",
+              "linked_evidence_ids": [
+                "ward_034:img:visit_01_results"
+              ],
+              "state_id": "ward_034_cp_003_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "There is a chemotherapy treatment record, and the electrocardiogram is normal and the laboratory summary lists no explainable abnormalities; however, the current summary alone cannot confirm that a complete chemotherapy safety assessment or preparation for subsequent courses has been completed.",
+            "linked_evidence_ids": [
+              "ward_034:tx:visit_01_treatment",
+              "ward_034:img:visit_01_results",
+              "ward_034:lab:visit_01_results"
+            ],
+            "state_id": "ward_034_cp_003_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [
+            "Must not fabricate undisclosed staging, histology, treatment efficacy, toxicity, or discharge outcome.",
+            "Chemotherapy must not be judged completely safe solely on the basis of a normal electrocardiogram and laboratory summary listing no abnormalities.",
+            "Do not interpret one recorded chemotherapy administration as the entire treatment plan having been completed."
+          ],
+          "critical_omission_rules_en": [
+            "If chemotherapy drugs, doses, courses, and tolerability have not been checked, treatment completion should not be confirmed.",
+            "If sufficient chemotherapy-related safety monitoring has not been obtained, subsequent treatment should not be rashly continued or inpatient assessment stopped.",
+            "Without clear discharge and continuous follow-up arrangements, it should not be determined that transition to follow-up is safe."
+          ],
+          "preliminary_risk_triggers_en": [
+            "Clinical review is required.",
+            "Current evidence is insufficient to support stopping inpatient treatment or directly transitioning to follow-up",
+            "Do not overextrapolate summary negative results."
+          ]
+        },
+        "stopping": {
+          "decision": "continue_treatment",
+          "rationale_en": "Intravenous chemotherapy is documented, but the encounter remains active. The available ECG and laboratory summary do not establish treatment completion, discharge readiness, or safe transition to follow-up. Oncology treatment review and safety assessment should continue; stopping or directly transitioning to follow-up is not supported at this time.",
+          "remaining_blockers_en": [
+            "Inpatient disposition remains active.",
+            "Complete interpretable chemotherapy safety-monitoring information is lacking.",
+            "No discharge, referral, or continuous follow-up arrangements have been disclosed",
+            "Tumor staging, response, and treatment-completion status have not been disclosed."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_034_cp_003",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_034:ehr:visit_01_admission",
+          "ward_034:img:visit_01_results",
+          "ward_034:lab:visit_01_results",
+          "ward_034:tx:visit_01_treatment"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_034:ehr:longitudinal_terminal",
+          "ward_034:ehr:visit_01_outcome"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_034",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_034_s2_node_001_completed": true,
+            "ward_034_s2_node_002_completed": true,
+            "ward_034_s2_node_003_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Malignant neoplasm of the esophagus",
+            "age_years": 59,
+            "initial_time": "2124-01-08T13:03:39+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-01-10T08:00:00+08:00",
+          "stage": "S2",
+          "visible_evidence_ids": [
+            "ward_034:ehr:visit_01_admission",
+            "ward_034:img:visit_01_results",
+            "ward_034:lab:visit_01_results",
+            "ward_034:tx:visit_01_treatment"
+          ]
+        },
+        "public_snapshot_sha256": "3448648111919066e8713b1b8b97c89f3d4533518efd85c1bb5eff9cffbe2fd4",
+        "public_time": "2124-01-10T08:00:00+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 3
+    },
+    {
+      "answer": {
+        "layer1_evidence": [
+          {
+            "evidence_id": "ward_034:ehr:visit_01_admission",
+            "interpretation_en": "The admission diagnoses were malignant neoplasm of the esophagus and maintenance chemotherapy for malignant neoplasm, supporting the current oncology treatment context.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_034:ehr:visit_01_outcome",
+            "interpretation_en": "The most recent hospitalization documented maintenance chemotherapy for malignancy with an improved treatment outcome; this supports clinical improvement after treatment but does not establish cure or completion of the chemotherapy course.",
+            "role": "critical"
+          },
+          {
+            "evidence_id": "ward_034:img:visit_01_results",
+            "interpretation_en": "The electrocardiogram documented during hospitalization was within normal limits; this supports treatment-tolerance assessment but does not independently establish eligibility for continued chemotherapy.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_034:lab:visit_01_results",
+            "interpretation_en": "The available laboratory summary lists no interpretable abnormal results; because individual values are not provided, this does not exclude all chemotherapy-related risks.",
+            "role": "supporting"
+          },
+          {
+            "evidence_id": "ward_034:tx:visit_01_treatment",
+            "interpretation_en": "Intravenous administration of chemotherapeutic drugs was documented during hospitalization, confirming that antineoplastic treatment was administered during this admission.",
+            "role": "critical"
+          }
+        ],
+        "layer2_utilization_links": [
+          {
+            "action_ids": [
+              "ward_034_cp_004_action_001"
+            ],
+            "claim_ids": [
+              "ward_034_cp_004_claim_001"
+            ],
+            "evidence_id": "ward_034:ehr:visit_01_admission",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_034_cp_004_state_diagnoses_001",
+              "ward_034_cp_004_state_active_problems_001",
+              "ward_034_cp_004_state_critical_facts_to_retain_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_034_cp_004_action_001",
+              "ward_034_cp_004_action_002",
+              "ward_034_cp_004_action_003"
+            ],
+            "claim_ids": [
+              "ward_034_cp_004_claim_003"
+            ],
+            "evidence_id": "ward_034:ehr:visit_01_outcome",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_034_cp_004_state_resolved_problems_001",
+              "ward_034_cp_004_state_critical_facts_to_retain_003",
+              "ward_034_cp_004_state_facts_to_retract_or_correct_001",
+              "ward_034_cp_004_state_required_delta_from_previous_checkpoint_001",
+              "ward_034_cp_004_state_required_delta_from_previous_checkpoint_002",
+              "ward_034_cp_004_state_management_state_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_034_cp_004_action_001"
+            ],
+            "claim_ids": [
+              "ward_034_cp_004_claim_005"
+            ],
+            "evidence_id": "ward_034:img:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_034_cp_004_state_critical_facts_to_retain_004",
+              "ward_034_cp_004_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_034_cp_004_action_001",
+              "ward_034_cp_004_action_003"
+            ],
+            "claim_ids": [
+              "ward_034_cp_004_claim_004"
+            ],
+            "evidence_id": "ward_034:lab:visit_01_results",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_034_cp_004_state_critical_facts_to_retain_005",
+              "ward_034_cp_004_state_facts_to_retract_or_correct_003",
+              "ward_034_cp_004_state_treatment_readiness_001"
+            ]
+          },
+          {
+            "action_ids": [
+              "ward_034_cp_004_action_001",
+              "ward_034_cp_004_action_002",
+              "ward_034_cp_004_action_003"
+            ],
+            "claim_ids": [
+              "ward_034_cp_004_claim_002"
+            ],
+            "evidence_id": "ward_034:tx:visit_01_treatment",
+            "expected_outcome": "retrieved_and_used_correctly",
+            "state_ids": [
+              "ward_034_cp_004_state_active_problems_001",
+              "ward_034_cp_004_state_active_problems_002",
+              "ward_034_cp_004_state_critical_facts_to_retain_002",
+              "ward_034_cp_004_state_facts_to_retract_or_correct_002",
+              "ward_034_cp_004_state_required_delta_from_previous_checkpoint_001",
+              "ward_034_cp_004_state_required_delta_from_previous_checkpoint_002",
+              "ward_034_cp_004_state_treatment_readiness_001",
+              "ward_034_cp_004_state_management_state_001"
+            ]
+          }
+        ],
+        "layer3_claims": [
+          {
+            "acceptable_aliases_en": [
+              "Esophageal malignancy",
+              "Esophageal cancer diagnosis"
+            ],
+            "canonical_en": "Malignant neoplasm of the esophagus is the current primary diagnosis",
+            "claim_id": "ward_034_cp_004_claim_001",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_034:ehr:visit_01_admission"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Intravenous antineoplastic treatment administered",
+              "Chemotherapy delivered intravenously"
+            ],
+            "canonical_en": "Intravenous chemotherapy was administered during this hospitalization",
+            "claim_id": "ward_034_cp_004_claim_002",
+            "linked_evidence_ids": [
+              "ward_034:tx:visit_01_treatment"
+            ],
+            "status": "completed",
+            "supporting_evidence_ids": [
+              "ward_034:tx:visit_01_treatment"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Improved treatment outcome",
+              "Clinical improvement documented at discharge assessment"
+            ],
+            "canonical_en": "The treatment outcome was documented as improved for the most recent hospitalization",
+            "claim_id": "ward_034_cp_004_claim_003",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_outcome"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_034:ehr:visit_01_outcome"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "No listed interpretable abnormal laboratory results",
+              "No interpretable abnormal labs reported in the summary"
+            ],
+            "canonical_en": "No interpretable laboratory abnormality is displayed in the current summary",
+            "claim_id": "ward_034_cp_004_claim_004",
+            "linked_evidence_ids": [
+              "ward_034:lab:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_034:lab:visit_01_results"
+            ]
+          },
+          {
+            "acceptable_aliases_en": [
+              "Normal ECG",
+              "Electrocardiogram within normal limits"
+            ],
+            "canonical_en": "The electrocardiogram was within normal limits in the available record",
+            "claim_id": "ward_034_cp_004_claim_005",
+            "linked_evidence_ids": [
+              "ward_034:img:visit_01_results"
+            ],
+            "status": "confirmed",
+            "supporting_evidence_ids": [
+              "ward_034:img:visit_01_results"
+            ]
+          }
+        ],
+        "layer5_actions": [
+          {
+            "acceptable_aliases_en": [
+              "Confirm the oncology treatment plan",
+              "Review maintenance chemotherapy continuation and schedule"
+            ],
+            "action_id": "ward_034_cp_004_action_001",
+            "action_scope": "prospective",
+            "canonical_action_en": "Have oncology confirm the maintenance chemotherapy plan, course status, and next-step timing",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Confirm before the end of management during this hospitalization or before the next antitumor treatment",
+            "indication_en": "There are maintenance chemotherapy diagnoses and records of intravenous chemotherapy administration, but one treatment and an improvement outcome are insufficient to prove completion of the treatment course.",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_admission",
+              "ward_034:img:visit_01_results",
+              "ward_034:lab:visit_01_results",
+              "ward_034:tx:visit_01_treatment",
+              "ward_034:ehr:visit_01_outcome"
+            ],
+            "prerequisites_en": [
+              "Regimen verification by oncology in conjunction with the existing medical record",
+              "Review applicable pretreatment laboratory and general-status assessments as clinically needed."
+            ],
+            "problem_en": "Treatment of esophageal malignant tumor remains in the continuous management stage; current evidence does not clarify complete-course status or arrangements for the next treatment.",
+            "target_and_laterality_en": "Systemic antitumor treatment; left/right laterality not applicable"
+          },
+          {
+            "acceptable_aliases_en": [
+              "Arrange oncology follow-up and discharge continuity",
+              "Provide follow-up instructions and return precautions"
+            ],
+            "action_id": "ward_034_cp_004_action_002",
+            "action_scope": "prospective",
+            "canonical_action_en": "Complete formal discharge or follow-up continuity planning and provide return precautions",
+            "canonical_prohibited_action_en": null,
+            "category": "necessary",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Complete before leaving the hospital; if not leaving the hospital for the time being, complete when the management plan for this hospitalization is determined",
+            "indication_en": "The patient is in the management phase after inpatient oncology treatment, requiring linkage of the improved status with subsequent oncology management.",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_outcome",
+              "ward_034:tx:visit_01_treatment"
+            ],
+            "prerequisites_en": [
+              "Confirm the current clinical status and discharge conditions.",
+              "Clarify subsequent oncology treatment and follow-up arrangements"
+            ],
+            "problem_en": "Current records show post-treatment improvement, but do not clearly document a formal discharge decision, follow-up time, or continuity-of-care arrangements.",
+            "target_and_laterality_en": "Discharge and continuity of oncology specialty care; left/right laterality not applicable"
+          },
+          {
+            "acceptable_aliases_en": [
+              "Monitor chemotherapy toxicity",
+              "Plan response assessment after treatment"
+            ],
+            "action_id": "ward_034_cp_004_action_003",
+            "action_scope": "recorded",
+            "canonical_action_en": "Document and monitor post-treatment symptoms, toxicities, and the need for subsequent response assessment",
+            "canonical_prohibited_action_en": null,
+            "category": "acceptable_recorded",
+            "critical_omission_if_missing": true,
+            "deadline_or_time_window_en": "Started during the current hospitalization management period and continued in subsequent oncology follow-up",
+            "indication_en": "There is a need to convert general improvement records into sustainably monitorable tumor treatment management information.",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_outcome",
+              "ward_034:lab:visit_01_results",
+              "ward_034:tx:visit_01_treatment"
+            ],
+            "prerequisites_en": [
+              "Obtain the patient's current symptoms and signs",
+              "Determine subsequent assessment items according to the oncology plan"
+            ],
+            "problem_en": "Intravenous chemotherapy has been administered and the treatment outcome is recorded as improved, but specific symptoms, adverse reactions, and efficacy indicators are lacking.",
+            "target_and_laterality_en": "Post-systemic-treatment status; left/right laterality not applicable."
+          }
+        ],
+        "layer4_state": {
+          "active_problems": [
+            {
+              "canonical_en": "Continued oncology specialty management and continuity assessment of maintenance chemotherapy are needed.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission",
+                "ward_034:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_034_cp_004_state_active_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Intravenous chemotherapy was received during a previous hospitalization; completion status of the specific treatment course is unclear",
+              "linked_evidence_ids": [
+                "ward_034:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_034_cp_004_state_active_problems_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Discharge or subsequent continuity-of-care arrangements need to be completed",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_004_state_active_problems_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "blockers": [
+            {
+              "canonical_en": "There is no clear maintenance chemotherapy regimen, timing of the next course, or efficacy assessment plan",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_004_state_blockers_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Current evidence does not clearly document a formal discharge decision or specific follow-up arrangement",
+              "linked_evidence_ids": [],
+              "state_id": "ward_034_cp_004_state_blockers_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "critical_facts_to_retain": [
+            {
+              "canonical_en": "Esophageal malignant tumor is the current primary diagnosis.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_004_state_critical_facts_to_retain_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "Intravenous chemotherapy was administered during this hospitalization",
+              "linked_evidence_ids": [
+                "ward_034:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_034_cp_004_state_critical_facts_to_retain_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The most recent inpatient treatment outcome was recorded as improvement",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_034_cp_004_state_critical_facts_to_retain_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The electrocardiogram is normal in the current record",
+              "linked_evidence_ids": [
+                "ward_034:img:visit_01_results"
+              ],
+              "state_id": "ward_034_cp_004_state_critical_facts_to_retain_004",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The laboratory summary does not list interpretable abnormal results",
+              "linked_evidence_ids": [
+                "ward_034:lab:visit_01_results"
+              ],
+              "state_id": "ward_034_cp_004_state_critical_facts_to_retain_005",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "diagnoses": [
+            {
+              "canonical_en": "Esophageal malignant tumor (current hospitalization diagnosis).",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_admission"
+              ],
+              "state_id": "ward_034_cp_004_state_diagnoses_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "facts_to_retract_or_correct": [
+            {
+              "canonical_en": "Treatment improvement cannot be restated as cure, complete remission, or disappearance of disease",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_034_cp_004_state_facts_to_retract_or_correct_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "A single record of intravenous chemotherapy cannot be restated as the entire chemotherapy course having been completed",
+              "linked_evidence_ids": [
+                "ward_034:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_034_cp_004_state_facts_to_retract_or_correct_002",
+              "status": null,
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The absence of listed explainable laboratory abnormalities cannot be restated as all laboratory indicators being normal.",
+              "linked_evidence_ids": [
+                "ward_034:lab:visit_01_results"
+              ],
+              "state_id": "ward_034_cp_004_state_facts_to_retract_or_correct_003",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "management_state": {
+            "canonical_en": "The current status is the continuity-management stage after inpatient oncology treatment; post-treatment improvement has been recorded, but oncology treatment cannot be stopped or the treatment course considered complete on this basis.",
+            "linked_evidence_ids": [
+              "ward_034:ehr:visit_01_outcome",
+              "ward_034:tx:visit_01_treatment"
+            ],
+            "state_id": "ward_034_cp_004_state_management_state_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          },
+          "required_delta_from_previous_checkpoint": [
+            {
+              "canonical_en": "A new hospitalization outcome record was added, documenting improvement after maintenance chemotherapy.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_outcome",
+                "ward_034:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_034_cp_004_state_required_delta_from_previous_checkpoint_001",
+              "status": "new_evidence",
+              "supporting_evidence_ids": []
+            },
+            {
+              "canonical_en": "The state is updated from treatment-delivery evidence alone to documented post-treatment improvement, while ongoing oncology management remains necessary and treatment completion or safe cessation is not established.",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_outcome",
+                "ward_034:tx:visit_01_treatment"
+              ],
+              "state_id": "ward_034_cp_004_state_required_delta_from_previous_checkpoint_002",
+              "status": "state_update",
+              "supporting_evidence_ids": []
+            }
+          ],
+          "resolved_problems": [
+            {
+              "canonical_en": "The treatment outcome in this hospitalization record is improved",
+              "linked_evidence_ids": [
+                "ward_034:ehr:visit_01_outcome"
+              ],
+              "state_id": "ward_034_cp_004_state_resolved_problems_001",
+              "status": null,
+              "supporting_evidence_ids": []
+            }
+          ],
+          "treatment_readiness": {
+            "canonical_en": "There is a record of intravenous chemotherapy administration, and the electrocardiogram is normal and the laboratory summary lists no explainable abnormalities; however, this is insufficient to confirm that complete treatment conditions or regimen preparation for the next chemotherapy have been completed.",
+            "linked_evidence_ids": [
+              "ward_034:tx:visit_01_treatment",
+              "ward_034:img:visit_01_results",
+              "ward_034:lab:visit_01_results"
+            ],
+            "state_id": "ward_034_cp_004_state_treatment_readiness_001",
+            "status": null,
+            "supporting_evidence_ids": []
+          }
+        },
+        "safety": {
+          "hard_failure_rules_en": [],
+          "critical_omission_rules_en": [
+            "“Improved treatment outcome” must not be interpreted as cure, complete remission, or permission to stop all tumor treatment.",
+            "Do not assume maintenance chemotherapy has been completed before confirming the subsequent plan, discharge criteria, and continuity-of-care arrangements."
+          ],
+          "preliminary_risk_triggers_en": []
+        },
+        "stopping": {
+          "decision": "continue_treatment",
+          "rationale_en": "The available evidence confirms esophageal malignancy, intravenous chemotherapy administration, and an improved treatment outcome, but does not establish completion of the chemotherapy course, remission, or completed continuity planning. Oncology management should therefore continue, with the subsequent regimen and disposition plan clarified.",
+          "remaining_blockers_en": [
+            "The subsequent maintenance chemotherapy plan, course status, and timing of the next step are unclear",
+            "A formal discharge decision and specific oncology follow-up arrangements are not specified in the current evidence."
+          ]
+        }
+      },
+      "checkpoint_id": "ward_034_cp_004",
+      "question": {
+        "allowed_evidence_ids": [
+          "ward_034:ehr:visit_01_admission",
+          "ward_034:ehr:visit_01_outcome",
+          "ward_034:img:visit_01_results",
+          "ward_034:lab:visit_01_results",
+          "ward_034:tx:visit_01_treatment"
+        ],
+        "evaluation_targets": [
+          "layer1",
+          "layer2",
+          "layer3",
+          "layer4",
+          "layer5",
+          "safety",
+          "stopping"
+        ],
+        "future_forbidden_evidence_ids": [
+          "ward_034:ehr:longitudinal_terminal"
+        ],
+        "public_snapshot": {
+          "case_id": "ward_034",
+          "environment_state_facts": {
+            "encounter_active": true,
+            "terminal": false,
+            "ward_034_s2_node_001_completed": true,
+            "ward_034_s2_node_002_completed": true,
+            "ward_034_s2_node_003_completed": true,
+            "ward_034_s2_node_004_completed": true
+          },
+          "public_context": {
+            "admission_diagnosis": "Malignant neoplasm of the esophagus",
+            "age_years": 59,
+            "initial_time": "2124-01-08T13:03:39+08:00",
+            "setting": "longitudinal_inpatient_oncology",
+            "sex": "Male"
+          },
+          "public_time": "2124-01-11T01:18:21+08:00",
+          "stage": "S3",
+          "visible_evidence_ids": [
+            "ward_034:ehr:visit_01_admission",
+            "ward_034:ehr:visit_01_outcome",
+            "ward_034:img:visit_01_results",
+            "ward_034:lab:visit_01_results",
+            "ward_034:tx:visit_01_treatment"
+          ]
+        },
+        "public_snapshot_sha256": "dcb99d5a9cc15a9f72d0d4317ca75e31bf41419103edc9e957f09055dc38ca88",
+        "public_time": "2124-01-11T01:18:21+08:00",
+        "question_en": "At this time point, use only available evidence to identify key evidence, supported claims, patient state, appropriate next actions, and whether stopping or follow-up is safe.",
+        "question_types": [
+          "evidence_identification",
+          "claim_formation",
+          "state_update",
+          "stopping_decision"
+        ]
+      },
+      "sequence_index": 4
+    }
+  ],
+  "milestone_candidates": [
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "The principal diagnosis is clearly recorded as esophageal malignant tumor in the inpatient record, and the responsible specialty confirms it as the current treatment target."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_034_ms_01",
+      "milestone_type": "diagnostic_closure",
+      "name_en": "Diagnostic closure",
+      "partial_criteria_en": [
+        "There is an inpatient diagnosis of malignant neoplasm of the esophagus, but current evidence does not provide the pathological subtype, stage, or complete diagnostic basis."
+      ],
+      "safety_invalidation_rules_en": [
+        "If subsequent evidence shows that the current diagnostic record is incorrect or formally negated, this milestone should become invalid."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Complete assessment of staging or treatment conditions related to subsequent oncology treatment, and have oncology confirm that treatment may continue according to a defined regimen."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_034_ms_02",
+      "milestone_type": "staging_or_treatment_readiness",
+      "name_en": "Staging or treatment readiness",
+      "partial_criteria_en": [
+        "There is a maintenance chemotherapy background, normal electrocardiogram, and unlisted explainable laboratory abnormalities, but explicit staging, specific laboratory values, and confirmation of the subsequent plan are lacking."
+      ],
+      "safety_invalidation_rules_en": [
+        "If uncorrected severe organ function abnormalities or other treatment contraindications are found, this milestone should be marked as a safety failure."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "There is clear evidence that definitive treatment for the current tumor target has been completed, and the specialty record documents treatment-completion status."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_034_ms_03",
+      "milestone_type": "definitive_intervention",
+      "name_en": "Definitive intervention",
+      "partial_criteria_en": [
+        "One inpatient intravenous chemotherapy administration has been performed, but current evidence does not demonstrate that this is definitive treatment or that the entire plan has been completed."
+      ],
+      "safety_invalidation_rules_en": [
+        "If a safety issue unsuitable for treatment is found before continuing treatment, regarding it as complete should be suspended."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "Complete post-treatment toxicity monitoring, efficacy assessment, and subsequent management planning, and clearly document the corresponding results."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_034_ms_04",
+      "milestone_type": "postoperative_or_response_management",
+      "name_en": "Postoperative or response management",
+      "partial_criteria_en": [
+        "The current record shows only improved treatment outcome and that chemotherapy has been administered, but provides no specific response indicators, toxicity assessment, or complete subsequent management plan."
+      ],
+      "safety_invalidation_rules_en": [
+        "If untreated severe treatment-related adverse reactions occur, determination of completion of this milestone should be suspended."
+      ]
+    },
+    {
+      "applicable": true,
+      "clinical_review_status": "primary_review_complete",
+      "completion_criteria_en": [
+        "A formal discharge or referral decision has been documented, and oncology follow-up, timing of subsequent treatment, and necessary indications for return to hospital have been clarified."
+      ],
+      "current_status": "partial",
+      "milestone_id": "ward_034_ms_05",
+      "milestone_type": "disposition_and_continuity",
+      "name_en": "Disposition and continuity of care",
+      "partial_criteria_en": [
+        "There is a discharge-outcome summary and the treatment outcome is improvement, but current evidence does not clarify a formal discharge decision or specific continuity follow-up arrangements."
+      ],
+      "safety_invalidation_rules_en": [
+        "If the current status is unstable or necessary discharge-safety conditions are lacking, do not mark this milestone as completed."
+      ]
+    }
+  ],
+  "normalized_evidence": [
+    {
+      "available_time": "2124-01-08T16:24:28+08:00",
+      "available_time_utc": "2124-01-08T08:24:28Z",
+      "case_id": "ward_034",
+      "clinical_time": "2124-01-08T13:03:39+08:00",
+      "clinical_time_utc": "2124-01-08T05:03:39Z",
+      "content_summary": "Admitting department: Oncology; admission diagnosis: malignant neoplasm of the esophagus; structured diagnoses: malignant neoplasm of the esophagus and maintenance chemotherapy for malignant neoplasm.",
+      "evidence_id": "ward_034:ehr:visit_01_admission",
+      "laterality": null,
+      "module": "admission_documents",
+      "raw_content": "Admitting department: Oncology; admission diagnosis: malignant neoplasm of the esophagus; structured diagnoses: malignant neoplasm of the esophagus and maintenance chemotherapy for malignant neoplasm.",
+      "record_kind": "deidentified_inpatient_admission_summary",
+      "structured_value": null,
+      "title": "Admission Assessment for Hospitalization No. 1",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-09T09:08:33+08:00",
+      "available_time_utc": "2124-01-09T01:08:33Z",
+      "case_id": "ward_034",
+      "clinical_time": "2124-01-09T09:08:33+08:00",
+      "clinical_time_utc": "2124-01-09T01:08:33Z",
+      "content_summary": "The structured data from this hospitalization include 5 laboratory reports and 36 results. The current deidentified summary does not list any interpretable abnormal results.",
+      "evidence_id": "ward_034:lab:visit_01_results",
+      "laterality": null,
+      "module": "laboratory_results",
+      "raw_content": "The structured data from this hospitalization include 5 laboratory reports and 36 results. The current deidentified summary does not list any interpretable abnormal results.",
+      "record_kind": "deidentified_laboratory_summary",
+      "structured_value": null,
+      "title": "Laboratory Results from the 1th Hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-09T09:08:33+08:00",
+      "available_time_utc": "2124-01-09T01:08:33Z",
+      "case_id": "ward_034",
+      "clinical_time": "2124-01-09T09:08:33+08:00",
+      "clinical_time_utc": "2124-01-09T01:08:33Z",
+      "content_summary": "The structured data for this hospitalization include 1 imaging reports; examination type: electrocardiogram; conclusion summary: electrocardiogram within normal limits.",
+      "evidence_id": "ward_034:img:visit_01_results",
+      "laterality": null,
+      "module": "imaging_results",
+      "raw_content": "The structured data for this hospitalization include 1 imaging reports; examination type: electrocardiogram; conclusion summary: electrocardiogram within normal limits.",
+      "record_kind": "deidentified_imaging_summary",
+      "structured_value": null,
+      "title": "Imaging Results from Hospitalization No. 1",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-10T08:00:00+08:00",
+      "available_time_utc": "2124-01-10T00:00:00Z",
+      "case_id": "ward_034",
+      "clinical_time": "2124-01-10T08:00:00+08:00",
+      "clinical_time_utc": "2124-01-10T00:00:00Z",
+      "content_summary": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "evidence_id": "ward_034:tx:visit_01_treatment",
+      "laterality": null,
+      "module": "antineoplastic_treatments",
+      "raw_content": "The main treatment procedure documented during this hospitalization was intravenous injection of chemotherapeutic drugs.",
+      "record_kind": "deidentified_antineoplastic_treatment_summary",
+      "structured_value": null,
+      "title": "Treatment during the 1th hospitalization",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-11T01:18:21+08:00",
+      "available_time_utc": "2124-01-10T17:18:21Z",
+      "case_id": "ward_034",
+      "clinical_time": "2124-01-11T08:00:00+08:00",
+      "clinical_time_utc": "2124-01-11T00:00:00Z",
+      "content_summary": "Discharge diagnosis from the most recent hospitalization: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "evidence_id": "ward_034:ehr:visit_01_outcome",
+      "laterality": null,
+      "module": "outcome_documents",
+      "raw_content": "Discharge diagnosis from the most recent hospitalization: maintenance chemotherapy for malignant neoplasm; treatment outcome: improved.",
+      "record_kind": "deidentified_inpatient_outcome_summary",
+      "structured_value": null,
+      "title": "Pre-discharge outcome of hospitalization No. 1",
+      "unit": null
+    },
+    {
+      "available_time": "2124-01-11T08:00:00+08:00",
+      "available_time_utc": "2124-01-11T00:00:00Z",
+      "case_id": "ward_034",
+      "clinical_time": "2124-01-11T08:00:00+08:00",
+      "clinical_time_utc": "2124-01-11T00:00:00Z",
+      "content_summary": "A total of 1 hospitalizations were included in the longitudinal observation window; the boundaries of each hospitalization were included in the trajectory visible to the model, and the patient transitioned to follow-up after the final hospitalization.",
+      "evidence_id": "ward_034:ehr:longitudinal_terminal",
+      "laterality": null,
+      "module": "disposition",
+      "raw_content": "A total of 1 hospitalizations were included in the longitudinal observation window; the boundaries of each hospitalization were included in the trajectory visible to the model, and the patient transitioned to follow-up after the final hospitalization.",
+      "record_kind": "deidentified_terminal_summary",
+      "structured_value": null,
+      "title": "Final discharge status at the end of the longitudinal observation period",
+      "unit": null
+    }
+  ],
+  "process_gold": {
+    "status": "source_recorded_not_layer_gold_clinically_validated",
+    "transition_count": 5,
+    "transitions": [
+      {
+        "clock_after": "2124-01-08T16:24:28+08:00",
+        "clock_before": "2124-01-08T13:03:39+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-01-08 oncology admission assessment",
+            "Review the 2124-01-08 oncology admission assessment",
+            "2124-01-08 oncology admission assessment"
+          ],
+          "action_id": "ehr:ward_034:001",
+          "action_type": "review_document",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_034:ehr:visit_01_admission"
+          ],
+          "target": "2124-01-08 oncology admission assessment"
+        },
+        "release_evidence_ids": [
+          "ward_034:ehr:visit_01_admission"
+        ],
+        "sequence_index": 0,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_034_s2_node_001_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_034_s2_node_001"
+      },
+      {
+        "clock_after": "2124-01-09T09:08:33+08:00",
+        "clock_before": "2124-01-08T16:24:28+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "review the 2124-01-08 oncology admission laboratory and imaging results",
+            "Review the 2124-01-08 oncology hospitalization examination results",
+            "2124-01-08 oncology admission laboratory and imaging results"
+          ],
+          "action_id": "ehr:ward_034:002",
+          "action_type": "review_result",
+          "gold_source_type": "ehr_evidence_access",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_034:lab:visit_01_results",
+            "ward_034:img:visit_01_results"
+          ],
+          "target": "2124-01-08 oncology admission laboratory and imaging results"
+        },
+        "release_evidence_ids": [
+          "ward_034:lab:visit_01_results",
+          "ward_034:img:visit_01_results"
+        ],
+        "sequence_index": 1,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_034_s2_node_002_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_034_s2_node_002"
+      },
+      {
+        "clock_after": "2124-01-10T08:00:00+08:00",
+        "clock_before": "2124-01-09T09:08:33+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "start the 2124-01-08 admission recorded antineoplastic therapy",
+            "start the antineoplastic therapy recorded for the 2124-01-08 admission",
+            "2124-01-08 admission recorded antineoplastic therapy"
+          ],
+          "action_id": "ehr:ward_034:003",
+          "action_type": "start_treatment",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_034:tx:visit_01_treatment"
+          ],
+          "target": "2124-01-08 admission recorded antineoplastic therapy"
+        },
+        "release_evidence_ids": [
+          "ward_034:tx:visit_01_treatment"
+        ],
+        "sequence_index": 2,
+        "stage_after": "S2",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_034_s2_node_003_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_034_s2_node_003"
+      },
+      {
+        "clock_after": "2124-01-11T01:18:21+08:00",
+        "clock_before": "2124-01-10T08:00:00+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "monitor final oncology admission treatment outcome",
+            "monitor the final oncology admission treatment outcome",
+            "Monitor the treatment outcome of the final oncology hospitalization",
+            "final oncology admission treatment outcome"
+          ],
+          "action_id": "ehr:ward_034:004",
+          "action_type": "monitor_or_defer",
+          "gold_source_type": "ehr_observed_action",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_034:ehr:visit_01_outcome"
+          ],
+          "target": "final oncology admission treatment outcome"
+        },
+        "release_evidence_ids": [
+          "ward_034:ehr:visit_01_outcome"
+        ],
+        "sequence_index": 3,
+        "stage_after": "S3",
+        "stage_before": "S2",
+        "state_updates": {
+          "ward_034_s2_node_004_completed": true
+        },
+        "terminal": false,
+        "transition_id": "ward_034_s2_node_004"
+      },
+      {
+        "clock_after": "2124-01-11T08:00:00+08:00",
+        "clock_before": "2124-01-11T01:18:21+08:00",
+        "gold_action": {
+          "accepted_action_type_aliases": [],
+          "accepted_target_aliases": [
+            "discharge to oncology follow-up",
+            "discharge to longitudinal oncology follow-up",
+            "Discharge to longitudinal oncology follow-up"
+          ],
+          "action_id": "ehr:ward_034:005",
+          "action_type": "discharge",
+          "gold_source_type": "ehr_derived_terminal_gold",
+          "parameters": {},
+          "source_claim_ids": [],
+          "source_event_ids": [],
+          "source_evidence_ids": [
+            "ward_034:ehr:longitudinal_terminal"
+          ],
+          "target": "discharge to longitudinal oncology follow-up"
+        },
+        "release_evidence_ids": [
+          "ward_034:ehr:longitudinal_terminal"
+        ],
+        "sequence_index": 4,
+        "stage_after": "S3",
+        "stage_before": "S3",
+        "state_updates": {
+          "disposition": "home",
+          "encounter_active": false,
+          "terminal": true
+        },
+        "terminal": true,
+        "transition_id": "ward_034_s3_terminal_001"
+      }
+    ]
+  },
+  "schema_version": "ward-runtime-gold-1.0",
+  "gold_version": "ward-anonymous-runtime-1.0"
+}

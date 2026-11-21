@@ -1,0 +1,11 @@
+{
+  "provider": "compatible-provider",
+  "requested_model": "your-judge-a-model",
+  "endpoint": "https://gateway.example/v1/chat/completions",
+  "credential_env": "WARD_JUDGE_A_API_KEY",
+  "http_timeout_seconds": 600,
+  "request_parameters": {
+    "temperature": 0,
+    "max_tokens": 16000
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ward.example/schemas/judge_response.v1.schema.json",
+  "title": "WARD Judge response v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "request_id", "judge_id", "results"],
+  "properties": {
+    "schema_version": {"const": "ward-judge-response-1.0"},
+    "request_id": {"type": "string", "minLength": 1},
+    "judge_id": {"enum": ["judge_a", "judge_b"]},
+    "results": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["item_id", "verdict", "confidence", "reason_codes"],
+        "properties": {
+          "item_id": {"type": "string", "pattern": "^ward_jjob_[0-9a-f]{20}$"},
+          "verdict": {"enum": ["equivalent", "partial", "contradiction", "unrelated", "abstain"]},
+          "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+          "reason_codes": {
+            "type": "array",
+            "items": {"enum": ["same_meaning", "acceptable_paraphrase", "missing_detail", "extra_detail", "scope_mismatch", "status_mismatch", "negation_conflict", "laterality_conflict", "temporality_conflict", "unit_or_value_conflict", "action_conflict", "insufficient_context", "different_concept", "ambiguous"]},
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  }
+}

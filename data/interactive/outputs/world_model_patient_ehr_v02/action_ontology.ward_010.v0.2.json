@@ -1,0 +1,562 @@
+{
+  "ontology_version": "ward-patient-ehr-action-ontology-0.2.0",
+  "status": "development_non_official_append_only_extension",
+  "design": {
+    "free_text_targets_allowed": true,
+    "exact_hidden_identifier_required": false,
+    "deterministic_resolution_only": true,
+    "llm_resolver_used": false,
+    "extension_policy": "append_new_concepts_or_phrases_without_reusing_existing_concept_ids"
+  },
+  "concepts": {
+    "patient.history_and_presenting_problem": {
+      "action_types": [
+        "request_patient_information"
+      ],
+      "phrases": [
+        "chief_complaint_and_history",
+        "chief complaint and history",
+        "presenting complaint and history",
+        "chief complaint and history of present illness",
+        "ask about the chief complaint and history of present illness"
+      ],
+      "anchor_groups": [
+        [
+          "history",
+          "symptom",
+          "complaint",
+          "presenting problem",
+          "medical history",
+          "symptoms",
+          "chief complaint",
+          "history of present illness"
+        ],
+        [
+          "presenting",
+          "current",
+          "chief",
+          "breast",
+          "mass",
+          "chief complaint",
+          "history of present illness",
+          "current",
+          "breast",
+          "mammary gland",
+          "mass"
+        ]
+      ],
+      "minimum_anchor_groups": 2,
+      "similarity_threshold": 0.62
+    },
+    "ehr.admission_assessment": {
+      "action_types": [
+        "review_document",
+        "review_result"
+      ],
+      "phrases": [
+        "admission_assessment",
+        "admission assessment",
+        "admission history and physical",
+        "admission record",
+        "admission note",
+        "initial progress note"
+      ],
+      "anchor_groups": [
+        [
+          "admission",
+          "history and physical",
+          "admission",
+          "initial progress note"
+        ]
+      ],
+      "minimum_anchor_groups": 1,
+      "similarity_threshold": 0.62
+    },
+    "ehr.preoperative_consent_and_risk": {
+      "action_types": [
+        "review_document",
+        "review_result",
+        "request_consultation"
+      ],
+      "phrases": [
+        "preoperative_consent_and_risk_assessment",
+        "preoperative documents",
+        "preoperative evaluation",
+        "surgical consent and risk assessment",
+        "preoperative informed consent and risk assessment",
+        "preoperative summary",
+        "surgical consent form",
+        "preoperative anesthesia assessment"
+      ],
+      "anchor_groups": [
+        [
+          "preoperative",
+          "surgical consent",
+          "risk assessment",
+          "preoperative",
+          "informed consent",
+          "perioperative risk"
+        ]
+      ],
+      "minimum_anchor_groups": 1,
+      "similarity_threshold": 0.64
+    },
+    "diagnostic.abdominal_ultrasound": {
+      "action_types": [
+        "order_imaging"
+      ],
+      "phrases": [
+        "abdominal_ultrasound",
+        "abdominal ultrasound",
+        "abdominal sonography",
+        "abdominal color Doppler ultrasound"
+      ],
+      "anchor_groups": [
+        [
+          "abdominal",
+          "abdomen",
+          "abdomen"
+        ],
+        [
+          "ultrasound",
+          "sonography",
+          "ultrasound",
+          "color Doppler ultrasound"
+        ]
+      ],
+      "minimum_anchor_groups": 2,
+      "similarity_threshold": 0.68
+    },
+    "diagnostic.breast_ultrasound_contrast": {
+      "action_types": [
+        "order_imaging"
+      ],
+      "phrases": [
+        "breast_ultrasound_and_contrast",
+        "breast ultrasound with contrast",
+        "breast and axillary ultrasound",
+        "breast ultrasound and contrast-enhanced ultrasound",
+        "contrast-enhanced breast ultrasound"
+      ],
+      "anchor_groups": [
+        [
+          "breast",
+          "mammary gland",
+          "breast"
+        ],
+        [
+          "ultrasound",
+          "sonography",
+          "ultrasound",
+          "color Doppler ultrasound"
+        ],
+        [
+          "contrast",
+          "axillary",
+          "contrast-enhanced imaging",
+          "axilla"
+        ]
+      ],
+      "minimum_anchor_groups": 2,
+      "similarity_threshold": 0.64
+    },
+    "diagnostic.cardiac_and_venous_ultrasound": {
+      "action_types": [
+        "order_imaging"
+      ],
+      "phrases": [
+        "cardiac_and_lower_extremity_venous_ultrasound",
+        "cardiac and lower extremity venous ultrasound",
+        "echocardiography and lower limb venous ultrasound",
+        "cardiac and bilateral lower-extremity venous ultrasound",
+        "echocardiography and lower-extremity venous color Doppler ultrasound"
+      ],
+      "anchor_groups": [
+        [
+          "cardiac",
+          "heart",
+          "echocardi",
+          "heart",
+          "echocardiography"
+        ],
+        [
+          "venous",
+          "vein",
+          "vein"
+        ],
+        [
+          "lower extremity",
+          "lower limb",
+          "lower extremity"
+        ]
+      ],
+      "minimum_anchor_groups": 2,
+      "similarity_threshold": 0.64
+    },
+    "procedure.right_breast_core_biopsy": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "phrases": [
+        "right_breast_core_needle_biopsy",
+        "right breast core biopsy",
+        "ultrasound guided breast mass core needle biopsy",
+        "core needle biopsy of the right breast mass",
+        "ultrasound-guided core needle biopsy of the breast mass"
+      ],
+      "anchor_groups": [
+        [
+          "breast",
+          "breast",
+          "mammary gland"
+        ],
+        [
+          "core biopsy",
+          "core needle",
+          "core needle",
+          "needle biopsy"
+        ],
+        [
+          "right",
+          "right"
+        ]
+      ],
+      "minimum_anchor_groups": 2,
+      "similarity_threshold": 0.64
+    },
+    "procedure.left_supraclavicular_node_biopsy": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "phrases": [
+        "left_supraclavicular_node_biopsy",
+        "left supraclavicular node aspiration",
+        "left supraclavicular lymph node biopsy",
+        "needle biopsy of the left supraclavicular lymph node",
+        "left supraclavicular lymph node puncture"
+      ],
+      "anchor_groups": [
+        [
+          "supraclavicular",
+          "supraclavicular"
+        ],
+        [
+          "node",
+          "lymph",
+          "lymph node"
+        ],
+        [
+          "biopsy",
+          "aspiration",
+          "needle puncture",
+          "biopsy"
+        ]
+      ],
+      "minimum_anchor_groups": 2,
+      "similarity_threshold": 0.64
+    },
+    "result.right_breast_core_pathology": {
+      "action_types": [
+        "review_result",
+        "review_document"
+      ],
+      "phrases": [
+        "right_breast_core_pathology",
+        "right breast core pathology",
+        "right breast biopsy pathology",
+        "right breast core biopsy pathology",
+        "right breast needle biopsy pathology"
+      ],
+      "anchor_groups": [
+        [
+          "breast",
+          "breast",
+          "mammary gland",
+          "right breast"
+        ],
+        [
+          "pathology",
+          "biopsy result",
+          "pathology",
+          "biopsy results"
+        ]
+      ],
+      "minimum_anchor_groups": 2,
+      "similarity_threshold": 0.64
+    },
+    "result.left_supraclavicular_cytology": {
+      "action_types": [
+        "review_result",
+        "review_document"
+      ],
+      "phrases": [
+        "left_supraclavicular_cytology",
+        "left supraclavicular node cytology",
+        "left supraclavicular aspiration cytology",
+        "left supraclavicular lymph node cytology",
+        "cytology from left supraclavicular puncture"
+      ],
+      "anchor_groups": [
+        [
+          "supraclavicular",
+          "supraclavicular"
+        ],
+        [
+          "cytology",
+          "cytology"
+        ]
+      ],
+      "minimum_anchor_groups": 2,
+      "similarity_threshold": 0.64
+    },
+    "procedure.breast_conserving_surgery_sentinel_node": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "phrases": [
+        "breast_conserving_surgery_with_sentinel_node_biopsy",
+        "breast conserving surgery and sentinel node biopsy",
+        "lumpectomy with sentinel lymph node biopsy",
+        "breast-conserving resection for breast cancer with sentinel lymph node biopsy",
+        "breast-conserving surgery and sentinel lymph node biopsy"
+      ],
+      "anchor_groups": [
+        [
+          "breast conserving",
+          "lumpectomy",
+          "breast conservation",
+          "segmental resection"
+        ],
+        [
+          "sentinel",
+          "sentinel"
+        ],
+        [
+          "node biopsy",
+          "lymph node biopsy"
+        ]
+      ],
+      "minimum_anchor_groups": 2,
+      "similarity_threshold": 0.64
+    },
+    "disposition.home_followup_pending_results": {
+      "action_types": [
+        "discharge",
+        "end_episode"
+      ],
+      "phrases": [
+        "home_with_pathology_and_imaging_followup",
+        "home pending pathology and imaging follow-up",
+        "discharge home with pending results follow-up",
+        "discharge on medical advice with follow-up of pathology and imaging",
+        "follow up pathology and imaging results after discharge"
+      ],
+      "anchor_groups": [
+        [
+          "discharge",
+          "home",
+          "discharge",
+          "leave hospital"
+        ],
+        [
+          "follow up",
+          "followup",
+          "pending result",
+          "follow-up",
+          "results pending"
+        ]
+      ],
+      "minimum_anchor_groups": 2,
+      "similarity_threshold": 0.64
+    },
+    "ehr.breast_admission_vte_and_surgery_readiness": {
+      "action_types": [
+        "review_document"
+      ],
+      "phrases": [
+        "breast_admission_vte_and_initial_surgery_readiness",
+        "breast admission vte and initial surgery readiness"
+      ],
+      "anchor_groups": [
+        [
+          "breast admission vte and initial surgery readiness"
+        ]
+      ],
+      "minimum_anchor_groups": 1,
+      "similarity_threshold": 0.9
+    },
+    "ehr.mastectomy_and_reconstruction_consent": {
+      "action_types": [
+        "review_document"
+      ],
+      "phrases": [
+        "right_mastectomy_sentinel_and_reconstruction_consent",
+        "right mastectomy sentinel and reconstruction consent"
+      ],
+      "anchor_groups": [
+        [
+          "right mastectomy sentinel and reconstruction consent"
+        ]
+      ],
+      "minimum_anchor_groups": 1,
+      "similarity_threshold": 0.9
+    },
+    "result.paired_primary_breast_pathology": {
+      "action_types": [
+        "review_result"
+      ],
+      "phrases": [
+        "paired_primary_breast_pathology_results",
+        "paired primary breast pathology results"
+      ],
+      "anchor_groups": [
+        [
+          "paired primary breast pathology results"
+        ]
+      ],
+      "minimum_anchor_groups": 1,
+      "similarity_threshold": 0.9
+    },
+    "consultation.mastectomy_reconstruction_multidisciplinary_review": {
+      "action_types": [
+        "request_consultation"
+      ],
+      "phrases": [
+        "mastectomy_sentinel_and_reconstruction_multidisciplinary_review",
+        "mastectomy sentinel and reconstruction multidisciplinary review"
+      ],
+      "anchor_groups": [
+        [
+          "mastectomy sentinel and reconstruction multidisciplinary review"
+        ]
+      ],
+      "minimum_anchor_groups": 1,
+      "similarity_threshold": 0.9
+    },
+    "procedure.right_subcutaneous_mastectomy": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "phrases": [
+        "right_endoscopic_subcutaneous_mastectomy",
+        "right endoscopic subcutaneous mastectomy"
+      ],
+      "anchor_groups": [
+        [
+          "right endoscopic subcutaneous mastectomy"
+        ]
+      ],
+      "minimum_anchor_groups": 1,
+      "similarity_threshold": 0.9
+    },
+    "procedure.right_sentinel_node_biopsy": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "phrases": [
+        "right_sentinel_node_biopsy",
+        "right sentinel node biopsy"
+      ],
+      "anchor_groups": [
+        [
+          "right sentinel node biopsy"
+        ]
+      ],
+      "minimum_anchor_groups": 1,
+      "similarity_threshold": 0.9
+    },
+    "procedure.right_immediate_implant_reconstruction": {
+      "action_types": [
+        "perform_procedure"
+      ],
+      "phrases": [
+        "right_immediate_breast_implant_reconstruction",
+        "right immediate breast implant reconstruction"
+      ],
+      "anchor_groups": [
+        [
+          "right immediate breast implant reconstruction"
+        ]
+      ],
+      "minimum_anchor_groups": 1,
+      "similarity_threshold": 0.9
+    },
+    "result.sentinel_node_frozen_pair_no_definite_malignancy": {
+      "action_types": [
+        "review_result"
+      ],
+      "phrases": [
+        "paired_sentinel_node_frozen_results_no_definite_malignancy",
+        "paired sentinel node frozen results no definite malignancy"
+      ],
+      "anchor_groups": [
+        [
+          "paired sentinel node frozen results no definite malignancy"
+        ]
+      ],
+      "minimum_anchor_groups": 1,
+      "similarity_threshold": 0.9
+    },
+    "result.nipple_base_margin_pair_no_definite_malignancy": {
+      "action_types": [
+        "review_result"
+      ],
+      "phrases": [
+        "paired_nipple_base_margin_results_no_definite_malignancy",
+        "paired nipple base margin results no definite malignancy"
+      ],
+      "anchor_groups": [
+        [
+          "paired nipple base margin results no definite malignancy"
+        ]
+      ],
+      "minimum_anchor_groups": 1,
+      "similarity_threshold": 0.9
+    },
+    "ehr.post_mastectomy_sentinel_and_reconstruction_status": {
+      "action_types": [
+        "review_document"
+      ],
+      "phrases": [
+        "post_mastectomy_sentinel_and_reconstruction_status",
+        "post mastectomy sentinel and reconstruction status"
+      ],
+      "anchor_groups": [
+        [
+          "post mastectomy sentinel and reconstruction status"
+        ]
+      ],
+      "minimum_anchor_groups": 1,
+      "similarity_threshold": 0.9
+    },
+    "disposition.home_after_mastectomy_and_reconstruction": {
+      "action_types": [
+        "discharge",
+        "end_episode"
+      ],
+      "phrases": [
+        "home_after_mastectomy_and_reconstruction",
+        "home after mastectomy and reconstruction",
+        "discharge on medical advice"
+      ],
+      "anchor_groups": [
+        [
+          "discharge",
+          "home",
+          "leave hospital",
+          "discharge"
+        ]
+      ],
+      "minimum_anchor_groups": 1,
+      "similarity_threshold": 0.64
+    }
+  },
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true,
+  "extension": {
+    "case_id": "ward_010",
+    "base_ontology_sha256": "3074e22c849a792a48e62d46f7f2b621d39838a66acd6e97cec0d855c7f144c6",
+    "existing_concepts_unchanged": true
+  }
+}

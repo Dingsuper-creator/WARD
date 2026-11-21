@@ -1,0 +1,759 @@
+{
+  "scenario_version": "ward-patient-ehr-case-0.1.0",
+  "status": "deterministic_clinician_confirmed_case_bundle_candidate",
+  "case_id": "ward_010",
+  "workflow_contract_version": "ward-inpatient-S1-S2-S3-0.1.0",
+  "scorer_freeze": {
+    "freeze_id": "ward-world-model-interaction-scorer-baseline-2026-07-23-v0.1",
+    "manifest_sha256": "72dd8e46a360db7a9e107124166a57145547ec941c6d7ef757956a1b69de62dc"
+  },
+  "public_context": {
+    "setting": "inpatient_mastectomy_and_reconstruction",
+    "age_years": 43,
+    "sex": "female",
+    "admission_diagnosis": "Breast mass",
+    "initial_time": "2124-07-31T14:22:15.623000"
+  },
+  "initial_state": {
+    "stage": "S2",
+    "clock": "2124-07-31T14:22:15.623000",
+    "visible_evidence_ids": [],
+    "state_facts": {
+      "encounter_active": true,
+      "terminal": false
+    }
+  },
+  "evidence_store": {
+    "doc:003": {
+      "evidence_id": "doc:003",
+      "record_kind": "document",
+      "title": "New Consultation Record",
+      "clinical_time": "2124-08-07T08:57:00",
+      "available_time": "2124-08-07T08:57:09.067000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:004": {
+      "evidence_id": "doc:004",
+      "record_kind": "document",
+      "title": "New Consultation Record",
+      "clinical_time": "2124-08-05T11:57:00",
+      "available_time": "2124-08-05T11:57:32.647000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:006": {
+      "evidence_id": "doc:006",
+      "record_kind": "document",
+      "title": "Preoperative Informed Consent Form Template for Modified Radical Mastectomy for Breast Cancer",
+      "clinical_time": "2124-08-01T11:52:55",
+      "available_time": "2124-08-01T11:55:08",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:007": {
+      "evidence_id": "doc:007",
+      "record_kind": "document",
+      "title": "Consultation Recommendation Management Record",
+      "clinical_time": "2124-08-06T15:00:00",
+      "available_time": "2124-08-07T13:10:08.417000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:009": {
+      "evidence_id": "doc:009",
+      "record_kind": "document",
+      "title": "First ward-round note by the attending physician of breast surgery",
+      "clinical_time": "2124-08-01T08:00:00",
+      "available_time": "2124-07-31T15:36:11.640000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:010": {
+      "evidence_id": "doc:010",
+      "record_kind": "document",
+      "title": "Breast surgery preoperative discussion record",
+      "clinical_time": "2124-08-02T07:20:00",
+      "available_time": "2124-07-31T15:37:43.823000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:011": {
+      "evidence_id": "doc:011",
+      "record_kind": "document",
+      "title": "Consultation Recommendation Management Record",
+      "clinical_time": "2124-08-05T14:00:00",
+      "available_time": "2124-08-06T12:21:33.650000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:012": {
+      "evidence_id": "doc:012",
+      "record_kind": "document",
+      "title": "Preoperative Summary, Breast Surgery",
+      "clinical_time": "2124-08-02T07:30:00",
+      "available_time": "2124-07-31T15:38:11.977000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:013": {
+      "evidence_id": "doc:013",
+      "record_kind": "document",
+      "title": "Breast Surgery Same-Day Postoperative Record",
+      "clinical_time": "2124-08-02T11:34:00",
+      "available_time": "2124-08-01T11:34:50.563000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:015": {
+      "evidence_id": "doc:015",
+      "record_kind": "document",
+      "title": "Record on the day of surgery",
+      "clinical_time": "2124-08-03T00:10:00",
+      "available_time": "2124-08-03T10:00:14.217000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:018": {
+      "evidence_id": "doc:018",
+      "record_kind": "document",
+      "title": "New Consultation Record",
+      "clinical_time": "2124-08-04T13:55:00",
+      "available_time": "2124-08-04T13:55:46.807000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:019": {
+      "evidence_id": "doc:019",
+      "record_kind": "document",
+      "title": "New Consultation Record",
+      "clinical_time": "2124-08-06T19:10:00",
+      "available_time": "2124-08-06T19:10:03.310000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:020": {
+      "evidence_id": "doc:020",
+      "record_kind": "document",
+      "title": "New Consultation Record",
+      "clinical_time": "2124-08-07T08:53:00",
+      "available_time": "2124-08-07T08:53:15.557000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:021": {
+      "evidence_id": "doc:021",
+      "record_kind": "document",
+      "title": "Consultation Recommendation Management Record",
+      "clinical_time": "2124-08-06T21:00:00",
+      "available_time": "2124-08-07T13:05:24.407000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:022": {
+      "evidence_id": "doc:022",
+      "record_kind": "document",
+      "title": "Consultation Recommendation Management Record",
+      "clinical_time": "2124-08-07T10:00:00",
+      "available_time": "2124-08-07T13:10:44.703000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:023": {
+      "evidence_id": "doc:023",
+      "record_kind": "document",
+      "title": "First Postoperative Progress Note from Breast Surgery",
+      "clinical_time": "2124-08-02T22:10:00",
+      "available_time": "2124-08-01T11:34:16.133000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:024": {
+      "evidence_id": "doc:024",
+      "record_kind": "document",
+      "title": "Consultation Recommendation Management Record",
+      "clinical_time": "2124-08-07T20:00:00",
+      "available_time": "2124-08-08T08:28:36.210000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:027": {
+      "evidence_id": "doc:027",
+      "record_kind": "document",
+      "title": "Preoperative Informed Consent Form Template for Stage I Breast Reconstruction",
+      "clinical_time": "2124-08-02T13:27:36",
+      "available_time": "2124-08-02T13:29:08",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:028": {
+      "evidence_id": "doc:028",
+      "record_kind": "document",
+      "title": "Daily Attending Physician Ward Round Note",
+      "clinical_time": "2124-08-06T08:00:00",
+      "available_time": "2124-08-07T13:09:05.293000",
+      "content": "{'chief_complaint': 'No particular discomfort today. Physical examination: The patient is alert, in fair spirits, and in good general condition. Morning temperature 36.5°C, heart rate 75 beats/min, respiratory rate 25 breaths/min. The surgical incision on the affected side is well approximated, dry, and without discharge. No subcutaneous blood or fluid collection is observed, and there is no obvious swelling of the upper limb on the affected side. Yesterday, drainage from the residual cavity was unobstructed, with approximately 20 mL of light blood-tinged fluid drained. Continue compression bandaging and closely monitor changes in the patient’s vital signs, the condition of the skin flap, and drainage from the drainage tube; 2. Instruct the patient that they may get out of bed and ambulate to prevent lower-extremity venous thrombosis, while taking care to avoid orthostatic hypotension. 3. Traction at the patient’s elbow joint is possible. After 3 days of mecobalamin treatment, numbness and pain in the right hand persist, and muscle strength has decreased compared with previously. Electromyography and cervical spine MRI have been completed in accordance with your department’s consultation recommendations. The verbal electromyography report indicates no significant...', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:030": {
+      "evidence_id": "doc:030",
+      "record_kind": "document",
+      "title": "Initial Ward Round Record by the Chief Physician, Breast Surgery",
+      "clinical_time": "2124-08-02T07:00:00",
+      "available_time": "2124-07-31T15:36:52.827000",
+      "content": "{'chief_complaint': 'The patient self-detected a left breast mass for 1 weeks, and a right breast mass was found on physical examination 6 days ago. The patient presented due to self-detection of a left breast mass for 1 weeks and detection of a right breast mass on physical examination 6 days ago. On physical examination, a mass approximately 2 cm in diameter was palpable in the lower outer quadrant of the right breast; it was firm, mobile, and well-circumscribed. The possibility of malignancy could not be excluded clinically. Breast ultrasonography at our hospital indicated a hypoechoic lesion in the right breast at approximately the 10 o’clock position, measuring approximately 14.0 × 6.2 × 9.4 mm, with a horizontal orientation, irregular shape, and indistinct margins: provisionally classified as US-BI-RADS category 4A. Based on the ancillary examinations after admission, there was an indication for surgical excisional biopsy. Following full communication with the patient’s family, right breast quadrantectomy was therefore performed, with preparation for left breast quadrantectomy, bilateral breast-conserving surgery for breast cancer, or bilateral subcutaneous mastectomy for breast cancer + sentinel lymph node bio...', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:032": {
+      "evidence_id": "doc:032",
+      "record_kind": "document",
+      "title": "VTE in Surgical Inpatients",
+      "clinical_time": "2124-07-31T15:19:05",
+      "available_time": "2124-07-31T15:19:15",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:033": {
+      "evidence_id": "doc:033",
+      "record_kind": "document",
+      "title": "Breast Surgery Postoperative Day 1 Record",
+      "clinical_time": "2124-08-03T08:00:00",
+      "available_time": "2124-08-01T11:35:19.760000",
+      "content": "{'chief_complaint': 'Pain at the wound site, tolerable. Physical examination: The patient is alert, with average mental status and good general condition. Morning temperature 37.6 °C, blood pressure 121/65 mmHg, heart rate 78 beats/min. The surgical incision on the affected side is well approximated, dry, and without exudate. No subcutaneous blood or fluid accumulation is observed, and no obvious swelling of the upper extremity on the affected side is observed. Yesterday, drainage from the residual cavity was unobstructed, yielding approximately 100 ml of light bloody fluid. Management: 1. Change the wound dressing, continue compression bandaging, and closely monitor changes in the patient’s vital signs, the condition of the skin flap, and drainage from the drainage tube; 2. The patient was instructed that ambulation is permitted to prevent lower-extremity venous thrombosis, but attention should be paid to the occurrence of orthostatic hypotension. 3. Following expander implantation, administer cefazolin sodium prophylactically on a long-term basis starting today. 4. Repeat the complete blood count and other relevant examinations', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "ehr:terminal:001": {
+      "evidence_id": "ehr:terminal:001",
+      "record_kind": "ehr_derived_terminal_state",
+      "title": "Final Inpatient Status and Discharge Disposition",
+      "clinical_time": "2124-08-08T08:43:00",
+      "available_time": "2124-08-08T08:43:00",
+      "content": "During hospitalization, the documented right subcutaneous mastectomy, sentinel lymph node biopsy, and immediate implant reconstruction were completed; the discharge diagnosis was malignant neoplasm of the upper-outer quadrant of the breast, the treatment outcome was cured, and the discharge disposition was discharge per medical advice.",
+      "derivation": "deterministic paraphrase restricted to the approved encounter and recorded surgery facts",
+      "direct_identifiers_removed": true
+    },
+    "path:001": {
+      "evidence_id": "path:001",
+      "record_kind": "pathology",
+      "title": "Difficult-Case Pathology Consultation",
+      "clinical_time": "2124-08-01T14:55:21.537000",
+      "available_time": "2124-08-02T00:32:55",
+      "content": "{\"remark\": \"[Medical personnel information deleted]\", \"molecularResult\": \"\", \"sourceOfMaterials\": \"Outside hospital C\", \"materialDescription\": \"[Pathology number deleted] HE*2; [Pathology number deleted] HE*2 IHC*15\", \"pathologicalDiagnosis\": \"[Pathology number deleted] ‘Left breast biopsy specimen’: no malignant component identified.\\n[Pathology number deleted] ‘Right breast biopsy specimen’: in conjunction with the HE morphology and the immunohistochemical marker results from the original institution, the findings are consistent with high-grade ductal carcinoma in situ with multifocal microinvasion.\", \"originalDiagnosticOpinion\": \"(Left breast) Breast disease.\\n\\n(Right breast) Atypical ductal hyperplasia.\", \"immunohistochemistryAndSpecialStaining\": \"\"}",
+      "direct_identifiers_removed": true
+    },
+    "path:002": {
+      "evidence_id": "path:002",
+      "record_kind": "pathology",
+      "title": "Difficult-Case Pathology Consultation",
+      "clinical_time": "2124-08-01T14:55:21.537000",
+      "available_time": "2124-08-02T00:32:55",
+      "content": "{\"remark\": \"[Medical personnel information removed]\", \"molecularResult\": \"\", \"sourceOfMaterials\": \"Outside Hospital C\", \"materialDescription\": \"[Pathology number removed] HE*2; [Pathology number removed] HE*2; IHC*15\", \"pathologicalDiagnosis\": \"[Pathology number removed] ‘Left breast biopsy specimen’: no malignant component identified.\\n[Pathology number removed] ‘Right breast biopsy specimen’: in conjunction with the HE morphology and the immunohistochemical marker results from the original institution, the findings may be consistent with high-grade ductal carcinoma in situ with multifocal microinvasion.\", \"originalDiagnosticOpinion\": \"(Left breast) Breast disease.\\n\\n(Right breast) Atypical ductal hyperplasia.\", \"immunohistochemistryAndSpecialStaining\": \"\"}",
+      "direct_identifiers_removed": true
+    },
+    "path:003": {
+      "evidence_id": "path:003",
+      "record_kind": "pathology",
+      "title": "Frozen-Section Pathology",
+      "clinical_time": "2124-08-02T17:55:11.830000",
+      "available_time": "2124-08-07T21:28:42",
+      "content": "Frozen section of “right axillary sentinel lymph node 1” showed no definite evidence of malignancy; paraffin section pending. Frozen section of “right axillary sentinel-adjacent lymph node 1” showed no definite evidence of malignancy; paraffin section pending. Frozen section of “right axillary sentinel-adjacent lymph node 2.3” showed no definite evidence of malignancy; paraffin section pending.",
+      "direct_identifiers_removed": true
+    },
+    "path:004": {
+      "evidence_id": "path:004",
+      "record_kind": "pathology",
+      "title": "Frozen-Section Pathology",
+      "clinical_time": "2124-08-02T17:55:11.830000",
+      "available_time": "2124-08-07T21:28:42",
+      "content": "{\"remark\": \"\", \"mirrorUnder\": \"\", \"molecularTestResults\": \"\", \"specialInspectionCurrentDiagnosis\": \"‘Right axillary sentinel lymph node 1’: 1 lymph node(s), no carcinoma identified.\\n‘Lymph node adjacent to the right axillary sentinel lymph node 1’: 2 lymph node(s), no carcinoma identified.\\n‘Lymph node adjacent to the right axillary sentinel lymph node 2.3’: 3 lymph node(s), no carcinoma identified.\", \"immunohistochemistryAndSpecialStaining\": \"\"}",
+      "direct_identifiers_removed": true
+    },
+    "path:005": {
+      "evidence_id": "path:005",
+      "record_kind": "pathology",
+      "title": "Frozen-Section Pathology",
+      "clinical_time": "2124-08-02T19:31:50.043000",
+      "available_time": "2124-08-07T23:30:07",
+      "content": "Breast tissue from the “right nipple base resection margin” showed no definite evidence of malignancy.",
+      "direct_identifiers_removed": true
+    },
+    "path:006": {
+      "evidence_id": "path:006",
+      "record_kind": "pathology",
+      "title": "Frozen-Section Pathology",
+      "clinical_time": "2124-08-02T19:31:50.043000",
+      "available_time": "2124-08-07T23:30:07",
+      "content": "{\"remark\": \"\", \"mirrorUnder\": \"\", \"molecularTestResults\": \"\", \"specialInspectionCurrentDiagnosis\": \"‘Right nipple base resection margin’: breast tissue; no carcinoma identified.\", \"immunohistochemistryAndSpecialStaining\": \"\"}",
+      "direct_identifiers_removed": true
+    },
+    "surg:001": {
+      "evidence_id": "surg:001",
+      "record_kind": "surgery",
+      "title": "Endoscopic unilateral subcutaneous mastectomy",
+      "clinical_time": "2124-08-02T17:00:00",
+      "available_time": "2124-08-02T21:40:00",
+      "content": "Endoscopic unilateral subcutaneous mastectomy",
+      "direct_identifiers_removed": true
+    },
+    "surg:002": {
+      "evidence_id": "surg:002",
+      "record_kind": "surgery",
+      "title": "Sentinel Lymph Node Biopsy",
+      "clinical_time": "2124-08-02T17:00:00",
+      "available_time": "2124-08-02T21:40:00",
+      "content": "Sentinel lymph node biopsy",
+      "direct_identifiers_removed": true
+    },
+    "surg:003": {
+      "evidence_id": "surg:003",
+      "record_kind": "surgery",
+      "title": "Unilateral Breast Implant Placement",
+      "clinical_time": "2124-08-02T17:00:00",
+      "available_time": "2124-08-02T21:40:00",
+      "content": "Unilateral breast implant placement",
+      "direct_identifiers_removed": true
+    }
+  },
+  "transitions": [
+    {
+      "transition_id": "ward_010_s2_node_001",
+      "sequence_index": 0,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-31T14:22:15.623000",
+      "clock_after": "2124-08-02T07:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_010:ward_010_s2_node_001",
+        "action_type": "review_document",
+        "target": "breast_admission_vte_and_initial_surgery_readiness",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "breast admission vte and initial surgery readiness"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:009",
+          "doc:010",
+          "doc:012",
+          "doc:030",
+          "doc:032"
+        ],
+        "source_event_ids": [
+          "ward_010_evt_001",
+          "ward_010_evt_002",
+          "ward_010_evt_003"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:009",
+        "doc:010",
+        "doc:012",
+        "doc:030",
+        "doc:032"
+      ],
+      "state_updates": {
+        "ward_010_s2_node_001_completed": true,
+        "ward_010_001_clinically_confirmed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_010_s2_node_002",
+      "sequence_index": 1,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-02T07:30:00",
+      "clock_after": "2124-08-02T13:29:08",
+      "gold_action": {
+        "action_id": "ehr:ward_010:ward_010_s2_node_002",
+        "action_type": "review_document",
+        "target": "right_mastectomy_sentinel_and_reconstruction_consent",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right mastectomy sentinel and reconstruction consent"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:006",
+          "doc:027"
+        ],
+        "source_event_ids": [
+          "ward_010_evt_005",
+          "ward_010_evt_007"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:006",
+        "doc:027"
+      ],
+      "state_updates": {
+        "ward_010_s2_node_002_completed": true,
+        "ward_010_002_clinically_confirmed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_010_s2_node_003",
+      "sequence_index": 2,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-02T13:29:08",
+      "clock_after": "2124-08-02T13:29:08",
+      "gold_action": {
+        "action_id": "ehr:ward_010:ward_010_s2_node_003",
+        "action_type": "review_result",
+        "target": "paired_primary_breast_pathology_results",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "paired primary breast pathology results"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "path:001",
+          "path:002"
+        ],
+        "source_event_ids": [
+          "ward_010_evt_006"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "path:001",
+        "path:002"
+      ],
+      "state_updates": {
+        "ward_010_s2_node_003_completed": true,
+        "ward_010_003_clinically_confirmed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_010_s2_node_004",
+      "sequence_index": 3,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-02T13:29:08",
+      "clock_after": "2124-08-08T08:28:36.210000",
+      "gold_action": {
+        "action_id": "ehr:ward_010:ward_010_s2_node_004",
+        "action_type": "request_consultation",
+        "target": "mastectomy_sentinel_and_reconstruction_multidisciplinary_review",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "mastectomy sentinel and reconstruction multidisciplinary review"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:003",
+          "doc:004",
+          "doc:007",
+          "doc:011",
+          "doc:018",
+          "doc:019",
+          "doc:020",
+          "doc:021",
+          "doc:022",
+          "doc:024",
+          "doc:028"
+        ],
+        "source_event_ids": [
+          "ward_010_evt_010",
+          "ward_010_evt_011",
+          "ward_010_evt_012",
+          "ward_010_evt_013",
+          "ward_010_evt_014",
+          "ward_010_evt_017"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:003",
+        "doc:004",
+        "doc:007",
+        "doc:011",
+        "doc:018",
+        "doc:019",
+        "doc:020",
+        "doc:021",
+        "doc:022",
+        "doc:024",
+        "doc:028"
+      ],
+      "state_updates": {
+        "ward_010_s2_node_004_completed": true,
+        "ward_010_004_clinically_confirmed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_010_s2_node_005",
+      "sequence_index": 4,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-08T08:28:36.210000",
+      "clock_after": "2124-08-08T08:28:36.210000",
+      "gold_action": {
+        "action_id": "ehr:ward_010:ward_010_s2_node_005",
+        "action_type": "perform_procedure",
+        "target": "right_endoscopic_subcutaneous_mastectomy",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right endoscopic subcutaneous mastectomy"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "surg:001"
+        ],
+        "source_event_ids": [
+          "ward_010_evt_008"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "surg:001"
+      ],
+      "state_updates": {
+        "ward_010_s2_node_005_completed": true,
+        "ward_010_005_clinically_confirmed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_010_s2_node_006",
+      "sequence_index": 5,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-08T08:28:36.210000",
+      "clock_after": "2124-08-08T08:28:36.210000",
+      "gold_action": {
+        "action_id": "ehr:ward_010:ward_010_s2_node_006",
+        "action_type": "perform_procedure",
+        "target": "right_sentinel_node_biopsy",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right sentinel node biopsy"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "surg:002"
+        ],
+        "source_event_ids": [],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "surg:002"
+      ],
+      "state_updates": {
+        "ward_010_s2_node_006_completed": true,
+        "ward_010_006_clinically_confirmed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_010_s2_node_007",
+      "sequence_index": 6,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-08T08:28:36.210000",
+      "clock_after": "2124-08-08T08:28:36.210000",
+      "gold_action": {
+        "action_id": "ehr:ward_010:ward_010_s2_node_007",
+        "action_type": "perform_procedure",
+        "target": "right_immediate_breast_implant_reconstruction",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right immediate breast implant reconstruction"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "surg:003"
+        ],
+        "source_event_ids": [],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "surg:003"
+      ],
+      "state_updates": {
+        "ward_010_s2_node_007_completed": true,
+        "ward_010_007_clinically_confirmed": true,
+        "reconstruction_after_mastectomy": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_010_s2_node_008",
+      "sequence_index": 7,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-08T08:28:36.210000",
+      "clock_after": "2124-08-08T08:28:36.210000",
+      "gold_action": {
+        "action_id": "ehr:ward_010:ward_010_s2_node_008",
+        "action_type": "review_result",
+        "target": "paired_sentinel_node_frozen_results_no_definite_malignancy",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "paired sentinel node frozen results no definite malignancy"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "path:003",
+          "path:004"
+        ],
+        "source_event_ids": [
+          "ward_010_evt_015"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "path:003",
+        "path:004"
+      ],
+      "state_updates": {
+        "ward_010_s2_node_008_completed": true,
+        "ward_010_008_clinically_confirmed": true,
+        "frozen_result_overcalled_as_final_pathology": false
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_010_s2_node_009",
+      "sequence_index": 8,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-08T08:28:36.210000",
+      "clock_after": "2124-08-08T08:28:36.210000",
+      "gold_action": {
+        "action_id": "ehr:ward_010:ward_010_s2_node_009",
+        "action_type": "review_result",
+        "target": "paired_nipple_base_margin_results_no_definite_malignancy",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "paired nipple base margin results no definite malignancy"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "path:005",
+          "path:006"
+        ],
+        "source_event_ids": [
+          "ward_010_evt_016"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "path:005",
+        "path:006"
+      ],
+      "state_updates": {
+        "ward_010_s2_node_009_completed": true,
+        "ward_010_009_clinically_confirmed": true,
+        "frozen_result_overcalled_as_final_pathology": false
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_010_s2_node_010",
+      "sequence_index": 9,
+      "stage_before": "S2",
+      "stage_after": "S3",
+      "clock_before": "2124-08-08T08:28:36.210000",
+      "clock_after": "2124-08-08T08:28:36.210000",
+      "gold_action": {
+        "action_id": "ehr:ward_010:ward_010_s2_node_010",
+        "action_type": "review_document",
+        "target": "post_mastectomy_sentinel_and_reconstruction_status",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "post mastectomy sentinel and reconstruction status"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:013",
+          "doc:015",
+          "doc:023",
+          "doc:033"
+        ],
+        "source_event_ids": [
+          "ward_010_evt_004",
+          "ward_010_evt_009"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:013",
+        "doc:015",
+        "doc:023",
+        "doc:033"
+      ],
+      "state_updates": {
+        "ward_010_s2_node_010_completed": true,
+        "ward_010_010_clinically_confirmed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_010_s3_terminal_001",
+      "sequence_index": 10,
+      "stage_before": "S3",
+      "stage_after": "S3",
+      "clock_before": "2124-08-08T08:28:36.210000",
+      "clock_after": "2124-08-08T08:43:00",
+      "gold_action": {
+        "action_id": "ehr:ward_010:discharge",
+        "action_type": "discharge",
+        "target": "home_after_mastectomy_and_reconstruction",
+        "parameters": {},
+        "accepted_action_type_aliases": [
+          "discharge_patient",
+          "end_episode"
+        ],
+        "accepted_target_aliases": [
+          "discharge on medical advice",
+          "discharge home"
+        ],
+        "gold_source_type": "ehr_derived_terminal_gold",
+        "source_evidence_ids": [],
+        "source_event_ids": [],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "ehr:terminal:001"
+      ],
+      "state_updates": {
+        "disposition": "discharge on medical advice",
+        "encounter_active": false,
+        "terminal": true
+      },
+      "terminal": true
+    }
+  ],
+  "policy": {
+    "strict_next_gold_action": false,
+    "partial_order_prerequisites_enforced": true,
+    "terminology_aliases_allowed": true,
+    "off_trajectory_action_advances_state": false,
+    "off_trajectory_action_releases_evidence": false,
+    "future_evidence_hidden": true,
+    "late_available_results_not_retroactive": true,
+    "patient_llm_used": false,
+    "ehr_is_authoritative_historical_fact_source": true,
+    "clinician_review_is_authoritative_dependency_source": true
+  },
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

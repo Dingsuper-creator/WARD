@@ -1,0 +1,74 @@
+{
+  "policy_version": "ward-patient-ehr-event-relative-phase-policy-0.1.0",
+  "status": "development_non_official_freeze_candidate",
+  "invariant": "A temporal relation to an arbitrary clinical event is not a surgical phase. Surgical phase is derived only when surgery or operation is the temporal anchor, or when an explicit canonical surgical phase is supplied.",
+  "surgical_phase_mapping": {
+    "before": "preoperative",
+    "during": "operative",
+    "after": "postoperative"
+  },
+  "surgical_temporal_anchor_patterns": {
+    "before": [
+      "\\bbefore\\b.{0,60}\\b(?:surgery|operation|mastectomy|lumpectomy|resection)\\b",
+      "\\bprior to\\b.{0,60}\\b(?:surgery|operation|mastectomy|lumpectomy|resection)\\b",
+      "\\bpre[- ]?operative\\b",
+      "preoperative",
+      "before surgery"
+    ],
+    "during": [
+      "\\bduring\\b.{0,60}\\b(?:surgery|operation|mastectomy|lumpectomy|resection)\\b",
+      "\\bintra[- ]?operative\\b",
+      "intraoperative",
+      "during surgery"
+    ],
+    "after": [
+      "\\bafter\\b.{0,60}\\b(?:surgery|operation|mastectomy|lumpectomy|resection)\\b",
+      "\\bfollowing\\b.{0,60}\\b(?:surgery|operation|mastectomy|lumpectomy|resection)\\b",
+      "\\bpost[- ]?operative\\b",
+      "postoperative",
+      "after surgery"
+    ]
+  },
+  "canonical_structured_phase_patterns": {
+    "preoperative": [
+      "^pre[- ]?operative$",
+      "^before (?:surgery|operation)$",
+      "^preoperative$"
+    ],
+    "operative": [
+      "^operative$",
+      "^intra[- ]?operative$",
+      "^during (?:surgery|operation)$",
+      "^intraoperative$"
+    ],
+    "postoperative": [
+      "^post[- ]?operative$",
+      "^after (?:surgery|operation)$",
+      "^postoperative$"
+    ]
+  },
+  "non_surgical_examples": [
+    "after biopsy",
+    "following CT",
+    "before chemotherapy",
+    "after consultation",
+    "after biopsy",
+    "after examination"
+  ],
+  "inference_policy": {
+    "generic_before_after_during_implies_surgical_phase": false,
+    "surgery_anchor_required_for_text_derived_surgical_phase": true,
+    "canonical_structured_surgical_phase_allowed": true,
+    "post_biopsy_is_postoperative": false,
+    "phase_conflicts_audited": true,
+    "phase_conflict_automatically_overrides_structured_field": false,
+    "background_fields_used_for_phase_inference": false,
+    "llm_semantic_judge_used": false
+  },
+  "gold_action_visible": false,
+  "dependency_graph_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

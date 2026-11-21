@@ -1,0 +1,937 @@
+{
+  "scenario_version": "ward-patient-ehr-case-0.1.0",
+  "status": "deterministic_clinician_confirmed_case_bundle_candidate",
+  "case_id": "ward_004",
+  "workflow_contract_version": "ward-inpatient-S1-S2-S3-0.1.0",
+  "scorer_freeze": {
+    "freeze_id": "ward-world-model-interaction-scorer-baseline-2026-07-23-v0.1",
+    "manifest_sha256": "72dd8e46a360db7a9e107124166a57145547ec941c6d7ef757956a1b69de62dc"
+  },
+  "public_context": {
+    "setting": "inpatient_breast_surgery",
+    "age_years": 68,
+    "sex": "female",
+    "admission_diagnosis": "Breast mass",
+    "initial_time": "2124-07-31T14:23:53.473000"
+  },
+  "initial_state": {
+    "stage": "S2",
+    "clock": "2124-07-31T14:23:53.473000",
+    "visible_evidence_ids": [],
+    "state_facts": {
+      "encounter_active": true,
+      "terminal": false
+    }
+  },
+  "evidence_store": {
+    "doc:002": {
+      "evidence_id": "doc:002",
+      "record_kind": "document",
+      "title": "Preoperative Informed Consent Form for Ultrasound-Guided Needle Biopsy of a Breast Mass",
+      "clinical_time": "2124-08-01T15:49:06",
+      "available_time": "2124-08-01T15:49:43",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:005": {
+      "evidence_id": "doc:005",
+      "record_kind": "document",
+      "title": "First Postoperative Progress Note from Breast Surgery",
+      "clinical_time": "2124-08-01T20:45:00",
+      "available_time": "2124-08-01T06:50:28.517000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:006": {
+      "evidence_id": "doc:006",
+      "record_kind": "document",
+      "title": "Record on the day of surgery",
+      "clinical_time": "2124-08-01T22:45:00",
+      "available_time": "2124-08-01T06:50:54.170000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:010": {
+      "evidence_id": "doc:010",
+      "record_kind": "document",
+      "title": "New Consultation Record",
+      "clinical_time": "2124-08-01T13:58:00",
+      "available_time": "2124-08-01T13:58:12.757000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:012": {
+      "evidence_id": "doc:012",
+      "record_kind": "document",
+      "title": "Preoperative Summary, Breast Surgery",
+      "clinical_time": "2124-08-05T07:30:00",
+      "available_time": "2124-08-02T09:23:55.450000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:014": {
+      "evidence_id": "doc:014",
+      "record_kind": "document",
+      "title": "Record on the day of surgery",
+      "clinical_time": "2124-08-05T13:25:00",
+      "available_time": "2124-08-05T10:39:32.767000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:015": {
+      "evidence_id": "doc:015",
+      "record_kind": "document",
+      "title": "Postoperative Day 1 Record",
+      "clinical_time": "2124-08-06T08:00:00",
+      "available_time": "2124-08-05T10:40:21.833000",
+      "content": "{'chief_complaint': 'The patient reports no particular discomfort. Physical examination: The patient is alert, in fair spirits, and in fair general condition. Morning body temperature was 36.3 ℃, heart rate 78 beats/min, with a regular rhythm. The abdomen was soft, without tenderness. After removing the dressing, the right-sided surgical incision was well approximated, dry, and without discharge or incisional redness or swelling. Management: 1. The dressing was changed once, the wound continued to be dressed with a pressure bandage, and the patient’s wound healing was closely monitored. 2. At present, the patient’s postoperative vital signs are stable and general condition is good; discharge today was approved', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:016": {
+      "evidence_id": "doc:016",
+      "record_kind": "document",
+      "title": "Consultation Recommendation Management Record",
+      "clinical_time": "2124-08-03T10:41:00",
+      "available_time": "2124-08-05T10:42:29.660000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:017": {
+      "evidence_id": "doc:017",
+      "record_kind": "document",
+      "title": "Preoperative Informed Consent Form for Core Needle Biopsy of a Breast Mass",
+      "clinical_time": "2124-08-01T16:41:24",
+      "available_time": "2124-08-01T16:41:56",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:019": {
+      "evidence_id": "doc:019",
+      "record_kind": "document",
+      "title": "First Postoperative Progress Note from Breast Surgery",
+      "clinical_time": "2124-08-05T11:25:00",
+      "available_time": "2124-08-05T10:38:09.157000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:024": {
+      "evidence_id": "doc:024",
+      "record_kind": "document",
+      "title": "Breast surgery preoperative discussion record",
+      "clinical_time": "2124-08-05T07:15:00",
+      "available_time": "2124-08-02T09:23:31.597000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:025": {
+      "evidence_id": "doc:025",
+      "record_kind": "document",
+      "title": "VTE in Surgical Inpatients",
+      "clinical_time": "2124-07-31T16:02:33",
+      "available_time": "2124-07-31T16:02:59",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:026": {
+      "evidence_id": "doc:026",
+      "record_kind": "document",
+      "title": "Preoperative Informed Consent Form Template for Modified Radical Mastectomy for Breast Cancer",
+      "clinical_time": "2124-08-02T16:24:34",
+      "available_time": "2124-08-02T16:32:34",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:027": {
+      "evidence_id": "doc:027",
+      "record_kind": "document",
+      "title": "Breast surgery preoperative discussion record",
+      "clinical_time": "2124-08-01T17:15:00",
+      "available_time": "2124-08-01T06:49:15.837000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:030": {
+      "evidence_id": "doc:030",
+      "record_kind": "document",
+      "title": "Preoperative Informed Consent Form for Ultrasound-Guided Needle Biopsy of a Breast Mass",
+      "clinical_time": "2124-08-01T15:47:52",
+      "available_time": "2124-08-01T15:48:40",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:031": {
+      "evidence_id": "doc:031",
+      "record_kind": "document",
+      "title": "Preoperative Summary, Breast Surgery",
+      "clinical_time": "2124-08-01T17:30:00",
+      "available_time": "2124-08-01T06:50:00.087000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "doc:032": {
+      "evidence_id": "doc:032",
+      "record_kind": "document",
+      "title": "Postoperative Day 1 Record",
+      "clinical_time": "2124-08-02T08:00:00",
+      "available_time": "2124-08-01T06:52:35.370000",
+      "content": "{'chief_complaint': '', 'present_illness': '', 'diagnosis_basis': '', 'plan': '', 'postop_diagnosis': '', 'discharge_condition': ''}",
+      "direct_identifiers_removed": true
+    },
+    "ehr:terminal:001": {
+      "evidence_id": "ehr:terminal:001",
+      "record_kind": "ehr_derived_terminal_state",
+      "title": "Final Inpatient Status and Discharge Disposition",
+      "clinical_time": "2124-08-06T13:00:00",
+      "available_time": "2124-08-06T13:00:00",
+      "content": "During hospitalization, right breast-conserving surgery, sentinel lymph node surgery, and fascial reconstruction were completed; the discharge diagnosis was malignant neoplasm of the lower-outer quadrant of the breast, the treatment outcome was cured, and the discharge disposition was discharge per medical advice.",
+      "derivation": "deterministic paraphrase restricted to the approved encounter and recorded surgery facts",
+      "direct_identifiers_removed": true
+    },
+    "img:001": {
+      "evidence_id": "img:001",
+      "record_kind": "imaging",
+      "title": "Inpatient CT",
+      "clinical_time": "2124-08-01T09:27:14",
+      "available_time": "2124-08-05T18:19:11",
+      "content": "Left lower lobe pulmonary nodule with calcification, considered a benign lesion; tiny right pulmonary nodules; scattered linear opacities in both lungs; focal calcification of the aortic wall. Mass in the lower outer quadrant of the right breast; incidental fatty liver and an intrahepatic hypodense lesion; enlargement of the left thyroid lobe, with bilateral hypodense thyroid nodules and calcified foci. Please correlate with clinical findings and other relevant examinations and follow up.\nSeveral nodular opacities are seen in both lungs: a solid nodule is seen in the posterior basal segment of the left lower lobe (SE203, IM133), with a long diameter of approximately 16mm and a calcified focus within. A solid nodule is seen in the medial segment of the right middle lobe (SE203, IM96), with a long diameter of approximately 3mm. A solid nodule is seen in the anterior basal segment of the right lower lobe (SE203, IM101), with a long diameter of approximately 3mm. Scattered linear opacities are present in the right middle lobe and lingular segment of the left upper lobe. The density of both lower lobes is heterogeneous. No abnormalities are seen in either hilar region. The visualized tracheobronchial shadows are normal. No abnormally enlarged lymph nodes are seen in the mediastinum. Focal calcification of the aortic wall. A mass is present in the lower outer quadrant of the right breast, with a long diameter of approximately 20mm. Incidental fatty liver and an intrahepatic hypodense lesion. Enlargement of the left thyroid lobe, with bilateral hypodense thyroid nodules and calcified foci.",
+      "direct_identifiers_removed": true
+    },
+    "img:003": {
+      "evidence_id": "img:003",
+      "record_kind": "imaging",
+      "title": "Inpatient MRI",
+      "clinical_time": "2124-08-01T07:39:37",
+      "available_time": "2124-08-05T18:16:54",
+      "content": "Mass in the lower outer quadrant of the right breast; please correlate with contrast-enhanced breast MRI.\nNon-contrast scan: The skin surfaces of both breasts are smooth, with no obvious thickening of the skin or areolae. There is no nipple retraction bilaterally, and the subcutaneous tissue planes are clear. Both breasts have abundant dense glandular tissue with mildly disorganized architecture, generally symmetrical. A mass is visible in the lower outer quadrant of the right breast, showing isointensity on T1W, low signal intensity on FST2W, ring-shaped high signal intensity on DWI, and an ADC value of approximately 1.3×10-3mm2/s. No abnormal signal is seen in the retromammary spaces bilaterally. No obviously enlarged lymph nodes are seen in either axilla.",
+      "direct_identifiers_removed": true
+    },
+    "path:001": {
+      "evidence_id": "path:001",
+      "record_kind": "pathology",
+      "title": "Routine Pathology",
+      "clinical_time": "2124-08-02T09:25:10.837000",
+      "available_time": "2124-08-02T21:05:44",
+      "content": "{\"remark\":\"\",\"mirrorUnder\":\"\",\"molecularTestResults\":\"\",\"specialInspectionCurrentDiagnosis\":\"‘Right breast mass CNB specimen’: invasive carcinoma.\",\"immunohistochemistryAndSpecialStaining\":\"\"}",
+      "direct_identifiers_removed": true
+    },
+    "path:007": {
+      "evidence_id": "path:007",
+      "record_kind": "pathology",
+      "title": "Cytopathology",
+      "clinical_time": "2124-08-01T00:00:00",
+      "available_time": "2124-08-02T18:21:00",
+      "content": "Lymphocytes are seen; no evidence of malignancy is seen.",
+      "direct_identifiers_removed": true
+    },
+    "path:008": {
+      "evidence_id": "path:008",
+      "record_kind": "pathology",
+      "title": "Cytopathology",
+      "clinical_time": "2124-08-01T00:00:00",
+      "available_time": "2124-08-02T18:21:03",
+      "content": "Lymphocytes are seen; no evidence of malignancy is seen.",
+      "direct_identifiers_removed": true
+    },
+    "surg:001": {
+      "evidence_id": "surg:001",
+      "record_kind": "surgery",
+      "title": "Breast-conserving resection for breast cancer",
+      "clinical_time": "2124-08-05T08:30:00",
+      "available_time": "2124-08-05T10:30:00",
+      "content": "Breast-conserving resection for breast cancer",
+      "direct_identifiers_removed": true
+    },
+    "surg:002": {
+      "evidence_id": "surg:002",
+      "record_kind": "surgery",
+      "title": "Sentinel Lymph Node Biopsy",
+      "clinical_time": "2124-08-05T08:30:00",
+      "available_time": "2124-08-05T10:30:00",
+      "content": "Sentinel lymph node biopsy",
+      "direct_identifiers_removed": true
+    },
+    "surg:003": {
+      "evidence_id": "surg:003",
+      "record_kind": "surgery",
+      "title": "Fascioplasty",
+      "clinical_time": "2124-08-05T08:30:00",
+      "available_time": "2124-08-05T10:30:00",
+      "content": "Fascioplasty",
+      "direct_identifiers_removed": true
+    },
+    "surg:004": {
+      "evidence_id": "surg:004",
+      "record_kind": "surgery",
+      "title": "Breast Needle Biopsy",
+      "clinical_time": "2124-08-01T19:30:00",
+      "available_time": "2124-08-01T20:00:00",
+      "content": "Breast needle biopsy",
+      "direct_identifiers_removed": true
+    },
+    "surg:005": {
+      "evidence_id": "surg:005",
+      "record_kind": "surgery",
+      "title": "Axillary lymph node biopsy",
+      "clinical_time": "2124-08-01T15:48:15",
+      "available_time": "2124-08-01T16:18:15",
+      "content": "Axillary lymph node biopsy",
+      "direct_identifiers_removed": true
+    },
+    "surg:006": {
+      "evidence_id": "surg:006",
+      "record_kind": "surgery",
+      "title": "Axillary lymph node biopsy",
+      "clinical_time": "2124-08-01T15:48:31",
+      "available_time": "2124-08-01T16:18:31",
+      "content": "Axillary lymph node biopsy",
+      "direct_identifiers_removed": true
+    }
+  },
+  "transitions": [
+    {
+      "transition_id": "ward_004_s2_node_001",
+      "sequence_index": 0,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-31T14:23:53.473000",
+      "clock_after": "2124-07-31T16:02:59",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_001",
+        "action_type": "review_document",
+        "target": "breast_admission_and_vte_risk_assessment",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "breast admission and vte risk assessment"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:025"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_001",
+          "ward_004_evt_002"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:025"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_001_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_002",
+      "sequence_index": 1,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-07-31T16:02:59",
+      "clock_after": "2124-08-01T17:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_002",
+        "action_type": "review_document",
+        "target": "right_breast_core_biopsy_readiness",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right breast core biopsy readiness"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:027",
+          "doc:031"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_003"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:027",
+        "doc:031"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_002_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_003",
+      "sequence_index": 2,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-01T17:30:00",
+      "clock_after": "2124-08-01T17:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_003",
+        "action_type": "review_document",
+        "target": "right_breast_and_bilateral_axillary_biopsy_consent",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right breast and bilateral axillary biopsy consent"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:002",
+          "doc:017",
+          "doc:030"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_007",
+          "ward_004_evt_008",
+          "ward_004_evt_009"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:002",
+        "doc:017",
+        "doc:030"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_003_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_004",
+      "sequence_index": 3,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-01T17:30:00",
+      "clock_after": "2124-08-01T17:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_004",
+        "action_type": "perform_procedure",
+        "target": "recorded_paired_axillary_node_biopsies",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "recorded paired axillary node biopsies"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "surg:005",
+          "surg:006"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_006"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "surg:005",
+        "surg:006"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_004_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_005",
+      "sequence_index": 4,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-01T17:30:00",
+      "clock_after": "2124-08-01T20:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_005",
+        "action_type": "perform_procedure",
+        "target": "right_breast_mass_core_biopsy",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right breast mass core biopsy"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "surg:004"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_010"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "surg:004"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_005_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_006",
+      "sequence_index": 5,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-01T20:00:00",
+      "clock_after": "2124-08-02T08:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_006",
+        "action_type": "review_document",
+        "target": "post_right_breast_core_biopsy_status",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "post right breast core biopsy status"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:005",
+          "doc:006",
+          "doc:032"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_004"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:005",
+        "doc:006",
+        "doc:032"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_006_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_007",
+      "sequence_index": 6,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-02T08:00:00",
+      "clock_after": "2124-08-02T08:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_007",
+        "action_type": "request_consultation",
+        "target": "thoracic_review_of_left_lower_lung_nodule",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "thoracic review of left lower lung nodule"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:010"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_005"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:010"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_007_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_008",
+      "sequence_index": 7,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-02T08:00:00",
+      "clock_after": "2124-08-02T18:21:03",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_008",
+        "action_type": "review_result",
+        "target": "paired_axillary_cytology_results_no_malignancy",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "paired axillary cytology results no malignancy"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "path:007",
+          "path:008"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_014",
+          "ward_004_evt_015"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "path:007",
+        "path:008"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_008_completed": true,
+        "paired_negative_axillary_cytology_reviewed": true,
+        "cytology_informative_not_hard_prerequisite": true,
+        "specimen_site_binding_excluded": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_009",
+      "sequence_index": 8,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-02T18:21:03",
+      "clock_after": "2124-08-02T21:05:44",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_009",
+        "action_type": "review_result",
+        "target": "right_breast_core_pathology_invasive_carcinoma",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right breast core pathology invasive carcinoma"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "path:001"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_016"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "path:001"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_009_completed": true,
+        "invasive_carcinoma_diagnosis_confirmed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_010",
+      "sequence_index": 9,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-02T21:05:44",
+      "clock_after": "2124-08-05T07:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_010",
+        "action_type": "review_document",
+        "target": "right_breast_conserving_and_sentinel_surgery_readiness",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right breast conserving and sentinel surgery readiness"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:012",
+          "doc:024"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_011",
+          "ward_004_evt_012"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:012",
+        "doc:024"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_010_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_011",
+      "sequence_index": 10,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-05T07:30:00",
+      "clock_after": "2124-08-05T07:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_011",
+        "action_type": "review_document",
+        "target": "selected_right_breast_conserving_and_sentinel_plan_consent",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "selected right breast conserving and sentinel plan consent"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:026"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_013"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:026"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_011_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_012",
+      "sequence_index": 11,
+      "stage_before": "S2",
+      "stage_after": "S2",
+      "clock_before": "2124-08-05T07:30:00",
+      "clock_after": "2124-08-05T10:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_012",
+        "action_type": "perform_procedure",
+        "target": "right_breast_conserving_surgery_with_fascial_reconstruction",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right breast conserving surgery with fascial reconstruction"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "surg:001",
+          "surg:003"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_017"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "surg:001",
+        "surg:003"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_012_completed": true,
+        "right_breast_primary_surgery_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_013",
+      "sequence_index": 12,
+      "stage_before": "S2",
+      "stage_after": "S3",
+      "clock_before": "2124-08-05T10:30:00",
+      "clock_after": "2124-08-05T10:30:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_013",
+        "action_type": "perform_procedure",
+        "target": "right_sentinel_node_biopsy",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "right sentinel node biopsy"
+        ],
+        "gold_source_type": "ehr_observed_action",
+        "source_evidence_ids": [
+          "surg:002"
+        ],
+        "source_event_ids": [],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "surg:002"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_013_completed": true,
+        "right_sentinel_node_biopsy_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_014",
+      "sequence_index": 13,
+      "stage_before": "S3",
+      "stage_after": "S3",
+      "clock_before": "2124-08-05T10:30:00",
+      "clock_after": "2124-08-06T08:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_014",
+        "action_type": "review_document",
+        "target": "post_breast_conserving_and_sentinel_surgery_status",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "post breast conserving and sentinel surgery status"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:014",
+          "doc:015",
+          "doc:019"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_018"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:014",
+        "doc:015",
+        "doc:019"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_014_completed": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_015",
+      "sequence_index": 14,
+      "stage_before": "S3",
+      "stage_after": "S3",
+      "clock_before": "2124-08-06T08:00:00",
+      "clock_after": "2124-08-06T08:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_015",
+        "action_type": "review_document",
+        "target": "left_lower_lung_nodule_surveillance_plan",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "left lower lung nodule surveillance plan"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "doc:016"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_019"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "doc:016"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_015_completed": true,
+        "lung_nodule_surveillance_plan_recorded": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_016",
+      "sequence_index": 15,
+      "stage_before": "S3",
+      "stage_after": "S3",
+      "clock_before": "2124-08-06T08:00:00",
+      "clock_after": "2124-08-06T08:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_016",
+        "action_type": "review_result",
+        "target": "late_available_breast_mri_report",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "late available breast mri report"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "img:003"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_020"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "img:003"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_016_completed": true,
+        "late_imaging_released_non_retroactively": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s2_node_017",
+      "sequence_index": 16,
+      "stage_before": "S3",
+      "stage_after": "S3",
+      "clock_before": "2124-08-06T08:00:00",
+      "clock_after": "2124-08-06T08:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:ward_004_s2_node_017",
+        "action_type": "review_result",
+        "target": "late_available_chest_ct_report",
+        "parameters": {},
+        "accepted_action_type_aliases": [],
+        "accepted_target_aliases": [
+          "late available chest ct report"
+        ],
+        "gold_source_type": "ehr_evidence_access",
+        "source_evidence_ids": [
+          "img:001"
+        ],
+        "source_event_ids": [
+          "ward_004_evt_021"
+        ],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "img:001"
+      ],
+      "state_updates": {
+        "ward_004_s2_node_017_completed": true,
+        "late_imaging_released_non_retroactively": true
+      },
+      "terminal": false
+    },
+    {
+      "transition_id": "ward_004_s3_terminal_001",
+      "sequence_index": 17,
+      "stage_before": "S3",
+      "stage_after": "S3",
+      "clock_before": "2124-08-06T08:00:00",
+      "clock_after": "2124-08-06T13:00:00",
+      "gold_action": {
+        "action_id": "ehr:ward_004:discharge",
+        "action_type": "discharge",
+        "target": "home_after_inpatient_breast_surgery",
+        "parameters": {},
+        "accepted_action_type_aliases": [
+          "discharge_patient",
+          "end_episode"
+        ],
+        "accepted_target_aliases": [
+          "discharge on medical advice",
+          "discharge home"
+        ],
+        "gold_source_type": "ehr_derived_terminal_gold",
+        "source_evidence_ids": [],
+        "source_event_ids": [],
+        "source_claim_ids": []
+      },
+      "release_evidence_ids": [
+        "ehr:terminal:001"
+      ],
+      "state_updates": {
+        "disposition": "discharge on medical advice",
+        "encounter_active": false,
+        "terminal": true
+      },
+      "terminal": true
+    }
+  ],
+  "policy": {
+    "strict_next_gold_action": false,
+    "partial_order_prerequisites_enforced": true,
+    "terminology_aliases_allowed": true,
+    "off_trajectory_action_advances_state": false,
+    "off_trajectory_action_releases_evidence": false,
+    "future_evidence_hidden": true,
+    "late_available_results_not_retroactive": true,
+    "patient_llm_used": false,
+    "ehr_is_authoritative_historical_fact_source": true,
+    "clinician_review_is_authoritative_dependency_source": true
+  },
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

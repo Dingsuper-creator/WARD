@@ -1,0 +1,53 @@
+{
+  "interface_version": "ward-patient-ehr-action-interface-0.2.0",
+  "status": "development_non_official",
+  "case_id": "ward_004",
+  "scenario_path": "outputs/world_model_patient_ehr_v01/cases/ward_004.patient_ehr.json",
+  "scenario_sha256": "032253aeea7f3233c8fa938ec3b5acd03b372efd6892a7699dee5ebc60725b3d",
+  "ontology_path": "outputs/world_model_patient_ehr_v02/action_ontology.ward_004.v0.2.json",
+  "ontology_sha256": "870cba4bd6d014cf3dca4768b9b803a3d8977be9c685a79364e8e4ac29842fd6",
+  "public_capabilities": [
+    "communicate_with_patient",
+    "review_ehr_documents",
+    "order_diagnostic_tests",
+    "review_results",
+    "request_consultation",
+    "manage_treatment",
+    "perform_procedures",
+    "monitor_or_defer",
+    "manage_disposition"
+  ],
+  "transition_concepts": {
+    "ward_004_s2_node_001": "ehr.breast_admission_and_vte_risk_review",
+    "ward_004_s2_node_002": "ehr.right_breast_core_biopsy_readiness",
+    "ward_004_s2_node_003": "ehr.breast_and_axillary_biopsy_consent",
+    "ward_004_s2_node_004": "procedure.paired_axillary_node_biopsies",
+    "ward_004_s2_node_005": "procedure.right_breast_core_biopsy",
+    "ward_004_s2_node_006": "ehr.post_core_biopsy_status",
+    "ward_004_s2_node_007": "consultation.left_lower_lung_nodule",
+    "ward_004_s2_node_008": "result.paired_axillary_cytology_no_malignancy",
+    "ward_004_s2_node_009": "result.right_breast_core_invasive_carcinoma",
+    "ward_004_s2_node_010": "ehr.right_breast_definitive_surgery_readiness",
+    "ward_004_s2_node_011": "ehr.right_breast_definitive_surgery_consent",
+    "ward_004_s2_node_012": "procedure.right_breast_conserving_surgery",
+    "ward_004_s2_node_013": "procedure.right_sentinel_node_biopsy",
+    "ward_004_s2_node_014": "ehr.post_definitive_breast_surgery_status",
+    "ward_004_s2_node_015": "ehr.lung_nodule_followup_plan",
+    "ward_004_s2_node_016": "result.late_breast_mri_report",
+    "ward_004_s2_node_017": "result.late_chest_ct_report",
+    "ward_004_s3_terminal_001": "disposition.home_after_inpatient_breast_surgery"
+  },
+  "decision_policy": {
+    "free_text_target_allowed": true,
+    "exact_hidden_identifier_required": false,
+    "schema_valid_non_gold_action_class": "valid_exploration_no_recorded_outcome",
+    "recognized_non_current_action_class": "recognized_non_current_action",
+    "gold_equivalent_action_class": "ehr_path_advanced",
+    "counterfactual_clinical_outcomes_simulated": false
+  },
+  "gold_action_visible": false,
+  "future_evidence_visible": false,
+  "automatic_semantic_judge_scoring": false,
+  "official_scoring_allowed": false,
+  "single_total_score_absent": true
+}

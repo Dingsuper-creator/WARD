@@ -1,0 +1,72 @@
+{
+  "contract_version": "ward-patient-ehr-run-data-contract-0.1.0",
+  "status": "protocol_candidate",
+  "purpose": "Collect the evaluated model trajectory while referencing fixed benchmark case data without duplicating the source EHR into every run.",
+  "fixed_case_library": {
+    "stored_once": true,
+    "bound_to_each_run_by_sha256": true,
+    "copied_into_each_model_run": false,
+    "authoritative_evidence_source": "deterministic_deidentified_ehr_case_bundle"
+  },
+  "required_run_artifacts": {
+    "model_output_trace.json": {
+      "role": "primary normalized model-return collection",
+      "contains": [
+        "every attempted model call",
+        "normalized submitted tool name and arguments",
+        "repair and invalid-contract status",
+        "provider response identifier and effective model when available",
+        "per-call token usage",
+        "minimal deterministic environment receipt"
+      ],
+      "must_not_contain": [
+        "full source EHR records",
+        "raw provider response bodies",
+        "credentials",
+        "hidden Gold actions",
+        "future evidence"
+      ]
+    },
+    "agent_call_audit.json": {
+      "role": "transport, interface, repair, usage, and failure audit"
+    },
+    "tool_trace.json": {
+      "role": "normalized tool execution and public outcome audit"
+    },
+    "interaction_trace.json": {
+      "role": "deterministic environment state transition and hash-chain audit"
+    },
+    "run_manifest.json": {
+      "role": "version, configuration, case-artifact hash, and run-artifact hash binding"
+    }
+  },
+  "minimal_environment_receipt": [
+    "outcome_status",
+    "action_understood",
+    "state_advanced",
+    "newly_released_evidence_ids",
+    "stage_after",
+    "terminal_flag",
+    "state_before_sha256",
+    "state_after_sha256",
+    "environment_entry_sha256",
+    "tool_entry_sha256"
+  ],
+  "raw_output_boundary": {
+    "normalized_native_tool_calls_stored": true,
+    "normalized_valid_text_json_tool_calls_stored": true,
+    "raw_assistant_text_stored": false,
+    "raw_provider_response_stored": false,
+    "invalid_output_content_stored": false,
+    "invalid_output_sha256_and_error_code_stored": true
+  },
+  "privacy_and_security": {
+    "deidentified_case_library_required": true,
+    "credential_storage": "environment_or_secret_manager_only",
+    "credentials_echoed": false
+  },
+  "evaluation_boundary": {
+    "automatic_official_scoring_authorized": false,
+    "single_total_score_absent": true
+  }
+}
