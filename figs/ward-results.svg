@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="chart-title chart-desc">
+  <title id="chart-title">The evidence-to-state-to-action gap in WARD</title>
+  <desc id="chart-desc">Median F1 is 48.42 percent for evidence recognition, 17.72 percent for patient state, and 11.81 percent for next actions.</desc>
+  <rect width="1200" height="440" fill="#ffffff"/>
+  <text x="60" y="66" fill="#172b41" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="700">The evidence-to-state-to-action gap</text>
+  <text x="60" y="104" fill="#587087" font-family="Arial, Helvetica, sans-serif" font-size="19">Median F1 across models with scorable checkpoint outputs</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#24394e">
+    <text x="60" y="174">Evidence recognition</text>
+    <text x="60" y="259">Patient state</text>
+    <text x="60" y="344">Next actions</text>
+  </g>
+  <g fill="#edf2f6">
+    <rect x="370" y="145" width="660" height="39"/>
+    <rect x="370" y="230" width="660" height="39"/>
+    <rect x="370" y="315" width="660" height="39"/>
+  </g>
+  <rect x="370" y="145" width="533" height="39" fill="#2c6f91"/>
+  <rect x="370" y="230" width="195" height="39" fill="#5f98a9"/>
+  <rect x="370" y="315" width="130" height="39" fill="#9dbdc6"/>
+  <g fill="#172b41" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">
+    <text x="921" y="174">48.42%</text>
+    <text x="583" y="259">17.72%</text>
+    <text x="518" y="344">11.81%</text>
+  </g>
+  <path d="M370 388H1030" stroke="#aab8c3" stroke-width="2"/>
+  <g fill="#61778b" font-family="Arial, Helvetica, sans-serif" font-size="16" text-anchor="middle">
+    <text x="370" y="416">0</text>
+    <text x="590" y="416">20</text>
+    <text x="810" y="416">40</text>
+    <text x="1030" y="416">60%</text>
+  </g>
+</svg>

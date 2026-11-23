@@ -2,13 +2,15 @@
 
 **Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents**
 
-![WARD links evidence, patient state, and clinical action](figs/ward-banner.svg)
+WARD is a process-level benchmark for clinical agents working with accumulating evidence and sequential clinical actions. It tests where an agent loses the connection between recognizing evidence, updating patient state, and choosing a safe next action.
 
-WARD evaluates whether a clinical agent **uses new evidence, updates its view of the patient, and takes the right next action** as a case unfolds. It combines independent checkpoint assessments with a tool-mediated environment for full clinical trajectories.
+**40 trajectories** · **240 checkpoints** · **4,560 clinical tasks** · **95 hospitalizations**
 
-**40 clinical trajectories** · **240 checkpoints** · **4,560 tasks** · **2 evaluation tracks**
+[Longitudinal track](longitudinal/README.md) · [Interactive track](interactive/README.md) · [Data and schemas](data/README.md) · [Quick start](#quick-start)
 
-[Overview](#overview) · [Quick start](#quick-start) · [Longitudinal track](#longitudinal-track) · [Interactive track](#interactive-track) · [Data boundary](#data-boundary) · [Repository guide](#repository-guide)
+![Median WARD scores fall from evidence recognition to patient state and next actions](figs/ward-results.svg)
+
+The chart shows the median scores reported in the paper. The Interactive Track also finds that 11.46% of executed actions advance a reference transition.
 
 ## Overview
 
@@ -17,7 +19,7 @@ WARD evaluates whether a clinical agent **uses new evidence, updates its view of
 | **Longitudinal** | Responds independently at each checkpoint, using only the cumulative record visible at that time. | Evidence use, claims, patient state, actions, safety, stopping, and change over time. |
 | **Interactive** | Acquires evidence and acts through clinical tools in a persistent environment. | Prerequisite resolution, clinical progress, efficiency, recovery, and action safety. |
 
-The core question is where a model loses the thread between **seeing evidence**, **updating state**, and **acting on it**. Endpoint scores alone cannot show whether an agent missed evidence, retained an outdated assessment, or chose an action before its prerequisites were met.
+Endpoint scores alone cannot show whether an agent missed evidence, retained an outdated assessment, or chose an action before its prerequisites were met. WARD evaluates these steps separately and tracks whether the agent makes sustained progress.
 
 <details>
 <summary>View the benchmark construction and track diagram</summary>
