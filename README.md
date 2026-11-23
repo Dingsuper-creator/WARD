@@ -1,32 +1,45 @@
-# WARD
+<h1 align="center">WARD</h1>
 
-**Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents**
+<p align="center"><strong>Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents</strong></p>
 
-WARD is a process-level benchmark for clinical agents working with accumulating evidence and sequential clinical actions. It tests where an agent loses the connection between recognizing evidence, updating patient state, and choosing a safe next action.
+<p align="center">A process-level benchmark for clinical agents working with evolving patient records.</p>
 
-**40 trajectories** · **240 checkpoints** · **4,560 clinical tasks** · **95 hospitalizations**
-
-[Longitudinal track](longitudinal/README.md) · [Interactive track](interactive/README.md) · [Data and schemas](data/README.md) · [Quick start](#quick-start)
-
-![Median WARD scores fall from evidence recognition to patient state and next actions](figs/ward-results.svg)
-
-The chart shows the median scores reported in the paper. The Interactive Track also finds that 11.46% of executed actions advance a reference transition.
+<p align="center">
+  <a href="#overview">Overview</a> ·
+  <a href="#results-at-a-glance">Results</a> ·
+  <a href="#quick-start">Quick start</a> ·
+  <a href="longitudinal/README.md">Longitudinal track</a> ·
+  <a href="interactive/README.md">Interactive track</a> ·
+  <a href="data/README.md">Data guide</a>
+</p>
 
 ## Overview
+
+Clinical agents must do more than notice a new test result. They need to revise their understanding of the patient and choose the next action as the record evolves. WARD evaluates this **evidence → state → action** chain instead of judging only the final answer.
+
+![Why WARD evaluates evidence use, patient-state updates, and clinical actions over time](figs/fig-intro.png)
+
+*A patient record changes over time. The same final outcome can hide a missed result, an outdated assessment, or an unsafe action.*
+
+WARD contains **40 longitudinal trajectories**, **240 checkpoints**, and **4,560 clinical tasks** drawn from **95 hospitalizations**. It evaluates two complementary settings:
 
 | Track | What the agent does | What WARD measures |
 | :--- | :--- | :--- |
 | **Longitudinal** | Responds independently at each checkpoint, using only the cumulative record visible at that time. | Evidence use, claims, patient state, actions, safety, stopping, and change over time. |
 | **Interactive** | Acquires evidence and acts through clinical tools in a persistent environment. | Prerequisite resolution, clinical progress, efficiency, recovery, and action safety. |
 
-Endpoint scores alone cannot show whether an agent missed evidence, retained an outdated assessment, or chose an action before its prerequisites were met. WARD evaluates these steps separately and tracks whether the agent makes sustained progress.
-
 <details>
-<summary>View the benchmark construction and track diagram</summary>
+<summary>See the benchmark construction and both evaluation tracks</summary>
 
 ![WARD construction and its Longitudinal and Interactive evaluation tracks](figs/fig-frame.png)
 
 </details>
+
+## Results at a glance
+
+![Median WARD scores fall from evidence recognition to patient state and next actions](figs/ward-results.svg)
+
+In the paper's reported medians, performance falls from **48.42%** on evidence recognition to **17.72%** on patient state and **11.81%** on next actions. In the Interactive Track, **11.46%** of executed actions advance a reference transition. These measures show where recognition fails to become an updated assessment or useful action.
 
 ## Quick start
 
@@ -149,6 +162,6 @@ The clinical text is illustrative. The runner includes only evidence available a
 | [`data/`](data/README.md) | Checkpoint references, interactive cases, preparation, and verification. |
 | [`longitudinal/`](longitudinal/README.md) | Checkpoint runner, semantic judging, schemas, and scoring. |
 | [`interactive/`](interactive/README.md) | Clinical tools, dispatcher, interrupted-run continuation, and metrics. |
-| [`figs/`](figs/) | Paper diagrams and repository illustration. |
+| [`figs/`](figs/) | Paper diagrams and results illustration. |
 
 For the paper's clinical and methodological context, start with the [benchmark overview](#overview). For runnable contracts and flags, use the track-specific guides linked above.
