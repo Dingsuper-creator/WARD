@@ -1,32 +1,41 @@
 <h1 align="center">WARD</h1>
 
-<p align="center"><strong>Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents</strong></p>
+<p align="center"><strong>The patient record changed. Did the agent?</strong></p>
 
-<p align="center">A process-level benchmark for clinical agents working with evolving patient records.</p>
+<p align="center"><em>Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents</em></p>
 
 <p align="center">
-  <a href="#overview">Overview</a> ·
+  <a href="#why-ward">Why WARD</a> ·
+  <a href="#two-examples">Examples</a> ·
   <a href="#results-at-a-glance">Results</a> ·
   <a href="#quick-start">Quick start</a> ·
-  <a href="longitudinal/README.md">Longitudinal track</a> ·
-  <a href="interactive/README.md">Interactive track</a> ·
-  <a href="data/README.md">Data guide</a>
+  <a href="longitudinal/README.md">Longitudinal</a> ·
+  <a href="interactive/README.md">Interactive</a> ·
+  <a href="data/README.md">Data</a>
 </p>
 
-## Overview
+WARD is for researchers and developers who build or evaluate clinical language-model agents. It tests whether an agent **uses new evidence, updates its assessment, and takes an appropriate next action** as a patient's record evolves.
 
-Clinical agents must do more than notice a new test result. They need to revise their understanding of the patient and choose the next action as the record evolves. WARD evaluates this **evidence → state → action** chain instead of judging only the final answer.
-
-![Why WARD evaluates evidence use, patient-state updates, and clinical actions over time](figs/fig-intro.png)
-
-*A patient record changes over time. The same final outcome can hide a missed result, an outdated assessment, or an unsafe action.*
-
-WARD contains **40 longitudinal trajectories**, **240 checkpoints**, and **4,560 clinical tasks** drawn from **95 hospitalizations**. It evaluates two complementary settings:
-
-| Track | What the agent does | What WARD measures |
+| If you are… | Use WARD to… | Start here |
 | :--- | :--- | :--- |
-| **Longitudinal** | Responds independently at each checkpoint, using only the cumulative record visible at that time. | Evidence use, claims, patient state, actions, safety, stopping, and change over time. |
-| **Interactive** | Acquires evidence and acts through clinical tools in a persistent environment. | Prerequisite resolution, clinical progress, efficiency, recovery, and action safety. |
+| A **clinical AI researcher** | Locate the step where a model's reasoning breaks across successive checkpoints. | [Longitudinal track](longitudinal/README.md) |
+| An **agent developer** | Test tool use, prerequisites, recovery, and progress in a persistent clinical environment. | [Interactive track](interactive/README.md) |
+| An **evaluation team** | Audit scoring, model-visible inputs, and data boundaries. | [Data guide](data/README.md) and [scoring guide](longitudinal/README.md#offline-evaluation) |
+
+## Why WARD
+
+A final answer can look plausible even when the agent ignored a new result, kept an outdated picture of the patient, or acted before a prerequisite was met. WARD measures that **evidence → state → action** chain directly.
+
+![An evolving clinical record can reveal failures that outcome-only scoring misses](figs/fig-intro.png)
+
+*The paper's motivating example: new findings should change both the patient's assessed state and the next decision. The illustration explains the evaluation problem; it is not a reference answer for a released case.*
+
+WARD covers **40 longitudinal trajectories**, **240 checkpoints**, and **4,560 clinical tasks** drawn from **95 hospitalizations**. The released interactive subset contains **10 cases**. The two tracks ask different questions:
+
+| Track | Agent setting | What the evaluation reveals |
+| :--- | :--- | :--- |
+| **Longitudinal** | The model answers independently at each checkpoint using the cumulative record visible then. Earlier model answers are not passed forward. | Whether it identifies evidence, links that evidence to claims, updates patient state, chooses actions, respects safety constraints, and knows when to stop. |
+| **Interactive** | The agent uses clinical tools over multiple turns in a persistent environment. | Whether it acquires evidence, satisfies prerequisites, advances the case, recovers from blocked actions, and uses its action budget productively. |
 
 <details>
 <summary>See the benchmark construction and both evaluation tracks</summary>
@@ -35,22 +44,67 @@ WARD contains **40 longitudinal trajectories**, **240 checkpoints**, and **4,560
 
 </details>
 
+## Two examples
+
+### 1. Seeing a result without changing the plan
+
+The paper illustration follows a patient with dyspnea as more information becomes available. This is an **illustrative scenario**, not a scored answer for `ward_001`.
+
+| Moment | Record available to the agent | Failure WARD can distinguish |
+| :--- | :--- | :--- |
+| Initial assessment | Dyspnea, COPD history, and low oxygen saturation. | An unsupported claim about the patient's state. |
+| New evidence | Chest imaging shows a new infiltrate, the white-cell count is elevated, and oxygen need rises. | The agent mentions the findings but leaves its assessment unchanged. |
+| Decision point | Hypoxia and its cause remain unresolved. | The agent recommends a premature transition instead of responding to the unresolved blocker. |
+
+A model can therefore receive credit for **recognizing** evidence while still failing on **patient state** or **action**. The [checkpoint schema](longitudinal/src/ward_eval/schemas/checkpoint_submission.v1.schema.json) makes these outputs separately inspectable.
+
+### 2. A blocked action, then recovery
+
+The repository includes a **fully synthetic, non-official** interactive fixture. Its three scripted calls make a different failure visible:
+
+| Turn | Tool call | Environment response |
+| :--- | :--- | :--- |
+| 1 | `care.transition` before gathering history | Prerequisite pending; the case does not advance. |
+| 2 | `patient.ask` for the synthetic history | Evidence is released; one transition advances. |
+| 3 | `care.transition` again | The remaining transition advances. |
+
+The offline evaluator reports **2 of 2 milestones completed**, **2 productive actions within a budget of 4**, and **recovery from the pending prerequisite**. These are software-fixture results, not clinical performance or an official WARD score. You can reproduce this trace in [Quick start](#quick-start).
+
 ## Results at a glance
 
-![Median WARD scores fall from evidence recognition to patient state and next actions](figs/ward-results.svg)
+![Reported median WARD scores decrease from evidence recognition to patient state and next actions](figs/ward-results.svg)
 
-In the paper's reported medians, performance falls from **48.42%** on evidence recognition to **17.72%** on patient state and **11.81%** on next actions. In the Interactive Track, **11.46%** of executed actions advance a reference transition. These measures show where recognition fails to become an updated assessment or useful action.
+In the paper's reported medians, evidence recognition reaches **48.42%**, while patient-state and next-action scores are **17.72%** and **11.81%**. In the Interactive Track, **11.46%** of executed actions advance a reference transition. The pattern illustrates the gap between noticing a result and using it to guide care. These are paper results; the packaged data are a separately versioned, anonymized successor release.
 
 ## Quick start
 
-Use Python 3.11 or newer. Run these commands from the repository root.
+Use Python 3.11 or newer from the repository root. Validate a released interactive case without an API call:
 
 ```bash
-python -m pip install -r requirements.txt
-python interactive/run.py --case ward_001 --dry-run
+python3 -m pip install -r requirements.txt
+python3 interactive/run.py --case ward_001 --dry-run
 ```
 
-The dry run validates a case and its assets without making model API calls. For a model run, configure an OpenAI-compatible endpoint and keep credentials outside the repository:
+To see a complete action trace and evaluation **without credentials or patient-derived text**, run the synthetic fixture:
+
+```bash
+python3 interactive/tests/fixture.py /tmp/ward-demo
+python3 interactive/run.py \
+  --case ward_001 \
+  --case-config /tmp/ward-demo/case.json \
+  --scripted-actions /tmp/ward-demo/actions.json \
+  --output /tmp/ward-demo-run
+python3 interactive/eval.py \
+  --run /tmp/ward-demo-run \
+  --case-config /tmp/ward-demo/case.json \
+  --output /tmp/ward-demo-scores.json
+```
+
+Inspect `/tmp/ward-demo-run/tool_trace.json` for each call and `/tmp/ward-demo-scores.json` for the metrics. The fixture reuses the `ward_001` identifier but contains artificial transitions; do not combine its score with released-case results.
+
+### Run your model
+
+Both tracks accept a compatible model endpoint. Keep credentials outside the repository:
 
 ```bash
 export WARD_API_KEY="YOUR_API_KEY"
@@ -58,110 +112,22 @@ export WARD_BASE_URL="https://api.example.com"
 export WARD_API_BASE_URL="https://api.example.com/v1"
 ```
 
-The Longitudinal runner takes the provider origin (`WARD_BASE_URL`) and appends `/v1/chat/completions`. The Interactive runner takes the API base ending in `/v1` (`WARD_API_BASE_URL`). Replace the example endpoint and model ID with your deployment.
+`WARD_BASE_URL` is the provider origin for Longitudinal; `WARD_API_BASE_URL` ends in `/v1` for Interactive. Set your deployment's model ID and follow the track you want to evaluate:
 
-## Longitudinal track
+- **Longitudinal:** configure the [example model roster](longitudinal/config/model_roster.example.json), then use the [prepare, execute, and scoring instructions](longitudinal/README.md).
+- **Interactive:** run `python3 interactive/run.py --case ward_001 --model YOUR_MODEL_ID --output runs/YOUR_MODEL_ID/ward_001`, then follow the [evaluation instructions](interactive/README.md#evaluate-selected-runs).
 
-Each checkpoint produces a structured JSON response covering evidence, evidence-utilization links, claims, patient state, actions, safety constraints, and stopping decisions. The [submission schema](longitudinal/src/ward_eval/schemas/checkpoint_submission.v1.schema.json) defines the executable format.
+Longitudinal scoring reports seven F1 dimensions and temporal diagnostics; semantic matches may require the configured judges. Interactive scoring reports trajectory progress and action efficiency. **Clinical quality is a separate human rating**, not inferred from environment progress. Neither track produces a single total score.
 
-Copy [the example model roster](longitudinal/config/model_roster.example.json) to `models.local.json`, then set `models[0].model_id` and the inference parameters. Use one model per job.
+## Data and evaluation boundary
 
-```bash
-python longitudinal/run.py prepare \
-  --gold data/longitudinal \
-  --roster models.local.json \
-  --output output/checkpoint-job
+> **Keep evaluator-side references out of model inputs.** Reference answers, hidden prerequisites, and unreleased evidence are used for evaluation. The runners build the model-visible requests and observations.
 
-python longitudinal/run.py execute \
-  --job output/checkpoint-job \
-  --roster models.local.json \
-  --output output/checkpoint-run
-```
-
-The model receives each checkpoint independently; earlier model predictions are not passed forward. The runner writes `raw_model_submissions.jsonl`, request and attempt records, and a run manifest.
-
-### Score checkpoint responses
-
-Use **DeepSeek-V4-Pro (Judge-B)** as the primary semantic evaluator and **Qwen3.7-Max (Judge-A)** for sensitivity analysis, as in the paper. Configure their deployment IDs and endpoints in the [judge examples](longitudinal/config/). The [Longitudinal instructions](longitudinal/README.md#semantic-judging) include cache-generation commands.
-
-```bash
-python longitudinal/eval.py \
-  --gold data/longitudinal \
-  --submissions output/checkpoint-run/raw_model_submissions.jsonl \
-  --judge-cache output/judge-finalization/private/judge_cache.v1.json \
-  --prompt-manifests output/checkpoint-job/prompt_request_manifests.jsonl \
-  --model-id your-model-id \
-  --output output/checkpoint-scores
-```
-
-Scores cover seven clinical output domains, stopping-decision accuracy, critical-action recall, and temporal diagnostics such as linked-evidence nonresponse and evidence regression. Checkpoint counts are pooled within each case before computing F1, then averaged across cases. See the [Longitudinal instructions](longitudinal/README.md) for scoring details and output files.
-
-## Interactive track
-
-The environment exposes seven tools: `patient.ask`, `ehr.search`, `ehr.read`, `ehr.order`, `procedure.perform`, `treatment.start`, and `care.transition`. It checks prerequisites, releases evidence, and advances the recorded clinical state.
-
-```bash
-python interactive/run.py --case ward_001 --dry-run
-
-python interactive/run.py \
-  --case ward_001 \
-  --model your-model-id \
-  --output output/interactive/your-model-id/ward_001
-
-python interactive/eval.py \
-  --run output/interactive/your-model-id/ward_001 \
-  --output output/interactive/scores.json
-```
-
-For providers requiring a single dispatcher, add `--protocol dispatcher`. An interrupted API run can continue with `--resume-from PATH`; select the final continuation rather than counting its prefix as a separate case. In the supplied 10-case subset, `ward_007` has a 20-action budget and the other nine cases have 40.
-
-The evaluator reports milestone coverage, productive budget yield, reference-evidence recall, repeated actions without new evidence, recovery, and termination status. **Clinical quality is a separate 1–7 human rating**; pass independently collected ratings with `--clinical-ratings`. Missing ratings remain missing and are not inferred from environment progress. See the [Interactive instructions](interactive/README.md) for transport, continuation, validation, and rating formats.
-
-## Data boundary
-
-> **Keep evaluator-side references out of model inputs.** Reference answers, unreleased evidence, and hidden transition conditions are stored for evaluation. The runners construct the model-visible requests and observations. Do not send complete reference files to a target model.
-
-The [data guide](data/README.md) describes the stored files, schemas, preparation, and verification steps. It also explains which evidence is available at each checkpoint and how interactive cases expose records through tools.
-
-<details>
-<summary>View a synthetic model-visible checkpoint example</summary>
-
-```json
-{
-  "case_id": "ward_001",
-  "checkpoint_id": "ward_001_cp_002",
-  "public_time": "2125-01-02T09:00:00",
-  "public_context": {
-    "age_years": 62,
-    "sex": "female",
-    "setting": "inpatient",
-    "initial_time": "2125-01-01T08:00:00",
-    "admission_diagnosis": "Dyspnea under investigation"
-  },
-  "visible_evidence": [
-    {
-      "evidence_id": "doc:001",
-      "record_kind": "document",
-      "title": "Chest imaging report",
-      "clinical_time": "2125-01-02T08:00:00",
-      "available_time": "2125-01-02T08:30:00",
-      "content": "A new pulmonary infiltrate is present."
-    }
-  ]
-}
-```
-
-The clinical text is illustrative. The runner includes only evidence available at `public_time`.
-
-</details>
-
-## Repository guide
+The [data guide](data/README.md) explains the released files, visibility rules, anonymized successor version, and verification commands. It also distinguishes the interactive reference graph from the longitudinal checkpoint references.
 
 | Path | Contents |
 | :--- | :--- |
-| [`data/`](data/README.md) | Checkpoint references, interactive cases, preparation, and verification. |
-| [`longitudinal/`](longitudinal/README.md) | Checkpoint runner, semantic judging, schemas, and scoring. |
-| [`interactive/`](interactive/README.md) | Clinical tools, dispatcher, interrupted-run continuation, and metrics. |
-| [`figs/`](figs/) | Paper diagrams and results illustration. |
-
-For the paper's clinical and methodological context, start with the [benchmark overview](#overview). For runnable contracts and flags, use the track-specific guides linked above.
+| [`data/`](data/README.md) | Cases, references, manifests, and data verification. |
+| [`longitudinal/`](longitudinal/README.md) | Independent checkpoint inference, schemas, and scoring. |
+| [`interactive/`](interactive/README.md) | Clinical tools, persistent environment, runner, and metrics. |
+| [`figs/`](figs/) | Paper illustrations and the results chart. |
